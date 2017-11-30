@@ -1,6 +1,6 @@
 # 10x
 
-10x is the Office of Investments in GSA’s Technology Transformation Service (TTS).
+## The Office of Investments in GSA’s Technology Transformation Service (TTS).
 
 We fund ideas from public servants for products and services that solve problems affecting the experience people have with the government.
 
