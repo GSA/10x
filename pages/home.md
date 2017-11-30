@@ -7,16 +7,13 @@ We fund ideas from public servants for products and services that solve problems
 ---
 
 [**Learn about the program**](getting-started.md)
-- The “what” and “why” of 10x
 
 [**The 10x process**](process.md)
-- How the 10x process works and what to expect at each funding stage
 
 [**Getting your project funded**](funding.md)
-- How to submit an application for funding
 
 [**Projects**](projects.md)
-- these are our projects
+
 ---
 
 ## What is 10x?
