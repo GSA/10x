@@ -1,4 +1,6 @@
-## Our process
+[Home](home.md)
+
+# Our process
 
 ### How does the 10x process work?
 
