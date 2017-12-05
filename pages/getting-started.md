@@ -3,8 +3,10 @@
 # Getting Started
 
 ## Expectations and requirements
-To get started with any new idea, we ask that you answer one simple question in 2–3 sentences: “What problem are you trying to solve?” 10x and the TTS Director will vet ideas to determine which projects best fit within the TTS areas of focus. If your project is selected, it will enter Phase 1 of the investment process.
 
+To apply to have your project selected for an initial "Investigation," the first stage of the process, we ask that you answer one question: “What problem are you trying to solve?” in no more than two to three sentences. 10x and the TTS Director will vet ideas to determine which projects are the best fit. 
+
+Ideas are accepted throughout the year, with selections made at the beginning of Q1 and Q3 of every fiscal year.
 
 ### Characteristics of projects
 
@@ -15,7 +17,7 @@ To get started with any new idea, we ask that you answer one simple question in 
 - Your idea directly impacts other government agencies or the American public.
 - Your team is prepared for the unique challenges of developing a new product or service within the government.
 
-**Your project fits into at least one of the five TTS areas of focus:**
+**That fit into at least one of the five TTS areas of focus:**
 
 - Cloud
 - Online services and tech-enhanced services
@@ -23,9 +25,8 @@ To get started with any new idea, we ask that you answer one simple question in 
 - Acquisition
 - Analytics
 
+## What is the experience like?
 
+Making it through the funding and development process requires a significant investment of time. We need to do our due diligence to make sure we’re good stewards of taxpayer dollars, so you and your team will need to be able to show the value of your project and continue to develop your idea to receive funding at each stage. 10x projects can require a significant investment of time to be successful - be sure to plan accordingly!
 
-**What is the experience like?**
-- Making it through the funding and development process requires a significant investment of time. We need to do our due diligence to make sure we’re good stewards of taxpayer dollars, so you and your team will need to be able to show the value of your project and continue to develop your idea to receive funding at each stage. 10x projects can require a significant investment of time to be successful - be sure to plan accordingly!
-
-For examples of projects that have made it through in the past, see Our Projects
+For examples of projects that have made it through in the past, see Our Projects.
