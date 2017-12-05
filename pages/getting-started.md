@@ -8,9 +8,9 @@ To apply to have your project selected for an initial "Investigation," the first
 
 Ideas are accepted throughout the year, with selections made at the beginning of Q1 and Q3 of every fiscal year.
 
-### Characteristics of projects
+### What kinds of projects get accepted?
 
-#### We're looking for ideas with evidence of the following:
+#### We look for ideas with evidence of the following:
 
 - Your project is in a big or rapidly growing market within the government.
 - Your project supports not just the government but also the contracting ecosystem.
