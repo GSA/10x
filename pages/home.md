@@ -12,8 +12,8 @@
 
 [**How It Works**](process.md)
 
-[**Getting Started**](getting-started.md)
-
 [**Our Projects**](projects.md)
+
+[**Getting Started**](getting-started.md)
 
 ---
