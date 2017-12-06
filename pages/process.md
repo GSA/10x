@@ -6,7 +6,7 @@
 
 [**Investment Philosophy**](process.md)
 
-[**Product Logistics**](process.md)
+[**Project Logistics**](process.md)
 
 10x is an incremental investment fund inside the federal government, which is a fancy way of saying that we start by giving you a smaller amount of money, with an expectation about what the output of spending that money should be. We use your results from that investment to determine whether or not to give you an additional, larger amount of funding for the next phase of work, a process that can continue through up to four phases.
 
@@ -40,7 +40,7 @@ In contrast, 10x attempts to spend the smallest amount of funding necessary at e
 
 Some stuff here about our risk model.
 
-## Product Logistics
+## Project Logistics
 
 ### Where do these projects live?
 
