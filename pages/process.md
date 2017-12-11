@@ -12,7 +12,7 @@
 
 ## Funding Model
 
-### Funnel (Needs a graphic)
+### Funnel (Needs graphic)
 
 There are five separate funding phases:
 
