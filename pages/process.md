@@ -38,7 +38,7 @@ In contrast, 10x attempts to spend the smallest amount of funding necessary at e
 
 ## Investment Philosophy
 
-Some stuff here about our risk model.
+Some stuff here about our risk model. Kill untenable ideas quickly and inexpensively
 
 ## Project Logistics
 
