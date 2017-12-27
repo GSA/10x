@@ -24,7 +24,6 @@ Before you submit, a reminder: Making it through the funding and development pro
 - Information security
 - Acquisition
 - Analytics
-- Consulting
 
 ## Need more help?
 
