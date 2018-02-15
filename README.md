@@ -1,6 +1,31 @@
-# 10x
+# 10x website Problem Statement and Goals
 
-_coming soon_
+### [Macro]
+
+**Opportunity:** The US Government employs many capable public servants who observe problems with government technology and are ideally positioned to pursue solutions to these problems. 
+
+**Problem:** Unfortunately, many of these talented folks are unable to pursue solutions to these problems due to a lack of funding, support, or necessary skills. 
+
+### [Micro] 
+
+**Opportunity:** The 10x team can offer funding and guidance to creative civil servants who want to solve problems facing the government in technology  spaces.
+
+**Problem:** Most civil servants who might benefit from 10x funding, guidance, or investment model do not know we exist.
+
+## About 10x 
+
+10x is an incremental investment pipeline that lives in GSA’s Technology Transformation Services’ (TTS) Office of Products and Programs (OPP). We fund products and services that possess groundbreaking ideas or technology with the potential for significant
+return on investment. Our approach is based on modern venture capital practices and  is  designed to spend fewer taxpayer dollars while also ensuring that the best products and services get funded.
+
+## Website goal
+
+> The 10x website will provide civil servants across government the information they need to apply for funding and guidance to explore their ideas to solve government problems. It will also provide information and resources to civil servants who want to model something similar within their own agencies, as well as up-to-date financial information for GSA leadership and oversight bodies. 
+
+## Expected user groups
+1. Civil servants across government who have ideas to submit
+2. GSA leadership and oversight bodies 
+3. Civil servants across government who want to learn about the 10x methodology and apply it at their agency
+
 
 ## Road map 
 _as of Feb. 13, 2018_
