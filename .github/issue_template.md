@@ -13,3 +13,4 @@
 - [ ] translate into code
 - [ ] testing
 - [ ] push to live site
+- [ ] rapid validation / usability testing
