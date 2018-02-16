@@ -18,7 +18,7 @@
 
 ## Website goal
 
-> The 10x website will provide civil servants across government the information they need to apply for funding and guidance to explore their ideas to solve government problems. It will also provide information and resources to civil servants who want to model something similar within their own agencies, as well as up-to-date financial information for GSA leadership and oversight bodies. 
+The 10x website will provide civil servants across government the information they need to apply for funding and guidance to explore their ideas to solve government problems. It will also provide information and resources to civil servants who want to model something similar within their own agencies, as well as up-to-date financial information for GSA leadership and oversight bodies. 
 
 ## User groups
 1. Civil servants across government who have ideas to submit
