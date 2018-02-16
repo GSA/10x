@@ -1,12 +1,12 @@
 # 10x website Problem Statement and Goals
 
-### [Macro]
+## Macro
 
-**Opportunity:** The US Government employs many capable public servants who observe problems with government technology and are ideally positioned to pursue solutions to these problems. 
+**Opportunity:** The U.S. Government employs many capable public servants who observe problems with government technology and are ideally positioned to pursue solutions to these problems. 
 
 **Problem:** Unfortunately, many of these talented folks are unable to pursue solutions to these problems due to a lack of funding, support, or necessary skills. 
 
-### [Micro] 
+## Micro 
 
 **Opportunity:** The 10x team can offer funding and guidance to creative civil servants who want to solve problems facing the government in technology  spaces.
 
@@ -14,8 +14,7 @@
 
 ## About 10x 
 
-10x is an incremental investment pipeline that lives in GSA’s Technology Transformation Services’ (TTS) Office of Products and Programs (OPP). We fund products and services that possess groundbreaking ideas or technology with the potential for significant
-return on investment. Our approach is based on modern venture capital practices and  is  designed to spend fewer taxpayer dollars while also ensuring that the best products and services get funded.
+10x is an incremental investment pipeline that lives in GSA’s Technology Transformation Services’ (TTS) Office of Products and Programs (OPP). We fund products and services that possess groundbreaking ideas or technology with the potential for significant return on investment. We base our approach on modern venture capital practices. Our methods require spending fewer taxpayer dollars to ensure that only the best ideas get funded.
 
 ## Website goal
 
