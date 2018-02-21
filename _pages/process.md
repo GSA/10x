@@ -1,4 +1,9 @@
-[Home](home.md)
+---
+layout: page
+title: About
+permalink: /process/
+---
+[Home](/)
 
 # How 10x Works
 
@@ -34,7 +39,7 @@ In contrast, 10x attempts to spend the smallest amount of funding necessary at e
 
 ### Where does the money come from?
 
-10x is the management vehicle for the Digital Services Fund, a portion of the Federal Citizen Services Fund designated to support new, good-for-government products and services. 10x invests the money appropriated into this fund into new ideas with the potential for significant impact across the government. 
+10x is the management vehicle for the Digital Services Fund, a portion of the Federal Citizen Services Fund designated to support new, good-for-government products and services. 10x invests the money appropriated into this fund into new ideas with the potential for significant impact across the government.
 
 ## Investment Philosophy
 
