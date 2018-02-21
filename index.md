@@ -17,6 +17,6 @@ Our approach is based on modern venture capital practices and is designed to spe
 
 [**How It Works**](process)
 
-[**Our Projects**](/projects)
+[**Our Projects**](projects)
 
-[**Getting Started**](/getting-started)
+[**Getting Started**](getting-started)
