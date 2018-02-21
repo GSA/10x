@@ -1,12 +1,14 @@
-[Home](home.md)
+---
+layout: page
+title: How 10x Works
+permalink: /process/
+---
 
-# How 10x Works
+[**Funding Model**](process)
 
-[**Funding Model**](process.md)
+[**Investment Philosophy**](process)
 
-[**Investment Philosophy**](process.md)
-
-[**Project Logistics**](process.md)
+[**Project Logistics**](process)
 
 10x is an incremental investment fund inside the federal government, which is a fancy way of saying that we start by giving you a smaller amount of money, with an expectation about what the output of spending that money should be. We use your results from that investment to determine whether or not to give you an additional, larger amount of funding for the next phase of work, a process that can continue through up to four phases.
 
@@ -34,7 +36,7 @@ In contrast, 10x attempts to spend the smallest amount of funding necessary at e
 
 ### Where does the money come from?
 
-10x is the management vehicle for the Digital Services Fund, a portion of the Federal Citizen Services Fund designated to support new, good-for-government products and services. 10x invests the money appropriated into this fund into new ideas with the potential for significant impact across the government. 
+10x is the management vehicle for the Digital Services Fund, a portion of the Federal Citizen Services Fund designated to support new, good-for-government products and services. 10x invests the money appropriated into this fund into new ideas with the potential for significant impact across the government.
 
 ## Investment Philosophy
 

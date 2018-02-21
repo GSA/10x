@@ -1,10 +1,12 @@
-[Home](home.md)
-
-# Getting Started
+---
+layout: page
+title: Getting Started
+permalink: /getting-started/
+---
 
 ## How to submit
 
-To apply to have your project selected for an initial "Investigation," the first stage of the process, we ask that you answer one question: “What problem are you trying to solve?” in no more than two to three sentences. 10x and the TTS Director will vet ideas to determine which projects are the best fit. 
+To apply to have your project selected for an initial "Investigation," the first stage of the process, we ask that you answer one question: “What problem are you trying to solve?” in no more than two to three sentences. 10x and the TTS Director will vet ideas to determine which projects are the best fit.
 
 Ideas are accepted throughout the year, with selections made at the beginning of Q1 and Q3 of every fiscal year.
 
