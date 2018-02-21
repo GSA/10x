@@ -1,12 +1,8 @@
 ---
 layout: page
-title: Projects
+title: Our Projects
 permalink: /projects/
 ---
-
-[Home](/)
-
-# Our Projects
 
 ### Projects
 _Include three projects for now (and link to the word doc that includes the others?)_

@@ -5,11 +5,7 @@
 layout: home
 ---
 
-# 10x
-
-## The Office of Investments in GSA’s Technology Transformation Service (TTS).
-
-# We fund ideas from public servants for products and services that solve problems affecting the experience people have with the government.
+### We fund ideas from public servants for products and services that solve problems affecting the experience people have with the government.
 
 10x invests in products and services that possess groundbreaking ideas or technology with the potential for significant return on investment. We’re aiming for 10 times the value of the initial investment to the federal government or the American public, measured through cost savings, improved efficiencies, or scale of impact.
 
@@ -24,5 +20,3 @@ Our approach is based on modern venture capital practices and is designed to spe
 [**Our Projects**](/projects)
 
 [**Getting Started**](/getting-started)
-
----

@@ -1,17 +1,14 @@
 ---
 layout: page
-title: About
+title: How 10x Works
 permalink: /process/
 ---
-[Home](/)
 
-# How 10x Works
+[**Funding Model**](/process)
 
-[**Funding Model**](process.md)
+[**Investment Philosophy**](/process)
 
-[**Investment Philosophy**](process.md)
-
-[**Project Logistics**](process.md)
+[**Project Logistics**](/process)
 
 10x is an incremental investment fund inside the federal government, which is a fancy way of saying that we start by giving you a smaller amount of money, with an expectation about what the output of spending that money should be. We use your results from that investment to determine whether or not to give you an additional, larger amount of funding for the next phase of work, a process that can continue through up to four phases.
 
