@@ -2,7 +2,7 @@
 
 ## Macro
 
-**Opportunity:** The U.S. Government employs many capable public servants who observe problems with government technology and are ideally positioned to pursue solutions to these problems. 
+**Opportunity:** The U.S. government employs many capable public servants who observe problems with government technology and are ideally positioned to pursue solutions to these problems. 
 
 **Problem:** Unfortunately, many of these talented folks are unable to pursue solutions to these problems due to a lack of funding, support, or necessary skills. 
 
