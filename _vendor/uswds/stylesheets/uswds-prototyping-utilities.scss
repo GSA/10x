@@ -4,13 +4,19 @@
 @import 'lib/bourbon';
 @import 'lib/neat';
 
-// Overrides
+// Project initialization
+@import 'uswds-project-init';
 
 // Functions
 @import 'core/functions';
 
-// Settings (Variables)
+// Core units
 @import 'core/units';
+
+// Project settings
+@import 'uswds-project-settings';
+
+// Default settings
 @import 'core/variables';
 @import 'core/settings';
 

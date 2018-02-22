@@ -18,10 +18,10 @@ var watch         = require('gulp-watch');
 // SETTINGS
 
 // Should we build the prototyping utilities?
-var build-prototyping-utils   = false;
+var build_prototyping_utils   = false;
 
 // Should we build the production utilities?
-var build-production-utils    = false;
+var build_production_utils    = false;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // LOCATIONS
@@ -33,15 +33,16 @@ var build-production-utils    = false;
 const USWDS_SRC         = '_vendor/uswds';
 
 // Project Sass source directory
-const SASS_SRC          = '_sass';
+const PROJECT_SASS_SRC  = '_sass';
 
 // Asset destination
 const ASSETS_DEST       = 'assets/uswds';
 
+// CSS destination
+const CSS_DEST          = 'assets/css';
+
 // Don't modify these ------------------------------------
 const USWDS_SRC_DIR     = path.join(__dirname, ...USWDS_SRC.split('/'));
-const SASS_SRC_DIR      = path.join(__dirname, ...SASS_SRC.split('/'));
-const ASSETS_DEST_DIR   = path.join(__dirname, ...ASSETS_DEST.split('/'));
 // -------------------------------------------------------
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -63,11 +64,11 @@ gulp.task('copy-uswds-assets', () => {
 });
 
 gulp.task('build-prototyping-utilities', function (done) {
-  return gulp.src(`${USWDS_SRC}/stylesheets/**/**`)
+  return gulp.src(`${USWDS_SRC}/stylesheets/uswds-prototyping-utilities.scss`)
     .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: [
-        path.join(USWDS_DIST_DIR, 'scss'),
+        `${PROJECT_SASS_SRC}`,
       ]
     }).on('error', sass.logError))
     .pipe(
@@ -81,16 +82,14 @@ gulp.task('build-prototyping-utilities', function (done) {
         ],
         cascade: false,
       }))
-    .pipe(cssnano({
-      safe: true,
-      // XXX see https://github.com/ben-eb/cssnano/issues/340
-      mergeRules: false,
-    }))
+    .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(rename({
       suffix: '.min',
     }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./themes/digital.gov/static/lib/uswds/css'));
+    .pipe(gulp.dest(`${CSS_DEST}`))
+    .pipe(gzip({ extension: 'zip' }))
+    .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
 gulp.task('build-production-utilities', function (done) {
@@ -121,6 +120,8 @@ gulp.task('build-production-utilities', function (done) {
       suffix: '.min',
     }))
     .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./themes/digital.gov/static/lib/uswds/css'))
+    .pipe(gzip({ extension: 'zip' }))
     .pipe(gulp.dest('./themes/digital.gov/static/lib/uswds/css'));
 });
 
