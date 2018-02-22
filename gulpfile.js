@@ -69,6 +69,7 @@ gulp.task('build-prototyping-utilities', function (done) {
     .pipe(sass({
       includePaths: [
         `${PROJECT_SASS_SRC}`,
+        path.join(USWDS_SRC, 'stylesheets/project'),
       ]
     }).on('error', sass.logError))
     .pipe(
