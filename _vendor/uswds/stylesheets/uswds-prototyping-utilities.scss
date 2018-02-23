@@ -5,6 +5,7 @@
 @import 'lib/neat';
 
 // Project initialization
+// Needs to load before functions
 @import 'uswds-project-init';
 
 // Functions
@@ -14,6 +15,7 @@
 @import 'core/units';
 
 // Project settings
+// Needs to load before core vars and settings
 @import 'uswds-project-settings';
 
 // Default settings
