@@ -1,65 +1,46 @@
-/* stylelint-disable at-rule-empty-line-before */
-@include font-face(
-  'Source Sans Pro',
-  '#{$font-path}/sourcesanspro-light-webfont',
-  300,
-  normal,
-  $file-formats: eot woff2 woff ttf
-);
+/* stylelint-disable */
+@mixin render-font-face($this-font-face) {
+  @if $this-font-face {
+    $this-font-system: map-get($this-font-face, system-font);
 
-@include font-face(
-  'Source Sans Pro',
-  '#{$font-path}/sourcesanspro-regular-webfont',
-  400,
-  normal,
-  $file-formats: eot woff2 woff ttf
-);
+    @if $this-font-system == false {
+      $font-name: map-get($this-font-face, name);
+      $roman: map-get($this-font-face, roman);
+      $italic: map-get($this-font-face, italic);
 
-@include font-face(
-  'Source Sans Pro',
-  '#{$font-path}/sourcesanspro-italic-webfont',
-  400,
-  italic,
-  $file-formats: eot woff2 woff ttf
-);
+      @if $roman {
+        @each $weight, $filename in $roman {
+          @if $filename {
+            @include font-face(
+              '#{$font-name}',
+              '#{$font-path}/#{$filename}',
+              #{$weight},
+              normal,
+              $file-formats: eot woff2 woff ttf
+            );
+          }
+        }
+      }
 
-@include font-face(
-  'Source Sans Pro',
-  '#{$font-path}/sourcesanspro-bold-webfont',
-  700,
-  normal,
-  $file-formats: eot woff2 woff ttf
-);
+      @if $italic {
+        @each $weight, $filename in $roman {
+          @if $filename {
+            @include font-face(
+              '#{$font-name}',
+              '#{$font-path}/#{$filename}',
+              #{$weight},
+              italic,
+              $file-formats: eot woff2 woff ttf
+            );
+          }
+        }
+      }
+    }
+  }
+}
 
-@include font-face(
-  'Merriweather',
-  '#{$font-path}/merriweather-light-webfont',
-  300,
-  normal,
-  $file-formats: eot woff2 woff ttf
-);
+@include render-font-face($s-font-sans);
+@include render-font-face($s-font-serif);
+@include render-font-face($s-font-mono);
 
-@include font-face(
-  'Merriweather',
-  '#{$font-path}/merriweather-regular-webfont',
-  400,
-  normal,
-  $file-formats: eot woff2 woff ttf
-);
-
-@include font-face(
-  'Merriweather',
-  '#{$font-path}/merriweather-italic-webfont',
-  400,
-  italic,
-  $file-formats: eot woff2 woff ttf
-);
-
-@include font-face(
-  'Merriweather',
-  '#{$font-path}/merriweather-bold-webfont',
-  700,
-  normal,
-  $file-formats: eot woff2 woff ttf
-);
 /* stylelint-enable */
