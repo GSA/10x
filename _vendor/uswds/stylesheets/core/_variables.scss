@@ -159,6 +159,10 @@ $spacing-large: 3rem;
 
 // Calculated type sizes
 
+$font-stack-sans:   map-get($s-font-sans, name), map-get($s-font-sans, stack);
+$font-stack-serif:  map-get($s-font-serif, name), map-get($s-font-serif, stack);
+$font-stack-mono:  map-get($s-font-mono, name), map-get($s-font-mono, stack);
+
 $u-sans-cap-height:        map-get($s-font-sans, 500px-cap-height);
 $u-serif-cap-height:       map-get($s-font-serif, 500px-cap-height);
 $u-mono-cap-height:        map-get($s-font-mono, 500px-cap-height);

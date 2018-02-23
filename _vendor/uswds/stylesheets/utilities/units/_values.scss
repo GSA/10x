@@ -472,7 +472,7 @@ $values-units: (
       content: $u-mono-1,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-2: (
@@ -481,7 +481,7 @@ $values-units: (
       content: $u-mono-2,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-3: (
@@ -490,7 +490,7 @@ $values-units: (
       content: $u-mono-3,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-4: (
@@ -499,7 +499,7 @@ $values-units: (
       content: $u-mono-4,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-5: (
@@ -508,7 +508,7 @@ $values-units: (
       content: $u-mono-5,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-6: (
@@ -517,7 +517,7 @@ $values-units: (
       content: $u-mono-6,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-7: (
@@ -526,7 +526,7 @@ $values-units: (
       content: $u-mono-7,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-8: (
@@ -535,7 +535,7 @@ $values-units: (
       content: $u-mono-8,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-9: (
@@ -544,7 +544,7 @@ $values-units: (
       content: $u-mono-9,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-10: (
@@ -553,7 +553,7 @@ $values-units: (
       content: $u-mono-10,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-11: (
@@ -562,7 +562,7 @@ $values-units: (
       content: $u-mono-11,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-12: (
@@ -571,7 +571,7 @@ $values-units: (
       content: $u-mono-12,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-13: (
@@ -580,7 +580,7 @@ $values-units: (
       content: $u-mono-13,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-14: (
@@ -589,7 +589,7 @@ $values-units: (
       content: $u-mono-14,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-15: (
@@ -598,7 +598,7 @@ $values-units: (
       content: $u-mono-15,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-16: (
@@ -607,7 +607,7 @@ $values-units: (
       content: $u-mono-16,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-17: (
@@ -616,7 +616,7 @@ $values-units: (
       content: $u-mono-17,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-18: (
@@ -625,7 +625,7 @@ $values-units: (
       content: $u-mono-18,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-19: (
@@ -634,7 +634,7 @@ $values-units: (
       content: $u-mono-19,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     mono-20: (
@@ -643,7 +643,7 @@ $values-units: (
       content: $u-mono-20,
       extend: (
         property: 'font-family',
-        value: $font-mono,
+        value: $font-stack-mono,
       ),
     ),
     sans-1: (
@@ -652,7 +652,7 @@ $values-units: (
       content: $u-sans-1,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-2: (
@@ -661,7 +661,7 @@ $values-units: (
       content: $u-sans-2,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-3: (
@@ -670,7 +670,7 @@ $values-units: (
       content: $u-sans-3,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-4: (
@@ -679,7 +679,7 @@ $values-units: (
       content: $u-sans-4,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-5: (
@@ -688,7 +688,7 @@ $values-units: (
       content: $u-sans-5,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-6: (
@@ -697,7 +697,7 @@ $values-units: (
       content: $u-sans-6,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-7: (
@@ -706,7 +706,7 @@ $values-units: (
       content: $u-sans-7,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-8: (
@@ -715,7 +715,7 @@ $values-units: (
       content: $u-sans-8,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-9: (
@@ -724,7 +724,7 @@ $values-units: (
       content: $u-sans-9,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-10: (
@@ -733,7 +733,7 @@ $values-units: (
       content: $u-sans-10,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-11: (
@@ -742,7 +742,7 @@ $values-units: (
       content: $u-sans-11,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-12: (
@@ -751,7 +751,7 @@ $values-units: (
       content: $u-sans-12,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-13: (
@@ -760,7 +760,7 @@ $values-units: (
       content: $u-sans-13,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-14: (
@@ -769,7 +769,7 @@ $values-units: (
       content: $u-sans-14,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-15: (
@@ -778,7 +778,7 @@ $values-units: (
       content: $u-sans-15,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-16: (
@@ -787,7 +787,7 @@ $values-units: (
       content: $u-sans-16,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-17: (
@@ -796,7 +796,7 @@ $values-units: (
       content: $u-sans-17,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-18: (
@@ -805,7 +805,7 @@ $values-units: (
       content: $u-sans-18,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-19: (
@@ -814,7 +814,7 @@ $values-units: (
       content: $u-sans-19,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     sans-20: (
@@ -823,7 +823,7 @@ $values-units: (
       content: $u-sans-20,
       extend: (
         property: 'font-family',
-        value: $font-sans,
+        value: $font-stack-sans,
       ),
     ),
     serif-1: (
@@ -832,7 +832,7 @@ $values-units: (
       content: $u-serif-1,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-2: (
@@ -841,7 +841,7 @@ $values-units: (
       content: $u-serif-2,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-3: (
@@ -850,7 +850,7 @@ $values-units: (
       content: $u-serif-3,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-4: (
@@ -859,7 +859,7 @@ $values-units: (
       content: $u-serif-4,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-5: (
@@ -868,7 +868,7 @@ $values-units: (
       content: $u-serif-5,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-6: (
@@ -877,7 +877,7 @@ $values-units: (
       content: $u-serif-6,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-7: (
@@ -886,7 +886,7 @@ $values-units: (
       content: $u-serif-7,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-8: (
@@ -895,7 +895,7 @@ $values-units: (
       content: $u-serif-8,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-9: (
@@ -904,7 +904,7 @@ $values-units: (
       content: $u-serif-9,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-10: (
@@ -913,7 +913,7 @@ $values-units: (
       content: $u-serif-10,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-11: (
@@ -922,7 +922,7 @@ $values-units: (
       content: $u-serif-11,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-12: (
@@ -931,7 +931,7 @@ $values-units: (
       content: $u-serif-12,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-13: (
@@ -940,7 +940,7 @@ $values-units: (
       content: $u-serif-13,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-14: (
@@ -949,7 +949,7 @@ $values-units: (
       content: $u-serif-14,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-15: (
@@ -958,7 +958,7 @@ $values-units: (
       content: $u-serif-15,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-16: (
@@ -967,7 +967,7 @@ $values-units: (
       content: $u-serif-16,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-17: (
@@ -976,7 +976,7 @@ $values-units: (
       content: $u-serif-17,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-18: (
@@ -985,7 +985,7 @@ $values-units: (
       content: $u-serif-18,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-19: (
@@ -994,7 +994,7 @@ $values-units: (
       content: $u-serif-19,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
     serif-20: (
@@ -1003,7 +1003,7 @@ $values-units: (
       content: $u-serif-20,
       extend: (
         property: 'font-family',
-        value: $font-serif,
+        value: $font-stack-serif,
       ),
     ),
   ),

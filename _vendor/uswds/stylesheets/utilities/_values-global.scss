@@ -53,9 +53,9 @@ $values-global: (
     'vi': ':visited',
   ),
   typefaces: (
-    // 'mono': ($font-mono, isReadable),
-    'sans': ($font-sans, isReadable),
-    'serif': ($font-serif, isReadable),
+    'mono': ($font-stack-mono, isReadable),
+    'sans': ($font-stack-sans, isReadable),
+    'serif': ($font-stack-serif, isReadable),
   ),
   zero-none: (
     '0': none,
