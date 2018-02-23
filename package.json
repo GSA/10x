@@ -5,7 +5,8 @@
   "scripts": {
     "build-production-utilities": "gulp build-production-utilities",
     "build-prototyping-utilities": "gulp build-prototyping-utilities",
-    "build-all-utilities": "gulp build-production-utilities && gulp build-prototyping-utilities"
+    "build-all-utilities": "gulp build-production-utilities && gulp build-prototyping-utilities",
+    "assets": "gulp copy-uswds-assets"
   },
   "repository": {
     "type": "git",

@@ -18,9 +18,9 @@
 // Needs to load before core vars and settings
 @import 'uswds-project-settings';
 
-// Default settings
-@import 'core/variables';
+// Default settings and variables
 @import 'core/settings';
+@import 'core/variables';
 
 // Fonts
 @import 'core/fonts';

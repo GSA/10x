@@ -10,73 +10,48 @@ $image-path:  '../uswds/img';
 
 // New custom typefaces
 
-$font-georgia : (
-  name: "Georgia",
-  system-font: true,
-  multiplier: 1,
-);
-
-$font-united : (
-  name: "United Sans Web",
+/*
+$font-new : (
+  name: "Font Display Name",
   system-font: false,
-  multiplier: 1,
+  500px-cap-height: "364px", // height of a 500px `N` in Sketch
   variable-font: false,
   roman: (
-    100: "UnitedSans-Thin",
-    200: "UnitedSans-ExtraLight",
-    300: "UnitedSans-Light",
-    400: "UnitedSans-Regular",
-    500: "UnitedSans-Medium",
-    600: "UnitedSans-SemiBold",
-    700: "UnitedSans-Bold",
-    800: "UnitedSans-ExtraBold",
-    900: "UnitedSans-Heavy",
+    100: "Filename-without-extension", // or null
+    200: "Filename-without-extension", // or null
+    300: "Filename-without-extension", // or null
+    400: "Filename-without-extension", // or null
+    500: "Filename-without-extension", // or null
+    600: "Filename-without-extension", // or null
+    700: "Filename-without-extension", // or null
+    800: "Filename-without-extension", // or null
+    900: "Filename-without-extension", // or null
   ),
   italic: (
-    100: "UnitedSans-ThinItalic",
-    200: "UnitedSans-ExtraLightItalic",
-    300: "UnitedSans-LightItalic",
-    400: "UnitedSans-Italic",
-    500: "UnitedSans-MediumItalic",
-    600: "UnitedSans-SemiBoldItalic",
-    700: "UnitedSans-BoldItalic",
-    800: "UnitedSans-ExtraBoldItalic",
-    900: "UnitedSans-HeavyItalic",
+    100: "Filename-without-extension", // or null
+    200: "Filename-without-extension", // or null
+    300: "Filename-without-extension", // or null
+    400: "Filename-without-extension", // or null
+    500: "Filename-without-extension", // or null
+    600: "Filename-without-extension", // or null
+    700: "Filename-without-extension", // or null
+    800: "Filename-without-extension", // or null
+    900: "Filename-without-extension", // or null
   ),
 );
-
-$font-roboto-mono : (
-  name: "Roboto Mono",
-  system-font: false,
-  multiplier: 1,
-  variable-font: false,
-  roman: (
-    100: "roboto-mono-v5-latin-100",
-    200: null,
-    300: "roboto-mono-v5-latin-300",
-    400: "roboto-mono-v5-latin-regular",
-    500: "roboto-mono-v5-latin-500",
-    600: null,
-    700: "roboto-mono-v5-latin-700",
-    800: null,
-    900: null,
-  ),
-  italic: (
-    100: "roboto-mono-v5-latin-100italic",
-    200: null,
-    300: "roboto-mono-v5-latin-300italic",
-    400: "roboto-mono-v5-latin-italic",
-    500: "roboto-mono-v5-latin-500italic",
-    600: null,
-    700: "roboto-mono-v5-latin-700italic",
-    800: null,
-    900: null,
-  ),
-);
+*/
 
 // Set the sans, serif, and mono faces
+// currently available:
+// $font-system
+// $font-united-sans
+// $font-source-sans-pro
+// $font-helvetica
+// $font-georgia
+// $font-merriweather
+// $font-roboto-mono
 
-$s-font-sans:   $font-united;
+$s-font-sans:   $font-united-sans;
 $s-font-serif:  $font-georgia;
 $s-font-mono:   $font-roboto-mono;
 

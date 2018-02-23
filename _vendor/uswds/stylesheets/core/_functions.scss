@@ -251,7 +251,7 @@
         @each $this-property in $property {
           #{$this-property}: $value;
         }
-        
+
         @if map-has-key($utility, extend) {
           #{map-deep-get($utility, extend, property)}: strunquote(map-deep-get($utility, extend, value));
         }
@@ -538,5 +538,46 @@
     } // end the output conditional
   } // end the utility loop
   // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+}
+
+@mixin render-font-face($this-font-face) {
+  @if $this-font-face {
+    $this-font-system: map-get($this-font-face, system-font);
+
+    @if $this-font-system == false {
+      $font-name: map-get($this-font-face, name);
+      $roman: map-get($this-font-face, roman);
+      $italic: map-get($this-font-face, italic);
+      $dir: map-get($this-font-face, dir);
+
+      @if $roman {
+        @each $weight, $filename in $roman {
+          @if $filename {
+            @include font-face(
+              '#{$font-name}',
+              '#{$font-path}/#{$dir}/#{$filename}',
+              #{$weight},
+              normal,
+              $file-formats: eot woff2 woff ttf
+            );
+          }
+        }
+      }
+
+      @if $italic {
+        @each $weight, $filename in $roman {
+          @if $filename {
+            @include font-face(
+              '#{$font-name}',
+              '#{$font-path}/#{$dir}/#{$filename}',
+              #{$weight},
+              italic,
+              $file-formats: eot woff2 woff ttf
+            );
+          }
+        }
+      }
+    }
+  }
 }
 /* stylelint-enable */
