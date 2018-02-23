@@ -89,16 +89,17 @@ gulp.task('build-prototyping-utilities', function (done) {
     }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(`${CSS_DEST}`))
-    .pipe(gzip({ extension: 'zip' }))
+    .pipe(gzip({ extension: 'gz' }))
     .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
 gulp.task('build-production-utilities', function (done) {
-  return gulp.src(`${USWDS_SRC}/stylesheets/**/**`)
+  return gulp.src(`${USWDS_SRC}/stylesheets/uswds-production-utilities.scss`)
     .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: [
-        path.join(USWDS_DIST_DIR, 'scss'),
+        `${PROJECT_SASS_SRC}`,
+        path.join(USWDS_SRC, 'stylesheets/project'),
       ]
     }).on('error', sass.logError))
     .pipe(
@@ -112,19 +113,16 @@ gulp.task('build-production-utilities', function (done) {
         ],
         cascade: false,
       }))
-    .pipe(cssnano({
-      safe: true,
-      // XXX see https://github.com/ben-eb/cssnano/issues/340
-      mergeRules: false,
-    }))
+    .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(rename({
       suffix: '.min',
     }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./themes/digital.gov/static/lib/uswds/css'))
-    .pipe(gzip({ extension: 'zip' }))
-    .pipe(gulp.dest('./themes/digital.gov/static/lib/uswds/css'));
+    .pipe(gulp.dest(`${CSS_DEST}`))
+    .pipe(gzip({ extension: 'gz' }))
+    .pipe(gulp.dest(`${CSS_DEST}`));
 });
+
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Website for The Office of Investments in GSA’s Technology Transformation Service (TTS)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-production-utilities": "gulp build-production-utilities",
+    "build-prototyping-utilities": "gulp build-prototyping-utilities",
+    "build-all-utilities": "gulp build-production-utilities && gulp build-prototyping-utilities"
   },
   "repository": {
     "type": "git",
