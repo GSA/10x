@@ -169,6 +169,16 @@
 }
 
 // ------------------------------------------------------------
+// px-to-base-em()
+// converts a value in px to a value in em
+
+@function px-to-base-em($pixels) {
+  $px-to-base-em: strip-unit($pixels) / strip-unit($font-size-base) * 1em;
+
+  @return $px-to-base-em;
+}
+
+// ------------------------------------------------------------
 // type-scale()
 // regularizes a specific face's optical size to a normal target
 

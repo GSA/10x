@@ -3,9 +3,18 @@ $values-global: (
     'auto': ('auto', isReadable),
   ),
   breakpoints: (
-    'sm': ($small-screen, isReadable),
-    'md': ($medium-screen, isReadable),
-    'lg': ($large-screen, isReadable),
+    'xs': (px-to-base-em($s-xsmall-screen), isReadable),
+    'sm': (px-to-base-em($s-small-screen), isReadable),
+    'md': (px-to-base-em($s-medium-screen), isReadable),
+    'lg': (px-to-base-em($s-large-screen), isReadable),
+    'xl': (px-to-base-em($s-xlarge-screen), isReadable),
+  ),
+  breakpoints-px: (
+    'xs': ($s-xsmall-screen, isReadable),
+    'sm': ($s-small-screen, isReadable),
+    'md': ($s-medium-screen, isReadable),
+    'lg': ($s-large-screen, isReadable),
+    'xl': ($s-xlarge-screen, isReadable),
   ),
   flex: (
     'f1': 1 0 0,

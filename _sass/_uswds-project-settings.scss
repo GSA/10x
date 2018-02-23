@@ -1,6 +1,18 @@
 // PROJECT SETTINGS
 
 // ---------------------------------------------
+// BREAKPOINTS
+
+// These will be converted to em values based on the
+// value of $font-size-base
+
+$s-xsmall-screen:   400px;
+$s-small-screen:    600px;
+$s-medium-screen:   800px;
+$s-large-screen:    1000px;
+$s-xlarge-screen:   1200px;
+
+// ---------------------------------------------
 // FONTS
 
 // Relative font and image file paths
