@@ -8,7 +8,7 @@
     "build-all-utilities": "gulp build-production-utilities && gulp build-prototyping-utilities",
     "assets": "gulp copy-uswds-assets",
     "subset": "gulp subset",
-    "federalist": "gulp subset && jekyll build JEKYLL_ENV=production"
+    "federalist": "jekyll build JEKYLL_ENV=production && gulp subset"
   },
   "repository": {
     "type": "git",

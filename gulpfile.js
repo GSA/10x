@@ -134,6 +134,7 @@ gulp.task('subset', function() {
       .pipe(cleanCSS({ compatibility: 'ie8' }))
       .pipe(rename('uswds.app.css'))
       .pipe(gulp.dest(`${CSS_DEST}`))
+      .pipe(gulp.dest(`${BUILD_DEST}/assets/css`))
       .pipe(size())
       .pipe(gzip({ extension: 'gz' }))
       .pipe(gulp.dest(`${CSS_DEST}`))
