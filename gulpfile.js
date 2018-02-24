@@ -41,6 +41,9 @@ const ASSETS_DEST       = 'assets/uswds';
 // CSS destination
 const CSS_DEST          = 'assets/css';
 
+// Build destination
+const BUILD_DEST          = '_site';
+
 // Don't modify these ------------------------------------
 const USWDS_SRC_DIR     = path.join(__dirname, ...USWDS_SRC.split('/'));
 // -------------------------------------------------------
@@ -123,6 +126,19 @@ gulp.task('build-production-utilities', function (done) {
     .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
+gulp.task('subset', function() {
+    return gulp.src(`${CSS_DEST}/uswds-prototyping-utilities.min.css`)
+      .pipe(uncss({
+        html: [path.join(BUILD_DEST, '/**/*.html')]
+      }))
+      .pipe(cleanCSS({ compatibility: 'ie8' }))
+      .pipe(rename('uswds.app.css'))
+      .pipe(gulp.dest(`${CSS_DEST}`))
+      .pipe(size())
+      .pipe(gzip({ extension: 'gz' }))
+      .pipe(gulp.dest(`${CSS_DEST}`))
+      .pipe(size())
+});
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
