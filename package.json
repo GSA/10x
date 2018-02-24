@@ -7,8 +7,7 @@
     "build-prototyping-utilities": "gulp build-prototyping-utilities",
     "build-all-utilities": "gulp build-production-utilities && gulp build-prototyping-utilities",
     "assets": "gulp copy-uswds-assets",
-    "subset": "gulp subset",
-    "federalist": "bundle exec jekyll build JEKYLL_ENV=production && gulp subset"
+    "subset": "gulp subset"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,7 @@
     "url": "https://github.com/GSA/10x/issues"
   },
   "homepage": "https://github.com/GSA/10x#readme",
-  "dependencies": {
+  "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-clean-css": "^3.9.2",

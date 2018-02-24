@@ -42,7 +42,10 @@ const ASSETS_DEST       = 'assets/uswds';
 const CSS_DEST          = 'assets/css';
 
 // Build destination
-const BUILD_DEST          = '_site';
+const BUILD_DEST        = '_site';
+
+// Include destination
+const INC_DEST          = '_includes';
 
 // Don't modify these ------------------------------------
 const USWDS_SRC_DIR     = path.join(__dirname, ...USWDS_SRC.split('/'));
@@ -134,7 +137,7 @@ gulp.task('subset', function() {
       .pipe(cleanCSS({ compatibility: 'ie8' }))
       .pipe(rename('uswds.app.css'))
       .pipe(gulp.dest(`${CSS_DEST}`))
-      .pipe(gulp.dest(`${BUILD_DEST}/assets/css`))
+      .pipe(gulp.dest(`${INC_DEST}`))
       .pipe(size())
       .pipe(gzip({ extension: 'gz' }))
       .pipe(gulp.dest(`${CSS_DEST}`))
