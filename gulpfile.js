@@ -7,6 +7,7 @@ var gulpif        = require('gulp-if');
 var gzip          = require('gulp-gzip');
 var lazypipe      = require('lazypipe');
 var path          = require('path');
+var purge         = require('gulp-css-purge');
 var rename        = require("gulp-rename");
 var sass          = require("gulp-sass");
 var size          = require('gulp-size');
@@ -75,15 +76,12 @@ var buildFontCSS = lazypipe()
         ]
       }).on('error', sass.logError);
     })
-    .pipe(cleanCSS, {
-      compatibility: 'ie8'
-    });
+    .pipe(cleanCSS);
 
 var fontCSS = buildFontCSS
     .pipe(gulp.dest, `${CSS_DEST}`);
 
 var compileCSS = lazypipe()
-    .pipe(sourcemaps.init)
     .pipe(function () {
       return sass({
         includePaths: [
@@ -94,24 +92,17 @@ var compileCSS = lazypipe()
     })
     .pipe(autoprefixer, {
       browsers: [
-        '> 1%',
+        '> 3%',
         'Last 2 versions',
-        'IE 11',
-        'IE 10',
-        'IE 9',
       ],
       cascade: false,
-    });
-
-var cleanCSS = lazypipe()
-    .pipe(cleanCSS, {
-      compatibility: 'ie8'
     })
+    .pipe(combineMq, { beautify: true });
+
+var minifyCSS = lazypipe()
+    .pipe(cleanCSS)
     .pipe(rename, {
       suffix: '.min'
-    })
-    .pipe(function () {
-      return sourcemaps.write();
     });
 
 var concatProduction = lazypipe()
@@ -119,6 +110,9 @@ var concatProduction = lazypipe()
 
 var concatPrototyping = lazypipe()
     .pipe(concat, 'uswds-prototyping-utilities.css');
+
+var concatMain = lazypipe()
+    .pipe(concat, 'uswds.css');
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -133,36 +127,58 @@ gulp.task('build-prototyping-utilities', function (done) {
   return gulp.src([`${USWDS_SRC}/stylesheets/uswds-fonts.scss`, `${USWDS_SRC}/stylesheets/uswds-prototyping-utilities.scss`])
     .pipe(compileCSS())
     .pipe(gulpif(CONCAT_FONTS, concatPrototyping()))
-    .pipe(cleanCSS())
+    .pipe(minifyCSS())
     .pipe(gulp.dest(`${CSS_DEST}`))
     .pipe(gzip({ extension: 'gz' }))
     .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
 gulp.task('build-production-utilities', function (done) {
-  var thisCompiled = "uswds-gotcha.css";
   return gulp.src([`${USWDS_SRC}/stylesheets/uswds-fonts.scss`, `${USWDS_SRC}/stylesheets/uswds-production-utilities.scss`])
     .pipe(compileCSS())
     .pipe(gulpif(CONCAT_FONTS, concatProduction()))
-    .pipe(cleanCSS())
+    .pipe(minifyCSS())
     .pipe(gulp.dest(`${CSS_DEST}`))
     .pipe(gzip({ extension: 'gz' }))
     .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
-gulp.task('subset', function() {
-    return gulp.src(`${CSS_DEST}/uswds-prototyping-utilities.min.css`)
+gulp.task('build-uswds', function (done) {
+  return gulp.src([`${USWDS_SRC}/stylesheets/uswds-fonts.scss`, `${USWDS_SRC}/stylesheets/uswds.scss`])
+    .pipe(compileCSS())
+    .pipe(gulpif(CONCAT_FONTS, concatMain()))
+    .pipe(minifyCSS())
+    .pipe(gulp.dest(`${CSS_DEST}`))
+    .pipe(gzip({ extension: 'gz' }))
+    .pipe(gulp.dest(`${CSS_DEST}`));
+});
+
+gulp.task('concat-uswds', function (done) {
+  return gulp.src([
+      `${CSS_DEST}/uswds-production-utilities.min.css`,
+      `${CSS_DEST}/uswds-prototyping-utilities.min.css`,
+      `${CSS_DEST}/uswds.css`
+    ])
+    .pipe(concat('uswds-all.css'))
+    .pipe(minifyCSS())
+    .pipe(gulp.dest(`${CSS_DEST}`))
+    .pipe(gzip({ extension: 'gz' }))
+    .pipe(gulp.dest(`${CSS_DEST}`));
+});
+
+gulp.task('subset', ["concat-uswds"], function() {
+    return gulp.src(`${CSS_DEST}/uswds-all.min.css`)
       .pipe(uncss({
         html: [path.join(BUILD_DEST, '/**/*.html')]
       }))
-      .pipe(cleanCSS({ compatibility: 'ie8' }))
+      .pipe(purge())
       .pipe(rename('uswds.app.css'))
       .pipe(gulp.dest(`${CSS_DEST}`))
       .pipe(gulp.dest(`${INC_DEST}`))
       .pipe(size())
       .pipe(gzip({ extension: 'gz' }))
       .pipe(gulp.dest(`${CSS_DEST}`))
-      .pipe(size())
+      .pipe(size());
 });
 
 
