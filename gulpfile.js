@@ -1,6 +1,7 @@
 var autoprefixer  = require("gulp-autoprefixer");
 var cleanCSS      = require('gulp-clean-css');
 var combineMq     = require('gulp-combine-mq');
+var concat        = require('gulp-concat');
 var gulp          = require("gulp");
 var gulpif        = require('gulp-if');
 var gzip          = require('gulp-gzip');
@@ -17,11 +18,14 @@ var watch         = require('gulp-watch');
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // SETTINGS
 
+// Should we build a font file separate from the main css?
+var CONCAT_FONTS              = false;
+
 // Should we build the prototyping utilities?
-var build_prototyping_utils   = false;
+var build_production_utils    = true;
 
 // Should we build the production utilities?
-var build_production_utils    = false;
+var build_production_utils    = true;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // LOCATIONS
@@ -52,14 +56,70 @@ const USWDS_SRC_DIR     = path.join(__dirname, ...USWDS_SRC.split('/'));
 // -------------------------------------------------------
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// CONDITIONAL PIPES
+// REUSABLE PIPES
 
+// Conditional pipe
 // var conditionalPipe = lazypipe()
 //   .pipe(jshint)
 //   .pipe(jshint.reporter)
 //   .pipe(jshint.reporter, 'fail');
 
 // use:  .pipe(gulpif(CONDITION_VAR, conditionalPipe()))
+
+var buildFontCSS = lazypipe()
+    .pipe(function () {
+      return sass({
+        includePaths: [
+          `${PROJECT_SASS_SRC}`,
+          path.join(USWDS_SRC, 'stylesheets/project'),
+        ]
+      }).on('error', sass.logError);
+    })
+    .pipe(cleanCSS, {
+      compatibility: 'ie8'
+    });
+
+var fontCSS = buildFontCSS
+    .pipe(gulp.dest, `${CSS_DEST}`);
+
+var compileCSS = lazypipe()
+    .pipe(sourcemaps.init)
+    .pipe(function () {
+      return sass({
+        includePaths: [
+          `${PROJECT_SASS_SRC}`,
+          path.join(USWDS_SRC, 'stylesheets/project'),
+        ]
+      }).on('error', sass.logError);
+    })
+    .pipe(autoprefixer, {
+      browsers: [
+        '> 1%',
+        'Last 2 versions',
+        'IE 11',
+        'IE 10',
+        'IE 9',
+      ],
+      cascade: false,
+    });
+
+var cleanCSS = lazypipe()
+    .pipe(cleanCSS, {
+      compatibility: 'ie8'
+    })
+    .pipe(rename, {
+      suffix: '.min'
+    })
+    .pipe(function () {
+      return sourcemaps.write();
+    });
+
+var concatProduction = lazypipe()
+    .pipe(concat, 'uswds-production-utilities.css');
+
+var concatPrototyping = lazypipe()
+    .pipe(concat, 'uswds-prototyping-utilities.css');
+
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // BUILD USWDS STYLES
@@ -70,60 +130,21 @@ gulp.task('copy-uswds-assets', () => {
 });
 
 gulp.task('build-prototyping-utilities', function (done) {
-  return gulp.src(`${USWDS_SRC}/stylesheets/uswds-prototyping-utilities.scss`)
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-      includePaths: [
-        `${PROJECT_SASS_SRC}`,
-        path.join(USWDS_SRC, 'stylesheets/project'),
-      ]
-    }).on('error', sass.logError))
-    .pipe(
-      autoprefixer({
-        browsers: [
-          '> 1%',
-          'Last 2 versions',
-          'IE 11',
-          'IE 10',
-          'IE 9',
-        ],
-        cascade: false,
-      }))
-    .pipe(cleanCSS({ compatibility: 'ie8' }))
-    .pipe(rename({
-      suffix: '.min',
-    }))
-    .pipe(sourcemaps.write())
+  return gulp.src([`${USWDS_SRC}/stylesheets/uswds-fonts.scss`, `${USWDS_SRC}/stylesheets/uswds-prototyping-utilities.scss`])
+    .pipe(compileCSS())
+    .pipe(gulpif(CONCAT_FONTS, concatPrototyping()))
+    .pipe(cleanCSS())
     .pipe(gulp.dest(`${CSS_DEST}`))
     .pipe(gzip({ extension: 'gz' }))
     .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
 gulp.task('build-production-utilities', function (done) {
-  return gulp.src(`${USWDS_SRC}/stylesheets/uswds-production-utilities.scss`)
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-      includePaths: [
-        `${PROJECT_SASS_SRC}`,
-        path.join(USWDS_SRC, 'stylesheets/project'),
-      ]
-    }).on('error', sass.logError))
-    .pipe(
-      autoprefixer({
-        browsers: [
-          '> 1%',
-          'Last 2 versions',
-          'IE 11',
-          'IE 10',
-          'IE 9',
-        ],
-        cascade: false,
-      }))
-    .pipe(cleanCSS({ compatibility: 'ie8' }))
-    .pipe(rename({
-      suffix: '.min',
-    }))
-    .pipe(sourcemaps.write())
+  var thisCompiled = "uswds-gotcha.css";
+  return gulp.src([`${USWDS_SRC}/stylesheets/uswds-fonts.scss`, `${USWDS_SRC}/stylesheets/uswds-production-utilities.scss`])
+    .pipe(compileCSS())
+    .pipe(gulpif(CONCAT_FONTS, concatProduction()))
+    .pipe(cleanCSS())
     .pipe(gulp.dest(`${CSS_DEST}`))
     .pipe(gzip({ extension: 'gz' }))
     .pipe(gulp.dest(`${CSS_DEST}`));

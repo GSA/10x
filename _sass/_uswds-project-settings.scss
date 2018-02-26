@@ -20,6 +20,10 @@ $s-xlarge-screen:   1200px;
 $font-path:   '../uswds/fonts';
 $image-path:  '../uswds/img';
 
+// Output fonts in a separate CSS files
+
+$separate-font-css: true;   
+
 // New custom typefaces
 
 /*
