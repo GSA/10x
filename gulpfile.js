@@ -171,7 +171,7 @@ gulp.task('subset', ["concat-uswds"], function() {
       .pipe(uncss({
         html: [path.join(BUILD_DEST, '/**/*.html')]
       }))
-      .pipe(purge())
+//      .pipe(purge())
       .pipe(rename('uswds.app.css'))
       .pipe(gulp.dest(`${CSS_DEST}`))
       .pipe(gulp.dest(`${INC_DEST}`))

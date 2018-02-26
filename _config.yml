@@ -40,5 +40,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - "*.gz"
 
 use_subset: true
