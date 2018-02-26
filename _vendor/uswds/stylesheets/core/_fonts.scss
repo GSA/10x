@@ -1,4 +1,13 @@
 /* stylelint-disable */
+
+$font-weights: (
+  $s-fw-xlight,
+  $s-fw-light,
+  $s-fw-normal,
+  $s-fw-bold,
+  $s-fw-xbold
+);
+
 @include render-font-face($s-font-sans);
 @include render-font-face($s-font-serif);
 @include render-font-face($s-font-mono);

@@ -551,6 +551,10 @@
 }
 
 @mixin render-font-face($this-font-face) {
+  $these-weights: $font-weights;
+  @if $s-output-all-weights or $s-is-prototyping-mode {
+    $these-weights: (100,200,300,400,500,600,700,800,900);
+  }
   @if $this-font-face {
     $this-font-system: map-get($this-font-face, system-font);
 
@@ -562,28 +566,32 @@
 
       @if $roman {
         @each $weight, $filename in $roman {
-          @if $filename {
-            @include font-face(
-              '#{$font-name}',
-              '#{$font-path}/#{$dir}/#{$filename}',
-              #{$weight},
-              normal,
-              $file-formats: eot woff2 woff ttf
-            );
+          @each $outputweight in $these-weights {
+            @if $outputweight == $weight and $filename {
+                @include font-face(
+                  '#{$font-name}',
+                  '#{$font-path}/#{$dir}/#{$filename}',
+                  #{$weight},
+                  normal,
+                  $file-formats: eot woff2 woff ttf
+                );
+            }
           }
         }
       }
 
       @if $italic {
         @each $weight, $filename in $roman {
-          @if $filename {
-            @include font-face(
-              '#{$font-name}',
-              '#{$font-path}/#{$dir}/#{$filename}',
-              #{$weight},
-              italic,
-              $file-formats: eot woff2 woff ttf
-            );
+          @each $outputweight in $these-weights {
+            @if $outputweight == $weight and $filename {
+                @include font-face(
+                  '#{$font-name}',
+                  '#{$font-path}/#{$dir}/#{$filename}',
+                  #{$weight},
+                  normal,
+                  $file-formats: eot woff2 woff ttf
+                );
+            }
           }
         }
       }
