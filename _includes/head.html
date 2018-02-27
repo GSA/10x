@@ -6,6 +6,17 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/img/favicon/apple-touch-icon.png"  | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/favicon/favicon-32x32.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/favicon/favicon-16x16.png" | relative_url }}">
+  <link rel="manifest" href="{{ "/assets/misc/site.webmanifest" | relative_url }}">
+  <link rel="shortcut icon" href="{{ "/assets/img/favicon/favicon.ico" | relative_url }}">
+  <meta name="apple-mobile-web-app-title" content="10x">
+  <meta name="application-name" content="10x">
+  <meta name="msapplication-TileColor" content="#1c1d1f">
+  <meta name="msapplication-config" content="{{ "/assets/misc/browserconfig.xml" | relative_url }}">
+  <meta name="theme-color" content="#ffffff">
+
   <!-- inline css technique https://jakearchibald.com/2016/link-in-body/ -->
   {% if site.optimize_css %}
     <script>
