@@ -1,5 +1,9 @@
-body {
-  font-size: $font-size-base;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-// .usa-content {}
+*:focus {
+  outline: 4px solid $s-color-highlight;
+}
