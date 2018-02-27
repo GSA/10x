@@ -20,13 +20,15 @@ var watch         = require('gulp-watch');
 // SETTINGS
 
 // Should we build a font file separate from the main css?
-var CONCAT_FONTS              = false;
+const CONCAT_FONTS              = false;
 
-// Should we build the prototyping utilities?
-var build_production_utils    = true;
-
-// Should we build the production utilities?
-var build_production_utils    = true;
+// What modules should be in the final app build?
+// Comment out unnedded modules
+var uswds_app = [
+  "build-production-utilities",
+  "build-prototyping-utilities",
+//  "build-uswds"
+];
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // LOCATIONS
@@ -53,7 +55,7 @@ const BUILD_DEST        = '_site';
 const INC_DEST          = '_includes';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// REUSABLE PIPES
+// REUSABLE/LAZY PIPES
 
 // Conditional pipe
 // var conditionalPipe = lazypipe()
@@ -152,26 +154,35 @@ gulp.task('build-uswds', function (done) {
     .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
-gulp.task('concat-uswds', function (done) {
+gulp.task('uswds-app', uswds_app, function (done) {
   return gulp.src([
       `${CSS_DEST}/uswds-production-utilities.min.css`,
       `${CSS_DEST}/uswds-prototyping-utilities.min.css`,
       `${CSS_DEST}/uswds.css`
     ])
-    .pipe(concat('uswds-all.css'))
+    .pipe(concat('uswds-app-all.css'))
     .pipe(minifyCSS())
     .pipe(gulp.dest(`${CSS_DEST}`))
     .pipe(gzip({ extension: 'gz' }))
     .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
-gulp.task('subset', ["concat-uswds"], function() {
-    return gulp.src(`${CSS_DEST}/uswds-all.min.css`)
+gulp.task('uswds-opt', ["uswds-app"], function() {
+    return gulp.src(`${CSS_DEST}/uswds-app-all.min.css`)
       .pipe(uncss({
         html: [path.join(BUILD_DEST, '/**/*.html')]
       }))
-//      .pipe(purge())
-      .pipe(rename('uswds.app.css'))
+      .pipe(rename('uswds-app-opt.css'))
+      .pipe(minifyCSS())
+      .pipe(purge({
+        trim: true,
+        shorten: false,
+        shorten_font: false,
+        format: false,
+        special_convert_rem: false,
+        special_reduce_with_html: false,
+        verbose: false,
+      }))
       .pipe(gulp.dest(`${CSS_DEST}`))
       .pipe(gulp.dest(`${INC_DEST}`))
       .pipe(size())

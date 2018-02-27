@@ -14,15 +14,14 @@
  * loaded.
  */
 
-// spacing is calculated on multiples of a
-// base grid (unitless, but assumed px)
+// spacing is calculated on multiples of a base grid
 
-$grid-base:           8px !default; // unitless, but px
+$grid-base:           8px !default;
 
 // establishes the base type size (16px) for
 // rem calculations
 
-$font-size-base:      10px !default; // unitless, but px
+$font-size-base:      10px !default;
 
 // calculates multiples of the base grid in units of rem
 // spacing($gridMultiple)
