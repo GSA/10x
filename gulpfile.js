@@ -52,10 +52,6 @@ const BUILD_DEST        = '_site';
 // Include destination
 const INC_DEST          = '_includes';
 
-// Don't modify these ------------------------------------
-const USWDS_SRC_DIR     = path.join(__dirname, ...USWDS_SRC.split('/'));
-// -------------------------------------------------------
-
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // REUSABLE PIPES
 
@@ -86,7 +82,7 @@ var compileCSS = lazypipe()
       return sass({
         includePaths: [
           `${PROJECT_SASS_SRC}`,
-          path.join(USWDS_SRC, 'stylesheets/project'),
+          `${USWDS_SRC}/stylesheets/project`,
         ]
       }).on('error', sass.logError);
     })
@@ -124,7 +120,10 @@ gulp.task('copy-uswds-assets', () => {
 });
 
 gulp.task('build-prototyping-utilities', function (done) {
-  return gulp.src([`${USWDS_SRC}/stylesheets/uswds-fonts.scss`, `${USWDS_SRC}/stylesheets/uswds-prototyping-utilities.scss`])
+  return gulp.src([
+      `${USWDS_SRC}/stylesheets/uswds-fonts.scss`,
+      `${USWDS_SRC}/stylesheets/uswds-prototyping-utilities.scss`
+    ])
     .pipe(compileCSS())
     .pipe(gulpif(CONCAT_FONTS, concatPrototyping()))
     .pipe(minifyCSS())
