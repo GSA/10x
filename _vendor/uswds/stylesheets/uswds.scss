@@ -1,28 +1,7 @@
 /*! uswds @version */
 
-// Vendor -------------- //
-@import 'lib/bourbon';
-@import 'lib/neat';
-@import 'lib/normalize';
-
-// Core -------------- //
-
-// Project initialization
-// Needs to load before functions
-@import 'uswds-project-init';
-
-// Functions
-@import 'core/functions';
-
-// Settings (Variables)
-@import 'core/units';
-
-// Project settings
-// Needs to load before core vars and settings
-@import 'uswds-project-settings';
-
-@import 'core/variables';
-@import 'core/settings';
+// Load all the vendor, settings, and variables for a USWDS project
+@import 'required';
 
 // Tools (Mixins)
 @import 'core/mixins/content-size';

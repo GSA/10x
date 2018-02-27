@@ -16,5 +16,9 @@
     font-weight: $s-fw-xlight;
     font-size: $u-sans-10;
     line-height: $u-lh-cap;
+    @include media($s-medium-screen) {
+      font-size: $u-sans-15;
+      line-height: $u-lh-hed;
+    }
   }
 }

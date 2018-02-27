@@ -218,7 +218,7 @@ gulp.task('uswds-opt', ["uswds-app"], function() {
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-gulp.task("watch", function () {
+gulp.task("watch", ['build-custom'], function () {
   gulp.watch(`${PROJECT_SASS_SRC}/_uswds-project-custom.scss`, ['build-custom']);
 })
 

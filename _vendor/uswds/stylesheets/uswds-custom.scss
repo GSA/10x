@@ -1,3 +1,15 @@
 // Load all the vendor, settings, and variables for a USWDS project
 @import 'required';
+
+// Tools (Mixins)
+@import 'core/mixins/content-size';
+@import 'core/mixins/focus';
+@import 'core/mixins/font-smoothing';
+@import 'core/mixins/icon';
+@import 'core/mixins/media-query';
+@import 'core/mixins/screen-reader';
+@import 'core/mixins/sidenav';
+@import 'core/mixins/typography';
+@import 'core/mixins/unstyled-list';
+
 @import 'uswds-project-custom';
