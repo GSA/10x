@@ -20,7 +20,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-use_subset: false
+optimize_css: false
 
 # Build settings
 markdown: kramdown
@@ -35,11 +35,10 @@ include: ["_pages"]
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
+  - node_modules/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
   - "*.gz"
-
-use_subset: true
+  - designs/

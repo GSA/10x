@@ -7,7 +7,7 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <!-- inline css technique https://jakearchibald.com/2016/link-in-body/ -->
-  {% if site.use_subset %}
+  {% if site.optimize_css %}
     <script>
       // https://github.com/filamentgroup/loadCSS
       !function(e){"use strict"
@@ -18,15 +18,15 @@
     </script>
 
     <style>
-    {% include uswds.app.css %}
+    {% include uswds-app-opt.min.css %}
     </style>
 
     <script>
       loadCSS("{{ "/assets/css/uswds-fonts.min.css" | relative_url }}");
     </script>
   {% else %}
-    <link rel="stylesheet" href="{{ "/assets/css/uswds-production-utilities.min.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/uswds-prototyping-utilities.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/uswds-app-all.min.css" | relative_url }}">
   {% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">

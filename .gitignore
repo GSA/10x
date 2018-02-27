@@ -1,4 +1,10 @@
-_site/
+_site/assets
+_site/designs
+_site/**/*.js
+_site/**/*.xml
+_site/**/*.json
+_site/**/*.css
+_site/**/*.md
 .sass-cache/
 .DS_Store
 node_modules/

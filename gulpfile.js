@@ -24,7 +24,7 @@ const CONCAT_FONTS              = false;
 
 // What modules should be in the final app build?
 // Comment out unnedded modules
-var uswds_app = [
+const USWDS_APP = [
   "build-production-utilities",
   "build-prototyping-utilities",
 //  "build-uswds"
@@ -154,7 +154,7 @@ gulp.task('build-uswds', function (done) {
     .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
-gulp.task('uswds-app', uswds_app, function (done) {
+gulp.task('uswds-app', USWDS_APP, function (done) {
   return gulp.src([
       `${CSS_DEST}/uswds-production-utilities.min.css`,
       `${CSS_DEST}/uswds-prototyping-utilities.min.css`,
