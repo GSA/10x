@@ -154,6 +154,16 @@ gulp.task('build-uswds', function (done) {
     .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
+gulp.task('build-custom', function (done) {
+  return gulp.src([`${USWDS_SRC}/stylesheets/uswds-fonts.scss`, `${USWDS_SRC}/stylesheets/uswds-custom.scss`])
+    .pipe(compileCSS())
+    .pipe(gulpif(CONCAT_FONTS, concatMain()))
+    .pipe(minifyCSS())
+    .pipe(gulp.dest(`${CSS_DEST}`))
+    .pipe(gzip({ extension: 'gz' }))
+    .pipe(gulp.dest(`${CSS_DEST}`));
+});
+
 gulp.task('quick-concat', function (done) {
   return gulp.src([
       `${CSS_DEST}/uswds.css`,
@@ -209,7 +219,7 @@ gulp.task('uswds-opt', ["uswds-app"], function() {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 gulp.task("watch", function () {
-  gulp.watch('./themes/digital.gov/src/sass/**/*.scss', ['sass']);
+  gulp.watch(`${PROJECT_SASS_SRC}/_uswds-project-custom.scss`, ['build-custom']);
 })
 
 
