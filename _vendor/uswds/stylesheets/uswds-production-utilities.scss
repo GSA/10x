@@ -1,24 +1,5 @@
-// Vendor -------------- //
-@import 'lib/bourbon';
-@import 'lib/neat';
-
-// Project initialization
-// Needs to load before functions
-@import 'uswds-project-init';
-
-// Functions
-@import 'core/functions';
-
-// Core units
-@import 'core/units';
-
-// Project settings
-// Needs to load before core vars and settings
-@import 'uswds-project-settings';
-
-// Default settings and variables
-@import 'core/settings';
-@import 'core/variables';
+// Load all the vendor, settings, and variables for a USWDS project
+@import 'required';
 
 // Utilities ------------ //
 // 1. Import the global utility values
@@ -27,17 +8,17 @@
 // 2. Import the unit utility values
 @import 'utilities/units/values';
 
-// 3. Import the settings utility values
+// 3. Import the SETTINGS utility values
 @import 'utilities/settings/values';
 
-// 3. Import the settings utility definitions
+// 4. Import the SETTINGS utility definitions
 @import 'utilities/settings/all';
 
-// 4. Package the utilities for build
+// 5. Import the utility packager
 @import 'utilities/package';
 
-// 5. Build the utilities
+// 6. Build the utilities
 @include render-utilities-in($utilities-package);
 
-// Defaults
+// 7. Add the defaults
 @import 'utilities/defaults';

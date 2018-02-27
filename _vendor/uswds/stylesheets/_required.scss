@@ -1,0 +1,21 @@
+// Vendor -------------- //
+@import 'lib/bourbon';
+@import 'lib/neat';
+
+// Project initialization
+// Needs to load before functions
+@import 'uswds-project-init';
+
+// Functions
+@import 'core/functions';
+
+// Core units
+@import 'core/units';
+
+// Project settings
+// Needs to load before core vars and settings
+@import 'uswds-project-settings';
+
+// Default settings and variables
+@import 'core/settings';
+@import 'core/variables';
