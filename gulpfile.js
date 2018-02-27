@@ -166,8 +166,8 @@ gulp.task('build-custom', function (done) {
 
 gulp.task('quick-concat', function (done) {
   return gulp.src([
-      `${CSS_DEST}/uswds.css`,
-      `${CSS_DEST}/uswds-custom.css`,
+      `${CSS_DEST}/uswds.min.css`,
+      `${CSS_DEST}/uswds-custom.min.css`,
       `${CSS_DEST}/uswds-production-utilities.min.css`,
       `${CSS_DEST}/uswds-prototyping-utilities.min.css`
     ])
@@ -180,8 +180,8 @@ gulp.task('quick-concat', function (done) {
 
 gulp.task('uswds-app', USWDS_APP, function (done) {
   return gulp.src([
-      `${CSS_DEST}/uswds.css`,
-      `${CSS_DEST}/uswds-custom.css`,
+      `${CSS_DEST}/uswds.min.css`,
+      `${CSS_DEST}/uswds-custom.min.css`,
       `${CSS_DEST}/uswds-production-utilities.min.css`,
       `${CSS_DEST}/uswds-prototyping-utilities.min.css`
     ])
