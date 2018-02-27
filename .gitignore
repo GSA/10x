@@ -10,3 +10,4 @@ _site/**/*.md
 node_modules/
 *.gz
 npm-debug.log
+.jekyll-metadata
