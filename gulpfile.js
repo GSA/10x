@@ -22,11 +22,12 @@ var watch         = require('gulp-watch');
 const CONCAT_FONTS              = false;
 
 // What modules should be in the final app build?
-// Comment out unnedded modules
+// Comment out unneeded modules
 const USWDS_APP = [
   "build-production-utilities",
   "build-prototyping-utilities",
-//  "build-uswds"
+//  "build-uswds",
+//  "build-uswds-custom",
 ];
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
