@@ -27,7 +27,7 @@ const USWDS_APP = [
   "build-production-utilities",
   "build-prototyping-utilities",
 //  "build-uswds",
-//  "build-uswds-custom",
+  "build-custom",
 ];
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
