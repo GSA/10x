@@ -49,7 +49,7 @@ const ASSETS_DEST       = 'assets/uswds';
 const CSS_DEST          = 'assets/css';
 
 // Build destination
-const BUILD_DEST        = '_site';
+const BUILD_DEST        = '_develop';
 
 // Include destination
 const INC_DEST          = '_includes';
@@ -170,7 +170,7 @@ gulp.task('uswds-app', USWDS_APP, function (done) {
 gulp.task('uswds-opt', ["uswds-app"], function() {
     return gulp.src(`${CSS_DEST}/uswds-app-all.min.css`)
       .pipe(uncss({
-        html: ['_develop/**/*.html']
+        html: [`${BUILD_DEST}/**/*.html`]
       }))
       .pipe(rename('uswds-app-opt.css'))
       .pipe(minifyCSS())
