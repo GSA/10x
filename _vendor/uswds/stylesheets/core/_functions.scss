@@ -581,14 +581,14 @@
       }
 
       @if $italic {
-        @each $weight, $filename in $roman {
+        @each $weight, $filename in $italic {
           @each $outputweight in $these-weights {
             @if $outputweight == $weight and $filename {
                 @include font-face(
                   '#{$font-name}',
                   '#{$font-path}/#{$dir}/#{$filename}',
                   #{$weight},
-                  normal,
+                  italic,
                   $file-formats: eot woff2 woff ttf
                 );
             }
