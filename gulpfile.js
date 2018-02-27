@@ -12,7 +12,6 @@ var rename        = require("gulp-rename");
 var sass          = require("gulp-sass");
 var size          = require('gulp-size');
 var sourcemaps    = require('gulp-sourcemaps');
-var strip         = require('gulp-strip-css-comments');
 var uncss         = require('gulp-uncss');
 var watch         = require('gulp-watch');
 
