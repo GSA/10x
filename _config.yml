@@ -42,3 +42,6 @@ exclude:
   - vendor/ruby/
   - "*.gz"
   - designs/
+  - gulpfile.js
+  - package.json
+  - README.md
