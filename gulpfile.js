@@ -154,11 +154,26 @@ gulp.task('build-uswds', function (done) {
     .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
+gulp.task('quick-concat', function (done) {
+  return gulp.src([
+      `${CSS_DEST}/uswds.css`,
+      `${CSS_DEST}/uswds-custom.css`,
+      `${CSS_DEST}/uswds-production-utilities.min.css`,
+      `${CSS_DEST}/uswds-prototyping-utilities.min.css`
+    ])
+    .pipe(concat('uswds-app-all.css'))
+    .pipe(minifyCSS())
+    .pipe(gulp.dest(`${CSS_DEST}`))
+    .pipe(gzip({ extension: 'gz' }))
+    .pipe(gulp.dest(`${CSS_DEST}`));
+});
+
 gulp.task('uswds-app', USWDS_APP, function (done) {
   return gulp.src([
+      `${CSS_DEST}/uswds.css`,
+      `${CSS_DEST}/uswds-custom.css`,
       `${CSS_DEST}/uswds-production-utilities.min.css`,
-      `${CSS_DEST}/uswds-prototyping-utilities.min.css`,
-      `${CSS_DEST}/uswds.css`
+      `${CSS_DEST}/uswds-prototyping-utilities.min.css`
     ])
     .pipe(concat('uswds-app-all.css'))
     .pipe(minifyCSS())
