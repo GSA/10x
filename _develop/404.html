@@ -11,10 +11,22 @@
 
   <!-- inline css technique https://jakearchibald.com/2016/link-in-body/ -->
   
-    <link rel="stylesheet" href="/assets/css/uswds-fonts.min.css">
-    <link rel="stylesheet" href="/assets/css/uswds-custom.min.css">
-    <link rel="stylesheet" href="/assets/css/uswds-production-utilities.min.css">
-    <link rel="stylesheet" href="/assets/css/uswds-prototyping-utilities.min.css">
+    <script>
+      // https://github.com/filamentgroup/loadCSS
+      !function(e){"use strict"
+      var n=function(n,t,o){function i(e){return f.body?e():void setTimeout(function(){i(e)})}var d,r,a,l,f=e.document,s=f.createElement("link"),u=o||"all"
+      return t?d=t:(r=(f.body||f.getElementsByTagName("head")[0]).childNodes,d=r[r.length-1]),a=f.styleSheets,s.rel="stylesheet",s.href=n,s.media="only x",i(function(){d.parentNode.insertBefore(s,t?d:d.nextSibling)}),l=function(e){for(var n=s.href,t=a.length;t--;)if(a[t].href===n)return e()
+      setTimeout(function(){l(e)})},s.addEventListener&&s.addEventListener("load",function(){this.media=u}),s.onloadcssdefined=l,l(function(){s.media!==u&&(s.media=u)}),s}
+      "undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this)
+    </script>
+
+    <style>
+    html{box-sizing:border-box;-webkit-box-sizing:border-box}*,::after,::before{box-sizing:inherit;-webkit-box-sizing:inherit}.page-content h3{font-weight:200;font-size:1.5rem;line-height:1.35}@media screen and (min-width:800px){.page-content h3{font-size:3rem;line-height:1.1}}body{font-size:16px}.bg-indigo-warm-60v{background-color:#5740d1}.bg-gold-30v{background-color:#e6a100}.bg-red-warm-40v{background-color:#ee601d}.bg-black-cool-90{background-color:#1c1d1f}.bb-red-warm-40v{border-bottom-color:#ee601d}.bb-solid{border-bottom-style:solid}.bb1{border-bottom-width:.5rem}.white{color:#fff}.black-cool-40{color:#8c9196}.sans-2{font-family:"United Sans Web","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:.8125rem}.sans-6{font-family:"United Sans Web","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:1.0625rem}.sans-11{font-family:"United Sans Web","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:1.75rem}.sans-14{font-family:"United Sans Web","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:2.5rem}.fw200{font-weight:200}.fw400{font-weight:400}.fw900{font-weight:900}.h3{height:1.5rem}.h10{height:5rem}.h20{height:10rem}.lh-single{line-height:1}.lh-cap{line-height:1.35}.lh-body-tight{line-height:1.5}.mt1{margin-top:.5rem}.mt2{margin-top:1rem}.mb2{margin-bottom:1rem}.mt20{margin-top:10rem}.mb0{margin-bottom:0}.my0{margin-top:0;margin-bottom:0}.m0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.maxw-md{max-width:800px}.pb1{padding-bottom:.5rem}.px1{padding-left:.5rem;padding-right:.5rem}.pt2{padding-top:1rem}.pt7{padding-top:3.5rem}.pt10{padding-top:5rem}.plain{text-decoration:none}.w20ct{width:20%}.w50ct{width:50%}@media (min-width:50em){.md-sans-13{font-family:"United Sans Web","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:2.25rem}.md-sans-16{font-family:"United Sans Web","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:3.5rem}.md-sans-17{font-family:"United Sans Web","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:4rem}.md-lh-cap{line-height:1.35}.md-mt8{margin-top:4rem}.md-px2{padding-left:1rem;padding-right:1rem}}@media (min-width:62.5em){.lg-sans-8{font-family:"United Sans Web","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:1.25rem}}
+    </style>
+
+    <script>
+      loadCSS("/assets/css/uswds-fonts.min.css");
+    </script>
   
   <link rel="canonical" href="http://localhost:4000/404.html">
   <link rel="alternate" type="application/rss+xml" title="10x" href="/feed.xml">
