@@ -50,7 +50,7 @@ You only need to do this once. Once Jekyll is installed, just follow the Start J
 > gem install bundler
 ```
 
-3. Install the necessary files
+4. From the project root, install the necessary files
 ```
 > bundle install
 ```
@@ -60,7 +60,7 @@ You only need to do this once. Once Jekyll is installed, just follow the Start J
 1. Head to the project root in the terminal — this is usally something like `code/10x`
 2. Start the jekyll server
 ```
-> jekyll serve --livereload --incremental
+> bundle exec jekyll serve --livereload --incremental
 ```
 
 3. Head to your browser and go to the server address you see in the terminal. This usually looks like `Server address: http://127.0.0.1:4000/`— and youd point to `http://127.0.0.1:4000/` in your web browser.
