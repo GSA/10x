@@ -1,0 +1,24 @@
+/*  =============================================
+    CUSTOM PROJECT SASS
+    - - - - - - - - - - - - - - - - - - - - - - -
+    Custom project SASS goes here!
+    You can also @include new files from your
+    project directory. These styles can access
+    all global and settings variables
+
+    i.e.
+    padding-right: $s-spacing-sm;
+
+    - - - - - - - - - - - - - - - - - - - - -  */
+
+.page-content {
+  h3 {
+    font-weight: $s-fw-xlight;
+    font-size: $u-sans-10;
+    line-height: $u-lh-cap;
+    @include media($s-medium-screen) {
+      font-size: $u-sans-15;
+      line-height: $u-lh-hed;
+    }
+  }
+}

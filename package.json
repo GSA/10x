@@ -1,0 +1,41 @@
+{
+  "name": "10x",
+  "version": "1.0.0",
+  "description": "Website for The Office of Investments in GSA’s Technology Transformation Service (TTS)",
+  "scripts": {
+    "build-production-utilities": "gulp build-production-utilities",
+    "build-prototyping-utilities": "gulp build-prototyping-utilities",
+    "build-all-utilities": "gulp build-production-utilities && gulp build-prototyping-utilities",
+    "assets": "gulp copy-uswds-assets",
+    "subset": "gulp subset",
+    "federalist": "gulp uswds-opt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSA/10x.git"
+  },
+  "author": "",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/GSA/10x/issues"
+  },
+  "homepage": "https://github.com/GSA/10x#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-css-purge": "^3.0.3",
+    "gulp-gzip": "^1.4.2",
+    "gulp-if": "^2.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uncss": "^1.0.6",
+    "gulp-watch": "^5.0.0",
+    "lazypipe": "^1.0.1",
+    "path": "^0.12.7"
+  }
+}

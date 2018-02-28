@@ -1,3 +1,14 @@
 _site/
+_develop/assets
+_develop/designs
+_develop/**/*.js
+_develop/**/*.xml
+_develop/**/*.json
+_develop/**/*.css
+_develop/**/*.md
 .sass-cache/
 .DS_Store
+node_modules/
+*.gz
+npm-debug.log
+.jekyll-metadata

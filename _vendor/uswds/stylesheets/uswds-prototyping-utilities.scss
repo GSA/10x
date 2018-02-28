@@ -1,0 +1,21 @@
+// Load all the vendor, settings, and variables for a USWDS project
+@import 'required';
+
+// Utilities ------------ //
+// 1. Import the global utility values
+@import 'utilities/values-global';
+
+// 2. Import the unit utility values
+@import 'utilities/units/values';
+
+// 3. Import the UNIT utility definitions
+@import 'utilities/units/all';
+
+// 4. Import the utility packager
+@import 'utilities/package';
+
+// 5. Build the utilities
+@include render-utilities-in($utilities-package);
+
+// 6. Add the defaults
+@import 'utilities/defaults';

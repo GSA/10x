@@ -6,10 +6,44 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/img/favicon/apple-touch-icon.png"  | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/favicon/favicon-32x32.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/favicon/favicon-16x16.png" | relative_url }}">
+  <link rel="manifest" href="{{ "/assets/misc/site.webmanifest" | relative_url }}">
+  <link rel="shortcut icon" href="{{ "/assets/img/favicon/favicon.ico" | relative_url }}">
+  <meta name="apple-mobile-web-app-title" content="10x">
+  <meta name="application-name" content="10x">
+  <meta name="msapplication-TileColor" content="#1c1d1f">
+  <meta name="msapplication-config" content="{{ "/assets/misc/browserconfig.xml" | relative_url }}">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- inline css technique https://jakearchibald.com/2016/link-in-body/ -->
+  {% if site.optimize_css %}
+    <script>
+      // https://github.com/filamentgroup/loadCSS
+      !function(e){"use strict"
+      var n=function(n,t,o){function i(e){return f.body?e():void setTimeout(function(){i(e)})}var d,r,a,l,f=e.document,s=f.createElement("link"),u=o||"all"
+      return t?d=t:(r=(f.body||f.getElementsByTagName("head")[0]).childNodes,d=r[r.length-1]),a=f.styleSheets,s.rel="stylesheet",s.href=n,s.media="only x",i(function(){d.parentNode.insertBefore(s,t?d:d.nextSibling)}),l=function(e){for(var n=s.href,t=a.length;t--;)if(a[t].href===n)return e()
+      setTimeout(function(){l(e)})},s.addEventListener&&s.addEventListener("load",function(){this.media=u}),s.onloadcssdefined=l,l(function(){s.media!==u&&(s.media=u)}),s}
+      "undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this)
+    </script>
+
+    <style>
+    {% include uswds-app-opt.min.css %}
+    </style>
+
+    <script>
+      loadCSS("{{ "/assets/css/uswds-fonts.min.css" | relative_url }}");
+    </script>
+  {% else %}
+    <link rel="stylesheet" href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/uswds-custom.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/uswds-production-utilities.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/uswds-prototyping-utilities.min.css" | relative_url }}">
+  {% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  
+
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}

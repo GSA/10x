@@ -2,31 +2,72 @@
 
 ## Macro
 
-**Opportunity:** The U.S. government employs many capable public servants who observe problems with government technology and are ideally positioned to pursue solutions to these problems. 
+**Opportunity:** The U.S. government employs many capable public servants who observe problems with government technology and are ideally positioned to pursue solutions to these problems.
 
-**Problem:** Unfortunately, many of these talented folks are unable to pursue solutions to these problems due to a lack of funding, support, or necessary skills. 
+**Problem:** Unfortunately, many of these talented folks are unable to pursue solutions to these problems due to a lack of funding, support, or necessary skills.
 
-## Micro 
+## Micro
 
 **Opportunity:** The 10x team can offer funding and guidance to creative civil servants who want to solve problems facing the government in technology  spaces.
 
 **Problem:** Most civil servants who might benefit from 10x funding, guidance, or investment model do not know we exist.
 
-## About 10x 
+## About 10x
 
 10x is an incremental investment pipeline that lives in GSA’s Technology Transformation Services’ (TTS) Office of Products and Programs (OPP). We fund products and services that possess groundbreaking ideas or technology with the potential for significant return on investment. We base our approach on modern venture capital practices. Our methods require spending fewer taxpayer dollars to ensure that only the best ideas get funded.
 
 ## Website goal
 
-The 10x website will provide civil servants across government the information they need to apply for funding and guidance to explore their ideas to solve government problems. It will also provide information and resources to civil servants who want to model something similar within their own agencies, as well as up-to-date financial information for GSA leadership and oversight bodies. 
+The 10x website will provide civil servants across government the information they need to apply for funding and guidance to explore their ideas to solve government problems. It will also provide information and resources to civil servants who want to model something similar within their own agencies, as well as up-to-date financial information for GSA leadership and oversight bodies.
 
 ## User groups
 1. Civil servants across government who have ideas to submit
-2. GSA leadership and oversight bodies 
+2. GSA leadership and oversight bodies
 3. Civil servants across government who want to learn about the 10x methodology and apply it at their agency
 
 
-## Road map 
+## Road map
 _as of Feb. 13, 2018_
 
 ![10x-website-story-map](https://user-images.githubusercontent.com/10144074/36212763-d6998344-1172-11e8-94da-d61461650831.png)
+
+## Website development
+The 10x website is built with Jekyll and uses a gulp workflow for development. The following are instruction for MacOS and a terminal application.
+
+### Install Jekyll
+1. Clone the repo from Github and head to the project root in the terminal
+2. Get ruby version manager and upgrade to ruby 2.4.2 ([link](https://stackoverflow.com/questions/38194032/how-to-update-ruby-version-2-0-0-to-the-latest-version-in-mac-osx-yosemite))
+```
+> \curl -sSL https://get.rvm.io | bash -s stable --auto-dotfiles
+> rvm install ruby-2.4.2
+> rvm use ruby-2.4.2 --default
+```
+
+3. Install the latest gem bundler
+```
+> gem install bundler
+```
+
+3. Install the necessary files
+```
+> bundle install
+```
+
+4. Start Jekyll
+```
+> jekyll serve --livereload --incremental
+```
+
+### USWDS and gulp
+10x is testing a pre-alpha version of the U.S. Web Design System based on a new set of variables and utility classes. The USWDS source files are in `_vendor/uswds`. _Don't modify these source files._ Make project customizations in three places:
+
+- `_sass/_uswds-project-init.scss`: Use this file to set the whitespace grid multiplier and the base font size.
+- `_sass/_uswds-project-settings.scss`: Use this file to set project-specific variables, like colors and fonts.
+- `_sass/_uswds-project-custom.scss`: Use this file to add custom CSS.
+
+#### Gulp
+This is a :warning: work in progress :warning: right now, but if you want to compile new stylesheets for 10x, use these commands:
+
+- `gulp watch`: this will watch `_uswds-project-custom.scss` and compile new styles
+- `gulp build-production-utilities`: will rebuild the production utilities. Run this manually when you make a change to project `settings` or `init`
+- `gulp build-prototyping-utilities`: will rebuild the prototyping utilities. Run this manually when you make a change to project `settings` or `init`
