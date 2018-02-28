@@ -36,7 +36,7 @@ The 10x website is built with Jekyll and uses a gulp workflow for development. T
 
 ### Install Jekyll
 1. Clone the repo from Github and head to the project root in the terminal
-2. Get ruby version manager and upgrade to ruby 2.4.2 ([link(https://stackoverflow.com/questions/38194032/how-to-update-ruby-version-2-0-0-to-the-latest-version-in-mac-osx-yosemite)])
+2. Get ruby version manager and upgrade to ruby 2.4.2 ([link](https://stackoverflow.com/questions/38194032/how-to-update-ruby-version-2-0-0-to-the-latest-version-in-mac-osx-yosemite))
 ```
 > \curl -sSL https://get.rvm.io | bash -s stable --auto-dotfiles
 > rvm install ruby-2.4.2
