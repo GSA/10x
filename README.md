@@ -31,10 +31,12 @@ _as of Feb. 13, 2018_
 
 ![10x-website-story-map](https://user-images.githubusercontent.com/10144074/36212763-d6998344-1172-11e8-94da-d61461650831.png)
 
-## Website development
+# Website development
 The 10x website is built with Jekyll and uses a gulp workflow for development. The following are instruction for MacOS and a terminal application.
 
-### Install Jekyll
+## Install Jekyll
+You only need to do this once. Once Jekyll is installed, just follow the Start Jekyll instructions below
+
 1. Clone the repo from Github and head to the project root in the terminal
 2. Get ruby version manager and upgrade to ruby 2.4.2 ([link](https://stackoverflow.com/questions/38194032/how-to-update-ruby-version-2-0-0-to-the-latest-version-in-mac-osx-yosemite))
 ```
@@ -53,12 +55,17 @@ The 10x website is built with Jekyll and uses a gulp workflow for development. T
 > bundle install
 ```
 
-4. Start Jekyll
+## Start the Jekyll server
+
+1. Head to the project root in the terminal — this is usally something like `code/10x`
+2. Start the jekyll server
 ```
 > jekyll serve --livereload --incremental
 ```
 
-### USWDS and gulp
+3. Head to your browser and go to the server address you see in the terminal. This usually looks like `Server address: http://127.0.0.1:4000/`— and youd point to `http://127.0.0.1:4000/` in your web browser.
+
+## USWDS and gulp
 10x is testing a pre-alpha version of the U.S. Web Design System based on a new set of variables and utility classes. The USWDS source files are in `_vendor/uswds`. _Don't modify these source files._ Make project customizations in three places:
 
 - `_sass/_uswds-project-init.scss`: Use this file to set the whitespace grid multiplier and the base font size.
