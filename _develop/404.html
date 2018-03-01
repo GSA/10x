@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="minh100ct" lang="en">
 
   <head>
   <meta charset="utf-8">
@@ -34,10 +34,43 @@
 </head>
 
 
-  <body class="m0 sans-6 lg-sans-8 lh-body-tight bg-black-cool-90 white">
+  <body class="m0 sans-6 lg-sans-8 lh-body-tight bg-black-cool-90 white minh100ct">
 
-    <div class="bg-black-trans-40 maxw-md mx-auto mt0 mb1 md-my1 py1 px2 row f-center minh4">
-  <div class="white sans-1 lh-single"><span class="mr05">:flag:</span> An official website of the United States government</div>
+    <div class="bg-black-trans-40 maxw-md mx-auto mt0 mb1 md-my1 py1 px2 minh4 usa-accordion">
+  <div class="row f-center">
+    <div class="white sans-1 lh-cap sm-lh-single row f-center w100ct">
+      <span class="mr105 sans-10 black-cool-70 sm-sans-1 sm-white sm-mr1">:flag:</span>
+      <span class="row f-center w100ct">
+        <span class="fill">An official website of the <span class="ws-nowrap">United States government.</span></span>
+        <button
+          class="white bg-transparent b-black-cool-70 radius-05 usa-accordion-button usa-banner-button ml2 sm-ml05 md-mt0 sans-1 lh-single py1 px1 ho-b-indigo-warm-50v w18 sm-w-auto f-stretch"
+          aria-expanded="false"
+          aria-controls="gov-banner">
+          <span class="usa-banner-button-text lh-single mt2px">Here’s how you know</span>
+        </button>
+      </span>
+    </div>
+  </div>
+  <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+    <div class="usa-banner-guidance-gov usa-width-one-half">
+      <div class="usa-media_block-body">
+        <p class="fw400 sm-fw200 sans-5 sm-sans-7">
+          <strong class="indigo-warm-40v">The .gov means it’s official.</strong>
+          <br>
+          Federal government websites often end in <strong class="mono-5 sm-mono-7">.gov</strong> or <strong class="mono-5 sm-mono-7">.mil</strong>. Before sharing sensitive information, make sure you're on a federal government site.
+        </p>
+      </div>
+    </div>
+    <div class="usa-banner-guidance-ssl usa-width-one-half">
+      <div class="usa-media_block-body">
+        <p class="fw400 sm-fw200 sans-5 sm-sans-7">
+          <strong class="indigo-warm-40v">The site is secure.</strong>
+          <br>
+          The <strong class="mono-5 sm-mono-7">https://</strong> in the site URL ensures that you are connecting to the official website and any information you provide is encrypted and securely transmitted.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
     <header class="px2 maxw-md mx-auto" role="banner">
@@ -73,7 +106,7 @@
     <footer class="px1 md-px2 maxw-md mx-auto">
 </footer>
 
-
+    <script src="/assets/js/uswds.min.js"></script>
   </body>
 
 </html>

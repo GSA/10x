@@ -22,3 +22,9 @@
     }
   }
 }
+
+.usa-accordion-content{
+  &[aria-hidden=true] {
+    display: none;
+  }
+}
