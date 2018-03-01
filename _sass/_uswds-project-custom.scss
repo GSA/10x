@@ -28,3 +28,16 @@
     display: none;
   }
 }
+
+.usa-banner-button-text--open {
+  display: none;
+}
+
+[aria-expanded=true] {
+  > .usa-banner-button-text {
+    display: none;
+  }
+  > .usa-banner-button-text--open {
+    display: inline;
+  }
+}
