@@ -20,10 +20,18 @@
 
 The 10x website will provide civil servants across government the information they need to apply for funding and guidance to explore their ideas to solve government problems. It will also provide information and resources to civil servants who want to model something similar within their own agencies, as well as up-to-date financial information for GSA leadership and oversight bodies.
 
-## User groups
-1. Civil servants across government who have ideas to submit
+## User groups and metrics
+1. We believe that creative civil servants across government have ideas for how to solve government problems and need funding and guidance to pursue those ideas. We believe that by providing information about how to pitch ideas to 10x – 
+  - More people will submit pitches for Phase 1 funding overall. 
+  - We’ll receive more ideas for Phase 1 funding that list civil servants outside of GSA as subject-matter experts (through a TTS sponsor). 
+  - We’ll receive pitches for Phase 1 funding that represent a greater number of agencies as subject-matter experts. 
+  - More types of agencies will pitch ideas for Phase 1 funding (pending definition of what different types we want to look at). 
 2. GSA leadership and oversight bodies
-3. Civil servants across government who want to learn about the 10x methodology and apply it at their agency
+  - [TBD]
+3. We believe that there are civil servants who manage technology or innovation funds who are unhappy about how they are investing those dollars. We believe that if we provide tools and resources for managing those funds following the 10x model – 
+  - We’ll receive inquiries from civil servants about how to set up a 10x program.
+  - Civil servants will hire 10x to consult with them on setting up or running their own program. 
+
 
 
 ## Road map
