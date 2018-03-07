@@ -25,7 +25,6 @@ The 10x website will provide civil servants across government the information th
     - More people will submit pitches for Phase 1 funding overall. 
     - We’ll receive more ideas for Phase 1 funding that list civil servants outside of GSA as subject-matter experts (through a TTS sponsor). 
     - We’ll receive pitches for Phase 1 funding that represent a greater number of agencies as subject-matter experts. 
-    - More types of agencies will pitch ideas for Phase 1 funding (pending definition of what different types we want to look at). 
 2. GSA leadership and oversight bodies
     - [TBD]
 3. We believe that there are civil servants who manage technology or innovation funds who are unhappy about how they are investing those dollars. We believe that if we provide tools and resources for managing those funds following the 10x model: 
