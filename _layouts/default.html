@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="minh100ct bg-black-cool-90" lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html class="minh100ct white" lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {% include head.html %}
 
   <body class="m0 sans-6 lg-sans-8 lh-body-tight minh100ct">
 
-    <div class="bg-black-cool-90 white">
+    <div class="bg-black-cool-90 white md-pt1">
       {% include banner.html %}
       {% include header.html %}
     </div>
@@ -15,7 +15,7 @@
     </main>
 
     {% include footer.html %}
-    <script src="{{ "/assets/js/uswds.min.js" | relative_url }}"></script>
+    <script src='{{ "/assets/js/uswds.min.js" | relative_url }}'></script>
   </body>
 
 </html>
