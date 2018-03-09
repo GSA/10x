@@ -6,6 +6,14 @@ USWDS UTILITIES SETTINGS
 
 $utilities-namespace-prefix: '';
 
+$output-breakpoints: (
+  xs: false,
+  sm: false,
+  md: true,
+  lg: true,
+  xl: false,
+);
+
 /*
 ========================================
 align-items
@@ -1396,7 +1404,7 @@ $max-width-preset-values: map-collect(
   $preset-units-grid,
   $preset-units-px
   ------------------------- */
-  $preset-breakpoints
+  $preset-units-breakpoints
 );
 
 $max-width-manual-values: (

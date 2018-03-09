@@ -1,9 +1,9 @@
 $preset-breakpoints: (
-  xs:   $s-xsmall-screen,
-  sm:   $s-small-screen,
-  md:   $s-medium-screen,
-  lg:   $s-large-screen,
-  xl:   $s-xlarge-screen,
+  xs:   px-to-base-em($s-xsmall-screen),
+  sm:   px-to-base-em($s-small-screen),
+  md:   px-to-base-em($s-medium-screen),
+  lg:   px-to-base-em($s-large-screen),
+  xl:   px-to-base-em($s-xlarge-screen),
 );
 
 $preset-font-families: (
