@@ -195,7 +195,8 @@ gulp.task('uswds-app', USWDS_APP, function (done) {
 gulp.task('uswds-opt', ["uswds-app"], function() {
     return gulp.src(`${CSS_DEST}/uswds-app-all.min.css`)
       .pipe(uncss({
-        html: [`${BUILD_DEST}/**/*.html`]
+        html: [`${BUILD_DEST}/**/*.html`],
+        ignore: [/\[aria-/],
       }))
       .pipe(rename('uswds-app-opt.css'))
       .pipe(minifyCSS())
