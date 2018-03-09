@@ -28,59 +28,90 @@ $lead-line-height:    1.7 !default;
 $font-sans:           'Source Sans Pro', $helvetica !default;
 $font-serif:          'Merriweather', $georgia !default;
 $font-mono:           'Roboto Mono', $monospace !default;
+$font-cond:           null !default;
+
+%font-sans { font-family: $font-stack-sans; }
+%font-serif { font-family: $font-stack-serif; }
+%font-mono { font-family: $font-stack-mono; }
+
+$font-stack-sans:   map-get($s-font-sans, name), map-get($s-font-sans, stack);
+$font-stack-serif:  map-get($s-font-serif, name), map-get($s-font-serif, stack);
+$font-stack-mono:  map-get($s-font-mono, name), map-get($s-font-mono, stack);
+
+$font-weights: (
+  $s-fw-xlight,
+  $s-fw-light,
+  $s-fw-normal,
+  $s-fw-bold,
+  $s-fw-xbold
+);
+
+// -----------------------------------------------------
+
+// TYPE SCALE
+
+$sans-cap-height:        map-get($s-font-sans, 500px-cap-height);
+$serif-cap-height:       map-get($s-font-serif, 500px-cap-height);
+$mono-cap-height:        map-get($s-font-mono, 500px-cap-height);
+
+// no explicit support for condensed faces yet, but:
+// $cond-cap-height:       $some-face-cap-height !default;
 
 // TODO these should be called font-weight-${}
 $font-normal:         400 !default;
 $font-bold:           700 !default;
 
 // Color
-$color-blue:                 #0071bc !default;
-$color-blue-darker:          #205493 !default;
-$color-blue-darkest:         #112e51 !default;
+$color-blue:                 $blue-70 !default;
+$color-blue-darker:          $blue-warm-70v !default;
+$color-blue-darkest:         $blue-warm-80v !default;
+$color-blue-light:           $blue-warm-50 !default;
+$color-blue-lighter:         $blue-warm-30 !default;
+$color-blue-lightest:        $blue-warm-10 !default;
 
-$color-aqua:                 #02bfe7 !default;
-$color-aqua-dark:            #00a6d2 !default;
-$color-aqua-darkest:         #046b99 !default;
-$color-aqua-light:           #9bdaf1 !default;
-$color-aqua-lightest:        #e1f3f8 !default;
+$color-aqua:                 $cyan-30v !default;
+$color-aqua-dark:            $cyan-40v !default;
+$color-aqua-darkest:         $blue-60 !default;
+$color-aqua-light:           $cyan-20 !default;
+$color-aqua-lightest:        $cyan-5 !default;
 
-$color-red:                  #e31c3d !default;
-$color-red-dark:             #cd2026 !default;
-$color-red-darkest:          #981b1e !default;
-$color-red-light:            #e59393 !default;
-$color-red-lightest:         #f9dede !default;
+$color-red:                  $red-50 !default;
+$color-red-dark:             $red-60v !default;
+$color-red-darkest:          $red-70v !default;
+$color-red-light:            $red-30 !default;
+$color-red-lightest:         $red-10 !default;
 
-$color-white:                #ffffff !default;
-$color-black:                #000000 !default;
-$color-black-light:          #212121 !default;
+$color-white:                $white-0 !default;
+$color-black:                $black-100 !default;
+$color-black-light:          $black-90 !default;
 
-$color-gray-dark:            #323a45 !default;
-$color-gray:                 #5b616b !default;
+$color-gray-dark:            $black-cool-80 !default;
+$color-gray:                 $black-cool-60 !default;
 $color-gray-medium:          #757575 !default;
-$color-gray-light:           #aeb0b5 !default;
-$color-gray-lighter:         #d6d7d9 !default;
-$color-gray-lightest:        #f1f1f1 !default;
+$color-gray-light:           $black-30 !default;
+$color-gray-lighter:         $black-cool-10 !default;
+$color-gray-lightest:        $black-cool-5 !default;
 
-$color-gray-warm-dark:       #494440 !default;
-$color-gray-warm-light:      #e4e2e0 !default;
-$color-gray-cool-light:      #dce4ef !default;
+$color-gray-warm-dark:       $black-warm-70 !default;
+$color-gray-warm-light:      $black-warm-10 !default;
+$color-gray-cool-light:      $blue-warm-5 !default;
 
-$color-gold:                 #fdb81e !default;
-$color-gold-light:           #f9c642 !default;
-$color-gold-lighter:         #fad980 !default;
-$color-gold-lightest:        #fff1d2 !default;
+$color-gold:                 $gold-20v !default;
+$color-gold-light:           $gold-10v !default;
+$color-gold-lighter:         $yellow-10 !default;
+$color-gold-lightest:        $gold-5 !default;
 
-$color-green:                #2e8540 !default;
-$color-green-light:          #4aa564 !default;
-$color-green-lighter:        #94bfa2 !default;
-$color-green-lightest:       #e7f4e4 !default;
+$color-green:                $green-cool-50 !default;
+$color-green-light:          $green-cool-40 !default;
+$color-green-lighter:        $green-cool-20 !default;
+$color-green-lightest:       $green-cool-5 !default;
 
 $color-cool-blue:            #205493 !default;
 $color-cool-blue-light:      #4773aa !default;
 $color-cool-blue-lighter:    #8ba6ca !default;
 $color-cool-blue-lightest:   #dce4ef !default;
 
-$color-purple:               #4c2c92 !default;
+$color-purple:               $violet-70v !default;
 
 // Functional colors
 $color-primary:              $color-blue !default;
@@ -103,13 +134,15 @@ $color-base:                 $color-black-light !default;
 $color-focus:                $color-gray-light !default;
 $color-visited:              $color-purple !default;
 
-$color-shadow:               rgba(#000, 0.3) !default;
+$color-shadow:               $black-transparent-30 !default;
 $color-transparent:          rgba(#000, 0) !default;
 
 // Mobile First Breakpoints
+$xsmall-screen: null !default;
 $small-screen:  481px !default;
 $medium-screen: 600px !default;
 $large-screen:  1201px !default;
+$xlarge-screen: null !default;
 
 // Grid column counts by screen size
 $grid-columns-small: 1 !default;
@@ -156,76 +189,3 @@ $spacing-small: 1rem;
 $spacing-md-small: 1.5rem;
 $spacing-medium: 2rem;
 $spacing-large: 3rem;
-
-// Calculated type sizes
-
-$font-stack-sans:   map-get($s-font-sans, name), map-get($s-font-sans, stack);
-$font-stack-serif:  map-get($s-font-serif, name), map-get($s-font-serif, stack);
-$font-stack-mono:  map-get($s-font-mono, name), map-get($s-font-mono, stack);
-
-$u-sans-cap-height:        map-get($s-font-sans, 500px-cap-height);
-$u-serif-cap-height:       map-get($s-font-serif, 500px-cap-height);
-$u-mono-cap-height:        map-get($s-font-mono, 500px-cap-height);
-
-$u-mono-1:   type-scale($u-mono-cap-height, $u-type-scale-1);
-$u-mono-2:   type-scale($u-mono-cap-height, $u-type-scale-2);
-$u-mono-3:   type-scale($u-mono-cap-height, $u-type-scale-3);
-$u-mono-4:   type-scale($u-mono-cap-height, $u-type-scale-4);
-$u-mono-5:   type-scale($u-mono-cap-height, $u-type-scale-5);
-$u-mono-6:   type-scale($u-mono-cap-height, $u-type-scale-6);
-$u-mono-7:   type-scale($u-mono-cap-height, $u-type-scale-7);
-$u-mono-8:   type-scale($u-mono-cap-height, $u-type-scale-8);
-$u-mono-9:   type-scale($u-mono-cap-height, $u-type-scale-9);
-$u-mono-10:  type-scale($u-mono-cap-height, $u-type-scale-10);
-$u-mono-11:  type-scale($u-mono-cap-height, $u-type-scale-11);
-$u-mono-12:  type-scale($u-mono-cap-height, $u-type-scale-12);
-$u-mono-13:  type-scale($u-mono-cap-height, $u-type-scale-13);
-$u-mono-14:  type-scale($u-mono-cap-height, $u-type-scale-14);
-$u-mono-15:  type-scale($u-mono-cap-height, $u-type-scale-15);
-$u-mono-16:  type-scale($u-mono-cap-height, $u-type-scale-16);
-$u-mono-17:  type-scale($u-mono-cap-height, $u-type-scale-17);
-$u-mono-18:  type-scale($u-mono-cap-height, $u-type-scale-18);
-$u-mono-19:  type-scale($u-mono-cap-height, $u-type-scale-19);
-$u-mono-20:  type-scale($u-mono-cap-height, $u-type-scale-20);
-
-$u-sans-1:   type-scale($u-sans-cap-height, $u-type-scale-1);
-$u-sans-2:   type-scale($u-sans-cap-height, $u-type-scale-2);
-$u-sans-3:   type-scale($u-sans-cap-height, $u-type-scale-3);
-$u-sans-4:   type-scale($u-sans-cap-height, $u-type-scale-4);
-$u-sans-5:   type-scale($u-sans-cap-height, $u-type-scale-5);
-$u-sans-6:   type-scale($u-sans-cap-height, $u-type-scale-6);
-$u-sans-7:   type-scale($u-sans-cap-height, $u-type-scale-7);
-$u-sans-8:   type-scale($u-sans-cap-height, $u-type-scale-8);
-$u-sans-9:   type-scale($u-sans-cap-height, $u-type-scale-9);
-$u-sans-10:  type-scale($u-sans-cap-height, $u-type-scale-10);
-$u-sans-11:  type-scale($u-sans-cap-height, $u-type-scale-11);
-$u-sans-12:  type-scale($u-sans-cap-height, $u-type-scale-12);
-$u-sans-13:  type-scale($u-sans-cap-height, $u-type-scale-13);
-$u-sans-14:  type-scale($u-sans-cap-height, $u-type-scale-14);
-$u-sans-15:  type-scale($u-sans-cap-height, $u-type-scale-15);
-$u-sans-16:  type-scale($u-sans-cap-height, $u-type-scale-16);
-$u-sans-17:  type-scale($u-sans-cap-height, $u-type-scale-17);
-$u-sans-18:  type-scale($u-sans-cap-height, $u-type-scale-18);
-$u-sans-19:  type-scale($u-sans-cap-height, $u-type-scale-19);
-$u-sans-20:  type-scale($u-sans-cap-height, $u-type-scale-20);
-
-$u-serif-1:  type-scale($u-serif-cap-height, $u-type-scale-1);
-$u-serif-2:  type-scale($u-serif-cap-height, $u-type-scale-2);
-$u-serif-3:  type-scale($u-serif-cap-height, $u-type-scale-3);
-$u-serif-4:  type-scale($u-serif-cap-height, $u-type-scale-4);
-$u-serif-5:  type-scale($u-serif-cap-height, $u-type-scale-5);
-$u-serif-6:  type-scale($u-serif-cap-height, $u-type-scale-6);
-$u-serif-7:  type-scale($u-serif-cap-height, $u-type-scale-7);
-$u-serif-8:  type-scale($u-serif-cap-height, $u-type-scale-8);
-$u-serif-9:  type-scale($u-serif-cap-height, $u-type-scale-9);
-$u-serif-10: type-scale($u-serif-cap-height, $u-type-scale-10);
-$u-serif-11: type-scale($u-serif-cap-height, $u-type-scale-11);
-$u-serif-12: type-scale($u-serif-cap-height, $u-type-scale-12);
-$u-serif-13: type-scale($u-serif-cap-height, $u-type-scale-13);
-$u-serif-14: type-scale($u-serif-cap-height, $u-type-scale-14);
-$u-serif-15: type-scale($u-serif-cap-height, $u-type-scale-15);
-$u-serif-16: type-scale($u-serif-cap-height, $u-type-scale-16);
-$u-serif-17: type-scale($u-serif-cap-height, $u-type-scale-17);
-$u-serif-18: type-scale($u-serif-cap-height, $u-type-scale-18);
-$u-serif-19: type-scale($u-serif-cap-height, $u-type-scale-19);
-$u-serif-20: type-scale($u-serif-cap-height, $u-type-scale-20);

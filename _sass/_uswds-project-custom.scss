@@ -11,6 +11,10 @@
 
     - - - - - - - - - - - - - - - - - - - - -  */
 
+*:focus {
+  outline: 4px solid $s-color-highlight;
+}
+
 .page-content {
   h3 {
     font-weight: $s-fw-xlight;
@@ -24,7 +28,7 @@
 }
 
 *:active:focus {
-  outline: 4px solid $u-color-indigo-warm-50v;
+  outline: 4px solid $indigo-warm-50v;
 }
 
 .usa-accordion-content{
