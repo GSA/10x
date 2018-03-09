@@ -153,7 +153,7 @@
 // expresses a spacing unit multiple in rem
 
 @function spacing($unit) {
-  $grid-to-rem: strip-unit($grid-base) * $unit / strip-unit($font-size-base) * 1rem;
+  $grid-to-rem: strip-unit($i-grid-base) * $unit / strip-unit($i-font-size-base) * 1rem;
 
   @return $grid-to-rem;
 }
@@ -163,7 +163,7 @@
 // converts a value in px to a value in rem
 
 @function px($pixels) {
-  $px-to-rem: strip-unit($pixels) / strip-unit($font-size-base) * 1rem;
+  $px-to-rem: strip-unit($pixels) / strip-unit($i-font-size-base) * 1rem;
 
   @return $px-to-rem;
 }
@@ -173,7 +173,7 @@
 // converts a value in px to a value in em
 
 @function px-to-base-em($pixels) {
-  $px-to-base-em: strip-unit($pixels) / strip-unit($font-size-base) * 1em;
+  $px-to-base-em: strip-unit($pixels) / strip-unit($i-font-size-base) * 1em;
 
   @return $px-to-base-em;
 }

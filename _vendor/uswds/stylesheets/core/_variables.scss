@@ -25,18 +25,37 @@ $base-line-height:    1.5 !default;
 $heading-line-height: 1.3 !default;
 $lead-line-height:    1.7 !default;
 
-$font-sans:           'Source Sans Pro', $helvetica !default;
-$font-serif:          'Merriweather', $georgia !default;
-$font-mono:           'Roboto Mono', $monospace !default;
-$font-cond:           null !default;
+$font-stack-sans:   null;
+$font-stack-serif:  null;
+$font-stack-mono:   null;
+$font-stack-cond:   null;
+
+@if $i-font-sans != null {
+  $font-stack-sans:   map-get($i-font-sans, name), map-get($i-font-sans, stack);
+};
+
+@if $i-font-serif != null {
+  $font-stack-serif:  map-get($i-font-serif, name), map-get($i-font-serif, stack);
+}
+
+@if $i-font-mono != null {
+  $font-stack-mono:  map-get($i-font-mono, name), map-get($i-font-mono, stack);
+}
+
+@if $i-font-cond != null {
+  $font-stack-cond:  map-get($i-font-cond, name), map-get($i-font-cond, stack);
+}
+
+// for backward compatibility
+$font-sans:   $font-stack-sans;
+$font-serif:  $font-stack-serif;
+$font-mono:   $font-stack-mono;
+$font-cond:   $font-stack-cond;
 
 %font-sans { font-family: $font-stack-sans; }
 %font-serif { font-family: $font-stack-serif; }
 %font-mono { font-family: $font-stack-mono; }
-
-$font-stack-sans:   map-get($s-font-sans, name), map-get($s-font-sans, stack);
-$font-stack-serif:  map-get($s-font-serif, name), map-get($s-font-serif, stack);
-$font-stack-mono:  map-get($s-font-mono, name), map-get($s-font-mono, stack);
+%font-cond { font-family: $font-stack-cond; }
 
 $font-weights: (
   $s-fw-xlight,
@@ -50,9 +69,9 @@ $font-weights: (
 
 // TYPE SCALE
 
-$sans-cap-height:        map-get($s-font-sans, 500px-cap-height);
-$serif-cap-height:       map-get($s-font-serif, 500px-cap-height);
-$mono-cap-height:        map-get($s-font-mono, 500px-cap-height);
+$sans-cap-height:        map-get($i-font-sans, 500px-cap-height);
+$serif-cap-height:       map-get($i-font-serif, 500px-cap-height);
+$mono-cap-height:        map-get($i-font-mono, 500px-cap-height);
 
 // no explicit support for condensed faces yet, but:
 // $cond-cap-height:       $some-face-cap-height !default;

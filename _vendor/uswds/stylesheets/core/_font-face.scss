@@ -8,9 +8,9 @@ $font-weights: (
   $s-fw-xbold
 );
 
-@include render-font-face($s-font-sans);
-@include render-font-face($s-font-serif);
-@include render-font-face($s-font-mono);
+@include render-font-face($i-font-sans);
+@include render-font-face($i-font-serif);
+@include render-font-face($i-font-mono);
 // @include render-font-face($s-font-cond);
 
 /* stylelint-enable */

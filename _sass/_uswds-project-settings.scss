@@ -10,7 +10,7 @@ $s-is-prototyping-mode:   false;
 // BREAKPOINTS
 
 // These will be converted to em values based on the
-// value of $font-size-base
+// value of $i-font-size-base
 
 $s-xsmall-screen:   400px;
 $s-small-screen:    600px;
@@ -26,58 +26,11 @@ $s-xlarge-screen:   1200px;
 $font-path:   '../uswds/fonts';
 $image-path:  '../uswds/img';
 
-// New custom typefaces
-
-/*
-$font-new : (
-  name: "Font Display Name",
-  system-font: false,
-  500px-cap-height: "364px", // height of a 500px `N` in Sketch
-  variable-font: false,
-  roman: (
-    100: "Filename-without-extension", // or null
-    200: "Filename-without-extension", // or null
-    300: "Filename-without-extension", // or null
-    400: "Filename-without-extension", // or null
-    500: "Filename-without-extension", // or null
-    600: "Filename-without-extension", // or null
-    700: "Filename-without-extension", // or null
-    800: "Filename-without-extension", // or null
-    900: "Filename-without-extension", // or null
-  ),
-  italic: (
-    100: "Filename-without-extension", // or null
-    200: "Filename-without-extension", // or null
-    300: "Filename-without-extension", // or null
-    400: "Filename-without-extension", // or null
-    500: "Filename-without-extension", // or null
-    600: "Filename-without-extension", // or null
-    700: "Filename-without-extension", // or null
-    800: "Filename-without-extension", // or null
-    900: "Filename-without-extension", // or null
-  ),
-);
-*/
-
-// Set the sans, serif, and mono faces
-// currently available:
-// $font-system
-// $font-united-sans
-// $font-source-sans-pro
-// $font-helvetica
-// $font-georgia
-// $font-merriweather
-// $font-roboto-mono
-
-$s-font-sans:   $font-united-sans;
-$s-font-serif:  $font-georgia;
-$s-font-mono:   $font-roboto-mono;
-
 // Set hed, body, and alt from sans, serif, and mono
 
-$s-font-hed:    $s-font-sans;
-$s-font-body:   $s-font-sans;
-$s-font-alt:    $s-font-sans;
+$s-font-hed:    $i-font-sans;
+$s-font-body:   $i-font-sans;
+$s-font-alt:    $i-font-sans;
 
 // ---------------------------------------------
 // NAMESPACE

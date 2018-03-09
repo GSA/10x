@@ -1,12 +1,14 @@
 // spacing is calculated on multiples of a
 // base grid
 
-$i-grid-base:           8px;
+$i-grid-base:           8px !default;
 
 // establishes the base type size for
 // rem calculations
 
-$i-font-size-base:      16px;
+$i-font-size-base:      16px !default;
+
+// project fonts
 
 // New custom typefaces
 
@@ -51,6 +53,7 @@ $font-new : (
 // $font-merriweather
 // $font-roboto-mono
 
-$i-font-sans:   $font-united-sans;
-$i-font-serif:  $font-georgia;
-$i-font-mono:   $font-roboto-mono;
+$i-font-sans:   $font-united-sans !default;
+$i-font-serif:  $font-georgia !default;
+$i-font-mono:   $font-roboto-mono !default;
+$i-font-cond:   null;
