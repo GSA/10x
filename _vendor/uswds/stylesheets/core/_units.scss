@@ -4,6 +4,14 @@
 // ** Do not modify the values in this file **
 // *******************************************
 
+
+// 500px 'N' height measured in Sketch
+$base-cap-height:        362px;
+$sans-cap-height:        map-get($i-font-sans, 500px-cap-height);
+$serif-cap-height:       map-get($i-font-serif, 500px-cap-height);
+$mono-cap-height:        map-get($i-font-mono, 500px-cap-height);
+
+
 // -----------------------------------------------------
 
 // SPACING GRID

@@ -1,12 +1,6 @@
 // PROJECT SETTINGS
 
 // ---------------------------------------------
-// PROTOTYPING MODE
-// Outputs all @font-faces regardless of project settings
-
-$s-is-prototyping-mode:   false;
-
-// ---------------------------------------------
 // BREAKPOINTS
 
 // These will be converted to em values based on the
@@ -23,21 +17,17 @@ $s-xlarge-screen:   1200px;
 
 // Relative font and image file paths
 
-$font-path:   '../uswds/fonts';
-$image-path:  '../uswds/img';
+$s-font-path:   '../uswds/fonts';
+$s-image-path:  '../uswds/img';
 
-// Set hed, body, and alt from sans, serif, and mono
+// Set hed, body, and alt from
+// $i-font-sans
+// $i-font-serif
+// $i-font-mono
 
 $s-font-hed:    $i-font-sans;
 $s-font-body:   $i-font-sans;
 $s-font-alt:    $i-font-sans;
-
-// ---------------------------------------------
-// NAMESPACE
-
-$s-settings-utilities-namespace: 'usa-u-';
-$s-units-utilities-namespace: null;
-$s-components-namespace: 'usa-';
 
 // ---------------------------------------------
 // SPACING
@@ -47,8 +37,8 @@ $s-components-namespace: 'usa-';
 //                        1px
 //                        2px
 
-$s-spacing-3xs:           1px;
-$s-spacing-2xs:           2px;
+$s-spacing-3xs:           null;
+$s-spacing-2xs:           null;
 $s-spacing-xs:            $u-spacing-05;
 $s-spacing-sm:            $u-spacing-1;
 $s-spacing-md:            $u-spacing-2;
@@ -63,30 +53,29 @@ $s-spacing-3xl:           $u-spacing-9;
 // values  - - - - - - - - - - - - - - - - - - -
 // $s-font-size-NN:       $u-type-scale-NN;
 
-$s-font-size-3xs:         $u-type-scale-1;
-$s-font-size-2xs:         $u-type-scale-3;
-$s-font-size-xs:          $u-type-scale-5;
-$s-font-size-sm:          $u-type-scale-6;
-$s-font-size-md:          $u-type-scale-7;
-$s-font-size-lg:          $u-type-scale-10;
-$s-font-size-xl:          $u-type-scale-12;
-$s-font-size-2xl:         $u-type-scale-14;
-$s-font-size-3xl:         $u-type-scale-16;
+$s-font-size-3xs:         $u-type-scale-12;
+$s-font-size-2xs:         $u-type-scale-14;
+$s-font-size-xs:          $u-type-scale-16;
+$s-font-size-sm:          $u-type-scale-17;
+$s-font-size-md:          $u-type-scale-18;
+$s-font-size-lg:          $u-type-scale-24;
+$s-font-size-xl:          $u-type-scale-32;
+$s-font-size-2xl:         $u-type-scale-40;
+$s-font-size-3xl:         $u-type-scale-56;
 
 // ---------------------------------------------
 // FONT WEIGHTS
 
 // values  - - - - - - - - - - - - - - - - - - -
-
-$s-output-all-weights:    false;
-
 // $s-fw-NN:              100-900 (mults of 100);
+
+$s-output-all-weights:    true;
 
 $s-fw-xlight:             200;
 $s-fw-light:              300;
 $s-fw-normal:             400;
-$s-fw-bold:               700;
-$s-fw-xbold:              900;
+$s-fw-bold:               600;
+$s-fw-xbold:              700;
 
 // ---------------------------------------------
 // COLORS
@@ -176,6 +165,6 @@ $s-color-highlight:       $gold-20v;
 //                        1px
 //                        2px
 
-$s-radius-sm:             1px;
+$s-radius-sm:             2px;
 $s-radius-md:             $u-spacing-05;
-$s-radius-lg:             $u-spacing-105;
+$s-radius-lg:             null;

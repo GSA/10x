@@ -69,9 +69,6 @@ $font-weights: (
 
 // TYPE SCALE
 
-$sans-cap-height:        map-get($i-font-sans, 500px-cap-height);
-$serif-cap-height:       map-get($i-font-serif, 500px-cap-height);
-$mono-cap-height:        map-get($i-font-mono, 500px-cap-height);
 
 // no explicit support for condensed faces yet, but:
 // $cond-cap-height:       $some-face-cap-height !default;

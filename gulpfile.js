@@ -24,8 +24,7 @@ const CONCAT_FONTS              = false;
 // What modules should be in the final app build?
 // Comment out unneeded modules
 const USWDS_APP = [
-  "build-production-utilities",
-  "build-prototyping-utilities",
+  "build-utilities",
 //  "build-uswds",
   "build-custom",
 ];
@@ -103,11 +102,8 @@ var minifyCSS = lazypipe()
       suffix: '.min'
     });
 
-var concatProduction = lazypipe()
-    .pipe(concat, 'uswds-production-utilities.css');
-
-var concatPrototyping = lazypipe()
-    .pipe(concat, 'uswds-prototyping-utilities.css');
+var concatUtilities = lazypipe()
+    .pipe(concat, 'uswds-utilities.css');
 
 var concatMain = lazypipe()
     .pipe(concat, 'uswds.css');
@@ -121,23 +117,13 @@ gulp.task('copy-uswds-assets', () => {
   .pipe(gulp.dest(`${ASSETS_DEST}`));
 });
 
-gulp.task('build-prototyping-utilities', function (done) {
+gulp.task('build-utilities', function (done) {
   return gulp.src([
       `${USWDS_SRC}/stylesheets/uswds-fonts.scss`,
-      `${USWDS_SRC}/stylesheets/uswds-prototyping-utilities.scss`
+      `${USWDS_SRC}/stylesheets/uswds-utilities.scss`
     ])
     .pipe(compileCSS())
-    .pipe(gulpif(CONCAT_FONTS, concatPrototyping()))
-    .pipe(minifyCSS())
-    .pipe(gulp.dest(`${CSS_DEST}`))
-    .pipe(gzip({ extension: 'gz' }))
-    .pipe(gulp.dest(`${CSS_DEST}`));
-});
-
-gulp.task('build-production-utilities', function (done) {
-  return gulp.src([`${USWDS_SRC}/stylesheets/uswds-fonts.scss`, `${USWDS_SRC}/stylesheets/uswds-production-utilities.scss`])
-    .pipe(compileCSS())
-    .pipe(gulpif(CONCAT_FONTS, concatProduction()))
+    .pipe(gulpif(CONCAT_FONTS, concatUtilities()))
     .pipe(minifyCSS())
     .pipe(gulp.dest(`${CSS_DEST}`))
     .pipe(gzip({ extension: 'gz' }))
@@ -168,8 +154,7 @@ gulp.task('quick-concat', function (done) {
   return gulp.src([
       `${CSS_DEST}/uswds.min.css`,
       `${CSS_DEST}/uswds-custom.min.css`,
-      `${CSS_DEST}/uswds-production-utilities.min.css`,
-      `${CSS_DEST}/uswds-prototyping-utilities.min.css`
+      `${CSS_DEST}/uswds-utilities.min.css`
     ])
     .pipe(concat('uswds-app-all.css'))
     .pipe(minifyCSS())
@@ -182,8 +167,7 @@ gulp.task('uswds-app', USWDS_APP, function (done) {
   return gulp.src([
       `${CSS_DEST}/uswds.min.css`,
       `${CSS_DEST}/uswds-custom.min.css`,
-      `${CSS_DEST}/uswds-production-utilities.min.css`,
-      `${CSS_DEST}/uswds-prototyping-utilities.min.css`
+      `${CSS_DEST}/uswds-utilities.min.css`,
     ])
     .pipe(concat('uswds-app-all.css'))
     .pipe(minifyCSS())

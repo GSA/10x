@@ -1,11 +1,33 @@
 // PROJECT SETTINGS
 
 // ---------------------------------------------
-// NAMESPACE
+// BREAKPOINTS
 
-$s-settings-utilities-namespace: 'usa-u-' !default;
-$s-units-utilities-namespace: null !default;
-$s-components-namespace: 'usa-' !default;
+// These will be converted to em values based on the
+// value of $i-font-size-base
+
+$s-xsmall-screen:   400px !default;
+$s-small-screen:    600px !default;
+$s-medium-screen:   800px !default;
+$s-large-screen:    1000px !default;
+$s-xlarge-screen:   1200px !default;
+
+// ---------------------------------------------
+// FONTS
+
+// Relative font and image file paths
+
+$s-font-path:   '../uswds/fonts' !default;
+$s-image-path:  '../uswds/img' !default;
+
+// Set hed, body, and alt from
+// $i-font-sans
+// $i-font-serif
+// $i-font-mono
+
+$s-font-hed:    $i-font-sans !default;
+$s-font-body:   $i-font-sans !default;
+$s-font-alt:    $i-font-sans !default;
 
 // ---------------------------------------------
 // SPACING
@@ -15,8 +37,8 @@ $s-components-namespace: 'usa-' !default;
 //                        1px
 //                        2px
 
-$s-spacing-3xs:           1px !default;
-$s-spacing-2xs:           2px !default;
+$s-spacing-3xs:           null !default;
+$s-spacing-2xs:           null !default;
 $s-spacing-xs:            $u-spacing-05 !default;
 $s-spacing-sm:            $u-spacing-1 !default;
 $s-spacing-md:            $u-spacing-2 !default;
@@ -31,15 +53,15 @@ $s-spacing-3xl:           $u-spacing-9 !default;
 // values  - - - - - - - - - - - - - - - - - - -
 // $s-font-size-NN:       $u-type-scale-NN;
 
-$s-font-size-3xs:         $u-type-scale-1 !default;
-$s-font-size-2xs:         $u-type-scale-3 !default;
-$s-font-size-xs:          $u-type-scale-5 !default;
-$s-font-size-sm:          $u-type-scale-6 !default;
-$s-font-size-md:          $u-type-scale-7 !default;
-$s-font-size-lg:          $u-type-scale-10 !default;
-$s-font-size-xl:          $u-type-scale-12 !default;
-$s-font-size-2xl:         $u-type-scale-14 !default;
-$s-font-size-3xl:         $u-type-scale-16 !default;
+$s-font-size-3xs:         $u-type-scale-12 !default;
+$s-font-size-2xs:         $u-type-scale-14 !default;
+$s-font-size-xs:          $u-type-scale-16 !default;
+$s-font-size-sm:          $u-type-scale-17 !default;
+$s-font-size-md:          $u-type-scale-18 !default;
+$s-font-size-lg:          $u-type-scale-24 !default;
+$s-font-size-xl:          $u-type-scale-32 !default;
+$s-font-size-2xl:         $u-type-scale-40 !default;
+$s-font-size-3xl:         $u-type-scale-56 !default;
 
 // ---------------------------------------------
 // FONT WEIGHTS
@@ -47,6 +69,7 @@ $s-font-size-3xl:         $u-type-scale-16 !default;
 // values  - - - - - - - - - - - - - - - - - - -
 // $s-fw-NN:              100-900 (mults of 100);
 
+$s-output-all-weights:    true !default;
 $s-fw-xlight:             200 !default;
 $s-fw-light:              300 !default;
 $s-fw-normal:             400 !default;
@@ -141,6 +164,6 @@ $s-color-highlight:       $gold-20v !default;
 //                        1px
 //                        2px
 
-$s-radius-sm:             1px !default;
+$s-radius-sm:             2px !default;
 $s-radius-md:             $u-spacing-05 !default;
-$s-radius-lg:             $u-spacing-105 !default;
+$s-radius-lg:             null !default;

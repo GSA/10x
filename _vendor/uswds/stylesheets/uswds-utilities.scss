@@ -1,30 +1,5 @@
-/*! uswds @version */
-
-// Vendor -------------- //
-@import 'lib/bourbon';
-@import 'lib/neat';
-
-// Import USWDS font definitions
-@import 'core/font-definitions';
-
-// Project initialization
-// Needs to load before functions
-@import 'uswds-project-init';
-@import 'core/init';
-
-// Functions
-@import 'core/functions';
-
-// Core units
-@import 'core/units';
-
-// Project settings
-// Needs to load before core vars and settings
-@import 'uswds-project-settings';
-@import 'core/settings';
-
-// Default settings and variables
-@import 'core/variables';
+// Load all the vendor, settings, and variables for a USWDS project
+@import 'required';
 
 // Utilities ------------ //
 
