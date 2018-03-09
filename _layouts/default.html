@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html class="minh100ct bg-black-cool-90" lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {% include head.html %}
 
-  <body class="m0 sans-6 lg-sans-8 lh-body-tight bg-black-cool-90 white">
+  <body class="m0 sans-6 lg-sans-8 lh-body-tight minh100ct">
 
-    {% include header.html %}
+    <div class="bg-black-cool-90 white">
+      {% include banner.html %}
+      {% include header.html %}
+    </div>
 
     <main class="page-content" aria-label="Content">
       {{ content }}
     </main>
 
     {% include footer.html %}
-
+    <script src="{{ "/assets/js/uswds.min.js" | relative_url }}"></script>
   </body>
 
 </html>
