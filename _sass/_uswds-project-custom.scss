@@ -23,6 +23,10 @@
   }
 }
 
+*:active:focus {
+  outline: 4px solid $u-color-indigo-warm-50v;
+}
+
 .usa-accordion-content{
   &[aria-hidden=true] {
     display: none;
