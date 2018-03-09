@@ -4,7 +4,7 @@ USWDS UTILITIES SETTINGS
 ----------------------------------------
 */
 
-$utilities-namespace-prefix: 'usa-u-' !default;
+$utilities-namespace-prefix: '';
 
 /*
 ========================================
@@ -29,7 +29,7 @@ $align-items-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $align-items-preset-values: map-collect(
   /*
@@ -38,7 +38,7 @@ $align-items-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $align-items-manual-values: (
   /*
@@ -49,7 +49,7 @@ $align-items-manual-values: (
   center:       'center',
   stretch:      'stretch',
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -77,7 +77,7 @@ $background-color-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $background-color-preset-values: map-collect(
   /*
@@ -87,8 +87,12 @@ $background-color-preset-values: map-collect(
   [store unused presets here]
   ------------------------- */
   $preset-palette-reserved,
-  $preset-palette-project-settings
-) !default;
+  $preset-colors-indigo-warm,
+  $preset-colors-black-transparent,
+  $preset-colors-black-cool,
+  $preset-colors-gold,
+  $preset-colors-red-warm
+);
 
 $background-color-manual-values: (
   /*
@@ -96,7 +100,7 @@ $background-color-manual-values: (
   ----------------------------
   [store unused value pairs here]
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -121,13 +125,13 @@ example:
 */
 
 $border-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $border-preset-values: map-collect(
   /*
@@ -138,7 +142,9 @@ $border-preset-values: map-collect(
   $preset-units-grid-small,
   $preset-units-grid-large
   ------------------------- */
-) !default;
+  $preset-units-px,
+  $preset-units-grid-small
+);
 
 $border-manual-values: (
   /*
@@ -146,7 +152,7 @@ $border-manual-values: (
   ----------------------------
   0:            '0',
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -169,13 +175,13 @@ example:
 */
 
 $border-color-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
-  hover:        false,
+  hover:        true,
   visited:      false,
-) !default;
+);
 
 $border-color-preset-values: map-collect(
   /*
@@ -185,7 +191,9 @@ $border-color-preset-values: map-collect(
   $preset-palette-project-settings,
   $preset-palette-reserved
   ------------------------- */
-) !default;
+  $preset-colors-red-warm,
+  $preset-colors-gold
+);
 
 $border-color-manual-values: (
   /*
@@ -193,7 +201,7 @@ $border-color-manual-values: (
   ----------------------------
   [store unused value pairs here]
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -221,7 +229,7 @@ $border-radius-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $border-radius-preset-values: map-collect(
   /*
@@ -230,7 +238,7 @@ $border-radius-preset-values: map-collect(
   ----------------------------
   $preset-units-px
   ------------------------- */
-) !default;
+);
 
 $border-radius-manual-values: (
   /*
@@ -247,7 +255,7 @@ $border-radius-manual-values: (
   sm:           $s-radius-sm,
   md:           $s-radius-md,
   lg:           $s-radius-lg,
-) !default;
+);
 
 /*
 ========================================
@@ -272,7 +280,7 @@ $border-style-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $border-style-preset-values: map-collect(
   /*
@@ -281,7 +289,7 @@ $border-style-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $border-style-manual-values: (
   /*
@@ -291,7 +299,7 @@ $border-style-manual-values: (
   dotted:       'dotted',
   solid:        'solid',
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -316,7 +324,7 @@ $box-shadow-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $box-shadow-preset-values: map-collect(
   /*
@@ -325,7 +333,7 @@ $box-shadow-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $box-shadow-manual-values: (
   /*
@@ -338,7 +346,7 @@ $box-shadow-manual-values: (
   4: '0 8px 16px 0 rgba(0,0,0,0.10)',
   5: '0 12px 24px 0 rgba(0,0,0,0.10)',
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -366,7 +374,7 @@ $circle-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $circle-preset-values: map-collect(
   /*
@@ -375,7 +383,7 @@ $circle-preset-values: map-collect(
   ----------------------------
   $preset-units-grid
   ------------------------- */
-) !default;
+);
 
 $circle-manual-values: (
   /*
@@ -392,7 +400,7 @@ $circle-manual-values: (
   xl:           $s-spacing-xl,
   2xl:          $s-spacing-2xl,
   3xl:          $s-spacing-3xl,
-) !default;
+);
 
 /*
 ========================================
@@ -417,7 +425,7 @@ $color-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $color-preset-values: map-collect(
   /*
@@ -428,7 +436,7 @@ $color-preset-values: map-collect(
   ------------------------- */
   $preset-palette-project-settings,
   $preset-palette-reserved
-) !default;
+);
 
 $color-manual-values: (
   /*
@@ -436,7 +444,7 @@ $color-manual-values: (
   ----------------------------
   [store unused value pairs here]
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -463,7 +471,7 @@ $column-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 /*
 ========================================
@@ -488,7 +496,7 @@ $display-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $display-preset-values: map-collect(
   /*
@@ -497,7 +505,7 @@ $display-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $display-manual-values: (
   /*
@@ -512,7 +520,7 @@ $display-manual-values: (
   inline-block: 'inline-block',
   table:        'table',
   table-cell:   'table-cell',
-) !default;
+);
 
 /*
 ========================================
@@ -543,7 +551,7 @@ $flex-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $flex-preset-values: map-collect(
   /*
@@ -552,7 +560,7 @@ $flex-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $flex-manual-values: (
   /*
@@ -573,7 +581,7 @@ $flex-manual-values: (
   11:           '11 0 0',
   fill:         '1 0 0',
   fit:          '0',
-) !default;
+);
 
 /*
 ========================================
@@ -598,7 +606,7 @@ $flex-direction-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $flex-direction-preset-values: map-collect(
   /*
@@ -607,7 +615,7 @@ $flex-direction-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $flex-direction-manual-values: (
   /*
@@ -617,7 +625,7 @@ $flex-direction-manual-values: (
   ------------------------- */
   row:          'row',
   column:       'column',
-) !default;
+);
 
 /*
 ========================================
@@ -642,7 +650,7 @@ $flex-wrap-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $flex-wrap-preset-values: map-collect(
   /*
@@ -651,7 +659,7 @@ $flex-wrap-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $flex-wrap-manual-values: (
   /*
@@ -661,7 +669,7 @@ $flex-wrap-manual-values: (
   ------------------------- */
   wrap:         'wrap',
   nowrap:       'nowrap',
-) !default;
+);
 
 /*
 ========================================
@@ -686,7 +694,7 @@ $float-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $float-preset-values: map-collect(
   /*
@@ -695,7 +703,7 @@ $float-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $float-manual-values: (
   /*
@@ -706,7 +714,7 @@ $float-manual-values: (
   left:         'left',
   none:         'none',
   right:        'right',
-) !default;
+);
 
 /*
 ========================================
@@ -738,12 +746,12 @@ example:
 
 $font-settings: (
   output:       true,
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $font-preset-values: map-collect(
   /*
@@ -811,8 +819,8 @@ $font-preset-values: map-collect(
   $preset-serif-120,
   $preset-serif-140
   ------------------------- */
-  $preset-font-tshirt
-) !default;
+  $preset-sans
+);
 
 $font-manual-values: (
   /*
@@ -820,7 +828,7 @@ $font-manual-values: (
   ----------------------------
   [store unused value pairs here]
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -853,7 +861,7 @@ $font-family-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $font-family-preset-values: map-collect(
   /*
@@ -863,7 +871,7 @@ $font-family-preset-values: map-collect(
   [store unused presets here]
   ------------------------- */
   $preset-font-families
-) !default;
+);
 
 $font-family-manual-values: (
   /*
@@ -871,7 +879,7 @@ $font-family-manual-values: (
   ----------------------------
   [store unused value pairs here]
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -897,7 +905,7 @@ $font-feature-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $font-feature-preset-values: map-collect(
   /*
@@ -906,7 +914,7 @@ $font-feature-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $font-feature-manual-values: (
   /*
@@ -918,15 +926,7 @@ $font-feature-manual-values: (
   tabular:      "'tnum' 1, 'kern' 1",
   default:      "'kern' 1",
   // none: none,
-) !default;
-
-$font-manual-values: (
-  /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -953,7 +953,7 @@ $font-style-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $font-style-preset-values: map-collect(
   /*
@@ -962,7 +962,7 @@ $font-style-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $font-style-manual-values: (
   /*
@@ -972,7 +972,7 @@ $font-style-manual-values: (
   ------------------------- */
   normal:       'normal',
   italic:       'italic',
-) !default;
+);
 
 /*
 ========================================
@@ -997,7 +997,7 @@ $font-weight-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $font-weight-preset-values: map-collect(
   /*
@@ -1006,7 +1006,7 @@ $font-weight-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $font-weight-manual-values: (
   /*
@@ -1025,7 +1025,7 @@ $font-weight-manual-values: (
   900:          '900',
   bold:         '700',
   unbold:       '400',
-) !default;
+);
 
 /*
 ========================================
@@ -1050,7 +1050,7 @@ $height-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $height-preset-values: map-collect(
   /*
@@ -1064,7 +1064,7 @@ $height-preset-values: map-collect(
   $preset-units-em,
   $preset-units-ch,
   $preset-units-px
-) !default;
+);
 
 $height-manual-values: (
   /*
@@ -1072,7 +1072,7 @@ $height-manual-values: (
   ----------------------------
   [store unused value pairs here]
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -1097,7 +1097,7 @@ $letter-spacing-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $letter-spacing-preset-values: map-collect(
   /*
@@ -1106,7 +1106,7 @@ $letter-spacing-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $letter-spacing-manual-values: (
   /*
@@ -1121,7 +1121,7 @@ $letter-spacing-manual-values: (
   1:            $u-ls-1,
   2:            $u-ls-2,
   3:            $u-ls-3,
-) !default;
+);
 
 /*
 ========================================
@@ -1146,7 +1146,7 @@ $line-height-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $line-height-preset-values: map-collect(
   /*
@@ -1155,7 +1155,7 @@ $line-height-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $line-height-manual-values: (
   /*
@@ -1169,7 +1169,7 @@ $line-height-manual-values: (
   3:    $u-lh-body-tight,
   4:          $u-lh-body,
   5:    $u-lh-body-loose,
-) !default;
+);
 
 /*
 ========================================
@@ -1196,7 +1196,7 @@ $list-reset-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 /*
 ========================================
@@ -1230,7 +1230,7 @@ $manual-position-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $manual-position-preset-values: map-collect(
   /*
@@ -1243,7 +1243,7 @@ $manual-position-preset-values: map-collect(
   $preset-units-px-negative,
   $preset-units-percentage,
   $preset-units-grid
-) !default;
+);
 
 $manual-position-manual-values: (
   /*
@@ -1253,7 +1253,7 @@ $manual-position-manual-values: (
   ------------------------- */
   0:            '0',
   auto:         'auto',
-) !default;
+);
 
 /*
 ========================================
@@ -1282,7 +1282,7 @@ $margin-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $margin-preset-values: map-collect(
   /*
@@ -1297,10 +1297,14 @@ $margin-preset-values: map-collect(
   $preset-units-ch,
   $preset-units-ch-negative,
   $preset-units-em
-  ------------------------- */
   $preset-spacing-tshirt,
   $preset-spacing-tshirt-negative
-) !default;
+  ------------------------- */
+  $preset-units-px,
+  $preset-units-px-negative,
+  $preset-units-grid,
+  $preset-units-grid-negative
+);
 
 $margin-manual-values: (
   /*
@@ -1312,7 +1316,7 @@ $margin-manual-values: (
   auto:         'auto',
   1px:          '1px',
   2px:          '2px',
-) !default;
+);
 
 /*
 ========================================
@@ -1337,7 +1341,7 @@ $max-height-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $max-height-preset-values: map-collect(
   /*
@@ -1349,7 +1353,7 @@ $max-height-preset-values: map-collect(
   $preset-units-percentage,
   $preset-units-grid,
   $preset-units-px
-) !default;
+);
 
 $max-height-manual-values: (
   /*
@@ -1357,7 +1361,7 @@ $max-height-manual-values: (
   ----------------------------
   [store unused value pairs here]
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -1376,25 +1380,24 @@ example:
 */
 
 $max-width-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $max-width-preset-values: map-collect(
   /*
   $example-preset-1,
   $example-preset-2 [no trailing comma]
   ----------------------------
-  [store unused presets here]
-  ------------------------- */
-  $preset-units-percentage,
   $preset-units-grid,
   $preset-units-px
-) !default;
+  ------------------------- */
+  $preset-breakpoints
+);
 
 $max-width-manual-values: (
   /*
@@ -1408,7 +1411,7 @@ $max-width-manual-values: (
   sm:           $small-screen,
   md:           $medium-screen,
   lg:           $large-screen,
-) !default;
+);
 
 /*
 ========================================
@@ -1427,25 +1430,24 @@ example:
 */
 
 $min-height-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $min-height-preset-values: map-collect(
   /*
   $example-preset-1,
   $example-preset-2 [no trailing comma]
   ----------------------------
-  [store unused presets here]
-  ------------------------- */
-  $preset-units-percentage,
   $preset-units-grid,
   $preset-units-px
-) !default;
+  ------------------------- */
+  $preset-units-percentage
+);
 
 $min-height-manual-values: (
   /*
@@ -1457,7 +1459,7 @@ $min-height-manual-values: (
   md:           $medium-screen,
   lg:           $large-screen,
   //xl:           $xlarge-screen,
-) !default;
+);
 
 /*
 ========================================
@@ -1482,7 +1484,7 @@ $min-width-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $min-width-preset-values: map-collect(
   /*
@@ -1494,7 +1496,7 @@ $min-width-preset-values: map-collect(
   $preset-units-percentage,
   $preset-units-grid,
   $preset-units-px
-) !default;
+);
 
 $min-width-manual-values: (
   /*
@@ -1506,7 +1508,7 @@ $min-width-manual-values: (
   md:           $medium-screen,
   lg:           $large-screen,
   // xl:           $xlarge-screen,
-) !default;
+);
 
 /*
 ========================================
@@ -1531,7 +1533,7 @@ $opacity-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $opacity-preset-values: map-collect(
   /*
@@ -1540,7 +1542,7 @@ $opacity-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $opacity-manual-values: (
   /*
@@ -1559,7 +1561,7 @@ $opacity-manual-values: (
   80:           '0.8',
   90:           '0.9',
   100:          '1',
-) !default;
+);
 
 /*
 ========================================
@@ -1587,7 +1589,7 @@ $order-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $order-preset-values: map-collect(
   /*
@@ -1596,7 +1598,7 @@ $order-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $order-manual-values: (
   /*
@@ -1617,7 +1619,7 @@ $order-manual-values: (
   ------------------------- */
   first:        '-1',
   last:         '99',
-) !default;
+);
 
 /*
 ========================================
@@ -1644,7 +1646,7 @@ $outline-1-width-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $outline-1-width-preset-values: map-collect(
   /*
@@ -1655,7 +1657,7 @@ $outline-1-width-preset-values: map-collect(
   ------------------------- */
   $preset-units-px,
   $preset-units-grid-small
-) !default;
+);
 
 $outline-1-width-manual-values: (
   /*
@@ -1664,7 +1666,7 @@ $outline-1-width-manual-values: (
   [store unused value pairs here]
   ------------------------- */
   0:            'none',
-) !default;
+);
 
 /*
 ========================================
@@ -1689,7 +1691,7 @@ $outline-2-color-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $outline-2-color-preset-values: map-collect(
   /*
@@ -1699,7 +1701,7 @@ $outline-2-color-preset-values: map-collect(
   [store unused presets here]
   ------------------------- */
   $preset-colors-red
-) !default;
+);
 
 $outline-2-color-manual-values: (
   /*
@@ -1707,7 +1709,7 @@ $outline-2-color-manual-values: (
   ----------------------------
   [store unused value pairs here]
   ------------------------- */
-) !default;
+);
 
 /*
 ========================================
@@ -1735,7 +1737,7 @@ $padding-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $padding-preset-values: map-collect(
   /*
@@ -1745,8 +1747,8 @@ $padding-preset-values: map-collect(
   $preset-units-px,
   $preset-units-grid
   ------------------------- */
-  $preset-spacing-tshirt
-) !default;
+  $preset-units-grid
+);
 
 $padding-manual-values: (
   /*
@@ -1755,7 +1757,7 @@ $padding-manual-values: (
   [store unused value pairs here]
   ------------------------- */
   0:            '0',
-) !default;
+);
 
 /*
 ========================================
@@ -1780,7 +1782,7 @@ $position-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $position-preset-values: map-collect(
   /*
@@ -1789,7 +1791,7 @@ $position-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $position-manual-values: (
   /*
@@ -1802,7 +1804,7 @@ $position-manual-values: (
   relative:     'relative',
   static:       'static',
   sticky:       'sticky',
-) !default;
+);
 
 /*
 ========================================
@@ -1829,7 +1831,7 @@ $row-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 /*
 ========================================
@@ -1856,7 +1858,7 @@ $square-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $square-preset-values: map-collect(
   /*
@@ -1866,7 +1868,7 @@ $square-preset-values: map-collect(
   [store unused presets here]
   ------------------------- */
   $preset-units-grid
-) !default;
+);
 
 $square-manual-values: (
   /*
@@ -1875,7 +1877,7 @@ $square-manual-values: (
   [store unused value pairs here]
   ------------------------- */
   2px:          '2px',
-) !default;
+);
 
 /*
 ========================================
@@ -1900,7 +1902,7 @@ $text-align-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $text-align-preset-values: map-collect(
   /*
@@ -1909,7 +1911,7 @@ $text-align-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $text-align-manual-values: (
   /*
@@ -1921,7 +1923,7 @@ $text-align-manual-values: (
   left:         'left',
   right:        'right',
   justify:      'justify',
-) !default;
+);
 
 /*
 ========================================
@@ -1946,7 +1948,7 @@ $text-decoration-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $text-decoration-preset-values: map-collect(
   /*
@@ -1955,7 +1957,7 @@ $text-decoration-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $text-decoration-manual-values: (
   /*
@@ -1965,8 +1967,8 @@ $text-decoration-manual-values: (
   ------------------------- */
   underline:        'underline',
   strike:           'strike',
-  decoration-none:  'none',
-) !default;
+  none:             'none',
+);
 
 /*
 ========================================
@@ -1991,7 +1993,7 @@ $text-transform-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $text-transform-preset-values: map-collect(
   /*
@@ -2000,7 +2002,7 @@ $text-transform-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $text-transform-manual-values: (
   /*
@@ -2012,7 +2014,7 @@ $text-transform-manual-values: (
   lowercase:      'lowercase',
   uppercase:      'uppercase',
   transform-none: 'none',
-) !default;
+);
 
 /*
 ========================================
@@ -2037,7 +2039,7 @@ $vertical-align-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $vertical-align-preset-values: map-collect(
   /*
@@ -2046,7 +2048,7 @@ $vertical-align-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $vertical-align-manual-values: (
   /*
@@ -2062,7 +2064,7 @@ $vertical-align-manual-values: (
   text-bottom:  'text-bottom',
   text-top:     'text-top',
   top:          'top',
-) !default;
+);
 
 /*
 ========================================
@@ -2087,7 +2089,7 @@ $whitespace-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $whitespace-preset-values: map-collect(
   /*
@@ -2096,7 +2098,7 @@ $whitespace-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $whitespace-manual-values: (
   /*
@@ -2109,7 +2111,7 @@ $whitespace-manual-values: (
   pre:          'pre',
   pre-line:     'pre-line',
   pre-wrap:     'pre-wrap',
-) !default;
+);
 
 /*
 ========================================
@@ -2134,7 +2136,7 @@ $width-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $width-preset-values: map-collect(
   /*
@@ -2148,7 +2150,7 @@ $width-preset-values: map-collect(
   $preset-units-px,
   $preset-units-em,
   $preset-units-ch
-) !default;
+);
 
 $width-manual-values: (
   /*
@@ -2160,7 +2162,7 @@ $width-manual-values: (
   sm:           $small-screen,
   md:           $medium-screen,
   lg:           $large-screen,
-) !default;
+);
 
 /*
 ========================================
@@ -2187,7 +2189,7 @@ $z-index-settings: (
   focus:        false,
   hover:        false,
   visited:      false,
-) !default;
+);
 
 $z-index-preset-values: map-collect(
   /*
@@ -2196,7 +2198,7 @@ $z-index-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
-) !default;
+);
 
 $z-index-manual-values: (
   /*
@@ -2212,4 +2214,4 @@ $z-index-manual-values: (
   500:          '500',
   top:          '9999',
   bottom:       '-9999',
-) !default;
+);

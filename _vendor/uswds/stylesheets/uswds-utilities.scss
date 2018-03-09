@@ -6,7 +6,10 @@
 // Import the utility presets
 @import 'utilities/presets/all';
 
-// Import the utility settings
+// Import the project utility settings
+@import 'uswds-project-utilities-settings';
+
+// Import the default utility settings
 @import 'utilities/utilities-settings';
 
 // 3. Import the utility rules
