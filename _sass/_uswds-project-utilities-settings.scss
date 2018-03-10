@@ -8,7 +8,7 @@ $utilities-namespace-prefix: '';
 
 $output-breakpoints: (
   xs: false,
-  sm: false,
+  sm: true,
   md: true,
   lg: true,
   xl: false,
@@ -31,7 +31,7 @@ example:
 */
 
 $align-items-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -52,11 +52,11 @@ $align-items-manual-values: (
   /*
   key:          'value', [trailing comma ok]
   ----------------------------
+  ------------------------- */
   flex-start:   'flex-start',
   flex-end:     'flex-end',
   center:       'center',
   stretch:      'stretch',
-  ------------------------- */
 );
 
 /*
@@ -199,6 +199,8 @@ $border-color-preset-values: map-collect(
   $preset-palette-project-settings,
   $preset-palette-reserved
   ------------------------- */
+  $preset-colors-black-cool,
+  $preset-colors-indigo-warm,
   $preset-colors-red-warm,
   $preset-colors-gold
 );
@@ -246,6 +248,7 @@ $border-radius-preset-values: map-collect(
   ----------------------------
   $preset-units-px
   ------------------------- */
+  $preset-units-grid-small
 );
 
 $border-radius-manual-values: (
@@ -431,7 +434,7 @@ $color-settings: (
   responsive:   false,
   active:       false,
   focus:        false,
-  hover:        false,
+  hover:        true,
   visited:      false,
 );
 
@@ -442,6 +445,7 @@ $color-preset-values: map-collect(
   ----------------------------
   [store unused presets here]
   ------------------------- */
+  $preset-colors-black-cool,
   $preset-palette-project-settings,
   $preset-palette-reserved
 );
@@ -553,7 +557,7 @@ example:
 */
 
 $flex-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1436,7 +1440,7 @@ example:
 
 $min-height-settings: (
   output:       true,
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -1451,7 +1455,8 @@ $min-height-preset-values: map-collect(
   $preset-units-grid,
   $preset-units-px
   ------------------------- */
-  $preset-units-percentage
+  $preset-units-percentage,
+  $preset-units-grid-medium
 );
 
 $min-height-manual-values: (
@@ -1483,8 +1488,8 @@ example:
 */
 
 $min-width-settings: (
-  output:       false,
-  responsive:   false,
+  output:       true,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -1496,11 +1501,11 @@ $min-width-preset-values: map-collect(
   $example-preset-1,
   $example-preset-2 [no trailing comma]
   ----------------------------
-  [store unused presets here]
-  ------------------------- */
   $preset-units-percentage,
-  $preset-units-grid,
   $preset-units-px
+  ------------------------- */
+  $preset-units-grid-large,
+  $preset-units-grid-xlarge
 );
 
 $min-width-manual-values: (
@@ -1737,7 +1742,7 @@ example:
 
 $padding-settings: (
   output:       true,
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -1830,7 +1835,7 @@ example:
 */
 
 $row-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -2088,7 +2093,7 @@ example:
 */
 
 $whitespace-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -2135,7 +2140,7 @@ example:
 */
 
 $width-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -2148,13 +2153,12 @@ $width-preset-values: map-collect(
   $example-preset-1,
   $example-preset-2 [no trailing comma]
   ----------------------------
-  [store unused presets here]
-  ------------------------- */
-  $preset-units-percentage,
   $preset-units-grid,
   $preset-units-px,
   $preset-units-em,
   $preset-units-ch
+  ------------------------- */
+  $preset-units-percentage
 );
 
 $width-manual-values: (
