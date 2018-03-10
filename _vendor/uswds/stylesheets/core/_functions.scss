@@ -207,9 +207,13 @@ Converts a value in px to a value in rem
 */
 
 @function px($pixels) {
-  $px-to-rem: strip-unit($pixels) / strip-unit($i-font-size-base) * 1rem;
+  @if $pixels {
+    $px-to-rem: strip-unit($pixels) / strip-unit($i-font-size-base) * 1rem;
 
-  @return $px-to-rem;
+    @return $px-to-rem;
+  } @else {
+    @return false;        
+  }
 }
 
 /*
@@ -235,9 +239,14 @@ to a set target
 */
 
 @function type-scale($cap-height, $scale) {
-  $this-scale: $base-cap-height * strip-unit($scale) / $cap-height;
+  @if $cap-height {
+    @return false;
+  }
+  @else {
+    $this-scale: $base-cap-height * strip-unit($scale) / $cap-height;
 
-  @return px($this-scale);
+    @return px($this-scale);
+  }
 }
 
 /*
@@ -281,7 +290,7 @@ loop
 */
 
 @mixin render-pseudoclass($pseudoclass, $selector, $property, $value, $val-props, $mq) {
-  $this-mq: null;
+  $this-mq: false;
   @if $mq {
     $this-mq: '#{$mq}\:';
   }
@@ -306,7 +315,7 @@ to style placeholder text
 */
 
 @mixin render-placeholder($selector, $property, $value, $val-props) {
-  $this-namespace: null;
+  $this-namespace: false;
 
   @if $utility-type == settings {
     $this-namespace: $s-settings-utilities-namespace;
@@ -382,18 +391,18 @@ through all possible variants
       // set intital variants
       // $property-default is a single value for all these utilities
 
-      $base-props: null;
-      $modifier: null;
-      $selector: null;
+      $base-props: false;
+      $modifier: false;
+      $selector: false;
       $property-default: map-get($utility, property);
-      $property: null;
-      $value: null;
+      $property: false;
+      $value: false;
       $our-modifiers: ();
-      $b: null;
-      $v: null;
-      $mv: null;
+      $b: false;
+      $v: false;
+      $mv: false;
       $val-props: ();
-      $mq: null;
+      $mq: false;
 
       //    If there's a base, use base-to-map() to convert it into a MAP:
       //    $base-props: (
@@ -401,18 +410,18 @@ through all possible variants
       //      isReadable: BOOL,
       //    )
 
-      @if map-get($utility, base) != null {
+      @if map-get($utility, base) != false {
         $base-props: base-to-map(map-get($utility, base));
 
         // And set $b (used in the selector constructor, below) to base-props.slug.
 
         $b: map-get($base-props, slug);
 
-        // Otherwise, assign it null props.
+        // Otherwise, assign it false props.
 
       } @else {
         $base-props: (
-          slug: null,
+          slug: false,
         );
       }
 
@@ -425,22 +434,22 @@ through all possible variants
 
       @each $val-key, $val-value in map-get($utility, values) {
 
-        // If $val-value == null, or if $val-value is a map and
-        // the content key or the dependency key has a null value
+        // If $val-value == false, or if $val-value is a map and
+        // the content key or the dependency key has a false value
         // skip building this rule
         // altogether
 
         @if type-of($val-value) == 'map' {
-          @if map-get($val-value, content) == null {
-            $val-value: null;
+          @if map-get($val-value, content) == false {
+            $val-value: false;
           }
           @elseif map-has-key($val-value, dependency) {
-            @if map-get($val-value, dependency) == null {
-              $val-value: null;
+            @if map-get($val-value, dependency) == false {
+              $val-value: false;
             }
           }
         }
-        @if $val-value != null {
+        @if $val-value != false {
 
           // If $val-value is already a MAP...
 
@@ -505,7 +514,7 @@ through all possible variants
 
           // So, check for modifiers.
 
-          @if map-get($utility, modifiers) != null {
+          @if map-get($utility, modifiers) != false {
 
             // If there is one, capture it as $our-modifiers.
 
@@ -516,7 +525,7 @@ through all possible variants
             // all our build in the same loop.
 
             $our-modifiers: (
-              slug: null,
+              slug: false,
             );
           }
 
@@ -538,22 +547,22 @@ through all possible variants
 
             $mod-props: to-map($mod-key, $mod-val);
 
-            // -------- if the modifier is null ----------
+            // -------- if the modifier is false ----------
 
-            @if map-get($mod-props, content) == null {
+            @if map-get($mod-props, content) == false {
 
-              // If mod-props.values is null, there's no modifier property
+              // If mod-props.values is false, there's no modifier property
               // and we can set our rule's $property now
               // since $property is simply $property-default.
 
               $property: $property-default;
 
-              // We can also build the $selector if mod-props.slug is null!
-              // First, we can test to see if selector $b is null
+              // We can also build the $selector if mod-props.slug is false!
+              // First, we can test to see if selector $b is false
 
-              @if $b == null {
+              @if $b == false {
 
-                // If it _is_ null, the rule's selector is $v.
+                // If it _is_ false, the rule's selector is $v.
 
                 $selector: $v;
 
@@ -592,7 +601,7 @@ through all possible variants
               // OK, cool.
               // So what if there _is_ a modifier object?
 
-              // -------- if the modifier is NOT null ----------
+              // -------- if the modifier is NOT false ----------
 
           } @else {
 
@@ -633,7 +642,7 @@ through all possible variants
               // Once we have $mv, test for $b
               // and build the selector as before.
 
-              @if $b == null {
+              @if $b == false {
                 $selector: $mv;
               } @elseif map-get($base-props, isReadable) or
                 map-get($mod-props, isReadable) {
@@ -682,7 +691,7 @@ through all possible variants
               @include render-media-queries($utility, $selector, $property, $value, $val-props);
             } // ･ﾟ✧
           } // end the modifier loop
-        } // end the null value conditional
+        } // end the false value conditional
       } // end the value loop
     } // end the output conditional
   } // end the utility loop
