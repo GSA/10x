@@ -126,8 +126,10 @@ gulp.task('build-utilities', function (done) {
     .pipe(gulpif(CONCAT_FONTS, concatUtilities()))
     .pipe(minifyCSS())
     .pipe(gulp.dest(`${CSS_DEST}`))
+    .pipe(size())
     .pipe(gzip({ extension: 'gz' }))
-    .pipe(gulp.dest(`${CSS_DEST}`));
+    .pipe(gulp.dest(`${CSS_DEST}`))
+    .pipe(size());
 });
 
 gulp.task('build-uswds', function (done) {
@@ -136,8 +138,10 @@ gulp.task('build-uswds', function (done) {
     .pipe(gulpif(CONCAT_FONTS, concatMain()))
     .pipe(minifyCSS())
     .pipe(gulp.dest(`${CSS_DEST}`))
+    .pipe(size())
     .pipe(gzip({ extension: 'gz' }))
-    .pipe(gulp.dest(`${CSS_DEST}`));
+    .pipe(gulp.dest(`${CSS_DEST}`))
+    .pipe(size());
 });
 
 gulp.task('build-custom', function (done) {
