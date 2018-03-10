@@ -444,7 +444,8 @@ $font-settings: (
 $font-preset-values: map-collect(
   /*
   */
-  $preset-sans
+  $preset-sans,
+  $preset-mono-medium
 );
 
 $font-manual-values: (
