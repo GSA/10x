@@ -1,0 +1,24 @@
+// Load all the vendor, settings, and variables for a USWDS project
+@import 'required';
+
+// Utilities ------------ //
+
+// Import the utility presets
+@import 'utilities/presets/all';
+
+// Import the project utility settings
+@import 'uswds-project-utilities-settings';
+
+// Import the default utility settings
+@import 'utilities/utilities-settings';
+
+// 3. Import the utility rules
+@import 'utilities/rules/all';
+
+// 4. Import the utility packager
+@import 'utilities/rules/package';
+
+// 5. Build the utilities
+@include render-utilities-in($utilities-package);
+
+//

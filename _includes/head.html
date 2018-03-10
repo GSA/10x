@@ -104,12 +104,11 @@
     <style>
     {% include uswds-app-opt.min.css %}
     </style>
-    <link rel="preload" href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}" as="style"> 
+    <link rel="preload" href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}" as="style">
   {% else %}
     <link rel="stylesheet" href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/uswds-custom.min.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/uswds-production-utilities.min.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/uswds-prototyping-utilities.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/uswds-utilities.min.css" | relative_url }}">
   {% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">

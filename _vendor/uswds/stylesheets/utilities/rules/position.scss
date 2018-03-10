@@ -1,0 +1,28 @@
+/*
+========================================
+position
+----------------------------------------
+usage:
+  .position-[keye]
+----------------------------------------
+output:
+  position: [value];
+----------------------------------------
+example:
+  .position-absolute {
+    position: absolute; }
+----------------------------------------
+*/
+
+$position: (
+  position: (
+    base: 'position',
+    modifiers: null,
+    values: map-collect(
+      $position-preset-values,
+      $position-manual-values
+    ),
+    settings: $position-settings,
+    property: 'position',
+  )
+)

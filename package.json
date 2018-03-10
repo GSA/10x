@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Website for The Office of Investments in GSA’s Technology Transformation Service (TTS)",
   "scripts": {
-    "build-production-utilities": "gulp build-production-utilities",
-    "build-prototyping-utilities": "gulp build-prototyping-utilities",
-    "build-all-utilities": "gulp build-production-utilities && gulp build-prototyping-utilities",
+    "build-utilities": "gulp build-utilities",
     "assets": "gulp copy-uswds-assets",
     "subset": "gulp subset",
     "federalist": "gulp uswds-opt"

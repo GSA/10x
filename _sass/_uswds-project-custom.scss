@@ -11,20 +11,23 @@
 
     - - - - - - - - - - - - - - - - - - - - -  */
 
+*:focus {
+  outline: 4px solid $s-color-highlight;
+}
+
 .page-content {
   h3 {
     font-weight: $s-fw-xlight;
-    font-size: $u-sans-10;
-    line-height: $u-lh-cap;
+    font-size: $u-sans-24;
+    line-height: $u-lh-heading-loose;
     @include media($s-medium-screen) {
-      font-size: $u-sans-15;
-      line-height: $u-lh-hed;
+      font-size: $u-sans-48;
     }
   }
 }
 
 *:active:focus {
-  outline: 4px solid $u-color-indigo-warm-50v;
+  outline: 4px solid $indigo-warm-50v;
 }
 
 .usa-accordion-content{

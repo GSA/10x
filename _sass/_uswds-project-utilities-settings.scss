@@ -1,0 +1,1320 @@
+/*
+========================================
+.USWDS UTILITIES SETTINGS
+----------------------------------------
+*/
+
+$utilities-namespace-prefix: '';
+
+$output-breakpoints: (
+  xs: false,
+  sm: true,
+  md: true,
+  lg: true,
+  xl: false,
+);
+
+/*
+========================================
+.align-items
+----------------------------------------
+*/
+
+$align-items-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$align-items-preset-values: map-collect(
+);
+
+$align-items-manual-values: (
+  flex-start:   'flex-start',
+  flex-end:     'flex-end',
+  center:       'center',
+  stretch:      'stretch',
+);
+
+/*
+========================================
+.border-radius
+----------------------------------------
+*/
+
+$background-color-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$background-color-preset-values: map-collect(
+  $preset-palette-reserved,
+  $preset-colors-indigo-warm-medium-vivid,
+  $preset-colors-black-transparent,
+  $preset-colors-black-cool-dark,
+  $preset-colors-gold-light-vivid,
+  $preset-colors-red-warm-medium-vivid
+);
+
+$background-color-manual-values: (
+);
+
+/*
+========================================
+.border-width
+----------------------------------------
+*/
+
+$border-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$border-preset-values: map-collect(
+  $preset-units-px,
+  $preset-units-grid-small
+);
+
+$border-manual-values: (
+);
+
+/*
+========================================
+.border-color
+----------------------------------------
+*/
+
+$border-color-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        true,
+  visited:      false,
+);
+
+$border-color-preset-values: map-collect(
+  $preset-colors-black-cool,
+  $preset-colors-indigo-warm-medium-vivid,
+  $preset-colors-red-warm-medium-vivid,
+  $preset-colors-gold-light-vivid
+);
+
+$border-color-manual-values: (
+);
+
+/*
+========================================
+.border-radius
+----------------------------------------
+*/
+
+$border-radius-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$border-radius-preset-values: map-collect(
+  $preset-units-grid-small
+);
+
+$border-radius-manual-values: (
+  0:            '0',
+  pill:         '9999em',
+  circle:       '50%',
+  sm:           $s-radius-sm,
+  md:           $s-radius-md,
+  lg:           $s-radius-lg,
+);
+
+/*
+========================================
+.border-style
+----------------------------------------
+*/
+
+$border-style-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$border-style-preset-values: map-collect(
+);
+
+$border-style-manual-values: (
+  /*
+  dashed:       'dashed',
+  dotted:       'dotted',
+  solid:        'solid',
+  */
+);
+
+/*
+========================================
+.box-shadow
+----------------------------------------
+*/
+
+$box-shadow-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$box-shadow-preset-values: map-collect(
+);
+
+$box-shadow-manual-values: (
+  /*
+  none:   'none',
+  1: '0 1px 2px 0 rgba(0,0,0,0.10)',
+  2: '0 4px 8px 0 rgba(0,0,0,0.10)',
+  3: '0 6px 12px 0 rgba(0,0,0,0.10)',
+  4: '0 8px 16px 0 rgba(0,0,0,0.10)',
+  5: '0 12px 24px 0 rgba(0,0,0,0.10)',
+  */
+);
+
+/*
+========================================
+.circle
+----------------------------------------
+*/
+
+$circle-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$circle-preset-values: map-collect(
+  $preset-spacing-tshirt
+);
+
+$circle-manual-values: (
+  3xs:          $s-spacing-3xs,
+  2xs:          $s-spacing-2xs,
+  xs:           $s-spacing-xs,
+  sm:           $s-spacing-sm,
+  md:           $s-spacing-md,
+  lg:           $s-spacing-lg,
+  xl:           $s-spacing-xl,
+  2xl:          $s-spacing-2xl,
+  3xl:          $s-spacing-3xl,
+);
+
+/*
+========================================
+.color
+----------------------------------------
+*/
+
+$color-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        true,
+  visited:      false,
+);
+
+$color-preset-values: map-collect(
+  /*
+  $preset-palette-project-settings,
+  */
+  $preset-colors-black-cool-light,
+  $preset-colors-black-cool-dark,
+  $preset-colors-indigo-warm-medium-vivid,
+  $preset-palette-reserved
+);
+
+$color-manual-values: (
+);
+
+/*
+========================================
+.column
+----------------------------------------
+*/
+
+$column-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+/*
+========================================
+.display
+----------------------------------------
+*/
+
+$display-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$display-preset-values: map-collect(
+  /*
+  */
+);
+
+
+$display-manual-values: (
+  /*
+  */
+  block:        'block',
+  flex:         'flex',
+  none:         'none',
+  inline:       'inline',
+  inline-block: 'inline-block',
+  table:        'table',
+  table-cell:   'table-cell',
+);
+
+/*
+========================================
+.flex
+----------------------------------------
+*/
+
+$flex-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$flex-preset-values: map-collect(
+  /*
+  */
+);
+
+
+$flex-manual-values: (
+  /*
+  */  1:            '1 0 0',
+  2:            '2 0 0',
+  3:            '3 0 0',
+  4:            '4 0 0',
+  5:            '5 0 0',
+  6:            '6 0 0',
+  7:            '7 0 0',
+  8:            '8 0 0',
+  9:            '9 0 0',
+  10:           '10 0 0',
+  11:           '11 0 0',
+  fill:         '1 0 0',
+  fit:          '0',
+);
+
+/*
+========================================
+.flex-direction
+----------------------------------------
+*/
+
+$flex-direction-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$flex-direction-preset-values: map-collect(
+  /*
+  */
+);
+
+
+$flex-direction-manual-values: (
+  /*
+  */
+  row:          'row',
+  column:       'column',
+);
+
+/*
+========================================
+.flex-wrap
+----------------------------------------
+*/
+
+$flex-wrap-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$flex-wrap-preset-values: map-collect(
+  /*
+  */
+);
+
+
+$flex-wrap-manual-values: (
+  /*
+  */  wrap:         'wrap',
+  nowrap:       'nowrap',
+);
+
+/*
+========================================
+.float
+----------------------------------------
+*/
+
+$float-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$float-preset-values: map-collect(
+  /*
+  */
+);
+
+
+$float-manual-values: (
+  /*
+  */
+  left:         'left',
+  none:         'none',
+  right:        'right',
+);
+
+/*
+========================================
+.font
+----------------------------------------
+*/
+
+$font-settings: (
+  output:       true,
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$font-preset-values: map-collect(
+  /*
+  */
+  $preset-sans,
+  $preset-mono-medium
+);
+
+$font-manual-values: (
+  /*
+  */
+);
+
+/*
+========================================
+.font-family
+----------------------------------------
+*/
+
+$font-family-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$font-family-preset-values: map-collect(
+  /*
+  */
+  $preset-font-families
+);
+
+$font-family-manual-values: (
+  /*
+  */
+);
+
+/*
+========================================
+.font-feature-settings
+----------------------------------------
+*/
+
+$font-feature-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$font-feature-preset-values: map-collect(
+  /*
+  */
+);
+
+$font-feature-manual-values: (
+  /*
+  */
+  alt:          "'ss01' 1, 'kern' 1",
+  tabular:      "'tnum' 1, 'kern' 1",
+  default:      "'kern' 1",
+  // none: none,
+);
+
+/*
+========================================
+.font-style
+----------------------------------------
+*/
+
+$font-style-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$font-style-preset-values: map-collect(
+  /*
+  */
+);
+
+$font-style-manual-values: (
+  /*
+  */
+  normal:       'normal',
+  italic:       'italic',
+);
+
+/*
+========================================
+.font-weight
+----------------------------------------
+*/
+
+$font-weight-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$font-weight-preset-values: map-collect(
+  /*
+  */
+);
+
+$font-weight-manual-values: (
+  /*
+  bold:         '700',
+  unbold:       '400',
+  */
+  100:          '100',
+  200:          '200',
+  300:          '300',
+  400:          '400',
+  500:          '500',
+  600:          '600',
+  700:          '700',
+  800:          '800',
+  900:          '900',
+);
+
+/*
+========================================
+.height
+----------------------------------------
+*/
+
+$height-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$height-preset-values: map-collect(
+  /*
+  $preset-units-em,
+  $preset-units-ch,
+  $preset-units-px
+  */
+  $preset-units-percentage,
+  $preset-units-grid
+);
+
+$height-manual-values: (
+  /*
+  */
+);
+
+/*
+========================================
+.letter-spacing
+----------------------------------------
+*/
+
+$letter-spacing-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$letter-spacing-preset-values: map-collect(
+  /*
+  */
+);
+
+$letter-spacing-manual-values: (
+  /*
+  */
+  auto:         'auto',
+  n1:           $u-ls-n1,
+  n2:           $u-ls-n2,
+  n3:           $u-ls-n3,
+  1:            $u-ls-1,
+  2:            $u-ls-2,
+  3:            $u-ls-3,
+);
+
+/*
+========================================
+.line-height
+----------------------------------------
+*/
+
+$line-height-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$line-height-preset-values: map-collect(
+  /*
+  */
+);
+
+$line-height-manual-values: (
+  /*
+  */
+  0:        $u-lh-single,
+  1:       $u-lh-heading,
+  2: $u-lh-heading-loose,
+  3:    $u-lh-body-tight,
+  4:          $u-lh-body,
+  5:    $u-lh-body-loose,
+);
+
+/*
+========================================
+.list-reset
+----------------------------------------
+*/
+
+$list-reset-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+/*
+========================================
+.MANUAL POSITION
+----------------------------------------
+properties:
+  top
+  bottom
+  left
+  right
+----------------------------------------
+*/
+
+$manual-position-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$manual-position-preset-values: map-collect(
+  /*
+  */
+  $preset-units-px,
+  $preset-units-px-negative,
+  $preset-units-percentage,
+  $preset-units-grid
+);
+
+$manual-position-manual-values: (
+  /*
+  */
+  0:            '0',
+  auto:         'auto',
+);
+
+/*
+========================================
+.margin
+----------------------------------------
+*/
+
+$margin-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$margin-preset-values: map-collect(
+  /*
+  $preset-units-px,
+  $preset-units-px-negative,
+  $preset-units-percentage,
+  $preset-units-grid,
+  $preset-units-grid-negative,
+  $preset-units-ch,
+  $preset-units-ch-negative,
+  $preset-units-em
+  $preset-spacing-tshirt,
+  $preset-spacing-tshirt-negative
+  */
+  $preset-units-px,
+  $preset-units-px-negative,
+  $preset-units-grid-small,
+  $preset-units-grid-medium,
+  $preset-units-grid-small-negative,
+  $preset-units-grid-medium-negative
+);
+
+$margin-manual-values: (
+  /*
+  */
+  0:            '0',
+  auto:         'auto',
+  1px:          '1px',
+  2px:          '2px',
+);
+
+/*
+========================================
+.max-height
+----------------------------------------
+*/
+
+$max-height-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$max-height-preset-values: map-collect(
+  /*
+  $preset-units-percentage,
+  $preset-units-grid,
+  $preset-units-px
+  */
+);
+
+$max-height-manual-values: (
+  /*
+  */
+);
+
+/*
+========================================
+.max-width
+----------------------------------------
+*/
+
+$max-width-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$max-width-preset-values: map-collect(
+  /*
+  */
+  $preset-units-breakpoints
+);
+
+$max-width-manual-values: (
+  /*
+  */
+  none:         'none',
+  reading-sm:   $text-narrow-width,
+  reading:      $text-max-width,
+);
+
+/*
+========================================
+.min-height
+----------------------------------------
+*/
+
+$min-height-settings: (
+  output:       true,
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$min-height-preset-values: map-collect(
+  /*
+  $preset-units-percentage,
+  */
+  $preset-units-breakpoints,
+  $preset-units-grid-medium
+);
+
+$min-height-manual-values: (
+  /*
+  */
+  100ct:        100%,
+);
+
+/*
+========================================
+.min-width
+----------------------------------------
+*/
+
+$min-width-settings: (
+  output:       true,
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$min-width-preset-values: map-collect(
+  /*
+  */
+  $preset-units-breakpoints,
+  $preset-units-grid-large,
+  $preset-units-grid-xlarge
+);
+
+$min-width-manual-values: (
+  /*
+  */
+);
+
+/*
+========================================
+.opacity
+----------------------------------------
+*/
+
+$opacity-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$opacity-preset-values: map-collect(
+  /*
+  */
+);
+
+$opacity-manual-values: (
+  /*
+  0:            '0',
+  10:           '0.1',
+  20:           '0.2',
+  30:           '0.3',
+  40:           '0.4',
+  50:           '0.5',
+  60:           '0.6',
+  70:           '0.7',
+  80:           '0.8',
+  90:           '0.9',
+  100:          '1',
+  */
+);
+
+/*
+========================================
+.order
+----------------------------------------
+*/
+
+$order-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$order-preset-values: map-collect(
+  /*
+  */
+);
+
+$order-manual-values: (
+  /*
+  0:            0,
+  1:            1,
+  2:            2,
+  3:            3,
+  4:            4,
+  5:            5,
+  6:            6,
+  7:            7,
+  8:            8,
+  9:            9,
+  10:           10,
+  11:           11,
+  */
+  first:        '-1',
+  last:         '99',
+);
+
+/*
+========================================
+.outline
+----------------------------------------
+*/
+
+$outline-1-width-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$outline-1-width-preset-values: map-collect(
+  /*
+  */
+  $preset-units-px,
+  $preset-units-grid-small
+);
+
+$outline-1-width-manual-values: (
+  /*
+  */
+  0:            'none',
+);
+
+/*
+========================================
+.outline-color
+----------------------------------------
+*/
+
+$outline-2-color-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$outline-2-color-preset-values: map-collect(
+  /*
+  */
+  $preset-colors-red
+);
+
+$outline-2-color-manual-values: (
+  /*
+  */
+);
+
+/*
+========================================
+.padding
+----------------------------------------
+*/
+
+$padding-settings: (
+  output:       true,
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$padding-preset-values: map-collect(
+  /*
+  $preset-units-px,
+  */
+  $preset-units-grid
+);
+
+$padding-manual-values: (
+  /*
+  */
+  0:            '0',
+);
+
+/*
+========================================
+.position
+----------------------------------------
+*/
+
+$position-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$position-preset-values: map-collect(
+  /*
+  */
+);
+
+$position-manual-values: (
+  /*
+  */
+  absolute:     'absolute',
+  fixed:        'fixed',
+  relative:     'relative',
+  static:       'static',
+  sticky:       'sticky',
+);
+
+/*
+========================================
+.row
+----------------------------------------
+*/
+
+$row-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+/*
+========================================
+.square
+----------------------------------------
+*/
+
+$square-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$square-preset-values: map-collect(
+  /*
+  */
+  $preset-units-grid
+);
+
+$square-manual-values: (
+  /*
+  */
+  2px:          '2px',
+);
+
+/*
+========================================
+.text-align
+----------------------------------------
+*/
+
+$text-align-settings: (
+  output:       true,
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$text-align-preset-values: map-collect(
+  /*
+  */
+);
+
+$text-align-manual-values: (
+  /*
+  justify:      'justify',
+  right:        'right',
+  */
+  center:       'center',
+  left:         'left',
+);
+
+/*
+========================================
+.text-decoration
+----------------------------------------
+*/
+
+$text-decoration-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$text-decoration-preset-values: map-collect(
+  /*
+  */
+);
+
+$text-decoration-manual-values: (
+  /*
+  strike:           'strike',
+  */
+  underline:        'underline',
+  none:             'none',
+);
+
+/*
+========================================
+.text-transform
+----------------------------------------
+*/
+
+$text-transform-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$text-transform-preset-values: map-collect(
+  /*
+  */
+);
+
+$text-transform-manual-values: (
+  /*
+  capitalize:     'capitalize',
+  lowercase:      'lowercase',
+  */
+  uppercase:      'uppercase',
+  none:           'none',
+);
+
+/*
+========================================
+.vertical-align
+----------------------------------------
+*/
+
+$vertical-align-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$vertical-align-preset-values: map-collect(
+  /*
+  */
+);
+
+$vertical-align-manual-values: (
+  /*
+  baseline:     'baseline',
+  bottom:       'bottom',
+  middle:       'middle',
+  sub:          'sub',
+  super:        'super',
+  text-bottom:  'text-bottom',
+  text-top:     'text-top',
+  top:          'top',
+  */
+);
+
+/*
+========================================
+.whitespace
+----------------------------------------
+*/
+
+$whitespace-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$whitespace-preset-values: map-collect(
+  /*
+  */
+);
+
+$whitespace-manual-values: (
+  /*
+  pre:          'pre',
+  pre-line:     'pre-line',
+  pre-wrap:     'pre-wrap',
+  */
+  normal:       'normal',
+  nowrap:       'nowrap',
+);
+
+/*
+========================================
+.width
+----------------------------------------
+*/
+
+$width-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$width-preset-values: map-collect(
+  /*
+  $preset-units-grid,
+  $preset-units-px,
+  $preset-units-em,
+  $preset-units-ch
+  */
+  $preset-units-percentage,
+  $preset-units-breakpoints
+);
+
+$width-manual-values: (
+  /*
+  */
+  auto:         'auto',
+  100ct:        '100%',
+);
+
+/*
+========================================
+.z-index
+----------------------------------------
+*/
+
+$z-index-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false,
+);
+
+$z-index-preset-values: map-collect(
+  /*
+  */
+);
+
+$z-index-manual-values: (
+  /*
+  0:            '0',
+  100:          '100',
+  200:          '200',
+  300:          '300',
+  400:          '400',
+  500:          '500',
+  */
+  top:          '9999',
+  bottom:       '-9999',
+);
