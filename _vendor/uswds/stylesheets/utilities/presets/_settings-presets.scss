@@ -36,7 +36,9 @@ $preset-spacing-tshirt-negative: (
 $preset-mono-3xs: (
   mono-3xs: (
     slug: 'mono-3xs',
+    isReadable: true,
     content: $s-font-size-3xs,
+    extends: font-mono,
     dependency: $i-font-mono,
   ),
 );
@@ -44,7 +46,9 @@ $preset-mono-3xs: (
 $preset-mono-2xs: (
   mono-2xs: (
     slug: 'mono-2xs',
+    isReadable: true,
     content: $s-font-size-2xs,
+    extends: font-mono,
     dependency: $i-font-mono,
   ),
 );
@@ -52,7 +56,9 @@ $preset-mono-2xs: (
 $preset-mono-xs: (
   mono-xs: (
     slug: 'mono-xs',
+    isReadable: true,
     content: $s-font-size-xs,
+    extends: font-mono,
     dependency: $i-font-mono,
   ),
 );
@@ -60,7 +66,9 @@ $preset-mono-xs: (
 $preset-mono-sm: (
   mono-sm: (
     slug: 'mono-sm',
+    isReadable: true,
     content: $s-font-size-sm,
+    extends: font-mono,
     dependency: $i-font-mono,
   ),
 );
@@ -68,7 +76,9 @@ $preset-mono-sm: (
 $preset-mono-md: (
   mono-md: (
     slug: 'mono-md',
+    isReadable: true,
     content: $s-font-size-md,
+    extends: font-mono,
     dependency: $i-font-mono,
   ),
 );
@@ -76,7 +86,9 @@ $preset-mono-md: (
 $preset-mono-lg: (
   mono-lg: (
     slug: 'mono-lg',
+    isReadable: true,
     content: $s-font-size-lg,
+    extends: font-mono,
     dependency: $i-font-mono,
   ),
 );
@@ -84,7 +96,9 @@ $preset-mono-lg: (
 $preset-mono-xl: (
   mono-xl: (
     slug: 'mono-xl',
+    isReadable: true,
     content: $s-font-size-xl,
+    extends: font-mono,
     dependency: $i-font-mono,
   ),
 );
@@ -92,7 +106,9 @@ $preset-mono-xl: (
 $preset-mono-2xl: (
   mono-2xl: (
     slug: 'mono-2xl',
+    isReadable: true,
     content: $s-font-size-2xl,
+    extends: font-mono,
     dependency: $i-font-mono,
   ),
 );
@@ -100,7 +116,9 @@ $preset-mono-2xl: (
 $preset-mono-3xl: (
   mono-2xl: (
     slug: 'mono-3xl',
+    isReadable: true,
     content: $s-font-size-3xl,
+    extends: font-mono,
     dependency: $i-font-mono,
   ),
 );
@@ -120,7 +138,9 @@ $preset-mono-tshirt: map-collect(
 $preset-sans-3xs: (
   sans-3xs: (
     slug: 'sans-3xs',
+    isReadable: true,
     content: $s-font-size-3xs,
+    extends: font-sans,
     dependency: $i-font-sans,
   ),
 );
@@ -128,7 +148,9 @@ $preset-sans-3xs: (
 $preset-sans-2xs: (
   sans-2xs: (
     slug: 'sans-2xs',
+    isReadable: true,
     content: $s-font-size-2xs,
+    extends: font-sans,
     dependency: $i-font-sans,
   ),
 );
@@ -136,7 +158,9 @@ $preset-sans-2xs: (
 $preset-sans-xs: (
   sans-xs: (
     slug: 'sans-xs',
+    isReadable: true,
     content: $s-font-size-xs,
+    extends: font-sans,
     dependency: $i-font-sans,
   ),
 );
@@ -144,7 +168,9 @@ $preset-sans-xs: (
 $preset-sans-sm: (
   sans-sm: (
     slug: 'sans-sm',
+    isReadable: true,
     content: $s-font-size-sm,
+    extends: font-sans,
     dependency: $i-font-sans,
   ),
 );
@@ -152,7 +178,9 @@ $preset-sans-sm: (
 $preset-sans-md: (
   sans-md: (
     slug: 'sans-md',
+    isReadable: true,
     content: $s-font-size-md,
+    extends: font-sans,
     dependency: $i-font-sans,
   ),
 );
@@ -160,7 +188,9 @@ $preset-sans-md: (
 $preset-sans-lg: (
   sans-lg: (
     slug: 'sans-lg',
+    isReadable: true,
     content: $s-font-size-lg,
+    extends: font-sans,
     dependency: $i-font-sans,
   ),
 );
@@ -168,7 +198,9 @@ $preset-sans-lg: (
 $preset-sans-xl: (
   sans-xl: (
     slug: 'sans-xl',
+    isReadable: true,
     content: $s-font-size-xl,
+    extends: font-sans,
     dependency: $i-font-sans,
   ),
 );
@@ -176,7 +208,9 @@ $preset-sans-xl: (
 $preset-sans-2xl: (
   sans-2xl: (
     slug: 'sans-2xl',
+    isReadable: true,
     content: $s-font-size-2xl,
+    extends: font-sans,
     dependency: $i-font-sans,
   ),
 );
@@ -184,7 +218,9 @@ $preset-sans-2xl: (
 $preset-sans-3xl: (
   sans-2xl: (
     slug: 'sans-3xl',
+    isReadable: true,
     content: $s-font-size-3xl,
+    extends: font-sans,
     dependency: $i-font-sans,
   ),
 );
@@ -204,7 +240,9 @@ $preset-sans-tshirt: map-collect(
 $preset-serif-3xs: (
   serif-3xs: (
     slug: 'serif-3xs',
+    isReadable: true,
     content: $s-font-size-3xs,
+    extends: font-serif,
     dependency: $i-font-serif,
   ),
 );
@@ -212,7 +250,9 @@ $preset-serif-3xs: (
 $preset-serif-2xs: (
   serif-2xs: (
     slug: 'serif-2xs',
+    isReadable: true,
     content: $s-font-size-2xs,
+    extends: font-serif,
     dependency: $i-font-serif,
   ),
 );
@@ -220,7 +260,9 @@ $preset-serif-2xs: (
 $preset-serif-xs: (
   serif-xs: (
     slug: 'serif-xs',
+    isReadable: true,
     content: $s-font-size-xs,
+    extends: font-serif,
     dependency: $i-font-serif,
   ),
 );
@@ -228,7 +270,9 @@ $preset-serif-xs: (
 $preset-serif-sm: (
   serif-sm: (
     slug: 'serif-sm',
+    isReadable: true,
     content: $s-font-size-sm,
+    extends: font-serif,
     dependency: $i-font-serif,
   ),
 );
@@ -236,7 +280,9 @@ $preset-serif-sm: (
 $preset-serif-md: (
   serif-md: (
     slug: 'serif-md',
+    isReadable: true,
     content: $s-font-size-md,
+    extends: font-serif,
     dependency: $i-font-serif,
   ),
 );
@@ -244,7 +290,9 @@ $preset-serif-md: (
 $preset-serif-lg: (
   serif-lg: (
     slug: 'serif-lg',
+    isReadable: true,
     content: $s-font-size-lg,
+    extends: font-serif,
     dependency: $i-font-serif,
   ),
 );
@@ -252,7 +300,9 @@ $preset-serif-lg: (
 $preset-serif-xl: (
   serif-xl: (
     slug: 'serif-xl',
+    isReadable: true,
     content: $s-font-size-xl,
+    extends: font-serif,
     dependency: $i-font-serif,
   ),
 );
@@ -260,7 +310,9 @@ $preset-serif-xl: (
 $preset-serif-2xl: (
   serif-2xl: (
     slug: 'serif-2xl',
+    isReadable: true,
     content: $s-font-size-2xl,
+    extends: font-serif,
     dependency: $i-font-serif,
   ),
 );
@@ -268,7 +320,9 @@ $preset-serif-2xl: (
 $preset-serif-3xl: (
   serif-2xl: (
     slug: 'serif-3xl',
+    isReadable: true,
     content: $s-font-size-3xl,
+    extends: font-serif,
     dependency: $i-font-serif,
   ),
 );
