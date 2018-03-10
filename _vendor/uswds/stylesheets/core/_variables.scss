@@ -30,19 +30,19 @@ $font-stack-serif:  null;
 $font-stack-mono:   null;
 $font-stack-cond:   null;
 
-@if $i-font-sans != null {
+@if $i-font-sans {
   $font-stack-sans:   map-get($i-font-sans, name), map-get($i-font-sans, stack);
 };
 
-@if $i-font-serif != null {
+@if $i-font-serif {
   $font-stack-serif:  map-get($i-font-serif, name), map-get($i-font-serif, stack);
 }
 
-@if $i-font-mono != null {
+@if $i-font-mono {
   $font-stack-mono:  map-get($i-font-mono, name), map-get($i-font-mono, stack);
 }
 
-@if $i-font-cond != null {
+@if $i-font-cond {
   $font-stack-cond:  map-get($i-font-cond, name), map-get($i-font-cond, stack);
 }
 
@@ -52,10 +52,18 @@ $font-serif:  $font-stack-serif;
 $font-mono:   $font-stack-mono;
 $font-cond:   $font-stack-cond;
 
-%font-sans { font-family: $font-stack-sans; }
-%font-serif { font-family: $font-stack-serif; }
-%font-mono { font-family: $font-stack-mono; }
-%font-cond { font-family: $font-stack-cond; }
+@if $i-font-mono {
+  *[class*="font-mono"] { font-family: $font-stack-mono; }
+}
+@if $i-font-sans {
+  *[class*="font-sans"] { font-family: $font-stack-sans; }
+}
+@if $i-font-serif {
+  *[class*="font-serif"] { font-family: $font-stack-serif; }
+}
+@if $i-font-cond {
+  *[class*="font-cond"] { font-family: $font-stack-cond; }
+}
 
 $font-weights: (
   $s-fw-xlight,

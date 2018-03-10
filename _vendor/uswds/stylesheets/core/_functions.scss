@@ -235,9 +235,13 @@ to a set target
 */
 
 @function type-scale($cap-height, $scale) {
-  $this-scale: $base-cap-height * strip-unit($scale) / $cap-height;
+  @if $cap-height {
+    $this-scale: $base-cap-height * strip-unit($scale) / $cap-height;
 
-  @return px($this-scale);
+    @return px($this-scale);
+  } @else {
+    @return false;
+  }
 }
 
 /*
