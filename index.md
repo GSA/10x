@@ -69,6 +69,9 @@ of people using the product, if necessary.</p>
 
 10x has funded many successful initiatives to improve the way the federal government uses technology. Here are a few of their stories:
 
-<h2 id="pitch-us">Send us your ideas.</h2>
+*{case studies}*
 
+<h2 id="pitch-us">Sending us your ideas.</h2>
+
+*{What if we created either an email list for people to get notified for when pitches open *or* a public google calendar that people can subscribe to for when call for proposals open?}*
 
