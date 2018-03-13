@@ -4,26 +4,75 @@ USWDS UTILITIES SETTINGS
 ----------------------------------------
 */
 
-$utilities-namespace-prefix: 'usa-u-';
+$utilities-namespace-prefix: '';
+
+$output-breakpoints: (
+  xs: false,
+  sm: true,
+  md: true,
+  lg: true,
+  xl: false,
+);
+
+$output-all-utilities:  false;
+$output-no-utilities:   false;
+
+$output-utilities: (
+  align-items:      true,
+  background-color: true,
+  border:           true,
+  border-color:     true,
+  border-radius:    true,
+  border-style:     false,
+  box-shadow:       false,
+  circle:           false,
+  color:            true,
+  column:           true,
+  display:          true,
+  flex:             true,
+  flex-direction:   false,
+  flex-wrap:        false,
+  float:            true,
+  font:             true,
+  font-family:      false,
+  font-feature:     false,
+  font-style:       true,
+  font-weight:      true,
+  height:           true,
+  letter-spacing:   true,
+  line-height:      true,
+  list-reset:       true,
+  manual-position:  false,
+  margin:           true,
+  max-height:       false,
+  max-width:        true,
+  min-height:       true,
+  min-width:        true,
+  opacity:          false,
+  order:            false,
+  outline-width:    false,
+  outline-color:    false,
+  padding:          true,
+  position:         false,
+  row:              true,
+  square:           false,
+  text-align:       true,
+  text-decoration:  true,
+  text-transform:   true,
+  vertical-align:   false,
+  whitespace:       true,
+  width:            true,
+  z-index:          false
+);
 
 /*
 ========================================
-align-items
-----------------------------------------
-usage:
-  .align-items-[key]
-----------------------------------------
-output:
-  align-items: [value];
-----------------------------------------
-example:
-  .align-items-flex-start {
-    align-items: flex-start; }
+.align-items
 ----------------------------------------
 */
 
 $align-items-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -32,41 +81,18 @@ $align-items-settings: (
 );
 
 $align-items-preset-values: map-collect(
-  /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
 );
 
 $align-items-manual-values: (
-  /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
   flex-start:   'flex-start',
   flex-end:     'flex-end',
   center:       'center',
   stretch:      'stretch',
-  ------------------------- */
 );
 
 /*
 ========================================
-border-radius
-----------------------------------------
-usage:
-  .border-radius-[key]
-----------------------------------------
-output:
-  border-radius: [value];
-----------------------------------------
-example:
-  .border-radius-0 {
-    border-radius: 0; }
-
-  .border-radius-pill {
-    border-radius: 10em; }
+.background-color
 ----------------------------------------
 */
 
@@ -80,48 +106,25 @@ $background-color-settings: (
 );
 
 $background-color-preset-values: map-collect(
-  /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
   $preset-palette-reserved,
-  $preset-palette-project-settings
+  $preset-colors-indigo-warm-medium-vivid,
+  $preset-colors-black-transparent,
+  $preset-colors-black-cool-dark,
+  $preset-colors-gold-light-vivid,
+  $preset-colors-red-warm-medium-vivid
 );
 
 $background-color-manual-values: (
-  /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
 );
 
 /*
 ========================================
-border-width
-----------------------------------------
-Also applies `solid`
-Needs to come before other border utils
-----------------------------------------
-usage:
-  .border-width-[modifier]*-[key]
-----------------------------------------
-output:
-  border-[modifier]: [value];
-----------------------------------------
-example:
-  .border-width-t-1px {
-    border-top: 1px solid; }
-
-  .border-width-0 {
-    border: none; }
+.border-width
 ----------------------------------------
 */
 
 $border-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -130,87 +133,41 @@ $border-settings: (
 );
 
 $border-preset-values: map-collect(
-  /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
   $preset-units-px,
-  $preset-units-grid-small,
-  $preset-units-grid-large
-  ------------------------- */
+  $preset-units-grid-small
 );
 
 $border-manual-values: (
-  /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  0:            '0',
-  ------------------------- */
 );
 
 /*
 ========================================
-border-color
-----------------------------------------
-usage:
-  .border-color-[color]
-----------------------------------------
-output:
-  border[-modifier]*[-color]: [color];
-----------------------------------------
-example:
-  .border-color-red {
-    border-color: #be4900; }
-
-  .border-color-x-red {
-    border-left-color: #be4900;
-    border-right-color: #be4900; }
+.border-color
 ----------------------------------------
 */
 
 $border-color-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
-  hover:        false,
+  hover:        true,
   visited:      false,
 );
 
 $border-color-preset-values: map-collect(
-  /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  $preset-palette-project-settings,
-  $preset-palette-reserved
-  ------------------------- */
+  $preset-colors-black-cool,
+  $preset-colors-indigo-warm-medium-vivid,
+  $preset-colors-red-warm-medium-vivid,
+  $preset-colors-gold-light-vivid
 );
 
 $border-color-manual-values: (
-  /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
 );
 
 /*
 ========================================
-border-radius
-----------------------------------------
-usage:
-  .border-radius-[key]
-----------------------------------------
-output:
-  border-radius: [value];
-----------------------------------------
-example:
-  .border-radius-0 {
-    border-radius: 0; }
-
-  .border-radius-pill {
-    border-radius: 10em; }
+.border-radius
 ----------------------------------------
 */
 
@@ -224,23 +181,10 @@ $border-radius-settings: (
 );
 
 $border-radius-preset-values: map-collect(
-  /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  $preset-units-px
-  ------------------------- */
+  $preset-units-grid-small
 );
 
 $border-radius-manual-values: (
-  /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  g05:          $u-spacing-05,
-  g1:           $u-spacing-1,
-  g105:         $u-spacing-105,
-  g2:           $u-spacing-2,
-  ------------------------- */
   0:            '0',
   pill:         '9999em',
   circle:       '50%',
@@ -251,17 +195,7 @@ $border-radius-manual-values: (
 
 /*
 ========================================
-border-style
-----------------------------------------
-usage:
-  .border-style[-modifier]*-[key]
-----------------------------------------
-output:
-  border[-modifier]-style: [value];
-----------------------------------------
-example:
-  .border-style-dotted {
-    border-style: dotted; }
+.border-style
 ----------------------------------------
 */
 
@@ -275,42 +209,24 @@ $border-style-settings: (
 );
 
 $border-style-preset-values: map-collect(
-  /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
 );
 
 $border-style-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
   dashed:       'dashed',
   dotted:       'dotted',
   solid:        'solid',
-  ------------------------- */
+  */
 );
 
 /*
 ========================================
-box-shadow
-----------------------------------------
-usage:
-  .box-shadow-[value]
-----------------------------------------
-output:
-  box-shadow: [value];
-----------------------------------------
-example:
-  .box-shadow-1 {
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10); }
+.box-shadow
 ----------------------------------------
 */
 
 $box-shadow-settings: (
-  output:       true,
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -319,48 +235,27 @@ $box-shadow-settings: (
 );
 
 $box-shadow-preset-values: map-collect(
-  /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
 );
 
 $box-shadow-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
   none:   'none',
   1: '0 1px 2px 0 rgba(0,0,0,0.10)',
   2: '0 4px 8px 0 rgba(0,0,0,0.10)',
   3: '0 6px 12px 0 rgba(0,0,0,0.10)',
   4: '0 8px 16px 0 rgba(0,0,0,0.10)',
   5: '0 12px 24px 0 rgba(0,0,0,0.10)',
-  ------------------------- */
+  */
 );
 
 /*
 ========================================
-circle
-----------------------------------------
-usage:
-  .circle-[key]
-----------------------------------------
-output:
-  height: [value];
-  width: [value];
-  border-radius: 50%;
-----------------------------------------
-example:
-  .circle-6 {
-    height: 3rem;
-    width: 3rem; }
+.circle
 ----------------------------------------
 */
 
 $circle-settings: (
-  output:       true,
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -369,20 +264,10 @@ $circle-settings: (
 );
 
 $circle-preset-values: map-collect(
-  /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  $preset-units-grid
-  ------------------------- */
+  $preset-spacing-tshirt
 );
 
 $circle-manual-values: (
-  /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  2px:          '2px',
-  ------------------------- */
   3xs:          $s-spacing-3xs,
   2xs:          $s-spacing-2xs,
   xs:           $s-spacing-xs,
@@ -396,17 +281,7 @@ $circle-manual-values: (
 
 /*
 ========================================
-color
-----------------------------------------
-usage:
-  .color-[key]
-----------------------------------------
-output:
-  color: [value];
-----------------------------------------
-example:
-  .color-black-100 {
-    color: #000; }
+.color
 ----------------------------------------
 */
 
@@ -415,49 +290,31 @@ $color-settings: (
   responsive:   false,
   active:       false,
   focus:        false,
-  hover:        false,
+  hover:        true,
   visited:      false,
 );
 
 $color-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
   $preset-palette-project-settings,
+  */
+  $preset-colors-black-cool-light,
+  $preset-colors-black-cool-dark,
+  $preset-colors-indigo-warm-medium-vivid,
   $preset-palette-reserved
 );
 
 $color-manual-values: (
-  /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
 );
 
 /*
 ========================================
-column
-----------------------------------------
-usage:
-  .column
-----------------------------------------
-output:
-  display: flex;
-  flex-direction: column;
-----------------------------------------
-example:
-  .column {
-    display: flex;
-    flex-direction: column; }
+.column
 ----------------------------------------
 */
 
 $column-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -467,17 +324,7 @@ $column-settings: (
 
 /*
 ========================================
-display
-----------------------------------------
-usage:
-  .display-[key]
-----------------------------------------
-output:
-  display: [value]
-----------------------------------------
-example:
-  .display-none {
-    display: none; }
+.display
 ----------------------------------------
 */
 
@@ -492,19 +339,13 @@ $display-settings: (
 
 $display-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
+
 
 $display-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   block:        'block',
   flex:         'flex',
   none:         'none',
@@ -516,28 +357,12 @@ $display-manual-values: (
 
 /*
 ========================================
-flex
-----------------------------------------
-usage:
-  .flex-[key]
-----------------------------------------
-output:
-  flex: [value];
-----------------------------------------
-example:
-  .flex-1 {
-    flex: 1 0 0; }
-
-  .flex-fill {
-    flex: 1 0 0; }
-
-  .flex-fit {
-    flex: none; }
+.flex
 ----------------------------------------
 */
 
 $flex-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -547,20 +372,13 @@ $flex-settings: (
 
 $flex-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
+
 
 $flex-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
-  1:            '1 0 0',
+  */  1:            '1 0 0',
   2:            '2 0 0',
   3:            '3 0 0',
   4:            '4 0 0',
@@ -577,17 +395,7 @@ $flex-manual-values: (
 
 /*
 ========================================
-flex-direction
-----------------------------------------
-usage:
-  .flex-direction-[value]
-----------------------------------------
-output:
-  flex-direction: [value]
-----------------------------------------
-example:
-  .flex-direction-row {
-    flex-direction: row; }
+.flex-direction
 ----------------------------------------
 */
 
@@ -602,36 +410,20 @@ $flex-direction-settings: (
 
 $flex-direction-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
+
 
 $flex-direction-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   row:          'row',
   column:       'column',
 );
 
 /*
 ========================================
-flex-wrap
-----------------------------------------
-usage:
-  .flex-wrap-[key]
-----------------------------------------
-output:
-  flex-wrap: [value];
-----------------------------------------
-example:
-  .flex-wrap-wrap {
-    flex-wrap: wrap; }
+.flex-wrap
 ----------------------------------------
 */
 
@@ -646,36 +438,19 @@ $flex-wrap-settings: (
 
 $flex-wrap-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
+
 
 $flex-wrap-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
-  wrap:         'wrap',
+  */  wrap:         'wrap',
   nowrap:       'nowrap',
 );
 
 /*
 ========================================
-float
-----------------------------------------
-usage:
-  .float-[value]
-----------------------------------------
-output:
-  float: [value];
-----------------------------------------
-example:
-  .float-left {
-    float: left; }
+.float
 ----------------------------------------
 */
 
@@ -690,19 +465,13 @@ $float-settings: (
 
 $float-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
+
 
 $float-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   left:         'left',
   none:         'none',
   right:        'right',
@@ -710,35 +479,13 @@ $float-manual-values: (
 
 /*
 ========================================
-font
-----------------------------------------
-sets font-size and font-family
-----------------------------------------
-usage:
-  .font-[key]-[key]
-----------------------------------------
-output:
-  font-family: [value];
-  font-size: [value];
-----------------------------------------
-example:
-  .font-sans-14 {
-    font-face: '18Franklin-webfont',
-                system,
-                -apple-system,
-                BlinkMacSystemFont,
-                'Roboto',
-                'Helvetica Neue',
-                'Helvetica',
-                'Arial',
-                sans-serif;
-    font-size: 1rem; }
+.font
 ----------------------------------------
 */
 
 $font-settings: (
   output:       true,
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -747,107 +494,24 @@ $font-settings: (
 
 $font-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  $preset-mono-12,
-  $preset-mono-13,
-  $preset-mono-14,
-  $preset-mono-15,
-  $preset-mono-16,
-  $preset-mono-17,
-  $preset-mono-18,
-  $preset-mono-20,
-  $preset-mono-22,
-  $preset-mono-24,
-  $preset-mono-28,
-  $preset-mono-32,
-  $preset-mono-36,
-  $preset-mono-40,
-  $preset-mono-48,
-  $preset-mono-56,
-  $preset-mono-64,
-  $preset-mono-80,
-  $preset-mono-120,
-  $preset-mono-140,
-  $preset-sans-12,
-  $preset-sans-13,
-  $preset-sans-14,
-  $preset-sans-15,
-  $preset-sans-16,
-  $preset-sans-17,
-  $preset-sans-18,
-  $preset-sans-20,
-  $preset-sans-22,
-  $preset-sans-24,
-  $preset-sans-28,
-  $preset-sans-32,
-  $preset-sans-36,
-  $preset-sans-40,
-  $preset-sans-48,
-  $preset-sans-56,
-  $preset-sans-64,
-  $preset-sans-80,
-  $preset-sans-120,
-  $preset-sans-140,
-  $preset-serif-12,
-  $preset-serif-13,
-  $preset-serif-14,
-  $preset-serif-15,
-  $preset-serif-16,
-  $preset-serif-17,
-  $preset-serif-18,
-  $preset-serif-20,
-  $preset-serif-22,
-  $preset-serif-24,
-  $preset-serif-28,
-  $preset-serif-32,
-  $preset-serif-36,
-  $preset-serif-40,
-  $preset-serif-48,
-  $preset-serif-56,
-  $preset-serif-64,
-  $preset-serif-80,
-  $preset-serif-120,
-  $preset-serif-140
-  ------------------------- */
-  $preset-font-tshirt
+  */
+  $preset-sans,
+  $preset-mono-medium
 );
 
 $font-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
 );
 
 /*
 ========================================
-font-family
-----------------------------------------
-usage:
-  .font-family-[key]
-----------------------------------------
-output:
-  font-family: [value]
-----------------------------------------
-example:
-  .font-family-sans {
-    font-family: 'United Sans webfont',
-                system,
-                -apple-system,
-                BlinkMacSystemFont,
-                'Roboto',
-                'Helvetica Neue',
-                'Helvetica',
-                'Arial',
-                sans-serif; }
+.font-family
 ----------------------------------------
 */
 
 $font-family-settings: (
-  output:       true,
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -857,36 +521,18 @@ $font-family-settings: (
 
 $font-family-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
   $preset-font-families
 );
 
 $font-family-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
 );
 
 /*
 ========================================
-font-feature-settings
-----------------------------------------
-usage:
-  .font-feature-[key]
-----------------------------------------
-output:
-  font-feature-settings: [value];
-----------------------------------------
-example:
-  .font-feature-alt {
-    font-feature-settings:
-      'ss01' 1, 'kern' 1; }
+.font-feature-settings
 ----------------------------------------
 */
 
@@ -901,19 +547,12 @@ $font-feature-settings: (
 
 $font-feature-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $font-feature-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   alt:          "'ss01' 1, 'kern' 1",
   tabular:      "'tnum' 1, 'kern' 1",
   default:      "'kern' 1",
@@ -922,133 +561,7 @@ $font-feature-manual-values: (
 
 /*
 ========================================
-font
-----------------------------------------
-sets font-size and font-family
-----------------------------------------
-usage:
-  .font-[key]-[key]
-----------------------------------------
-output:
-  font-family: [value];
-  font-size: [value];
-----------------------------------------
-example:
-  .font-sans-14 {
-    font-face: '18Franklin-webfont',
-                system,
-                -apple-system,
-                BlinkMacSystemFont,
-                'Roboto',
-                'Helvetica Neue',
-                'Helvetica',
-                'Arial',
-                sans-serif;
-    font-size: 1rem; }
-----------------------------------------
-*/
-
-$font-settings: (
-  output:       true,
-  responsive:   false,
-  active:       false,
-  focus:        false,
-  hover:        false,
-  visited:      false,
-);
-
-$font-preset-values: map-collect(
-  /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  $preset-mono-12,
-  $preset-mono-13,
-  $preset-mono-14,
-  $preset-mono-15,
-  $preset-mono-16,
-  $preset-mono-17,
-  $preset-mono-18,
-  $preset-mono-20,
-  $preset-mono-22,
-  $preset-mono-24,
-  $preset-mono-28,
-  $preset-mono-32,
-  $preset-mono-36,
-  $preset-mono-40,
-  $preset-mono-48,
-  $preset-mono-56,
-  $preset-mono-64,
-  $preset-mono-80,
-  $preset-mono-120,
-  $preset-mono-140,
-  $preset-sans-12,
-  $preset-sans-13,
-  $preset-sans-14,
-  $preset-sans-15,
-  $preset-sans-16,
-  $preset-sans-17,
-  $preset-sans-18,
-  $preset-sans-20,
-  $preset-sans-22,
-  $preset-sans-24,
-  $preset-sans-28,
-  $preset-sans-32,
-  $preset-sans-36,
-  $preset-sans-40,
-  $preset-sans-48,
-  $preset-sans-56,
-  $preset-sans-64,
-  $preset-sans-80,
-  $preset-sans-120,
-  $preset-sans-140,
-  $preset-serif-12,
-  $preset-serif-13,
-  $preset-serif-14,
-  $preset-serif-15,
-  $preset-serif-16,
-  $preset-serif-17,
-  $preset-serif-18,
-  $preset-serif-20,
-  $preset-serif-22,
-  $preset-serif-24,
-  $preset-serif-28,
-  $preset-serif-32,
-  $preset-serif-36,
-  $preset-serif-40,
-  $preset-serif-48,
-  $preset-serif-56,
-  $preset-serif-64,
-  $preset-serif-80,
-  $preset-serif-120,
-  $preset-serif-140
-  ------------------------- */
-  $preset-font-tshirt
-);
-
-$font-manual-values: (
-  /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
-);
-
-/*
-========================================
-font-style
-----------------------------------------
-usage:
-  .font-style-italic
-----------------------------------------
-output:
-  font-style: italic;
-----------------------------------------
-example:
-  .font-style-italic {
-    font-style: italic; }
-  .font-style-normal {
-    font-style: normal; }
+.font-style
 ----------------------------------------
 */
 
@@ -1063,36 +576,19 @@ $font-style-settings: (
 
 $font-style-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $font-style-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   normal:       'normal',
   italic:       'italic',
 );
 
 /*
 ========================================
-font-weight
-----------------------------------------
-usage:
-  .font-weight-[key]
-----------------------------------------
-output:
-  font-weight: [value];
-----------------------------------------
-example:
-  .font-weight-300 {
-    font-weight: 300; }
+.font-weight
 ----------------------------------------
 */
 
@@ -1107,19 +603,14 @@ $font-weight-settings: (
 
 $font-weight-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $font-weight-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  bold:         '700',
+  unbold:       '400',
+  */
   100:          '100',
   200:          '200',
   300:          '300',
@@ -1129,28 +620,16 @@ $font-weight-manual-values: (
   700:          '700',
   800:          '800',
   900:          '900',
-  bold:         '700',
-  unbold:       '400',
 );
 
 /*
 ========================================
-height
-----------------------------------------
-usage:
-  .height-[value]
-----------------------------------------
-output:
-  height: [value];
-----------------------------------------
-example:
-  .height-33ct {
-    height: 33.33333333%; }
+.height
 ----------------------------------------
 */
 
 $height-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1160,39 +639,22 @@ $height-settings: (
 
 $height-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
-  $preset-units-percentage,
-  $preset-units-grid,
   $preset-units-em,
   $preset-units-ch,
   $preset-units-px
+  */
+  $preset-units-percentage,
+  $preset-units-grid
 );
 
 $height-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
 );
 
 /*
 ========================================
-letter-spacing
-----------------------------------------
-usage:
-  .letter-spacing-[key]
-----------------------------------------
-output:
-  letter-spacing: [value];
-----------------------------------------
-example:
-  .letter-spacing-2 {
-    letter-spacing: .1em; }
+.letter-spacing
 ----------------------------------------
 */
 
@@ -1207,19 +669,12 @@ $letter-spacing-settings: (
 
 $letter-spacing-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $letter-spacing-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   auto:         'auto',
   n1:           $u-ls-n1,
   n2:           $u-ls-n2,
@@ -1231,17 +686,7 @@ $letter-spacing-manual-values: (
 
 /*
 ========================================
-line-height
-----------------------------------------
-usage:
-  .line-height-[value]
-----------------------------------------
-output:
-  line-height: [value];
-----------------------------------------
-example:
-  .line-height-1 {
-    line-height: 1.15; }
+.line-height
 ----------------------------------------
 */
 
@@ -1256,19 +701,12 @@ $line-height-settings: (
 
 $line-height-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $line-height-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   0:        $u-lh-single,
   1:       $u-lh-heading,
   2: $u-lh-heading-loose,
@@ -1279,19 +717,7 @@ $line-height-manual-values: (
 
 /*
 ========================================
-LIST RESET
-----------------------------------------
-usage:
-  .list-reset
-----------------------------------------
-output:
-  list-style: none;
-  padding-left: 0;
-----------------------------------------
-example:
-  .list-reset {
-    list-style: none;
-    padding-left: 0; }
+.list-reset
 ----------------------------------------
 */
 
@@ -1306,26 +732,13 @@ $list-reset-settings: (
 
 /*
 ========================================
-MANUAL POSITION
+.MANUAL POSITION
 ----------------------------------------
 properties:
   top
   bottom
   left
   right
-----------------------------------------
-usage:
-  .top-[key]
-  .bottom-[key]
-  .left-[key]
-  .right-[key]
-----------------------------------------
-output:
-  [option]: [value];
-----------------------------------------
-example:
-  .bottom-n2px {
-    bottom: -2px; }
 ----------------------------------------
 */
 
@@ -1340,11 +753,7 @@ $manual-position-settings: (
 
 $manual-position-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
   $preset-units-px,
   $preset-units-px-negative,
   $preset-units-percentage,
@@ -1353,31 +762,14 @@ $manual-position-preset-values: map-collect(
 
 $manual-position-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   0:            '0',
   auto:         'auto',
 );
 
 /*
 ========================================
-margin
-----------------------------------------
-usage:
-  .margin-[modifier]*-[key]
-----------------------------------------
-output:
-  margin: [value]
-----------------------------------------
-example:
-  .margin-x-auto {
-    margin-left: auto;
-    margin-right: auto; }
-
-  .margin-g105 {
-    margin: .75rem; }
+.margin
 ----------------------------------------
 */
 
@@ -1392,9 +784,6 @@ $margin-settings: (
 
 $margin-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
   $preset-units-px,
   $preset-units-px-negative,
   $preset-units-percentage,
@@ -1403,17 +792,20 @@ $margin-preset-values: map-collect(
   $preset-units-ch,
   $preset-units-ch-negative,
   $preset-units-em
-  ------------------------- */
   $preset-spacing-tshirt,
   $preset-spacing-tshirt-negative
+  */
+  $preset-units-px,
+  $preset-units-px-negative,
+  $preset-units-grid-small,
+  $preset-units-grid-medium,
+  $preset-units-grid-small-negative,
+  $preset-units-grid-medium-negative
 );
 
 $margin-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   0:            '0',
   auto:         'auto',
   1px:          '1px',
@@ -1422,17 +814,7 @@ $margin-manual-values: (
 
 /*
 ========================================
-max-height
-----------------------------------------
-usage:
-  .max-height-[key]
-----------------------------------------
-output:
-  max-height: [value];
-----------------------------------------
-example:
-  .max-height-g40 {
-    max-height: 320px; }
+.max-height
 ----------------------------------------
 */
 
@@ -1447,42 +829,25 @@ $max-height-settings: (
 
 $max-height-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
   $preset-units-percentage,
   $preset-units-grid,
   $preset-units-px
+  */
 );
 
 $max-height-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
 );
 
 /*
 ========================================
-max-width
-----------------------------------------
-usage:
-  .max-width-[key]
-----------------------------------------
-output:
-  max-width: [value];
-----------------------------------------
-example:
-  .max-width-lg {
-    max-width: 1040px; }
+.max-width
 ----------------------------------------
 */
 
 $max-width-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1492,49 +857,27 @@ $max-width-settings: (
 
 $max-width-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
-  $preset-units-percentage,
-  $preset-units-grid,
-  $preset-units-px
+  */
+  $preset-units-breakpoints
 );
 
 $max-width-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   none:         'none',
   reading-sm:   $text-narrow-width,
   reading:      $text-max-width,
-  sm:           $small-screen,
-  md:           $medium-screen,
-  lg:           $large-screen,
 );
 
 /*
 ========================================
-min-height
-----------------------------------------
-usage:
-  .min-height-[key]
-----------------------------------------
-output:
-  min-height: [value];
-----------------------------------------
-example:
-  .min-height-g40 {
-    min-height: 320px; }
+.min-height
 ----------------------------------------
 */
 
 $min-height-settings: (
-  output:       false,
-  responsive:   false,
+  output:       true,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -1543,47 +886,27 @@ $min-height-settings: (
 
 $min-height-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
   $preset-units-percentage,
-  $preset-units-grid,
-  $preset-units-px
+  */
+  $preset-units-breakpoints,
+  $preset-units-grid-medium
 );
 
 $min-height-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
-  sm:           $small-screen,
-  md:           $medium-screen,
-  lg:           $large-screen,
-  //xl:           $xlarge-screen,
+  */
+  100ct:        100%,
 );
 
 /*
 ========================================
-min-width
-----------------------------------------
-usage:
-  .min-width-[key]
-----------------------------------------
-output:
-  min-width: [value];
-----------------------------------------
-example:
-  .min-width-g40 {
-    min-width: 320px; }
+.min-width
 ----------------------------------------
 */
 
 $min-width-settings: (
-  output:       false,
-  responsive:   false,
+  output:       true,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -1592,41 +915,20 @@ $min-width-settings: (
 
 $min-width-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
-  $preset-units-percentage,
-  $preset-units-grid,
-  $preset-units-px
+  */
+  $preset-units-breakpoints,
+  $preset-units-grid-large,
+  $preset-units-grid-xlarge
 );
 
 $min-width-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
-  sm:           $small-screen,
-  md:           $medium-screen,
-  lg:           $large-screen,
-  // xl:           $xlarge-screen,
+  */
 );
 
 /*
 ========================================
-opacity
-----------------------------------------
-usage:
-  .opacity-[key]
-----------------------------------------
-output:
-  opacity: [value];
-----------------------------------------
-example:
-  .opacity-0 {
-    opacity: 0; }
+.opacity
 ----------------------------------------
 */
 
@@ -1641,19 +943,11 @@ $opacity-settings: (
 
 $opacity-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $opacity-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
   0:            '0',
   10:           '0.1',
   20:           '0.2',
@@ -1665,24 +959,12 @@ $opacity-manual-values: (
   80:           '0.8',
   90:           '0.9',
   100:          '1',
+  */
 );
 
 /*
 ========================================
-order
-----------------------------------------
-usage:
-  .order-[key]
-----------------------------------------
-output:
-  order: [value]
-----------------------------------------
-example:
-  .order-first {
-    order: -1; }
-
-  .order-2 {
-    order: 2; }
+.order
 ----------------------------------------
 */
 
@@ -1697,17 +979,11 @@ $order-settings: (
 
 $order-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $order-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
   0:            0,
   1:            1,
   2:            2,
@@ -1720,31 +996,18 @@ $order-manual-values: (
   9:            9,
   10:           10,
   11:           11,
-  ------------------------- */
+  */
   first:        '-1',
   last:         '99',
 );
 
 /*
 ========================================
-outline
-----------------------------------------
-sets width and style:solid
-----------------------------------------
-usage:
-  .outline-[modifier]
-----------------------------------------
-output:
-  outline: [modifier] solid;
-----------------------------------------
-example:
-  .outline-g05 {
-    outline: 4px solid }
+.outline
 ----------------------------------------
 */
 
-$outline-1-width-settings: (
-  output:       false,
+$outline-settings: (
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1752,43 +1015,26 @@ $outline-1-width-settings: (
   visited:      false,
 );
 
-$outline-1-width-preset-values: map-collect(
+$outline-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
   $preset-units-px,
   $preset-units-grid-small
 );
 
-$outline-1-width-manual-values: (
+$outline-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   0:            'none',
 );
 
 /*
 ========================================
-outline-color
-----------------------------------------
-usage:
-  .outline-color-[key]
-----------------------------------------
-output:
-  outline-color: [value];
-----------------------------------------
-example:
-  .outline-color-yellow-50 {
-    outline-color: #91721f; }
+.outline-color
 ----------------------------------------
 */
 
-$outline-2-color-settings: (
+$outline-color-settings: (
   output:       false,
   responsive:   false,
   active:       false,
@@ -1797,46 +1043,26 @@ $outline-2-color-settings: (
   visited:      false,
 );
 
-$outline-2-color-preset-values: map-collect(
+$outline-color-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
   $preset-colors-red
 );
 
-$outline-2-color-manual-values: (
+$outline-color-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
 );
 
 /*
 ========================================
-padding
-----------------------------------------
-usage:
-  .padding-[modifier]*-[value]
-----------------------------------------
-output:
-  padding: [value]
-----------------------------------------
-example:
-  .padding-0 {
-    padding: none; }
-
-  .padding-b-1px {
-    padding-bottom: 1px; }
+.padding
 ----------------------------------------
 */
 
 $padding-settings: (
   output:       true,
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -1845,37 +1071,20 @@ $padding-settings: (
 
 $padding-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
   $preset-units-px,
+  */
   $preset-units-grid
-  ------------------------- */
-  $preset-spacing-tshirt
 );
 
 $padding-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   0:            '0',
 );
 
 /*
 ========================================
-position
-----------------------------------------
-usage:
-  .position-[keye]
-----------------------------------------
-output:
-  position: [value];
-----------------------------------------
-example:
-  .position-absolute {
-    position: absolute; }
+.position
 ----------------------------------------
 */
 
@@ -1890,19 +1099,12 @@ $position-settings: (
 
 $position-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $position-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   absolute:     'absolute',
   fixed:        'fixed',
   relative:     'relative',
@@ -1912,24 +1114,12 @@ $position-manual-values: (
 
 /*
 ========================================
-ROW
-----------------------------------------
-usage:
-  .row
-----------------------------------------
-output:
-  display: flex;
-  flex-direction: row;
-----------------------------------------
-example:
-  .row {
-    display: flex;
-    flex-direction: row; }
+.row
 ----------------------------------------
 */
 
 $row-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1939,19 +1129,7 @@ $row-settings: (
 
 /*
 ========================================
-SQUARE
-----------------------------------------
-usage:
-  .square-[key]
-----------------------------------------
-output:
-  height: [value];
-  width: [value];
-----------------------------------------
-example:
-  .square-g6 {
-    height: 3rem;
-    width: 3rem; }
+.square
 ----------------------------------------
 */
 
@@ -1966,42 +1144,25 @@ $square-settings: (
 
 $square-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
   $preset-units-grid
 );
 
 $square-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   2px:          '2px',
 );
 
 /*
 ========================================
-text-align
-----------------------------------------
-usage:
-  .text-align-[key]
-----------------------------------------
-output:
-  align: [value];
-----------------------------------------
-example:
-  .text-align-left {
-    align: left; }
+.text-align
 ----------------------------------------
 */
 
 $text-align-settings: (
   output:       true,
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -2010,38 +1171,21 @@ $text-align-settings: (
 
 $text-align-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $text-align-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  justify:      'justify',
+  right:        'right',
+  */
   center:       'center',
   left:         'left',
-  right:        'right',
-  justify:      'justify',
 );
 
 /*
 ========================================
-text-decoration
-----------------------------------------
-usage:
-  .text-decoration-[key]
-----------------------------------------
-output:
-  text-decoration: [value]
-----------------------------------------
-example:
-  .text-decoration-underline {
-    text-decoration: underline; }
+.text-decoration
 ----------------------------------------
 */
 
@@ -2056,37 +1200,20 @@ $text-decoration-settings: (
 
 $text-decoration-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $text-decoration-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
-  underline:        'underline',
   strike:           'strike',
-  decoration-none:  'none',
+  */
+  underline:        'underline',
+  none:             'none',
 );
 
 /*
 ========================================
-text-transform
-----------------------------------------
-usage:
-  .text-transform-[value]
-----------------------------------------
-output:
-  text-transform: value;
-----------------------------------------
-example:
-  .text-transform-uppercase {
-    text-transform: uppercase; }
+.text-transform
 ----------------------------------------
 */
 
@@ -2101,38 +1228,21 @@ $text-transform-settings: (
 
 $text-transform-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $text-transform-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
   capitalize:     'capitalize',
   lowercase:      'lowercase',
+  */
   uppercase:      'uppercase',
-  transform-none: 'none',
+  none:           'none',
 );
 
 /*
 ========================================
-vertical-align
-----------------------------------------
-usage:
-  .vertical-align-[value]
-----------------------------------------
-output:
-  vertical-align: [value]
-----------------------------------------
-example:
-  .vertical-align-top {
-    vertical-align: top; }
+.vertical-align
 ----------------------------------------
 */
 
@@ -2147,19 +1257,11 @@ $vertical-align-settings: (
 
 $vertical-align-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $vertical-align-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
   baseline:     'baseline',
   bottom:       'bottom',
   middle:       'middle',
@@ -2168,26 +1270,17 @@ $vertical-align-manual-values: (
   text-bottom:  'text-bottom',
   text-top:     'text-top',
   top:          'top',
+  */
 );
 
 /*
 ========================================
-whitespace
-----------------------------------------
-usage:
-  whitespace-[key]
-----------------------------------------
-output:
-  whitespace: [value];
-----------------------------------------
-example:
-  .whitespace-pre-wrap {
-    whitespace: pre-wrap; }
+.whitespace
 ----------------------------------------
 */
 
 $whitespace-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -2197,44 +1290,27 @@ $whitespace-settings: (
 
 $whitespace-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $whitespace-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
-  normal:       'normal',
-  nowrap:       'nowrap',
   pre:          'pre',
   pre-line:     'pre-line',
   pre-wrap:     'pre-wrap',
+  */
+  normal:       'normal',
+  nowrap:       'nowrap',
 );
 
 /*
 ========================================
-width
-----------------------------------------
-usage:
-  .width-[key]
-----------------------------------------
-output:
-  width: [value];
-----------------------------------------
-example:
-  .width-75ct {
-    width: 75%; }
+.width
 ----------------------------------------
 */
 
 $width-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -2244,45 +1320,25 @@ $width-settings: (
 
 $width-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
-  $preset-units-percentage,
   $preset-units-grid,
   $preset-units-px,
   $preset-units-em,
   $preset-units-ch
+  */
+  $preset-units-percentage,
+  $preset-units-breakpoints
 );
 
 $width-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
+  */
   auto:         'auto',
-  sm:           $small-screen,
-  md:           $medium-screen,
-  lg:           $large-screen,
+  100ct:        '100%',
 );
 
 /*
 ========================================
-z-index
-----------------------------------------
-usage:
-  z-index-[key]
-----------------------------------------
-output:
-  z-index: [value];
-----------------------------------------
-example:
-  .z-index-100 {
-    z-index: 100; }
-  .z-index-top {
-    z-index: 9999; }
+.z-index
 ----------------------------------------
 */
 
@@ -2297,25 +1353,18 @@ $z-index-settings: (
 
 $z-index-preset-values: map-collect(
   /*
-  $example-preset-1,
-  $example-preset-2 [no trailing comma]
-  ----------------------------
-  [store unused presets here]
-  ------------------------- */
+  */
 );
 
 $z-index-manual-values: (
   /*
-  key:          'value', [trailing comma ok]
-  ----------------------------
-  [store unused value pairs here]
-  ------------------------- */
   0:            '0',
   100:          '100',
   200:          '200',
   300:          '300',
   400:          '400',
   500:          '500',
+  */
   top:          '9999',
   bottom:       '-9999',
 );

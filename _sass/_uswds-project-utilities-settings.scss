@@ -1,6 +1,6 @@
 /*
 ========================================
-.USWDS UTILITIES SETTINGS
+USWDS UTILITIES SETTINGS
 ----------------------------------------
 */
 
@@ -12,6 +12,56 @@ $output-breakpoints: (
   md: true,
   lg: true,
   xl: false,
+);
+
+$output-all-utilities:  false;
+
+$output-utilities: (
+  align-items:      true,
+  background-color: true,
+  border:           true,
+  border-color:     true,
+  border-radius:    true,
+  border-style:     false,
+  box-shadow:       false,
+  circle:           false,
+  color:            true,
+  column:           true,
+  display:          true,
+  flex:             true,
+  flex-direction:   false,
+  flex-wrap:        false,
+  float:            true,
+  font:             true,
+  font-family:      false,
+  font-feature:     false,
+  font-style:       true,
+  font-weight:      true,
+  height:           true,
+  letter-spacing:   true,
+  line-height:      true,
+  list-reset:       true,
+  manual-position:  false,
+  margin:           true,
+  max-height:       false,
+  max-width:        true,
+  min-height:       true,
+  min-width:        true,
+  opacity:          false,
+  order:            false,
+  outline-width:    false,
+  outline-color:    false,
+  padding:          true,
+  position:         false,
+  row:              true,
+  square:           false,
+  text-align:       true,
+  text-decoration:  true,
+  text-transform:   true,
+  vertical-align:   false,
+  whitespace:       true,
+  width:            true,
+  z-index:          false
 );
 
 /*
@@ -41,7 +91,7 @@ $align-items-manual-values: (
 
 /*
 ========================================
-.border-radius
+.background-color
 ----------------------------------------
 */
 
@@ -956,8 +1006,7 @@ $order-manual-values: (
 ----------------------------------------
 */
 
-$outline-1-width-settings: (
-  output:       false,
+$outline-settings: (
   responsive:   false,
   active:       false,
   focus:        false,
@@ -965,14 +1014,14 @@ $outline-1-width-settings: (
   visited:      false,
 );
 
-$outline-1-width-preset-values: map-collect(
+$outline-preset-values: map-collect(
   /*
   */
   $preset-units-px,
   $preset-units-grid-small
 );
 
-$outline-1-width-manual-values: (
+$outline-manual-values: (
   /*
   */
   0:            'none',
@@ -984,7 +1033,7 @@ $outline-1-width-manual-values: (
 ----------------------------------------
 */
 
-$outline-2-color-settings: (
+$outline-color-settings: (
   output:       false,
   responsive:   false,
   active:       false,
@@ -993,13 +1042,13 @@ $outline-2-color-settings: (
   visited:      false,
 );
 
-$outline-2-color-preset-values: map-collect(
+$outline-color-preset-values: map-collect(
   /*
   */
   $preset-colors-red
 );
 
-$outline-2-color-manual-values: (
+$outline-color-manual-values: (
   /*
   */
 );

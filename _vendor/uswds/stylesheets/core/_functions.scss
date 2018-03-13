@@ -382,7 +382,9 @@ through all possible variants
 
     // Only do this if the the utility is meant to output
 
-    @if map-deep-get($utility, settings, output) {
+    @if map-get($output-utilities, $utility-name) or
+      $output-all-utilities {
+        
       // set intital variants
       // $property-default is a single value for all these utilities
 
