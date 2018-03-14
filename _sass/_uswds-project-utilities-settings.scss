@@ -131,8 +131,7 @@ $border-settings: (
 
 $border-preset-values: map-collect(
   $preset-units-px,
-  $preset-units-grid-small,
-  $preset-spacing-tshirt
+  $preset-units-grid-small
 );
 
 $border-manual-values: (
