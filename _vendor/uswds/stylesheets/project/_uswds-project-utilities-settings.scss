@@ -4,64 +4,64 @@ USWDS UTILITIES SETTINGS
 ----------------------------------------
 */
 
-$utilities-namespace-prefix: '';
+$utilities-namespace-prefix:  'usa-u-';
+$utilities-use-important:     false;
 
 $output-breakpoints: (
   xs: false,
   sm: true,
   md: true,
   lg: true,
-  xl: false,
+  xl: false
 );
 
 $output-all-utilities:  false;
-$output-no-utilities:   false;
 
 $output-utilities: (
-  align-items:      true,
+  align-items:      false,
   background-color: true,
-  border:           true,
-  border-color:     true,
+  border:           false,
+  border-color:     false,
   border-radius:    true,
   border-style:     false,
-  box-shadow:       false,
-  circle:           false,
+  box-shadow:       true,
+  circle:           true,
   color:            true,
-  column:           true,
+  column:           false,
   display:          true,
-  flex:             true,
+  flex:             false,
   flex-direction:   false,
   flex-wrap:        false,
   float:            true,
   font:             true,
-  font-family:      false,
+  font-family:      true,
   font-feature:     false,
   font-style:       true,
   font-weight:      true,
-  height:           true,
+  height:           false,
   letter-spacing:   true,
   line-height:      true,
   list-reset:       true,
   manual-position:  false,
   margin:           true,
   max-height:       false,
-  max-width:        true,
-  min-height:       true,
-  min-width:        true,
+  max-width:        false,
+  min-height:       false,
+  min-width:        false,
   opacity:          false,
   order:            false,
   outline-width:    false,
   outline-color:    false,
   padding:          true,
   position:         false,
-  row:              true,
+  row:              false,
   square:           false,
   text-align:       true,
   text-decoration:  true,
   text-transform:   true,
   vertical-align:   false,
-  whitespace:       true,
-  width:            true,
+  whitespace:       false,
+  width:            false,
   z-index:          false
 );
 
@@ -72,22 +72,25 @@ $output-utilities: (
 */
 
 $align-items-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $align-items-preset-values: map-collect(
+  /*
+  */
 );
 
 $align-items-manual-values: (
+  /*
+  */
   flex-start:   'flex-start',
   flex-end:     'flex-end',
   center:       'center',
-  stretch:      'stretch',
+  stretch:      'stretch'
 );
 
 /*
@@ -97,24 +100,23 @@ $align-items-manual-values: (
 */
 
 $background-color-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $background-color-preset-values: map-collect(
+  /*
+  */
   $preset-palette-reserved,
-  $preset-colors-indigo-warm-medium-vivid,
-  $preset-colors-black-transparent,
-  $preset-colors-black-cool-dark,
-  $preset-colors-gold-light-vivid,
-  $preset-colors-red-warm-medium-vivid
+  $preset-palette-project-settings
 );
 
 $background-color-manual-values: (
+  /*
+  */
 );
 
 /*
@@ -124,20 +126,24 @@ $background-color-manual-values: (
 */
 
 $border-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $border-preset-values: map-collect(
+  /*
+  */
   $preset-units-px,
   $preset-units-grid-small
 );
 
 $border-manual-values: (
+  /*
+  */
+  0:            '0'
 );
 
 /*
@@ -147,22 +153,23 @@ $border-manual-values: (
 */
 
 $border-color-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        true,
-  visited:      false,
+  visited:      false
 );
 
 $border-color-preset-values: map-collect(
-  $preset-colors-black-cool,
-  $preset-colors-indigo-warm-medium-vivid,
-  $preset-colors-red-warm-medium-vivid,
-  $preset-colors-gold-light-vivid
+  /*
+  */
+  $preset-palette-reserved,
+  $preset-palette-project-settings
 );
 
 $border-color-manual-values: (
+  /*
+  */
 );
 
 /*
@@ -172,25 +179,26 @@ $border-color-manual-values: (
 */
 
 $border-radius-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $border-radius-preset-values: map-collect(
+  /*
   $preset-units-grid-small
+  */
+  $preset-spacing-tshirt-small
 );
 
 $border-radius-manual-values: (
+  /*
+  */
   0:            '0',
   pill:         '9999em',
-  circle:       '50%',
-  sm:           $s-radius-sm,
-  md:           $s-radius-md,
-  lg:           $s-radius-lg,
+  circle:       '50%'
 );
 
 /*
@@ -200,23 +208,24 @@ $border-radius-manual-values: (
 */
 
 $border-style-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $border-style-preset-values: map-collect(
+  /*
+  */
 );
 
 $border-style-manual-values: (
   /*
+  */
   dashed:       'dashed',
   dotted:       'dotted',
-  solid:        'solid',
-  */
+  solid:        'solid'
 );
 
 /*
@@ -226,26 +235,27 @@ $border-style-manual-values: (
 */
 
 $box-shadow-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $box-shadow-preset-values: map-collect(
+  /*
+  */
 );
 
 $box-shadow-manual-values: (
   /*
+  */
   none:   'none',
   1: '0 1px 2px 0 rgba(0,0,0,0.10)',
   2: '0 4px 8px 0 rgba(0,0,0,0.10)',
   3: '0 6px 12px 0 rgba(0,0,0,0.10)',
   4: '0 8px 16px 0 rgba(0,0,0,0.10)',
-  5: '0 12px 24px 0 rgba(0,0,0,0.10)',
-  */
+  5: '0 12px 24px 0 rgba(0,0,0,0.10)'
 );
 
 /*
@@ -255,28 +265,22 @@ $box-shadow-manual-values: (
 */
 
 $circle-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $circle-preset-values: map-collect(
+  /*
+  */
   $preset-spacing-tshirt
 );
 
 $circle-manual-values: (
-  3xs:          $s-spacing-3xs,
-  2xs:          $s-spacing-2xs,
-  xs:           $s-spacing-xs,
-  sm:           $s-spacing-sm,
-  md:           $s-spacing-md,
-  lg:           $s-spacing-lg,
-  xl:           $s-spacing-xl,
-  2xl:          $s-spacing-2xl,
-  3xl:          $s-spacing-3xl,
+  /*
+  */
 );
 
 /*
@@ -286,25 +290,23 @@ $circle-manual-values: (
 */
 
 $color-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        true,
-  visited:      false,
+  visited:      false
 );
 
 $color-preset-values: map-collect(
   /*
-  $preset-palette-project-settings,
   */
-  $preset-colors-black-cool-light,
-  $preset-colors-black-cool-dark,
-  $preset-colors-indigo-warm-medium-vivid,
+  $preset-palette-project-settings,
   $preset-palette-reserved
 );
 
 $color-manual-values: (
+  /*
+  */
 );
 
 /*
@@ -314,12 +316,11 @@ $color-manual-values: (
 */
 
 $column-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 /*
@@ -329,19 +330,17 @@ $column-settings: (
 */
 
 $display-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $display-preset-values: map-collect(
   /*
   */
 );
-
 
 $display-manual-values: (
   /*
@@ -352,7 +351,7 @@ $display-manual-values: (
   inline:       'inline',
   inline-block: 'inline-block',
   table:        'table',
-  table-cell:   'table-cell',
+  table-cell:   'table-cell'
 );
 
 /*
@@ -362,12 +361,11 @@ $display-manual-values: (
 */
 
 $flex-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $flex-preset-values: map-collect(
@@ -375,10 +373,10 @@ $flex-preset-values: map-collect(
   */
 );
 
-
 $flex-manual-values: (
   /*
-  */  1:            '1 0 0',
+  */
+  1:            '1 0 0',
   2:            '2 0 0',
   3:            '3 0 0',
   4:            '4 0 0',
@@ -390,7 +388,7 @@ $flex-manual-values: (
   10:           '10 0 0',
   11:           '11 0 0',
   fill:         '1 0 0',
-  fit:          '0',
+  fit:          '0'
 );
 
 /*
@@ -400,25 +398,20 @@ $flex-manual-values: (
 */
 
 $flex-direction-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
-$flex-direction-preset-values: map-collect(
-  /*
-  */
-);
-
+$flex-direction-preset-values: map-collect();
 
 $flex-direction-manual-values: (
   /*
   */
   row:          'row',
-  column:       'column',
+  column:       'column'
 );
 
 /*
@@ -428,24 +421,18 @@ $flex-direction-manual-values: (
 */
 
 $flex-wrap-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
-$flex-wrap-preset-values: map-collect(
-  /*
-  */
-);
-
+$flex-wrap-preset-values: map-collect();
 
 $flex-wrap-manual-values: (
-  /*
-  */  wrap:         'wrap',
-  nowrap:       'nowrap',
+  wrap:         'wrap',
+  nowrap:       'nowrap'
 );
 
 /*
@@ -455,26 +442,21 @@ $flex-wrap-manual-values: (
 */
 
 $float-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
-$float-preset-values: map-collect(
-  /*
-  */
-);
-
+$float-preset-values: map-collect();
 
 $float-manual-values: (
   /*
   */
   left:         'left',
   none:         'none',
-  right:        'right',
+  right:        'right'
 );
 
 /*
@@ -484,19 +466,17 @@ $float-manual-values: (
 */
 
 $font-settings: (
-  output:       true,
   responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $font-preset-values: map-collect(
   /*
   */
-  $preset-sans,
-  $preset-mono-medium
+  $preset-font-tshirt
 );
 
 $font-manual-values: (
@@ -511,12 +491,11 @@ $font-manual-values: (
 */
 
 $font-family-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $font-family-preset-values: map-collect(
@@ -537,12 +516,11 @@ $font-family-manual-values: (
 */
 
 $font-feature-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $font-feature-preset-values: map-collect(
@@ -556,7 +534,6 @@ $font-feature-manual-values: (
   alt:          "'ss01' 1, 'kern' 1",
   tabular:      "'tnum' 1, 'kern' 1",
   default:      "'kern' 1",
-  // none: none,
 );
 
 /*
@@ -566,24 +543,18 @@ $font-feature-manual-values: (
 */
 
 $font-style-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
-$font-style-preset-values: map-collect(
-  /*
-  */
-);
+$font-style-preset-values: map-collect();
 
 $font-style-manual-values: (
-  /*
-  */
   normal:       'normal',
-  italic:       'italic',
+  italic:       'italic'
 );
 
 /*
@@ -593,12 +564,11 @@ $font-style-manual-values: (
 */
 
 $font-weight-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $font-weight-preset-values: map-collect(
@@ -608,8 +578,6 @@ $font-weight-preset-values: map-collect(
 
 $font-weight-manual-values: (
   /*
-  bold:         '700',
-  unbold:       '400',
   */
   100:          '100',
   200:          '200',
@@ -619,7 +587,10 @@ $font-weight-manual-values: (
   600:          '600',
   700:          '700',
   800:          '800',
-  900:          '900',
+  900:          '900'
+  bold:         'bold',
+  normal:       'normal',
+  light:        'light'
 );
 
 /*
@@ -629,12 +600,11 @@ $font-weight-manual-values: (
 */
 
 $height-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $height-preset-values: map-collect(
@@ -644,7 +614,7 @@ $height-preset-values: map-collect(
   $preset-units-px
   */
   $preset-units-percentage,
-  $preset-units-grid
+  $preset-spacing-tshirt
 );
 
 $height-manual-values: (
@@ -659,12 +629,11 @@ $height-manual-values: (
 */
 
 $letter-spacing-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $letter-spacing-preset-values: map-collect(
@@ -681,7 +650,7 @@ $letter-spacing-manual-values: (
   n3:           $u-ls-n3,
   1:            $u-ls-1,
   2:            $u-ls-2,
-  3:            $u-ls-3,
+  3:            $u-ls-3
 );
 
 /*
@@ -691,12 +660,11 @@ $letter-spacing-manual-values: (
 */
 
 $line-height-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $line-height-preset-values: map-collect(
@@ -707,12 +675,12 @@ $line-height-preset-values: map-collect(
 $line-height-manual-values: (
   /*
   */
-  0:        $u-lh-single,
-  1:       $u-lh-heading,
-  2: $u-lh-heading-loose,
-  3:    $u-lh-body-tight,
-  4:          $u-lh-body,
-  5:    $u-lh-body-loose,
+  single:        $u-lh-single,
+  heading:       $u-lh-heading,
+  heading-loose: $u-lh-heading-loose,
+  body-tight:    $u-lh-body-tight,
+  body:          $u-lh-body,
+  body-loose:    $u-lh-body-loose
 );
 
 /*
@@ -722,12 +690,11 @@ $line-height-manual-values: (
 */
 
 $list-reset-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 /*
@@ -743,12 +710,11 @@ properties:
 */
 
 $manual-position-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $manual-position-preset-values: map-collect(
@@ -756,15 +722,15 @@ $manual-position-preset-values: map-collect(
   */
   $preset-units-px,
   $preset-units-px-negative,
-  $preset-units-percentage,
-  $preset-units-grid
+  $preset-spacing-tshirt-small,
+  $preset-spacing-tshirt-small-negative
 );
 
 $manual-position-manual-values: (
   /*
   */
   0:            '0',
-  auto:         'auto',
+  auto:         'auto'
 );
 
 /*
@@ -774,12 +740,11 @@ $manual-position-manual-values: (
 */
 
 $margin-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $margin-preset-values: map-collect(
@@ -792,15 +757,11 @@ $margin-preset-values: map-collect(
   $preset-units-ch,
   $preset-units-ch-negative,
   $preset-units-em
+  */
+  $preset-spacing-px,
+  $preset-spacing-px-negative,
   $preset-spacing-tshirt,
   $preset-spacing-tshirt-negative
-  */
-  $preset-units-px,
-  $preset-units-px-negative,
-  $preset-units-grid-small,
-  $preset-units-grid-medium,
-  $preset-units-grid-small-negative,
-  $preset-units-grid-medium-negative
 );
 
 $margin-manual-values: (
@@ -808,8 +769,6 @@ $margin-manual-values: (
   */
   0:            '0',
   auto:         'auto',
-  1px:          '1px',
-  2px:          '2px',
 );
 
 /*
@@ -819,12 +778,11 @@ $margin-manual-values: (
 */
 
 $max-height-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $max-height-preset-values: map-collect(
@@ -847,18 +805,18 @@ $max-height-manual-values: (
 */
 
 $max-width-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $max-width-preset-values: map-collect(
   /*
-  */
+  $preset-units-percentage,
   $preset-units-breakpoints
+  */
 );
 
 $max-width-manual-values: (
@@ -866,7 +824,7 @@ $max-width-manual-values: (
   */
   none:         'none',
   reading-sm:   $text-narrow-width,
-  reading:      $text-max-width,
+  reading:      $text-max-width
 );
 
 /*
@@ -876,26 +834,25 @@ $max-width-manual-values: (
 */
 
 $min-height-settings: (
-  output:       true,
   responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $min-height-preset-values: map-collect(
   /*
   $preset-units-percentage,
-  */
-  $preset-units-breakpoints,
+  $preset-units-grid-small
   $preset-units-grid-medium
+  */
 );
 
 $min-height-manual-values: (
   /*
   */
-  100ct:        100%,
+  100ct:        100%
 );
 
 /*
@@ -905,12 +862,11 @@ $min-height-manual-values: (
 */
 
 $min-width-settings: (
-  output:       true,
   responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $min-width-preset-values: map-collect(
@@ -933,12 +889,11 @@ $min-width-manual-values: (
 */
 
 $opacity-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $opacity-preset-values: map-collect(
@@ -949,16 +904,16 @@ $opacity-preset-values: map-collect(
 $opacity-manual-values: (
   /*
   0:            '0',
-  10:           '0.1',
-  20:           '0.2',
-  30:           '0.3',
-  40:           '0.4',
-  50:           '0.5',
-  60:           '0.6',
-  70:           '0.7',
-  80:           '0.8',
-  90:           '0.9',
-  100:          '1',
+  01:           '0.1',
+  02:           '0.2',
+  03:           '0.3',
+  04:           '0.4',
+  05:           '0.5',
+  06:           '0.6',
+  07:           '0.7',
+  08:           '0.8',
+  09:           '0.9',
+  1:            '1',
   */
 );
 
@@ -969,12 +924,11 @@ $opacity-manual-values: (
 */
 
 $order-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $order-preset-values: map-collect(
@@ -998,7 +952,7 @@ $order-manual-values: (
   11:           11,
   */
   first:        '-1',
-  last:         '99',
+  last:         '99'
 );
 
 /*
@@ -1012,7 +966,7 @@ $outline-settings: (
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $outline-preset-values: map-collect(
@@ -1025,7 +979,7 @@ $outline-preset-values: map-collect(
 $outline-manual-values: (
   /*
   */
-  0:            'none',
+  0:            'none'
 );
 
 /*
@@ -1035,18 +989,17 @@ $outline-manual-values: (
 */
 
 $outline-color-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $outline-color-preset-values: map-collect(
   /*
   */
-  $preset-colors-red
+  $preset-palette-project-settings
 );
 
 $outline-color-manual-values: (
@@ -1061,25 +1014,24 @@ $outline-color-manual-values: (
 */
 
 $padding-settings: (
-  output:       true,
   responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $padding-preset-values: map-collect(
   /*
   $preset-units-px,
   */
-  $preset-units-grid
+  $preset-spacing-tshirt
 );
 
 $padding-manual-values: (
   /*
   */
-  0:            '0',
+  0:            '0'
 );
 
 /*
@@ -1089,12 +1041,11 @@ $padding-manual-values: (
 */
 
 $position-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $position-preset-values: map-collect(
@@ -1109,7 +1060,7 @@ $position-manual-values: (
   fixed:        'fixed',
   relative:     'relative',
   static:       'static',
-  sticky:       'sticky',
+  sticky:       'sticky'
 );
 
 /*
@@ -1119,12 +1070,11 @@ $position-manual-values: (
 */
 
 $row-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 /*
@@ -1134,24 +1084,23 @@ $row-settings: (
 */
 
 $square-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $square-preset-values: map-collect(
   /*
   */
-  $preset-units-grid
+  $preset-spacing-tshirt
 );
 
 $square-manual-values: (
   /*
   */
-  2px:          '2px',
+  2px:          '2px'
 );
 
 /*
@@ -1161,12 +1110,11 @@ $square-manual-values: (
 */
 
 $text-align-settings: (
-  output:       true,
   responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $text-align-preset-values: map-collect(
@@ -1176,11 +1124,11 @@ $text-align-preset-values: map-collect(
 
 $text-align-manual-values: (
   /*
-  justify:      'justify',
-  right:        'right',
   */
   center:       'center',
-  left:         'left',
+  left:         'left'
+  justify:      'justify',
+  right:        'right',
 );
 
 /*
@@ -1190,12 +1138,11 @@ $text-align-manual-values: (
 */
 
 $text-decoration-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $text-decoration-preset-values: map-collect(
@@ -1205,10 +1152,10 @@ $text-decoration-preset-values: map-collect(
 
 $text-decoration-manual-values: (
   /*
-  strike:           'strike',
   */
+  strike:           'strike',
   underline:        'underline',
-  none:             'none',
+  none:             'none'
 );
 
 /*
@@ -1218,12 +1165,11 @@ $text-decoration-manual-values: (
 */
 
 $text-transform-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $text-transform-preset-values: map-collect(
@@ -1233,11 +1179,11 @@ $text-transform-preset-values: map-collect(
 
 $text-transform-manual-values: (
   /*
+  */
   capitalize:     'capitalize',
   lowercase:      'lowercase',
-  */
   uppercase:      'uppercase',
-  none:           'none',
+  none:           'none'
 );
 
 /*
@@ -1247,12 +1193,11 @@ $text-transform-manual-values: (
 */
 
 $vertical-align-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $vertical-align-preset-values: map-collect(
@@ -1262,6 +1207,7 @@ $vertical-align-preset-values: map-collect(
 
 $vertical-align-manual-values: (
   /*
+  */
   baseline:     'baseline',
   bottom:       'bottom',
   middle:       'middle',
@@ -1270,7 +1216,6 @@ $vertical-align-manual-values: (
   text-bottom:  'text-bottom',
   text-top:     'text-top',
   top:          'top',
-  */
 );
 
 /*
@@ -1280,12 +1225,11 @@ $vertical-align-manual-values: (
 */
 
 $whitespace-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $whitespace-preset-values: map-collect(
@@ -1295,12 +1239,12 @@ $whitespace-preset-values: map-collect(
 
 $whitespace-manual-values: (
   /*
+  */
   pre:          'pre',
   pre-line:     'pre-line',
   pre-wrap:     'pre-wrap',
-  */
   normal:       'normal',
-  nowrap:       'nowrap',
+  nowrap:       'nowrap'
 );
 
 /*
@@ -1310,12 +1254,11 @@ $whitespace-manual-values: (
 */
 
 $width-settings: (
-  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $width-preset-values: map-collect(
@@ -1331,9 +1274,9 @@ $width-preset-values: map-collect(
 
 $width-manual-values: (
   /*
+  100ct:        '100%'
   */
   auto:         'auto',
-  100ct:        '100%',
 );
 
 /*
@@ -1343,12 +1286,11 @@ $width-manual-values: (
 */
 
 $z-index-settings: (
-  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
-  visited:      false,
+  visited:      false
 );
 
 $z-index-preset-values: map-collect(
@@ -1366,5 +1308,5 @@ $z-index-manual-values: (
   500:          '500',
   */
   top:          '9999',
-  bottom:       '-9999',
+  bottom:       '-9999'
 );
