@@ -384,7 +384,7 @@ through all possible variants
 
     @if map-get($output-utilities, $utility-name) or
       $output-all-utilities {
-        
+
       // set intital variants
       // $property-default is a single value for all these utilities
 
@@ -437,16 +437,16 @@ through all possible variants
         // altogether
 
         @if type-of($val-value) == 'map' {
-          @if map-get($val-value, content) == null {
-            $val-value: null;
+          @if map-get($val-value, content) == false {
+            $val-value: false;
           }
           @elseif map-has-key($val-value, dependency) {
-            @if map-get($val-value, dependency) == null {
-              $val-value: null;
+            @if map-get($val-value, dependency) == false {
+              $val-value: false;
             }
           }
         }
-        @if $val-value != null {
+        @if $val-value {
 
           // If $val-value is already a MAP...
 

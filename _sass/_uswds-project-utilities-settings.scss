@@ -4,7 +4,7 @@ USWDS UTILITIES SETTINGS
 ----------------------------------------
 */
 
-$utilities-namespace-prefix:  'usa-u-';
+$utilities-namespace-prefix:  '';
 $utilities-use-important:     false;
 
 $output-breakpoints: (
@@ -131,7 +131,8 @@ $border-settings: (
 
 $border-preset-values: map-collect(
   $preset-units-px,
-  $preset-units-grid-small
+  $preset-units-grid-small,
+  $preset-spacing-tshirt
 );
 
 $border-manual-values: (

@@ -37,8 +37,8 @@ $s-font-alt:    $i-font-sans;
 //                        1px
 //                        2px
 
-$s-spacing-3xs:           null;
-$s-spacing-2xs:           null;
+$s-spacing-3xs:           false;
+$s-spacing-2xs:           false;
 $s-spacing-xs:            $u-spacing-05;
 $s-spacing-sm:            $u-spacing-1;
 $s-spacing-md:            $u-spacing-2;
@@ -167,4 +167,4 @@ $s-color-highlight:       $gold-20v;
 
 $s-radius-sm:             2px;
 $s-radius-md:             $u-spacing-05;
-$s-radius-lg:             null;
+$s-radius-lg:             false;
