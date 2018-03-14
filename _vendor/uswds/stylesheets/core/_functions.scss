@@ -253,11 +253,11 @@ in the @render-utilities-in loop
 ----------------------------------------
 */
 
-@mixin render-utility($utility, $selector, $property, $value, $val-props) {
+@mixin render-utility($utility, $selector, $property, $value, $val-props, $important) {
 
   .#{$utilities-namespace-prefix}#{$selector} {
     @if map-has-key($val-props, extend) {
-      #{map-deep-get($val-props, extend, property)}: strunquote(map-deep-get($val-props, extend, value));
+      #{map-deep-get($val-props, extend, property)}: strunquote(map-deep-get($val-props, extend, value))#{$important};
     }
 
     @if map-has-key($val-props, extends) {
@@ -265,11 +265,11 @@ in the @render-utilities-in loop
     }
 
     @each $this-property in $property {
-      #{$this-property}: $value;
+      #{$this-property}: $value#{$important};
     }
 
     @if map-has-key($utility, extend) {
-      #{map-deep-get($utility, extend, property)}: strunquote(map-deep-get($utility, extend, value));
+      #{map-deep-get($utility, extend, property)}: strunquote(map-deep-get($utility, extend, value))#{$important};
     }
   }
 }
@@ -284,14 +284,14 @@ loop
 ----------------------------------------
 */
 
-@mixin render-pseudoclass($pseudoclass, $selector, $property, $value, $val-props, $mq) {
+@mixin render-pseudoclass($pseudoclass, $selector, $property, $value, $val-props, $mq, $important) {
   $this-mq: null;
   @if $mq {
     $this-mq: '#{$mq}\:';
   }
   .#{$utilities-namespace-prefix}#{$this-mq}#{$pseudoclass}\:#{$selector}:#{$pseudoclass} {
     @each $this-property in $property {
-      #{$this-property}: $value;
+      #{$this-property}: $value#{$important};
     }
   }
 }
@@ -309,7 +309,7 @@ to style placeholder text
 ----------------------------------------
 */
 
-@mixin render-placeholder($selector, $property, $value, $val-props) {
+@mixin render-placeholder($selector, $property, $value, $val-props, $important) {
   $this-namespace: null;
 
   @if $utility-type == settings {
@@ -317,7 +317,7 @@ to style placeholder text
   }
   .#{$this-namespace}pl-#{$selector}::placeholder {
     @each $this-property in $property {
-      #{$this-property}: $value;
+      #{$this-property}: $value#{$important};
     }
   }
 }
@@ -332,7 +332,7 @@ loop
 ----------------------------------------
 */
 
-@mixin render-media-queries($utility, $selector, $property, $value, $val-props) {
+@mixin render-media-queries($utility, $selector, $property, $value, $val-props, $important) {
 
   @each $media-key, $media-value in $preset-breakpoints {
     $mq: $media-key;
@@ -341,21 +341,21 @@ loop
       @media (min-width: #{$media-value}) {
         .#{$utilities-namespace-prefix}#{$media-key}\:#{$selector} {
           @if map-has-key($val-props, extend) {
-            #{map-deep-get($val-props, extend, property)}: strunquote(map-deep-get($val-props, extend, value));
+            #{map-deep-get($val-props, extend, property)}: strunquote(map-deep-get($val-props, extend, value))#{$important};
           }
 
           @each $this-property in $property {
-            #{$this-property}: $value;
+            #{$this-property}: $value#{$important};
           }
 
           @if map-has-key($utility, extend) {
-            #{map-deep-get($utility, extend, property)}: strunquote(map-deep-get($utility, extend, value));
+            #{map-deep-get($utility, extend, property)}: strunquote(map-deep-get($utility, extend, value))#{$important};
           }
           @if map-deep-get($utility, settings, hover) {
-            @include render-pseudoclass(hover, $selector, $property, $value, $val-props, $mq);
+            @include render-pseudoclass(hover, $selector, $property, $value, $val-props, $mq, $important);
           }
           @if map-deep-get($utility, settings, visited) {
-            @include render-pseudoclass(visited, $selector, $property, $value, $val-props, $mq);
+            @include render-pseudoclass(visited, $selector, $property, $value, $val-props, $mq, $important);
           }
         }
       }
@@ -375,6 +375,11 @@ through all possible variants
 */
 
 @mixin render-utilities-in($utilities) {
+
+  $important: null;
+  @if $utilities-use-important {
+    $important: ' !important';
+  }
 
   // loop through the $utilities
 
@@ -656,24 +661,24 @@ through all possible variants
             // FINALLY, "BUILD THE RULE, MAX!"
             // https://www.youtube.com/watch?v=R3Igz5SfBCE
 
-            @include render-utility($utility, $selector, $property, $value, $val-props);
+            @include render-utility($utility, $selector, $property, $value, $val-props, $important);
 
             // Add the pseudoclass variants, if applicable
 
             @if map-deep-get($utility, settings, hover) {
-              @include render-pseudoclass(hover, $selector, $property, $value, $val-props, $mq);
+              @include render-pseudoclass(hover, $selector, $property, $value, $val-props, $mq, $important);
             }
 
             @if map-deep-get($utility, settings, active) {
-              @include render-pseudoclass(active, $selector, $property, $value, $val-props, $mq);
+              @include render-pseudoclass(active, $selector, $property, $value, $val-props, $mq, $important);
             }
 
             @if map-deep-get($utility, settings, visited) {
-              @include render-pseudoclass(visited, $selector, $property, $value, $val-props, $mq);
+              @include render-pseudoclass(visited, $selector, $property, $value, $val-props, $mq, $important);
             }
 
             @if map-deep-get($utility, settings, focus) {
-              @include render-pseudoclass(focus, $selector, $property, $value, $val-props, $mq);
+              @include render-pseudoclass(focus, $selector, $property, $value, $val-props, $mq, $important);
             }
 
             // Add the placeholder variant, if applicable
@@ -685,7 +690,7 @@ through all possible variants
             // And add the responsive prefixes, if applicable
 
             @if map-deep-get($utility, settings, responsive) {
-              @include render-media-queries($utility, $selector, $property, $value, $val-props);
+              @include render-media-queries($utility, $selector, $property, $value, $val-props, $important);
             } // ･ﾟ✧
           } // end the modifier loop
         } // end the null value conditional
