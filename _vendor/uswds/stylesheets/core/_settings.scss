@@ -6,11 +6,11 @@
 // These will be converted to em values based on the
 // value of $i-font-size-base
 
-$s-xsmall-screen:   400px !default;
-$s-small-screen:    600px !default;
-$s-medium-screen:   800px !default;
-$s-large-screen:    1000px !default;
-$s-xlarge-screen:   1200px !default;
+$s-xsmall-screen:   false !default; //400px
+$s-small-screen:    481px !default; //600px
+$s-medium-screen:   600px !default; //800px
+$s-large-screen:    1201px !default; //1000px
+$s-xlarge-screen:   false !default; //1200px
 
 // ---------------------------------------------
 // FONTS
