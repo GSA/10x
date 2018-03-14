@@ -28,7 +28,7 @@ $border-color: (
       'bottom-color': '-bottom-color',
       'left-color': '-left-color',
       'y-color': ('-top-color', '-bottom-color'),
-      'v-color': ('-left-color', '-right-color'),
+      'x-color': ('-left-color', '-right-color'),
       color: '-color',
     ),
     values: map-collect(
