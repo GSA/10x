@@ -207,9 +207,14 @@ Converts a value in px to a value in rem
 */
 
 @function px($pixels) {
-  $px-to-rem: strip-unit($pixels) / strip-unit($i-font-size-base) * 1rem;
+  @if $pixels {
+    $px-to-rem: strip-unit($pixels) / strip-unit($i-font-size-base) * 1rem;
 
-  @return $px-to-rem;
+    @return $px-to-rem;
+  }
+  @else {
+    @return false;
+  }
 }
 
 /*
@@ -221,9 +226,14 @@ Converts a value in px to a value in em
 */
 
 @function px-to-base-em($pixels) {
-  $px-to-base-em: strip-unit($pixels) / strip-unit($i-font-size-base) * 1em;
+  @if $pixels {
+    $px-to-base-em: strip-unit($pixels) / strip-unit($i-font-size-base) * 1em;
 
-  @return $px-to-base-em;
+    @return $px-to-base-em;
+  }
+  @else {
+    @return false;    
+  }
 }
 /*
 ----------------------------------------

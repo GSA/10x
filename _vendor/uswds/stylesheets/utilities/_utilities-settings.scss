@@ -758,10 +758,10 @@ $margin-preset-values: map-collect(
   $preset-units-ch-negative,
   $preset-units-em
   */
-  $preset-spacing-px,
-  $preset-spacing-px-negative,
+  $preset-units-px,
+  $preset-units-px-negative,
   $preset-spacing-tshirt,
-  $preset-spacing-tshirt-negative
+  $preset-spacing-tshirt-small-negative
 ) !default;
 
 $margin-manual-values: (
