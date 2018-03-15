@@ -44,6 +44,8 @@ Metric        | Q1 FY 2018 (Fall 2017, baseline)
 Number of pitches for Phase 1 funding | 85 
 Number of civil servants outside of GSA listed subject-matter experts (through a TTS sponsor) | 6
 Number of different agencies listed as subject-matter experts on Phase 1 pitches | 3
+Number of inquiries from other agencies to set up a similar funding model | 
+Number of consulting engagements to set up a similar funding model | 
 
 
 ## Road map
