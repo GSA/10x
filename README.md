@@ -40,7 +40,7 @@ The 10x website will provide civil servants across government the information th
 
 ### Metrics 
 Metric        | Q1 FY 2018 (Fall 2017, baseline)
-------------- |-------------:
+:------------- |-------------:
 Number of pitches for Phase 1 funding | 85 
 Number of civil servants outside of GSA listed subject-matter experts (through a TTS sponsor) | 6
 Number of different agencies listed as subject-matter experts on Phase 1 pitches | 3
