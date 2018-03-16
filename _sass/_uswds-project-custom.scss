@@ -18,10 +18,10 @@
 .page-content {
   h3 {
     font-weight: $s-fw-xlight;
-    font-size: $u-sans-24;
+    font-size: $u-sans-f10;
     line-height: $u-lh-heading-loose;
     @include media($s-medium-screen) {
-      font-size: $u-sans-48;
+      font-size: $u-sans-f15;
     }
   }
 }

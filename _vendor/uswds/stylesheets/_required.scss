@@ -1,27 +1,46 @@
-/*! uswds @version */
+/*
+========================================
+required
+----------------------------------------
+These files are required to build any
+USWDS project.
+----------------------------------------
+*/
 
-// Vendor -------------- //
+// -------------------------------------
+// Vendor
+
 @import 'lib/bourbon';
 @import 'lib/neat';
 
-// Import USWDS font definitions
+// -------------------------------------
+// Font definitions
+
 @import 'core/font-definitions';
 
-// Project initialization
-// Needs to load before functions
+// -------------------------------------
+// Project initialization values
+
 @import 'uswds-project-init';
 @import 'core/init';
 
+// -------------------------------------
 // Functions
+
 @import 'core/functions';
 
-// Core units
+// -------------------------------------
+// The master palette of style units
+
 @import 'core/units';
 
+// -------------------------------------
 // Project settings
-// Needs to load before core vars and settings
+
 @import 'uswds-project-settings';
 @import 'core/settings';
 
-// Default settings and variables
+// -------------------------------------
+// Calculated and internal variables
+
 @import 'core/variables';
