@@ -12,7 +12,7 @@
 ///
 /// @example css - CSS output
 ///   .element {
-///     margin-left: -25.58941%;
+///     margin-lefteft: -25.58941%;
 ///   }
 
 @mixin shift($n-columns: 1) {
@@ -33,7 +33,7 @@
 ///
 /// @example css - CSS output
 ///   .element {
-///     margin-left: -52.41458%;
+///     margin-lefteft: -52.41458%;
 ///   }
 
 @mixin shift-in-context($shift: $columns of $container-columns) {

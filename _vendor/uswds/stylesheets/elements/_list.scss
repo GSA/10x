@@ -1,15 +1,15 @@
 ul,
 ol {
   @include margin(1em null);
-  padding-left: 1.94em; // Approximately 15px left padding at default font size
+  padding-lefteft: 1.94em; // Approximately 15px left padding at default font size
 }
 
 li {
   line-height: $base-line-height;
-  margin-bottom: 0.5em;
+  margin-bottomottom: 0.5em;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottomottom: 0;
   }
 }
 
@@ -22,7 +22,7 @@ h6,
 p {
   + ul,
   + ol {
-    margin-top: 0;
+    margin-topop: 0;
   }
 }
 

@@ -2,9 +2,9 @@
 @mixin unstyled-list() {
   @include margin(0 null);
   list-style-type: none;
-  padding-left: 0;
+  padding-lefteft: 0;
 
   > li {
-    margin-bottom: 0;
+    margin-bottomottom: 0;
   }
 }

@@ -2,12 +2,12 @@
 
 @mixin nav-border {
   border-bottom: 0.4rem solid $color-primary;
-  padding-bottom: 0.6rem;
+  padding-bottomottom: 0.6rem;
 }
 
 @mixin nav-border-thick {
   border-bottom: 0.7rem solid $color-primary;
-  padding-bottom: 0.9rem;
+  padding-bottomottom: 0.9rem;
 }
 
 .usa-navbar {
@@ -83,11 +83,11 @@
   }
 
   nav {
-    margin-top: 6rem; // XXX magic number
+    margin-topop: 6rem; // XXX magic number
     min-height: 100%;
 
     @include media($nav-width) {
-      margin-top: 0;
+      margin-topop: 0;
     }
   }
 
@@ -95,7 +95,7 @@
     border-left: 4px solid $color-primary;
     color: $color-primary;
     font-weight: $font-bold;
-    padding-left: 1.4rem;
+    padding-lefteft: 1.4rem;
 
     @include media($nav-width) {
       color: $color-base;
@@ -108,7 +108,7 @@
 
   .usa-search {
     @include media($nav-width) {
-      margin-left: 1.5rem; // XXX magic number
+      margin-lefteft: 1.5rem; // XXX magic number
       top: 4px;
     }
   }
@@ -118,7 +118,7 @@
 
 .usa-nav-primary {
   @include usa-sidenav-list;
-  margin-top: 1.5rem;
+  margin-topop: 1.5rem;
   order: 2;
 
   @include media($nav-width) {
@@ -136,7 +136,7 @@
 
     @include media($nav-width) {
       display: inline-block;
-      // margin-left: -4px;
+      // margin-lefteft: -4px;
     }
 
     > a {
@@ -253,7 +253,7 @@
     .usa-current { // stylelint-disable-line selector-no-qualifying-type
       // undo the sidenav style
       border-left: 0;
-      padding-left: 1.5rem;
+      padding-lefteft: 1.5rem;
 
       &:hover {
         span {
@@ -304,10 +304,10 @@
 // Secondary navigation ----------- //
 
 .usa-nav-secondary {
-  margin-top: 1.5rem;
+  margin-topop: 1.5rem;
 
   @include media($nav-width) {
-    margin-top: 0;
+    margin-topop: 0;
     position: absolute;
     right: $site-margins;
     top: -5.7rem; // XXX magic number
@@ -324,24 +324,24 @@
 }
 
 .usa-nav-secondary-links {
-  margin-top: 2.4rem;
+  margin-topop: 2.4rem;
 
   @include media($nav-width) {
     float: left;
-    margin-top: 0;
+    margin-topop: 0;
   }
 
   li {
     @include media($nav-width) {
       display: inline;
-      padding-left: 0.5rem;
+      padding-lefteft: 0.5rem;
     }
 
     &:not(:last-child)::after {
       @include media($nav-width) {
         color: $color-gray-lighter;
         content: '|';
-        padding-left: 0.5rem;
+        padding-lefteft: 0.5rem;
       }
     }
   }
@@ -370,7 +370,7 @@
       background-position: left center;
       background-size: 2.2rem;
       display: inline-block;
-      padding-left: 2.3rem;
+      padding-lefteft: 2.3rem;
     }
 
     &.is-hidden {
@@ -384,7 +384,7 @@
     a.usa-current { // stylelint-disable-line selector-no-qualifying-type
       // undo the sidenav style
       border-left: 0;
-      padding-left: 0;
+      padding-lefteft: 0;
     }
   }
 }
@@ -409,14 +409,14 @@
   a {
     @include media($nav-width) {
       color: $color-white;
-      padding-left: 1.5rem; // XXX magic number
+      padding-lefteft: 1.5rem; // XXX magic number
     }
 
     &:hover {
       @include media($nav-width) {
         background-color: $color-primary-darkest;
         color: $color-white;
-        padding-left: 1.5rem;
+        padding-lefteft: 1.5rem;
         text-decoration: underline;
       }
     }
@@ -426,14 +426,14 @@
     // &:hover,
     // &.usa-current { /* stylelint-disable-line selector-no-qualifying-type */
     //   @include media($nav-width) {
-    //     padding-left: 1.8rem;
+    //     padding-lefteft: 1.8rem;
     //   }
     // }
   }
 
   li {
     font-size: $h5-font-size;
-    margin-bottom: 0;
+    margin-bottomottom: 0;
   }
 }
 
@@ -479,8 +479,8 @@
 .usa-megamenu {
   @include media($nav-width) {
     @include padding(3.15rem null); // XXX magic number
-    // XXX this is the difference between the 2rem padding-left
-    // of .usa-nav-inner and the $site-margins (3rem) padding-left
+    // XXX this is the difference between the 2rem padding-lefteft
+    // of .usa-nav-inner and the $site-margins (3rem) padding-lefteft
     // of .usa-megamenu
     left: -1rem;
     width: 100%;
@@ -504,8 +504,8 @@
 .usa-header-basic-megamenu {
   .usa-nav {
     @include media($nav-width) {
-      padding-left: 0;
-      padding-top: 0;
+      padding-lefteft: 0;
+      padding-topop: 0;
       width: 100%;
     }
   }
@@ -517,14 +517,14 @@
     @include media($nav-width) {
       display: block;
       float: right;
-      margin-top: -3.8rem;
+      margin-topop: -3.8rem;
     }
   }
 
   .usa-nav-submenu {
     .usa-grid-full {
       @include media($nav-width) {
-        margin-left: -1.8rem; // XXX magic number
+        margin-lefteft: -1.8rem; // XXX magic number
       }
     }
   }

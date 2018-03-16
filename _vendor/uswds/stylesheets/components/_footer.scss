@@ -7,9 +7,9 @@
     color: $color-base;
     display: block;
     font-weight: $font-bold;
-    margin-top: 0;
-    padding-bottom: $spacing-medium;
-    padding-top: $spacing-medium;
+    margin-topop: 0;
+    padding-bottomottom: $spacing-medium;
+    padding-topop: $spacing-medium;
     text-decoration: none;
 
     @include media($medium-screen) {
@@ -42,8 +42,8 @@
 
 .usa-footer-return-to-top {
   color: $color-primary;
-  padding-bottom: $spacing-medium;
-  padding-top: $spacing-medium;
+  padding-bottomottom: $spacing-medium;
+  padding-topop: $spacing-medium;
   text-decoration: underline;
 }
 
@@ -51,26 +51,26 @@
   background-color: $color-gray-lightest;
 
   .usa-footer-primary-content {
-    padding-left: 1.5rem;
+    padding-lefteft: 1.5rem;
     padding-right: 2.5rem;
 
     @include media($medium-screen) {
-      padding-left: 0;
+      padding-lefteft: 0;
       padding-right: 0;
     }
 
     li {
-      margin-left: 1rem;
+      margin-lefteft: 1rem;
 
       @include media($medium-screen) {
-        margin-left: 0;
+        margin-lefteft: 0;
       }
     }
   }
 
   .usa-grid-full {
     @include media($medium-screen) {
-      padding-left: 2.5rem;
+      padding-lefteft: 2.5rem;
       padding-right: 2.5rem;
     }
   }
@@ -88,11 +88,11 @@
   }
 
   .usa-footer-contact-heading {
-    margin-top: 0;
+    margin-topop: 0;
 
     @include media($medium-screen) {
-      margin-top: $spacing-x-small;
-      margin-bottom: $spacing-x-small;
+      margin-topop: $spacing-x-small;
+      margin-bottomottom: $spacing-x-small;
     }
   }
 
@@ -105,8 +105,8 @@
   }
 
   .usa-footer-primary-link {
-    padding-bottom: $spacing-md-small;
-    padding-top: $spacing-md-small;
+    padding-bottomottom: $spacing-md-small;
+    padding-topop: $spacing-md-small;
   }
 
   .usa-footer-primary-section {
@@ -114,7 +114,7 @@
       padding: 0;
 
       @include media($medium-screen) {
-        padding-left: $spacing-large;
+        padding-lefteft: $spacing-large;
         padding-right: $spacing-large;
       }
     }
@@ -161,8 +161,8 @@
   }
 
   .usa-footer-primary-link {
-    padding-bottom: $spacing-md-small;
-    padding-top: $spacing-md-small;
+    padding-bottomottom: $spacing-md-small;
+    padding-topop: $spacing-md-small;
   }
 
   .usa-footer-primary-section {
@@ -170,14 +170,14 @@
       padding: 0;
 
       @include media($medium-screen) {
-        padding-left: $spacing-large;
+        padding-lefteft: $spacing-large;
         padding-right: $spacing-large;
       }
     }
 
     @include media($medium-screen) {
-      padding-bottom: 0;
-      padding-top: 0;
+      padding-bottomottom: 0;
+      padding-topop: 0;
 
       .usa-grid-full {
         align-items: center;
@@ -227,8 +227,8 @@ li.usa-footer-primary-content {
 /* stylelint-enable */
 
 .usa-sign_up-block {
-  padding-bottom: 4.5rem;
-  padding-left: 1.5rem;
+  padding-bottomottom: 4.5rem;
+  padding-lefteft: 1.5rem;
   padding-right: 1.5rem;
 
   @include media($medium-screen) {
@@ -237,13 +237,13 @@ li.usa-footer-primary-content {
   }
 
   label:first-of-type {
-    margin-top: 0;
+    margin-topop: 0;
   }
 
   button {
     float: none;
     margin-right: 0;
-    margin-top: 1.5rem;
+    margin-topop: 1.5rem;
   }
 
   input {
@@ -253,8 +253,8 @@ li.usa-footer-primary-content {
 
 .usa-footer-secondary_section {
   background-color: $color-gray-lighter;
-  padding-bottom: $spacing-medium;
-  padding-top: $spacing-medium;
+  padding-bottomottom: $spacing-medium;
+  padding-topop: $spacing-medium;
 
   a {
     color: $color-base;
@@ -263,8 +263,8 @@ li.usa-footer-primary-content {
 
 .usa-footer-big-secondary-section {
   @include media($medium-screen) {
-    padding-top: $spacing-medium;
-    padding-bottom: $spacing-medium;
+    padding-topop: $spacing-medium;
+    padding-bottomottom: $spacing-medium;
   }
 }
 
@@ -295,7 +295,7 @@ li.usa-footer-primary-content {
 
   .usa-footer-contact-links {
     @include media($medium-screen) {
-      padding-top: $spacing-medium;
+      padding-topop: $spacing-medium;
     }
   }
 
@@ -309,42 +309,42 @@ li.usa-footer-primary-content {
 
   .usa-footer-primary-section {
     @include media($medium-screen) {
-      padding-bottom: 4rem;
-      padding-top: 3rem;
+      padding-bottomottom: 4rem;
+      padding-topop: 3rem;
     }
 
     > .usa-grid {
       padding: 0;
 
       @include media($medium-screen) {
-        padding-left: $spacing-large;
+        padding-lefteft: $spacing-large;
         padding-right: $spacing-large;
       }
     }
 
     .usa-footer-primary-content {
-      padding-left: 0;
+      padding-lefteft: 0;
       padding-right: 0;
 
       li {
-        margin-left: $spacing-md-small;
+        margin-lefteft: $spacing-md-small;
 
         @include media($medium-screen) {
-          margin-left: 0;
+          margin-lefteft: 0;
         }
       }
 
       .usa-footer-primary-link {
-        margin-left: 0;
+        margin-lefteft: 0;
       }
     }
   }
 
   ul {
-    padding-bottom: 2.4rem;
+    padding-bottomottom: 2.4rem;
 
     @include media($medium-screen) {
-      padding-bottom: 0;
+      padding-bottomottom: 0;
     }
 
     &:last-child {
@@ -357,8 +357,8 @@ li.usa-footer-primary-content {
 
     li:not(.usa-footer-primary-link) {
       line-height: $heading-line-height;
-      padding-bottom: 0.35em;
-      padding-top: 0.35em;
+      padding-bottomottom: 0.35em;
+      padding-topop: 0.35em;
     }
 
     .usa-footer-primary-link {
@@ -367,14 +367,14 @@ li.usa-footer-primary-content {
       background-position: 1.5rem center;
       background-repeat: no-repeat;
       background-size: 1.3rem;
-      margin-left: 0;
-      padding-left: 3.5rem;
+      margin-lefteft: 0;
+      padding-lefteft: 3.5rem;
 
       @include media($medium-screen) {
         background: none;
-        margin-bottom: .8rem;
-        padding-bottom: 0;
-        padding-left: 0;
+        margin-bottomottom: .8rem;
+        padding-bottomottom: 0;
+        padding-lefteft: 0;
       }
 
       > * {
@@ -383,7 +383,7 @@ li.usa-footer-primary-content {
     }
 
     &.hidden { /* stylelint-disable-line selector-no-qualifying-type */
-      padding-bottom: 0;
+      padding-bottomottom: 0;
 
       li {
         display: none;
@@ -397,7 +397,7 @@ li.usa-footer-primary-content {
 
         @include media($medium-screen) {
           background: none;
-          padding-left: 0;
+          padding-lefteft: 0;
         }
       }
     }
@@ -435,34 +435,34 @@ li.usa-footer-primary-content {
 
 .usa-footer-logo-heading {
   display: block;
-  margin-top: $spacing-small;
+  margin-topop: $spacing-small;
 
   @include media($medium-screen) {
     display: inline-block;
-    margin-top: $spacing-large;
-    padding-left: $spacing-md-small;
+    margin-topop: $spacing-large;
+    padding-lefteft: $spacing-md-small;
   }
 }
 
 .usa-footer-big-logo-heading {
-  margin-top: $spacing-md-small;
+  margin-topop: $spacing-md-small;
 
   @include media($medium-screen) {
-    margin-top: $spacing-medium;
+    margin-topop: $spacing-medium;
   }
 }
 
 .usa-footer-slim-logo-heading {
   display: inline-block;
-  margin-top: $spacing-md-small;
-  padding-left: $spacing-md-small;
+  margin-topop: $spacing-md-small;
+  padding-lefteft: $spacing-md-small;
 }
 
 .usa-footer-contact-heading {
-  margin-top: 0;
+  margin-topop: 0;
 
   @include media($medium-screen) {
-    margin-top: 1rem;
+    margin-topop: 1rem;
   }
 }
 

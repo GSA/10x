@@ -36,7 +36,7 @@
       border-left: $sidenav-current-border-width solid $color-primary;
       color: $color-primary;
       font-weight: $font-bold;
-      padding-left: $site-margins-mobile - $sidenav-current-border-width;
+      padding-lefteft: $site-margins-mobile - $sidenav-current-border-width;
     }
   }
 }
@@ -52,26 +52,26 @@
   }
 
   a {
-    padding-left: 2.8rem;
+    padding-lefteft: 2.8rem;
     line-height: $heading-line-height;
 
     &:hover,
     &.usa-current { /* stylelint-disable-line selector-no-qualifying-type */
       border: none;
-      padding-left: 2.8rem;
+      padding-lefteft: 2.8rem;
     }
   }
 
   .usa-sidenav-sub_list {
     a {
-      padding-left: 3.8rem;
+      padding-lefteft: 3.8rem;
 
       &:focus {
         outline-offset: 0;
       }
 
       &:hover {
-        padding-left: 3.8rem;
+        padding-lefteft: 3.8rem;
       }
     }
   }

@@ -35,8 +35,8 @@ $on-laptop:        800px !default;
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
+//     padding-rightight: $spacing-unit / 2;
+//     padding-lefteft: $spacing-unit / 2;
 //   }
 // }
 @mixin media-query($device) {
