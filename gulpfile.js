@@ -212,9 +212,10 @@ gulp.task('uswds-opt', ["uswds-app"], function() {
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-gulp.task("watch", ['build-custom'], function () {
-  gulp.watch(`${PROJECT_SASS_SRC}/_uswds-project-custom.scss`, ['build-custom']);
-})
+gulp.task('watch', ['uswds-app'], function (){
+  gulp.watch(`${PROJECT_SASS_SRC}/*.scss`, ['uswds-app'])
+  gulp.watch(`${USWDS_SRC}/stylesheets/*.scss`, ['uswds-app']);
+});
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -1,5 +1,15 @@
 // Mobile-first media query helper
 @mixin media($bp) {
+  $bps: (
+    xs:   px-to-base-em($s-xsmall-screen),
+    sm:   px-to-base-em($s-small-screen),
+    md:   px-to-base-em($s-medium-screen),
+    lg:   px-to-base-em($s-large-screen),
+    xl:   px-to-base-em($s-xlarge-screen),
+  );
+  @if map-has-key($bps, $bp){
+    $bp: map-get($bps, $bp);
+  }
   @media screen and (min-width: #{$bp}) {
     @content;
   }

@@ -48,3 +48,16 @@
     display: inline;
   }
 }
+
+.usa-body-content {
+  h1, h2, h3 {
+    line-height: $line-height-heading;
+    font-weight: normal;
+  }
+  p {
+    margin-top: 1em;
+    @include media(md){
+      margin-top: 2em;
+    }
+  }
+}
