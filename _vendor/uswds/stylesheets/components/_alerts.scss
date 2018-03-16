@@ -29,10 +29,10 @@ $icon-size: 3rem;
   background-position: $h-padding $h-padding;
   background-repeat: no-repeat;
   background-size: 5.2rem; // TODO abrituary number based on svg size maybe?
-  padding-bottomottom: $h-padding * 0.7;
-  padding-lefteft: $left-padding;
+  padding-bottom: $h-padding * 0.7;
+  padding-left: $left-padding;
   padding-right: $h-padding;
-  padding-topop: $h-padding;
+  padding-top: $h-padding;
   position: relative;
 
   &::before {
@@ -55,20 +55,20 @@ $icon-size: 3rem;
   }
 
   ul {
-    margin-bottomottom: 0;
-    margin-topop: $spacing-small;
-    padding-lefteft: $spacing-small;
+    margin-bottom: 0;
+    margin-top: $spacing-small;
+    padding-left: $spacing-small;
   }
 }
 
 .usa-alert-slim {
   background-position: $h-padding $spacing-small;
-  padding-bottomottom: $spacing-small;
-  padding-topop: $spacing-small;
+  padding-bottom: $spacing-small;
+  padding-top: $spacing-small;
 
   .usa-alert-text:only-child {
-    margin-bottomottom: $spacing-x-small;
-    padding-topop: $spacing-x-small;
+    margin-bottom: $spacing-x-small;
+    padding-top: $spacing-x-small;
   }
 }
 
@@ -79,24 +79,24 @@ $icon-size: 3rem;
 
 .usa-alert-body {
   display: table-cell;
-  padding-lefteft: $icon-size + $h-padding;
+  padding-left: $icon-size + $h-padding;
   vertical-align: top;
 }
 
 .usa-alert-heading {
-  margin-topop: 0;
-  margin-bottomottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .usa-alert-text {
   font-family: $font-sans;
-  margin-bottomottom: 0;
-  margin-topop: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .usa-alert-text:only-child {
-  margin-bottomottom: $spacing-small;
-  padding-topop: $spacing-x-small;
+  margin-bottom: $spacing-small;
+  padding-top: $spacing-x-small;
 }
 
 @each $name, $bgcolor in $alerts {
@@ -121,5 +121,5 @@ $icon-size: 3rem;
 
 // Deprecated
 .usa-alert {
-  margin-topop: 1.5em; // TODO deprecate
+  margin-top: 1.5em; // TODO deprecate
 }

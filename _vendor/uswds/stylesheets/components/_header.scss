@@ -33,11 +33,11 @@ $z-index-nav:     9000;
 .usa-logo {
   float: left;
   line-height: 4rem;
-  margin-lefteft: 1.5rem;
+  margin-left: 1.5rem;
 
   @include media($nav-width) {
     line-height: 7.5rem;
-    margin-lefteft: 0;
+    margin-left: 0;
   }
 
   a {
@@ -175,7 +175,7 @@ $z-index-nav:     9000;
     @include media($nav-width) {
       @include outer-container();
       @include padding(null $site-margins null 1.5rem);
-      margin-topop: -1px;
+      margin-top: -1px;
       max-width: $site-max-width;
       position: relative;
     }
@@ -205,14 +205,14 @@ $z-index-nav:     9000;
   .usa-nav-submenu {
     .usa-grid-full {
       @include media($nav-width) {
-        padding-lefteft: 1.2rem;
+        padding-left: 1.2rem;
       }
     }
   }
 
   .usa-megamenu {
     @include media($nav-width) {
-      padding-lefteft: $site-margins;
+      padding-left: $site-margins;
     }
   }
 }

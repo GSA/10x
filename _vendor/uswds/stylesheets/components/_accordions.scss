@@ -20,7 +20,7 @@ $v-padding: $spacing-md-small;
   background-color: $color-gray-lightest;
   font-family: $font-sans;
   list-style: none;
-  margin-bottomottom: $spacing-x-small;
+  margin-bottom: $spacing-x-small;
   width: 100%;
 }
 
@@ -84,7 +84,7 @@ $v-padding: $spacing-md-small;
 
   + .usa-accordion,
   + .usa-accordion-bordered {
-    margin-topop: $spacing-small;
+    margin-top: $spacing-small;
   }
 
   // TODO deprecated ruleset based on old accordion.
@@ -127,11 +127,11 @@ $v-padding: $spacing-md-small;
   padding: $spacing-md-small $spacing-medium;
 
   > *:first-child {
-    margin-topop: 0;
+    margin-top: 0;
   }
 
   > *:last-child {
-    margin-bottomottom: 0;
+    margin-bottom: 0;
   }
 
   &:not([aria-hidden]) {

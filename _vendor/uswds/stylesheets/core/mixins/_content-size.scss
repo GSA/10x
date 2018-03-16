@@ -36,15 +36,15 @@
     @include media($medium-screen) {
       float: left;
       margin-right: 2em;
-      margin-topop: 0.5em;
+      margin-top: 0.5em;
     }
   }
 
   &.align-right {
     @include media($medium-screen) {
       float: right;
-      margin-lefteft: 2em;
-      margin-topop: 0.5em;
+      margin-left: 2em;
+      margin-top: 0.5em;
     }
   }
 }

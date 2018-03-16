@@ -10,7 +10,7 @@
 
     /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
     @if $direction == 'after' {
-      margin-lefteft: $margin;
+      margin-left: $margin;
     } @else {
       margin-right: $margin;
     }

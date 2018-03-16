@@ -2,7 +2,7 @@ $aspect-height: 9;
 $aspect-width: 16;
 
 @mixin embed-container ($height, $width) {
-  padding-bottomottom: percentage($height/$width);
+  padding-bottom: percentage($height/$width);
 }
 
 .usa-embed-container {

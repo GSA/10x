@@ -43,10 +43,10 @@ select {
 
 .usa-input-error {
   border-left: 4px solid $color-secondary-dark;
-  margin-topop: 3rem;
-  padding-bottomottom: 0.8rem;
-  padding-lefteft: 1.5rem;
-  padding-topop: 0.8rem;
+  margin-top: 3rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  padding-top: 0.8rem;
   position: relative;
   right: 1.9rem;
 
@@ -58,7 +58,7 @@ select {
   }
 
   label {
-    margin-topop: 0;
+    margin-top: 0;
   }
 
   .usa-input-inline {
@@ -82,8 +82,8 @@ select {
   display: block;
   font-size: $base-font-size;
   font-weight: $font-bold;
-  padding-bottomottom: 3px;
-  padding-topop: 3px;
+  padding-bottom: 3px;
+  padding-top: 3px;
 }
 
 .usa-input-required:after {
@@ -98,7 +98,7 @@ select {
 
 label {
   display: block;
-  margin-topop: 3rem;
+  margin-top: 3rem;
   max-width: $input-max-width;
 }
 
@@ -147,7 +147,7 @@ legend {
 
 .usa-fieldset-inputs {
   label {
-    margin-topop: 0;
+    margin-top: 0;
   }
 }
 
@@ -156,7 +156,7 @@ legend {
 .usa-form-hint {
   color: $color-gray-medium;
   font-family: $font-sans;
-  margin-bottomottom: 0;
+  margin-bottom: 0;
 }
 
 // Custom checkboxes
@@ -180,7 +180,7 @@ legend {
 [type=radio] + label {
   cursor: pointer;
   font-weight: 400;
-  margin-bottomottom: 0.65em;
+  margin-bottom: 0.65em;
 }
 
 [type=checkbox] + label::before,
@@ -251,7 +251,7 @@ legend {
 [type=range] {
   -webkit-appearance: none;
   border: none;
-  padding-lefteft: 0;
+  padding-left: 0;
   width: 100%;
 }
 
@@ -286,7 +286,7 @@ legend {
   border-radius: 1.5rem;
   background: $color-gray-lightest;
   cursor: pointer;
-  margin-topop: -.65rem;
+  margin-top: -.65rem;
   width: 2.2rem;
 }
 
@@ -324,7 +324,7 @@ legend {
 
 .usa-date-of-birth {
   label {
-    margin-topop: 0;
+    margin-top: 0;
   }
 
   [type=number]::-webkit-inner-spin-button,

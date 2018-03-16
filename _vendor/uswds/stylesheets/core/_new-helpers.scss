@@ -4,3 +4,130 @@ $line-height-heading-loose:   $u-lh-heading-loose;
 $line-height-body:            $u-lh-body;
 $line-height-body-loose:      $u-lh-body-loose;
 $line-height-body-tight:      $u-lh-body-tight;
+
+$font-family-sans: $font-stack-sans;
+$font-family-serif: $font-stack-serif;
+$font-family-mono: $font-stack-mono;
+
+$all-breakpoints: (
+  xs:   px-to-base-em($s-xsmall-screen),
+  sm:   px-to-base-em($s-small-screen),
+  md:   px-to-base-em($s-medium-screen),
+  lg:   px-to-base-em($s-large-screen),
+  xl:   px-to-base-em($s-xlarge-screen),
+);
+
+$all-grid: (
+  g05:  $u-spacing-05,
+  g1:   $u-spacing-1,
+  g105: $u-spacing-105,
+  g2:   $u-spacing-2,
+  g205: $u-spacing-205,
+  g3:   $u-spacing-3,
+  g4:   $u-spacing-4,
+  g5:   $u-spacing-5,
+  g6:   $u-spacing-6,
+  g7:   $u-spacing-7,
+  g8:   $u-spacing-8,
+  g9:   $u-spacing-9,
+  g10:  $u-spacing-10,
+  g15:  $u-spacing-15,
+  g20:  $u-spacing-20,
+  g25:  $u-spacing-25,
+  g30:  $u-spacing-30,
+  g40:  $u-spacing-40,
+  g50:  $u-spacing-50,
+);
+
+$g05:  $u-spacing-05;
+$g1:   $u-spacing-1;
+$g105: $u-spacing-105;
+$g2:   $u-spacing-2;
+$g205: $u-spacing-205;
+$g3:   $u-spacing-3;
+$g4:   $u-spacing-4;
+$g5:   $u-spacing-5;
+$g6:   $u-spacing-6;
+$g7:   $u-spacing-7;
+$g8:   $u-spacing-8;
+$g9:   $u-spacing-9;
+$g10:  $u-spacing-10;
+$g15:  $u-spacing-15;
+$g20:  $u-spacing-20;
+$g25:  $u-spacing-25;
+$g30:  $u-spacing-30;
+$g40:  $u-spacing-40;
+$g50:  $u-spacing-50;
+
+
+@mixin xy-spacing($property, $xy, $val){
+  @if $xy == x {
+    #{$property}-left: $val;
+    #{$property}-right: $val;
+  } @else {
+    #{$property}-bottom: $val;
+    #{$property}-top: $val;
+  }
+}
+
+@mixin margin-x($val){
+  @include xy-spacing(margin,x,$val);
+}
+
+@mixin margin-y($val){
+  @include xy-spacing(margin,y,$val);
+}
+
+@mixin padding-x($val){
+  @include xy-spacing(padding,x,$val);
+}
+
+@mixin padding-y($val){
+  @include xy-spacing(padding,y,$val);
+}
+
+@mixin font($family,$size){
+  $cap-heights:(
+    mono: $mono-cap-height,
+    sans: $sans-cap-height,
+    serif: $serif-cap-height,
+  );
+  $type-scales:(
+    f1:   $u-type-scale-f1,
+    f2:   $u-type-scale-f2,
+    f3:   $u-type-scale-f3,
+    f4:   $u-type-scale-f4,
+    f5:   $u-type-scale-f5,
+    f6:   $u-type-scale-f6,
+    f7:   $u-type-scale-f7,
+    f8:   $u-type-scale-f8,
+    f9:   $u-type-scale-f9,
+    f10:  $u-type-scale-f10,
+    f11:  $u-type-scale-f11,
+    f12:  $u-type-scale-f12,
+    f13:  $u-type-scale-f13,
+    f14:  $u-type-scale-f14,
+    f15:  $u-type-scale-f15,
+    f16:  $u-type-scale-f16,
+    f17:  $u-type-scale-f17,
+    f18:  $u-type-scale-f18,
+    f19:  $u-type-scale-f19,
+    f20:  $u-type-scale-f20,
+  );
+  $this-cap-height: map-get($cap-heights, $family);
+  $this-type-scale: map-get($type-scales, $size);
+  $font-size: type-scale($this-cap-height, $this-type-scale);
+  font-size: $font-size;
+}
+
+@mixin font-sans($val){
+  @include font(sans, $val);
+}
+
+@mixin font-serif($val){
+  @include font(serif, $val);
+}
+
+@mixin font-mono($val){
+  @include font(mono, $val);
+}

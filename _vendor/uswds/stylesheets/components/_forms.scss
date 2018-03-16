@@ -8,11 +8,11 @@ form {
   [type=submit],
   [type=submit] {
     display: block;
-    margin-bottomottom: 1.5em;
-    margin-topop: 2.5rem;
+    margin-bottom: 1.5em;
+    margin-top: 2.5rem;
 
     @include media($medium-screen) {
-      padding-lefteft: 2.7em;
+      padding-left: 2.7em;
       padding-right: 2.7em;
       width: auto;
     }
@@ -20,7 +20,7 @@ form {
 
   [name=password],
   [name=confirmPassword] {
-    margin-bottomottom: 1.1rem;
+    margin-bottom: 1.1rem;
   }
 }
 
@@ -86,11 +86,11 @@ input {
   }
 
   input {
-    margin-bottomottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   select {
-    margin-bottomottom: 3rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -101,11 +101,11 @@ input {
   }
 
   input {
-    margin-bottomottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   select {
-    margin-bottomottom: 3rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -116,11 +116,11 @@ input {
   }
 
   input {
-    margin-bottomottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   select {
-    margin-bottomottom: 3rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -132,15 +132,15 @@ input {
 
 .usa-checklist {
   list-style: none;
-  margin-lefteft: 0;
-  padding-lefteft: 0;
+  margin-left: 0;
+  padding-left: 0;
 
   li {
     display: inline-block;
     list-style: none;
-    margin-bottomottom: 0;
-    margin-topop: 0;
-    padding-lefteft: 3em;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 3em;
     text-indent: -2em;
 
     &::before {

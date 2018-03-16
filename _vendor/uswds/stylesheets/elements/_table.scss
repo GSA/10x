@@ -42,7 +42,7 @@ td {
 
   th {
     &:first-child {
-      padding-lefteft: 0;
+      padding-left: 0;
     }
   }
 }
@@ -50,6 +50,6 @@ td {
 caption {
   @include h5;
   font-family: $font-serif;
-  margin-bottomottom: 1.2rem;
+  margin-bottom: 1.2rem;
   text-align: left;
 }

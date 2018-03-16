@@ -3,21 +3,21 @@
 .usa-graphic_list {
   .usa-graphic_list-row {
     .usa-media_block {
-      margin-bottomottom: $site-margins;
+      margin-bottom: $site-margins;
 
       @include media($medium-screen) {
-        margin-bottomottom: $site-margins * 2;
+        margin-bottom: $site-margins * 2;
       }
     }
 
     &:last-child {
       .usa-media_block {
         @include media($medium-screen) {
-          margin-bottomottom: 0;
+          margin-bottom: 0;
         }
 
         &:last-child {
-          margin-bottomottom: 0;
+          margin-bottom: 0;
         }
       }
     }
@@ -29,7 +29,7 @@
 
   .usa-media_block-body {
     > :first-child {
-      margin-topop: 0;
+      margin-top: 0;
     }
   }
 }

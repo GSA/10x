@@ -53,11 +53,15 @@
   h1, h2, h3 {
     line-height: $line-height-heading;
     font-weight: normal;
+    @include margin-y(0);
   }
   p {
+    margin-bottom: 0;
     margin-top: 1em;
-    @include media(md){
-      margin-top: 2em;
+    @include font-sans(f7);
+    @include media(md) {
+      @include font-sans(f8);
     }
   }
+
 }
