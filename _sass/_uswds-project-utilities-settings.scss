@@ -92,7 +92,7 @@ $align-items-manual-values: (
 
 /*
 ========================================
-.border-radius
+.background-color
 ----------------------------------------
 */
 
@@ -110,6 +110,7 @@ $background-color-preset-values: map-collect(
   $preset-colors-black-transparent,
   $preset-colors-black-cool-dark,
   $preset-colors-gold-light-vivid,
+  $preset-palette-grayscale,
   $preset-colors-red-warm-medium-vivid
 );
 
@@ -156,6 +157,7 @@ $border-color-preset-values: map-collect(
   $preset-colors-black-cool,
   $preset-colors-indigo-warm-medium-vivid,
   $preset-colors-red-warm-medium-vivid,
+  $preset-palette-grayscale,
   $preset-colors-gold-light-vivid
 );
 
@@ -281,6 +283,7 @@ $color-preset-values: map-collect(
   $preset-colors-black-cool-light,
   $preset-colors-black-cool-dark,
   $preset-colors-indigo-warm-medium-vivid,
+  $preset-palette-grayscale,
   $preset-palette-reserved
 );
 
