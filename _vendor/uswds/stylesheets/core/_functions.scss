@@ -232,7 +232,7 @@ Converts a value in px to a value in em
     @return $px-to-base-em;
   }
   @else {
-    @return false;    
+    @return false;
   }
 }
 /*
@@ -267,7 +267,9 @@ in the @render-utilities-in loop
 
   .#{$utilities-namespace-prefix}#{$selector} {
     @if map-has-key($val-props, extend) {
-      #{map-deep-get($val-props, extend, property)}: strunquote(map-deep-get($val-props, extend, value))#{$important};
+      @each $ext-prop, $ext-value in map-get($val-props, extend) {
+        #{strunquote($ext-prop)}: strunquote($ext-value)#{$important};
+      }
     }
 
     @if map-has-key($val-props, extends) {
@@ -279,7 +281,9 @@ in the @render-utilities-in loop
     }
 
     @if map-has-key($utility, extend) {
-      #{map-deep-get($utility, extend, property)}: strunquote(map-deep-get($utility, extend, value))#{$important};
+      @each $ext-prop, $ext-value in map-get($utility, extend) {
+        #{strunquote($ext-prop)}: strunquote($ext-value)#{$important};
+      }
     }
   }
 }
@@ -351,7 +355,9 @@ loop
       @media (min-width: #{$media-value}) {
         .#{$utilities-namespace-prefix}#{$media-key}\:#{$selector} {
           @if map-has-key($val-props, extend) {
-            #{map-deep-get($val-props, extend, property)}: strunquote(map-deep-get($val-props, extend, value))#{$important};
+            @each $ext-prop, $ext-value in map-get($val-props, extend) {
+              #{strunquote($ext-prop)}: strunquote($ext-value)#{$important};
+            }
           }
 
           @each $this-property in $property {
@@ -359,7 +365,9 @@ loop
           }
 
           @if map-has-key($utility, extend) {
-            #{map-deep-get($utility, extend, property)}: strunquote(map-deep-get($utility, extend, value))#{$important};
+            @each $ext-prop, $ext-value in map-get($utility, extend) {
+              #{strunquote($ext-prop)}: strunquote($ext-value)#{$important};
+            }
           }
           @if map-deep-get($utility, settings, hover) {
             @include render-pseudoclass(hover, $selector, $property, $value, $val-props, $mq, $important);
@@ -580,11 +588,11 @@ through all possible variants
 
               // if the value is noValue ('')
 
-              } @elseif map-get($val-props, slug) == '' {
+            } @elseif map-get($val-props, slug) == '' or map-get($val-props, slug) == 'noValue' {
 
-                // selector is a simple join
+                // selector is the base only
 
-                $selector: $b + $v;
+                $selector: $b;
 
               // Otherwise, if base-props.isReadable, or val-props.isReadable
 
@@ -709,13 +717,13 @@ through all possible variants
   } // end the utility loop
   // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
 }
-/* stylelint-enable */
 
 @mixin render-font-face($this-font-face) {
   $these-weights: $font-weights;
   @if $s-output-all-weights {
     $these-weights: (100,200,300,400,500,600,700,800,900);
   }
+
   @if $this-font-face {
     $this-font-system: map-get($this-font-face, system-font);
 
@@ -729,13 +737,13 @@ through all possible variants
         @each $weight, $filename in $roman {
           @each $outputweight in $these-weights {
             @if $outputweight == $weight and $filename {
-                @include font-face(
-                  '#{$font-name}',
-                  '#{$s-font-path}/#{$dir}/#{$filename}',
-                  #{$weight},
-                  normal,
-                  $file-formats: eot woff2 woff ttf
-                );
+              @include font-face(
+                '#{$font-name}',
+                '#{$s-font-path}/#{$dir}/#{$filename}',
+                #{$weight},
+                normal,
+                $file-formats: eot woff2 woff ttf
+              );
             }
           }
         }
@@ -745,13 +753,13 @@ through all possible variants
         @each $weight, $filename in $italic {
           @each $outputweight in $these-weights {
             @if $outputweight == $weight and $filename {
-                @include font-face(
-                  '#{$font-name}',
-                  '#{$s-font-path}/#{$dir}/#{$filename}',
-                  #{$weight},
-                  italic,
-                  $file-formats: eot woff2 woff ttf
-                );
+              @include font-face(
+                '#{$font-name}',
+                '#{$s-font-path}/#{$dir}/#{$filename}',
+                #{$weight},
+                italic,
+                $file-formats: eot woff2 woff ttf
+              );
             }
           }
         }
