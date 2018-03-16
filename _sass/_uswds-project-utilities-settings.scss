@@ -5,7 +5,7 @@
 */
 
 $utilities-namespace-prefix: '';
-$utilities-use-important: false;
+$utilities-use-important: true;
 
 $output-breakpoints: (
   xs: false,
@@ -179,6 +179,7 @@ $border-radius-settings: (
 );
 
 $border-radius-preset-values: map-collect(
+  $preset-units-px,
   $preset-units-grid-small
 );
 
@@ -744,7 +745,7 @@ $manual-position-manual-values: (
 */
 
 $margin-settings: (
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -830,7 +831,8 @@ $max-width-manual-values: (
   /*
   */
   none:         'none',
-  reading-sm:   $text-narrow-width,
+  reading-xs:   $text-narrow-width,
+  reading-sm:   $text-width-sm,
   reading:      $text-max-width,
   reading-lg:   $text-wide-width
 );

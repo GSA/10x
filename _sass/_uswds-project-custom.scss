@@ -7,7 +7,7 @@
     all global and settings variables
 
     i.e.
-    padding-rightight: $s-spacing-sm;
+    padding-right: $s-spacing-sm;
 
     - - - - - - - - - - - - - - - - - - - - -  */
 
@@ -17,11 +17,11 @@
 
 .page-content {
   h3 {
+    @include font-sans(f10);
     font-weight: $s-fw-xlight;
-    font-size: $u-sans-f10;
-    line-height: $u-lh-heading-loose;
-    @include media($s-medium-screen) {
-      font-size: $u-sans-f15;
+    line-height: $line-height-heading-loose;
+    @include media(md) {
+      @include font-sans(f15);
     }
   }
 }
@@ -55,13 +55,51 @@
     font-weight: normal;
     @include margin-y(0);
   }
-  p {
-    margin-bottom: 0;
-    margin-top: 1em;
-    @include font-sans(f7);
-    @include media(md) {
+  h2 {
+    margin-top: $grid-4;
+    @include media(md){
+      margin-top: $grid-5;
+    }
+  }
+  h3 {
+    margin-top: $grid-3;
+    @include font-sans(f6);
+    font-weight: $font-weight-xbold;
+    @include media(md){
+      margin-top: $grid-5;
       @include font-sans(f8);
     }
   }
+  p {
+    margin-bottom: 0;
+    margin-top: $grid-105;
+    line-height: $line-height-body;
+    @include media(md){
+      margin-top: $grid-205;
+    }
+  }
+  ul {
+    @include list-reset;
+  }
+  li {
+    @include padding-y(g1);
+    border-top: 1px solid $black-20;
+    @include media(md){
+      @include padding-y($grid-1);
+    }
+  }
+}
 
+.usa-card {
+  @include padding-x(g1);
+  @include padding-y(g105);
+  border: 2px solid $color-black;
+  margin-top: $g2;
+  border-radius: $g05;
+
+  @include media(md){
+    @include padding-x(g2);
+    @include padding-y(g3);
+    margin-top: $g4;
+  }
 }
