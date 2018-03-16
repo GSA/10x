@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html class="min-height-100ct color-white font-family-sans" lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="margin-0 font-sans-f6 lg:font-sans-f8 line-height-body-tight min-height-100ct">
+
+    <main class="page-content" aria-label="Content">
+      {{ content }}
+    </main>
+
+    <script src='{{ "/assets/js/uswds.min.js" | relative_url }}'></script>
+  </body>
+
+</html>

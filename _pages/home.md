@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: prototype
 title: 10x
 permalink: /home/
 ---
@@ -72,5 +72,3 @@ of people using the product, if necessary.</p>
 <h2 id="pitch-us">Sending us your ideas.</h2>
 
 *{What if we created either an email list for people to get notified for when pitches open *or* a public google calendar that people can subscribe to for when call for proposals open?}*
-
->>>>>>> draft-overview
