@@ -1,0 +1,32 @@
+/*Break Points*/
+body {
+  background: #fdfdfd;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  line-height: 36px;
+  color: #222;
+  -webkit-overflow-scrolling: touch; }
+
+a {
+  color: #2D86FF;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.5); }
+
+a:hover {
+  color: #222;
+  text-decoration: none;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.8); }
+
+hr {
+  margin: 48px auto;
+  border-bottom: 1px #222 solid; }
+
+p {
+  margin-top: 0; }
+
+.container {
+  margin: 0 auto;
+  max-width: 960px; }
+
+header .container {
+  margin-bottom: 80px;
+  border-bottom: 3px #222 solid; }
