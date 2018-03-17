@@ -61,7 +61,7 @@
     padding-top: $grid-2;
     @include media(md){
       margin-top: $grid-3;
-      margin-top: $grid-2;
+      margin-top: $grid-3;
       @include font-sans(f11);
     }
   }
@@ -71,9 +71,12 @@
     @include font-sans(f6);
     font-weight: $font-weight-bold;
     @include media(md){
-      margin-top: $grid-3;
+      margin-top: $grid-2;
       padding-top: $grid-2;
       @include font-sans(f8);
+    }
+    & + p {
+      margin-top: $g1;
     }
   }
   p {
