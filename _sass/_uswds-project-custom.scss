@@ -135,3 +135,11 @@
   display: none;
   vertical-align: baseline;
 }
+
+.usa-lede-link {
+  color: $black-90;
+  text-decoration-color: $black-20;
+  &:hover{
+    text-decoration-color: $black-80;
+  }
+}
