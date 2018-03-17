@@ -825,7 +825,7 @@ $max-width-manual-values: (
   */
   none:         'none',
   reading-xs:   $text-narrow-width,
-  reading-sm:   foo,
+  reading-sm:   $text-width-sm,
   reading:      $text-max-width,
   reading-lg:   $text-wide-width
 );

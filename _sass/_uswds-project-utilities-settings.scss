@@ -25,7 +25,7 @@ $output-utilities: (
   border-radius:    true,
   border-style:     false,
   box-shadow:       false,
-  circle:           false,
+  circle:           true,
   clearfix:         true,
   color:            true,
   column:           true,
@@ -43,7 +43,7 @@ $output-utilities: (
   letter-spacing:   true,
   line-height:      true,
   list-reset:       true,
-  manual-position:  false,
+  manual-position:  true,
   margin:           true,
   max-height:       false,
   max-width:        true,
@@ -54,13 +54,14 @@ $output-utilities: (
   outline-width:    false,
   outline-color:    false,
   padding:          true,
-  position:         false,
+  position:         true,
   row:              true,
   square:           false,
   text-align:       true,
   text-decoration:  true,
+  text-decoration-color:  true,
   text-transform:   true,
-  vertical-align:   false,
+  vertical-align:   true,
   whitespace:       true,
   width:            true,
   z-index:          false
@@ -257,6 +258,8 @@ $circle-settings: (
 );
 
 $circle-preset-values: map-collect(
+  $preset-units-grid-small,
+  $preset-units-grid-medium,
   $preset-spacing-tshirt
 );
 
@@ -728,7 +731,7 @@ $manual-position-preset-values: map-collect(
   $preset-units-px,
   $preset-units-px-negative,
   $preset-units-percentage,
-  $preset-units-grid
+  $preset-units-grid-small
 );
 
 $manual-position-manual-values: (
@@ -769,6 +772,7 @@ $margin-preset-values: map-collect(
   $preset-units-px-negative,
   $preset-units-grid-small,
   $preset-units-grid-medium,
+  $preset-units-grid-large,
   $preset-units-grid-small-negative,
   $preset-units-grid-medium-negative
 );
@@ -1170,6 +1174,32 @@ $text-decoration-manual-values: (
 
 /*
 ========================================
+.text-decoration-color
+----------------------------------------
+*/
+
+$text-decoration-color-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        true,
+  visited:      false
+);
+
+$text-decoration-color-preset-values: map-collect(
+  /*
+  $preset-palette-grayscale
+  */
+  $preset-palette-grayscale
+);
+
+$text-decoration-color-manual-values: (
+  /*
+  */
+);
+
+/*
+========================================
 .text-transform
 ----------------------------------------
 */
@@ -1226,6 +1256,7 @@ $vertical-align-manual-values: (
   text-top:     'text-top',
   top:          'top',
   */
+  baseline:     'baseline',
 );
 
 /*
@@ -1279,6 +1310,8 @@ $width-preset-values: map-collect(
   $preset-units-ch
   */
   $preset-units-percentage,
+  $preset-units-grid-small,
+  $preset-units-grid-medium,
   $preset-units-breakpoints
 );
 

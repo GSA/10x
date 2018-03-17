@@ -56,17 +56,22 @@
     @include margin-y(0);
   }
   h2 {
-    margin-top: $grid-4;
+    font-weight: $font-weight-bold;
+    margin-top: $grid-2;
+    padding-top: $grid-2;
     @include media(md){
-      margin-top: $grid-5;
+      margin-top: $grid-3;
+      margin-top: $grid-2;
     }
   }
   h3 {
-    margin-top: $grid-3;
+    margin-top: $grid-2;
+    padding-top: $grid-1;
     @include font-sans(f6);
     font-weight: $font-weight-xbold;
     @include media(md){
-      margin-top: $grid-5;
+      margin-top: $grid-3;
+      padding-top: $grid-2;
       @include font-sans(f8);
     }
   }
@@ -93,7 +98,7 @@
 .usa-card {
   @include padding-x(g1);
   @include padding-y(g105);
-  border: 2px solid $color-black;
+  border: 2px solid $black-100;
   margin-top: $g2;
   border-radius: $g05;
 
@@ -102,4 +107,30 @@
     @include padding-y(g3);
     margin-top: $g4;
   }
+}
+
+.usa-link-circle {
+  @include font-sans(f1);
+  border: 2px solid $black-20;
+  border-radius: 9999em;
+  color: $black-50;
+  display: inline-block;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-single;
+  margin-left: 2px;
+  padding: $g05;
+  text-align: center;
+  text-decoration: none;
+  width: $g3;
+  &:hover {
+    border-color: $indigo-warm-60v;
+    color: $indigo-warm-60v;
+  }
+}
+
+.usa-lede-sup {
+  position: relative;
+  bottom: $g105;
+  display: none;
+  vertical-align: baseline;
 }

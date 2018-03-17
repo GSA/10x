@@ -59,8 +59,9 @@ $output-utilities: (
   square:           false,
   text-align:       true,
   text-decoration:  true,
+  text-decoration-color:  false,
   text-transform:   true,
-  vertical-align:   false,
+  vertical-align:   true,
   whitespace:       false,
   width:            false,
   z-index:          false
@@ -1173,6 +1174,33 @@ $text-decoration-manual-values: (
   strike:           'strike',
   underline:        'underline',
   none:             'none'
+) !default;
+
+/*
+========================================
+.text-decoration-color
+----------------------------------------
+*/
+
+$text-decoration-color-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$text-decoration-color-preset-values: map-collect(
+  /*
+  $preset-palette-grayscale
+  */
+  $preset-palette-project-settings,
+  $preset-palette-reserved
+) !default;
+
+$text-decoration-color-manual-values: (
+  /*
+  */
 ) !default;
 
 /*
