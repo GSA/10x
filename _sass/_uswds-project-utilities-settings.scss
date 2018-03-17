@@ -628,6 +628,7 @@ $height-preset-values: map-collect(
 $height-manual-values: (
   /*
   */
+  100vh: '100vh',
 );
 
 /*
@@ -770,9 +771,7 @@ $margin-preset-values: map-collect(
   */
   $preset-units-px,
   $preset-units-px-negative,
-  $preset-units-grid-small,
-  $preset-units-grid-medium,
-  $preset-units-grid-large,
+  $preset-units-grid,
   $preset-units-grid-small-negative,
   $preset-units-grid-medium-negative
 );
