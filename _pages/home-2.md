@@ -6,7 +6,7 @@ permalink: /home-2/
 
 <h1 class="font-weight-700">A seed fund for government</h1>
 <div class="row align-items-center padding-bottom-g4">
-  <p class="font-sans-f11 md:font-sans-f12 font-weight-200 line-height-heading-loose">We fund ideas from public servants — helping technology improve the experience people have with government.</p>
+  <p class="font-sans-f11 md:font-sans-f12 font-weight-200 line-height-heading-loose">10x funds ideas from public servants — helping technology improve the experience people have with government.</p>
 </div>
 
 <h2 class="margin-bottom-0 border-top-g05 padding-top-g2" id="what-is-10x">About 10x</h2>
