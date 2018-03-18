@@ -98,6 +98,13 @@
       @include padding-y($grid-1);
     }
   }
+  p a {
+    color: $black-90;
+    text-decoration-color: $indigo-warm-60v;
+    &:hover{
+      text-decoration-color: $red-warm-50v;
+    }
+  }
 }
 
 .usa-card {
