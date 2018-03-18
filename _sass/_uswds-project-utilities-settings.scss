@@ -4,8 +4,8 @@ USWDS UTILITIES SETTINGS
 ----------------------------------------
 */
 
-$utilities-namespace-prefix:  '';
-$utilities-use-important:     false;
+$utilities-namespace-prefix: '';
+$utilities-use-important: true;
 
 $output-breakpoints: (
   xs: false,
@@ -25,7 +25,8 @@ $output-utilities: (
   border-radius:    true,
   border-style:     false,
   box-shadow:       false,
-  circle:           false,
+  circle:           true,
+  clearfix:         true,
   color:            true,
   column:           true,
   display:          true,
@@ -34,7 +35,7 @@ $output-utilities: (
   flex-wrap:        false,
   float:            true,
   font:             true,
-  font-family:      false,
+  font-family:      true,
   font-feature:     false,
   font-style:       true,
   font-weight:      true,
@@ -42,7 +43,7 @@ $output-utilities: (
   letter-spacing:   true,
   line-height:      true,
   list-reset:       true,
-  manual-position:  false,
+  manual-position:  true,
   margin:           true,
   max-height:       false,
   max-width:        true,
@@ -53,13 +54,14 @@ $output-utilities: (
   outline-width:    false,
   outline-color:    false,
   padding:          true,
-  position:         false,
+  position:         true,
   row:              true,
   square:           false,
   text-align:       true,
   text-decoration:  true,
+  text-decoration-color:  true,
   text-transform:   true,
-  vertical-align:   false,
+  vertical-align:   true,
   whitespace:       true,
   width:            true,
   z-index:          false
@@ -109,6 +111,7 @@ $background-color-preset-values: map-collect(
   $preset-colors-black-transparent,
   $preset-colors-black-cool-dark,
   $preset-colors-gold-light-vivid,
+  $preset-palette-grayscale,
   $preset-colors-red-warm-medium-vivid
 );
 
@@ -117,7 +120,7 @@ $background-color-manual-values: (
 
 /*
 ========================================
-.border-width
+.border (width and solid)
 ----------------------------------------
 */
 
@@ -155,6 +158,7 @@ $border-color-preset-values: map-collect(
   $preset-colors-black-cool,
   $preset-colors-indigo-warm-medium-vivid,
   $preset-colors-red-warm-medium-vivid,
+  $preset-palette-grayscale,
   $preset-colors-gold-light-vivid
 );
 
@@ -176,6 +180,7 @@ $border-radius-settings: (
 );
 
 $border-radius-preset-values: map-collect(
+  $preset-units-px,
   $preset-units-grid-small
 );
 
@@ -183,9 +188,6 @@ $border-radius-manual-values: (
   0:            '0',
   pill:         '9999em',
   circle:       '50%',
-  sm:           $s-radius-sm,
-  md:           $s-radius-md,
-  lg:           $s-radius-lg,
 );
 
 /*
@@ -256,19 +258,12 @@ $circle-settings: (
 );
 
 $circle-preset-values: map-collect(
+  $preset-units-grid-small,
+  $preset-units-grid-medium,
   $preset-spacing-tshirt
 );
 
 $circle-manual-values: (
-  3xs:          $s-spacing-3xs,
-  2xs:          $s-spacing-2xs,
-  xs:           $s-spacing-xs,
-  sm:           $s-spacing-sm,
-  md:           $s-spacing-md,
-  lg:           $s-spacing-lg,
-  xl:           $s-spacing-xl,
-  2xl:          $s-spacing-2xl,
-  3xl:          $s-spacing-3xl,
 );
 
 /*
@@ -292,6 +287,7 @@ $color-preset-values: map-collect(
   $preset-colors-black-cool-light,
   $preset-colors-black-cool-dark,
   $preset-colors-indigo-warm-medium-vivid,
+  $preset-palette-grayscale,
   $preset-palette-reserved
 );
 
@@ -600,6 +596,9 @@ $font-weight-manual-values: (
   700:          '700',
   800:          '800',
   900:          '900',
+  bold:         'bold',
+  normal:       'normal',
+  light:        'light'
 );
 
 /*
@@ -629,6 +628,7 @@ $height-preset-values: map-collect(
 $height-manual-values: (
   /*
   */
+  100vh: '100vh',
 );
 
 /*
@@ -732,7 +732,7 @@ $manual-position-preset-values: map-collect(
   $preset-units-px,
   $preset-units-px-negative,
   $preset-units-percentage,
-  $preset-units-grid
+  $preset-units-grid-small
 );
 
 $manual-position-manual-values: (
@@ -749,7 +749,7 @@ $manual-position-manual-values: (
 */
 
 $margin-settings: (
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -771,8 +771,7 @@ $margin-preset-values: map-collect(
   */
   $preset-units-px,
   $preset-units-px-negative,
-  $preset-units-grid-small,
-  $preset-units-grid-medium,
+  $preset-units-grid,
   $preset-units-grid-small-negative,
   $preset-units-grid-medium-negative
 );
@@ -782,8 +781,6 @@ $margin-manual-values: (
   */
   0:            '0',
   auto:         'auto',
-  1px:          '1px',
-  2px:          '2px',
 );
 
 /*
@@ -837,8 +834,10 @@ $max-width-manual-values: (
   /*
   */
   none:         'none',
-  reading-sm:   $text-narrow-width,
+  reading-xs:   $text-narrow-width,
+  reading-sm:   $text-width-sm,
   reading:      $text-max-width,
+  reading-lg:   $text-wide-width
 );
 
 /*
@@ -1174,6 +1173,33 @@ $text-decoration-manual-values: (
 
 /*
 ========================================
+.text-decoration-color
+----------------------------------------
+*/
+
+$text-decoration-color-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        true,
+  visited:      false
+);
+
+$text-decoration-color-preset-values: map-collect(
+  /*
+  $preset-palette-grayscale
+  */
+  $preset-colors-indigo-warm-vivid,
+  $preset-palette-grayscale
+);
+
+$text-decoration-color-manual-values: (
+  /*
+  */
+);
+
+/*
+========================================
 .text-transform
 ----------------------------------------
 */
@@ -1230,6 +1256,7 @@ $vertical-align-manual-values: (
   text-top:     'text-top',
   top:          'top',
   */
+  baseline:     'baseline',
 );
 
 /*
@@ -1283,6 +1310,8 @@ $width-preset-values: map-collect(
   $preset-units-ch
   */
   $preset-units-percentage,
+  $preset-units-grid-small,
+  $preset-units-grid-medium,
   $preset-units-breakpoints
 );
 

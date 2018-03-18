@@ -26,6 +26,7 @@ $output-utilities: (
   border-style:     false,
   box-shadow:       true,
   circle:           true,
+  clearfix:         true,
   color:            true,
   column:           false,
   display:          true,
@@ -121,7 +122,7 @@ $background-color-manual-values: (
 
 /*
 ========================================
-.border-width
+.border (width and solid)
 ----------------------------------------
 */
 
@@ -758,10 +759,10 @@ $margin-preset-values: map-collect(
   $preset-units-ch-negative,
   $preset-units-em
   */
-  $preset-spacing-px,
-  $preset-spacing-px-negative,
+  $preset-units-px,
+  $preset-units-px-negative,
   $preset-spacing-tshirt,
-  $preset-spacing-tshirt-negative
+  $preset-spacing-tshirt-small-negative
 );
 
 $margin-manual-values: (
@@ -823,8 +824,10 @@ $max-width-manual-values: (
   /*
   */
   none:         'none',
-  reading-sm:   $text-narrow-width,
-  reading:      $text-max-width
+  reading-xs:   $text-narrow-width,
+  reading-sm:   $text-width-sm,
+  reading:      $text-max-width,
+  reading-lg:   $text-wide-width
 );
 
 /*
