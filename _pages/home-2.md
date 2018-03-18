@@ -38,7 +38,7 @@ Instead of investing with a single large lump sum, we start with smaller explora
 <p>Build it out and plan for the future. Develop a functional minimum viable product with at least one active customer. Create a product roadmap tied to a customer acquisition strategy. Provide a data-backed market analysis. Estimate the cost and effort required to continue sustainably building and maintaining the product over the long-term.</p>
 
 <h3 id="stage-5-scale-1-25m">Stage 5: Scale — $1.25 million</h3>
-<p>If necessary, significantly increase the number of people using the product or service.</p>
+<p>Bring the product or service to the largest possible audience.</p>
 
 
 <h2 class="margin-bottom-0 border-top-g05 padding-top-g2 margin-top-g5" id="who-can-pitch">Pitch an idea to 10x</h2>
