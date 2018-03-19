@@ -6,7 +6,7 @@ permalink: /home-2/
 
 <h1 class="font-weight-900 margin-bottom-g1 md:margin-bottom-0">High-impact seed funding</h1>
 <div class="row align-items-center padding-bottom-g4">
-  <p class="font-sans-f11 md:font-sans-f12 font-weight-300 line-height-heading-loose margin-top-g1">10x funds technological solutions from public servants that improve the experience people have with government.</p>
+  <p class="font-sans-f11 md:font-sans-f12 font-weight-300 line-height-heading-loose margin-top-g1">10x funds groundbreaking ideas from civil servants to transform how government builds technology to serve the public.</p>
 </div>
 
 <h2 class="margin-bottom-0 border-top-g05 padding-top-g2" id="what-is-10x">About 10x</h2>
