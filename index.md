@@ -10,16 +10,14 @@ layout: home
 
 <h2 id="what-is-10x">What is 10x?</h2>
 
-<p>10x is the Office of Investments in GSA’s Office of Products and Programs. We provide seed funding for internal government projects that can scale across the federal government or significantly impact and improve how government builds technology for the public good. </p>
+<p>10x is the Office of Investments in GSA’s Technology Transformation Services. We provide seed funding for internal government projects that can scale across the federal government or significantly impact and improve how government builds technology for the public good.</p>
 
-<p>Officially, we are the management vehicle for the Digital Services Fund, a portion of the Federal Citizen Services Fund designated for new, good-for-government products and services. We focus on high-impact ideas from federal civil servants when their own offices might not have the capacity or resources.</p>
+<p>We are the management vehicle for the Digital Services Fund, a portion of the Federal Citizen Services Fund designated for new, good-for-government products and services. We focus on high-impact ideas from federal civil servants when their own offices might not have the capacity or resources.</p>
 
 <h2 id="the-process">The 10x process</h2>
-10x is an incremental investment fund inside the federal government, products and services developed in and by the government that can scale widely or affect a significant portion of the U.S. population, whether or not the projects are cost-recoverable.
+We run an incremental investment fund inside the federal government focused on products and services developed in and by the government that can scale widely or affect a significant portion of the U.S. population, whether or not the projects are cost-recoverable.
 
-Instead of investing in projects on one lump, we start with small exploratory investments to help decide whether larger investments are needed. Our approach is based on modern venture capital practices and is designed to spend fewer taxpayer dollars while also ensuring that the best products and services get funded.
-
-
+Instead of investing in projects in one lump, we start with small exploratory investments to help decide whether larger investments are needed. Each step and level of funding produces meaningful product and helps clarify whether further funds are needed. This approach is based on modern venture capital practices and is designed to spend fewer taxpayer dollars while also ensuring that the best products and services get funded. 
 
 <h3 id="0-pitch-what-problem-are-you-trying-to-solve-">0. Pitch: What problem are you trying to solve?</h3>
 <p>We start by gathering pitches from federal civil servants. <em><a href="#who-can-pitch">Any federal employee pitch an idea</a></em>. Proposals are intentionally short, about 2–3 sentences, to keep them focused on a concrete problem.</p>
@@ -71,7 +69,7 @@ of people using the product, if necessary.</p>
 
 *{case studies}*
 
-<h2 id="pitch-us">Sending us your ideas.</h2>
+<h2 id="pitch-us">Sending us your ideas</h2>
 
 *{What if we created either an email list for people to get notified for when pitches open *or* a public google calendar that people can subscribe to for when call for proposals open?}*
 
