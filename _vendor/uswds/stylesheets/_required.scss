@@ -1,21 +1,47 @@
-// Vendor -------------- //
+/*
+========================================
+required
+----------------------------------------
+These files are required to build any
+USWDS project.
+----------------------------------------
+*/
+
+// -------------------------------------
+// Vendor
+
 @import 'lib/bourbon';
 @import 'lib/neat';
 
-// Project initialization
-// Needs to load before functions
-@import 'uswds-project-init';
+// -------------------------------------
+// Font definitions
 
+@import 'core/font-definitions';
+
+// -------------------------------------
+// Project initialization values
+
+@import 'uswds-project-init';
+@import 'core/init';
+
+// -------------------------------------
 // Functions
+
 @import 'core/functions';
 
-// Core units
+// -------------------------------------
+// The master palette of style units
+
 @import 'core/units';
 
+// -------------------------------------
 // Project settings
-// Needs to load before core vars and settings
-@import 'uswds-project-settings';
 
-// Default settings and variables
+@import 'uswds-project-settings';
 @import 'core/settings';
+
+// -------------------------------------
+// Calculated and internal variables
+
 @import 'core/variables';
+@import 'core/new-helpers';

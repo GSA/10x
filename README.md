@@ -4,7 +4,7 @@ Live: [10x.gsa.gov](https://10x.gsa.gov)
 
 Demo: [demo.10x.gsa.gov](https://demo.10x.gsa.gov/)
 
-##Problem Statement and Goals
+## Problem Statement and Goals
 
 ### Macro
 
@@ -36,6 +36,16 @@ The 10x website will provide civil servants across government the information th
 3. We believe that there are civil servants who manage technology or innovation funds who are unhappy about how they are investing those dollars. We believe that if we provide tools and resources for managing those funds following the 10x model: 
     - We’ll receive inquiries from civil servants about how to set up a 10x program.
     - Civil servants will hire 10x to consult with them on setting up or running their own program. 
+
+
+### Metrics 
+Metric        | Q1 FY 2018 (Fall 2017, baseline)
+:------------- |-------------:
+Number of pitches for Phase 1 funding | 85 
+Number of civil servants outside of GSA listed subject-matter experts (through a TTS sponsor) | 6
+Number of different agencies listed as subject-matter experts on Phase 1 pitches | 3
+Number of inquiries from other agencies to set up a similar funding model | 1
+Number of consulting engagements to set up a similar funding model | 
 
 
 ## Road map

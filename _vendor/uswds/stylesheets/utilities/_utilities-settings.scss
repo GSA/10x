@@ -1,0 +1,1356 @@
+/*
+========================================
+USWDS UTILITIES SETTINGS
+----------------------------------------
+*/
+
+$utilities-namespace-prefix:  'usa-u-' !default;
+$utilities-use-important:     false !default;
+
+$output-breakpoints: (
+  xs: false,
+  sm: true,
+  md: true,
+  lg: true,
+  xl: false
+) !default;
+
+$output-all-utilities:  false !default;
+
+$output-utilities: (
+  align-items:      false,
+  background-color: true,
+  border:           false,
+  border-color:     false,
+  border-radius:    true,
+  border-style:     false,
+  box-shadow:       true,
+  circle:           true,
+  clearfix:         true,
+  color:            true,
+  column:           false,
+  display:          true,
+  flex:             false,
+  flex-direction:   false,
+  flex-wrap:        false,
+  float:            true,
+  font:             true,
+  font-family:      true,
+  font-feature:     false,
+  font-style:       true,
+  font-weight:      true,
+  height:           false,
+  letter-spacing:   true,
+  line-height:      true,
+  list-reset:       true,
+  manual-position:  false,
+  margin:           true,
+  max-height:       false,
+  max-width:        false,
+  min-height:       false,
+  min-width:        false,
+  opacity:          false,
+  order:            false,
+  outline-width:    false,
+  outline-color:    false,
+  padding:          true,
+  position:         false,
+  row:              false,
+  square:           false,
+  text-align:       true,
+  text-decoration:  true,
+  text-decoration-color:  false,
+  text-transform:   true,
+  vertical-align:   true,
+  whitespace:       false,
+  width:            false,
+  z-index:          false
+) !default;
+
+/*
+========================================
+.align-items
+----------------------------------------
+*/
+
+$align-items-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$align-items-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$align-items-manual-values: (
+  /*
+  */
+  flex-start:   'flex-start',
+  flex-end:     'flex-end',
+  center:       'center',
+  stretch:      'stretch'
+) !default;
+
+/*
+========================================
+.background-color
+----------------------------------------
+*/
+
+$background-color-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$background-color-preset-values: map-collect(
+  /*
+  */
+  $preset-palette-reserved,
+  $preset-palette-project-settings
+) !default;
+
+$background-color-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+========================================
+.border-width
+----------------------------------------
+*/
+
+$border-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$border-preset-values: map-collect(
+  /*
+  */
+  $preset-units-px,
+  $preset-units-grid-small
+) !default;
+
+$border-manual-values: (
+  /*
+  */
+  0:            '0'
+) !default;
+
+/*
+========================================
+.border-color
+----------------------------------------
+*/
+
+$border-color-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        true,
+  visited:      false
+) !default;
+
+$border-color-preset-values: map-collect(
+  /*
+  */
+  $preset-palette-reserved,
+  $preset-palette-project-settings
+) !default;
+
+$border-color-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+========================================
+.border-radius
+----------------------------------------
+*/
+
+$border-radius-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$border-radius-preset-values: map-collect(
+  /*
+  $preset-units-grid-small
+  */
+  $preset-spacing-tshirt-small
+) !default;
+
+$border-radius-manual-values: (
+  /*
+  */
+  0:            '0',
+  pill:         '9999em',
+  circle:       '50%'
+) !default;
+
+/*
+========================================
+.border-style
+----------------------------------------
+*/
+
+$border-style-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$border-style-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$border-style-manual-values: (
+  /*
+  */
+  dashed:       'dashed',
+  dotted:       'dotted',
+  solid:        'solid'
+) !default;
+
+/*
+========================================
+.box-shadow
+----------------------------------------
+*/
+
+$box-shadow-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$box-shadow-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$box-shadow-manual-values: (
+  /*
+  */
+  none:   'none',
+  1: '0 1px 2px 0 rgba(0,0,0,0.10)',
+  2: '0 4px 8px 0 rgba(0,0,0,0.10)',
+  3: '0 6px 12px 0 rgba(0,0,0,0.10)',
+  4: '0 8px 16px 0 rgba(0,0,0,0.10)',
+  5: '0 12px 24px 0 rgba(0,0,0,0.10)'
+) !default;
+
+/*
+========================================
+.circle
+----------------------------------------
+*/
+
+$circle-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$circle-preset-values: map-collect(
+  /*
+  */
+  $preset-spacing-tshirt
+) !default;
+
+$circle-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+========================================
+.clearfix
+----------------------------------------
+*/
+
+$clearfix-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+/*
+========================================
+.color
+----------------------------------------
+*/
+
+$color-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        true,
+  visited:      false
+) !default;
+
+$color-preset-values: map-collect(
+  /*
+  */
+  $preset-palette-project-settings,
+  $preset-palette-reserved
+) !default;
+
+$color-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+========================================
+.column
+----------------------------------------
+*/
+
+$column-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+/*
+========================================
+.display
+----------------------------------------
+*/
+
+$display-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$display-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$display-manual-values: (
+  /*
+  */
+  block:        'block',
+  flex:         'flex',
+  none:         'none',
+  inline:       'inline',
+  inline-block: 'inline-block',
+  table:        'table',
+  table-cell:   'table-cell'
+) !default;
+
+/*
+========================================
+.flex
+----------------------------------------
+*/
+
+$flex-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$flex-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$flex-manual-values: (
+  /*
+  */
+  1:            '1 0 0',
+  2:            '2 0 0',
+  3:            '3 0 0',
+  4:            '4 0 0',
+  5:            '5 0 0',
+  6:            '6 0 0',
+  7:            '7 0 0',
+  8:            '8 0 0',
+  9:            '9 0 0',
+  10:           '10 0 0',
+  11:           '11 0 0',
+  fill:         '1 0 0',
+  fit:          '0'
+) !default;
+
+/*
+========================================
+.flex-direction
+----------------------------------------
+*/
+
+$flex-direction-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$flex-direction-preset-values: map-collect() !default;
+
+$flex-direction-manual-values: (
+  /*
+  */
+  row:          'row',
+  column:       'column'
+) !default;
+
+/*
+========================================
+.flex-wrap
+----------------------------------------
+*/
+
+$flex-wrap-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$flex-wrap-preset-values: map-collect() !default;
+
+$flex-wrap-manual-values: (
+  wrap:         'wrap',
+  nowrap:       'nowrap'
+) !default;
+
+/*
+========================================
+.float
+----------------------------------------
+*/
+
+$float-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$float-preset-values: map-collect() !default;
+
+$float-manual-values: (
+  /*
+  */
+  left:         'left',
+  none:         'none',
+  right:        'right'
+) !default;
+
+/*
+========================================
+.font
+----------------------------------------
+*/
+
+$font-settings: (
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$font-preset-values: map-collect(
+  /*
+  */
+  $preset-font-tshirt
+) !default;
+
+$font-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+========================================
+.font-family
+----------------------------------------
+*/
+
+$font-family-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$font-family-preset-values: map-collect(
+  /*
+  */
+  $preset-font-families
+) !default;
+
+$font-family-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+========================================
+.font-feature-settings
+----------------------------------------
+*/
+
+$font-feature-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$font-feature-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$font-feature-manual-values: (
+  /*
+  */
+  alt:          "'ss01' 1, 'kern' 1",
+  tabular:      "'tnum' 1, 'kern' 1",
+  default:      "'kern' 1",
+) !default;
+
+/*
+========================================
+.font-style
+----------------------------------------
+*/
+
+$font-style-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$font-style-preset-values: map-collect() !default;
+
+$font-style-manual-values: (
+  normal:       'normal',
+  italic:       'italic'
+) !default;
+
+/*
+========================================
+.font-weight
+----------------------------------------
+*/
+
+$font-weight-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$font-weight-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$font-weight-manual-values: (
+  /*
+  */
+  100:          '100',
+  200:          '200',
+  300:          '300',
+  400:          '400',
+  500:          '500',
+  600:          '600',
+  700:          '700',
+  800:          '800',
+  900:          '900',
+  bold:         'bold',
+  normal:       'normal',
+  light:        'light'
+) !default;
+
+/*
+========================================
+.height
+----------------------------------------
+*/
+
+$height-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$height-preset-values: map-collect(
+  /*
+  $preset-units-em,
+  $preset-units-ch,
+  $preset-units-px
+  */
+  $preset-units-percentage,
+  $preset-spacing-tshirt
+) !default;
+
+$height-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+========================================
+.letter-spacing
+----------------------------------------
+*/
+
+$letter-spacing-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$letter-spacing-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$letter-spacing-manual-values: (
+  /*
+  */
+  auto:         'auto',
+  n1:           $u-ls-n1,
+  n2:           $u-ls-n2,
+  n3:           $u-ls-n3,
+  1:            $u-ls-1,
+  2:            $u-ls-2,
+  3:            $u-ls-3
+) !default;
+
+/*
+========================================
+.line-height
+----------------------------------------
+*/
+
+$line-height-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$line-height-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$line-height-manual-values: (
+  /*
+  */
+  single:        $u-lh-single,
+  heading:       $u-lh-heading,
+  heading-loose: $u-lh-heading-loose,
+  body-tight:    $u-lh-body-tight,
+  body:          $u-lh-body,
+  body-loose:    $u-lh-body-loose
+) !default;
+
+/*
+========================================
+.list-reset
+----------------------------------------
+*/
+
+$list-reset-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+/*
+========================================
+.MANUAL POSITION
+----------------------------------------
+properties:
+  top
+  bottom
+  left
+  right
+----------------------------------------
+*/
+
+$manual-position-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$manual-position-preset-values: map-collect(
+  /*
+  */
+  $preset-units-px,
+  $preset-units-px-negative,
+  $preset-spacing-tshirt-small,
+  $preset-spacing-tshirt-small-negative
+) !default;
+
+$manual-position-manual-values: (
+  /*
+  */
+  0:            '0',
+  auto:         'auto'
+) !default;
+
+/*
+========================================
+.margin
+----------------------------------------
+*/
+
+$margin-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$margin-preset-values: map-collect(
+  /*
+  $preset-units-px,
+  $preset-units-px-negative,
+  $preset-units-percentage,
+  $preset-units-grid,
+  $preset-units-grid-negative,
+  $preset-units-ch,
+  $preset-units-ch-negative,
+  $preset-units-em
+  */
+  $preset-units-px,
+  $preset-units-px-negative,
+  $preset-spacing-tshirt,
+  $preset-spacing-tshirt-small-negative
+) !default;
+
+$margin-manual-values: (
+  /*
+  */
+  0:            '0',
+  auto:         'auto',
+) !default;
+
+/*
+========================================
+.max-height
+----------------------------------------
+*/
+
+$max-height-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$max-height-preset-values: map-collect(
+  /*
+  $preset-units-percentage,
+  $preset-units-grid,
+  $preset-units-px
+  */
+) !default;
+
+$max-height-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+========================================
+.max-width
+----------------------------------------
+*/
+
+$max-width-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$max-width-preset-values: map-collect(
+  /*
+  $preset-units-percentage,
+  $preset-units-breakpoints
+  */
+) !default;
+
+$max-width-manual-values: (
+  /*
+  */
+  none:         'none',
+  reading-xs:   $text-narrow-width,
+  reading-sm:   $text-width-sm,
+  reading:      $text-max-width,
+  reading-lg:   $text-wide-width
+) !default;
+
+/*
+========================================
+.min-height
+----------------------------------------
+*/
+
+$min-height-settings: (
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$min-height-preset-values: map-collect(
+  /*
+  $preset-units-percentage,
+  $preset-units-grid-small
+  $preset-units-grid-medium
+  */
+) !default;
+
+$min-height-manual-values: (
+  /*
+  */
+  100ct:        100%
+) !default;
+
+/*
+========================================
+.min-width
+----------------------------------------
+*/
+
+$min-width-settings: (
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$min-width-preset-values: map-collect(
+  /*
+  */
+  $preset-units-breakpoints,
+  $preset-units-grid-large,
+  $preset-units-grid-xlarge
+) !default;
+
+$min-width-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+========================================
+.opacity
+----------------------------------------
+*/
+
+$opacity-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$opacity-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$opacity-manual-values: (
+  /*
+  0:            '0',
+  01:           '0.1',
+  02:           '0.2',
+  03:           '0.3',
+  04:           '0.4',
+  05:           '0.5',
+  06:           '0.6',
+  07:           '0.7',
+  08:           '0.8',
+  09:           '0.9',
+  1:            '1',
+  */
+) !default;
+
+/*
+========================================
+.order
+----------------------------------------
+*/
+
+$order-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$order-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$order-manual-values: (
+  /*
+  0:            0,
+  1:            1,
+  2:            2,
+  3:            3,
+  4:            4,
+  5:            5,
+  6:            6,
+  7:            7,
+  8:            8,
+  9:            9,
+  10:           10,
+  11:           11,
+  */
+  first:        '-1',
+  last:         '99'
+) !default;
+
+/*
+========================================
+.outline
+----------------------------------------
+*/
+
+$outline-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$outline-preset-values: map-collect(
+  /*
+  */
+  $preset-units-px,
+  $preset-units-grid-small
+) !default;
+
+$outline-manual-values: (
+  /*
+  */
+  0:            'none'
+) !default;
+
+/*
+========================================
+.outline-color
+----------------------------------------
+*/
+
+$outline-color-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$outline-color-preset-values: map-collect(
+  /*
+  */
+  $preset-palette-project-settings
+) !default;
+
+$outline-color-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+========================================
+.padding
+----------------------------------------
+*/
+
+$padding-settings: (
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$padding-preset-values: map-collect(
+  /*
+  $preset-units-px,
+  */
+  $preset-spacing-tshirt
+) !default;
+
+$padding-manual-values: (
+  /*
+  */
+  0:            '0'
+) !default;
+
+/*
+========================================
+.position
+----------------------------------------
+*/
+
+$position-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$position-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$position-manual-values: (
+  /*
+  */
+  absolute:     'absolute',
+  fixed:        'fixed',
+  relative:     'relative',
+  static:       'static',
+  sticky:       'sticky'
+) !default;
+
+/*
+========================================
+.row
+----------------------------------------
+*/
+
+$row-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+/*
+========================================
+.square
+----------------------------------------
+*/
+
+$square-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$square-preset-values: map-collect(
+  /*
+  */
+  $preset-spacing-tshirt
+) !default;
+
+$square-manual-values: (
+  /*
+  */
+  2px:          '2px'
+) !default;
+
+/*
+========================================
+.text-align
+----------------------------------------
+*/
+
+$text-align-settings: (
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$text-align-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$text-align-manual-values: (
+  /*
+  */
+  center:       'center',
+  left:         'left',
+  justify:      'justify',
+  right:        'right',
+) !default;
+
+/*
+========================================
+.text-decoration
+----------------------------------------
+*/
+
+$text-decoration-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$text-decoration-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$text-decoration-manual-values: (
+  /*
+  */
+  strike:           'strike',
+  underline:        'underline',
+  none:             'none'
+) !default;
+
+/*
+========================================
+.text-decoration-color
+----------------------------------------
+*/
+
+$text-decoration-color-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$text-decoration-color-preset-values: map-collect(
+  /*
+  $preset-palette-grayscale
+  */
+  $preset-palette-project-settings,
+  $preset-palette-reserved
+) !default;
+
+$text-decoration-color-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+.text-transform
+----------------------------------------
+*/
+
+$text-transform-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$text-transform-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$text-transform-manual-values: (
+  /*
+  */
+  capitalize:     'capitalize',
+  lowercase:      'lowercase',
+  uppercase:      'uppercase',
+  none:           'none'
+) !default;
+
+/*
+========================================
+.vertical-align
+----------------------------------------
+*/
+
+$vertical-align-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$vertical-align-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$vertical-align-manual-values: (
+  /*
+  */
+  baseline:     'baseline',
+  bottom:       'bottom',
+  middle:       'middle',
+  sub:          'sub',
+  super:        'super',
+  text-bottom:  'text-bottom',
+  text-top:     'text-top',
+  top:          'top',
+) !default;
+
+/*
+========================================
+.whitespace
+----------------------------------------
+*/
+
+$whitespace-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$whitespace-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$whitespace-manual-values: (
+  /*
+  */
+  pre:          'pre',
+  pre-line:     'pre-line',
+  pre-wrap:     'pre-wrap',
+  normal:       'normal',
+  nowrap:       'nowrap'
+) !default;
+
+/*
+========================================
+.width
+----------------------------------------
+*/
+
+$width-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$width-preset-values: map-collect(
+  /*
+  $preset-units-grid,
+  $preset-units-px,
+  $preset-units-em,
+  $preset-units-ch
+  */
+  $preset-units-percentage,
+  $preset-units-breakpoints
+) !default;
+
+$width-manual-values: (
+  /*
+  100ct:        '100%'
+  */
+  auto:         'auto',
+) !default;
+
+/*
+========================================
+.z-index
+----------------------------------------
+*/
+
+$z-index-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$z-index-preset-values: map-collect(
+  /*
+  */
+) !default;
+
+$z-index-manual-values: (
+  /*
+  0:            '0',
+  100:          '100',
+  200:          '200',
+  300:          '300',
+  400:          '400',
+  500:          '500',
+  */
+  top:          '9999',
+  bottom:       '-9999'
+) !default;

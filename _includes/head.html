@@ -5,7 +5,7 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-
+  
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/img/favicon/apple-touch-icon.png"  | relative_url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/favicon/favicon-32x32.png" | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/favicon/favicon-16x16.png" | relative_url }}">
@@ -104,12 +104,11 @@
     <style>
     {% include uswds-app-opt.min.css %}
     </style>
-    <link rel="preload" href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}" as="style"> 
+    <link rel="preload" href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}" as="style">
   {% else %}
     <link rel="stylesheet" href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/uswds-custom.min.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/uswds-production-utilities.min.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/uswds-prototyping-utilities.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/uswds-utilities.min.css" | relative_url }}">
   {% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">

@@ -1,5 +1,8 @@
 // Mobile-first media query helper
 @mixin media($bp) {
+  @if map-has-key($all-breakpoints, $bp){
+    $bp: map-get($all-breakpoints, $bp);
+  }
   @media screen and (min-width: #{$bp}) {
     @content;
   }

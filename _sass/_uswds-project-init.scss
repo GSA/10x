@@ -1,9 +1,56 @@
 // spacing is calculated on multiples of a
 // base grid
 
-$grid-base:           8px;
+$i-grid-base:           8px;
 
 // establishes the base type size for
 // rem calculations
 
-$font-size-base:      16px;
+$i-font-size-base:      16px;
+
+// New custom typefaces
+
+/*
+$font-new : (
+  name: "Font Display Name",
+  system-font: false,
+  500px-cap-height: "364px", // height of a 500px `N` in Sketch
+  variable-font: false,
+  roman: (
+    100: "Filename-without-extension", // or false
+    200: "Filename-without-extension", // or false
+    300: "Filename-without-extension", // or false
+    400: "Filename-without-extension", // or false
+    500: "Filename-without-extension", // or false
+    600: "Filename-without-extension", // or false
+    700: "Filename-without-extension", // or false
+    800: "Filename-without-extension", // or false
+    900: "Filename-without-extension", // or false
+  ),
+  italic: (
+    100: "Filename-without-extension", // or false
+    200: "Filename-without-extension", // or false
+    300: "Filename-without-extension", // or false
+    400: "Filename-without-extension", // or false
+    500: "Filename-without-extension", // or false
+    600: "Filename-without-extension", // or false
+    700: "Filename-without-extension", // or false
+    800: "Filename-without-extension", // or false
+    900: "Filename-without-extension", // or false
+  ),
+);
+*/
+
+// Set the sans, serif, and mono faces
+// currently available:
+// $font-system
+// $font-united-sans
+// $font-source-sans-pro
+// $font-helvetica
+// $font-georgia
+// $font-merriweather
+// $font-roboto-mono
+
+$i-font-sans:   $font-united-sans;
+$i-font-serif:  false;
+$i-font-mono:   $font-roboto-mono;
