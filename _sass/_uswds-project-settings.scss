@@ -1,170 +1,284 @@
-// PROJECT SETTINGS
+/*
+========================================
+PROJECT THEME SETTINGS
+----------------------------------------
+*/
 
-// ---------------------------------------------
-// BREAKPOINTS
+/*
+----------------------------------------
+Root font size
+----------------------------------------
+Sets the font size of the html root
+for rem calculations
+----------------------------------------
+*/
 
-// These will be converted to em values based on the
-// value of $i-font-size-base
+$theme-root-font-size: 16px;
 
-$s-xsmall-screen:   400px;
-$s-small-screen:    600px;
-$s-medium-screen:   800px;
-$s-large-screen:    1000px;
-$s-xlarge-screen:   1200px;
+/*
+----------------------------------------
+Breakpoints
+----------------------------------------
+Use pixel units.
+These will be automatically converted to
+em values based on the value of
+$theme-root-font-size.
 
-// ---------------------------------------------
-// FONTS
+Use `false` if your project will not
+use that breakpoint.
+----------------------------------------
+*/
 
-// Relative font and image file paths
+$theme-breakpoints:(
+  xs: 400px,
+  sm: 481px, // 600px
+  md: 600px, // 800px
+  lg: 1201px, // 1000px
+  xl: 1200px, // 1200px
+ );
 
-$s-font-path:   '../uswds/fonts';
-$s-image-path:  '../uswds/img';
+/*
+----------------------------------------
+Paths
+----------------------------------------
+Relative font and image file paths
+----------------------------------------
+*/
 
-// Set hed, body, and alt from
-// $i-font-sans
-// $i-font-serif
-// $i-font-mono
+$theme-font-path:   '../fonts';
+$theme-image-path:  '../img';
 
-$s-font-hed:    $i-font-sans;
-$s-font-body:   $i-font-sans;
-$s-font-alt:    $i-font-sans;
+/*
+----------------------------------------
+Custom font definitions
+----------------------------------------
+Add a new custom font definition if
+your project uses a typeface we've
+not already defined.
+----------------------------------------
+The following faces already are
+defined in the system:
 
-// ---------------------------------------------
-// SPACING
+'system'
+'united-sans'
+'source-sans-pro'
+'helvetica'
+'georgia'
+'merriweather'
+'roboto-mono'
+----------------------------------------
+*/
 
-// values  - - - - - - - - - - - - - - - - - - -
-// $s-font-size-NN:       $u-spacing-NN;
-//                        1px
-//                        2px
+$theme-font-definitions: (
+  /*
+  font-new: (
+    name: "Font Display Name",
+    dir: "filder-name", // relative to settings.$theme-font-path
+    stack: $font-stack-system,
+    system-font: false,
+    cap-height: "364px", // height of a 500px `N` in Sketch
+    variable-font: false,
+    roman: (
+      100: "Filename-without-extension", // or false
+      200: "Filename-without-extension", // or false
+      300: "Filename-without-extension", // or false
+      400: "Filename-without-extension", // or false
+      500: "Filename-without-extension", // or false
+      600: "Filename-without-extension", // or false
+      700: "Filename-without-extension", // or false
+      800: "Filename-without-extension", // or false
+      900: "Filename-without-extension", // or false
+    ),
+    italic: (
+      100: "Filename-without-extension", // or false
+      200: "Filename-without-extension", // or false
+      300: "Filename-without-extension", // or false
+      400: "Filename-without-extension", // or false
+      500: "Filename-without-extension", // or false
+      600: "Filename-without-extension", // or false
+      700: "Filename-without-extension", // or false
+      800: "Filename-without-extension", // or false
+      900: "Filename-without-extension", // or false
+    ),
+  ),
+  */
+);
 
-$s-spacing-3xs:           false;
-$s-spacing-2xs:           false;
-$s-spacing-xs:            $u-spacing-05;
-$s-spacing-sm:            $u-spacing-1;
-$s-spacing-md:            $u-spacing-2;
-$s-spacing-lg:            $u-spacing-3;
-$s-spacing-xl:            $u-spacing-4;
-$s-spacing-2xl:           $u-spacing-5;
-$s-spacing-3xl:           $u-spacing-9;
+/*
+----------------------------------------
+Fonts in use
+----------------------------------------
+Set the sans, serif, and mono faces for
+your project
+----------------------------------------
+currently available:
 
-// ---------------------------------------------
-// TYPE SCALE
+'system'
+'united-sans'
+'source-sans-pro'
+'helvetica'
+'georgia'
+'merriweather'
+'roboto-mono'
+----------------------------------------
+*/
 
-// values  - - - - - - - - - - - - - - - - - - -
-// $s-font-size-NN:       $u-type-scale-NN;
+$theme-font-mono:   'roboto-mono';
+$theme-font-sans:   'source-sans-pro';
+$theme-font-serif:  'merriweather';
+$theme-font-cond:   false;
 
-$s-font-size-3xs:         $u-type-scale-f1;
-$s-font-size-2xs:         $u-type-scale-f3;
-$s-font-size-xs:          $u-type-scale-f5;
-$s-font-size-sm:          $u-type-scale-f6;
-$s-font-size-md:          $u-type-scale-f7;
-$s-font-size-lg:          $u-type-scale-f10;
-$s-font-size-xl:          $u-type-scale-f12;
-$s-font-size-2xl:         $u-type-scale-f14;
-$s-font-size-3xl:         $u-type-scale-f16;
+/*
+----------------------------------------
+Fonts by type
+----------------------------------------
+Set the heading, body, code, and alt
+faces for your project from
 
-// ---------------------------------------------
-// FONT WEIGHTS
+$theme-font-sans
+$theme-font-serif
+$theme-font-mono
+$theme-font-cond
+----------------------------------------
+*/
 
-// values  - - - - - - - - - - - - - - - - - - -
-// $s-fw-NN:              100-900 (mults of 100);
+$theme-font-heading:  $theme-font-sans;
+$theme-font-body:     $theme-font-serif;
+$theme-font-code:     $theme-font-mono;
+$theme-font-alt:      false;
 
-$s-output-all-weights:    true;
+/*
+----------------------------------------
+Type scale
+----------------------------------------
+Define your project's type scale using
+values from the USWDS system type scale
 
-$s-fw-xlight:             100;
-$s-fw-light:              300;
-$s-fw-normal:             400;
-$s-fw-bold:               700;
-$s-fw-xbold:              900;
+s1-s20
+----------------------------------------
+*/
 
-// ---------------------------------------------
-// COLORS
+$theme-type-scale-micro:         s1;
+$theme-type-scale-smallest:      s3;
+$theme-type-scale-smaller:       s5;
+$theme-type-scale-small:         s6;
+$theme-type-scale-base:          s7;
+$theme-type-scale-large:         s10;
+$theme-type-scale-larger:        s12;
+$theme-type-scale-largest:       s14;
+$theme-type-scale-mega:          s16;
 
-// values  - - - - - - - - - - - - - - - - - - -
-// $s-color-NN:           $NN;
+/*
+----------------------------------------
+Font weights
+----------------------------------------
+Assign weights 100-900
+Or use `false` for unneeded weights.
+----------------------------------------
+*/
 
-// Identity colors
-$s-color-id-1:            $red-warm-50v;
-$s-color-id-1-dark:       $red-warm-60;
-$s-color-id-1-xdark:      $red-warm-70;
-$s-color-id-1-light:      $red-warm-40;
-$s-color-id-1-xlight:     $red-warm-20;
+$theme-output-all-weights:        false;
 
-$s-color-id-2:            $indigo-50v;
-$s-color-id-2-dark:       $indigo-60v;
-$s-color-id-2-xdark:      $indigo-70;
-$s-color-id-2-light:      $indigo-40;
-$s-color-id-2-xlight:     $indigo-20;
+$theme-font-weight-thin:          false;
+$theme-font-weight-light:         300;
+$theme-font-weight-normal:        400;
+$theme-font-weight-medium:        false;
+$theme-font-weight-semibold:      false;
+$theme-font-weight-bold:          700;
+$theme-font-weight-black:         false;
 
-// Accent colors
-$s-color-accent-1:        $black-warm-80;
-$s-color-accent-2:        $orange-warm-40v;
-$s-color-accent-3:        $green-warm-10v;
+/*
+----------------------------------------
+Palette colors
+----------------------------------------
+*/
 
-// UI colors
-$s-color-ui-1:            $black-90;
-$s-color-ui-2:            $black-70;
-$s-color-ui-3:            $black-50;
-$s-color-ui-4:            $black-50;
-$s-color-ui-5:            $black-warm-20;
-$s-color-ui-6:            $blue-warm-60v;
+$theme-color-neutral:             black;
+$theme-color-neutral-lighter:     $theme-color-neutral, 5;
+$theme-color-neutral-light:       $theme-color-neutral, 50;
+$theme-color-neutral-base:        $theme-color-neutral, 80;
+$theme-color-neutral-dark:        $theme-color-neutral, 90;
+$theme-color-neutral-darker:      false;
 
-// Text colors
-$s-color-text-1:          $black-90;
-$s-color-text-2:          $blue-warm-60v;
-$s-color-text-3:          $black-50;
-$s-color-text-4:          $black-50;
-$s-color-text-inverse:    $white-0;
+$theme-color-primary:             red;
+$theme-color-primary-lighter:     $theme-color-primary, 10;
+$theme-color-primary-light:       $theme-color-primary, 30;
+$theme-color-primary-base:        $theme-color-primary, 50;
+$theme-color-primary-vivid:       $theme-color-primary, 50, vivid;
+$theme-color-primary-dark:        $theme-color-primary, 70;
+$theme-color-primary-darker:      false;
 
-// Field colors
-$s-color-field-1:         $white-warm-1;
-$s-color-field-2:         $white-warm-4;
-$s-color-field-3:         $green-warm-5;
-$s-color-field-4:         $black-warm-90;
+$theme-color-secondary:           blue;
+$theme-color-secondary-light:     $theme-color-secondary, 50;
+$theme-color-secondary-base:      $theme-color-secondary, 60;
+$theme-color-secondary-vivid:     $theme-color-secondary, 50, vivid;
+$theme-color-secondary-dark:      $theme-color-secondary, 80;
+
+$theme-color-accent-warm:         orange;
+$theme-color-accent-warm-lighter: $theme-color-accent-warm, 50, vivid;
+$theme-color-accent-warm-base:    $theme-color-accent-warm, 50, vivid;
+
+$theme-color-accent-cool:         cyan;
+$theme-color-accent-cool-lighter: $theme-color-accent-cool, 50, vivid;
+$theme-color-accent-cool-base:    $theme-color-accent-cool, 50, vivid;
+
+$theme-color-inverse:             white;
+$theme-color-inverse-base:        $theme-color-inverse, 0;
+$theme-color-inverse-dark:        black, 10;
+
+/*
+----------------------------------------
+State colors
+----------------------------------------
+*/
 
 // Error colors
-$s-color-error:           $red-50v;
-$s-color-error-dark:      $red-60;
-$s-color-error-xdark:     $red-70;
-$s-color-error-light:     $red-40v;
-$s-color-error-xlight:    $red-30v;
+$theme-color-error:            red;
+$theme-color-error-lighter:    $theme-color-error, 30, vivid;
+$theme-color-error-light:      $theme-color-error, 40, vivid;
+$theme-color-error-base:       $theme-color-error, 50, vivid;
+$theme-color-error-dark:       $theme-color-error, 60;
+$theme-color-error-darker:     $theme-color-error, 70;
 
 // Warning colors
-$s-color-warn:            $orange-30v;
-$s-color-warn-dark:       $orange-40;
-$s-color-warn-xdark:      $orange-50;
-$s-color-warn-light:      $orange-20v;
-$s-color-warn-xlight:     $orange-10;
+$theme-color-warn:             orange;
+$theme-color-warn-lighter:     $theme-color-warn, 10;
+$theme-color-warn-light:       $theme-color-warn, 20, vivid;
+$theme-color-warn-base:        $theme-color-warn, 30, vivid;
+$theme-color-warn-dark:        $theme-color-warn, 40;
+$theme-color-warn-darker:      $theme-color-warn, 50;
 
 // Success colors
-$s-color-success:         $green-cool-40v;
-$s-color-success-dark:    $green-cool-50;
-$s-color-success-xdark:   $green-cool-70;
-$s-color-success-light:   $green-cool-30v;
-$s-color-success-xlight:  $green-cool-20v;
-
-// OK colors
-$s-color-ok:              $blue-warm-50v;
-$s-color-ok-dark:         $blue-warm-60v;
-$s-color-ok-xdark:        $blue-warm-70;
-$s-color-ok-light:        $blue-warm-40v;
-$s-color-ok-xlight:       $blue-warm-30;
+$theme-color-success:          green-cool;
+$theme-color-success-lighter:  $theme-color-success, 20, vivid;
+$theme-color-success-light:    $theme-color-success, 30, vivid;
+$theme-color-success-base:     $theme-color-success, 40, vivid;
+$theme-color-success-dark:     $theme-color-success, 50;
+$theme-color-success-darker:   $theme-color-success, 70;
 
 // Disabled color
-$s-color-disabled:        $black-30;
+$theme-color-disabled:         black;
+$theme-color-disabled-base:    $theme-color-disabled, 30;
 
-// Other colors
-$s-color-banner:          $black-90;
-$s-color-highlight:       $gold-20v;
+/*
+----------------------------------------
+Border radius
+----------------------------------------
+eighth          2px
+quarter         4px
+half            8px
+half-plus       12px
+base            16px
+base-plus       24px
+double          32px
+double-plus     40px
+triple          48px
+triple-plus     56px
+quad            64px
+quad-plus       72px
+----------------------------------------
+*/
 
-// ---------------------------------------------
-// BORDER RADIUS
-
-// values  - - - - - - - - - - - - - - - - - - -
-// $s-radius-NN:          $u-spacing-NN;
-//                        1px
-//                        2px
-
-$s-radius-sm:             2px;
-$s-radius-md:             $u-spacing-05;
-$s-radius-lg:             false;
+$theme-border-radius-small:       eighth;
+$theme-border-radius-base:        quarter;
+$theme-border-radius-large:       false;
