@@ -8,6 +8,12 @@ USWDS project.
 */
 
 // -------------------------------------
+// Settings
+
+@import 'core/settings';
+@import 'utilities/utilities-settings';
+
+// -------------------------------------
 // Vendor
 
 @import 'lib/bourbon';
@@ -17,12 +23,6 @@ USWDS project.
 // Font definitions
 
 @import 'core/font-definitions';
-
-// -------------------------------------
-// Project initialization values
-
-@import 'uswds-project-init';
-@import 'core/init';
 
 // -------------------------------------
 // Functions
@@ -35,13 +35,6 @@ USWDS project.
 @import 'core/units';
 
 // -------------------------------------
-// Project settings
-
-@import 'uswds-project-settings';
-@import 'core/settings';
-
-// -------------------------------------
 // Calculated and internal variables
 
 @import 'core/variables';
-@import 'core/new-helpers';
