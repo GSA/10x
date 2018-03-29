@@ -2,11 +2,111 @@
     CUSTOM PROJECT SASS
     - - - - - - - - - - - - - - - - - - - - - - -
     Custom project SASS goes here!
-    You can also @include new files from your
-    project directory. These styles can access
-    all global and settings variables
 
     i.e.
-    padding-right: $spacing-sm;
+    padding-right: spacing(eighth);
 
-    - - - - - - - - - - - - - - - - - - - - -  */
+    - - - - - - - - - - - - - - - - - - - - -
+*/
+
+*:focus {
+  @include outline(quarter);
+  outline-color: color(highlight);
+}
+
+.page-content {
+  h3 {
+    @include font(sans, s10);
+    font-weight: font-weight(thin);
+    line-height: line-height(small);
+    @include media(md) {
+      @include font(sans, s15);
+    }
+  }
+}
+
+*:active:focus {
+  @include outline(quarter);
+  outline-color: color(indigo-warm, 50, vivid);
+}
+
+.usa-accordion-content{
+  &[aria-hidden=true] {
+    display: none;
+  }
+}
+
+.usa-banner-button-text--open {
+  display: none;
+}
+
+[aria-expanded=true] {
+  > .usa-banner-button-text {
+    display: none;
+  }
+  > .usa-banner-button-text--open {
+    display: inline;
+  }
+}
+
+.usa-body-content {
+  h1, h2, h3 {
+    @include margin-y(0);
+    font-weight: font-weight(normal);
+    line-height: line-height(smaller);
+  }
+  h2 {
+    @include font(sans, s9);
+    font-weight: font-weight(bold);
+    margin-top: spacing(double);
+    padding-top: spacing(double);
+
+    @include media(md){
+      @include font(sans, s11);
+      margin-top: spacing(double-plus);
+    }
+  }
+  h3 {
+    @include font(sans, s6);
+    font-weight: font-weight(bold);
+    margin-top: spacing(double);
+    padding-top: spacing(half);
+
+    @include media(md){
+      margin-top: spacing(double);
+      padding-top: spacing(double);
+      @include font(sans, s8);
+    }
+    & + p {
+      margin-top: spacing(half);
+    }
+  }
+  p {
+    line-height: line-height(base);
+    margin-bottom: 0;
+    margin-top: spacing(half-plus);
+
+    @include media(md){
+      margin-top: spacing(double);
+    }
+  }
+  ul {
+    @include list-reset;
+  }
+  li {
+    @include padding-y(half);
+    @include border-top();
+    border-color: color(black, 20);
+
+    @include media(md){
+      @include padding-y(half);
+    }
+  }
+  p a {
+    color: color(black, 90);
+    text-decoration-color: color(indigo-warm, 60, vivid);
+    &:hover{
+      text-decoration-color: color(red-warm, 50, vivid);
+    }
+  }
+}
