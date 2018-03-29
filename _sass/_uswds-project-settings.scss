@@ -31,9 +31,9 @@ use that breakpoint.
 
 $theme-breakpoints:(
   xs: 400px,
-  sm: 481px, // 600px
-  md: 600px, // 800px
-  lg: 1201px, // 1000px
+  sm: 600px, // 600px
+  md: 800px, // 800px
+  lg: 1000px, // 1000px
   xl: 1200px, // 1200px
  );
 
@@ -45,8 +45,8 @@ Relative font and image file paths
 ----------------------------------------
 */
 
-$theme-font-path:   '../fonts';
-$theme-image-path:  '../img';
+$theme-font-path:   '../uswds/fonts';
+$theme-image-path:  '../uswds/img';
 
 /*
 ----------------------------------------
@@ -124,8 +124,8 @@ currently available:
 */
 
 $theme-font-mono:   'roboto-mono';
-$theme-font-sans:   'source-sans-pro';
-$theme-font-serif:  'merriweather';
+$theme-font-sans:   'united-sans';
+$theme-font-serif:  false;
 $theme-font-cond:   false;
 
 /*
@@ -143,7 +143,7 @@ $theme-font-cond
 */
 
 $theme-font-heading:  $theme-font-sans;
-$theme-font-body:     $theme-font-serif;
+$theme-font-body:     $theme-font-sans;
 $theme-font-code:     $theme-font-mono;
 $theme-font-alt:      false;
 
@@ -177,15 +177,15 @@ Or use `false` for unneeded weights.
 ----------------------------------------
 */
 
-$theme-output-all-weights:        false;
+$theme-output-all-weights:        true;
 
-$theme-font-weight-thin:          false;
+$theme-font-weight-thin:          100;
 $theme-font-weight-light:         300;
 $theme-font-weight-normal:        400;
 $theme-font-weight-medium:        false;
 $theme-font-weight-semibold:      false;
 $theme-font-weight-bold:          700;
-$theme-font-weight-black:         false;
+$theme-font-weight-black:         900;
 
 /*
 ----------------------------------------
