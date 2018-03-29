@@ -2,6 +2,7 @@ var autoprefixer  = require("gulp-autoprefixer");
 var cleanCSS      = require('gulp-clean-css');
 var combineMq     = require('gulp-combine-mq');
 var concat        = require('gulp-concat');
+var del           = require('del');
 var gulp          = require("gulp");
 var gulpif        = require('gulp-if');
 var gzip          = require('gulp-gzip');
@@ -83,7 +84,7 @@ var compileCSS = lazypipe()
       return sass({
         includePaths: [
           `${PROJECT_SASS_SRC}`,
-          `${USWDS_SRC}/stylesheets/project`,
+          `${USWDS_SRC}/stylesheets`,
         ]
       }).on('error', sass.logError);
     })
@@ -117,13 +118,17 @@ gulp.task('copy-uswds-assets', () => {
   .pipe(gulp.dest(`${ASSETS_DEST}`));
 });
 
-gulp.task('build-utilities', function (done) {
+gulp.task('clean-css', function () {
+  return del([
+    `${CSS_DEST}/**/*`
+  ]);
+});
+
+gulp.task('build-sass', ['clean-css'], function (done) {
   return gulp.src([
-      `${USWDS_SRC}/stylesheets/uswds-fonts.scss`,
-      `${USWDS_SRC}/stylesheets/uswds-utilities.scss`
+      `${PROJECT_SASS_SRC}/*.scss`
     ])
     .pipe(compileCSS())
-    .pipe(gulpif(CONCAT_FONTS, concatUtilities()))
     .pipe(minifyCSS())
     .pipe(gulp.dest(`${CSS_DEST}`))
     .pipe(size())
@@ -132,61 +137,13 @@ gulp.task('build-utilities', function (done) {
     .pipe(size());
 });
 
-gulp.task('build-uswds', function (done) {
-  return gulp.src([`${USWDS_SRC}/stylesheets/uswds-fonts.scss`, `${USWDS_SRC}/stylesheets/uswds.scss`])
-    .pipe(compileCSS())
-    .pipe(gulpif(CONCAT_FONTS, concatMain()))
-    .pipe(minifyCSS())
-    .pipe(gulp.dest(`${CSS_DEST}`))
-    .pipe(size())
-    .pipe(gzip({ extension: 'gz' }))
-    .pipe(gulp.dest(`${CSS_DEST}`))
-    .pipe(size());
-});
-
-gulp.task('build-custom', function (done) {
-  return gulp.src([`${USWDS_SRC}/stylesheets/uswds-fonts.scss`, `${USWDS_SRC}/stylesheets/uswds-custom.scss`])
-    .pipe(compileCSS())
-    .pipe(gulpif(CONCAT_FONTS, concatMain()))
-    .pipe(minifyCSS())
-    .pipe(gulp.dest(`${CSS_DEST}`))
-    .pipe(gzip({ extension: 'gz' }))
-    .pipe(gulp.dest(`${CSS_DEST}`));
-});
-
-gulp.task('quick-concat', function (done) {
-  return gulp.src([
-      `${CSS_DEST}/uswds.min.css`,
-      `${CSS_DEST}/uswds-custom.min.css`,
-      `${CSS_DEST}/uswds-utilities.min.css`
-    ])
-    .pipe(concat('uswds-app-all.css'))
-    .pipe(minifyCSS())
-    .pipe(gulp.dest(`${CSS_DEST}`))
-    .pipe(gzip({ extension: 'gz' }))
-    .pipe(gulp.dest(`${CSS_DEST}`));
-});
-
-gulp.task('uswds-app', USWDS_APP, function (done) {
-  return gulp.src([
-      `${CSS_DEST}/uswds.min.css`,
-      `${CSS_DEST}/uswds-custom.min.css`,
-      `${CSS_DEST}/uswds-utilities.min.css`,
-    ])
-    .pipe(concat('uswds-app-all.css'))
-    .pipe(minifyCSS())
-    .pipe(gulp.dest(`${CSS_DEST}`))
-    .pipe(gzip({ extension: 'gz' }))
-    .pipe(gulp.dest(`${CSS_DEST}`));
-});
-
-gulp.task('uswds-opt', ["uswds-app"], function() {
-    return gulp.src(`${CSS_DEST}/uswds-app-all.min.css`)
+gulp.task('build-app', ['build-sass'], function() {
+    return gulp.src(`${CSS_DEST}/10x.min.css`)
       .pipe(uncss({
         html: [`${BUILD_DEST}/**/*.html`],
         ignore: [/\[aria-/],
       }))
-      .pipe(rename('uswds-app-opt.css'))
+      .pipe(rename('10x.app.css'))
       .pipe(minifyCSS())
       .pipe(purge({
         trim: true,
@@ -202,19 +159,15 @@ gulp.task('uswds-opt', ["uswds-app"], function() {
         special_reduce_with_html: false,
         verbose: false,
       }))
-      .pipe(gulp.dest(`${CSS_DEST}`))
       .pipe(gulp.dest(`${INC_DEST}`))
       .pipe(size())
-      .pipe(gzip({ extension: 'gz' }))
-      .pipe(gulp.dest(`${CSS_DEST}`))
-      .pipe(size());
 });
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-gulp.task('watch', ['uswds-app'], function (){
-  gulp.watch(`${PROJECT_SASS_SRC}/*.scss`, ['uswds-app'])
-  gulp.watch(`${USWDS_SRC}/stylesheets/*.scss`, ['uswds-app']);
+gulp.task('watch', ['build-app'], function (){
+  gulp.watch(`${PROJECT_SASS_SRC}/*.scss`, ['build-app'])
+  gulp.watch(`${USWDS_SRC}/stylesheets/*.scss`, ['build-app']);
 });
 
 
