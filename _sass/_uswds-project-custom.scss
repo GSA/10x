@@ -16,11 +16,11 @@
 
 .page-content {
   h3 {
-    @include font(sans, s10);
+    @include font(sans, f10);
     font-weight: font-weight(thin);
     line-height: line-height(small);
     @include media(md) {
-      @include font(sans, s15);
+      @include font(sans, f15);
     }
   }
 }
@@ -56,18 +56,18 @@
     line-height: line-height(smaller);
   }
   h2 {
-    @include font(sans, s9);
+    @include font(sans, f9);
     font-weight: font-weight(bold);
     margin-top: spacing(double);
     padding-top: spacing(double);
 
     @include media(md){
-      @include font(sans, s11);
+      @include font(sans, f11);
       margin-top: spacing(double-plus);
     }
   }
   h3 {
-    @include font(sans, s6);
+    @include font(sans, f6);
     font-weight: font-weight(bold);
     margin-top: spacing(double);
     padding-top: spacing(half);
@@ -75,7 +75,7 @@
     @include media(md){
       margin-top: spacing(double);
       padding-top: spacing(double);
-      @include font(sans, s8);
+      @include font(sans, f8);
     }
     & + p {
       margin-top: spacing(half);
