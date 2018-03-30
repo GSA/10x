@@ -733,6 +733,7 @@ $height-plugins: (
   'plugin-spacing-uswds-named-all'
   */
   'plugin-spacing-units-percentage',
+  'plugin-spacing-uswds-named-all',
   'plugin-spacing-uswds-all'
 );
 
@@ -856,7 +857,7 @@ $list-reset-settings: (
 */
 
 $margin-settings: (
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -1154,6 +1155,7 @@ $padding-plugins: (
   /*
   'plugin-spacing-units-px',
   */
+  'plugin-spacing-uswds-large'
   'plugin-spacing-uswds-named-all'
 );
 
@@ -1495,6 +1497,7 @@ $width-plugins: (
   */
   'plugin-spacing-uswds-small',
   'plugin-spacing-uswds-medium',
+  'plugin-spacing-units-percentage',
   'plugin-spacing-theme-breakpoints-rem'
 );
 
