@@ -1,18 +1,14 @@
 var autoprefixer  = require("gulp-autoprefixer");
-var cleanCSS      = require('gulp-clean-css');
+var cssnano       = require('gulp-cssnano');
 var combineMq     = require('gulp-combine-mq');
-var concat        = require('gulp-concat');
 var del           = require('del');
 var gulp          = require("gulp");
-var gulpif        = require('gulp-if');
 var gzip          = require('gulp-gzip');
 var lazypipe      = require('lazypipe');
 var path          = require('path');
-var purge         = require('gulp-css-purge');
 var rename        = require("gulp-rename");
 var sass          = require("gulp-sass");
 var size          = require('gulp-size');
-var sourcemaps    = require('gulp-sourcemaps');
 var uncss         = require('gulp-uncss');
 var watch         = require('gulp-watch');
 
@@ -65,20 +61,6 @@ const INC_DEST          = '_includes';
 
 // use:  .pipe(gulpif(CONDITION_VAR, conditionalPipe()))
 
-var buildFontCSS = lazypipe()
-    .pipe(function () {
-      return sass({
-        includePaths: [
-          `${PROJECT_SASS_SRC}`,
-          path.join(USWDS_SRC, 'stylesheets/project'),
-        ]
-      }).on('error', sass.logError);
-    })
-    .pipe(cleanCSS);
-
-var fontCSS = buildFontCSS
-    .pipe(gulp.dest, `${CSS_DEST}`);
-
 var compileCSS = lazypipe()
     .pipe(function () {
       return sass({
@@ -98,17 +80,10 @@ var compileCSS = lazypipe()
     .pipe(combineMq, { beautify: true });
 
 var minifyCSS = lazypipe()
-    .pipe(cleanCSS)
+    .pipe(cssnano)
     .pipe(rename, {
       suffix: '.min'
     });
-
-var concatUtilities = lazypipe()
-    .pipe(concat, 'uswds-utilities.css');
-
-var concatMain = lazypipe()
-    .pipe(concat, 'uswds.css');
-
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // BUILD USWDS STYLES
@@ -145,20 +120,6 @@ gulp.task('build-app', ['build-sass'], function() {
       }))
       .pipe(rename('10x.app.css'))
       .pipe(minifyCSS())
-      .pipe(purge({
-        trim: true,
-        shorten: false,
-        shorten_font: false,
-        shorten_border: false,
-        shorten_border_top: false,
-        shorten_border_right: false,
-        shorten_border_bottom: false,
-        shorten_border_left: false,
-        format: false,
-        special_convert_rem: false,
-        special_reduce_with_html: false,
-        verbose: false,
-      }))
       .pipe(gulp.dest(`${INC_DEST}`))
       .pipe(size())
 });
