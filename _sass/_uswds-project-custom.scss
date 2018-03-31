@@ -58,23 +58,23 @@
   h2 {
     @include font(sans, f9);
     font-weight: font-weight(bold);
-    margin-top: spacing(double);
-    padding-top: spacing(double);
+    margin-top: spacing(base);
+    padding-top: spacing(base);
 
     @include media(md){
       @include font(sans, f11);
-      margin-top: spacing(double-plus);
+      margin-top: spacing(base-plus);
     }
   }
   h3 {
     @include font(sans, f6);
     font-weight: font-weight(bold);
-    margin-top: spacing(double);
+    margin-top: spacing(base);
     padding-top: spacing(half);
 
     @include media(md){
-      margin-top: spacing(double);
-      padding-top: spacing(double);
+      margin-top: spacing(base);
+      padding-top: spacing(base);
       @include font(sans, f8);
     }
     & + p {
@@ -84,11 +84,7 @@
   p {
     line-height: line-height(base);
     margin-bottom: 0;
-    margin-top: spacing(half-plus);
-
-    @include media(md){
-      margin-top: spacing(double);
-    }
+    margin-top: 1em;
   }
   ul {
     @include list-reset;
@@ -108,5 +104,56 @@
     &:hover{
       text-decoration-color: color(red-warm, 50, vivid);
     }
+    &.usa-lede-link {
+      color: color(black, 90);
+      text-decoration-color: color(black, 20);
+      &:hover{
+        text-decoration-color: color(black, 80);
+      }
+    }
   }
+}
+
+.usa-card {
+  @include padding-x(half);
+  @include padding-y(half-plus);
+  @include border(eighth)
+
+  border-color: color(black, 100);
+  margin-top: spacing(base);
+  border-radius: spacing(quarter);
+
+  @include media(md){
+    @include padding-x(base);
+    padding-bottom: spacing(base-plus);
+    padding-top: spacing(base);
+
+    margin-top: spacing(double);
+  }
+}
+
+.usa-link-circle {
+  @include font(sans, f1);
+  border: spacing(eighth) solid color(black, 20);
+  border-radius: border-radius(pill);
+  color: color(black, 50);
+  display: inline-block;
+  font-weight: font-weight(normal);
+  line-height: line-height(smallest);
+  margin-left: spacing(eighth);
+  padding: spacing(quarter);
+  text-align: center;
+  text-decoration: none;
+  width: spacing(base-plus);
+  &:hover {
+    border-color: color(indigo-warm, 60, vivid);
+    color: color(indigo-warm, 60, vivid);
+  }
+}
+
+.usa-lede-sup {
+  position: relative;
+  bottom: spacing(half-plus);
+  display: none;
+  vertical-align: baseline;
 }
