@@ -1,5 +1,5 @@
 // Mobile-first media query helper
-@mixin media($bp) {
+@mixin at-media($bp) {
   @if map-has-key($theme-breakpoints, $bp){
     $bp: map-get($theme-breakpoints, $bp);
   }
