@@ -1,15 +1,15 @@
-var autoprefixer  = require("gulp-autoprefixer");
-var cssnano       = require('gulp-cssnano');
-var combineMq     = require('gulp-combine-mq');
+var autoprefixer  = require('autoprefixer');
+var cssnano       = require('cssnano');
 var del           = require('del');
-var gulp          = require("gulp");
+var gulp          = require('gulp');
 var gzip          = require('gulp-gzip');
-var lazypipe      = require('lazypipe');
+var movecss       = require('postcss-move-media');
 var path          = require('path');
-var rename        = require("gulp-rename");
-var sass          = require("gulp-sass");
+var postcss       = require('gulp-postcss');
+var rename        = require('gulp-rename');
+var sass          = require('gulp-sass');
 var size          = require('gulp-size');
-var uncss         = require('gulp-uncss');
+var uncss         = require('postcss-uncss');
 var watch         = require('gulp-watch');
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -51,41 +51,6 @@ const BUILD_DEST        = '_develop';
 const INC_DEST          = '_includes';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// REUSABLE/LAZY PIPES
-
-// Conditional pipe
-// var conditionalPipe = lazypipe()
-//   .pipe(jshint)
-//   .pipe(jshint.reporter)
-//   .pipe(jshint.reporter, 'fail');
-
-// use:  .pipe(gulpif(CONDITION_VAR, conditionalPipe()))
-
-var compileCSS = lazypipe()
-    .pipe(function () {
-      return sass({
-        includePaths: [
-          `${PROJECT_SASS_SRC}`,
-          `${USWDS_SRC}/stylesheets`,
-        ]
-      }).on('error', sass.logError);
-    })
-    .pipe(autoprefixer, {
-      browsers: [
-        '> 3%',
-        'Last 2 versions',
-      ],
-      cascade: false,
-    })
-    .pipe(combineMq, { beautify: true });
-
-var minifyCSS = lazypipe()
-    .pipe(cssnano)
-    .pipe(rename, {
-      suffix: '.min'
-    });
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // BUILD USWDS STYLES
 
 gulp.task('copy-uswds-assets', () => {
@@ -100,11 +65,22 @@ gulp.task('clean-css', function () {
 });
 
 gulp.task('build-sass', ['clean-css'], function (done) {
+  var plugins = [
+      autoprefixer({browsers: ['> 3%', 'Last 2 versions'], cascade: false,}),
+      movecss(),
+      cssnano()
+  ];
   return gulp.src([
       `${PROJECT_SASS_SRC}/*.scss`
     ])
-    .pipe(compileCSS())
-    .pipe(minifyCSS())
+    .pipe(sass({
+        includePaths: [
+          `${PROJECT_SASS_SRC}`,
+          `${USWDS_SRC}/stylesheets`,
+        ]
+      }))
+    .pipe(postcss(plugins))
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(`${CSS_DEST}`))
     .pipe(size())
     .pipe(gzip({ extension: 'gz' }))
@@ -113,15 +89,18 @@ gulp.task('build-sass', ['clean-css'], function (done) {
 });
 
 gulp.task('build-app', ['build-sass'], function() {
-    return gulp.src(`${CSS_DEST}/10x.min.css`)
-      .pipe(uncss({
-        html: [`${BUILD_DEST}/**/*.html`],
-        ignore: [/\[aria-/],
-      }))
-      .pipe(rename('10x.app.css'))
-      .pipe(minifyCSS())
-      .pipe(gulp.dest(`${INC_DEST}`))
-      .pipe(size())
+  var plugins = [
+    uncss({
+      html: [`${BUILD_DEST}/**/*.html`],
+      ignore: [/\[aria-/],
+    }),
+    cssnano()
+  ];
+  return gulp.src(`${CSS_DEST}/10x.min.css`)
+    .pipe(postcss(plugins))
+    .pipe(rename('10x.app.min.css'))
+    .pipe(gulp.dest(`${INC_DEST}`))
+    .pipe(size())
 });
 
 
