@@ -4,30 +4,30 @@
     Custom project SASS goes here!
 
     i.e.
-    @include padding-right(eighth);
+    @include u-padding-right(eighth);
 
     - - - - - - - - - - - - - - - - - - - - -
 */
 
 *:focus {
-  @include outline(quarter);
-  @include outline-color(highlight);
+  @include u-outline(quarter);
+  @include u-outline-color(highlight);
 }
 
 .page-content {
   h3 {
-    @include font(sans, f10);
-    @include font-weight(thin);
-    @include line-height(small);
+    @include u-font(sans, f10);
+    @include u-font-weight(thin);
+    @include u-line-height(small);
     @include at-media(md) {
-      @include font(sans, f15);
+      @include u-font(sans, f15);
     }
   }
 }
 
 *:active:focus {
-  @include outline(quarter);
-  @include outline-color(indigo-warm, 50, vivid);
+  @include u-outline(quarter);
+  @include u-outline-color(indigo-warm, 50, vivid);
 }
 
 .usa-accordion-content{
@@ -51,100 +51,100 @@
 
 .usa-body-content {
   h1, h2, h3 {
-    @include font-weight(normal);
-    @include line-height(smaller);
-    @include margin-y(0);
+    @include u-font-weight(normal);
+    @include u-line-height(smaller);
+    @include u-margin-y(0);
   }
   h2 {
-    @include font(sans, f9);
-    @include font-weight(bold);
-    @include margin-top(base);
-    @include padding-top(base);
+    @include u-font(sans, f9);
+    @include u-font-weight(bold);
+    @include u-margin-top(base);
+    @include u-padding-top(base);
 
     @include at-media(md){
-      @include font(sans, f11);
-      @include margin-top(base-plus);
+      @include u-font(sans, f11);
+      @include u-margin-top(base-plus);
     }
   }
   h3 {
-    @include font(sans, f6);
-    @include font-weight(bold);
-    @include margin-top(base);
-    @include padding-top(half);
+    @include u-font(sans, f6);
+    @include u-font-weight(bold);
+    @include u-margin-top(base);
+    @include u-padding-top(half);
     @include at-media(md){
-      @include margin-top(base);
-      @include padding-top(base);
-      @include font(sans, f8);
+      @include u-margin-top(base);
+      @include u-padding-top(base);
+      @include u-font(sans, f8);
     }
     & + p {
-      @include margin-top(half);
+      @include u-margin-top(half);
     }
   }
   p {
-    @include line-height(base);
-    @include margin-bottom(0);
-    @include margin-top(1em);
+    @include u-line-height(base);
+    @include u-margin-bottom(0);
+    @include u-margin-top(1em);
   }
   ul {
-    @include list-reset;
+    @include u-list-reset;
   }
   li {
-    @include border-top();
-    @include border-color(black, 20);
-    @include padding-y(half);
+    @include u-border-top();
+    @include u-border-color(black, 20);
+    @include u-padding-y(half);
     @include at-media(md){
-      @include padding-y(half);
+      @include u-padding-y(half);
     }
   }
   p a {
-    @include color(black, 90);
-    @include text-decoration-color(indigo-warm, 60, vivid);
+    @include u-color(black, 90);
+    @include u-text-decoration-color(indigo-warm, 60, vivid);
     &:hover{
-      @include text-decoration-color(red-warm, 50, vivid);
+      @include u-text-decoration-color(red-warm, 50, vivid);
     }
     &.usa-lede-link {
-      @include color(black, 90);
-      @include text-decoration-color(black, 20);
+      @include u-color(black, 90);
+      @include u-text-decoration-color(black, 20);
       &:hover{
-        @include text-decoration-color(black, 80);
+        @include u-text-decoration-color(black, 80);
       }
     }
   }
 }
 
 .usa-card {
-  @include border(eighth)
-  @include border-color(black, 100);
-  @include margin-top(base);
-  @include padding-x(half);
-  @include padding-y(half-plus);
+  @include u-border(eighth)
+  @include u-border-color(black, 100);
+  @include u-margin-top(base);
+  @include u-padding-x(half);
+  @include u-padding-y(half-plus);
 
   border-radius: spacing(quarter);
 
   @include at-media(md){
-    @include padding-x(base);
-    @include margin-top(double);
-    @include padding-bottom(base-plus);
-    @include padding-top(base);
+    @include u-padding-x(base);
+    @include u-margin-top(double);
+    @include u-padding-bottom(base-plus);
+    @include u-padding-top(base);
   }
 }
 
 .usa-link-circle {
-  @include border-radius(pill);
-  @include color(black, 50);
-  @include font(sans, f1);
-  @include font-weight(normal);
-  @include line-height(smallest);
-  @include margin-left(eighth);
-  @include padding(quarter);
+  @include u-border-radius(pill);
+  @include u-color(black, 50);
+  @include u-font(sans, f1);
+  @include u-font-weight(normal);
+  @include u-line-height(smallest);
+  @include u-margin-left(eighth);
+  @include u-padding(quarter);
   border: spacing(eighth) solid color(black, 20);
   display: inline-block;
   text-align: center;
   text-decoration: none;
   width: spacing(base-plus);
   &:hover {
-    @include border-color(indigo-warm, 60, vivid);
-    @include color(indigo-warm, 60, vivid);
+    @include u-border-color(indigo-warm, 60, vivid);
+    @include u-color(indigo-warm, 60, vivid);
   }
 }
 
