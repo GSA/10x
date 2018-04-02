@@ -18,6 +18,7 @@
   "homepage": "https://github.com/GSA/10x#readme",
   "dependencies": {
     "autoprefixer": "^8.2.0",
+    "css-mqpacker": "^6.0.2",
     "cssnano": "^3.10.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
