@@ -30,6 +30,7 @@
     "gulp-watch": "^5.0.0",
     "path": "^0.12.7",
     "postcss-move-media": "^1.0.0-pre",
-    "postcss-uncss": "^0.16.1"
+    "postcss-uncss": "^0.16.1",
+    "uncss": "^0.16.2"
   }
 }
