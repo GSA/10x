@@ -32,20 +32,20 @@ i.e.
 
 .usa-accordion-content{
   &[aria-hidden=true] {
-    @include u-display(none);
+    display: none;
   }
 }
 
 .usa-banner-button-text--open {
-  @include u-display(none);
+  display: none;
 }
 
 [aria-expanded=true] {
   > .usa-banner-button-text {
-    @include u-display(none);
+    display: none;
   }
   > .usa-banner-button-text--open {
-    @include u-display(inline);
+    display: inline;
   }
 }
 
@@ -130,19 +130,17 @@ i.e.
 }
 
 .usa-link-circle {
-  @include u-border(eighth);
-  @include u-border-color(black, 20);
   @include u-border-radius(pill);
   @include u-color(black, 50);
-  @include u-display(inline-block);
   @include u-font(sans, f1);
   @include u-font-weight(normal);
   @include u-line-height(smallest);
   @include u-margin-left(eighth);
   @include u-padding(quarter);
-  @include u-text-align(center);
-  @include u-text-decoration(none);
-
+  border: spacing(eighth) solid color(black, 20);
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
   width: spacing(base-plus);
   &:hover {
     @include u-border-color(indigo-warm, 60, vivid);
@@ -151,9 +149,8 @@ i.e.
 }
 
 .usa-lede-sup {
-  @include u-display(none);
-  @include u-position(relative);
-  @include u-vertical-align(baseline);
-
+  position: relative;
   bottom: spacing(half-plus);
+  display: none;
+  vertical-align: baseline;
 }
