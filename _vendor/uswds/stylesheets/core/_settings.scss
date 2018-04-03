@@ -17,6 +17,18 @@ $theme-root-font-size: 16px !default;
 
 /*
 ----------------------------------------
+Border box sizing
+----------------------------------------
+When set to true, it sets the box-sizing
+property of all elements to
+`border-box`.
+----------------------------------------
+*/
+
+$border-box-sizing: true;
+
+/*
+----------------------------------------
 Breakpoints
 ----------------------------------------
 Use pixel units.
