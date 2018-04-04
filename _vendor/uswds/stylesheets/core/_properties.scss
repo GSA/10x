@@ -7,7 +7,7 @@ USWDS Properties
 $allowed-colors: map-collect(
   $color-palette-theme,
   $color-palette-state,
-  $required-colors,
+  $required-colors
 );
 
 $partial-values: (
@@ -21,7 +21,7 @@ $partial-values: (
     'auto': auto,
   ),
   full-percent:(
-    '100ct': 100ct,
+    '100ct': 100%,
   ),
   full-vertical-height:(
     '100vh': 100vh,
@@ -50,7 +50,7 @@ $uswds-properties: (
     ),
     extended: map-collect(
       $uswds-spacing-small,
-      $uswds-spacing-medium,
+      $uswds-spacing-medium
     ),
   ),
   border-color: (
@@ -103,10 +103,10 @@ $uswds-properties: (
   box-shadow: (
     allowed:(
       'none':    none,
-      'low':     0 1px 2px 0 rgba(0,0,0,0.10),
-      'high':    0 4px 8px 0 rgba(0,0,0,0.10),
-      'higher':  0 6px 12px 0 rgba(0,0,0,0.10),
-      'highest': 0 8px 16px 0 rgba(0,0,0,0.10),
+      'low':     0 1px 2px 0 rgba(0, 0, 0, 0.1),
+      'high':    0 4px 8px 0 rgba(0, 0, 0, 0.1),
+      'higher':  0 6px 12px 0 rgba(0, 0, 0, 0.1),
+      'highest': 0 8px 16px 0 rgba(0, 0, 0, 0.1),
     ),
     extended:(),
   ),
@@ -388,7 +388,7 @@ $uswds-properties: (
       $uswds-spacing-named-small-negative,
       $uswds-spacing-named-medium-negative,
       map-get($partial-values, zero-zero),
-      map-get($partial-values, auto),
+      map-get($partial-values, auto)
     ),
     extended: map-collect(
       $uswds-spacing-small,
@@ -438,7 +438,7 @@ $uswds-properties: (
       $uswds-spacing-named-small-negative,
       $uswds-spacing-named-medium-negative,
       map-get($partial-values, zero-zero),
-      map-get($partial-values, auto),
+      map-get($partial-values, auto)
     ),
     extended: map-collect(
       $uswds-spacing-small,
@@ -475,7 +475,7 @@ $uswds-properties: (
       $uswds-spacing-named,
       $project-breakpoints-rem,
       map-get($partial-values, zero-zero),
-      map-get($partial-values, auto),
+      map-get($partial-values, auto)
     ),
     extended: map-collect(
       $uswds-spacing-numeric
