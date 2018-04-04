@@ -4,7 +4,7 @@ USWDS UTILITIES SETTINGS
 ----------------------------------------
 */
 
-$utilities-namespace-prefix:  'usa-u-' !default;
+$utilities-namespace-prefix:  'u-' !default;
 $utilities-use-important:     false !default;
 
 $output-breakpoints: (
@@ -15,7 +15,7 @@ $output-breakpoints: (
   xl: false
 ) !default;
 
-$output-all-utilities:  false !default;
+$output-all-utilities:  true !default;
 
 $output-utilities: (
   align-items:      false,
@@ -24,6 +24,8 @@ $output-utilities: (
   border-color:     false,
   border-radius:    true,
   border-style:     false,
+  border-width:     false,
+  bottom:           false,
   box-shadow:       true,
   circle:           true,
   clearfix:         true,
@@ -40,6 +42,7 @@ $output-utilities: (
   font-style:       true,
   font-weight:      true,
   height:           false,
+  left:              false,
   letter-spacing:   true,
   line-height:      true,
   list-reset:       true,
@@ -55,13 +58,15 @@ $output-utilities: (
   outline-color:    false,
   padding:          true,
   position:         false,
+  right:            false,
   row:              false,
   square:           false,
   text-align:       true,
   text-decoration:  true,
   text-decoration-color:  false,
   text-transform:   true,
-  vertical-align:   true,
+  top:              false,
+  vertical-align:   false,
   whitespace:       false,
   width:            false,
   z-index:          false
@@ -81,7 +86,7 @@ $align-items-settings: (
   visited:      false
 ) !default;
 
-$align-items-preset-values: map-collect(
+$align-items-plugins: (
   /*
   */
 ) !default;
@@ -109,11 +114,21 @@ $background-color-settings: (
   visited:      false
 ) !default;
 
-$background-color-preset-values: map-collect(
+$background-color-plugins: (
   /*
+  'plugin-color-[color]'
+  'plugin-color-[color]-light'
+  'plugin-color-[color]-medium'
+  'plugin-color-[color]-dark'
+  'plugin-color-[color]-light-vivid'
+  'plugin-color-[color]-medium-vivid'
+  'plugin-color-[color]-dark-vivid'
+  'plugin-color-[color]-standard'
+  'plugin-color-[color]-vivid'
+  'plugin-color-palette-status'
   */
-  $preset-palette-reserved,
-  $preset-palette-project-settings
+  'plugin-color-palette-theme',
+  'plugin-color-palette-grayscale',
 ) !default;
 
 $background-color-manual-values: (
@@ -123,7 +138,7 @@ $background-color-manual-values: (
 
 /*
 ========================================
-.border-width
+.border (width and solid)
 ----------------------------------------
 */
 
@@ -135,11 +150,14 @@ $border-settings: (
   visited:      false
 ) !default;
 
-$border-preset-values: map-collect(
+$border-plugins: (
   /*
+  'plugin-spacing-units-px'
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
   */
-  $preset-units-px,
-  $preset-units-grid-small
+  'plugin-spacing-uswds-named-small',
+  'plugin-spacing-uswds-named-medium'
 ) !default;
 
 $border-manual-values: (
@@ -162,11 +180,21 @@ $border-color-settings: (
   visited:      false
 ) !default;
 
-$border-color-preset-values: map-collect(
+$border-color-plugins: (
   /*
+  'plugin-color-[color]'
+  'plugin-color-[color]-light'
+  'plugin-color-[color]-medium'
+  'plugin-color-[color]-dark'
+  'plugin-color-[color]-light-vivid'
+  'plugin-color-[color]-medium-vivid'
+  'plugin-color-[color]-dark-vivid'
+  'plugin-color-[color]-standard'
+  'plugin-color-[color]-vivid'
+  'plugin-color-palette-status'
   */
-  $preset-palette-reserved,
-  $preset-palette-project-settings
+  'plugin-color-palette-theme',
+  'plugin-color-palette-grayscale'
 ) !default;
 
 $border-color-manual-values: (
@@ -188,19 +216,17 @@ $border-radius-settings: (
   visited:      false
 ) !default;
 
-$border-radius-preset-values: map-collect(
+$border-radius-plugins: (
   /*
-  $preset-units-grid-small
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
   */
-  $preset-spacing-tshirt-small
+  'plugin-misc-border-radius'
 ) !default;
 
 $border-radius-manual-values: (
   /*
   */
-  0:            '0',
-  pill:         '9999em',
-  circle:       '50%'
 ) !default;
 
 /*
@@ -217,7 +243,7 @@ $border-style-settings: (
   visited:      false
 ) !default;
 
-$border-style-preset-values: map-collect(
+$border-style-plugins: (
   /*
   */
 ) !default;
@@ -228,6 +254,76 @@ $border-style-manual-values: (
   dashed:       'dashed',
   dotted:       'dotted',
   solid:        'solid'
+) !default;
+
+/*
+========================================
+.border-width
+----------------------------------------
+*/
+
+$border-width-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$border-width-plugins: (
+  /*
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
+  */
+  'plugin-spacing-uswds-named-small',
+  'plugin-spacing-uswds-named-medium'
+) !default;
+
+$border-width-manual-values: (
+  /*
+  */
+  0:       0,
+) !default;
+
+/*
+========================================
+.bottom
+----------------------------------------
+*/
+
+$bottom-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$bottom-plugins: (
+  /*
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
+  'plugin-spacing-uswds-large'
+  'plugin-spacing-uswds-xlarge'
+  'plugin-spacing-uswds-all'
+  'plugin-spacing-uswds-small-negative'
+  'plugin-spacing-uswds-medium-negative'
+  'plugin-spacing-uswds-negative'
+  'plugin-spacing-units-percentage'
+  'plugin-spacing-units-px'
+  'plugin-spacing-units-px-negative'
+  */
+  'plugin-spacing-uswds-named-small',
+  'plugin-spacing-uswds-named-medium',
+  'plugin-spacing-uswds-named-small-negative',
+  'plugin-spacing-uswds-named-medium-negative'
+) !default;
+
+$bottom-manual-values: (
+  /*
+  */
+  0:        0,
+  auto:     'auto',
 ) !default;
 
 /*
@@ -244,7 +340,7 @@ $box-shadow-settings: (
   visited:      false
 ) !default;
 
-$box-shadow-preset-values: map-collect(
+$box-shadow-plugins: (
   /*
   */
 ) !default;
@@ -252,12 +348,11 @@ $box-shadow-preset-values: map-collect(
 $box-shadow-manual-values: (
   /*
   */
-  none:   'none',
-  1: '0 1px 2px 0 rgba(0,0,0,0.10)',
-  2: '0 4px 8px 0 rgba(0,0,0,0.10)',
-  3: '0 6px 12px 0 rgba(0,0,0,0.10)',
-  4: '0 8px 16px 0 rgba(0,0,0,0.10)',
-  5: '0 12px 24px 0 rgba(0,0,0,0.10)'
+  none:     'none',
+  low:      '0 1px 2px 0 rgba(0,0,0,0.10)',
+  high:     '0 4px 8px 0 rgba(0,0,0,0.10)',
+  higher:   '0 6px 12px 0 rgba(0,0,0,0.10)',
+  highest:  '0 8px 16px 0 rgba(0,0,0,0.10)',
 ) !default;
 
 /*
@@ -274,10 +369,18 @@ $circle-settings: (
   visited:      false
 ) !default;
 
-$circle-preset-values: map-collect(
+$circle-plugins: (
   /*
+  'plugin-spacing-uswds-named-small'
+  'plugin-spacing-uswds-named-medium'
+  'plugin-spacing-uswds-named-large'
+  'plugin-spacing-uswds-all'
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
+  'plugin-spacing-uswds-large'
+  'plugin-spacing-uswds-xlarge'
   */
-  $preset-spacing-tshirt
+  'plugin-spacing-uswds-named-all'
 ) !default;
 
 $circle-manual-values: (
@@ -309,34 +412,30 @@ $color-settings: (
   responsive:   false,
   active:       false,
   focus:        false,
-  hover:        true,
+  hover:        false,
   visited:      false
 ) !default;
 
-$color-preset-values: map-collect(
+$color-plugins: (
   /*
+  'plugin-[color]'
+  'plugin-[color]-light'
+  'plugin-[color]-medium'
+  'plugin-[color]-dark'
+  'plugin-[color]-light-vivid'
+  'plugin-[color]-medium-vivid'
+  'plugin-[color]-dark-vivid'
+  'plugin-[color]-standard'
+  'plugin-[color]-vivid'
+  'plugin-palette-status'
   */
-  $preset-palette-project-settings,
-  $preset-palette-reserved
+  'plugin-color-palette-theme',
+  'plugin-color-palette-grayscale'
 ) !default;
 
 $color-manual-values: (
   /*
   */
-) !default;
-
-/*
-========================================
-.column
-----------------------------------------
-*/
-
-$column-settings: (
-  responsive:   false,
-  active:       false,
-  focus:        false,
-  hover:        false,
-  visited:      false
 ) !default;
 
 /*
@@ -353,7 +452,7 @@ $display-settings: (
   visited:      false
 ) !default;
 
-$display-preset-values: map-collect(
+$display-plugins: (
   /*
   */
 ) !default;
@@ -384,27 +483,15 @@ $flex-settings: (
   visited:      false
 ) !default;
 
-$flex-preset-values: map-collect(
+$flex-plugins: (
   /*
   */
+  'plugin-misc-flex'
 ) !default;
 
 $flex-manual-values: (
   /*
   */
-  1:            '1 0 0',
-  2:            '2 0 0',
-  3:            '3 0 0',
-  4:            '4 0 0',
-  5:            '5 0 0',
-  6:            '6 0 0',
-  7:            '7 0 0',
-  8:            '8 0 0',
-  9:            '9 0 0',
-  10:           '10 0 0',
-  11:           '11 0 0',
-  fill:         '1 0 0',
-  fit:          '0'
 ) !default;
 
 /*
@@ -421,7 +508,7 @@ $flex-direction-settings: (
   visited:      false
 ) !default;
 
-$flex-direction-preset-values: map-collect() !default;
+$flex-direction-plugins: () !default;
 
 $flex-direction-manual-values: (
   /*
@@ -444,7 +531,7 @@ $flex-wrap-settings: (
   visited:      false
 ) !default;
 
-$flex-wrap-preset-values: map-collect() !default;
+$flex-wrap-plugins: () !default;
 
 $flex-wrap-manual-values: (
   wrap:         'wrap',
@@ -465,7 +552,7 @@ $float-settings: (
   visited:      false
 ) !default;
 
-$float-preset-values: map-collect() !default;
+$float-plugins: () !default;
 
 $float-manual-values: (
   /*
@@ -489,10 +576,20 @@ $font-settings: (
   visited:      false
 ) !default;
 
-$font-preset-values: map-collect(
+$font-plugins: (
   /*
+  'plugin-font-theme-mono-all'
+  'plugin-font-theme-sans-all'
+  'plugin-font-theme-serif-all'
+  'plugin-font-uswds-all'
+  'plugin-system-[family]-small'
+  'plugin-system-[family]-medium'
+  'plugin-system-[family]-large'
+  'plugin-system-[family]-xlarge'
+  'plugin-system-[family]-all'
   */
-  $preset-font-tshirt
+  'plugin-font-theme-all',
+  'plugin-font-theme-roles-all'
 ) !default;
 
 $font-manual-values: (
@@ -514,10 +611,10 @@ $font-family-settings: (
   visited:      false
 ) !default;
 
-$font-family-preset-values: map-collect(
+$font-family-plugins: (
   /*
   */
-  $preset-font-families
+  'plugin-font-stack-roles'
 ) !default;
 
 $font-family-manual-values: (
@@ -539,17 +636,15 @@ $font-feature-settings: (
   visited:      false
 ) !default;
 
-$font-feature-preset-values: map-collect(
+$font-feature-plugins: (
   /*
   */
+  'plugin-misc-font-feature-settings'
 ) !default;
 
 $font-feature-manual-values: (
   /*
   */
-  alt:          "'ss01' 1, 'kern' 1",
-  tabular:      "'tnum' 1, 'kern' 1",
-  default:      "'kern' 1",
 ) !default;
 
 /*
@@ -566,7 +661,7 @@ $font-style-settings: (
   visited:      false
 ) !default;
 
-$font-style-preset-values: map-collect() !default;
+$font-style-plugins: () !default;
 
 $font-style-manual-values: (
   normal:       'normal',
@@ -587,26 +682,16 @@ $font-weight-settings: (
   visited:      false
 ) !default;
 
-$font-weight-preset-values: map-collect(
+$font-weight-plugins: (
   /*
+  'plugin-font-weights-numeric'
   */
+  'plugin-font-weights-theme'
 ) !default;
 
 $font-weight-manual-values: (
   /*
   */
-  100:          '100',
-  200:          '200',
-  300:          '300',
-  400:          '400',
-  500:          '500',
-  600:          '600',
-  700:          '700',
-  800:          '800',
-  900:          '900',
-  bold:         'bold',
-  normal:       'normal',
-  light:        'light'
 ) !default;
 
 /*
@@ -623,19 +708,67 @@ $height-settings: (
   visited:      false
 ) !default;
 
-$height-preset-values: map-collect(
+$height-plugins: (
   /*
-  $preset-units-em,
-  $preset-units-ch,
-  $preset-units-px
+  'plugin-spacing-uswds-named-small'
+  'plugin-spacing-uswds-named-medium'
+  'plugin-spacing-uswds-named-large'
+  'plugin-spacing-uswds-named-xlarge'
+  'plugin-spacing-uswds-all'
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
+  'plugin-spacing-uswds-large'
+  'plugin-spacing-uswds-xlarge'
   */
-  $preset-units-percentage,
-  $preset-spacing-tshirt
+  'plugin-spacing-uswds-named-all'
 ) !default;
 
 $height-manual-values: (
   /*
   */
+  0:      0,
+  auto:   auto,
+  100vh:  100vh
+) !default;
+
+/*
+========================================
+.left
+----------------------------------------
+*/
+
+$left-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$left-plugins: (
+  /*
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
+  'plugin-spacing-uswds-large'
+  'plugin-spacing-uswds-xlarge'
+  'plugin-spacing-uswds-all'
+  'plugin-spacing-uswds-small-negative'
+  'plugin-spacing-uswds-medium-negative'
+  'plugin-spacing-uswds-negative'
+  'plugin-spacing-units-percentage'
+  'plugin-spacing-units-px'
+  'plugin-spacing-units-px-negative'
+  */
+  'plugin-spacing-uswds-named-small',
+  'plugin-spacing-uswds-named-medium',
+  'plugin-spacing-uswds-named-negative-all',
+) !default;
+
+$left-manual-values: (
+  /*
+  */
+  0:        0,
+  auto:     'auto',
 ) !default;
 
 /*
@@ -652,21 +785,15 @@ $letter-spacing-settings: (
   visited:      false
 ) !default;
 
-$letter-spacing-preset-values: map-collect(
+$letter-spacing-plugins: (
   /*
   */
+  'plugin-misc-letter-spacing'
 ) !default;
 
 $letter-spacing-manual-values: (
   /*
   */
-  auto:         'auto',
-  n1:           $u-ls-n1,
-  n2:           $u-ls-n2,
-  n3:           $u-ls-n3,
-  1:            $u-ls-1,
-  2:            $u-ls-2,
-  3:            $u-ls-3
 ) !default;
 
 /*
@@ -683,20 +810,15 @@ $line-height-settings: (
   visited:      false
 ) !default;
 
-$line-height-preset-values: map-collect(
+$line-height-plugins: (
   /*
   */
+  'plugin-misc-line-heights'
 ) !default;
 
 $line-height-manual-values: (
   /*
   */
-  single:        $u-lh-single,
-  heading:       $u-lh-heading,
-  heading-loose: $u-lh-heading-loose,
-  body-tight:    $u-lh-body-tight,
-  body:          $u-lh-body,
-  body-loose:    $u-lh-body-loose
 ) !default;
 
 /*
@@ -715,42 +837,6 @@ $list-reset-settings: (
 
 /*
 ========================================
-.MANUAL POSITION
-----------------------------------------
-properties:
-  top
-  bottom
-  left
-  right
-----------------------------------------
-*/
-
-$manual-position-settings: (
-  responsive:   false,
-  active:       false,
-  focus:        false,
-  hover:        false,
-  visited:      false
-) !default;
-
-$manual-position-preset-values: map-collect(
-  /*
-  */
-  $preset-units-px,
-  $preset-units-px-negative,
-  $preset-spacing-tshirt-small,
-  $preset-spacing-tshirt-small-negative
-) !default;
-
-$manual-position-manual-values: (
-  /*
-  */
-  0:            '0',
-  auto:         'auto'
-) !default;
-
-/*
-========================================
 .margin
 ----------------------------------------
 */
@@ -763,21 +849,19 @@ $margin-settings: (
   visited:      false
 ) !default;
 
-$margin-preset-values: map-collect(
+$margin-plugins: (
   /*
-  $preset-units-px,
-  $preset-units-px-negative,
-  $preset-units-percentage,
-  $preset-units-grid,
-  $preset-units-grid-negative,
-  $preset-units-ch,
-  $preset-units-ch-negative,
-  $preset-units-em
+  'plugin-spacing-units-px',
+  'plugin-spacing-units-px-negative',
+  'plugin-spacing-units-percentage',
+  'plugin-spacing-uswds-all',
+  'plugin-spacing-uswds-negative',
+  'plugin-spacing-units-ch',
+  'plugin-spacing-units-ch-negative',
+  'plugin-spacing-units-em'
   */
-  $preset-units-px,
-  $preset-units-px-negative,
-  $preset-spacing-tshirt,
-  $preset-spacing-tshirt-small-negative
+  'plugin-spacing-uswds-named-all',
+  'plugin-spacing-uswds-named-negative-all'
 ) !default;
 
 $margin-manual-values: (
@@ -801,17 +885,20 @@ $max-height-settings: (
   visited:      false
 ) !default;
 
-$max-height-preset-values: map-collect(
+$max-height-plugins: (
   /*
-  $preset-units-percentage,
-  $preset-units-grid,
-  $preset-units-px
+  'plugin-spacing-units-percentage',
+  'plugin-spacing-uswds-all',
+  'plugin-spacing-units-px'
   */
+  'plugin-spacing-uswds-named-all'
+  'plugin-spacing-theme-breakpoints-rem'
 ) !default;
 
 $max-height-manual-values: (
   /*
   */
+  none:         'none',
 ) !default;
 
 /*
@@ -828,21 +915,18 @@ $max-width-settings: (
   visited:      false
 ) !default;
 
-$max-width-preset-values: map-collect(
+$max-width-plugins: (
   /*
-  $preset-units-percentage,
-  $preset-units-breakpoints
+  'plugin-spacing-units-percentage',
+  'plugin-spacing-theme-breakpoints-rem'
   */
+  'plugin-misc-measure'
 ) !default;
 
 $max-width-manual-values: (
   /*
   */
   none:         'none',
-  reading-xs:   $text-narrow-width,
-  reading-sm:   $text-width-sm,
-  reading:      $text-max-width,
-  reading-lg:   $text-wide-width
 ) !default;
 
 /*
@@ -859,18 +943,21 @@ $min-height-settings: (
   visited:      false
 ) !default;
 
-$min-height-preset-values: map-collect(
+$min-height-plugins: (
   /*
-  $preset-units-percentage,
-  $preset-units-grid-small
-  $preset-units-grid-medium
+  'plugin-spacing-units-percentage',
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
   */
+  'plugin-spacing-uswds-named-all'
+  'plugin-spacing-theme-breakpoints-rem'
 ) !default;
 
 $min-height-manual-values: (
   /*
   */
-  100ct:        100%
+  '100ct':      100%,
+  '100vh':      100vh,
 ) !default;
 
 /*
@@ -887,12 +974,16 @@ $min-width-settings: (
   visited:      false
 ) !default;
 
-$min-width-preset-values: map-collect(
+$min-width-plugins: (
   /*
+  'plugin-spacing-uswds-all',
+  'plugin-spacing-units-px-negative',
+  'plugin-spacing-units-em',
+  'plugin-spacing-units-ch'
+  'plugin-spacing-units-percentage'
   */
-  $preset-units-breakpoints,
-  $preset-units-grid-large,
-  $preset-units-grid-xlarge
+  'plugin-spacing-uswds-named-all'
+  'plugin-spacing-theme-breakpoints-rem'
 ) !default;
 
 $min-width-manual-values: (
@@ -914,24 +1005,25 @@ $opacity-settings: (
   visited:      false
 ) !default;
 
-$opacity-preset-values: map-collect(
+$opacity-plugins: (
   /*
   */
+  'plugin-misc-opacity'
 ) !default;
 
 $opacity-manual-values: (
   /*
-  0:            '0',
-  01:           '0.1',
-  02:           '0.2',
-  03:           '0.3',
-  04:           '0.4',
-  05:           '0.5',
-  06:           '0.6',
-  07:           '0.7',
-  08:           '0.8',
-  09:           '0.9',
-  1:            '1',
+  '0':            '0',
+  '01':           '0.1',
+  '02':           '0.2',
+  '03':           '0.3',
+  '04':           '0.4',
+  '05':           '0.5',
+  '06':           '0.6',
+  '07':           '0.7',
+  '08':           '0.8',
+  '09':           '0.9',
+  '1':            '1',
   */
 ) !default;
 
@@ -949,9 +1041,10 @@ $order-settings: (
   visited:      false
 ) !default;
 
-$order-preset-values: map-collect(
+$order-plugins: (
   /*
   */
+  'plugin-misc-order'
 ) !default;
 
 $order-manual-values: (
@@ -987,11 +1080,11 @@ $outline-settings: (
   visited:      false
 ) !default;
 
-$outline-preset-values: map-collect(
+$outline-plugins: (
   /*
   */
-  $preset-units-px,
-  $preset-units-grid-small
+  'plugin-spacing-units-px',
+  'plugin-spacing-uswds-small'
 ) !default;
 
 $outline-manual-values: (
@@ -1014,10 +1107,10 @@ $outline-color-settings: (
   visited:      false
 ) !default;
 
-$outline-color-preset-values: map-collect(
+$outline-color-plugins: (
   /*
   */
-  $preset-palette-project-settings
+  'plugin-color-palette-theme'
 ) !default;
 
 $outline-color-manual-values: (
@@ -1039,11 +1132,11 @@ $padding-settings: (
   visited:      false
 ) !default;
 
-$padding-preset-values: map-collect(
+$padding-plugins: (
   /*
-  $preset-units-px,
+  'plugin-spacing-units-px',
   */
-  $preset-spacing-tshirt
+  'plugin-spacing-uswds-named-all'
 ) !default;
 
 $padding-manual-values: (
@@ -1066,7 +1159,7 @@ $position-settings: (
   visited:      false
 ) !default;
 
-$position-preset-values: map-collect(
+$position-plugins: (
   /*
   */
 ) !default;
@@ -1083,16 +1176,43 @@ $position-manual-values: (
 
 /*
 ========================================
-.row
+.right
 ----------------------------------------
 */
 
-$row-settings: (
+$right-settings: (
   responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
   visited:      false
+) !default;
+
+$right-plugins: (
+  /*
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
+  'plugin-spacing-uswds-large'
+  'plugin-spacing-uswds-xlarge'
+  'plugin-spacing-uswds-all'
+  'plugin-spacing-uswds-small-negative'
+  'plugin-spacing-uswds-medium-negative'
+  'plugin-spacing-uswds-negative'
+  'plugin-spacing-units-percentage'
+  'plugin-spacing-units-px'
+  'plugin-spacing-units-px-negative'
+  */
+  'plugin-spacing-uswds-named-small',
+  'plugin-spacing-uswds-named-medium',
+  'plugin-spacing-uswds-named-small-negative',
+  'plugin-spacing-uswds-named-medium-negative'
+) !default;
+
+$right-manual-values: (
+  /*
+  */
+  0:        0,
+  auto:     'auto',
 ) !default;
 
 /*
@@ -1109,10 +1229,10 @@ $square-settings: (
   visited:      false
 ) !default;
 
-$square-preset-values: map-collect(
+$square-plugins: (
   /*
   */
-  $preset-spacing-tshirt
+  'plugin-spacing-uswds-named-all'
 ) !default;
 
 $square-manual-values: (
@@ -1135,7 +1255,7 @@ $text-align-settings: (
   visited:      false
 ) !default;
 
-$text-align-preset-values: map-collect(
+$text-align-plugins: (
   /*
   */
 ) !default;
@@ -1163,7 +1283,7 @@ $text-decoration-settings: (
   visited:      false
 ) !default;
 
-$text-decoration-preset-values: map-collect(
+$text-decoration-plugins: (
   /*
   */
 ) !default;
@@ -1190,12 +1310,12 @@ $text-decoration-color-settings: (
   visited:      false
 ) !default;
 
-$text-decoration-color-preset-values: map-collect(
+$text-decoration-color-plugins: (
   /*
-  $preset-palette-grayscale
+  'plugin-color-palette-grayscale'
   */
-  $preset-palette-project-settings,
-  $preset-palette-reserved
+  'plugin-color-palette-theme',
+  'plugin-color-palette-required'
 ) !default;
 
 $text-decoration-color-manual-values: (
@@ -1216,7 +1336,7 @@ $text-transform-settings: (
   visited:      false
 ) !default;
 
-$text-transform-preset-values: map-collect(
+$text-transform-plugins: (
   /*
   */
 ) !default;
@@ -1228,6 +1348,47 @@ $text-transform-manual-values: (
   lowercase:      'lowercase',
   uppercase:      'uppercase',
   none:           'none'
+) !default;
+
+/*
+========================================
+.top
+----------------------------------------
+*/
+
+$top-settings: (
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$top-plugins: (
+  /*
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
+  'plugin-spacing-uswds-large'
+  'plugin-spacing-uswds-xlarge'
+  'plugin-spacing-uswds-all'
+  'plugin-spacing-uswds-small-negative'
+  'plugin-spacing-uswds-medium-negative'
+  'plugin-spacing-uswds-negative'
+  'plugin-spacing-units-percentage'
+  'plugin-spacing-units-px'
+  'plugin-spacing-units-px-negative'
+  */
+  'plugin-spacing-uswds-named-small',
+  'plugin-spacing-uswds-named-medium',
+  'plugin-spacing-uswds-named-small-negative',
+  'plugin-spacing-uswds-named-medium-negative'
+) !default;
+
+$top-manual-values: (
+  /*
+  */
+  0:        0,
+  auto:     'auto',
 ) !default;
 
 /*
@@ -1244,7 +1405,7 @@ $vertical-align-settings: (
   visited:      false
 ) !default;
 
-$vertical-align-preset-values: map-collect(
+$vertical-align-plugins: (
   /*
   */
 ) !default;
@@ -1264,7 +1425,7 @@ $vertical-align-manual-values: (
 
 /*
 ========================================
-.whitespace
+.white-space
 ----------------------------------------
 */
 
@@ -1276,7 +1437,7 @@ $whitespace-settings: (
   visited:      false
 ) !default;
 
-$whitespace-preset-values: map-collect(
+$whitespace-plugins: (
   /*
   */
 ) !default;
@@ -1305,15 +1466,16 @@ $width-settings: (
   visited:      false
 ) !default;
 
-$width-preset-values: map-collect(
+$width-plugins: (
   /*
-  $preset-units-grid,
-  $preset-units-px,
-  $preset-units-em,
-  $preset-units-ch
+  'plugin-spacing-uswds-all',
+  'plugin-spacing-units-px',
+  'plugin-spacing-units-em',
+  'plugin-spacing-units-ch'
+  'plugin-spacing-units-percentage'
   */
-  $preset-units-percentage,
-  $preset-units-breakpoints
+  'plugin-spacing-uswds-named-all',
+  'plugin-spacing-theme-breakpoints-rem'
 ) !default;
 
 $width-manual-values: (
@@ -1337,20 +1499,14 @@ $z-index-settings: (
   visited:      false
 ) !default;
 
-$z-index-preset-values: map-collect(
+$z-index-plugins: (
   /*
   */
+  'plugin-misc-z-index'
 ) !default;
 
 $z-index-manual-values: (
   /*
-  0:            '0',
-  100:          '100',
-  200:          '200',
-  300:          '300',
-  400:          '400',
-  500:          '500',
   */
-  top:          '9999',
-  bottom:       '-9999'
+  auto:         'auto',
 ) !default;

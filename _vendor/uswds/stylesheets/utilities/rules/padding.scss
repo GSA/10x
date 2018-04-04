@@ -30,7 +30,7 @@ $padding: (
       noModifier: '',
     ),
     values: map-collect(
-      $padding-preset-values,
+      get-plugins($padding-plugins),
       $padding-manual-values
     ),
     settings: $padding-settings,

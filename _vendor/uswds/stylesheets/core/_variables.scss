@@ -22,6 +22,50 @@ project/_uswds-project-settings
 
 /*
 ----------------------------------------
+Breakpoints
+----------------------------------------
+*/
+
+$project-breakpoints-em: (
+  'xs':   px-to-base-em(map-get($theme-breakpoints, xs)),
+  'sm':   px-to-base-em(map-get($theme-breakpoints, sm)),
+  'md':   px-to-base-em(map-get($theme-breakpoints, md)),
+  'lg':   px-to-base-em(map-get($theme-breakpoints, lg)),
+  'xl':   px-to-base-em(map-get($theme-breakpoints, xl)),
+);
+
+$project-breakpoints-rem: (
+  'xs':   px(map-get($theme-breakpoints, xs)),
+  'sm':   px(map-get($theme-breakpoints, sm)),
+  'md':   px(map-get($theme-breakpoints, md)),
+  'lg':   px(map-get($theme-breakpoints, lg)),
+  'xl':   px(map-get($theme-breakpoints, xl)),
+);
+
+/*
+----------------------------------------
+Spacing
+----------------------------------------
+All spacing values that can be called
+by spacing()
+----------------------------------------
+*/
+
+$project-special-values:(
+  '0':      0,
+  'auto':   auto,
+);
+
+$project-spacing-all: map-collect(
+  $uswds-spacing,
+  $project-breakpoints-rem,
+  $project-special-values
+);
+
+/*
+----------------------------------------
+Font stack
+----------------------------------------
 Compute the project font stack based on
 the project fonts and the font
 definition values set in
@@ -29,26 +73,122 @@ core/_font-definitions
 ----------------------------------------
 */
 
-$font-stack-sans:   false;
-$font-stack-serif:  false;
-$font-stack-mono:   false;
-$font-stack-cond:   false;
+$font-stack-sans:     false;
+$font-stack-serif:    false;
+$font-stack-mono:     false;
+$font-stack-cond:     false;
 
-@if $i-font-sans {
-  $font-stack-sans: map-get($i-font-sans, name), map-get($i-font-sans, stack);
+$font-stack-heading:  false;
+$font-stack-body:     false;
+$font-stack-code:     false;
+$font-stack-alt:      false;
+
+@if $theme-font-sans {
+  $font-stack-sans: map-deep-get(
+    $all-font-definitions,
+    $theme-font-sans,
+    'name'
+    ), map-deep-get(
+    $all-font-definitions,
+    $theme-font-sans,
+    'stack'
+  );
 }
 
-@if $i-font-serif {
-  $font-stack-serif: map-get($i-font-serif, name), map-get($i-font-serif, stack);
+@if $theme-font-serif {
+  $font-stack-serif: map-deep-get(
+    $all-font-definitions,
+    $theme-font-serif,
+    'name'
+    ), map-deep-get(
+    $all-font-definitions,
+    $theme-font-serif,
+    'stack'
+  );
 }
 
-@if $i-font-mono {
-  $font-stack-mono: map-get($i-font-mono, name), map-get($i-font-mono, stack);
+@if $theme-font-mono {
+  $font-stack-mono: map-deep-get(
+    $all-font-definitions,
+    $theme-font-mono,
+    'name'
+    ), map-deep-get(
+    $all-font-definitions,
+    $theme-font-mono,
+    'stack'
+  );
 }
 
-@if $i-font-cond {
-  $font-stack-cond: map-get($i-font-cond, name), map-get($i-font-cond, stack);
+@if $theme-font-cond {
+  $font-stack-cond: map-deep-get(
+    $all-font-definitions,
+    $theme-font-cond,
+    'name'
+    ), map-deep-get(
+    $all-font-definitions,
+    $theme-font-cond,
+    'stack'
+  );
 }
+
+@if $theme-font-heading {
+  $font-stack-heading: map-deep-get(
+    $all-font-definitions,
+    $theme-font-heading,
+    'name'
+    ), map-deep-get(
+    $all-font-definitions,
+    $theme-font-heading,
+    'stack'
+  );
+}
+
+@if $theme-font-body {
+  $font-stack-body: map-deep-get(
+    $all-font-definitions,
+    $theme-font-body,
+    'name'
+    ), map-deep-get(
+    $all-font-definitions,
+    $theme-font-body,
+    'stack'
+  );
+}
+
+@if $theme-font-code {
+  $font-stack-code: map-deep-get(
+    $all-font-definitions,
+    $theme-font-code,
+    'name'
+    ), map-deep-get(
+    $all-font-definitions,
+    $theme-font-code,
+    'stack'
+  );
+}
+
+@if $theme-font-alt {
+  $font-stack-alt: map-deep-get(
+    $all-font-definitions,
+    $theme-font-alt,
+    'name'
+    ), map-deep-get(
+    $all-font-definitions,
+    $theme-font-alt,
+    'stack'
+  );
+}
+
+$project-font-stacks:(
+  'mono':     $font-stack-mono,
+  'sans':     $font-stack-sans,
+  'serif':    $font-stack-serif,
+  'cond':     $font-stack-cond,
+  'heading':  $font-stack-heading,
+  'body':     $font-stack-body,
+  'code':     $font-stack-code,
+  'alt':      $font-stack-alt,
+);
 
 // for backward compatibility
 // TODO: deprecate
@@ -63,41 +203,235 @@ Set basic font rules for the font
 utilities to reference.
 ----------------------------------------
 TODO: Do these need to integrate the
-namespace var set in utlities-settings?
+namespace var set in utilities-settings?
 ----------------------------------------
 */
 
-@if $i-font-mono {
+@if $theme-font-mono {
   *[class*='font-mono'], .font-family-mono { font-family: $font-stack-mono; }
 }
 
-@if $i-font-sans {
+@if $theme-font-sans {
   *[class*='font-sans'], .font-family-sans { font-family: $font-stack-sans; }
 }
 
-@if $i-font-serif {
+@if $theme-font-serif {
   *[class*='font-serif'], .font-family-serif { font-family: $font-stack-serif; }
 }
 
-@if $i-font-cond {
+@if $theme-font-cond {
   *[class*='font-cond'], .font-family-cond { font-family: $font-stack-cond; }
 }
 
+@if $theme-font-heading {
+  *[class*='font-heading'], .font-family-heading { font-family: $font-stack-heading; }
+}
+
+@if $theme-font-body {
+  *[class*='font-body'], .font-family-body { font-family: $font-stack-body; }
+}
+
+@if $theme-font-code {
+  *[class*='font-code'], .font-family-code { font-family: $font-stack-code; }
+}
+
+@if $theme-font-alt {
+  *[class*='font-alt'], .font-family-alt { font-family: $font-stack-alt; }
+}
+
+$project-font-weights: (
+  'thin':       $theme-font-weight-thin,
+  'light':      $theme-font-weight-light,
+  'normal':     $theme-font-weight-normal,
+  'medium':     $theme-font-weight-medium,
+  'semibold':   $theme-font-weight-semibold,
+  'bold':       $theme-font-weight-bold,
+  'black':      $theme-font-weight-black,
+);
+
+$project-colors: (
+  neutral: (
+    lighter:  system-color($theme-color-neutral-lighter),
+    light:    system-color($theme-color-neutral-light),
+    base:     system-color($theme-color-neutral-base),
+    dark:     system-color($theme-color-neutral-dark),
+    darker:   system-color($theme-color-neutral-darker),
+  ),
+  primary: (
+    lighter: system-color($theme-color-primary-lighter),
+    light:   system-color($theme-color-primary-light),
+    base:    system-color($theme-color-primary-base),
+    vivid:   system-color($theme-color-primary-vivid),
+    dark:    system-color($theme-color-primary-dark),
+    darker:  system-color($theme-color-primary-darker),
+  ),
+  secondary: (
+    light:   system-color($theme-color-secondary-light),
+    base:    system-color($theme-color-secondary-base),
+    vivid:   system-color($theme-color-secondary-vivid),
+    dark:    system-color($theme-color-secondary-dark),
+  ),
+  accent-warm: (
+    light:   system-color($theme-color-accent-warm-lighter),
+    base:    system-color($theme-color-accent-warm-base),
+  ),
+  accent-cool: (
+    light:   system-color($theme-color-accent-cool-lighter),
+    base:    system-color($theme-color-accent-cool-base),
+  ),
+  inverse: (
+    base:   system-color($theme-color-inverse-base),
+    dark:   system-color($theme-color-inverse-dark),
+  )
+);
+
+$project-state-colors: (
+  error: (
+    lighter: system-color($theme-color-error-lighter),
+    light:   system-color($theme-color-error-light),
+    base:    system-color($theme-color-error-base),
+    dark:    system-color($theme-color-error-dark),
+    darker:  system-color($theme-color-error-darker),
+  ),
+  warn: (
+    lighter: system-color($theme-color-warn-lighter),
+    light:   system-color($theme-color-warn-light),
+    base:    system-color($theme-color-warn-base),
+    dark:    system-color($theme-color-warn-dark),
+    darker:  system-color($theme-color-warn-darker),
+  ),
+  success: (
+    lighter: system-color($theme-color-success-lighter),
+    light:   system-color($theme-color-success-light),
+    base:    system-color($theme-color-success-base),
+    dark:    system-color($theme-color-success-dark),
+    darker:  system-color($theme-color-success-darker),
+  ),
+  disabled: (
+    base:    system-color($theme-color-disabled-base),
+  ),
+);
+
+$project-reserved-colors:(
+  'black':        'black',
+  'white':        'white',
+  'transparent':  'transparent',
+  'highlight':    system-color(gold, 20, vivid),
+);
+
+$all-colors: map-collect(
+  $uswds-colors,
+  $project-colors,
+  $project-state-colors
+);
+
 /*
 ----------------------------------------
-Collect the project font weights in a
-list for referencing in utilities.
-----------------------------------------
-TODO: Still needed?
+Build the project type scale map
 ----------------------------------------
 */
 
-$font-weights: (
-  $s-fw-xlight,
-  $s-fw-light,
-  $s-fw-normal,
-  $s-fw-bold,
-  $s-fw-xbold
+$project-type-scale: (
+  'micro': system-type-scale($theme-type-scale-micro),
+  'smallest': system-type-scale($theme-type-scale-smallest),
+  'smaller': system-type-scale($theme-type-scale-smaller),
+  'small': system-type-scale($theme-type-scale-small),
+  'base': system-type-scale($theme-type-scale-base),
+  'large': system-type-scale($theme-type-scale-large),
+  'larger': system-type-scale($theme-type-scale-larger),
+  'largest': system-type-scale($theme-type-scale-largest),
+  'mega': system-type-scale($theme-type-scale-mega),
+);
+
+$all-type-scale: map-collect(
+  $uswds-type-scale,
+  $project-type-scale
+);
+
+$project-cap-heights:(
+  'base':     $uswds-base-cap-height,
+  'mono':     cap-height($theme-font-mono),
+  'sans':     cap-height($theme-font-sans),
+  'serif':    cap-height($theme-font-serif),
+  'heading':  cap-height($theme-font-heading),
+  'body':     cap-height($theme-font-body),
+  'code':     cap-height($theme-font-code),
+  'alt':      cap-height($theme-font-alt),
+);
+
+/*
+----------------------------------------
+Border-radius
+----------------------------------------
+*/
+
+$project-border-radius: (
+  '0':          0,
+  'small':      spacing($theme-border-radius-small),
+  'base':       spacing($theme-border-radius-base),
+  'large':      spacing($theme-border-radius-large),
+  'pill':       9999em,
+);
+
+$all-border-radius: map-collect(
+  $project-border-radius,
+  $uswds-spacing-small,
+  $uswds-spacing-medium,
+  $uswds-spacing-named
+);
+
+/*
+----------------------------------------
+Color palettes
+----------------------------------------
+*/
+
+$color-palette-theme: (
+  'neutral-lighter':    system-color($theme-color-neutral-lighter),
+  'neutral-light':      system-color($theme-color-neutral-light),
+  'neutral-base':       system-color($theme-color-neutral-base),
+  'neutral-dark':       system-color($theme-color-neutral-dark),
+  'neutral-darker':     system-color($theme-color-neutral-darker),
+  'primary-lighter':    system-color($theme-color-primary-lighter),
+  'primary-light':      system-color($theme-color-primary-light),
+  'primary-base':       system-color($theme-color-primary-base),
+  'primary-vivid':      system-color($theme-color-primary-vivid),
+  'primary-dark':       system-color($theme-color-primary-dark),
+  'primary-darker':     system-color($theme-color-primary-darker),
+  'secondary-light':    system-color($theme-color-secondary-light),
+  'secondary-base':     system-color($theme-color-secondary-base),
+  'secondary-vivid':    system-color($theme-color-secondary-vivid),
+  'secondary-dark':     system-color($theme-color-secondary-dark),
+  'accent-warm-light':  system-color($theme-color-accent-warm-lighter),
+  'accent-warm-base':   system-color($theme-color-accent-warm-base),
+  'accent-cool-light':  system-color($theme-color-accent-cool-lighter),
+  'accent-cool-base':   system-color($theme-color-accent-cool-base),
+  'inverse-base':       system-color($theme-color-inverse-base),
+  'inverse-dark':       system-color($theme-color-inverse-dark),
+);
+
+$color-palette-state: (
+  'error-lighter':      system-color($theme-color-error-lighter),
+  'error-light':        system-color($theme-color-error-light),
+  'error-base':         system-color($theme-color-error-base),
+  'error-dark':         system-color($theme-color-error-dark),
+  'error-darker':       system-color($theme-color-error-darker),
+  'warn-lighter':       system-color($theme-color-warn-lighter),
+  'warn-light':         system-color($theme-color-warn-light),
+  'warn-base':          system-color($theme-color-warn-base),
+  'warn-dark':          system-color($theme-color-warn-dark),
+  'warn-darker':        system-color($theme-color-warn-darker),
+  'success-lighter':    system-color($theme-color-success-lighter),
+  'success-light':      system-color($theme-color-success-light),
+  'success-base':       system-color($theme-color-success-base),
+  'success-dark':       system-color($theme-color-success-dark),
+  'success-darker':     system-color($theme-color-success-darker),
+  'disabled':           system-color($theme-color-disabled-base),
+);
+
+$color-palette-grayscale: map-collect(
+  $uswds-black,
+  $uswds-white
 );
 
 /*
@@ -291,7 +625,7 @@ of the values in settings
 ----------------------------------------
 */
 
-$font-path:   '../fonts' !default;
+$theme-font-path:   '../fonts' !default;
 $image-path:  '../img' !default;
 
 /*

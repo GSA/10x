@@ -3,14 +3,14 @@
 
   {% include head.html %}
 
-  <body class="margin-0 font-sans-f6 lg:font-sans-f8 line-height-body-tight min-height-100ct">
+  <body class="margin-0 font-sans-f6 lg:font-sans-f8 line-height-base min-height-100ct">
     {% include banner.html %}
 
-    <main class="usa-body-content padding-g2 padding-bottom-g4 md:padding-g4 md:padding-bottom-g6 max-width-reading-sm margin-x-auto" aria-label="Content">
+    <main class="usa-body-content padding-base padding-bottom-double md:padding-double md:padding-bottom-triple max-width-measure-small margin-x-auto" aria-label="Content">
       {{ content }}
     </main>
 
-    <script src='{{ "/assets/js/uswds.min.js" | relative_url }}'></script>
+    <script src="https://10x.gsa.gov/assets/js/uswds.min.js"></script>
   </body>
 
 </html>

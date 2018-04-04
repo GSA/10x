@@ -46,3 +46,13 @@ exclude:
   - gulpfile.js
   - package.json
   - README.md
+  - circle.yml
+
+# This will be set to the following by Federalist:
+# Live site: `production`
+# Demo site: `demo`
+# Preview site: `preview`
+environment: development
+
+# This will be set to false by Federalist for non-live site builds.
+google_analytics: true
