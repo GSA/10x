@@ -20,10 +20,10 @@
   <!-- inline css technique https://jakearchibald.com/2016/link-in-body/ -->
   {% if site.optimize_css %}
     <link rel="preload"
-      href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}"
+      href="{{ "/assets/css/10x-fonts.min.css" | relative_url }}"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}"></noscript>
+    <noscript><link rel="stylesheet" href="{{ "/assets/css/10x-fonts.min.css" | relative_url }}"></noscript>
     <script>
       /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
       // https://github.com/filamentgroup/loadCSS
@@ -102,19 +102,22 @@
 
     </script>
     <style>
-    {% include uswds-app-opt.min.css %}
+    {% include 10x.app.min.css %}
     </style>
-    <link rel="preload" href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}" as="style">
+    <link rel="preload" href="{{ "/assets/css/10x-fonts.min.css" | relative_url }}" as="style">
   {% else %}
-    <link rel="stylesheet" href="{{ "/assets/css/uswds-fonts.min.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/uswds-custom.min.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/uswds-utilities.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/10x-fonts.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/10x.min.css" | relative_url }}">
   {% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  {% comment %}
+  TODO: Add a real RSS feed if necessary
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  {% endcomment %}
 
-  {% if site.google_analytics %}
-    {% include google-analytics.html %}
+  <link rel="preload" href="https://10x.gsa.gov/assets/js/uswds.min.js" as="script">
+
+  {% if site.environment == 'production' or site.environment == 'development' %}
     {% include dap-script.html %}
   {% endif %}
 </head>

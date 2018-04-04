@@ -1,6 +1,6 @@
 /*
 ========================================
-border-width
+border
 ----------------------------------------
 Also applies `solid`
 Needs to come before other border utils
@@ -33,7 +33,7 @@ $border: (
       noModifier: '',
     ),
     values: map-collect(
-      $border-preset-values,
+      get-plugins($border-plugins),
       $border-manual-values
     ),
     valueAppend: ' solid',

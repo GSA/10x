@@ -46,6 +46,7 @@ exclude:
   - gulpfile.js
   - package.json
   - README.md
+  - circle.yml
 
 # This will be set to the following by Federalist:
 # Live site: `production`
