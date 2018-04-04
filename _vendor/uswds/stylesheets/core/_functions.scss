@@ -438,7 +438,7 @@ functions and mixins.
     @warn "`#{$value}` is not an extended USWDS `#{$property}` unit. This is OK, but only components built with allowed values can be accepted back into the system. Accepted values: #{map-keys($our-values)}";
     @return map-get($our-values-extended, $quoted-value);
   }
-  @elseif not unitless($value) {
+  @elseif type-of($value) == 'number' and not unitless($value) {
     @warn "`#{$value}` is not a standard USWDS `#{$property}` unit. This is OK, but only components built with allowed values can be accepted back into the system. Accepted values: #{map-keys($our-values)}";
     @return $value;
   }
