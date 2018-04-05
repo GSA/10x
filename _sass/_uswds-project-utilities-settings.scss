@@ -58,7 +58,7 @@ $output-utilities: (
   padding:          true,
   position:         true,
   right:            true,
-  square:           false,
+  square:           true,
   text-align:       true,
   text-decoration:  true,
   text-decoration-color:  true,
@@ -107,7 +107,7 @@ $align-items-manual-values: (
 $background-color-settings: (
   responsive:   false,
   active:       false,
-  focus:        false,
+  focus:        true,
   hover:        false,
   visited:      false
 );
@@ -715,7 +715,7 @@ $font-weight-manual-values: (
 $height-settings: (
   responsive:   false,
   active:       false,
-  focus:        false,
+  focus:        true,
   hover:        false,
   visited:      false
 );
@@ -1511,7 +1511,7 @@ $whitespace-manual-values: (
 $width-settings: (
   responsive:   false,
   active:       false,
-  focus:        false,
+  focus:        true,
   hover:        false,
   visited:      false
 );
