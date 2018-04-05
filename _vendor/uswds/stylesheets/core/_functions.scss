@@ -480,10 +480,18 @@ colors: project and system
   } @elseif nth($props, 1) == false {
     @return false;
   } @elseif length($props) == 1 {
-    @return map-get(
+    @if map-has-key(
       $project-reserved-colors,
-      nth($props, 1)
-    );
+      quote(nth($props, 1))
+    ){
+      @return map-get(
+        $project-reserved-colors,
+        quote(nth($props, 1))
+      );
+    }
+    @else {
+      @error "#{$props} is not a reserved value. Valid values: #{map-keys($project-reserved-colors)}";
+    }
   } @elseif length($props) == 2 {
     @return map-deep-get(
       $all-colors,
@@ -491,6 +499,14 @@ colors: project and system
       nth($props, 2)
     );
   } @else {
+    @if map-deep-get(
+      $all-colors,
+      nth($props, 1),
+      nth($props, 3),
+      nth($props, 2)
+    ) == false {
+      @error "`#{nth($props, 1)}` does not have a vivid variant for `#{nth($props, 2)}`.";
+    }
     @return map-deep-get(
       $all-colors,
       nth($props, 1),

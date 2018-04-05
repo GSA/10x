@@ -157,3 +157,64 @@ i.e.
 
   bottom: spacing(half-plus);
 }
+
+.usa-menu-btn {
+  @include u-background-color(indigo-warm, 60, vivid);
+  @include u-border-color(indigo-warm, 60, vivid);
+  @include u-border-radius(small);
+  @include u-border-width(0);
+  @include u-color(white);
+  @include u-margin-top(quarter);
+  @include u-min-height(double-plus);
+  @include u-min-width(quad-plus);
+  @include u-padding-x(base);
+  @include u-padding-y(half);
+}
+
+.usa-nav {
+  @include u-display(none);
+  &.is-visible {
+    @include u-background-color(black-cool, 90);
+    @include u-color(white);
+    @include u-display(block);
+    @include u-height(viewport);
+    @include u-left(0);
+    @include u-padding(base);
+    @include u-position(fixed);
+    @include u-right(0);
+    @include u-text-align(right);
+    @include u-top(0);
+  }
+}
+
+.usa-nav-primary {
+  @include u-font(sans, larger);
+  @include u-font-weight(light);
+  @include u-list-reset;
+  @include u-text-align(right);
+  @include at-media(sm){
+    @include u-font(sans, largest);    
+  }
+}
+
+.usa-nav-close {
+  @include u-background-color(transparent);
+  @include u-border(0);
+  @include u-display(inline-block);
+  @include u-padding(0);
+  &:focus {
+    outline-color: transparent;
+  }
+}
+.usa-nav-link {
+  @include u-color(white);
+  @include u-line-height(smaller);
+  @include u-margin-top(base);
+  @include u-text-decoration(none);
+  &:hover {
+    @include u-color(indigo-warm, 50, vivid);
+  }
+  &:active {
+    @include u-color(gold, 30, vivid);
+  }
+}

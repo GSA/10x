@@ -9,25 +9,33 @@
 @import 'unstyled-list';
 
 // utility mixins
+@import 'u-background-color';
 @import 'u-border';
 @import 'u-border-color';
 @import 'u-border-width';
 @import 'u-border-radius';
+@import 'u-bottom';
 @import 'u-circle';
 @import 'u-color';
 @import 'u-display';
 @import 'u-font';
 @import 'u-font-weight';
+@import 'u-height';
+@import 'u-left';
 @import 'u-line-height';
 @import 'u-list-reset';
 @import 'u-margin';
+@import 'u-min-height';
+@import 'u-min-width';
 @import 'u-outline';
 @import 'u-outline-color';
 @import 'u-overflow';
 @import 'u-padding';
 @import 'u-position';
+@import 'u-right';
 @import 'u-square';
 @import 'u-text-align';
 @import 'u-text-decoration';
 @import 'u-text-decoration-color';
+@import 'u-top';
 @import 'u-vertical-align';

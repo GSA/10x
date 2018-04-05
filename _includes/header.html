@@ -1,4 +1,34 @@
 <header class="padding-x-base max-width-md margin-x-auto" role="banner">
-  <div class="site-title margin-y-0 padding-y-half-plus font-sans-f14 font-weight-900 line-height-smallest"><a href="{{ "/" | relative_url }}" class="color-white text-decoration-none padding-bottom-quarter border-bottom-half border-color-red-warm-40v hover:border-color-gold-30v">{{ site.title | escape }}</a></div>
+  <div class="display-flex flex-row align-items-center">
+    <div class="site-title margin-y-0 padding-y-half-plus font-sans-f14 font-weight-900 line-height-smallest flex-fill"><a href="{{ " / " | relative_url }}" class="color-white text-decoration-none padding-bottom-quarter border-bottom-half border-color-red-warm-40v hover:border-color-gold-30v">{{ site.title | escape }}</a>
+    </div>
+    <div class="flex-fit">
+      <button class="usa-menu-btn">Menu</button>
+      <nav role="navigation" class="usa-nav">
+        <button class="usa-nav-close">
+          <img src="/assets/img/close.svg" alt="close">
+        </button>
+        <h2 class="font-sans-f13 font-weight-200 color-indigo-warm-50v">Menu</h2>
+        <ul class="usa-nav-primary usa-accordion">
+          <li>
+            <a class="usa-nav-link" href="javascript:void(0)">
+              <span>About 10x</span>
+            </a>
+          </li>
+          <li>
+            <a class="usa-nav-link" href="javascript:void(0)">
+              <span>Pitch an idea</span>
+            </a>
+          </li>
+          <li>
+            <a class="usa-nav-link" href="javascript:void(0)">
+              <span>Funded projects</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
   <p class="line-height-small font-sans-f2 color-black-cool-40 margin-top-half-plus margin-bottom-0 padding-bottom-base font-weight-400">{{ site.description | escape }}</p>
 </header>
+<div class="usa-overlay"></div>
