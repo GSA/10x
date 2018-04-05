@@ -363,6 +363,15 @@ $uswds-properties: (
     allowed: $allowed-colors,
     extended: $uswds-colors,
   ),
+  overflow: (
+    allowed: (
+      'hidden':  hidden,
+      'scroll':  scroll,
+      'auto':    auto,
+      'visible': visible,
+    ),
+    extended: (),
+  ),
   padding: (
     allowed: map-collect(
       $uswds-spacing-named,

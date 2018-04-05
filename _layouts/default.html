@@ -5,12 +5,14 @@
 
   <body class="margin-0 font-sans-f6 lg:font-sans-f8 line-height-base min-height-100ct">
 
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
     <div class="background-color-black-cool-90 md:padding-top-half">
       {% include banner.html %}
       {% include header.html %}
     </div>
 
-    <main class="page-content" aria-label="Content">
+    <main id="main-content" class="page-content" aria-label="Content">
       {{ content }}
     </main>
 
