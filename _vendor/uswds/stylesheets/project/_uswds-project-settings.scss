@@ -2,6 +2,10 @@
 ========================================
 PROJECT THEME SETTINGS
 ----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
 */
 
 /*
@@ -45,7 +49,7 @@ Relative font and image file paths
 ----------------------------------------
 */
 
-$font-path:   '../fonts';
+$theme-font-path:   '../fonts';
 $theme-image-path:  '../img';
 
 /*
@@ -73,7 +77,7 @@ $theme-font-definitions: (
   /*
   font-new: (
     name: "Font Display Name",
-    dir: "filder-name", // relative to settings.$font-path
+    dir: "folder-name", // relative to settings.$theme-font-path
     stack: $font-stack-system,
     system-font: false,
     cap-height: "364px", // height of a 500px `N` in Sketch
