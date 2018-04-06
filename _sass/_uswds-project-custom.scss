@@ -14,6 +14,10 @@ i.e.
   @include u-outline-color(highlight);
 }
 
+.is-inverse {
+  @include o-font-smoothing;
+}
+
 .page-content {
   h3 {
     @include u-font(sans, f10);
@@ -84,6 +88,11 @@ i.e.
     @include u-line-height(base);
     @include u-margin-bottom(0);
     @include u-margin-top(1em);
+    @include u-max-width(measure-base);
+    @include at-media(md){
+      @include u-font(body, f8);
+      @include u-line-height(large);
+    }
   }
   ul {
     @include o-list-reset;
@@ -118,8 +127,7 @@ i.e.
   @include u-margin-top(base);
   @include u-padding-x(half);
   @include u-padding-y(half-plus);
-
-  border-radius: spacing(quarter);
+  @include u-border-radius(quarter);
 
   @include at-media(md){
     @include u-padding-x(base);
@@ -231,14 +239,11 @@ i.e.
   }
   @include at-media(md){
     @include u-align-items(center)
-    @include u-border-bottom(half);
-    @include u-border-color(indigo-warm, 60, vivid);
     @include u-display(flex);
     @include u-flex-direction(row);
     @include u-font(sans, base);
     @include u-justify-content(flex-end);
     @include u-margin-y(0);
-    @include u-padding-bottom(half);
   }
 }
 
@@ -261,5 +266,14 @@ i.e.
   }
   &:active {
     @include u-color(gold, 30, vivid);
+  }
+  @include at-media(md){
+    @include u-border-bottom(pixel);
+    @include u-border-color(transparent);
+    @include u-padding-bottom(quarter);
+    &:hover {
+      @include u-border-color(indigo-warm, 50, vivid);
+      @include u-color(white);
+    }
   }
 }

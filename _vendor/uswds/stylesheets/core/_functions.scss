@@ -429,21 +429,21 @@ functions and mixins.
 
 @function get-uswds-value($property, $value){
   $quoted-value: quote($value);
-  $our-values: map-deep-get($uswds-properties, $property, allowed);
-  $our-values-extended: map-deep-get($uswds-properties, $property, extended);
-  @if map-has-key($our-values, $quoted-value) {
-    @return map-get($our-values, $quoted-value);
+  $our-standard-values: map-deep-get($uswds-properties, $property, allowed);
+  $our-extended-values: map-deep-get($uswds-properties, $property, extended);
+  @if map-has-key($our-standard-values, $quoted-value) {
+    @return map-get($our-standard-values, $quoted-value);
   }
-  @if map-has-key($our-values-extended, $quoted-value) {
-    @warn "`#{$value}` is not an extended USWDS `#{$property}` unit. This is OK, but only components built with allowed values can be accepted back into the system. Accepted values: #{map-keys($our-values)}";
-    @return map-get($our-values-extended, $quoted-value);
+  @if map-has-key($our-extended-values, $quoted-value) {
+    @warn "`#{$value}` is an extended USWDS `#{$property}` unit. This is OK, but only components built with standard values can be accepted back into the system. Standard `#{$property}` values: #{map-keys($our-standard-values)}";
+    @return map-get($our-extended-values, $quoted-value);
   }
   @elseif type-of($value) == 'number' and not unitless($value) {
-    @warn "`#{$value}` is not a standard USWDS `#{$property}` unit. This is OK, but only components built with allowed values can be accepted back into the system. Accepted values: #{map-keys($our-values)}";
+    @warn "`#{$value}` is not a USWDS `#{$property}` unit. This is OK, but only components built with standard values can be accepted back into the system. Standard `#{$property}` values: #{map-keys($our-standard-values)}";
     @return $value;
   }
   @else {
-    @error "`#{$value}` is not a valid `#{$property}` value. Accepted values: #{map-keys($our-values)}";
+    @warn "`#{$value}` is not a valid `#{$property}` value. You should correct this. Standard `#{$property}` values: #{map-keys($our-standard-values)}";
   }
 };
 
