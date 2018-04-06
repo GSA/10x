@@ -86,7 +86,7 @@ i.e.
     @include u-margin-top(1em);
   }
   ul {
-    @include u-list-reset;
+    @include o-list-reset;
   }
   li {
     @include u-border-top();
@@ -169,6 +169,36 @@ i.e.
   @include u-min-width(quad-plus);
   @include u-padding-x(base);
   @include u-padding-y(half);
+  @include at-media(md){
+    @include u-display(none);
+  }
+}
+
+.usa-nav-close {
+  @include u-background-color(transparent);
+  @include u-border(0);
+  @include u-display(inline-block);
+  @include u-padding(0);
+  &:focus {
+    outline-color: transparent;
+  }
+  @include at-media(md){
+    @include u-display(none);
+  }
+}
+
+.usa-nav-menu-title {
+  @include u-color(indigo-warm, 50, vivid)
+  @include u-font(sans,
+  larger);
+  @include u-font-weight(light);
+  @include at-media(sm){
+    @include u-font(sans,
+    largest);
+  }
+  @include at-media(md){
+    @include u-display(none);
+  }
 }
 
 .usa-nav {
@@ -185,31 +215,46 @@ i.e.
     @include u-text-align(right);
     @include u-top(0);
   }
+  @include at-media(md){
+    @include u-display(block);
+  }
 }
 
 .usa-nav-primary {
+  @include o-list-reset;
   @include u-font(sans, larger);
   @include u-font-weight(light);
-  @include u-list-reset;
+  @include u-line-height(smaller);
   @include u-text-align(right);
   @include at-media(sm){
-    @include u-font(sans, largest);    
+    @include u-font(sans, largest);
+  }
+  @include at-media(md){
+    @include u-align-items(center)
+    @include u-border-bottom(half);
+    @include u-border-color(indigo-warm, 60, vivid);
+    @include u-display(flex);
+    @include u-flex-direction(row);
+    @include u-font(sans, base);
+    @include u-justify-content(flex-end);
+    @include u-margin-y(0);
+    @include u-padding-bottom(half);
   }
 }
 
-.usa-nav-close {
-  @include u-background-color(transparent);
-  @include u-border(0);
-  @include u-display(inline-block);
-  @include u-padding(0);
-  &:focus {
-    outline-color: transparent;
+.usa-nav-primary-item {
+  @include u-margin-top(base);
+  @include at-media(md){
+    @include u-flex(fit);
+    @include u-white-space(nowrap);
+  }
+  & + .usa-nav-primary-item {
+    @include u-margin-left(base-plus);
   }
 }
+
 .usa-nav-link {
   @include u-color(white);
-  @include u-line-height(smaller);
-  @include u-margin-top(base);
   @include u-text-decoration(none);
   &:hover {
     @include u-color(indigo-warm, 50, vivid);

@@ -8,7 +8,11 @@
 @import 'typography';
 @import 'unstyled-list';
 
+// object mixins
+@import 'o-list-reset';
+
 // utility mixins
+@import 'u-align-items';
 @import 'u-background-color';
 @import 'u-border';
 @import 'u-border-color';
@@ -18,12 +22,14 @@
 @import 'u-circle';
 @import 'u-color';
 @import 'u-display';
+@import 'u-flex';
+@import 'u-flex-direction';
 @import 'u-font';
 @import 'u-font-weight';
 @import 'u-height';
+@import 'u-justify-content';
 @import 'u-left';
 @import 'u-line-height';
-@import 'u-list-reset';
 @import 'u-margin';
 @import 'u-min-height';
 @import 'u-min-width';
@@ -39,3 +45,4 @@
 @import 'u-text-decoration-color';
 @import 'u-top';
 @import 'u-vertical-align';
+@import 'u-white-space';

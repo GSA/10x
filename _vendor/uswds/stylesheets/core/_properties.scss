@@ -206,6 +206,13 @@ $uswds-properties: (
       $uswds-spacing-numeric
     ),
   ),
+  justify-content: (
+    allowed:(
+      'flex-start': flex-start,
+      'flex-end': flex-end,
+    ),
+    extended:(),
+  ),
   left: (
     allowed: map-collect(
       $uswds-spacing-named-small,
