@@ -92,7 +92,7 @@ gulp.task('build-app', ['build-sass'], function() {
   var plugins = [
     uncss({
       html: [`${BUILD_DEST}/**/*.html`],
-      ignore: [/\[aria-/],
+      ignore: [/\[aria-/, /is-visible/],
     }),
     cssnano()
   ];
