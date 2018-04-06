@@ -106,8 +106,8 @@ gulp.task('build-app', ['build-sass'], function() {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 gulp.task('watch', ['build-sass'], function (){
-  gulp.watch(`${PROJECT_SASS_SRC}/*.scss`, ['build-app'])
-  gulp.watch(`${USWDS_SRC}/stylesheets/*.scss`, ['build-app']);
+  gulp.watch(`${PROJECT_SASS_SRC}/*.scss`, ['build-sass'])
+  gulp.watch(`${USWDS_SRC}/stylesheets/*.scss`, ['build-sass']);
 });
 
 
