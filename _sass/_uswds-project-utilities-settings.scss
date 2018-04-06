@@ -8,7 +8,7 @@ $utilities-namespace-prefix:  '';
 $utilities-use-important:     true;
 
 $output-breakpoints: (
-  xs: false,
+  xs: true,
   sm: true,
   md: true,
   lg: true,

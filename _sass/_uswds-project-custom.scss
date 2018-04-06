@@ -172,12 +172,13 @@ i.e.
   @include u-border-radius(small);
   @include u-border-width(0);
   @include u-color(white);
+  @include u-font(sans, smallest);
   @include u-margin-top(quarter);
   @include u-min-height(double-plus);
   @include u-min-width(quad-plus);
   @include u-padding-x(base);
   @include u-padding-y(half);
-  @include at-media(md){
+  @include at-media(sm){
     @include u-display(none);
   }
 }
@@ -190,7 +191,7 @@ i.e.
   &:focus {
     outline-color: transparent;
   }
-  @include at-media(md){
+  @include at-media(sm){
     @include u-display(none);
   }
 }
@@ -200,11 +201,11 @@ i.e.
   @include u-font(sans,
   larger);
   @include u-font-weight(light);
-  @include at-media(sm){
+  @include at-media(xs){
     @include u-font(sans,
     largest);
   }
-  @include at-media(md){
+  @include at-media(sm){
     @include u-display(none);
   }
 }
@@ -223,7 +224,7 @@ i.e.
     @include u-text-align(right);
     @include u-top(0);
   }
-  @include at-media(md){
+  @include at-media(sm){
     @include u-display(block);
   }
 }
@@ -234,10 +235,10 @@ i.e.
   @include u-font-weight(light);
   @include u-line-height(smaller);
   @include u-text-align(right);
-  @include at-media(sm){
+  @include at-media(xs){
     @include u-font(sans, largest);
   }
-  @include at-media(md){
+  @include at-media(sm){
     @include u-align-items(center)
     @include u-display(flex);
     @include u-flex-direction(row);
@@ -249,7 +250,7 @@ i.e.
 
 .usa-nav-primary-item {
   @include u-margin-top(base);
-  @include at-media(md){
+  @include at-media(sm){
     @include u-flex(fit);
     @include u-white-space(nowrap);
   }
@@ -267,7 +268,7 @@ i.e.
   &:active {
     @include u-color(gold, 30, vivid);
   }
-  @include at-media(md){
+  @include at-media(sm){
     @include u-border-bottom(pixel);
     @include u-border-color(transparent);
     @include u-padding-bottom(quarter);
