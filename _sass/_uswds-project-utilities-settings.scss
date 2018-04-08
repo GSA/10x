@@ -9,7 +9,7 @@ $utilities-use-important:     true;
 
 $output-breakpoints: (
   'compact':         false,   // 240px
-  'mobile':          false,   // 320px
+  'mobile':          true,    // 320px
   'mobile-plus':     true,    // 480px
   'tablet':          true,    // 640px
   'tablet-plus':     true,    // 800px

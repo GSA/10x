@@ -41,15 +41,15 @@ $uswds-spacing:(
     'base-plus':    grid-units(3),   // 24px
   ),
   smaller-negative: (
-    'n-pixel':        -1px,
-    'n-eighth':       -2px,
+    'n-pixel':      -1px,
+    'n-eighth':     -2px,
   ),
   small-negative: (
-    'n-quarter':      grid-units(-.5),  // 4px
-    'n-half':         grid-units(-1),   // 8px
-    'n-half-plus':    grid-units(-1.5), // 12px
-    'n-base':         grid-units(-2),   // 16px
-    'n-base-plus':    grid-units(-3),   // 24px
+    'n-quarter':    grid-units(-.5),  // 4px
+    'n-half':       grid-units(-1),   // 8px
+    'n-half-plus':  grid-units(-1.5), // 12px
+    'n-base':       grid-units(-2),   // 16px
+    'n-base-plus':  grid-units(-3),   // 24px
   ),
   medium: (
     'double':       grid-units(4),   // 32px
@@ -62,12 +62,12 @@ $uswds-spacing:(
   large: (
     'compact':      grid-units(30),  // 240px
     'mobile':       grid-units(40),  // 320px
-    'mobile-plus':  grid-units(60),  // 480px
+    'mobile-plus':  grid-units(50),  // 400px
     'tablet':       grid-units(80),  // 640px
-    'tablet-plus':  grid-units(110), // 880px
+    'tablet-plus':  grid-units(100), // 800px
   ),
   larger: (
-    'desktop':      grid-units(130), // 1040px
+    'desktop':      grid-units(120), // 960px
     'desktop-plus': grid-units(150), // 1200px
     'wide':         grid-units(175), // 1400px
   ),
