@@ -17,28 +17,6 @@ $theme-root-font-size: 16px;
 
 /*
 ----------------------------------------
-Breakpoints
-----------------------------------------
-Use pixel units.
-These will be automatically converted to
-em values based on the value of
-$theme-root-font-size.
-
-Use `false` if your project will not
-use that breakpoint.
-----------------------------------------
-*/
-
-$theme-breakpoints:(
-  xs: 400px,
-  sm: 620px, // 600px
-  md: 840px, // 800px
-  lg: 1080px, // 1000px
-  xl: 1200px, // 1200px
- );
-
-/*
-----------------------------------------
 Paths
 ----------------------------------------
 Relative font and image file paths
