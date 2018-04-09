@@ -64,10 +64,10 @@ $uswds-spacing:(
     'mobile':       grid-units(40),  // 320px
     'mobile-plus':  grid-units(50),  // 400px
     'tablet':       grid-units(80),  // 640px
-    'tablet-plus':  grid-units(100), // 800px
+    'tablet-plus':  grid-units(108), // 864px
   ),
   larger: (
-    'desktop':      grid-units(120), // 960px
+    'desktop':      grid-units(128), // 1024px
     'desktop-plus': grid-units(150), // 1200px
     'wide':         grid-units(175), // 1400px
   ),

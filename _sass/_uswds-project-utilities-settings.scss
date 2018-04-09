@@ -54,7 +54,7 @@ $output-utilities: (
   min-height:       true,
   min-width:        true,
   opacity:          false,
-  order:            false,
+  order:            true,
   outline-width:    false,
   outline-color:    false,
   overflow:         true,
@@ -441,6 +441,7 @@ $color-plugins: (
   'plugin-color-black-cool-medium',
   'plugin-color-black-cool-dark',
   'plugin-color-indigo-warm-medium-vivid',
+  'plugin-color-red-warm-medium-vivid',
   'plugin-color-palette-grayscale'
 );
 
@@ -456,7 +457,7 @@ $color-manual-values: (
 */
 
 $display-settings: (
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
@@ -1061,7 +1062,7 @@ $opacity-manual-values: (
 */
 
 $order-settings: (
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,
