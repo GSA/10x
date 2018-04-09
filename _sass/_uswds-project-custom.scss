@@ -270,10 +270,10 @@ i.e.
   }
   @include at-media(tablet){
     @include u-border-bottom(pixel);
-    @include u-border-color(transparent);
+    @include u-border-color(indigo-warm, 50, vivid);
     @include u-padding-bottom(quarter);
     &:hover {
-      @include u-border-color(indigo-warm, 50, vivid);
+      @include u-border-color(red-warm, 40, vivid);
       @include u-color(white);
     }
   }
