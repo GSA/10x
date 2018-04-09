@@ -21,6 +21,18 @@ $theme-root-font-size: 16px;
 
 /*
 ----------------------------------------
+Border box sizing
+----------------------------------------
+When set to true, it sets the box-sizing
+property of all elements to
+`border-box`.
+----------------------------------------
+*/
+
+$border-box-sizing: true;
+
+/*
+----------------------------------------
 Paths
 ----------------------------------------
 Relative font and image file paths
