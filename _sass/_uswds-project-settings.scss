@@ -17,28 +17,6 @@ $theme-root-font-size: 16px;
 
 /*
 ----------------------------------------
-Breakpoints
-----------------------------------------
-Use pixel units.
-These will be automatically converted to
-em values based on the value of
-$theme-root-font-size.
-
-Use `false` if your project will not
-use that breakpoint.
-----------------------------------------
-*/
-
-$theme-breakpoints:(
-  xs: 400px,
-  sm: 600px, // 600px
-  md: 800px, // 800px
-  lg: 1000px, // 1000px
-  xl: 1200px, // 1200px
- );
-
-/*
-----------------------------------------
 Paths
 ----------------------------------------
 Relative font and image file paths
@@ -73,7 +51,7 @@ $theme-font-definitions: (
   /*
   font-new: (
     name: "Font Display Name",
-    dir: "filder-name", // relative to settings.$theme-font-path
+    dir: "folder-name", // relative to settings.$theme-font-path
     stack: $font-stack-system,
     system-font: false,
     cap-height: "364px", // height of a 500px `N` in Sketch
@@ -281,4 +259,4 @@ quad-plus       72px
 
 $theme-border-radius-small:       eighth;
 $theme-border-radius-base:        quarter;
-$theme-border-radius-large:       false;
+$theme-border-radius-large:       base;

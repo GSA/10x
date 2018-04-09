@@ -5,7 +5,7 @@ permalink: /home/
 ---
 
 <div class="row align-items-center padding-bottom-g2">
-  <p class="font-sans-f11 md:font-sans-f12 font-weight-300 line-height-heading-loose margin-top-g1">
+  <p class="font-sans-f11 tablet-plus:font-sans-f12 font-weight-300 line-height-heading-loose margin-top-g1">
     <strong class="font-weight-900"><a class="usa-lede-link" href="#what-is-10x">10x</a></strong><sup class="usa-lede-sup"><a class="usa-link-circle" href="#what-is-10x">1</a></sup> funds <a class="usa-lede-link" href="#the-process">groundbreaking ideas</a><sup class="usa-lede-sup"><a class="usa-link-circle" href="#the-process">2</a></sup> from <a class="usa-lede-link" href="#who-can-pitch">civil servants</a><sup class="usa-lede-sup"><a class="usa-link-circle" href="#who-can-pitch">3</a></sup> to transform how government builds <a class="usa-lede-link" href="#what-we-look-for">technology</a><sup class="usa-lede-sup"><a class="usa-link-circle" href="#what-we-look-for">4</a></sup> to <a class="usa-lede-link" href="#projects">serve the public</a><sup class="usa-lede-sup"><a class="usa-link-circle" href="#projects">5</a></sup>. Our next call for <a class="usa-lede-link" href="#projects">pitches</a><sup class="usa-lede-sup"><a class="usa-link-circle" href="#pitch-us">6</a></sup> opens on <a class="usa-lede-link" href="#notified">April 21, 2018</a><sup class="usa-lede-sup"><a class="usa-link-circle" href="#notified">7</a></sup>.</p>
 </div>
 

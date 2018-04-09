@@ -231,21 +231,16 @@ Converts a value in px to a value in rem
 
 /*
 ----------------------------------------
-px-to-base-em()
+grid-to-base-em()
 ----------------------------------------
 Converts a value in px to a value in em
 ----------------------------------------
 */
 
-@function px-to-base-em($pixels) {
-  @if $pixels {
-    $px-to-base-em: strip-unit($pixels) / strip-unit($theme-root-font-size) * 1em;
+@function grid-to-base-em($grid-in-rem) {
+  $grid-to-base-em: strip-unit($grid-in-rem) * 1em;
 
-    @return $px-to-base-em;
-  }
-  @else {
-    @return false;
-  }
+  @return $grid-to-base-em;
 }
 
 /*
@@ -429,21 +424,21 @@ functions and mixins.
 
 @function get-uswds-value($property, $value){
   $quoted-value: quote($value);
-  $our-values: map-deep-get($uswds-properties, $property, allowed);
-  $our-values-extended: map-deep-get($uswds-properties, $property, extended);
-  @if map-has-key($our-values, $quoted-value) {
-    @return map-get($our-values, $quoted-value);
+  $our-standard-values: map-deep-get($uswds-properties, $property, standard);
+  $our-extended-values: map-deep-get($uswds-properties, $property, extended);
+  @if map-has-key($our-standard-values, $quoted-value) {
+    @return map-get($our-standard-values, $quoted-value);
   }
-  @if map-has-key($our-values-extended, $quoted-value) {
-    @warn "`#{$value}` is not an extended USWDS `#{$property}` unit. This is OK, but only components built with allowed values can be accepted back into the system. Accepted values: #{map-keys($our-values)}";
-    @return map-get($our-values-extended, $quoted-value);
+  @if map-has-key($our-extended-values, $quoted-value) {
+    @warn "`#{$value}` is an extended USWDS `#{$property}` unit. This is OK, but only components built with standard values can be accepted back into the system. Standard `#{$property}` values: #{map-keys($our-standard-values)}";
+    @return map-get($our-extended-values, $quoted-value);
   }
   @elseif type-of($value) == 'number' and not unitless($value) {
-    @warn "`#{$value}` is not a standard USWDS `#{$property}` unit. This is OK, but only components built with allowed values can be accepted back into the system. Accepted values: #{map-keys($our-values)}";
+    @warn "`#{$value}` is not a USWDS `#{$property}` unit. This is OK, but only components built with standard values can be accepted back into the system. Standard `#{$property}` values: #{map-keys($our-standard-values)}";
     @return $value;
   }
   @else {
-    @error "`#{$value}` is not a valid `#{$property}` value. Accepted values: #{map-keys($our-values)}";
+    @warn "`#{$value}` is not a valid `#{$property}` value. You should correct this. Standard `#{$property}` values: #{map-keys($our-standard-values)}";
   }
 };
 
@@ -480,10 +475,18 @@ colors: project and system
   } @elseif nth($props, 1) == false {
     @return false;
   } @elseif length($props) == 1 {
-    @return map-get(
+    @if map-has-key(
       $project-reserved-colors,
-      nth($props, 1)
-    );
+      quote(nth($props, 1))
+    ){
+      @return map-get(
+        $project-reserved-colors,
+        quote(nth($props, 1))
+      );
+    }
+    @else {
+      @error "#{$props} is not a reserved value. Valid values: #{map-keys($project-reserved-colors)}";
+    }
   } @elseif length($props) == 2 {
     @return map-deep-get(
       $all-colors,
@@ -491,6 +494,14 @@ colors: project and system
       nth($props, 2)
     );
   } @else {
+    @if map-deep-get(
+      $all-colors,
+      nth($props, 1),
+      nth($props, 3),
+      nth($props, 2)
+    ) == false {
+      @error "`#{nth($props, 1)}` does not have a vivid variant for `#{nth($props, 2)}`.";
+    }
     @return map-deep-get(
       $all-colors,
       nth($props, 1),
@@ -666,11 +677,11 @@ the desired final units (currently rem)
 */
 
 @function spacing($value) {
-  @if map-has-key($project-spacing-all, quote($value)) {
-    @if map-get($project-spacing-all, quote($value)) == false {
+  @if map-has-key($project-spacing-standard, quote($value)) {
+    @if map-get($project-spacing-standard, quote($value)) == false {
       @warn "Spacing unit `#{$value}` has been disabled in your theme settings. It will output as `false`.";
     }
-    @return map-get($project-spacing-all, quote($value));
+    @return map-get($project-spacing-standard, quote($value));
   }
   @elseif $value == false {
     @return false;
@@ -680,7 +691,7 @@ the desired final units (currently rem)
     @return $value;
   }
   @else {
-    @error "`#{$value}` is not a valid spacing value. Valid values: #{map-keys($project-spacing-all)}";
+    @error "`#{$value}` is not a valid spacing value. Valid values: #{map-keys($project-spacing-standard)}";
   }
 };
 
@@ -962,13 +973,15 @@ loop
 */
 
 @mixin render-media-queries($utility, $selector, $property, $value, $val-props, $important) {
+  $our-breakpoints: map-deep-get($uswds-properties, breakpoints, standard);
 
-  @each $media-key, $media-value in $project-breakpoints-em {
-    $mq: $media-key;
+  @each $media-key, $media-value in $our-breakpoints {
+    $mq: unquote($media-key);
+    $media-value-em: grid-to-base-em($media-value);
 
     @if map-get($output-breakpoints, $media-key) {
-      @media (min-width: #{$media-value}) {
-        .#{$utilities-namespace-prefix}#{$media-key}\:#{$selector} {
+      @media (min-width: #{$media-value-em}) {
+        .#{$utilities-namespace-prefix}#{$mq}\:#{$selector} {
           @if map-has-key($val-props, extend) {
             @each $ext-prop, $ext-value in map-get($val-props, extend) {
               #{strunquote($ext-prop)}: strunquote($ext-value)#{$important};
