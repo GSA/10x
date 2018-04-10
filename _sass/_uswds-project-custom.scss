@@ -252,7 +252,6 @@ i.e.
   @include u-margin-top(base);
   @include at-media(tablet){
     @include u-flex(fit);
-    @include u-white-space(nowrap);
   }
   & + .usa-nav-primary-item {
     @include u-margin-left(base-plus);
