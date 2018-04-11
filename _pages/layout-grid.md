@@ -21,16 +21,16 @@ permalink: /layout-grid/
         <div class="tablet-plus:display-none text-align-center padding-base">.g-col-6</div>
       </div>
       <div class="g-col-4 tablet-plus:g-col border-pixel border-top-width-0 tablet-plus:border-top-width-pixel tablet-plus:border-left-width-0 border-color-black-cool-10">
-        <div class="display-none tablet:display-block text-align-center padding-base">.tablet-plus:g-col</div>
-        <div class="tablet:display-none text-align-center padding-base">.g-col-4</div>
+        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col</div>
+        <div class="tablet-plus:display-none text-align-center padding-base">.g-col-4</div>
       </div>
       <div class="g-col-4 tablet-plus:g-col border-pixel border-top-width-0 tablet-plus:border-top-width-pixel border-left-width-0 border-color-black-cool-10">
-        <div class="display-none tablet:display-block text-align-center padding-base">.tablet-plus:g-col</div>
-        <div class="tablet:display-none text-align-center padding-base">.g-col-4</div>
+        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col</div>
+        <div class="tablet-plus:display-none text-align-center padding-base">.g-col-4</div>
       </div>
       <div class="g-col-4 tablet-plus:g-col border-pixel border-top-width-0 tablet-plus:border-top-width-pixel border-left-width-0 border-color-black-cool-10">
-        <div class="display-none tablet:display-block text-align-center padding-base">.tablet-plus:g-col</div>
-        <div class="tablet:display-none text-align-center padding-base">.g-col-4</div>
+        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col</div>
+        <div class="tablet-plus:display-none text-align-center padding-base">.g-col-4</div>
       </div>
     </div><!-- g-row -->
 
