@@ -7,7 +7,7 @@ permalink: /uswds-color-docs/
 <div class="font-mono-f4 font-weight-300 padding-top-base padding-bottom-double tablet:padding-top-double tablet:padding-bottom-triple">
 
   <div class="g-container-desktop padding-x-double margin-top-half">
-    <p class="font-sans-f4 color-black-50 margin-top-0 margin-bottom-base font-weight-400"><span class="color-black font-weight-800 padding-eighth border-eighth line-height-smallest padding-bottom-0 margin-right-quarter">USWDS</span> Docs <span class="color-black">/</span> Style <span class="color-black">/</span> Colors</p>
+    <p class="font-sans-f4 color-black-50 margin-top-0 margin-bottom-base font-weight-400"><span class="color-black font-weight-800 padding-eighth border-eighth line-height-smallest padding-bottom-0 margin-right-half">USWDS</span> Docs <span class="color-black">/</span> Style <span class="color-black">/</span> Colors</p>
     <div class="g-row align-items-center">
       <div class="g-col">
         <h1 class="font-sans-f14 font-weight-300 margin-top-0 line-height-smaller margin-bottom-0">System colors</h1>
