@@ -300,3 +300,12 @@ strong {
   @include u-background-color(white-warm, 4);
   @include u-border-radius(small);
 }
+
+.token {
+  @include u-background-color(white-warm, 3);
+  @include u-border-radius(small);
+  @include u-font(mono, f1);
+  @include u-font(mono);
+  @include u-padding-x(quarter);
+  @include u-padding-y(eighth);
+}
