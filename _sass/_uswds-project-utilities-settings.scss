@@ -65,7 +65,7 @@ $background-color-plugins: (
   'plugin-color-[color]-standard'
   'plugin-color-[color]-vivid'
   'plugin-color-palette-status'
-  */
+
   'plugin-color-red-warm-medium-vivid',
   'plugin-color-gold-light-vivid',
   'plugin-color-gold-light',
@@ -75,6 +75,8 @@ $background-color-plugins: (
   'plugin-color-indigo-warm-medium-vivid',
   'plugin-color-palette-required',
   'plugin-color-palette-grayscale',
+  */
+  'plugin-color-all'
 );
 
 $background-color-manual-values: (
@@ -557,7 +559,7 @@ $font-plugins: (
   'plugin-system-[family]-all'
   */
   'plugin-font-sans-uswds-all',
-  'plugin-font-mono-uswds-medium'
+  'plugin-font-mono-uswds-all'
 );
 
 $font-manual-values: (
