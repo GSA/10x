@@ -8,7 +8,7 @@ permalink: /uswds-color-docs/
 
   <div class="g-container-tablet-plus padding-x-double margin-top-half">
     <p class="font-sans-f4 color-black-50 margin-top-0 margin-bottom-base font-weight-400"><span class="color-black font-weight-800 padding-eighth border-eighth line-height-smallest padding-bottom-0 margin-right-quarter">USWDS</span> Docs <span class="color-black">/</span> Style <span class="color-black">/</span> Colors</p>
-    <div class="g-row align-items-center">
+    <div class="g-row align-items-center margin-bottom-quad">
       <div class="g-col">
         <h1 class="font-sans-f14 font-weight-300 margin-top-0 line-height-smaller margin-bottom-0">System colors</h1>
       </div>
@@ -58,7 +58,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10 margin-top-0">Red</h2>
+        <h2 class="font-sans-f10 margin-top-0 margin-bottom-double">Red</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -174,7 +174,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Red <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Red <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -290,7 +290,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Red warm</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Red warm</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -406,7 +406,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Red warm <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Red warm <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -522,7 +522,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Orange warm</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Orange warm</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -638,7 +638,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Orange warm <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Orange warm <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -754,7 +754,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Orange</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Orange</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -870,7 +870,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Orange <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Orange <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -986,7 +986,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Gold</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Gold</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -1102,7 +1102,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Gold <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Gold <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -1218,7 +1218,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Yellow</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Yellow</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -1334,7 +1334,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Yellow <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Yellow <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -1450,7 +1450,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Green warm</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Green warm</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -1566,7 +1566,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Green warm <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Green warm <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -1682,7 +1682,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Green</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Green</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -1798,7 +1798,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Green <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Green <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -1914,7 +1914,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Green cool</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Green cool</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -2030,7 +2030,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Green cool <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Green cool <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -2146,7 +2146,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Mint</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Mint</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -2262,7 +2262,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Mint <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Mint <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -2378,7 +2378,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Mint cool</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Mint cool</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -2494,7 +2494,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Mint cool <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Mint cool <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -2610,7 +2610,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Cyan</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Cyan</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -2726,7 +2726,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Cyan <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Cyan <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -2842,7 +2842,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Blue</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Blue</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -2958,7 +2958,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Blue <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Blue <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -3074,7 +3074,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Blue warm</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Blue warm</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -3190,7 +3190,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Blue warm <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Blue warm <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -3306,7 +3306,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Indigo cool</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Indigo cool</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -3422,7 +3422,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Indigo cool <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Indigo cool <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -3538,7 +3538,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Indigo</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Indigo</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -3654,7 +3654,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Indigo <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Indigo <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -3770,7 +3770,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Indigo warm</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Indigo warm</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -3886,7 +3886,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Indigo warm <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Indigo warm <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -4002,7 +4002,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Violet</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Violet</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -4118,7 +4118,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Violet <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Violet <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -4234,7 +4234,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Violet warm</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Violet warm</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -4350,7 +4350,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Violet warm <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Violet warm <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -4466,7 +4466,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Magenta</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Magenta</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -4582,7 +4582,7 @@ permalink: /uswds-color-docs/
 
         <!-- ------------------------------------------------------ -->
 
-        <h2 class="font-sans-f10">Magenta <span class="font-weight-300">vivid</span></h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Magenta <span class="font-weight-300">vivid</span></h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -4698,7 +4698,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Black warm</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Black warm</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -4814,7 +4814,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Black</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Black</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -4941,7 +4941,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">Black cool</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">Black cool</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -5057,7 +5057,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">White warm</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">White warm</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -5107,7 +5107,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">White</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">White</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
@@ -5168,7 +5168,7 @@ permalink: /uswds-color-docs/
 
         <!-- ###################################################### -->
 
-        <h2 class="font-sans-f10">White cool</h2>
+        <h2 class="font-sans-f10 margin-bottom-double">White cool</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-6 swatch-container">
             <div class="swatch margin-bottom-double">
