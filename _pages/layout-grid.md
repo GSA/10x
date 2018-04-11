@@ -137,7 +137,7 @@ permalink: /layout-grid/
       </div>
     </div><!-- l.row -->
 
-    <p class="font-sans-f6 font-weight-400 margin-top-double margin-bottom-half"><span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">.l-offset-[1-12]</span> offsets the column by [n] columns</p>
+    <p class="font-sans-f6 font-weight-400 margin-top-double margin-bottom-half"><span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">.g-offset-[1-12]</span> offsets the column by [n] columns</p>
 
     <div class="g-row margin-top-half font-sans-f2">
       <div class="g-col-1 border-x-eighth border-color-black-cool-90">
@@ -179,8 +179,8 @@ permalink: /layout-grid/
     </div><!-- l.row -->
 
     <div class="g-row margin-top-half">
-      <div class="g-col-8 l-offset-4 border-pixel border-color-black-cool-10">
-        <div class="text-align-center padding-base">.g-col-8.l-offset-4</div>
+      <div class="g-col-8 g-offset-4 border-pixel border-color-black-cool-10">
+        <div class="text-align-center padding-base">.g-col-8.g-offset-4</div>
       </div>
     </div><!-- l.row -->
 
