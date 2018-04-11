@@ -21,14 +21,12 @@ $partial-values: (
     'auto': auto,
   ),
   full-percent: (
-    '100ct': 100%,
+    'full': 100%,
   ),
   full-viewport-height: (
-    '100vh': 100vh,
     'viewport': 100vh,
   ),
   full-viewport-width: (
-    '100vw': 100vw,
     'viewport': 100vw,
   ),
 );
@@ -148,8 +146,9 @@ $uswds-properties: (
       '9':    9 0 0,
       '10':   10 0 0,
       '11':   11 0 0,
+      '12':   12 0 0,
       'fill': 1 0 0,
-      'fit':  0 0 auto,
+      'auto': 0 0 auto,
     ),
     extended: (),
   ),
@@ -289,9 +288,7 @@ $uswds-properties: (
       map-get($uswds-spacing, small),
       map-get($uswds-spacing, medium),
       map-get($uswds-spacing, large),
-      map-get($partial-values, zero-zero),
       map-get($partial-values, none),
-      map-get($partial-values, full-percent),
       map-get($partial-values, full-viewport-height)
     ),
     extended: (),
@@ -339,8 +336,6 @@ $uswds-properties: (
     standard: map-collect(
       map-get($uswds-spacing, small),
       map-get($uswds-spacing, medium),
-      map-get($uswds-spacing, large),
-      map-get($uswds-spacing, larger),
       map-get($partial-values, none)
     ),
     extended: (),
@@ -354,6 +349,7 @@ $uswds-properties: (
       'dark':	        .5,
       'darker':	      .75,
       'darkest':	    .9,
+      'full':	        1,
     ),
     extended: (
       '0':  0,
