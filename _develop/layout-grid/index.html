@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="min-height-100ct color-black-90 font-family-sans" lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>10x</title>
+  <meta name="description" content="The Office of Investments in GSA’s Technology Transformation Service (TTS).">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/misc/site.webmanifest">
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="10x">
+  <meta name="application-name" content="10x">
+  <meta name="msapplication-TileColor" content="#1c1d1f">
+  <meta name="msapplication-config" content="/assets/misc/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- inline css technique https://jakearchibald.com/2016/link-in-body/ -->
+  
+    <link rel="stylesheet" href="/assets/css/10x-fonts.min.css">
+    <link rel="stylesheet" href="/assets/css/10x.min.css">
+  
+  <link rel="canonical" href="http://localhost:4000/layout-grid/">
+  
+
+  <link rel="preload" href="https://10x.gsa.gov/assets/js/uswds.min.js" as="script">
+
+  
+    <!-- We participate in the US government's analytics program. See the data at analytics.usa.gov. -->
+<script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA" id="_fed_an_ua_tag"></script>
+
+  
+</head>
+
+
+  <body class="margin-0 font-sans-f6 desktop:font-sans-f8 line-height-base min-height-100ct">
+    <div class="margin-x-auto max-width-tablet-plus tablet:padding-x-double-plus">
+  <div class="usa-accordion color-white background-color-black-90 margin-top-0 margin-bottom-half padding-x-base padding-y-half min-height-double tablet:margin-x-n-base tablet:margin-y-half">
+    <div class="display-flex flex-direction-row align-items-center">
+      <div class="display-flex flex-direction-row color-black-cool-40 font-sans-f1 line-height-small mobile:line-height-smallest align-items-center width-100ct">
+        <span class="margin-right-half-plus font-sans-f10 mobile:font-sans-f1 mobile:margin-right-half">:flag:</span>
+        <span class="display-flex flex-direction-row align-items-center width-100ct">
+          <span class="flex-fill">An official website of the <span class="white-space-nowrap">United States government</span></span>
+          <button
+            class="
+            usa-accordion-button
+            usa-banner-button
+            color-black-cool-40
+            background-color-transparent
+            border-pixel
+            border-black-cool-70
+            border-radius-base
+            margin-left-base
+            font-sans-f1
+            line-height-smallest
+            padding-y-half
+            padding-x-half
+            width-quad-plus
+            align-items-stretch
+            hover:border-color-indigo-warm-50v
+            hover:color-white
+            mobile:margin-left-quarter
+            mobile:padding-y-quarter
+            mobile:width-auto
+            mobile:min-height-base-plus
+            mobile:min-width-20
+            tablet-plus:margin-top-0
+            "
+            aria-expanded="false"
+            aria-controls="gov-banner">
+            <span class="usa-banner-button-text line-height-smallest margin-top-eighth">Here’s how you know</span>
+            <span class="usa-banner-button-text--open line-height-smallest margin-top-eighth">Close this message</span>
+          </button>
+        </span>
+      </div>
+    </div>
+    <div class="usa-accordion-content line-height-base" id="gov-banner">
+      <p class="font-weight-400 mobile:font-weight-200 font-sans-f5 mobile:font-sans-f7">
+        <strong class="color-indigo-warm-40v">The .gov means it’s official.</strong>
+        <br>
+        Federal government websites often end in <strong class="font-mono-f5 mobile:font-mono-f7">.gov</strong> or <strong class="font-mono-f5 mobile:font-mono-f7">.mil</strong>. Before sharing sensitive information, make sure you're on a federal government site.
+      </p>
+      <p class="font-weight-400 mobile:font-weight-200 font-sans-f5 mobile:font-sans-f7">
+        <strong class="color-indigo-warm-40v">The site is secure.</strong>
+        <br>
+        The <strong class="font-mono-f5 mobile:font-mono-f7">https://</strong> in the site URL ensures that you are connecting to the official website and any information you provide is encrypted and securely transmitted.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    <main class="usa-body-content padding-base padding-bottom-double tablet-plus:padding-double tablet-plus:padding-bottom-triple max-width-measure-small margin-x-auto" aria-label="Content">
+      <div class="font-mono-f4 font-weight-300">
+
+  <div class="l-container-tablet-plus padding-x-base-plus margin-top-half">
+    <h1 class="font-sans-f14">USWDS draft layout grid</h1>
+    <p class="font-sans-f6 font-weight-400 margin-top-double margin-bottom-half"><strong class="font-weight-700">Note:</strong> <span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">.l-container</span>, <span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">.l-gap</span>, and <span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">.l-col</span> all have mobile-first responsive variants. Only the first example shows them.</p>
+    <p class="font-sans-f6 font-weight-400 margin-top-double margin-bottom-half"><span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">.l-col</span> items flex to fit</p>
+
+    <div class="l-row margin-top-half">
+      <div class="l-col-6 tablet-plus:l-col border-pixel border-color-black-cool-10">
+        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:l-col</div>
+        <div class="tablet-plus:display-none text-align-center padding-base">.l-col-6</div>
+      </div>
+      <div class="l-col-6 tablet-plus:l-col border-pixel border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:l-col</div>
+        <div class="tablet-plus:display-none text-align-center padding-base">.l-col-6</div>
+      </div>
+      <div class="l-col-4 tablet-plus:l-col border-pixel border-top-width-0 tablet-plus:border-top-width-pixel tablet-plus:border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet:display-block text-align-center padding-base">.tablet-plus:l-col</div>
+        <div class="tablet:display-none text-align-center padding-base">.l-col-4</div>
+      </div>
+      <div class="l-col-4 tablet-plus:l-col border-pixel border-top-width-0 tablet-plus:border-top-width-pixel border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet:display-block text-align-center padding-base">.tablet-plus:l-col</div>
+        <div class="tablet:display-none text-align-center padding-base">.l-col-4</div>
+      </div>
+      <div class="l-col-4 tablet-plus:l-col border-pixel border-top-width-0 tablet-plus:border-top-width-pixel border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet:display-block text-align-center padding-base">.tablet-plus:l-col</div>
+        <div class="tablet:display-none text-align-center padding-base">.l-col-4</div>
+      </div>
+    </div><!-- l-row -->
+
+    <div class="l-row margin-top-half">
+      <div class="l-col-12 tablet:l-col border-pixel border-color-black-cool-10">
+        <div class="display-none tablet:display-block text-align-center padding-base">.tablet:l-col</div>
+        <div class="tablet:display-none text-align-center padding-base">.l-col-12</div>
+      </div>
+      <div class="l-col-12 tablet:l-col border-pixel border-top-width-0 tablet:border-top-width-pixel tablet:border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet:display-block text-align-center padding-base">.tablet:l-col</div>
+        <div class="tablet:display-none text-align-center padding-base">.l-col-12</div>
+      </div>
+      <div class="l-col-12 tablet:l-col border-pixel border-top-width-0 tablet:border-top-width-pixel tablet:border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet:display-block text-align-center padding-base">.tablet:l-col</div>
+        <div class="tablet:display-none text-align-center padding-base">.l-col-12</div>
+      </div>
+    </div><!-- l-row -->
+
+    <p class="font-sans-f6 font-weight-400 margin-top-double margin-bottom-half"><span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">.l-col-auto</span> items fit the content and do not flex</p>
+
+    <div class="l-row margin-top-half">
+      <div class="l-col-auto border-pixel border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-auto</div>
+      </div>
+      <div class="l-col border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col</div>
+      </div>
+      <div class="l-col border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col</div>
+      </div>
+      <div class="l-col-auto border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-auto</div>
+      </div>
+    </div><!-- l.row -->
+
+    <p class="font-sans-f6 font-weight-400 margin-top-double margin-bottom-half"><span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">.l-col-[1-12]</span> set a fixed width of [n] columns in a 12-column grid</p>
+
+    <div class="l-row margin-top-half font-sans-f2">
+      <div class="l-col-1 border-x-eighth border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">1</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">2</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">3</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">4</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">5</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">6</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">7</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">8</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">9</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">10</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">11</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">12</div>
+      </div>
+    </div><!-- l.row -->
+
+    <div class="l-row margin-top-half">
+      <div class="l-col-1 border-pixel border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-1</div>
+      </div>
+      <div class="l-col-2 border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-2</div>
+      </div>
+      <div class="l-col-3 border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-3</div>
+      </div>
+      <div class="l-col-4 border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-4</div>
+      </div>
+      <div class="l-col-2 border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-2</div>
+      </div>
+    </div><!-- l.row -->
+
+    <div class="l-row margin-top-half">
+      <div class="l-col-8 border-pixel border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-8</div>
+      </div>
+      <div class="l-col-2 border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-2</div>
+      </div>
+      <div class="l-col-2 border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-2</div>
+      </div>
+    </div><!-- l.row -->
+
+    <p class="font-sans-f6 font-weight-400 margin-top-double margin-bottom-half"><span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">.l-offset-[1-12]</span> offsets the column by [n] columns</p>
+
+    <div class="l-row margin-top-half font-sans-f2">
+      <div class="l-col-1 border-x-eighth border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">1</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">2</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">3</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">4</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">5</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">6</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">7</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">8</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">9</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">10</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">11</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">12</div>
+      </div>
+    </div><!-- l.row -->
+
+    <div class="l-row margin-top-half">
+      <div class="l-col-8 l-offset-4 border-pixel border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-8.l-offset-4</div>
+      </div>
+    </div><!-- l.row -->
+
+    <p class="font-sans-f6 font-weight-400 margin-top-double margin-bottom-half">Rows wrap when columns add up to more than 12</p>
+
+    <div class="l-row margin-top-half font-sans-f2">
+      <div class="l-col-1 border-x-eighth border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">1</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">2</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">3</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">4</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">5</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">6</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">7</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">8</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">9</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">10</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">11</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">12</div>
+      </div>
+    </div><!-- l.row -->
+
+    <div class="l-row margin-top-half">
+      <div class="l-col-8 border-pixel border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-8</div>
+      </div>
+      <div class="l-col-3 border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-3</div>
+      </div>
+      <div class="l-col-5 border-pixel border-top-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.l-col-5</div>
+      </div>
+    </div><!-- l.row -->
+
+    <p class="font-sans-f6 font-weight-400 margin-top-double margin-bottom-half"><span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">.l-gap</span> adds a gap between columns in the row, to a value set as <span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">$theme-column-gap</span> in settings</p>
+
+    <div class="l-row margin-top-half font-sans-f2">
+      <div class="l-col-1 border-x-eighth border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">1</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">2</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">3</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">4</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">5</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">6</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">7</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">8</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">9</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">10</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">11</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">12</div>
+      </div>
+    </div><!-- l.row -->
+
+    <div class="l-row l-gap margin-top-half">
+      <div class="l-col-4">
+        <div class="text-align-center border-pixel border-color-black-cool-10 padding-base">.l-col-8</div>
+      </div>
+      <div class="l-col-4">
+        <div class="text-align-center border-pixel border-color-black-cool-10 padding-base">.l-col-3</div>
+      </div>
+      <div class="l-col-4">
+        <div class="text-align-center border-pixel border-color-black-cool-10 padding-base">.l-col-5</div>
+      </div>
+    </div><!-- l.row -->
+
+    <p class="font-sans-f6 font-weight-400 margin-top-double margin-bottom-half"><span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">.l-gap-large</span> adds a gap between columns in the row, to a value set as <span class="font-mono-f4 padding-y-eighth padding-x-quarter background-color-white-warm-4 border-radius-small">$theme-column-gap-large</span> in settings</p>
+
+    <div class="l-row margin-top-half font-sans-f2">
+      <div class="l-col-1 border-x-eighth border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">1</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">2</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">3</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">4</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">5</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">6</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">7</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">8</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">9</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">10</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">11</div>
+      </div>
+      <div class="l-col-1 border-x-eighth border-left-0 border-color-black-cool-90">
+        <div class="text-align-center padding-x-base">12</div>
+      </div>
+    </div><!-- l.row -->
+
+    <div class="l-row l-gap-large margin-top-half">
+      <div class="l-col-4">
+        <div class="text-align-center border-pixel border-color-black-cool-10 padding-base">.l-col-8</div>
+      </div>
+      <div class="l-col-4">
+        <div class="text-align-center border-pixel border-color-black-cool-10 padding-base">.l-col-3</div>
+      </div>
+      <div class="l-col-4">
+        <div class="text-align-center border-pixel border-color-black-cool-10 padding-base">.l-col-5</div>
+      </div>
+    </div><!-- l.row -->
+
+  </div><!-- l.container -->
+</div>
+<!-- div -->
+
+    </main>
+
+    <script src="https://10x.gsa.gov/assets/js/uswds.min.js"></script>
+  </body>
+
+</html>

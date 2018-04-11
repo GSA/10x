@@ -7,17 +7,6 @@ USWDS UTILITIES SETTINGS
 $utilities-namespace-prefix:  '';
 $utilities-use-important:     true;
 
-$output-breakpoints: (
-  'compact':         false,   // 240px
-  'mobile':          true,    // 320px
-  'mobile-plus':     true,    // 480px
-  'tablet':          true,    // 640px
-  'tablet-plus':     true,    // 800px
-  'desktop':         true,    // 1040px
-  'desktop-plus':    false,   // 1200px
-  'wide':            false,   // 1400px
-);
-
 $output-all-utilities:  false;
 
 /*
@@ -227,8 +216,8 @@ $border-style-manual-values: (
 */
 
 $border-width-settings: (
-  output:       false,
-  responsive:   false,
+  output:       true,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,

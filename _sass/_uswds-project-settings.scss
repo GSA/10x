@@ -38,6 +38,17 @@ Relative font and image file paths
 $theme-font-path:   '../uswds/fonts';
 $theme-image-path:  '../uswds/img';
 
+$theme-output-breakpoints: (
+  'compact':         false,   // 240px
+  'mobile':          true,    // 320px
+  'mobile-plus':     true,    // 480px
+  'tablet':          true,    // 640px
+  'tablet-plus':     true,    // 800px
+  'desktop':         true,    // 1040px
+  'desktop-plus':    false,   // 1200px
+  'wide':            false,   // 1400px
+);
+
 /*
 ----------------------------------------
 Custom font definitions
