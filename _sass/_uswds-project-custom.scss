@@ -277,3 +277,26 @@ i.e.
     }
   }
 }
+
+/* ---------- G - R - I - D ---------- */
+
+.docs-text {
+  @include u-font(sans, f6);
+  @include u-font(sans);
+  @include u-font-weight(400);
+  @include u-margin-top(double);
+  @include u-margin-bottom(half);
+}
+
+strong {
+  @include u-font-weight(bold);
+}
+
+.docs-inline-code {
+  @include u-font(mono, f4);
+  @include u-font(mono);
+  @include u-padding-y(eighth);
+  @include u-padding-x(quarter);
+  @include u-background-color(white-warm, 4);
+  @include u-border-radius(small);
+}
