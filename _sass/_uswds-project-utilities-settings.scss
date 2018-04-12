@@ -289,7 +289,7 @@ $bottom-manual-values: (
 */
 
 $box-shadow-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1320,7 +1320,7 @@ $text-decoration-settings: (
   responsive:   false,
   active:       false,
   focus:        false,
-  hover:        false,
+  hover:        true,
   visited:      false
 );
 

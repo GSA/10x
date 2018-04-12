@@ -1,7 +1,7 @@
 ---
 layout: prototype-clean
 title: USWDS color
-permalink: /uswds-color-docs/
+permalink: /uswds-color-docs-theme/
 ---
 
 <div class="font-mono-f4 font-weight-300 padding-top-base padding-bottom-double tablet:padding-top-double tablet:padding-bottom-triple">
@@ -10,48 +10,26 @@ permalink: /uswds-color-docs/
     <p class="font-sans-f4 color-black-50 margin-top-0 margin-bottom-base font-weight-400"><span class="color-black font-weight-800 padding-eighth border-eighth line-height-smallest padding-bottom-0 margin-right-half">USWDS</span> Docs <span class="color-black">/</span> Style <span class="color-black">/</span> Colors</p>
     <div class="g-row align-items-center">
       <div class="g-col">
-        <h1 class="font-sans-f14 font-weight-300 margin-top-0 line-height-smaller margin-bottom-0">System colors</h1>
+        <h1 class="font-sans-f14 font-weight-300 margin-top-0 line-height-smaller margin-bottom-0">Theme colors</h1>
       </div>
       <div class="g-col-auto">
         <div class="padding-y-half padding-x-half-plus background-color-black-cool-90 color-white font-sans-f5 border-radius-small">Download design assets ⇣</div>
       </div>
     </div>
 
-    <div class="g-row margin-top-double-plus">
+    <div class="g-row margin-top-double-plus padding-top-base-plus border-top-pixel">
       <div class="g-col-3 sidenav">
         <ul class="list-reset font-sans-f6 font-weight-700">
-          <li class="padding-bottom-half">Introduction</li>
-        <li class="padding-bottom-half">Theme colors</li>
-          <li>System colors
-            <ul class="list-reset font-weight-300 padding-top-half">
-              <li>red</li>
-              <li>red warm</li>
-              <li>orange warm</li>
-              <li>orange</li>
-              <li>gold</li>
-              <li>yellow</li>
-              <li>green warm</li>
-              <li>green</li>
-              <li>green cool</li>
-              <li>mint</li>
-              <li>mint cool</li>
-              <li>cyan</li>
-              <li>blue</li>
-              <li>blue warm</li>
-              <li>indigo cool</li>
-              <li>indigo</li>
-              <li>indigo warm</li>
-              <li>violet</li>
-              <li>violet warm</li>
-              <li>magenta</li>
-              <li>black warm</li>
-              <li>black</li>
-              <li>black cool</li>
-              <li>white warm</li>
-              <li>white</li>
-              <li>white cool</li>
+          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-introduction.md %}">Introduction</a>
+          </li>
+          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-theme.md %}">Theme colors</a>
+            <ul class="list-reset font-weight-300 margin-top-half margin-bottom-base">
+              <li>The use of color</li>
+              <li>Accessibility</li>
+              <li>Pairing colors</li>
             </ul>
           </li>
+          <li><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-system.md %}">System colors</a></li>
         </ul>
       </div>
       <div class="g-col content padding-left-double">
