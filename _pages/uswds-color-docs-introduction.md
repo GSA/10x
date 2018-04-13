@@ -126,7 +126,7 @@ permalink: /uswds-color-docs-introduction/
 
           <div class="g-row g-gap font-mono-f2 font-weight-400">
             <div class="g-col">
-              <div class="background-color-black-90 padding-base  padding-bottom-base-plus border-radius-small is-inverse">
+              <div class="background-color-black-90 padding-base  padding-bottom-double border-radius-small is-inverse">
                 <div class="color-black-40 font-mono-f1 margin-bottom-double font-weight-400"><span class="font-sans-f2">background color:</span><span class="color-white-1"> Black 90</span></div>
                 <div class="color-black-50 font-sans-f16 line-height-smallest margin-y-0 font-weight-700">Black 50</div>
                 <div class="font-mono-f1 line-height-smallest font-weight-400 color-black-30 border-top-pixel border-color-black-70 padding-top-half margin-top-quarter g-row">
@@ -135,7 +135,8 @@ permalink: /uswds-color-docs-introduction/
                   <div class="g-col-2"><span class="font-sans-f2">size:</span><span class="color-white-1"> 80px</span></div>
                   <div class="g-col-4 text-align-right"><span class="font-sans-f2">contrast:</span><span class="color-white-1"> 3.89:1 (AA Large)</span></div>
                 </div>
-                <div class="color-black-40 font-sans-f6 line-height-smallest padding-0 margin-top-double">Black 50: a grade difference of 50+ conforms to Section 508 AA.</div>
+                <div class="color-black-40 font-sans-f6 line-height-smallest padding-0 margin-top-double">Black 40</div>
+                <div class="color-black-40 font-sans-f6 line-height-smallest padding-0 margin-top-half">A grade difference of 50+ conforms to Section 508 AA.</div>
                 <div class="font-mono-f1 line-height-smallest font-weight-400 color-black-30 border-top-pixel border-color-black-70 padding-top-half margin-top-half-plus g-row">
                   <div class="g-col"><span class="font-sans-f2">text color:</span><span class="color-white-1"> Black 40</span></div>
                   <div class="g-col-2"><span class="font-sans-f2">delta:</span><span class="color-white-1"> 50</span></div>
@@ -148,7 +149,7 @@ permalink: /uswds-color-docs-introduction/
 
           <div class="g-row g-gap font-mono-f2 font-weight-400 margin-y-double">
             <div class="g-col">
-              <div class="background-color-black-90 padding-base  padding-bottom-base-plus border-radius-small is-inverse">
+              <div class="background-color-black-90 padding-base  padding-bottom-double border-radius-small is-inverse">
                 <div class="color-black-40 font-mono-f1 margin-bottom-double font-weight-400">background color: <span class="color-white-1">Black 90</span></div>
                 <div class="color-indigo-warm-50v font-sans-f16 line-height-smallest margin-y-0 font-weight-700">Indigo warm 50v</div>
                 <div class="font-mono-f1 line-height-smallest font-weight-400 color-black-30 border-top-pixel border-color-black-70 padding-top-half margin-top-quarter g-row">
@@ -157,7 +158,8 @@ permalink: /uswds-color-docs-introduction/
                   <div class="g-col-2"><span class="font-sans-f2">size:</span><span class="color-white-1"> 80px</span></div>
                   <div class="g-col-4 text-align-right"><span class="font-sans-f2">contrast:</span><span class="color-white-1"> 3.89:1 (AA Large)</span></div>
                 </div>
-                <div class="color-red-warm-40v font-sans-f6 line-height-smallest padding-0 margin-top-double">Red warm 40v: A grade difference of 40+ conforms to Section 508 AA Large.</div>
+                <div class="color-red-warm-40v font-sans-f6 line-height-smallest padding-0 margin-top-double">Red warm 40v</div>
+                <div class="color-red-warm-40v font-sans-f6 line-height-smallest padding-0 margin-top-half">A grade difference of 40+ conforms to Section 508 AA Large.</div>
                 <div class="font-mono-f1 line-height-smallest font-weight-400 color-black-30 border-top-pixel border-color-black-70 padding-top-half margin-top-half-plus g-row">
                   <div class="g-col"><span class="font-sans-f2">text color:</span><span class="color-white-1"> Red warm 40v</span></div>
                   <div class="g-col-2"><span class="font-sans-f2">delta:</span><span class="color-white-1"> 50</span></div>
