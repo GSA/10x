@@ -1,6 +1,6 @@
 ---
 layout: prototype-clean
-title: 10x
+title: USWDS layout grid draft
 permalink: /layout-grid/
 ---
 
