@@ -24,7 +24,7 @@ permalink: /uswds-color-docs-introduction/
         <ul class="list-reset font-sans-f6 font-weight-700">
           <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-introduction.md %}">Introduction</a>
             <ul class="list-reset font-weight-300 margin-top-half margin-bottom-base">
-              <li>USWDS colors</li>
+              <li>Overview</li>
               <li>Color and accessibility</li>
               <li>USWDS color wheels</li>
               <li>General color guidelines</li>
@@ -43,7 +43,7 @@ permalink: /uswds-color-docs-introduction/
 
         <p class="font-sans-f11 font-weight-300 line-height-base margin-top-0">Color is a pratical and emotional tool. It conveys personality, sets a tone, attracts the eye, and indicates importance.</p>
 
-        <h2 class="font-sans-f10 margin-top-double margin-bottom-double border-top-pixel padding-top-base">USWDS colors</h2>
+        <h2 class="font-sans-f10 margin-top-double margin-bottom-double border-top-pixel padding-top-base">Overview</h2>
 
         <p>USWDS organizes its colors into two related palettes: the <strong><a href="#0">project theme palette</a></strong> and the <strong><a href="#0">system palette</a></strong>. The project theme palette is a subset of the broader system palette — your project’s theme should reflect your project’s individual identity, tone, and needs. It will use only a few color families from the broader set of 26 color families available to all users of the system.</p>
         <p>Use colors from the system palette for your project. In the long run, it’s a better user experience across government when there's coherence across sites and services. Or course, your project’s need come first, but if you plan to contribute your designs back into the system, those designs will need to conform to the system palette.</p>
