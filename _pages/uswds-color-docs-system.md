@@ -57,7 +57,7 @@ permalink: /uswds-color-docs-system/
           <li class="margin-top-base"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-system' | relative_url }}">Special palettes</a></li>
         </ul>
       </div>
-      <div class="g-col content padding-left-double">
+      <div class="g-col-fill content padding-left-double">
 
         <!-- ###################################################### -->
 

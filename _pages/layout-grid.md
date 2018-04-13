@@ -8,44 +8,44 @@ permalink: /layout-grid/
 
   <div class="g-container-tablet-plus padding-x-double margin-top-half">
     <h1 class="font-sans-f14 font-weight-300 margin-top-0">USWDS draft layout grid</h1>
-    <p class="docs-text"><strong>Note:</strong> <code class="docs-inline-code">.g-container</code>, <code class="docs-inline-code">.g-gap</code>, and <code class="docs-inline-code">.g-col</code> all have mobile-first responsive variants. Only the first example shows them.</p>
-    <p class="docs-text"><code class="docs-inline-code">.g-col</code> items flex to fit</p>
+    <p class="docs-text"><strong>Note:</strong> <code class="docs-inline-code">.g-container</code>, <code class="docs-inline-code">.g-gap</code>, and <code class="docs-inline-code">.g-col-fill</code> all have mobile-first responsive variants. Only the first example shows them.</p>
+    <p class="docs-text"><code class="docs-inline-code">.g-col-fill</code> items flex to fit</p>
 
     <div class="g-row margin-top-half">
-      <div class="g-col-6 tablet-plus:g-col border-pixel border-color-black-cool-10">
-        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col</div>
+      <div class="g-col-6 tablet-plus:g-col-fill border-pixel border-color-black-cool-10">
+        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col-fill</div>
         <div class="tablet-plus:display-none text-align-center padding-base">.g-col-6</div>
       </div>
-      <div class="g-col-6 tablet-plus:g-col border-pixel border-left-width-0 border-color-black-cool-10">
-        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col</div>
+      <div class="g-col-6 tablet-plus:g-col-fill border-pixel border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col-fill</div>
         <div class="tablet-plus:display-none text-align-center padding-base">.g-col-6</div>
       </div>
-      <div class="g-col-4 tablet-plus:g-col border-pixel border-top-width-0 tablet-plus:border-top-width-pixel tablet-plus:border-left-width-0 border-color-black-cool-10">
-        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col</div>
+      <div class="g-col-4 tablet-plus:g-col-fill border-pixel border-top-width-0 tablet-plus:border-top-width-pixel tablet-plus:border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col-fill</div>
         <div class="tablet-plus:display-none text-align-center padding-base">.g-col-4</div>
       </div>
-      <div class="g-col-4 tablet-plus:g-col border-pixel border-top-width-0 tablet-plus:border-top-width-pixel border-left-width-0 border-color-black-cool-10">
-        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col</div>
+      <div class="g-col-4 tablet-plus:g-col-fill border-pixel border-top-width-0 tablet-plus:border-top-width-pixel border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col-fill</div>
         <div class="tablet-plus:display-none text-align-center padding-base">.g-col-4</div>
       </div>
-      <div class="g-col-4 tablet-plus:g-col border-pixel border-top-width-0 tablet-plus:border-top-width-pixel border-left-width-0 border-color-black-cool-10">
-        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col</div>
+      <div class="g-col-4 tablet-plus:g-col-fill border-pixel border-top-width-0 tablet-plus:border-top-width-pixel border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet-plus:display-block text-align-center padding-base">.tablet-plus:g-col-fill</div>
         <div class="tablet-plus:display-none text-align-center padding-base">.g-col-4</div>
       </div>
     </div><!-- g-row -->
 
     <div class="g-row margin-top-half">
-      <div class="g-col-12 tablet:g-col border-pixel border-color-black-cool-10">
-        <div class="display-none tablet:display-block text-align-center padding-base">.tablet:g-col</div>
-        <div class="tablet:display-none text-align-center padding-base">.g-col-12</div>
+      <div class="g-col tablet:g-col-fill border-pixel border-color-black-cool-10">
+        <div class="display-none tablet:display-block text-align-center padding-base">.tablet:g-col-fill</div>
+        <div class="tablet:display-none text-align-center padding-base">.g-col</div>
       </div>
-      <div class="g-col-12 tablet:g-col border-pixel border-top-width-0 tablet:border-top-width-pixel tablet:border-left-width-0 border-color-black-cool-10">
-        <div class="display-none tablet:display-block text-align-center padding-base">.tablet:g-col</div>
-        <div class="tablet:display-none text-align-center padding-base">.g-col-12</div>
+      <div class="g-col tablet:g-col-fill border-pixel border-top-width-0 tablet:border-top-width-pixel tablet:border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet:display-block text-align-center padding-base">.tablet:g-col-fill</div>
+        <div class="tablet:display-none text-align-center padding-base">.g-col</div>
       </div>
-      <div class="g-col-12 tablet:g-col border-pixel border-top-width-0 tablet:border-top-width-pixel tablet:border-left-width-0 border-color-black-cool-10">
-        <div class="display-none tablet:display-block text-align-center padding-base">.tablet:g-col</div>
-        <div class="tablet:display-none text-align-center padding-base">.g-col-12</div>
+      <div class="g-col tablet:g-col-fill border-pixel border-top-width-0 tablet:border-top-width-pixel tablet:border-left-width-0 border-color-black-cool-10">
+        <div class="display-none tablet:display-block text-align-center padding-base">.tablet:g-col-fill</div>
+        <div class="tablet:display-none text-align-center padding-base">.g-col</div>
       </div>
     </div><!-- g-row -->
 
@@ -55,11 +55,11 @@ permalink: /layout-grid/
       <div class="g-col-auto border-pixel border-color-black-cool-10">
         <div class="text-align-center padding-base">.g-col-auto</div>
       </div>
-      <div class="g-col border-pixel border-left-0 border-color-black-cool-10">
-        <div class="text-align-center padding-base">.g-col</div>
+      <div class="g-col-fill border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.g-col-fill</div>
       </div>
-      <div class="g-col border-pixel border-left-0 border-color-black-cool-10">
-        <div class="text-align-center padding-base">.g-col</div>
+      <div class="g-col-fill border-pixel border-left-0 border-color-black-cool-10">
+        <div class="text-align-center padding-base">.g-col-fill</div>
       </div>
       <div class="g-col-auto border-pixel border-left-0 border-color-black-cool-10">
         <div class="text-align-center padding-base">.g-col-auto</div>
