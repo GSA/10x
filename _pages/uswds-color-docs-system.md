@@ -6,23 +6,25 @@ permalink: /uswds-color-docs-system/
 
 <div class="font-mono-f4 font-weight-300 padding-top-base padding-bottom-double tablet:padding-top-double tablet:padding-bottom-triple">
 
-  <div class="g-container-desktop padding-x-double margin-top-half">
-    <p class="font-sans-f4 color-black-50 margin-top-0 margin-bottom-base font-weight-400"><span class="color-black font-weight-800 padding-eighth border-eighth line-height-smallest padding-bottom-0 margin-right-half">USWDS</span> Docs <span class="color-black">/</span> Style <span class="color-black">/</span> Colors</p>
-    <div class="g-row align-items-center">
-      <div class="g-col">
-        <h1 class="font-sans-f14 font-weight-300 margin-top-0 line-height-smaller margin-bottom-0">System palette</h1>
+  <div class="g-container-desktop margin-bottom-0 padding-x-double padding-top-base margin-top-0">
+    <div class="g-row">
+      <div class="g-col-8">
+        <p class="font-sans-f4 color-black-50 margin-top-0 margin-bottom-base font-weight-400"><span class="color-black font-weight-800 padding-eighth border-eighth line-height-smallest padding-bottom-0 margin-right-half">USWDS</span> Docs <span class="color-black">/</span> Style <span class="color-black">/</span> Colors</p>
+          <h1 class="font-sans-f14 font-weight-300 margin-top-0 line-height-smaller margin-bottom-0">System palette</h1>
       </div>
-      <div class="g-col-auto">
-        <div class="padding-y-half padding-x-half-plus background-color-black-cool-90 color-white font-sans-f5 border-radius-small">Download design assets ⇣</div>
+      <div class="g-col-4">
+        <figure class="margin-0 display-block">
+          <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/geodesic-header.webp' | relative_url }}" alt="A geodesic dome with colorful nodes">
+        </figure>
       </div>
     </div>
 
-    <div class="g-row margin-top-double-plus padding-top-base-plus border-top-pixel">
+    <div class="g-row padding-top-base-plus border-top-pixel">
       <div class="g-col-3 sidenav">
         <ul class="list-reset font-sans-f6 font-weight-700">
-          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-introduction.md %}">Introduction</a></li>
-          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-theme.md %}">Theme palette</a></li>
-          <li><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-system.md %}">System palette</a>
+          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-introduction' | relative_url }}">Introduction</a></li>
+          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-theme' | relative_url }}">Theme palette</a></li>
+          <li><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-system' | relative_url }}">System palette</a>
             <ul class="list-reset font-weight-300 padding-top-half">
               <li>red</li>
               <li>red warm</li>
