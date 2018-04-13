@@ -119,6 +119,20 @@ i.e.
       }
     }
   }
+  code {
+    @include u-font(mono, f4);
+    @include u-font(mono);
+    @include u-font-weight(400);
+    @include u-padding-y(eighth);
+    @include u-padding-x(quarter);
+    @include u-background-color(white-warm, 4);
+    @include u-border-radius(small);
+  }
+  aside {
+    code {
+      @include u-background-color(black-warm, 10);
+    }
+  }
 }
 
 .usa-card {

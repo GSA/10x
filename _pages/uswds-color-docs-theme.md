@@ -36,6 +36,14 @@ permalink: /uswds-color-docs-theme/
 
         <!-- ###################################################### -->
 
+        <p class="margin-top-base">Theme palettes are role-based — assigning colors to four basic roles that colors can play in your project: <strong>neutral</strong>, <strong>primary</strong>, <strong>seconday</strong>, and <strong>accent</strong>. Primary, secondary, and accent colors can be thought of as falling into a 60/30/10 relationship: 60% of your site’s color would be the primary hue, 30% would be the secondary hue, and 10% would be the accent hue.</p>
+        <ul>
+          <li>A <strong>neutral color</strong> is often used for text and is typically <code>black</code>, <code>black-cool</code> or <code>black-warm</code>. Most of the readable content on your website will be neutral.</li>
+          <li>A <strong>primary color</strong> is the hue family used for about 60% of your site’s color. This tends to be the color most associated with identity, and the color used for buttons and other primary actionable items.</li>
+          <li>A <strong>secondary color</strong> is the hue family used for about 30% of your site’s color. This hue is meant to support the primary color and distinguish alternate actions. Use a secondary color for callouts, pullquotes, or some headers to balance or harmonize with the primary color, and to add meaningful differentiation.</li>
+          <li>An <strong>accent color</strong> is meant to draw attention. Use accent colors sparingly. They tend to follow a boy-who-cried-wolf rule: the more you use it, the less attention each usage captures.</li>
+        </ul>
+
         <h2 class="font-sans-f10 margin-top-0 margin-bottom-double">Red</h2>
         <div class="g-row g-gap swatches">
           <div class="g-col-4 swatch-container">

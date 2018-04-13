@@ -392,8 +392,9 @@ $color-plugins: (
   'plugin-color-black-cool-light',
   'plugin-color-black-cool-medium',
   'plugin-color-black-cool-dark',
-  'plugin-color-indigo-warm-medium-vivid',
-  'plugin-color-red-warm-medium-vivid',
+  'plugin-color-indigo-warm-vivid',
+  'plugin-color-red-warm-vivid',
+  'plugin-color-red-vivid',
   'plugin-color-palette-grayscale'
 );
 
@@ -914,7 +915,7 @@ $max-width-plugins: (
   */
   'plugin-spacing-uswds-large',
   'plugin-spacing-uswds-larger',
-  'plugin-standard-measure'
+  'plugin-standard-max-width'
 );
 
 $max-width-manual-values: (
@@ -1307,6 +1308,7 @@ $text-align-manual-values: (
   */
   center:       'center',
   left:         'left',
+  right:        'right',
 );
 
 /*

@@ -10,7 +10,7 @@ permalink: /uswds-color-docs-system/
     <p class="font-sans-f4 color-black-50 margin-top-0 margin-bottom-base font-weight-400"><span class="color-black font-weight-800 padding-eighth border-eighth line-height-smallest padding-bottom-0 margin-right-half">USWDS</span> Docs <span class="color-black">/</span> Style <span class="color-black">/</span> Colors</p>
     <div class="g-row align-items-center">
       <div class="g-col">
-        <h1 class="font-sans-f14 font-weight-300 margin-top-0 line-height-smaller margin-bottom-0">System colors</h1>
+        <h1 class="font-sans-f14 font-weight-300 margin-top-0 line-height-smaller margin-bottom-0">System palette</h1>
       </div>
       <div class="g-col-auto">
         <div class="padding-y-half padding-x-half-plus background-color-black-cool-90 color-white font-sans-f5 border-radius-small">Download design assets ⇣</div>
@@ -21,8 +21,8 @@ permalink: /uswds-color-docs-system/
       <div class="g-col-3 sidenav">
         <ul class="list-reset font-sans-f6 font-weight-700">
           <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-introduction.md %}">Introduction</a></li>
-          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-theme.md %}">Theme colors</a></li>
-          <li><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-system.md %}">System colors</a>
+          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-theme.md %}">Theme palette</a></li>
+          <li><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{% link _pages/uswds-color-docs-system.md %}">System palette</a>
             <ul class="list-reset font-weight-300 padding-top-half">
               <li>red</li>
               <li>red warm</li>
