@@ -24,14 +24,15 @@ permalink: /uswds-color-docs-theme/
         <ul class="list-reset font-sans-f6 font-weight-700">
           <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-introduction' | relative_url }}">Introduction</a>
           </li>
-          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-theme' | relative_url }}">Theme colors</a>
+          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-theme' | relative_url }}">Project theme palette</a>
             <ul class="list-reset font-weight-300 margin-top-half margin-bottom-base">
               <li>The use of color</li>
               <li>Accessibility</li>
               <li>Pairing colors</li>
             </ul>
           </li>
-          <li><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-system' | relative_url }}">System colors</a></li>
+          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-system' | relative_url }}">System palette</a></li>
+          <li><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-system' | relative_url }}">Special palettes</a></li>
         </ul>
       </div>
       <div class="g-col content padding-left-double">

@@ -23,7 +23,7 @@ permalink: /uswds-color-docs-system/
       <div class="g-col-3 sidenav">
         <ul class="list-reset font-sans-f6 font-weight-700">
           <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-introduction' | relative_url }}">Introduction</a></li>
-          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-theme' | relative_url }}">Theme palette</a></li>
+          <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-theme' | relative_url }}">Project theme palette</a></li>
           <li><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-system' | relative_url }}">System palette</a>
             <ul class="list-reset font-weight-300 padding-top-half">
               <li>red</li>
@@ -54,6 +54,7 @@ permalink: /uswds-color-docs-system/
               <li>white cool</li>
             </ul>
           </li>
+          <li class="margin-top-base"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-system' | relative_url }}">Special palettes</a></li>
         </ul>
       </div>
       <div class="g-col content padding-left-double">
