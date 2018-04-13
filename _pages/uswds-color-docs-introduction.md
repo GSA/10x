@@ -46,6 +46,651 @@ permalink: /uswds-color-docs-introduction/
         <h2 class="font-sans-f10 margin-top-double margin-bottom-double border-top-pixel padding-top-base">Overview</h2>
 
         <p>USWDS organizes its colors into two related palettes: the <strong><a href="#0">project theme palette</a></strong> and the <strong><a href="#0">system palette</a></strong>. The project theme palette is a subset of the broader system palette — your project’s theme should reflect your project’s individual identity, tone, and needs. It will use only a few color families from the broader set of 26 color families available to all users of the system.</p>
+
+        <div class="g-row g-gap margin-y-double background-color-white padding-x-base padding-top-base-plus padding-bottom-0 border-radius-large">
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-red-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-red-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Red</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-red-warm-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-warm-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-warm-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-warm-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-warm-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-warm-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-warm-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-warm-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-warm-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-red-warm-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-red-warm-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-warm-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-warm-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-warm-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-warm-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-warm-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-warm-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-warm-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-warm-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-red-warm-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Red warm</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-orange-warm-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-warm-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-warm-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-warm-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-warm-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-warm-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-warm-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-warm-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-warm-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-warm-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-orange-warm-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-warm-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-warm-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-warm-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-warm-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-warm-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-warm-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-warm-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-warm-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-warm-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Orange warm</p>
+          </div><!-- swatch -->
+
+
+          <div class="g-col-3">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-orange-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-orange-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-orange-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-orange-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Orange</p>
+          </div><!-- swatch -->
+          <div class="g-col-3">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-gold-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-gold-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-gold-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-gold-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-gold-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-gold-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-gold-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-gold-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-gold-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-gold-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-gold-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-gold-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-gold-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-gold-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-gold-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-gold-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-gold-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-gold-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-gold-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-gold-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Gold</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-yellow-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-yellow-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-yellow-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-yellow-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-yellow-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-yellow-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-yellow-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-yellow-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-yellow-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-yellow-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-yellow-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-yellow-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-yellow-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-yellow-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-yellow-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-yellow-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-yellow-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-yellow-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-yellow-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-yellow-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Yellow</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-green-warm-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-warm-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-warm-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-warm-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-warm-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-warm-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-warm-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-warm-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-warm-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-warm-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-green-warm-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-warm-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-warm-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-warm-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-warm-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-warm-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-warm-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-warm-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-warm-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-warm-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Green warm</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-green-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-green-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Green</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-green-cool-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-cool-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-cool-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-cool-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-cool-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-cool-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-cool-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-cool-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-cool-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-green-cool-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-green-cool-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-cool-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-cool-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-cool-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-cool-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-cool-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-cool-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-cool-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-cool-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-green-cool-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Green cool</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-mint-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-mint-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Mint</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-mint-cool-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-cool-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-cool-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-cool-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-cool-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-cool-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-cool-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-cool-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-cool-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-mint-cool-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-mint-cool-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-cool-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-cool-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-cool-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-cool-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-cool-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-cool-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-cool-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-cool-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-mint-cool-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Mint cool</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-cyan-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-cyan-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-cyan-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-cyan-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-cyan-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-cyan-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-cyan-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-cyan-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-cyan-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-cyan-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-cyan-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-cyan-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-cyan-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-cyan-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-cyan-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-cyan-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-cyan-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-cyan-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-cyan-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-cyan-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Cyan</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-blue-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-blue-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Blue</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-blue-warm-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-warm-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-warm-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-warm-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-warm-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-warm-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-warm-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-warm-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-warm-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-blue-warm-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-blue-warm-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-warm-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-warm-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-warm-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-warm-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-warm-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-warm-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-warm-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-warm-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-blue-warm-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Blue warm</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-indigo-cool-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-cool-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-cool-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-cool-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-cool-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-cool-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-cool-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-cool-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-cool-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-cool-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-indigo-cool-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-cool-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-cool-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-cool-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-cool-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-cool-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-cool-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-cool-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-cool-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-cool-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Indigo cool</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-indigo-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-indigo-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Indigo</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-indigo-warm-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-warm-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-warm-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-warm-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-warm-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-warm-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-warm-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-warm-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-warm-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-indigo-warm-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-indigo-warm-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-warm-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-warm-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-warm-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-warm-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-warm-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-warm-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-warm-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-warm-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-indigo-warm-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Indigo warm</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-violet-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-violet-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Violet</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-violet-warm-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-warm-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-warm-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-warm-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-warm-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-warm-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-warm-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-warm-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-warm-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-violet-warm-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-violet-warm-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-warm-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-warm-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-warm-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-warm-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-warm-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-warm-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-warm-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-warm-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-violet-warm-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Violet warm</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-magenta-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-magenta-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-magenta-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-magenta-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-magenta-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-magenta-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-magenta-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-magenta-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-magenta-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-magenta-90"></div>
+            </div>
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white border-top-0 height-base-plus background-color-magenta-5v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-magenta-10v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-magenta-20v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-magenta-30v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-magenta-40v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-magenta-50v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-magenta-60v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-magenta-70v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-magenta-80v"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 border-top-0 height-base-plus background-color-magenta-90v"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Magenta</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-black-warm-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-warm-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-warm-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-warm-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-warm-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-warm-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-warm-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-warm-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-warm-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-warm-90"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Black warm</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-black-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-90"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Black</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-black-cool-5"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-cool-10"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-cool-20"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-cool-30"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-cool-40"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-cool-50"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-cool-60"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-cool-70"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-cool-80"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-black-cool-90"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">Black cool</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-white-warm-1"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-white-warm-2"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-white-warm-3"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-white-warm-4"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">White warm</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-white"></div>
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-white-1"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-white-2"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-white-3"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-white-4"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">White</p>
+          </div><!-- swatch -->
+
+          <div class="g-col-3 margin-bottom-double">
+            <div class="g-row">
+              <div class="g-col-fill border-pixel border-color-white height-base-plus background-color-white-cool-1"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-white-cool-2"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-white-cool-3"></div>
+              <div class="g-col-fill border-pixel border-color-white border-left-0 height-base-plus background-color-white-cool-4"></div>
+            </div>
+            <p class="font-sans-f2 margin-top-quarter font-weight-700">White cool</p>
+          </div><!-- swatch -->
+
+
+        </div>
+
         <p>Use USWDS colors and avoid custom colors whenever possible. In the long run, it’s a better user experience across government when there’s coherence across sites and services. Of course, your mission, project needs, and user needs always come first, but if you plan to <a href="#0">contribute your work back into the system</a> — which helps the system learn, adapt, and improve — that work will need to conform to system standards and use system colors.</p>
         <aside class="background-color-white-warm-3 padding-base-plus margin-y-double border-radius-small font-weight-400 font-sans-f6">
           <h4 class="margin-top-0 text-transform-uppercase font-sans-f4 letter-spacing-loose margin-bottom-0">Color, color family, and grade</h4>
