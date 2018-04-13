@@ -50,8 +50,8 @@ permalink: /uswds-color-docs-introduction/
         <aside class="background-color-white-warm-3 padding-base-plus margin-y-double border-radius-small font-weight-400 font-sans-f6">
           <h4 class="margin-top-0 text-transform-uppercase font-sans-f4 letter-spacing-loose margin-bottom-0">Color, color family, and grade</h4>
           <p class="font-weight-400 font-sans-f6 margin-top-half">Throughout our documentation and guidance, we’ll use use the terms <em>color</em>, <em>color family</em>, and <em>grade</em>, but what do we mean when we use them?</p>
-          <p class="font-weight-400 font-sans-f6"><strong>Color</strong> is any specific swatch in our palettes, like <code>red-50</code>, <code>primary-base</code>, or <code>indigo-warm-60v</code>.</p>
-          <p class="font-weight-400 font-sans-f6"><strong>Color family</strong> is a group of colors that all have the same hue on a color wheel (See <a href="#0">USWDS color wheels</a>, below.). They contain a number of individual colors, distinguished by the brightness or saturation of each individual color. A color family is typically a conventional color name like <code>Red</code> or <code>Blue warm</code>, or could be a use-based name in the theme palette, like <code>Primary</code>. </p>
+          <p class="font-weight-400 font-sans-f6"><strong>Color</strong> is any specific swatch in our palettes, like <code>red 50</code>, <code>primary base</code>, or <code>indigo warm 60v</code>.</p>
+          <p class="font-weight-400 font-sans-f6"><strong>Color family</strong> is a group of colors that all have the same hue on a color wheel (See <a href="#0">USWDS color wheels</a>, below.) They contain a number of individual colors, distinguished by the brightness or saturation of each individual color. A color family is typically a conventional color name like <code>red</code> or <code>blue warm</code>, or could be a use-based name in the project theme palette, like <code>primary</code>. </p>
           <p class="font-weight-400 font-sans-f6"><strong>Grade</strong> is a way to express the value or lightness of a color: how light or dark a color is. USWDS uses <a href="#0">a 100-point scale</a> to communicate the grade, where 0 is pure white and 100 is pure black. We’ve regularized these grades across color families: a color of grade <code>50</code> in one color family should be the same level of brightness as a color of grade <code>50</code> in another color family. This has important color contrast and accessibility implications that we’ll discuss <a href="#0">later</a>.</p>
         </aside>
 
@@ -61,7 +61,7 @@ permalink: /uswds-color-docs-introduction/
         <p>Accessibility is not a special case.</p>
         <p>Last quarter (Q2 2018) <a href="#0">sites using USWDS topped 1.4 billion pageviews</a>. 8-9% of 1.4 billion is around 100 million pageviews — when it comes to accessibility, thinking broadly and inclusively isn’t just a good idea, it’s our mandate and mission.</p>
         <p>Contrast is key. <a href="#0">Section 508</a> — and, by extension, <a href="#0">WCAG 2.0</a> — sets a legal standard for the contrast level necessary between text and its background. The <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">baseline AA contrast standard</a> is <code>4.5:1</code> for most text and <code>3.1:1</code> for large text (19px+ bold or 24px+ normal text).</p>
-        <p><strong>USWDS helps teams choose accessible colors with a color grade system.</strong> Let’s look at the <code>Black</code> color family, in grades 5-100 (grade 0 is <code>white</code>):</p>
+        <p><strong>USWDS helps teams choose accessible colors with a color grade system.</strong> Let’s look at the <code>black</code> color family, in grades 5-100 (grade 0 is <code>white</code>):</p>
 
         <div class="border-pixel padding-base border-radius-small margin-top-double">
           <p class="font-sans-f6 font-weight-700 margin-top-0 margin-bottom-half">Black</p>
@@ -120,8 +120,8 @@ permalink: /uswds-color-docs-introduction/
 
         <p>The difference in grades between two colors is meaningful. Use this difference to quickly calculate contrast. Across all colors and color familes:</p>
         <ul>
-          <li><strong>Grade differences (deltas) of 50</strong> between any two colors assure that the contrast between the two colors conforms to <span class="color-red-60v">WCAG 2.0 AA</span>. (Like between <code>black-90</code> and <code>red-40</code>.) </li>
-          <li><strong>Grade differences (deltas) of 40</strong> between any two colors assure that the contrast between the two colors conforms to <span class="color-red-60v">WCAG 2.0 AA Large</span>. (Like between <code>black-90</code> and <code>indigo-warm-50v</code>.) </li>
+          <li><strong>Grade differences (deltas) of 50</strong> between any two colors assure that the contrast between the two colors conforms to <span class="color-red-60v">WCAG 2.0 AA</span>. (Like between <code>black 90</code> and <code>red 40</code>.) </li>
+          <li><strong>Grade differences (deltas) of 40</strong> between any two colors assure that the contrast between the two colors conforms to <span class="color-red-60v">WCAG 2.0 AA Large</span>. (Like between <code>black 90</code> and <code>indigo warm 50v</code>.) </li>
         </ul>
 
           <div class="g-row g-gap font-mono-f2 font-weight-400">
