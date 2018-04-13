@@ -14,7 +14,7 @@ permalink: /uswds-color-docs-introduction/
       </div>
       <div class="g-col-4">
         <figure class="margin-0 display-block">
-          <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/geodesic-header.webp' | relative_url }}" alt="A geodesic dome with colorful nodes">
+          <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/geodesic-header.svg' | relative_url }}" alt="A geodesic dome with colorful nodes">
         </figure>
       </div>
     </div>
@@ -172,7 +172,7 @@ permalink: /uswds-color-docs-introduction/
 
           <figure class="margin-top-double margin-x-0 display-block">
             <div class="border-pixel border-radius-small padding-double">
-              <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/color-grades-chart.webp' | relative_url }}" alt="A chart showing how grade differences of 50 conform to WCAG AA and differences of 40 conform to WCAG AA Large">
+              <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/color-grades-chart.svg' | relative_url }}" alt="A chart showing how grade differences of 50 conform to WCAG AA and differences of 40 conform to WCAG AA Large">
             </div>
             <figcaption class="font-sans-f5 font-weight-400 max-width-measure-small line-height-base margin-top-base-plus margin-bottom-base padding-bottom-base"><strong>Above:</strong> This data visualization shows the ten standard grades of a USWDS color family, as well as grade 0 (white) and grade 100 (black). Lightness is the lightness level of gray in the HSL color model. The delta column shows the difference in gray level between grades. The bars on the right show minimum conformant color pairs. Grade 50 will be WCAG 2.0 AA conformant against both pure black and pure white.</figcaption>
           </figure>

@@ -14,7 +14,7 @@ permalink: /uswds-color-docs-theme/
       </div>
       <div class="g-col-4">
         <figure class="margin-0 display-block">
-          <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/geodesic-header.webp' | relative_url }}" alt="A geodesic dome with colorful nodes">
+          <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/geodesic-header.svg' | relative_url }}" alt="A geodesic dome with colorful nodes">
         </figure>
       </div>
     </div>
