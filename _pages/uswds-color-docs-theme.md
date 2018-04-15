@@ -44,27 +44,62 @@ permalink: /uswds-color-docs-theme/
         <h2 class="font-sans-f10 margin-top-double margin-bottom-double border-top-pixel padding-top-base">Role-based palettes</h2>
 
         <p class="margin-top-base">Project theme palettes are role-based — assigning colors to four high-level roles that colors can play in your project: <strong>neutral</strong>, <strong>primary</strong>, <strong>secondary</strong>, and <strong>accent</strong>.</p>
-        <p>Primary, secondary, and accent colors can be thought of as falling into a 60/30/10 relationship: 60% of your site’s color would be the primary hue, 30% would be the secondary hue, and 10% would be the accent hues.</p>
+        <p>Primary, secondary, and accent colors can be thought of as falling into a proportional 60/30/10 relationship: about 60% of your site’s color would be the primary color family, about 30% would be the secondary color family, and about 10% would be the accent color families.</p>
 
-        <div class="g-row g-gap-small">
-          <div class="g-col flex-12">
-            <div class="height-base background-color-black"></div>
+        <div class="margin-y-double">
+          <div class="g-row g-gap-small">
+            <div class="g-col-7 margin-bottom-half">
+              <div class="border-bottom-pixel font-mono-f2 padding-bottom-quarter">60%</div>
+            </div>
+            <div class="g-col-4">
+              <div class="border-bottom-pixel font-mono-f2 padding-bottom-quarter">30%</div>
+            </div>
+            <div class="g-col-1">
+              <div class="border-bottom-pixel font-mono-f2 padding-bottom-quarter">10%</div>
+            </div>
           </div>
-          <div class="g-col flex-6">
-            <div class="height-base background-color-black"></div>
+          <div class="g-row g-gap-small">
+            <div class="g-col-7">
+              <div class="height-base background-color-blue-70v"></div>
+            </div>
+            <div class="g-col-4">
+              <div class="height-base background-color-mint-50"></div>
+            </div>
+            <div class="g-col-1 g-row g-gap-small">
+              <div class="g-col-fill">
+                <div class="height-base background-color-orange-30v"></div>
+              </div>
+              <div class="g-col-fill">
+                <div class="height-base background-color-cyan-20v"></div>
+              </div>
+            </div>
           </div>
-          <div class="g-col flex-6">
-            <div class="height-base background-color-black"></div>
+          <div class="g-row g-gap margin-top-base">
+            <div class="g-col-auto g-row align-items-center">
+              <div class="g-col-auto circle-base background-color-blue-70v margin-right-half"></div>
+              <div class="line-height-smallest font-sans-f4 font-weight-700 padding-top-eighth ">Primary</div>
+            </div>
+            <div class="g-col-auto g-row align-items-center">
+              <div class="g-col-auto circle-base background-color-mint-50 margin-right-half"></div>
+              <div class="line-height-smallest font-sans-f4 font-weight-700 padding-top-eighth ">Secondary</div>
+            </div>
+            <div class="g-col-auto g-row align-items-center">
+              <div class="g-col-auto circle-base background-color-orange-30v margin-right-half"></div>
+              <div class="line-height-smallest font-sans-f4 font-weight-700 padding-top-eighth ">Accent warm</div>
+            </div>
+            <div class="g-col-auto g-row align-items-center">
+              <div class="g-col-auto circle-base background-color-cyan-20v margin-right-half"></div>
+              <div class="line-height-smallest font-sans-f4 font-weight-700 padding-top-eighth ">Accent cool</div>
+            </div>
           </div>
-          <div class="g-col flex-1">
-            <div class="height-base background-color-black"></div>
-          </div>
-          <div class="g-col flex-1">
-            <div class="height-base background-color-black"></div>
+          <div class="g-row margin-top-double">
+            <div class="g-col-4">
+              <figure class="margin-0 display-block">
+                <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/project-theme-palette-example.svg' | relative_url }}" alt="An example of the 6-30-10 principle applied to a project theme">
+              </figure>
+            </div>
           </div>
         </div>
-
-        <p>oh hai</p>
 
         <ul>
           <li>A <strong>neutral color</strong> is often used for text and is typically <code>black</code>, <code>black-cool</code> or <code>black-warm</code>. Most of the readable content on your website will be neutral.</li>
