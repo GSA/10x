@@ -46,7 +46,7 @@ permalink: /uswds-color-docs-theme/
         <p class="margin-top-base">Project theme palettes are role-based — assigning colors to four high-level roles that colors can play in your project: <strong>neutral</strong>, <strong>primary</strong>, <strong>secondary</strong>, and <strong>accent</strong>.</p>
         <p>Primary, secondary, and accent colors can be thought of as falling into a 60/30/10 relationship: 60% of your site’s color would be the primary hue, 30% would be the secondary hue, and 10% would be the accent hues.</p>
 
-        <div class="g-row g-gap">
+        <div class="g-row g-gap-small">
           <div class="g-col flex-12">
             <div class="height-base background-color-black"></div>
           </div>
