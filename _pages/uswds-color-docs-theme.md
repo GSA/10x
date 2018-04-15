@@ -26,7 +26,7 @@ permalink: /uswds-color-docs-theme/
           </li>
           <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-theme' | relative_url }}">Project theme palette</a>
             <ul class="list-reset font-weight-300 margin-top-half margin-bottom-base">
-              <li>Role-based palettes</li>
+              <li>Using role-based palettes</li>
               <li>Accessibility</li>
               <li>Pairing colors</li>
             </ul>
@@ -41,10 +41,11 @@ permalink: /uswds-color-docs-theme/
 
         <p class="font-sans-f11 font-weight-300 line-height-base margin-top-0">Your project theme palette defines the specific color families and grades used in your project, based on the role these colors play on your site.</p>
 
-        <h2 class="font-sans-f10 margin-top-double margin-bottom-double border-top-pixel padding-top-base">Role-based palettes</h2>
+        <h2 class="font-sans-f10 margin-top-double margin-bottom-double border-top-pixel padding-top-base">Using role-based palettes</h2>
 
         <p class="margin-top-base">Project theme palettes are role-based — assigning colors to four high-level roles that colors can play in your project: <strong>neutral</strong>, <strong>primary</strong>, <strong>secondary</strong>, and <strong>accent</strong>.</p>
         <p>Primary, secondary, and accent colors can be thought of as falling into a proportional 60/30/10 relationship: about 60% of your site’s color would be the primary color family, about 30% would be the secondary color family, and about 10% would be the accent color families.</p>
+        <p>Note that these proportions are for non-neutral colors. In many cases, the neutral text color will be the predominant tone on your site.</p>
 
         <div class="margin-y-double">
           <div class="g-row g-gap-small">
@@ -92,11 +93,14 @@ permalink: /uswds-color-docs-theme/
               <div class="line-height-smallest font-sans-f4 font-weight-700 padding-top-eighth ">Accent cool</div>
             </div>
           </div>
-          <div class="g-row margin-top-double">
+          <div class="g-row g-gap margin-top-double">
             <div class="g-col-4">
               <figure class="margin-0 display-block">
                 <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/project-theme-palette-example.svg' | relative_url }}" alt="An example of the 6-30-10 principle applied to a project theme">
               </figure>
+            </div>
+            <div class="g-col-8">
+              <p class="border-top">oh hai</p>
             </div>
           </div>
         </div>
