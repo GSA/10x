@@ -44,10 +44,9 @@ permalink: /uswds-color-docs-theme/
         <h2 class="font-sans-f10 margin-top-double margin-bottom-double border-top-pixel padding-top-base">Using role-based palettes</h2>
 
         <p class="margin-top-base">Project theme palettes are role-based — assigning colors to four high-level roles that colors can play in your project: <strong>neutral</strong>, <strong>primary</strong>, <strong>secondary</strong>, and <strong>accent</strong>.</p>
-        <p>Primary, secondary, and accent colors can be thought of as falling into a proportional 60/30/10 relationship: about 60% of your site’s color would be the primary color family, about 30% would be the secondary color family, and about 10% would be the accent color families.</p>
+        <p>Primary, secondary, and accent colors can be thought of as falling into a proportional 60/30/10 relationship: about 60% of your site’s color would be the primary color family, about 30% would be the secondary color family, and about 10% would be the accent color families (accent warm and accent cool).</p>
         <p>Note that these proportions are for non-neutral colors. In many cases, the neutral text color will be the predominant tone on your site.</p>
-
-        <div class="margin-y-double">
+        <div class="margin-top-double margin-bottom-quad">
           <div class="g-row g-gap-small">
             <div class="g-col-7 margin-bottom-half">
               <div class="border-bottom-pixel font-mono-f2 padding-bottom-quarter">60%</div>
@@ -93,24 +92,30 @@ permalink: /uswds-color-docs-theme/
               <div class="line-height-smallest font-sans-f4 font-weight-700 padding-top-eighth ">Accent cool</div>
             </div>
           </div>
-          <div class="g-row g-gap margin-top-double">
-            <div class="g-col-4">
-              <figure class="margin-0 display-block">
-                <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/project-theme-palette-example.svg' | relative_url }}" alt="An example of the 6-30-10 principle applied to a project theme">
-              </figure>
-            </div>
-            <div class="g-col-8">
-              <p class="border-top">oh hai</p>
-            </div>
-          </div>
         </div>
-
         <ul>
           <li>A <strong>neutral color</strong> is often used for text and is typically <code>black</code>, <code>black-cool</code> or <code>black-warm</code>. Most of the readable content on your website will be neutral.</li>
           <li>A <strong>primary color</strong> is the hue family used for about 60% of your site’s color. This tends to be the color most associated with identity, and the color used for buttons and other primary actionable items.</li>
           <li>A <strong>secondary color</strong> is the hue family used for about 30% of your site’s color. This hue is meant to support the primary color and distinguish alternate actions. Use a secondary color for callouts, pullquotes, or some headers to balance or harmonize with the primary color, and to add meaningful differentiation.</li>
           <li>An <strong>accent color</strong> is meant to draw attention. Use accent colors sparingly. They tend to follow a boy-who-cried-wolf rule: the more you use it, the less attention each usage captures.</li>
         </ul>
+
+        <p>Here’s an example of how these might work together:</p>
+
+        <aside class="background-color-white-warm-3 padding-base-plus margin-y-double border-radius-small">
+          <div class="g-row g-gap-large">
+            <div class="g-col-4">
+              <figure class="margin-0 display-block">
+                <img class="max-width-full display-block margin-left-auto" src="{{ '/assets/img/uswds/project-theme-palette-example.svg' | relative_url }}" alt="An example of the 6-30-10 principle applied to a project theme">
+              </figure>
+            </div>
+            <div class="g-col-fill">
+              <p class="margin-top-0 font-sans-f6 font-weight-400">The <strong>primary</strong> color of <code class="background-color-blue-70v color-white">Blue 70v</code> occupies the majority of the non-neutral color on the page.</p>
+              <p class="border-top margin-top-half padding-top-half font-sans-f6 font-weight-400">The <strong>secondary</strong> color of <code class="background-color-mint-50 color-white">Mint 50</code> functions as a background color for an occasional content type.</p>
+              <p class="border-top margin-top-half padding-top-half font-sans-f6 font-weight-400">The <strong>warm and cool accent colors</strong> of <code class="background-color-orange-40v color-black-90">Orange 40v</code> and <code class="background-color-cyan-20v color-black-90">Cyan 20v</code> serve as special call-to-action buttons and headings for special content.</p>
+            </div>
+          </div>
+        </aside>
 
         <h2 class="font-sans-f10 margin-top-0 margin-bottom-double">Red</h2>
         <div class="g-row g-gap swatches">

@@ -1123,7 +1123,7 @@
                                         <use xlink:href="#path-127"></use>
                                     </mask>
                                     <g></g>
-                                    <g id="color-mint-50" mask="url(#mask-128)" fill="#1E8461">
+                                    <g id="color-orange-40v" mask="url(#mask-128)" fill="#FF7B0F">
                                         <rect id="Rectangle" x="0" y="0" width="55" height="8"></rect>
                                     </g>
                                     <g id="block/border/rounded/rd2px/b0" mask="url(#mask-128)"></g>
