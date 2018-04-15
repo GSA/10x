@@ -4,7 +4,7 @@ title: USWDS color
 permalink: /uswds-color-docs-theme/
 ---
 
-<div class="font-mono-f4 font-weight-300 padding-top-base padding-bottom-double tablet:padding-top-double tablet:padding-bottom-triple">
+<div class="font-weight-300 padding-top-base padding-bottom-double tablet:padding-top-double tablet:padding-bottom-triple">
 
   <div class="g-container-desktop margin-bottom-0 padding-x-double padding-top-base margin-top-0">
     <div class="g-row">
@@ -26,7 +26,7 @@ permalink: /uswds-color-docs-theme/
           </li>
           <li class="padding-bottom-half"><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-theme' | relative_url }}">Project theme palette</a>
             <ul class="list-reset font-weight-300 margin-top-half margin-bottom-base">
-              <li>The use of color</li>
+              <li>Role-based palettes</li>
               <li>Accessibility</li>
               <li>Pairing colors</li>
             </ul>
@@ -35,11 +35,37 @@ permalink: /uswds-color-docs-theme/
           <li><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-system' | relative_url }}">Special palettes</a></li>
         </ul>
       </div>
-      <div class="g-col-fill content padding-left-double">
+      <div class="g-col-fill usa-prose padding-x-base-plus font-sans-f8">
 
         <!-- ###################################################### -->
 
-        <p class="margin-top-base">Theme palettes are role-based — assigning colors to four basic roles that colors can play in your project: <strong>neutral</strong>, <strong>primary</strong>, <strong>seconday</strong>, and <strong>accent</strong>. Primary, secondary, and accent colors can be thought of as falling into a 60/30/10 relationship: 60% of your site’s color would be the primary hue, 30% would be the secondary hue, and 10% would be the accent hue.</p>
+        <p class="font-sans-f11 font-weight-300 line-height-base margin-top-0">Your project theme palette defines the specific color families and grades used in your project, based on the role these colors play on your site.</p>
+
+        <h2 class="font-sans-f10 margin-top-double margin-bottom-double border-top-pixel padding-top-base">Role-based palettes</h2>
+
+        <p class="margin-top-base">Project theme palettes are role-based — assigning colors to four high-level roles that colors can play in your project: <strong>neutral</strong>, <strong>primary</strong>, <strong>secondary</strong>, and <strong>accent</strong>.</p>
+        <p>Primary, secondary, and accent colors can be thought of as falling into a 60/30/10 relationship: 60% of your site’s color would be the primary hue, 30% would be the secondary hue, and 10% would be the accent hues.</p>
+
+        <div class="g-row g-gap">
+          <div class="g-col flex-12">
+            <div class="height-base background-color-black"></div>
+          </div>
+          <div class="g-col flex-6">
+            <div class="height-base background-color-black"></div>
+          </div>
+          <div class="g-col flex-6">
+            <div class="height-base background-color-black"></div>
+          </div>
+          <div class="g-col flex-1">
+            <div class="height-base background-color-black"></div>
+          </div>
+          <div class="g-col flex-1">
+            <div class="height-base background-color-black"></div>
+          </div>
+        </div>
+
+        <p>oh hai</p>
+
         <ul>
           <li>A <strong>neutral color</strong> is often used for text and is typically <code>black</code>, <code>black-cool</code> or <code>black-warm</code>. Most of the readable content on your website will be neutral.</li>
           <li>A <strong>primary color</strong> is the hue family used for about 60% of your site’s color. This tends to be the color most associated with identity, and the color used for buttons and other primary actionable items.</li>

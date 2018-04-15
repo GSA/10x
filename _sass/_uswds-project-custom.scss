@@ -53,64 +53,101 @@ i.e.
   }
 }
 
-.usa-body-content {
-  h1, h2, h3 {
-    @include u-font-weight(normal);
-    @include u-line-height(smaller);
-    @include u-margin-y(0);
+.o-normalize-headings {
+  @include u-font-weight(normal);
+  @include u-line-height(smaller);
+  @include u-margin-y(0);
+}
+
+.txt-h1,
+.txt-h2,
+.txt-h3 {
+  @extend .o-normalize-headings;
+}
+
+.txt-h2 {
+  @include u-font(sans, f9);
+  @include u-font-weight(bold);
+  @include u-margin-top(base);
+  @include u-padding-top(base);
+
+  @include at-media(tablet-plus){
+    @include u-font(sans, f11);
+    @include u-margin-top(base-plus);
   }
-  h2 {
-    @include u-font(sans, f9);
-    @include u-font-weight(bold);
+}
+
+.txt-h3 {
+  @include u-font(sans, f6);
+  @include u-font-weight(bold);
+  @include u-margin-top(base);
+  @include u-padding-top(half);
+  @include at-media(tablet-plus){
     @include u-margin-top(base);
     @include u-padding-top(base);
-
-    @include at-media(tablet-plus){
-      @include u-font(sans, f11);
-      @include u-margin-top(base-plus);
-    }
+    @include u-font(sans, f8);
   }
+  & + .txt-p {
+    @include u-margin-top(half);
+  }
+}
+
+.txt-p {
+  @include u-line-height(base);
+  @include u-margin-bottom(0);
+  @include u-margin-top(1em);
+  @include u-max-width(measure-base);
+  @include at-media(tablet-plus){
+    @include u-font(body, f8);
+    @include u-line-height(large);
+  }
+}
+
+.txt-li {
+  @include u-border-top();
+  @include u-border-color(black, 20);
+  @include u-padding-y(half);
+  @include at-media(tablet-plus){
+    @include u-padding-y(half);
+  }
+}
+
+.txt-code {
+  @include u-font(mono, f4);
+  @include u-font(mono);
+  @include u-font-weight(400);
+  @include u-padding-y(eighth);
+  @include u-padding-x(quarter);
+  @include u-background-color(white-warm, 4);
+  @include u-border-radius(small);
+}
+
+.txt-a {
+  @include u-color(black, 90);
+  @include u-text-decoration-color(indigo-warm, 60, vivid);
+  &:hover{
+    @include u-text-decoration-color(red-warm, 50, vivid);
+  }
+}
+
+.txt-ul {
+  @include o-list-reset;
+}
+
+.usa-body-content, .usa-prose {
+  h1, h2, h3 { @extend .o-normalize-headings; }
+  h2 { @extend .txt-h2; }
   h3 {
-    @include u-font(sans, f6);
-    @include u-font-weight(bold);
-    @include u-margin-top(base);
-    @include u-padding-top(half);
-    @include at-media(tablet-plus){
-      @include u-margin-top(base);
-      @include u-padding-top(base);
-      @include u-font(sans, f8);
-    }
+    @extend .txt-h3;
     & + p {
       @include u-margin-top(half);
     }
   }
-  p {
-    @include u-line-height(base);
-    @include u-margin-bottom(0);
-    @include u-margin-top(1em);
-    @include u-max-width(measure-base);
-    @include at-media(tablet-plus){
-      @include u-font(body, f8);
-      @include u-line-height(large);
-    }
-  }
-  ul {
-    @include o-list-reset;
-  }
-  li {
-    @include u-border-top();
-    @include u-border-color(black, 20);
-    @include u-padding-y(half);
-    @include at-media(tablet-plus){
-      @include u-padding-y(half);
-    }
-  }
+  p { @extend .txt-p; }
+  ul { @extend .txt-ul; }
+  li { @extend .txt-li; }
   p a {
-    @include u-color(black, 90);
-    @include u-text-decoration-color(indigo-warm, 60, vivid);
-    &:hover{
-      @include u-text-decoration-color(red-warm, 50, vivid);
-    }
+    @extend .txt-a;
     &.usa-lede-link {
       @include u-color(black, 90);
       @include u-text-decoration-color(black, 20);
@@ -119,15 +156,7 @@ i.e.
       }
     }
   }
-  code {
-    @include u-font(mono, f4);
-    @include u-font(mono);
-    @include u-font-weight(400);
-    @include u-padding-y(eighth);
-    @include u-padding-x(quarter);
-    @include u-background-color(white-warm, 4);
-    @include u-border-radius(small);
-  }
+  code { @extend .txt-code; }
   aside {
     code {
       @include u-background-color(black-warm, 10);
