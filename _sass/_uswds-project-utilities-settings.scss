@@ -222,7 +222,7 @@ $border-width-settings: (
   responsive:   true,
   active:       false,
   focus:        false,
-  hover:        false,
+  hover:        true,
   visited:      false
 );
 
@@ -716,6 +716,43 @@ $height-manual-values: (
 
 /*
 ========================================
+.justify-content
+----------------------------------------
+*/
+
+$justify-content-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+) !default;
+
+$justify-content-plugins: (
+  /*
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
+  'plugin-spacing-uswds-large'
+  'plugin-spacing-uswds-xlarge'
+  'plugin-spacing-uswds-all'
+  'plugin-spacing-uswds-smaller-negative'
+  'plugin-spacing-uswds-medium-negative'
+  'plugin-spacing-uswds-negative'
+  'plugin-spacing-units-percentage'
+  'plugin-spacing-uswds-smaller'
+  'plugin-spacing-uswds-smaller-negative'
+  */
+  'plugin-standard-justify-content'
+) !default;
+
+$justify-content-manual-values: (
+  /*
+  */
+) !default;
+
+/*
+========================================
 .left
 ----------------------------------------
 */
@@ -946,10 +983,7 @@ $min-height-plugins: (
   'plugin-spacing-uswds-small'
   'plugin-spacing-uswds-medium'
   */
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-medium',
-  'plugin-spacing-uswds-large',
-  'plugin-spacing-uswds-larger',
+  'plugin-standard-min-height'
 );
 
 $min-height-manual-values: (
@@ -1526,18 +1560,12 @@ $width-plugins: (
   'plugin-spacing-units-ch'
   'plugin-spacing-units-percentage'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-units-percentage',
-  'plugin-spacing-uswds-large',
-  'plugin-spacing-uswds-larger',
+  'plugin-standard-width'
 );
 
 $width-manual-values: (
   /*
   */
-  100ct:        '100%',
-  auto:         'auto',
 );
 
 /*
