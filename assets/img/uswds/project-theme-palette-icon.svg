@@ -1,154 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="168px" height="168px" viewBox="0 0 168 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="153px" height="170px" viewBox="0 0 153 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
     <title>Group 6</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="40" height="40" rx="20"></rect>
-        <path d="M20,-3.55271368e-15 C31.045695,-5.58177493e-15 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 C8.954305,40 1.3527075e-15,31.045695 0,20 C-1.3527075e-15,8.954305 8.954305,-1.52365243e-15 20,-3.55271368e-15 Z M20,2 C10.0588745,2 2,10.0588745 2,20 C2,29.9411255 10.0588745,38 20,38 C29.9411255,38 38,29.9411255 38,20 C38,10.0588745 29.9411255,2 20,2 Z" id="path-3"></path>
-        <rect id="path-5" x="0" y="0" width="40" height="40" rx="20"></rect>
-        <path d="M20,-3.55271368e-15 C31.045695,-5.58177493e-15 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 C8.954305,40 1.3527075e-15,31.045695 0,20 C-1.3527075e-15,8.954305 8.954305,-1.52365243e-15 20,-3.55271368e-15 Z M20,2 C10.0588745,2 2,10.0588745 2,20 C2,29.9411255 10.0588745,38 20,38 C29.9411255,38 38,29.9411255 38,20 C38,10.0588745 29.9411255,2 20,2 Z" id="path-7"></path>
-        <rect id="path-9" x="0" y="0" width="40" height="40" rx="20"></rect>
-        <path d="M20,-3.55271368e-15 C31.045695,-5.58177493e-15 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 C8.954305,40 1.3527075e-15,31.045695 0,20 C-1.3527075e-15,8.954305 8.954305,-1.52365243e-15 20,-3.55271368e-15 Z M20,2 C10.0588745,2 2,10.0588745 2,20 C2,29.9411255 10.0588745,38 20,38 C29.9411255,38 38,29.9411255 38,20 C38,10.0588745 29.9411255,2 20,2 Z" id="path-11"></path>
-        <rect id="path-13" x="0" y="0" width="40" height="40" rx="20"></rect>
-        <path d="M20,-3.55271368e-15 C31.045695,-5.58177493e-15 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 C8.954305,40 1.3527075e-15,31.045695 0,20 C-1.3527075e-15,8.954305 8.954305,-1.52365243e-15 20,-3.55271368e-15 Z M20,2 C10.0588745,2 2,10.0588745 2,20 C2,29.9411255 10.0588745,38 20,38 C29.9411255,38 38,29.9411255 38,20 C38,10.0588745 29.9411255,2 20,2 Z" id="path-15"></path>
-        <rect id="path-17" x="0" y="0" width="40" height="40" rx="20"></rect>
-        <path d="M20,-3.55271368e-15 C31.045695,-5.58177493e-15 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 C8.954305,40 1.3527075e-15,31.045695 0,20 C-1.3527075e-15,8.954305 8.954305,-1.52365243e-15 20,-3.55271368e-15 Z M20,2 C10.0588745,2 2,10.0588745 2,20 C2,29.9411255 10.0588745,38 20,38 C29.9411255,38 38,29.9411255 38,20 C38,10.0588745 29.9411255,2 20,2 Z" id="path-19"></path>
+        <circle id="path-1" cx="110.707107" cy="25.2928932" r="16"></circle>
+        <circle id="path-2" cx="26.2928932" cy="110.707107" r="16"></circle>
+        <circle id="path-3" cx="69" cy="69" r="32"></circle>
+        <circle id="path-4" cx="24" cy="24" r="24"></circle>
+        <circle id="path-5" cx="113" cy="112" r="20"></circle>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-6" transform="translate(84.000000, 84.000000) rotate(-45.000000) translate(-84.000000, -84.000000) translate(18.000000, 20.000000)">
-            <rect id="Rectangle-3" stroke="#1C1C1C" stroke-width="4" x="22" y="22" width="87" height="87"></rect>
-            <path d="M21.5,108.5 L111.313696,18.6863039" id="Line" stroke="#1C1C1C" stroke-width="5" stroke-linecap="square"></path>
-            <path d="M21.5,18.5 L111.313696,108.313696" id="Line" stroke="#1C1C1C" stroke-width="5" stroke-linecap="square"></path>
-            <g id="block">
-                <g id="block/rounded/pill">
-                    <g>
-                        <g id="block">
-                            <mask id="mask-2" fill="white">
-                                <use xlink:href="#path-1"></use>
-                            </mask>
-                            <g></g>
-                            <g id="color-blue-70v" mask="url(#mask-2)" fill="#0C4D82">
-                                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
-                            </g>
-                            <g id="block/border/pill/b2px" mask="url(#mask-2)">
-                                <g id="Group-3">
-                                    <mask id="mask-4" fill="white">
-                                        <use xlink:href="#path-3"></use>
-                                    </mask>
-                                    <use id="Combined-Shape" fill="#E44608" xlink:href="#path-3"></use>
-                                    <g id="color-white-0" mask="url(#mask-4)" fill="#FFFFFF">
-                                        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+        <g id="Group-6" transform="translate(76.903806, 83.853553) rotate(-315.000000) translate(-76.903806, -83.853553) translate(10.403806, 17.853553)">
+            <rect id="Rectangle-3" stroke="#1C1C1C" stroke-width="4" x="25" y="25" width="87" height="87"></rect>
+            <path d="M28.0116371,109.402576 L109.371646,28.042568" id="Line" stroke="#1C1C1C" stroke-width="4" stroke-linecap="square"></path>
+            <path d="M27.3974093,27.4537461 L109.466451,109.522788" id="Line" stroke="#1C1C1C" stroke-width="4" stroke-linecap="square"></path>
+            <g id="Oval-2">
+                <use fill="#FF7B0F" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <circle stroke="#FFFFFF" stroke-width="5.33333333" cx="110.707107" cy="25.2928932" r="13.3333333"></circle>
             </g>
-            <g id="block" transform="translate(0.000000, 88.000000)">
-                <g id="block/rounded/pill">
-                    <g>
-                        <g id="block">
-                            <mask id="mask-6" fill="white">
-                                <use xlink:href="#path-5"></use>
-                            </mask>
-                            <g></g>
-                            <g id="color-orange-40v" mask="url(#mask-6)" fill="#FF7B0F">
-                                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
-                            </g>
-                            <g id="block/border/pill/b2px" mask="url(#mask-6)">
-                                <g id="Group-3">
-                                    <mask id="mask-8" fill="white">
-                                        <use xlink:href="#path-7"></use>
-                                    </mask>
-                                    <use id="Combined-Shape" fill="#E44608" xlink:href="#path-7"></use>
-                                    <g id="color-white-0" mask="url(#mask-8)" fill="#FFFFFF">
-                                        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+            <g id="Oval-2">
+                <use fill="#55E1FA" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <circle stroke="#FFFFFF" stroke-width="5.33333333" cx="26.2928932" cy="110.707107" r="13.3333333"></circle>
             </g>
-            <g id="block" transform="translate(92.000000, 0.000000)">
-                <g id="block/rounded/pill">
-                    <g>
-                        <g id="block">
-                            <mask id="mask-10" fill="white">
-                                <use xlink:href="#path-9"></use>
-                            </mask>
-                            <g></g>
-                            <g id="color-cyan-20v" mask="url(#mask-10)" fill="#55E1FA">
-                                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
-                            </g>
-                            <g id="block/border/pill/b2px" mask="url(#mask-10)">
-                                <g id="Group-3">
-                                    <mask id="mask-12" fill="white">
-                                        <use xlink:href="#path-11"></use>
-                                    </mask>
-                                    <use id="Combined-Shape" fill="#E44608" xlink:href="#path-11"></use>
-                                    <g id="color-white-0" mask="url(#mask-12)" fill="#FFFFFF">
-                                        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+            <g id="Oval-2">
+                <use fill="#1C1C1C" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <circle stroke="#FFFFFF" stroke-width="4" cx="69" cy="69" r="30"></circle>
             </g>
-            <g id="block" transform="translate(92.000000, 88.000000)">
-                <g id="block/rounded/pill">
-                    <g>
-                        <g id="block">
-                            <mask id="mask-14" fill="white">
-                                <use xlink:href="#path-13"></use>
-                            </mask>
-                            <g></g>
-                            <g id="color-mint-50" mask="url(#mask-14)" fill="#1E8461">
-                                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
-                            </g>
-                            <g id="block/border/pill/b2px" mask="url(#mask-14)">
-                                <g id="Group-3">
-                                    <mask id="mask-16" fill="white">
-                                        <use xlink:href="#path-15"></use>
-                                    </mask>
-                                    <use id="Combined-Shape" fill="#E44608" xlink:href="#path-15"></use>
-                                    <g id="color-white-0" mask="url(#mask-16)" fill="#FFFFFF">
-                                        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+            <g id="Oval-2">
+                <use fill="#0C4D82" fill-rule="evenodd" xlink:href="#path-4"></use>
+                <circle stroke="#FFFFFF" stroke-width="4" cx="24" cy="24" r="22"></circle>
             </g>
-            <g id="block" transform="translate(46.000000, 44.000000)">
-                <g id="block/rounded/pill">
-                    <g>
-                        <g id="block">
-                            <mask id="mask-18" fill="white">
-                                <use xlink:href="#path-17"></use>
-                            </mask>
-                            <g></g>
-                            <g id="color-black-90" mask="url(#mask-18)" fill="#1C1C1C">
-                                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
-                            </g>
-                            <g id="block/border/pill/b2px" mask="url(#mask-18)">
-                                <g id="Group-3">
-                                    <mask id="mask-20" fill="white">
-                                        <use xlink:href="#path-19"></use>
-                                    </mask>
-                                    <use id="Combined-Shape" fill="#E44608" xlink:href="#path-19"></use>
-                                    <g id="color-white-0" mask="url(#mask-20)" fill="#FFFFFF">
-                                        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+            <g id="Oval-2">
+                <use fill="#1E8461" fill-rule="evenodd" xlink:href="#path-5"></use>
+                <circle stroke="#FFFFFF" stroke-width="4" cx="113" cy="112" r="18"></circle>
             </g>
         </g>
     </g>

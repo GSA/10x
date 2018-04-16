@@ -2,10 +2,6 @@
 ========================================
 USWDS UTILITIES SETTINGS
 ----------------------------------------
-!! Copy this file to your project's
-   sass root. Don't edit the version
-   in node_modules.
-----------------------------------------
 */
 
 $utilities-namespace-prefix:  'u-';
@@ -1346,6 +1342,32 @@ $text-decoration-color-plugins: (
 );
 
 $text-decoration-color-manual-values: (
+  /*
+  */
+);
+
+/*
+========================================
+.text-indent
+----------------------------------------
+*/
+
+$text-indent-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+);
+
+$text-indent-plugins: (
+  /*
+  */
+  'plugin-standard-text-indent'
+);
+
+$text-decoration-indent-values: (
   /*
   */
 );

@@ -468,6 +468,16 @@ $uswds-properties: (
     standard: $standard-colors,
     extended: $uswds-colors,
   ),
+  text-indent: (
+    standard: map-collect(
+      map-get($partial-values, zero-zero),
+      map-get($uswds-spacing, smaller),
+      map-get($uswds-spacing, small),
+      map-get($uswds-spacing, smaller-negative),
+      map-get($uswds-spacing, small-negative)
+    ),
+    extended: (),
+  ),
   text-transform: (
     standard: (
       'capitalize': capitalize,
