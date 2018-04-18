@@ -215,6 +215,16 @@ $uswds-properties: (
       '900': 900,
     ),
   ),
+  gap: (
+    standard: map-collect(
+      $uswds-column-gaps,
+      (
+        'small': $theme-column-gap-small,
+        'large': $theme-column-gap-large,
+      )
+    ),
+    extended: (),
+  ),
   height: (
     standard: map-collect(
       map-get($uswds-spacing, smaller),
