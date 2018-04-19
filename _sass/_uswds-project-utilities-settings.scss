@@ -338,6 +338,7 @@ $circle-plugins: (
   'plugin-spacing-uswds-large'
   'plugin-spacing-uswds-xlarge'
   */
+  'plugin-spacing-uswds-smaller',
   'plugin-spacing-uswds-small',
   'plugin-spacing-uswds-medium'
 );
@@ -1531,8 +1532,8 @@ $whitespace-manual-values: (
   /*
   pre:          'pre',
   pre-line:     'pre-line',
-  pre-wrap:     'pre-wrap',
   */
+  pre-wrap:     'pre-wrap',
   normal:       'normal',
   nowrap:       'nowrap'
 );

@@ -35,7 +35,7 @@ permalink: /uswds-color-docs-theme/
           <li><a class="color-black-90 text-decoration-none hover:text-decoration-underline" href="{{ '/uswds-color-docs-system' | relative_url }}">Special palettes</a></li>
         </ul>
       </div>
-      <div class="g-col-fill usa-prose padding-x-base-plus font-sans-f8">
+      <div class="g-col-9 usa-prose padding-x-base-plus font-sans-f8">
 
         <!-- ###################################################### -->
 
@@ -131,35 +131,1009 @@ permalink: /uswds-color-docs-theme/
               </figure>
             </div>
             <div class="g-col-fill">
-              <p class="margin-top-0 font-sans-f6 font-weight-400">The <strong>primary</strong> color of <code class="background-color-blue-70v color-white">Blue 70v</code> occupies the majority of the non-neutral color on the page.</p>
-              <p class="border-top margin-top-half padding-top-half font-sans-f6 font-weight-400">The <strong>secondary</strong> color of <code class="background-color-mint-50 color-white">Mint 50</code> functions as a background color for an occasional content type.</p>
-              <p class="border-top margin-top-half padding-top-half font-sans-f6 font-weight-400">The <strong>warm and cool accent colors</strong> of <code class="background-color-orange-40v color-black-90">Orange 40v</code> and <code class="background-color-cyan-20v color-black-90">Cyan 20v</code> serve as special call-to-action buttons and headings for special content.</p>
+              <p class="margin-top-0 font-sans-f6 font-weight-400">The <strong>primary</strong> color family of <code class="background-color-blue-70v color-white">Blue</code> occupies the majority of the non-neutral color on the page.</p>
+              <p class="border-top margin-top-half padding-top-half font-sans-f6 font-weight-400">The <strong>secondary</strong> color family of <code class="background-color-mint-50 color-white">Mint</code> functions as a background color for an occasional content type.</p>
+              <p class="border-top margin-top-half padding-top-half font-sans-f6 font-weight-400">The <strong>warm and cool accent color families</strong> of <code class="background-color-orange-40v color-black-90">Orange</code> and <code class="background-color-cyan-20v color-black-90">Cyan</code> serve as special call-to-action buttons and headings for special content.</p>
+              <p class="border-top margin-top-half padding-top-half font-sans-f6 font-weight-400"><strong>Neutral</strong> <code class="background-color-black-90 color-white">Black</code> is the color family of most text.</p>
             </div>
           </div>
         </aside>
 
-        <h2 class="font-sans-f10 margin-y-double border-top-pixel padding-top-base">Project theme palette gallery</h2>
-        <p>Primary, secondary, and accent colors can be thought of as falling into a proportional 60/30/10 relationship: about 60% of your site’s color would be the primary color family, about 30% would be the secondary color family, and about 10% would be the accent color families (accent warm and accent cool).</p>
+        <h2 class="font-sans-f10 margin-y-double border-top-pixel padding-top-base">Project theme palette grades</h2>
+        <p>Each project theme palette include the five theme color families we’ve discussed (primary, secondary, accent warm, accent cool, and neutral) in a range of relative grades from <code>lightest</code> to <code>darker</code>, plus a <code>vivid</code> variant. No color family includes all these grades and variants. The following chart shows the available families and grades of a project theme palette in more detail.</p>
+        <div class="g-row g-gap">
+          <div class="g-col-6">
+            <div class="margin-top-base-plus border border-radius-base padding-base">
+              <h4 class="margin-0 font-sans-f8">Primary</h4>
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Lightest</div>
+                  <div class="g-col-fit margin-left-auto">Grade 1–5</div>
+                </div>
+                <div class="height-double display-flex align-items-center  margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                </div><!-- blank -->
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">—</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">—</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Lighter</div>
+                  <div class="g-col-fit margin-left-auto">Grade 10–20</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-blue-10 margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-primary-lighter</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(primary, lighter)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Light</div>
+                  <div class="g-col-fit margin-left-auto">Grade 30–40</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-blue-30 margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-primary-light</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(primary, light)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Base</div>
+                  <div class="g-col-fit margin-left-auto">Grade 40–60</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-blue-50 margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-primary-base</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(primary, base)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Vivid</div>
+                  <div class="g-col-fit margin-left-auto">Grade 20v-60v</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-blue-50v margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-primary-vivid</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(primary, vivid)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Dark</div>
+                  <div class="g-col-fit margin-left-auto">Grade 60-70</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-blue-70 margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-primary-large</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(primary, large)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Darker</div>
+                  <div class="g-col-fit margin-left-auto">Grade 80–100</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-blue-90 margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-primary-darker</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(primary, darker)</span></li>
+                </ul>
+              </div><!-- color -->
+            </div><!-- card -->
+          </div><!-- column -->
+          <div class="g-col-6">
+            <div class="margin-top-base-plus border border-radius-base padding-base">
+              <h4 class="margin-0 font-sans-f8">Secondary</h4>
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Lightest</div>
+                  <div class="g-col-fit margin-left-auto">Grade 1–5</div>
+                </div>
+                <div class="height-double display-flex align-items-center  margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                </div><!-- blank -->
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">—</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">—</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Lighter</div>
+                  <div class="g-col-fit margin-left-auto">Grade 10–20</div>
+                </div>
+                <div class="height-double display-flex align-items-center margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">—</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">—</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Light</div>
+                  <div class="g-col-fit margin-left-auto">Grade 30–40</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-mint-30 margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-secondary-light</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(secondary, light)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Base</div>
+                  <div class="g-col-fit margin-left-auto">Grade 40–60</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-mint-50 margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-secondary-base</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(secondary, base)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Vivid</div>
+                  <div class="g-col-fit margin-left-auto">Grade 20v-60v</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-mint-cool-40v margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-secondary-vivid</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(secondary, vivid)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Dark</div>
+                  <div class="g-col-fit margin-left-auto">Grade 60-70</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-mint-70 margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-secondary-dark</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(secondary, dark)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Darker</div>
+                  <div class="g-col-fit margin-left-auto">Grade 80–100</div>
+                </div>
+                <div class="height-double display-flex align-items-center margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">—</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">—</span></li>
+                </ul>
+              </div><!-- color -->
+            </div><!-- card -->
+          </div><!-- column -->
 
+          <div class="g-col-6">
+            <div class="margin-top-base-plus border border-radius-base padding-base">
+              <h4 class="margin-0 font-sans-f8">Accent warm</h4>
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Base</div>
+                  <div class="g-col-fit margin-left-auto">Grade 20v–50v</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-orange-40v margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-accent-warm-base</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(accent-warm, base)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Dark</div>
+                  <div class="g-col-fit margin-left-auto">Grade 40–60</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-orange-50v margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-accent-warm-dark</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(accent-warm, dark)</span></li>
+                </ul>
+              </div><!-- color -->
+            </div><!-- card -->
+          </div><!-- column -->
+          <div class="g-col-6">
+            <div class="margin-top-base-plus border border-radius-base padding-base">
+              <h4 class="margin-0 font-sans-f8">Accent cool</h4>
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Base</div>
+                  <div class="g-col-fit margin-left-auto">Grade 20v–50v</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-cyan-20v margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-accent-cool-base</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(accent-cool, base)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Dark</div>
+                  <div class="g-col-fit margin-left-auto">Grade 40–60</div>
+                </div>
+                <div class="height-double display-flex align-items-center background-color-cyan-40v margin-top-quarter">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-accent-cool-dark</span></li>
+                  <li class="margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(accent-cool, dark)</span></li>
+                </ul>
+              </div><!-- color -->
+            </div><!-- card -->
+          </div><!-- column -->
+          <div class="g-col-12">
+            <div class="margin-top-base-plus border border-radius-base padding-base background-color-white">
+              <h4 class="margin-0 font-sans-f8">Neutral</h4>
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Lightest</div>
+                  <div class="g-col-fit margin-left-auto">Grade 0–5</div>
+                </div>
+                <div class="height-double display-flex align-items-center margin-top-quarter background-color-white-1">
+                  <div class="margin-x-auto circle-eighth background-color-black-90 display-none"></div>
+                </div>
+                <ul class="g-row swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="g-col-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-neutral-lightest</span></li>
+                  <li class="g-col-auto margin-left-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(neutral, lightest)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Lighter</div>
+                  <div class="g-col-fit margin-left-auto">Grade 10–20</div>
+                </div>
+                <div class="height-double display-flex align-items-center margin-top-quarter background-color-black-10">
+                </div>
+                <ul class="g-row swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="g-col-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-neutral-lighter</span></li>
+                  <li class="g-col-auto margin-left-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(neutral, lighter)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Light</div>
+                  <div class="g-col-fit margin-left-auto">Grade 20–30</div>
+                </div>
+                <div class="height-double display-flex align-items-center margin-top-quarter background-color-black-30">
+                </div>
+                <ul class="g-row swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="g-col-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-neutral-light</span></li>
+                  <li class="g-col-auto margin-left-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(neutral, light)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Base</div>
+                  <div class="g-col-fit margin-left-auto">Grade 40–60</div>
+                </div>
+                <div class="height-double display-flex align-items-center margin-top-quarter background-color-black-50">
+                </div>
+                <ul class="g-row swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="g-col-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-neutral-base</span></li>
+                  <li class="g-col-auto margin-left-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(neutral, base)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Dark</div>
+                  <div class="g-col-fit margin-left-auto">Grade 60–70</div>
+                </div>
+                <div class="height-double display-flex align-items-center margin-top-quarter background-color-black-70">
+                </div>
+                <ul class="g-row swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="g-col-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-neutral-dark</span></li>
+                  <li class="g-col-auto margin-left-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(neutral, dark)</span></li>
+                </ul>
+              </div><!-- color -->
+              <div>
+                <div class="g-row font-sans-f1 border-top border-color-black-10 margin-top-base padding-top-half-plus">
+                  <div class="g-col-fit font-weight-700">Darker</div>
+                  <div class="g-col-fit margin-left-auto">Grade 80–100</div>
+                </div>
+                <div class="height-double display-flex align-items-center margin-top-quarter background-color-black-90">
+                </div>
+                <ul class="g-row swatch-info list-reset font-mono-f1 margin-top-half">
+                  <li class="g-col-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">Utility suffix:</span> <span class="token">-neutral-darker</span></li>
+                  <li class="g-col-auto margin-left-auto margin-y-eighth border-0 padding-0"><span class="font-sans-f2">SASS:</span> <span class="token">color(neutral, darker)</span></li>
+                </ul>
+              </div><!-- color -->
+            </div><!-- card -->
+          </div><!-- column -->
+        </div><!-- row -->
 
-        <div class="g-row margin-top-double">
-          <div class="palette-card g-col-6 border border-radius-small padding-half">
-            <div class="g-row">
-            </div> <!-- this-palette -->
-            <h4 class="font-sans-f5 margin-bottom-half line-height-smaller">Arcadia</h4>
-            <ul class="list-reset g-row g-gap font-sans-f1 font-weight-400 margin-0">
-              <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">professional</li>
-              <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">young</li>
-              <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">natural</li>
-            </ul><!-- tags -->
-            <div class="g-row margin-top-double align-items-center">
-              <a href="#0" class="g-col-auto line-height-smallest font-sans-f1 font-weight-400 padding-y-half padding-x-base background-color-black-90 color-white border-radius-small text-decoration-none">
-                Download palette ⇣
-              </a><!-- palette-button -->
-              <a href="#0" class="g-col-auto margin-left-auto color-black-90 font-sans-f1 text-decoration-underline line-height-smallest">See more examples</a>
-            </div><!-- palette-actions -->
-          </div><!-- palette-card -->
+        <h2 class="font-sans-f10 margin-y-double border-top-pixel padding-top-base">Palette gallery</h2>
+        <p>While it can be simple to create and customize USWDS project theme palettes when your team has dedicated visual design skills, we’re also working to provide strong, practical prebuilt themes designed by visual designers and appropriate for a wide range of needs. Each of the following palettes is available for immediate download, using <a href="#0">the instructions below</a>.</p>
+        <p>If you’ve designed a useful project theme palette for your project, consider <a href="#0">contributing it back to USWDS</a> through Github — we’re interested in collecting and presenting new proven project work.</p>
+
+        <div class="g-row g-gap margin-top-double">
+          <div class="g-col-6">
+            <div class="palette-card border border-radius-small padding-half margin-top-base-plus">
+              <div class="g-row g-gap-eighth">
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-blue-10 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-50 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-40v height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-70 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-90 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-mint-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-mint-50 height-half margin-top-eighth"></div>
+                  <div class="background-color-mint-cool-40v height-half margin-top-eighth"></div>
+                  <div class="background-color-mint-60 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-orange-40v height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-orange-50v height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-cyan-20v height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-cyan-40v height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="background-color-white-1 height-half"></div>
+                  <div class="background-color-black-5 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-50 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-black-80 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-80 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+              </div> <!-- this-palette -->
+              <h4 class="font-sans-f5 margin-bottom-half line-height-smaller">Onondaga</h4>
+              <ul class="list-reset g-row g-gap font-sans-f1 font-weight-400 margin-bottom-0 margin-x-0 min-height-triple align-items-flex-start margin-top-quarter">
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">professional</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">young</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">natural</li>
+              </ul><!-- tags -->
+              <div class="g-row margin-top-base align-items-center">
+                <a href="#0" class="g-col-auto line-height-smallest font-sans-f1 font-weight-400 padding-y-half padding-x-base background-color-black-90 color-white border-radius-small text-decoration-none">
+                  Download palette ⇣
+                </a><!-- palette-button -->
+                <a href="#0" class="g-col-auto margin-left-auto color-black-90 font-sans-f1 text-decoration-underline line-height-smallest">See more examples</a>
+              </div><!-- palette-actions -->
+            </div><!-- palette-card -->
+          </div>
+
+          <!-- * * * * * * =================================== -->
+          <div class="g-col-6">
+            <div class="palette-card border border-radius-small padding-half margin-top-base-plus">
+              <div class="g-row g-gap-eighth">
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-blue-10 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-40 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-50 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-60v height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-70v height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-90 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-red-20v height-half margin-top-eighth"></div>
+                  <div class="background-color-red-50 height-half margin-top-eighth"></div>
+                  <div class="background-color-red-50v height-half margin-top-eighth"></div>
+                  <div class="background-color-red-60 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-gold-10v height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-gold-40 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-cyan-30v height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-cyan-50 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="background-color-white height-half"></div>
+                  <div class="background-color-black-10 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-50 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-black-70 height-half margin-top-eighth"></div>
+                  <div class="background-color-blacksolid-90 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+              </div> <!-- this-palette -->
+              <h4 class="font-sans-f5 margin-bottom-half line-height-smaller">Federal <span class="font-weight-300">(Original USWDS)</span></h4>
+              <ul class="list-reset g-row g-gap font-sans-f1 font-weight-400 margin-bottom-0 margin-x-0 min-height-triple align-items-flex-start margin-top-quarter">
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">traditional</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">straightforward</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">trustworthy</li>
+              </ul><!-- tags -->
+              <div class="g-row margin-top-base align-items-center">
+                <a href="#0" class="g-col-auto line-height-smallest font-sans-f1 font-weight-400 padding-y-half padding-x-base background-color-black-90 color-white border-radius-small text-decoration-none">
+                  Download palette ⇣
+                </a><!-- palette-button -->
+                <a href="#0" class="g-col-auto margin-left-auto color-black-90 font-sans-f1 text-decoration-underline line-height-smallest">See more examples</a>
+              </div><!-- palette-actions -->
+            </div><!-- palette-card -->
+          </div><!-- card column -->
+
+          <!-- * * * * * * =================================== -->
+          <div class="g-col-6">
+            <div class="palette-card border border-radius-small padding-half margin-top-base-plus">
+              <div class="g-row g-gap-eighth">
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-indigo-cool-10 height-half margin-top-eighth"></div>
+                  <div class="background-color-indigo-cool-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-indigo-cool-60 height-half margin-top-eighth"></div>
+                  <div class="background-color-indigo-cool-40v height-half margin-top-eighth"></div>
+                  <div class="background-color-indigo-cool-70 height-half margin-top-eighth"></div>
+                  <div class="background-color-indigo-cool-90 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-red-warm-20v height-half margin-top-eighth"></div>
+                  <div class="background-color-red-warm-40v height-half margin-top-eighth"></div>
+                  <div class="background-color-red-warm-50v height-half margin-top-eighth"></div>
+                  <div class="background-color-red-warm-60 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-yellow-10v height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-yellow-20v height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-blue-30v height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-blue-50v height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="background-color-white-cool-1 height-half"></div>
+                  <div class="background-color-black-cool-10 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-cool-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-cool-50 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-black-cool-70 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-cool-90 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+              </div> <!-- this-palette -->
+              <h4 class="font-sans-f5 margin-bottom-half line-height-smaller margin-bottom-0">Pennant</h4>
+              <ul class="list-reset g-row g-gap font-sans-f1 font-weight-400 margin-bottom-0 margin-x-0 min-height-triple align-items-flex-start margin-top-quarter">
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter margin-top-quarter">solid</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter margin-top-quarter">friendly</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter margin-top-quarter">energetic</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter margin-top-quarter">outgoing</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter margin-top-quarter">all-American</li>
+              </ul><!-- tags -->
+              <div class="g-row margin-top-base align-items-center">
+                <a href="#0" class="g-col-auto line-height-smallest font-sans-f1 font-weight-400 padding-y-half padding-x-base background-color-black-90 color-white border-radius-small text-decoration-none">
+                  Download palette ⇣
+                </a><!-- palette-button -->
+                <a href="#0" class="g-col-auto margin-left-auto color-black-90 font-sans-f1 text-decoration-underline line-height-smallest">See more examples</a>
+              </div><!-- palette-actions -->
+            </div><!-- palette-card -->
+          </div><!-- card-column -->
+
+          <!-- * * * * * * =================================== -->
+          <div class="g-col-6">
+            <div class="palette-card border border-radius-small padding-half margin-top-base-plus">
+              <div class="g-row g-gap-eighth">
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-indigo-20 height-half margin-top-eighth"></div>
+                  <div class="background-color-indigo-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-indigo-50 height-half margin-top-eighth"></div>
+                  <div class="background-color-indigo-50v height-half margin-top-eighth"></div>
+                  <div class="background-color-indigo-70 height-half margin-top-eighth"></div>
+                  <div class="background-color-indigo-90 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-black-cool-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-cool-50 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-warm-40 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-cool-70 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-indigo-cool-20 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-indigo-cool-40 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-blue-warm-40 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-blue-warm-50 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="background-color-white-warm-3 height-half"></div>
+                  <div class="background-color-black-warm-10 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-warm-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-warm-50 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-black-warm-70 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-warm-90 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+              </div> <!-- this-palette -->
+              <h4 class="font-sans-f5 margin-bottom-half line-height-smaller">Marine</h4>
+              <ul class="list-reset g-row g-gap font-sans-f1 font-weight-400 margin-bottom-0 margin-x-0 min-height-triple align-items-flex-start margin-top-quarter">
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">no nonsense</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">professional</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">conservative</li>
+              </ul><!-- tags -->
+              <div class="g-row margin-top-base align-items-center">
+                <a href="#0" class="g-col-auto line-height-smallest font-sans-f1 font-weight-400 padding-y-half padding-x-base background-color-black-90 color-white border-radius-small text-decoration-none">
+                  Download palette ⇣
+                </a><!-- palette-button -->
+                <a href="#0" class="g-col-auto margin-left-auto color-black-90 font-sans-f1 text-decoration-underline line-height-smallest">See more examples</a>
+              </div><!-- palette-actions -->
+            </div><!-- palette-card -->
+          </div><!-- card-column -->
+
+          <!-- * * * * * * =================================== -->
+          <div class="g-col-6">
+            <div class="palette-card border border-radius-small padding-half margin-top-base-plus display-flex flex-direction-column">
+              <h4 class="font-sans-f5 margin-bottom-quarter line-height-smaller order-2">Cascade</h4>
+              <div class="g-row g-gap-eighth order-first">
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-mint-cool-10 height-half margin-top-eighth"></div>
+                  <div class="background-color-mint-cool-40 height-half margin-top-eighth"></div>
+                  <div class="background-color-mint-cool-50 height-half margin-top-eighth"></div>
+                  <div class="background-color-mint-cool-40v height-half margin-top-eighth"></div>
+                  <div class="background-color-mint-cool-70 height-half margin-top-eighth"></div>
+                  <div class="background-color-mint-cool-90 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-mint-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-mint-40 height-half margin-top-eighth"></div>
+                  <div class="background-color-mint-30v height-half margin-top-eighth"></div>
+                  <div class="background-color-mint-50 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-gold-20 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-gold-40 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-cyan-20 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-cyan-40v height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="background-color-white-cool-2 height-half"></div>
+                  <div class="background-color-black-cool-10 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-cool-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-cool-50 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-black-cool-70 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-cool-90 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+              </div> <!-- this-palette -->
+              <ul class="order-3 list-reset g-row g-gap font-sans-f1 font-weight-400 margin-bottom-0 margin-x-0 min-height-triple align-items-flex-start margin-top-quarter">
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter margin-top-quarter">fresh</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter margin-top-quarter">compassionate</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter margin-top-quarter">energetic</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter margin-top-quarter">healthy</li>
+              </ul><!-- tags -->
+              <div class="order-4 g-row margin-top-base align-items-center">
+                <a href="#0" class="g-col-auto line-height-smallest font-sans-f1 font-weight-400 padding-y-half padding-x-base background-color-black-90 color-white border-radius-small text-decoration-none">
+                  Download palette ⇣
+                </a><!-- palette-button -->
+                <a href="#0" class="g-col-auto margin-left-auto color-black-90 font-sans-f1 text-decoration-underline line-height-smallest">See more examples</a>
+              </div><!-- palette-actions -->
+            </div><!-- palette-card -->
+          </div><!-- card-column -->
+
+          <!-- * * * * * * =================================== -->
+          <div class="g-col-6">
+            <div class="palette-card border border-radius-small padding-half margin-top-base-plus display-flex flex-direction-column">
+              <h4 class="font-sans-f5 margin-bottom-quarter line-height-smaller order-2">Columbia</h4>
+              <div class="g-row g-gap-eighth order-first">
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-blue-10 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-40 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-40v height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-70 height-half margin-top-eighth"></div>
+                  <div class="background-color-blue-90 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-gold-40 height-half margin-top-eighth"></div>
+                  <div class="background-color-gold-60 height-half margin-top-eighth"></div>
+                  <div class="background-color-gold-40v height-half margin-top-eighth"></div>
+                  <div class="background-color-gold-80 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-gold-20 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-gold-40 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="height-half display-flex align-items-center">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-blue-warm-40 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-blue-warm-50 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                </div><!-- family-column -->
+                <!-- ========================================= -->
+                <div class="g-col-fill">
+                  <div class="background-color-white-cool-1 height-half"></div>
+                  <div class="background-color-black-cool-5 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-cool-30 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-cool-50 height-half margin-top-eighth"></div>
+                  <div class="height-half display-flex align-items-center margin-top-eighth">
+                    <div class="margin-x-auto circle-eighth background-color-black-90"></div>
+                  </div><!-- blank -->
+                  <div class="background-color-black-cool-70 height-half margin-top-eighth"></div>
+                  <div class="background-color-black-cool-90 height-half margin-top-eighth"></div>
+                </div><!-- family-column -->
+              </div> <!-- this-palette -->
+              <ul class="order-3 list-reset g-row g-gap font-sans-f1 font-weight-400 margin-bottom-0 margin-x-0 min-height-triple align-items-flex-start margin-top-quarter">
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">clean</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">fresh</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter">earthy</li>
+                <li class="g-col-auto border-0 background-color-white-warm-4 border-radius-small padding-y-quarter padding-x-half line-height-smallest margin-right-quarter margin-top-quarter">earnest</li>
+              </ul><!-- tags -->
+              <div class="order-4 g-row margin-top-base align-items-center">
+                <a href="#0" class="g-col-auto line-height-smallest font-sans-f1 font-weight-400 padding-y-half padding-x-base background-color-black-90 color-white border-radius-small text-decoration-none">
+                  Download palette ⇣
+                </a><!-- palette-button -->
+                <a href="#0" class="g-col-auto margin-left-auto color-black-90 font-sans-f1 text-decoration-underline line-height-smallest">See more examples</a>
+              </div><!-- palette-actions -->
+            </div><!-- palette-card -->
+          </div><!-- card-column -->
+
         </div><!-- palettes -->
+
+        <h2 class="font-sans-f10 margin-y-double border-top-pixel padding-top-base">Downloading and using palettes</h2>
+        <p>Selecting <strong>Download palette</strong> will download a small SCSS file named <code>_theme-palette-[palette-name].scss</code>. Its contents set the USWDS variables necessary to use these colors in your project. (Developers, this is the same as manually setting these values in <code>_uswds-project-settings.scss</code>.)</p>
+        <pre class="max-width-full background-color-white-warm-4  padding-base white-space-pre-wrap margin-y-double">
+<code class="font-mono-f1 padding-0">&lt;!-- * * * * * * =================================== -->
+// USWDS Project theme palette
+// _theme-palette-onondaga.scss
+
+$neutral:                         black;
+$theme-color-neutral-lightest:    $neutral, 2;
+$theme-color-neutral-lighter:     $neutral, 10;
+$theme-color-neutral-light:       $neutral, 30;
+$theme-color-neutral-base:        $neutral, 50;
+$theme-color-neutral-dark:        $neutral, 70;
+$theme-color-neutral-darker:      $neutral, 70;
+
+$primary:                         blue;
+$theme-color-primary-lighter:     $primary, 10;
+$theme-color-primary-light:       $primary, 30;
+$theme-color-primary-base:        $primary, 50;
+$theme-color-primary-vivid:       $primary, 50, vivid;
+$theme-color-primary-dark:        $primary, 70;
+$theme-color-primary-darker:      false;
+
+$secondary:                       mint;
+$theme-color-secondary-light:     $secondary, 50;
+$theme-color-secondary-base:      $secondary, 60;
+$theme-color-secondary-vivid:     $secondary, 50, vivid;
+$theme-color-secondary-dark:      $secondary, 80;
+
+$accent-warm:                     orange;
+$theme-color-accent-warm-base:    $accent-warm, 50, vivid;
+$theme-color-accent-warm-dark:    $accent-warm, 50, vivid;
+
+$accent-cool:                     cyan;
+$theme-color-accent-cool-base:    $accent-cool, 50, vivid;
+$theme-color-accent-cool-dark:    $accent-cool, 50, vivid;</code></pre>
+
+        <p>Move this file to your project’s SASS directory and <code>@import</code> it after your existing project settings and before <code>@import 'uswds'</code>.</p>
+
+<pre class="max-width-full background-color-white-warm-4 padding-base white-space-pre-wrap margin-y-double"><code class="font-mono-f1 padding-0">@import 'uswds-project-settings';
+@import 'uswds-project-utilities-settings';
+@import 'theme-palette-onondaga'; // &lt;-- Add the palette import here.
+@import 'uswds';
+@import 'uswds-project-custom';
+</code></pre>
+
+        <p><strong>Visual designers</strong> we don’t have a solution for providing these palettes in Sketch or Illustator just yet, but we’re working on it!</p>
 
       </div>
     </div>
