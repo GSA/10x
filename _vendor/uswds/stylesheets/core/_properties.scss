@@ -11,9 +11,9 @@ $standard-colors: map-collect(
 );
 
 $extended-colors: map-collect(
-  $extended-colors,
-  $extended-colors-sketching,
-  $extended-colors-basic
+  $uswds-colors,
+  $uswds-colors-sketching,
+  $uswds-colors-basic
 );
 
 $partial-values: (
