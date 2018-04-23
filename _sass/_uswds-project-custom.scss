@@ -106,7 +106,7 @@ i.e.
 .txt-li {
   @include u-border-top();
   @include u-border-color(black, 20);
-  @include u-padding-y(s1);
+  @include u-padding-y(x1);
   @include at-media(tablet-plus){
     @include u-padding-y(x1);
   }
