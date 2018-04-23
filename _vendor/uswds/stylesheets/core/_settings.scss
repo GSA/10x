@@ -292,7 +292,7 @@ quad-plus       72px
 */
 
 $theme-border-radius-small:       2px !default;
-$theme-border-radius-base:        05 !default;
+$theme-border-radius-base:        x05 !default;
 $theme-border-radius-large:       false !default;
 
 /*
@@ -310,5 +310,5 @@ Column gap
 */
 
 $theme-column-gap-small: 2px !default;
-$theme-column-gap:       2 !default;
-$theme-column-gap-large: 3 !default;
+$theme-column-gap:       x2 !default;
+$theme-column-gap-large: x3 !default;

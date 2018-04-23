@@ -279,39 +279,39 @@ $theme-color-disabled-base:    $theme-color-disabled, 30;
 ----------------------------------------
 Border radius
 ----------------------------------------
-eighth          2px
-quarter         4px
-half            8px
-half-plus       12px
-base            16px
-base-plus       24px
-double          32px
-double-plus     40px
-triple          48px
-triple-plus     56px
-quad            64px
-quad-plus       72px
+2px       2px
+x05       4px
+x1        8px
+x105      12px
+x2        16px
+x3        24px
+x4        32px
+x5        40px
+x6        48px
+x7        56px
+x8        64px
+x9        72px
 ----------------------------------------
 */
 
-$theme-border-radius-small:       eighth;
-$theme-border-radius-base:        quarter;
+$theme-border-radius-small:       2px;
+$theme-border-radius-base:        x05;
 $theme-border-radius-large:       false;
 
 /*
 ----------------------------------------
 Column gap
 ----------------------------------------
-eighth          2px
-quarter         4px
-half            8px
-base            16px
-base-plus       24px
-double          32px
-triple          48px
+2px         2px
+x05         4px
+x1          8px
+x2          16px
+x3          24px
+x4          32px
+x5          48px
 ----------------------------------------
 */
 
-$theme-column-gap-small: 'eighth';
-$theme-column-gap: 'base';
-$theme-column-gap-large: 'base-plus';
+$theme-column-gap-small: 2px;
+$theme-column-gap: x2;
+$theme-column-gap-large: x2;
