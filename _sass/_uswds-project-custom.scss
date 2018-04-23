@@ -240,7 +240,7 @@ i.e.
 }
 
 .usa-nav-menu-title {
-  @include u-color(indigo-warm, 50, vivid)
+  @include u-color(50)
   @include u-font(sans,
   larger);
   @include u-font-weight(light);
@@ -256,7 +256,7 @@ i.e.
 .usa-nav {
   @include u-display(none);
   &.is-visible {
-    @include u-background-color(black-cool, 90);
+    @include u-background-color(90);
     @include u-color(white);
     @include u-display(block);
     @include u-height(viewport);
@@ -305,17 +305,17 @@ i.e.
   @include u-color(white);
   @include u-text-decoration(none);
   &:hover {
-    @include u-color(indigo-warm, 50, vivid);
+    @include u-color(50);
   }
   &:active {
-    @include u-color(gold, 30, vivid);
+    @include u-color(30);
   }
   @include at-media(tablet){
     @include u-border-bottom(1px);
-    @include u-border-color(indigo-warm, 50, vivid);
+    @include u-border-color(50);
     @include u-padding-bottom(s05);
     &:hover {
-      @include u-border-color(red-warm, 40, vivid);
+      @include u-border-color(40);
       @include u-color(white);
     }
   }
