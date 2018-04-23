@@ -1459,3 +1459,22 @@ $required-colors: (
   'black':          $black-100,
   'white':          $white-0,
 );
+
+$uswds-colors-sketching: (
+  '0':    get-uswds-color(white, 0),
+  '1':    get-uswds-color(white, 1),
+  '2':    get-uswds-color(white, 2),
+  '3':    get-uswds-color(white, 3),
+  '4':    get-uswds-color(white, 4),
+  '5':    get-uswds-color(black, 5),
+  '10':   get-uswds-color(black, 10),
+  '20':   get-uswds-color(black, 20),
+  '30':   get-uswds-color(black, 30),
+  '40':   get-uswds-color(black, 40),
+  '50':   get-uswds-color(black, 50),
+  '60':   get-uswds-color(black, 60),
+  '70':   get-uswds-color(black, 70),
+  '80':   get-uswds-color(black, 80),
+  '90':   get-uswds-color(black, 90),
+  '100':  get-uswds-color(black, 100),
+);
