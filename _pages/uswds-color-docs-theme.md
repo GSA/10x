@@ -43,7 +43,7 @@ permalink: /uswds-color-docs-theme/
 
         <div class="g-row g-gap margin-y-x4 text-align-center">
           <div class="g-col-fill">
-            <a href="#0" class="display-flex flex-direction-column justify-content-center min-height-compact border border-radius-large padding-x2 color-black-90 text-decoration-none border-color-black-20 hover:border-color-black-90 hover:border-width-2px">
+            <a href="#0" class="display-flex flex-direction-column justify-content-center min-height-card-plus border border-radius-large padding-x2 color-black-90 text-decoration-none border-color-black-20 hover:border-color-black-90 hover:border-width-2px">
               <figure class="margin-0 display-block width-x4 margin-x-auto">
                 <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/project-theme-palette-icon.svg' | relative_url }}" alt="Project theme palette icon">
               </figure>
@@ -52,7 +52,7 @@ permalink: /uswds-color-docs-theme/
             </a>
           </div>
           <div class="g-col-fill">
-            <a href="#0" class="display-flex flex-direction-column justify-content-center min-height-compact border border-radius-large padding-x2 color-black-90 text-decoration-none border-color-black-20 hover:border-color-black-90 hover:border-width-2px">
+            <a href="#0" class="display-flex flex-direction-column justify-content-center min-height-card-plus border border-radius-large padding-x2 color-black-90 text-decoration-none border-color-black-20 hover:border-color-black-90 hover:border-width-2px">
               <figure class="margin-0 display-block width-x4 margin-x-auto">
                 <img class="max-width-full display-block margin-x-auto" src="{{ '/assets/img/uswds/Sketch_logo_frame.svg' | relative_url }}" alt="Sketch application icon">
               </figure>
