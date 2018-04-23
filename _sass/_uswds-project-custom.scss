@@ -124,9 +124,9 @@ i.e.
 
 .txt-a {
   @include u-color(black, 90);
-  @include u-text-decoration-color(indigo-warm, 60, vivid);
+  @include u-text-decoration-color(30);
   &:hover{
-    @include u-text-decoration-color(red-warm, 50, vivid);
+    @include u-text-decoration-color(90);
   }
 }
 
@@ -210,8 +210,8 @@ i.e.
 }
 
 .usa-menu-btn {
-  @include u-background-color(indigo-warm, 60, vivid);
-  @include u-border-color(indigo-warm, 60, vivid);
+  @include u-background-color(60);
+  @include u-border-color(60);
   @include u-border-radius(small);
   @include u-border-width(0);
   @include u-color(white);
