@@ -5,12 +5,12 @@ CUSTOM PROJECT SASS
 Custom project SASS goes here.
 
 i.e.
-@include u-padding-right(eighth);
+@include u-padding-right(2px);
 ----------------------------------------
 */
 
 *:focus {
-  @include u-outline(quarter);
+  @include u-outline(05);
   @include u-outline-color(highlight);
 }
 
@@ -30,7 +30,7 @@ i.e.
 }
 
 *:active:focus {
-  @include u-outline(quarter);
+  @include u-outline(05);
   @include u-outline-color(indigo-warm, 50, vivid);
 }
 
@@ -68,27 +68,27 @@ i.e.
 .txt-h2 {
   @include u-font(sans, f9);
   @include u-font-weight(bold);
-  @include u-margin-top(base);
-  @include u-padding-top(base);
+  @include u-margin-top(2);
+  @include u-padding-top(2);
 
   @include at-media(tablet-plus){
     @include u-font(sans, f11);
-    @include u-margin-top(base-plus);
+    @include u-margin-top(3);
   }
 }
 
 .txt-h3 {
   @include u-font(sans, f6);
   @include u-font-weight(bold);
-  @include u-margin-top(base);
-  @include u-padding-top(half);
+  @include u-margin-top(2);
+  @include u-padding-top(1);
   @include at-media(tablet-plus){
-    @include u-margin-top(base);
-    @include u-padding-top(base);
+    @include u-margin-top(2);
+    @include u-padding-top(2);
     @include u-font(sans, f8);
   }
   & + .txt-p {
-    @include u-margin-top(half);
+    @include u-margin-top(1);
   }
 }
 
@@ -106,9 +106,9 @@ i.e.
 .txt-li {
   @include u-border-top();
   @include u-border-color(black, 20);
-  @include u-padding-y(half);
+  @include u-padding-y(1);
   @include at-media(tablet-plus){
-    @include u-padding-y(half);
+    @include u-padding-y(1);
   }
 }
 
@@ -116,8 +116,8 @@ i.e.
   @include u-font(mono, f4);
   @include u-font(mono);
   @include u-font-weight(400);
-  @include u-padding-y(eighth);
-  @include u-padding-x(quarter);
+  @include u-padding-y(2px);
+  @include u-padding-x(05);
   @include u-background-color(white-warm, 4);
   @include u-border-radius(small);
 }
@@ -140,7 +140,7 @@ i.e.
   h3 {
     @extend .txt-h3;
     & + p {
-      @include u-margin-top(half);
+      @include u-margin-top(1);
     }
   }
   p { @extend .txt-p; }
@@ -165,23 +165,23 @@ i.e.
 }
 
 .usa-card {
-  @include u-border(eighth)
+  @include u-border(2px)
   @include u-border-color(black, 100);
-  @include u-margin-top(base);
-  @include u-padding-x(half);
-  @include u-padding-y(half-plus);
+  @include u-margin-top(2);
+  @include u-padding-x(1);
+  @include u-padding-y(105);
   @include u-border-radius(base);
 
   @include at-media(tablet-plus){
-    @include u-padding-x(base);
-    @include u-margin-top(double);
-    @include u-padding-bottom(base-plus);
-    @include u-padding-top(base);
+    @include u-padding-x(2);
+    @include u-margin-top(4);
+    @include u-padding-bottom(3);
+    @include u-padding-top(2);
   }
 }
 
 .usa-link-circle {
-  @include u-border(eighth);
+  @include u-border(2px);
   @include u-border-color(black, 20);
   @include u-border-radius(pill);
   @include u-color(black, 50);
@@ -189,12 +189,12 @@ i.e.
   @include u-font(sans, f1);
   @include u-font-weight(normal);
   @include u-line-height(smallest);
-  @include u-margin-left(eighth);
-  @include u-padding(quarter);
+  @include u-margin-left(2px);
+  @include u-padding(05);
   @include u-text-align(center);
   @include u-text-decoration(none);
 
-  width: spacing(base-plus);
+  width: spacing(3);
   &:hover {
     @include u-border-color(indigo-warm, 60, vivid);
     @include u-color(indigo-warm, 60, vivid);
@@ -206,7 +206,7 @@ i.e.
   @include u-position(relative);
   @include u-vertical-align(baseline);
 
-  bottom: spacing(half-plus);
+  bottom: spacing(105);
 }
 
 .usa-menu-btn {
@@ -216,11 +216,11 @@ i.e.
   @include u-border-width(0);
   @include u-color(white);
   @include u-font(sans, smallest);
-  @include u-margin-top(quarter);
-  @include u-min-height(double-plus);
-  @include u-min-width(quad-plus);
-  @include u-padding-x(base);
-  @include u-padding-y(half);
+  @include u-margin-top(05);
+  @include u-min-height(5);
+  @include u-min-width(9);
+  @include u-padding-x(2);
+  @include u-padding-y(1);
   @include at-media(tablet){
     @include u-display(none);
   }
@@ -261,7 +261,7 @@ i.e.
     @include u-display(block);
     @include u-height(viewport);
     @include u-left(0);
-    @include u-padding(base);
+    @include u-padding(2);
     @include u-position(fixed);
     @include u-right(0);
     @include u-text-align(right);
@@ -292,12 +292,12 @@ i.e.
 }
 
 .usa-nav-primary-item {
-  @include u-margin-top(base);
+  @include u-margin-top(2);
   @include at-media(tablet){
     @include u-flex(auto);
   }
   & + .usa-nav-primary-item {
-    @include u-margin-left(base-plus);
+    @include u-margin-left(3);
   }
 }
 
@@ -311,9 +311,9 @@ i.e.
     @include u-color(gold, 30, vivid);
   }
   @include at-media(tablet){
-    @include u-border-bottom(pixel);
+    @include u-border-bottom(1px);
     @include u-border-color(indigo-warm, 50, vivid);
-    @include u-padding-bottom(quarter);
+    @include u-padding-bottom(05);
     &:hover {
       @include u-border-color(red-warm, 40, vivid);
       @include u-color(white);
@@ -327,8 +327,8 @@ i.e.
   @include u-font(sans, f6);
   @include u-font(sans);
   @include u-font-weight(400);
-  @include u-margin-top(double);
-  @include u-margin-bottom(half);
+  @include u-margin-top(4);
+  @include u-margin-bottom(1);
 }
 
 strong {
@@ -338,8 +338,8 @@ strong {
 .docs-inline-code {
   @include u-font(mono, f4);
   @include u-font(mono);
-  @include u-padding-y(eighth);
-  @include u-padding-x(quarter);
+  @include u-padding-y(2px);
+  @include u-padding-x(05);
   @include u-background-color(white-warm, 4);
   @include u-border-radius(small);
 }
@@ -349,6 +349,6 @@ strong {
   @include u-border-radius(small);
   @include u-font(mono, f1);
   @include u-font(mono);
-  @include u-padding-x(quarter);
-  @include u-padding-y(eighth);
+  @include u-padding-x(05);
+  @include u-padding-y(2px);
 }

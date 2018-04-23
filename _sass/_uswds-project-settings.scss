@@ -39,7 +39,8 @@ $theme-font-path:   '../uswds/fonts';
 $theme-image-path:  '../uswds/img';
 
 $theme-output-breakpoints: (
-  'compact':         false,   // 240px
+  'card':            false,   // 160px
+  'card-plus':       false,   // 240px
   'mobile':          true,    // 320px
   'mobile-plus':     true,    // 480px
   'tablet':          true,    // 640px
@@ -265,21 +266,21 @@ $theme-color-disabled-base:    $theme-color-disabled, 30;
 ----------------------------------------
 Border radius
 ----------------------------------------
-eighth          2px
-quarter         4px
-half            8px
-half-plus       12px
-base            16px
-base-plus       24px
-double          32px
-double-plus     40px
-triple          48px
-triple-plus     56px
-quad            64px
-quad-plus       72px
+2px         2px
+05          4px
+1           8px
+105         12px
+2           16px
+3           24px
+4           32px
+5           40px
+6           48px
+7           56px
+8           64px
+9           72px
 ----------------------------------------
 */
 
-$theme-border-radius-small:       eighth;
-$theme-border-radius-base:        quarter;
-$theme-border-radius-large:       base;
+$theme-border-radius-small:       2px;
+$theme-border-radius-base:        05;
+$theme-border-radius-large:       2;
