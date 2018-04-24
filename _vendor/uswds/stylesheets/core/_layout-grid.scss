@@ -98,10 +98,12 @@ $grid-namespace-prefix: 'g-';
 
 .#{$grid-namespace-prefix}col-auto {
   @include u-flex(auto);
+  @include u-width(auto);
 }
 
 .#{$grid-namespace-prefix}col-fill {
   @include u-flex(fill);
+  @include u-width(auto);
 }
 
 // ...with widths
@@ -120,9 +122,11 @@ $grid-namespace-prefix: 'g-';
       }
       .#{$mq-key}\:#{$grid-namespace-prefix}col-fill {
         @include u-flex(fill);
+        @include u-width(auto);
       }
       .#{$mq-key}\:#{$grid-namespace-prefix}col-auto {
         @include u-flex(auto);
+        @include u-width(auto);
       }
 
       @each $width-key, $width-value in $uswds-layout-grid-widths {

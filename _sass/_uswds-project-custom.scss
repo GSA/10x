@@ -9,6 +9,10 @@ i.e.
 ----------------------------------------
 */
 
+html {
+  font-size: $theme-root-font-size;
+}
+
 *:focus {
   @include u-outline(s05);
   @include u-outline-color(highlight);
