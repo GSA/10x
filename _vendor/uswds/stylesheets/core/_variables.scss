@@ -35,6 +35,7 @@ $project-spacing-standard: map-collect(
   map-get($uswds-spacing, smaller-negative),
   map-get($uswds-spacing, small-negative),
   map-get($uswds-spacing, medium),
+  map-get($uswds-spacing, medium-negative),
   map-get($uswds-spacing, large),
   map-get($uswds-spacing, larger),
   map-get($uswds-spacing, special)

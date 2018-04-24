@@ -60,6 +60,13 @@ $uswds-spacing:(
     's8':                      grid-units(8),   // 64px
     's9':                      grid-units(9),   // 72px
   ),
+  medium-negative: (
+    '#{$neg-prefix}-s4':       grid-units(-4),  // 4px
+    '#{$neg-prefix}-s5':       grid-units(-5),  // 8px
+    '#{$neg-prefix}-s6':       grid-units(-6),  // 12px
+    '#{$neg-prefix}-s7':       grid-units(-7),  // 16px
+    '#{$neg-prefix}-s8':       grid-units(-8),  // 24px
+  ),
   large: (
     'card':                   grid-units(20),  // 160px
     'card-plus':              grid-units(30),  // 240px

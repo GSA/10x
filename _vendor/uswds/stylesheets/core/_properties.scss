@@ -493,7 +493,9 @@ $uswds-properties: (
       map-get($uswds-spacing, smaller),
       map-get($uswds-spacing, small),
       map-get($uswds-spacing, smaller-negative),
-      map-get($uswds-spacing, small-negative)
+      map-get($uswds-spacing, small-negative),
+      map-get($uswds-spacing, medium),
+      map-get($uswds-spacing, medium-negative)
     ),
     extended: (),
   ),
