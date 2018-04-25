@@ -7,7 +7,7 @@ permalink: /uswds-spacing-units/
 <div class="clearfix g-container-tablet-plus padding-top-s6 line-height-smallest">
   <h1 class="font-weight-300 margin-bottom-s4 margin-top-0">USWDS spacing units</h1>
   <p class="line-height-small font-weight-300 margin-bottom-s2">Any utility that accepts a spacing value can accept a USWDS spacing unit. These values are common to all USWDS projects and are based on multiples of 8px.</p>
-  <p class="line-height-small font-weight-300 margin-bottom-s4">Output negative values with a <code class="txt-code">neg-</code> prefix.</p>
+  <p class="line-height-small font-weight-300 margin-bottom-s4">You can output negative values with a <code class="txt-code">neg-</code> prefix, like <code class="txt-code">u-margin-x-neg-s2</code>.</p>
   <div class="g-row g-gap align-items-center margin-bottom-s4">
     <div class="g-col-2 font-weight-700 font-sans-f1">utility suffix</div>
     <div class="g-col-2 font-weight-700 font-sans-f1">spacing units</div>
