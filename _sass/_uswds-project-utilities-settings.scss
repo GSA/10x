@@ -1410,6 +1410,21 @@ $text-decoration-color-manual-values: (
 
 /*
 ========================================
+.text-indent
+----------------------------------------
+*/
+
+$text-indent-settings: (
+  output:       true,
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+);
+
+/*
+========================================
 .text-transform
 ----------------------------------------
 */
