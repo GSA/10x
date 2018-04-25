@@ -9,26 +9,13 @@
           <img src="{{ "/assets/img/close.svg"  | relative_url }}" alt="close">
         </button>
         <ul class="usa-nav-primary usa-accordion">
-          <li class="usa-nav-primary-item">
-            <a class="usa-nav-link" href="{{ site.baseurl }}{% link _pages/about-10x.md %}">
-              <span>About 10x</span>
-            </a>
-          </li>
-          <li class="usa-nav-primary-item">
-            <a class="usa-nav-link" href="{{ site.baseurl }}{% link _pages/send-us-an-idea.md %}">
-              <span>Send us an idea</span>
-            </a>
-          </li>
-          <li class="usa-nav-primary-item">
-            <a class="usa-nav-link" href="{{ site.baseurl }}{% link _pages/how-we-select-projects.md %}">
-              <span>How we select projects</span>
-            </a>
-          </li>
-          <li class="usa-nav-primary-item">
-            <a class="usa-nav-link" href="{{ site.baseurl }}{% link _pages/updates.md %}">
-              <span>Updates</span>
-            </a>
-          </li>
+          {% for item in site.data.contents.nav %}
+            <li class="usa-nav-primary-item{% if item.url == page.url %} is-active{% endif %}">
+              <a class="usa-nav-link" href="{{ site.baseurl }}{{ item.url }}">
+                <span>{{ item.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
         </ul>
       </nav>
     </div>
