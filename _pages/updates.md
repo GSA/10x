@@ -1,5 +1,5 @@
 ---
-layout: prototype
+layout: page
 title: Updates
 permalink: /updates/
 ---

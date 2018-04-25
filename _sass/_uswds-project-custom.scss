@@ -300,6 +300,9 @@ html {
   @include at-media(tablet){
     @include u-flex(auto);
   }
+  &.is-active {
+    @include u-font-weight(bold);
+  }
   & + .usa-nav-primary-item {
     @include u-margin-left(s3);
   }
