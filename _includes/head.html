@@ -115,7 +115,7 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   {% endcomment %}
 
-  <link rel="preload" href="https://10x.gsa.gov/assets/js/uswds.min.js" as="script">
+  <link rel="preload" href="{{ "/assets/js/uswds.min.js" | relative_url }}" as="script">
 
   {% if site.environment == 'production' or site.environment == 'development' %}
     {% include dap-script.html %}
