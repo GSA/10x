@@ -2,7 +2,7 @@
 layout: page
 title: The 10x process
 permalink: /the-10x-process/
-description: 10x intentionally starts small — only magnifying our investment as an idea develops, step-by-step, into a sustainable project.
+description: 10x always starts small — only magnifying our investment as an idea develops, step-by-step, into a sustainable project.
 ---
 
 <h2 class="margin-bottom-0 border-top-g05 padding-top-g2 margin-top-g5" id="the-process">The 10x process</h2>
