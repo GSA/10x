@@ -15,21 +15,21 @@ permalink: /uswds-type-scale/
   </div>
   <div class="g-row g-gap align-items-center font-weight-400 padding-bottom-2 margin-bottom-2 border-bottom border-color-20">
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-sans-1">Tuscaloosa</div>
+      <div class="font-sans-1 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-sans-1</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-sans-micro</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-sans-micro</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-700">12px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-serif-1">Tuscaloosa</div>
+      <div class="font-serif-1 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-serif-1</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-serif-micro</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-serif-micro</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">12.56px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-mono-1">Tuscaloosa</div>
+      <div class="font-mono-1 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-1</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-mono-micro</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-micro</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">12.20px</div>
     </div>
   </div>
@@ -54,21 +54,21 @@ permalink: /uswds-type-scale/
 
   <div class="g-row g-gap align-items-center font-weight-400 padding-bottom-2 margin-bottom-2 border-bottom border-color-20">
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-sans-3">Tuscaloosa</div>
+      <div class="font-sans-3 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-sans-3</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-sans-smallest</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-sans-smallest</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-700">14px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-serif-3">Tuscaloosa</div>
+      <div class="font-serif-3 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-serif-3</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-serif-smallest</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-serif-smallest</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">14.65px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-mono-3">Tuscaloosa</div>
+      <div class="font-mono-3 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-3</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-mono-smallest</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-smallest</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">14.24px</div>
     </div>
   </div>
@@ -93,63 +93,63 @@ permalink: /uswds-type-scale/
 
   <div class="g-row g-gap align-items-center font-weight-400 padding-bottom-2 margin-bottom-2 border-bottom border-color-20">
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-sans-5">Tuscaloosa</div>
+      <div class="font-sans-5 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-sans-5</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-sans-smaller</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-sans-smaller</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-700">16px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-serif-5">Tuscaloosa</div>
+      <div class="font-serif-5 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-serif-5</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-serif-smaller</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-serif-smaller</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">16.74px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-mono-5">Tuscaloosa</div>
+      <div class="font-mono-5 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-5</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-mono-smaller</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-smaller</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">16.27px</div>
     </div>
   </div>
 
   <div class="g-row g-gap align-items-center font-weight-400 padding-bottom-2 margin-bottom-2 border-bottom border-color-20">
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-sans-6">Tuscaloosa</div>
+      <div class="font-sans-6 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-sans-6</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-sans-small</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-sans-small</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-700">17px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-serif-6">Tuscaloosa</div>
+      <div class="font-serif-6 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-serif-6</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-serif-small</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-serif-small</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">17.78px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-mono-6">Tuscaloosa</div>
+      <div class="font-mono-6 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-6</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-mono-small</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-small</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">17.29px</div>
     </div>
   </div>
 
   <div class="g-row g-gap align-items-center font-weight-400 padding-bottom-2 margin-bottom-2 border-bottom border-color-20">
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-sans-7">Tuscaloosa</div>
+      <div class="font-sans-7 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-sans-7</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-sans-base</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-sans-base</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-700">18px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-serif-7">Tuscaloosa</div>
+      <div class="font-serif-7 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-serif-7</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-serif-base</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-serif-base</code></div>
     <div class="padding-top-1p5 font-mono-1 font-weight-300">18.83px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-mono-7">Tuscaloosa</div>
+      <div class="font-mono-7 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-7</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-mono-base</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-base</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">18.30px</div>
     </div>
   </div>
@@ -192,21 +192,21 @@ permalink: /uswds-type-scale/
 
   <div class="g-row g-gap align-items-center font-weight-400 padding-bottom-2 margin-bottom-2 border-bottom border-color-20">
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-sans-10">Tuscaloosa</div>
+      <div class="font-sans-10 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-sans-10</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-sans-large</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-sans-large</code></div>
     <div class="padding-top-1p5 font-mono-1 font-weight-700">24px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-serif-10">Tuscaloosa</div>
+      <div class="font-serif-10 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-serif-10</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-serif-large</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-serif-large</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">25.10px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-mono-10">Tuscaloosa</div>
+      <div class="font-mono-10 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-10</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-mono-large</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-large</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">24.40px</div>
     </div>
   </div>
@@ -231,21 +231,21 @@ permalink: /uswds-type-scale/
 
   <div class="g-row g-gap align-items-center font-weight-400 padding-bottom-2 margin-bottom-2 border-bottom border-color-20">
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-sans-12">Tuscaloosa</div>
+      <div class="font-sans-12 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-sans-12</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-sans-larger</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-sans-larger</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-700">32px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-serif-12">Tuscaloosa</div>
+      <div class="font-serif-12 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-serif-12</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-serif-larger</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-serif-larger</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">33.48px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-mono-12">Tuscaloosa</div>
+      <div class="font-mono-12 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-12</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-mono-larger</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-larger</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">32.54px</div>
     </div>
   </div>
@@ -270,21 +270,21 @@ permalink: /uswds-type-scale/
 
   <div class="g-row g-gap align-items-center font-weight-400 padding-bottom-2 margin-bottom-2 border-bottom border-color-20">
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-sans-14">Tuscaloosa</div>
+      <div class="font-sans-14 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-sans-14</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-sans-largest</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-sans-largest</code></div>
     <div class="padding-top-1p5 font-mono-1 font-weight-700">40px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-serif-14">Tuscaloosa</div>
+      <div class="font-serif-14 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-serif-14</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-serif-largest</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-serif-largest</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">41.85px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
-      <div class="font-mono-14">Tuscaloosa</div>
+      <div class="font-mono-14 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-14</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-mono-largest</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-largest</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-300">40.67px</div>
     </div>
   </div>
@@ -311,19 +311,19 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-sans-16">Utica</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-sans-16</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-sans-mega</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0">u-font-sans-mega</code></div>
       <div class="padding-top-1p5 font-mono-1 font-weight-700">56px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-serif-16">Utica</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-serif-16</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-serif-mega</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0">u-font-serif-mega</code></div>
     <div class="padding-top-1p5 font-mono-1 font-weight-300">58.59px</div>
     </div>
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-16">Utica</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-16</code></div>
-      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 color-0 background-color-90 is-inverse">u-font-mono-mega</code></div>
+      <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0">u-font-mono-mega</code></div>
     <div class="padding-top-1p5 font-mono-1 font-weight-300">56.94px</div>
     </div>
   </div>
