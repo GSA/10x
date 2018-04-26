@@ -10,9 +10,9 @@ permalink: /uswds-type-scale/
   <p class="line-height-base font-weight-300 margin-bottom-2">Since each typeface has different type scale values, use <code class="txt-code">u-font-[type]-[value]</code> instead of <code class="txt-code">u-font-[value]</code>.</p>
   <p class="line-height-base font-weight-300 margin-bottom-6">The numeric sizes are common to any USWDS project and the relative sizes are a project-specific subset, defined in your project’s settings.</p>
   <div class="g-row g-gap align-items-center margin-bottom-2 padding-bottom-1 border-bottom-2px">
-    <div class="g-col-4 font-weight-700 font-sans-1">sans (united sans)</div>
-    <div class="g-col-4 font-weight-700 font-sans-1">serif (georgia)</div>
-    <div class="g-col-4 font-weight-700 font-sans-1">mono (roboto mono)</div>
+    <div class="g-col-4 font-weight-700 font-sans-1">-sans (United Sans)</div>
+    <div class="g-col-4 font-weight-700 font-sans-1">-serif (Georgia)</div>
+    <div class="g-col-4 font-weight-700 font-sans-1">-mono (Roboto Mono)</div>
   </div>
   <div class="g-row g-gap align-items-center font-weight-400 padding-bottom-2 margin-bottom-2 border-bottom border-color-20">
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
