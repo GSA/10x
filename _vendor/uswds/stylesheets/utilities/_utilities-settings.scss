@@ -22,7 +22,8 @@ The following plugins will be added to
 */
 
 $global-color-plugins: (
-  'plugin-color-palette-sketching'
+  'plugin-color-palette-grayscale',
+  'plugin-color-palette-basic'
 ) !default;
 
 /*
@@ -188,7 +189,7 @@ $border-radius-manual-values: (
 */
 
 $border-style-settings: (
-  output:       false,
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1352,7 +1353,7 @@ $text-decoration-color-manual-values: (
 */
 
 $text-indent-settings: (
-  output:       true,
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,

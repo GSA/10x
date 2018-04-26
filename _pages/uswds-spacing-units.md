@@ -4,21 +4,21 @@ title: USWDS spacing units
 permalink: /uswds-spacing-units/
 ---
 
-<div class="clearfix g-container-tablet-plus padding-top-s6 line-height-smallest">
-  <h1 class="font-weight-300 margin-bottom-s4 margin-top-0">USWDS spacing units</h1>
-  <p class="line-height-base font-weight-300 margin-bottom-s2">Any utility that accepts a spacing value uses the following USWDS spacing units. These values are common to all USWDS projects and are based on multiples of 8px. They are the only values we use to build official components. Any components <a class="color-90 text-decoration-color-30" href="#0">we accept back into the system</a> need to be built with these common spacing units.</p>
-  <p class="line-height-base font-weight-300 margin-bottom-s6">You can output negative values with a <code class="txt-code">neg-</code> prefix, like <code class="txt-code">u-margin-x-neg-s2</code>.</p>
-  <div class="g-row g-gap align-items-center margin-bottom-s4">
+<div class="clearfix g-container-tablet-plus padding-top-6 line-height-smallest">
+  <h1 class="font-weight-300 margin-bottom-4 margin-top-0">USWDS spacing units</h1>
+  <p class="line-height-base font-weight-300 margin-bottom-2">Any utility that accepts a spacing value uses the following USWDS spacing units. These values are common to all USWDS projects and are based on multiples of 8px. They are the only values we use to build official components. Any components <a class="color-90 text-decoration-color-30" href="#0">we accept back into the system</a> need to be built with these common spacing units.</p>
+  <p class="line-height-base font-weight-300 margin-bottom-6">You can output negative values with a <code class="txt-code">neg-</code> prefix, like <code class="txt-code">u-margin-x-neg-2</code>.</p>
+  <div class="g-row g-gap align-items-center margin-bottom-4">
     <div class="g-col-2 font-weight-700 font-sans-f1">utility suffix</div>
     <div class="g-col-2 font-weight-700 font-sans-f1">spacing units</div>
     <div class="g-col-1 font-weight-700 font-sans-f1">pixels</div>
     <div class="g-col-fill font-weight-700 font-sans-f1">example line</div>
     <div class="g-col-3 font-weight-700 font-sans-f1">example utility</div>
     <div class="g-col">
-      <div class="padding-bottom-s1 border-bottom-2px"></div>
+      <div class="padding-bottom-1 border-bottom-2px"></div>
     </div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
+  <div class="g-row g-gap align-items-center padding-bottom-4">
     <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">1px</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">—</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">1px</div>
@@ -27,7 +27,7 @@ permalink: /uswds-spacing-units/
     </div>
     <div class="g-col-3 font-weight-300 font-mono-f3">u-bottom-1px</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
+  <div class="g-row g-gap align-items-center padding-bottom-4">
     <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">2px</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">—</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">2px</div>
@@ -36,103 +36,103 @@ permalink: /uswds-spacing-units/
     </div>
     <div class="g-col-3 font-weight-300 font-mono-f3">u-border-top-2px</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">s05</span></div>
+  <div class="g-row g-gap align-items-center padding-bottom-4">
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">05</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">0.5 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">4px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-s05 background-color-blue-60v"></span>
+      <span class="display-block width-full height-05 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">u-padding-y-s05</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">u-padding-y-05</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">s1</span></div>
+  <div class="g-row g-gap align-items-center padding-bottom-4">
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">1</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">1 spacing unit</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">8px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-s1 background-color-blue-60v"></span>
+      <span class="display-block width-full height-1 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">u-padding-x-s1</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">u-padding-x-1</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">s105</span></div>
+  <div class="g-row g-gap align-items-center padding-bottom-4">
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">105</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">1.5 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">12px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-s105 background-color-blue-60v"></span>
+      <span class="display-block width-full height-105 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">u-margin-top-s05</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">u-margin-top-05</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">s2</span></div>
+  <div class="g-row g-gap align-items-center padding-bottom-4">
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">2</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">2 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">16px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-s2 background-color-blue-60v"></span>
+      <span class="display-block width-full height-2 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">u-square-s2</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">u-square-2</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">s3</span></div>
+  <div class="g-row g-gap align-items-center padding-bottom-4">
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">3</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">3 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">24px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-s3 background-color-blue-60v"></span>
+      <span class="display-block width-full height-3 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">u-margin-left-neg-s3</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">u-margin-left-neg-3</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">s4</span></div>
+  <div class="g-row g-gap align-items-center padding-bottom-4">
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">4</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">4 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">32px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-s4 background-color-blue-60v"></span>
+      <span class="display-block width-full height-4 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">u-min-height-s4</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">u-min-height-4</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">s5</span></div>
+  <div class="g-row g-gap align-items-center padding-bottom-4">
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">5</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">5 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">40px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-s5 background-color-blue-60v"></span>
+      <span class="display-block width-full height-5 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">tablet:u-margin-top-s4</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">tablet:u-margin-top-4</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">s6</span></div>
+  <div class="g-row g-gap align-items-center padding-bottom-4">
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">6</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">6 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">48px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-s6 background-color-blue-60v"></span>
+      <span class="display-block width-full height-6 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">u-text-indent-s6</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">u-text-indent-6</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">s7</span></div>
+  <div class="g-row g-gap align-items-center padding-bottom-4">
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">7</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">7 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">56px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-s7 background-color-blue-60v"></span>
+      <span class="display-block width-full height-7 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">u-bottom-neg-s7</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">u-bottom-neg-7</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">s8</span></div>
+  <div class="g-row g-gap align-items-center padding-bottom-4">
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">8</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">8 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">64px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-s8 background-color-blue-60v"></span>
+      <span class="display-block width-full height-8 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">u-min-width-s8</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">u-min-width-8</div>
   </div>
-  <div class="g-row g-gap align-items-center padding-bottom-s4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">s9</span></div>
+  <div class="g-row g-gap align-items-center padding-bottom-4">
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">9</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">9 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">72px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-s9 background-color-blue-60v"></span>
+      <span class="display-block width-full height-9 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">tablet:u-circle-s9</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">tablet:u-circle-9</div>
   </div>
 </div>
