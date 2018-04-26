@@ -31,7 +31,7 @@ permalink: /uswds-type-scale/
       <div class="font-mono-1 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-1</code></div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-micro</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">12.20px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">12px</div>
     </div>
   </div>
 
@@ -49,7 +49,7 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-2">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-2</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">13.22px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">13px</div>
     </div>
   </div>
 
@@ -70,7 +70,7 @@ permalink: /uswds-type-scale/
       <div class="font-mono-3 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-3</code></div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-smallest</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">14.24px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">14px</div>
     </div>
   </div>
 
@@ -88,7 +88,7 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-4">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-4</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">15.25px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">15px</div>
     </div>
   </div>
 
@@ -109,7 +109,7 @@ permalink: /uswds-type-scale/
       <div class="font-mono-5 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-5</code></div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-smaller</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">16.27px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">16px</div>
     </div>
   </div>
 
@@ -130,7 +130,7 @@ permalink: /uswds-type-scale/
       <div class="font-mono-6 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-6</code></div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-small</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">17.29px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">17px</div>
     </div>
   </div>
 
@@ -151,7 +151,7 @@ permalink: /uswds-type-scale/
       <div class="font-mono-7 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-7</code></div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-base</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">18.30px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">18px</div>
     </div>
   </div>
 
@@ -169,7 +169,7 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-8">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-8</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">20.34px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">20px</div>
     </div>
   </div>
 
@@ -187,7 +187,7 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-9">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-9</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">22.37px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">22px</div>
     </div>
   </div>
 
@@ -208,7 +208,7 @@ permalink: /uswds-type-scale/
       <div class="font-mono-10 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-10</code></div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-large</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">24.40px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">24px</div>
     </div>
   </div>
 
@@ -226,7 +226,7 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-11">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-11</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">28.47px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">28px</div>
     </div>
   </div>
 
@@ -247,7 +247,7 @@ permalink: /uswds-type-scale/
       <div class="font-mono-12 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-12</code></div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-larger</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">32.54px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">32px</div>
     </div>
   </div>
 
@@ -265,7 +265,7 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-13">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-13</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">36.60px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">36px</div>
     </div>
   </div>
 
@@ -286,7 +286,7 @@ permalink: /uswds-type-scale/
       <div class="font-mono-14 color-black-90">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-14</code></div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0 color-black-90">u-font-mono-largest</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">40.67px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">40px</div>
     </div>
   </div>
 
@@ -304,7 +304,7 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-15">Tuscaloosa</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-15</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">48.80px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">48px</div>
     </div>
   </div>
 
@@ -325,7 +325,7 @@ permalink: /uswds-type-scale/
       <div class="font-mono-16">Utica</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-16</code></div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 border background-color-0">u-font-mono-mega</code></div>
-    <div class="padding-top-1p5 font-mono-1 font-weight-300">56.94px</div>
+    <div class="padding-top-1p5 font-mono-1 font-weight-300">56px</div>
     </div>
   </div>
 
@@ -343,7 +343,7 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-17">Utica</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-17</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">65.08px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">64px</div>
     </div>
   </div>
 
@@ -361,7 +361,7 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-18">Utica</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-18</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">81.35px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">80px</div>
     </div>
   </div>
 
@@ -379,7 +379,7 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-19">LA</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-19</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">122.02px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">120px</div>
     </div>
   </div>
 
@@ -397,7 +397,7 @@ permalink: /uswds-type-scale/
     <div class="g-col-4 display-flex flex-direction-column justify-content-flex-end">
       <div class="font-mono-20">LA</div>
       <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">u-font-mono-20</code></div>
-      <div class="padding-top-1p5 font-mono-1 font-weight-300">142.36px</div>
+      <div class="padding-top-1p5 font-mono-1 font-weight-300">140px</div>
     </div>
   </div>
 
