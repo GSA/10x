@@ -8,7 +8,7 @@ permalink: /pitching/
 
 <div class="usa-card">
 <h2 class="margin-top-0 font-sans-f6 tablet-plus:font-sans-f8 font-weight-bold">Questions to answer</h2>
-<ul class="margin-bottom-0 margin-top-g105 tablet-plus:margin-top-g3">
+<ul class="margin-bottom-0 margin-top-1p5 tablet-plus:margin-top-3">
   <li>Am I/is my idea eligible for 10x funding?</li>
   <li>What makes a good pitch?</li>
   <li>Can I see a short list of pitches that have received funding?</li>

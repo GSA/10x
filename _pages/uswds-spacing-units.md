@@ -37,13 +37,13 @@ permalink: /uswds-spacing-units/
     <div class="g-col-3 font-weight-300 font-mono-f3">u-border-top-2px</div>
   </div>
   <div class="g-row g-gap align-items-center padding-bottom-4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">05</span></div>
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">p5</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">0.5 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">4px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-05 background-color-blue-60v"></span>
+      <span class="display-block width-full height-p5 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">u-padding-y-05</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">u-padding-y-p5</div>
   </div>
   <div class="g-row g-gap align-items-center padding-bottom-4">
     <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">1</span></div>
@@ -55,13 +55,13 @@ permalink: /uswds-spacing-units/
     <div class="g-col-3 font-weight-300 font-mono-f3">u-padding-x-1</div>
   </div>
   <div class="g-row g-gap align-items-center padding-bottom-4">
-    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">105</span></div>
+    <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">1p5</span></div>
     <div class="g-col-2 font-weight-300 font-sans-f3">1.5 spacing units</div>
     <div class="g-col-1 font-weight-300 font-sans-f3">12px</div>
     <div class="g-col-fill">
-      <span class="display-block width-full height-105 background-color-blue-60v"></span>
+      <span class="display-block width-full height-1p5 background-color-blue-60v"></span>
     </div>
-    <div class="g-col-3 font-weight-300 font-mono-f3">u-margin-top-05</div>
+    <div class="g-col-3 font-weight-300 font-mono-f3">u-margin-top-1p5</div>
   </div>
   <div class="g-row g-gap align-items-center padding-bottom-4">
     <div class="g-col-2 font-weight-300 font-mono-f3"><span class="txt-code font-weight-300">2</span></div>

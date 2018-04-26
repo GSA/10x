@@ -5,8 +5,8 @@ permalink: /the-10x-process/
 description: 10x always starts small — only magnifying our investment as an idea develops, step-by-step, into a sustainable project.
 ---
 
-<h2 class="margin-bottom-0 border-top-g05 padding-top-g2 margin-top-g5" id="the-process">The 10x process</h2>
-<p class="font-sans-f9 tablet-plus:font-sans-f11 font-weight-300 margin-top-2px margin-bottom-g3 tablet-plus:margin-bottom-0 line-height-heading">Start smart, start small</p>
+<h2 class="margin-bottom-0 border-top-p5 padding-top-2 margin-top-5" id="the-process">The 10x process</h2>
+<p class="font-sans-f9 tablet-plus:font-sans-f11 font-weight-300 margin-top-2px margin-bottom-3 tablet-plus:margin-bottom-0 line-height-heading">Start smart, start small</p>
 
 We believe in starting smart and starting small — magnifying our investments as a project's proven needs grow.
 
