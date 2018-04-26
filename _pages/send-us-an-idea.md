@@ -5,60 +5,70 @@ permalink: /send-us-an-idea/
 description: 10x is currently accepting ideas for submission to its funding program. The current submission period is open until June 1, 2018.
 ---
 
+<div class="g-row tablet:display-flex tablet:align-items-center clearfix">
+  <a href="#0" class="g-col tablet:g-col-auto background-color-70 color-white padding-2 border-radius-small tablet:margin-right-3 text-decoration-none hover:background-color-80 text-align-center margin-top-2 tablet:margin-top-0">Send your idea to 10x<span class="font-sans-4 display-block color-20">via Google form</span></a>
+  <p class="g-col-fill color-90 font-sans-6 tablet:font-sans-8 line-height-small margin-top-2 tablet:margin-y-0">or email your idea directly to <a href="mailto:10x-idea@gsa.gov" class="color-90 white-space-nowrap text-decoration-color-30 hover:text-decoration-color-90">10x-idea@gsa.gov</a>.</p>
+</div>
+
 ## Eligibility
 
 Any federal employee from any agency is eligible to submit an idea for 10x funding. We are not able to accept pitches from Federal contractors at this time.
 
-Your idea is eligible if it falls under the 10x funding authority (Digital Services Fund) which is designed to fund *new, good-for-government technology products or services that have the potential to create impact for multiple agencies or a large portion of the public*.
 
-Furthermore, the 10x team is interested in funding projects that sit in a big or rapidly growing market within the government and support not just the government but also the contracting ecosystem. <!--I'm OK leaving out this last portion, might be superfluous and/or confusing-->
+## What makes a good idea?
 
-## Good Pitches
+<h3><strong>10x is looking for ideas that:</strong></h3>
 
-A good pitch answers a simple question in 2 or 3 sentences, “What problem are you trying to solve?”
+<ul class="line-height-small tablet:line-height-base">
+  <li class="text-indent-neg-3 padding-left-3 tablet:text-indent-neg-4 tablet:padding-left-4">
+    <img class="display-line-block width-2 tablet:width-3 margin-right-p5 position-relative bottom-2px vertical-align-middle" src="{{ '/assets/img/check.svg' | relative_url }}" alt="check">
+    Have an impact on the federal government or on the public.
+  </li>
+  <li class="text-indent-neg-3 padding-left-3 tablet:text-indent-neg-4 tablet:padding-left-4">
+    <img class="display-line-block width-2 tablet:width-3 margin-right-p5 position-relative bottom-2px vertical-align-middle" src="{{ '/assets/img/check.svg' | relative_url }}" alt="check">
+    Improve the public’s experience with government through technology.</li>
+  <li class="text-indent-neg-3 padding-left-3 tablet:text-indent-neg-4 tablet:padding-left-4">
+    <img class="display-line-block width-2 tablet:width-3 margin-right-p5 position-relative bottom-2px vertical-align-middle" src="{{ '/assets/img/check.svg' | relative_url }}" alt="check">
+    Improve how government builds and shares technology to better serve the public.</li>
+  <li class="text-indent-neg-3 padding-left-3 tablet:text-indent-neg-4 tablet:padding-left-4">
+    <img class="display-line-block width-2 tablet:width-3 margin-right-p5 position-relative bottom-2px vertical-align-middle" src="{{ '/assets/img/check.svg' | relative_url }}" alt="check">
+    Are part of a big or rapidly growing market in government technology.</li>
+</ul>
 
-Your pitch should:
+<h3><strong>How should you present your idea? Your idea should:</strong></h3>
 
-* Demonstrate a clear understanding of the problem you want to solve
-* Describe how it meets the DSF goal of funding new, good-for-government products or services
-* Be as narrative as possible <!--expand here, state the problem and tell a story-->
+<ul class="line-height-small">
+  <li class="text-indent-neg-3 padding-left-3 tablet:text-indent-neg-4 tablet:padding-left-4">
+    <img class="display-line-block width-2 tablet:width-3 margin-right-p5 position-relative bottom-2px vertical-align-middle" src="{{ '/assets/img/check.svg' | relative_url }}" alt="check">
+    Be no more than three sentences long.</li>
+  <li class="text-indent-neg-3 padding-left-3 tablet:text-indent-neg-4 tablet:padding-left-4">
+    <img class="display-line-block width-2 tablet:width-3 margin-right-p5 position-relative bottom-2px vertical-align-middle" src="{{ '/assets/img/check.svg' | relative_url }}" alt="check">
+    Demonstrate a clear understanding of the problem you want to solve.</li>
+  <li class="text-indent-neg-3 padding-left-3 tablet:text-indent-neg-4 tablet:padding-left-4">
+    <img class="display-line-block width-2 tablet:width-3 margin-right-p5 position-relative bottom-2px vertical-align-middle" src="{{ '/assets/img/check.svg' | relative_url }}" alt="check">
+    Focus of creating a new product or service that is good for government.</li>
+  <li class="text-indent-neg-3 padding-left-3 tablet:text-indent-neg-4 tablet:padding-left-4">
+    <img class="display-line-block width-2 tablet:width-3 margin-right-p5 position-relative bottom-2px vertical-align-middle" src="{{ '/assets/img/check.svg' | relative_url }}" alt="check">
+    Be as clear and descriptive as possible.</li>
+</ul>
 
-## Writing your Pitch
+## Need some help?
 
 Don’t know where to begin? Need a second pair of eyes or a gut check with a technical expert? Send us an email at [10x@gsa.gov](mailto:10x@gsa.gov) and someone from our team will help you craft the perfect pitch.
 
-## Past pitches
-
-<!--Here are some pitches that have been successful in the past. These examples provide good scope, this part becomes a sub-section of the what makes a good pitch, then put cards that are clickable-->
+## Examples of ideas 10x has funded
 
 <div class="usa-card">
-  <h3 class="margin-top-0">Pitch Title: Open Source Translation Services</h3>
+  <h3 class="margin-top-0">Open Source Translation Services</h3>
   <p>60.6 million Americans are not fluent in English. Despite this, most Federal web content is only available in English. Having content available in multiple languages will make the information we produce more accessible to the members of the public whose primary language is not English. This can be done with existing open source tools for delivering localized content such as Pootle and gettext. TTS will investigate whether translation services could be shared as a GSA-sponsored service or as a reusable playbook.</p>
 </div>
 
 <div class="usa-card">
-  <h3 class="margin-top-0">Pitch Title: Qualitative Data Management</h3>
+  <h3 class="margin-top-0">Qualitative Data Management</h3>
   <p>Each month, approximately 9,000 surveys are submitted through USA.gov and Gobierno.USA.gov. About 2,000 of these include open-ended comments. With current resource limitations, it's challenging to take advantage of this qualitative data. TTS will explore implementing a semi-automated product and/or process, using topic extraction, word/phrase frequencies, or other applications of text analysis, to help quickly respond to user feedback.</p>
 </div>
 
 <div class="usa-card">
-  <h3 class="margin-top-0">Pitch Title: PRA.Gov</h3>
+  <h3 class="margin-top-0">PRA.Gov</h3>
   <p>OMB’s Office of Information and Regulatory Affairs (OIRA) is charged with overseeing Federal compliance with the Paperwork Reduction Act (PRA). Agencies often cite frustration with accessing and understanding OMB’s policies on the PRA, which are spread across numerous inaccessible PDFs. This situation has reduced compliance and created delays in the approval of information collection requests (ICRs). Through outreach to PRA desk officers and agency staff, and in consultation with OIRA, TTS will explore what it would take to modernize the way agencies interact with OMB’s policies in order to design an accessible, user-friendly online interface to respond to agency inquiries.</p>
 </div>
-
-## Scoring and Criteria
-
-Your pitch will be rated based on the following 3 criteria, each given equal weight:
-* **Clarity**. The proposal’s understanding and explanation of the problem that needs to be solved
-* **Alignment**. The degree to which addressing this problem aligns with the 10x funding authority: New, good-for-government technology products or services
-* **Impact**. The potential impact of solving this problem on the federal government or the American public
-
-## TTS Sponsorship <!-- This part is tricky, because I might need to go into details about OPP and TTS to really explain what's going on here-->
-
-### "What's a TTS Sponsor?"
-
-10x sits in the Technology Transformation Services (TTS) at GSA, and TTS manages the Digital Services Fund. That means that all 10x projects, regardless of where they originated, are owned by TTS. Your TTS Sponsor will be someone who believes in your idea and will serve as the product manager to shepherd the project to success. Your role will be that of a subject matter expert and you can be involved in the process as much or as little as you are able. TTS has expertise in product ownership and will be the default home of any deliverables or outcomes of your project; however, our team will advocate for any project deliverables to live in the most logical place.
-
-### "How do I get a TTS Sponsor?"
-
-You do not need a sponsor to submit an idea to 10x. If your project is accepted for funding, we will connect you with a sponsor.
