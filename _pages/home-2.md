@@ -6,11 +6,11 @@ permalink: /home-2/
 
 <h1 class="font-weight-900 margin-bottom-1 tablet-plus:margin-bottom-0">High-impact seed funding</h1>
 <div class="row align-items-center padding-bottom-4">
-  <p class="font-sans-f11 tablet-plus:font-sans-f12 font-weight-300 line-height-heading-loose margin-top-1">10x funds groundbreaking ideas from civil servants to transform how government builds technology to serve the public.</p>
+  <p class="font-sans-11 tablet-plus:font-sans-12 font-weight-300 line-height-heading-loose margin-top-1">10x funds groundbreaking ideas from civil servants to transform how government builds technology to serve the public.</p>
 </div>
 
 <h2 class="margin-bottom-0 border-top-p5 padding-top-2" id="what-is-10x">About 10x</h2>
-<p class="font-sans-f9 tablet-plus:font-sans-f11 font-weight-300 margin-top-2px margin-bottom-3 tablet-plus:margin-bottom-0 line-height-heading">Seed funding for high-impact ideas</p>
+<p class="font-sans-9 tablet-plus:font-sans-11 font-weight-300 margin-top-2px margin-bottom-3 tablet-plus:margin-bottom-0 line-height-heading">Seed funding for high-impact ideas</p>
 
 10x is an incremental investment fund inside the United States federal government. We provide seed funding for internal projects that can scale across the federal government or significantly improve how our government builds technology for the public good.
 
@@ -19,7 +19,7 @@ We focus on high-impact ideas from federal civil servants — supporting and inv
 Our funding source is the Digital Services Fund: a portion of the <a href="#1">Federal Citizen Services Fund</a> designated for new, good-for-government products and services. 10x (officially, The Office of Investments in the General Services Administration’s Office of Products and Programs) is the management vehicle of that fund.
 
 <h2 class="margin-bottom-0 border-top-p5 padding-top-2 margin-top-5" id="the-process">The 10x process</h2>
-<p class="font-sans-f9 tablet-plus:font-sans-f11 font-weight-300 margin-top-2px margin-bottom-3 tablet-plus:margin-bottom-0 line-height-heading">Start smart, start small</p>
+<p class="font-sans-9 tablet-plus:font-sans-11 font-weight-300 margin-top-2px margin-bottom-3 tablet-plus:margin-bottom-0 line-height-heading">Start smart, start small</p>
 
 We believe in starting smart and starting small — magnifying our investments as a project's proven needs grow.
 
@@ -42,12 +42,12 @@ Instead of investing with a single large lump sum, we start with smaller explora
 
 
 <h2 class="margin-bottom-0 border-top-p5 padding-top-2 margin-top-5" id="who-can-pitch">Pitch an idea to 10x</h2>
-<p class="font-sans-f9 tablet-plus:font-sans-f11 font-weight-300 margin-top-2px margin-bottom-3 tablet-plus:margin-bottom-0 line-height-heading">All federal employees are eligibile</p>
+<p class="font-sans-9 tablet-plus:font-sans-11 font-weight-300 margin-top-2px margin-bottom-3 tablet-plus:margin-bottom-0 line-height-heading">All federal employees are eligibile</p>
 
 <p>Have an idea? <a href="#pitch">Our call for proposals is open until [date].</a> Need help putting your pitch together? <a href="">We can help pair you with someone with technical and user-centered design expertise.</a></p>
 
 <h2 class="margin-bottom-0 border-top-p5 padding-top-2 margin-top-5" id="what-we-look-for">Pitch criteria</h2>
-<p class="font-sans-f9 tablet-plus:font-sans-f11 font-weight-300 margin-top-2px margin-bottom-3 tablet-plus:margin-bottom-0 line-height-heading">Focus on good-for-government technology</p>
+<p class="font-sans-9 tablet-plus:font-sans-11 font-weight-300 margin-top-2px margin-bottom-3 tablet-plus:margin-bottom-0 line-height-heading">Focus on good-for-government technology</p>
 
 <ul>
 <li>Impact across the federal government or the American public.</li>

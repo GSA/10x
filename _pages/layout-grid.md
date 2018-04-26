@@ -4,10 +4,10 @@ title: USWDS layout grid draft
 permalink: /layout-grid/
 ---
 
-<div class="font-mono-f4 font-weight-300 padding-top-2 padding-bottom-4 tablet:padding-top-4 tablet:padding-bottom-6">
+<div class="font-mono-4 font-weight-300 padding-top-2 padding-bottom-4 tablet:padding-top-4 tablet:padding-bottom-6">
 
   <div class="g-container-desktop padding-x-4 margin-top-1">
-    <h1 class="font-sans-f14 font-weight-300 margin-top-0">USWDS draft layout grid</h1>
+    <h1 class="font-sans-14 font-weight-300 margin-top-0">USWDS draft layout grid</h1>
     <p class="docs-text"><strong>Note:</strong> <code class="docs-inline-code">.g-container</code>, <code class="docs-inline-code">.g-gap</code>, and <code class="docs-inline-code">.g-col</code> all have mobile-first responsive variants. Only the first example shows them.</p>
     <p class="docs-text"><code class="docs-inline-code">.g-col-fill</code> items flex to fit</p>
 
@@ -68,7 +68,7 @@ permalink: /layout-grid/
 
     <p class="docs-text"><code class="docs-inline-code">.g-col-[1-12]</code> set a fixed width of [n] columns in a 12-column grid</p>
 
-    <div class="g-row margin-top-1 font-sans-f2">
+    <div class="g-row margin-top-1 font-sans-2">
       <div class="g-col-1 border-x-2px border-color-black-cool-90">
         <div class="text-align-center padding-x-2">1</div>
       </div>
@@ -139,7 +139,7 @@ permalink: /layout-grid/
 
     <p class="docs-text"><code class="docs-inline-code">.g-offset-[1-12]</code> offsets the column by [n] columns</p>
 
-    <div class="g-row margin-top-1 font-sans-f2">
+    <div class="g-row margin-top-1 font-sans-2">
       <div class="g-col-1 border-x-2px border-color-black-cool-90">
         <div class="text-align-center padding-x-2">1</div>
       </div>
@@ -186,7 +186,7 @@ permalink: /layout-grid/
 
     <p class="docs-text">Rows wrap when columns add up to more than 12</p>
 
-    <div class="g-row margin-top-1 font-sans-f2">
+    <div class="g-row margin-top-1 font-sans-2">
       <div class="g-col-1 border-x-2px border-color-black-cool-90">
         <div class="text-align-center padding-x-2">1</div>
       </div>
@@ -239,7 +239,7 @@ permalink: /layout-grid/
 
     <p class="docs-text"><code class="docs-inline-code">.g-gap</code> adds a gap between columns in the row, to a value set as <code class="docs-inline-code">$theme-column-gap</code> in settings</p>
 
-    <div class="g-row margin-top-1 font-sans-f2">
+    <div class="g-row margin-top-1 font-sans-2">
       <div class="g-col-1 border-x-2px border-color-black-cool-90">
         <div class="text-align-center padding-x-2">1</div>
       </div>
@@ -292,7 +292,7 @@ permalink: /layout-grid/
 
     <p class="docs-text"><code class="docs-inline-code">.g-gap-large</code> adds a gap between columns in the row, to a value set as <code class="docs-inline-code">$theme-column-gap-large</code> in settings</p>
 
-    <div class="g-row margin-top-1 font-sans-f2">
+    <div class="g-row margin-top-1 font-sans-2">
       <div class="g-col-1 border-x-2px border-color-black-cool-90">
         <div class="text-align-center padding-x-2">1</div>
       </div>
