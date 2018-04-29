@@ -11,13 +11,15 @@
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
         <rect id="path-3" x="0" y="0" width="32" height="32"></rect>
-        <rect id="path-5" x="0" y="0" width="15.7777778" height="15.7777778"></rect>
-        <filter x="-133.1%" y="-95.1%" width="366.2%" height="366.2%" filterUnits="objectBoundingBox" id="filter-6">
-            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+        <path d="M0,-3.55271368e-15 L32,-3.55271368e-15 L32,32 L0,32 L0,-3.55271368e-15 Z M2,2 L2,30 L30,30 L30,2 L2,2 Z" id="path-5"></path>
+        <rect id="path-7" x="0" y="0" width="16" height="16"></rect>
+        <filter x="-262.5%" y="-187.5%" width="625.0%" height="625.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="12" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <rect id="path-7" x="0" y="0" width="16" height="16"></rect>
+        <rect id="path-9" x="0" y="0" width="16" height="16"></rect>
+        <path d="M0,-3.55271368e-15 L16,-3.55271368e-15 L16,16 L0,16 L0,-3.55271368e-15 Z M2,2 L2,14 L14,14 L14,2 L2,2 Z" id="path-11"></path>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard" transform="translate(-1803.000000, -6747.000000)">
@@ -35,10 +37,20 @@
                                     <use xlink:href="#path-3"></use>
                                 </mask>
                                 <g></g>
-                                <g id="color-black-70" mask="url(#mask-4)" fill="#424242">
+                                <g id="color-gray-trans-0" mask="url(#mask-4)" fill="#FFFFFF" fill-opacity="0">
                                     <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
                                 </g>
-                                <g id="block/border/b0" mask="url(#mask-4)"></g>
+                                <g id="block/border/b2px" mask="url(#mask-4)">
+                                    <g id="Group-3">
+                                        <mask id="mask-6" fill="white">
+                                            <use xlink:href="#path-5"></use>
+                                        </mask>
+                                        <use id="Combined-Shape" fill="#E44608" xlink:href="#path-5"></use>
+                                        <g id="color-indigo-warm-70" mask="url(#mask-6)" fill="#433A7A">
+                                            <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+                                        </g>
+                                    </g>
+                                </g>
                             </g>
                         </g>
                     </g>
@@ -49,17 +61,27 @@
                             <g id="block">
                                 <g id="block/elevation/rd0/elev-0" fill="black" fill-opacity="1">
                                     <g id="elev">
-                                        <use filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                        <use filter="url(#filter-8)" xlink:href="#path-7"></use>
                                     </g>
                                 </g>
-                                <mask id="mask-8" fill="white">
-                                    <use xlink:href="#path-7"></use>
+                                <mask id="mask-10" fill="white">
+                                    <use xlink:href="#path-9"></use>
                                 </mask>
                                 <g></g>
-                                <g id="color-black-90" mask="url(#mask-8)" fill="#1C1C1C">
+                                <g id="color-gray-trans-0" mask="url(#mask-10)" fill="#FFFFFF" fill-opacity="0">
                                     <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
                                 </g>
-                                <g id="block/border/b0" mask="url(#mask-8)"></g>
+                                <g id="block/border/b2px" mask="url(#mask-10)">
+                                    <g id="Group-3">
+                                        <mask id="mask-12" fill="white">
+                                            <use xlink:href="#path-11"></use>
+                                        </mask>
+                                        <use id="Combined-Shape" fill="#E44608" xlink:href="#path-11"></use>
+                                        <g id="color-red-warm-50v" mask="url(#mask-12)" fill="#D93F04">
+                                            <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                                        </g>
+                                    </g>
+                                </g>
                             </g>
                         </g>
                     </g>

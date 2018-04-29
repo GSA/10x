@@ -319,10 +319,10 @@ html {
   }
   @include at-media(tablet){
     @include u-border-bottom(1px);
-    @include u-border-color(50);
+    @include u-border-color(indigo-warm, 70);
     @include u-padding-bottom(p5);
     &:hover {
-      @include u-border-color(40);
+      @include u-border-color(white);
       @include u-color(white);
     }
   }
