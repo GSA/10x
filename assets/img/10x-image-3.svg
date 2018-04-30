@@ -30,8 +30,8 @@
         <path d="M0,-3.55271368e-15 L12,-3.55271368e-15 L12,12 L0,12 L0,-3.55271368e-15 Z M2,2 L2,10 L10,10 L10,2 L2,2 Z" id="path-17"></path>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-1803.000000, -6801.000000)">
-            <g id="10x-image-3" transform="translate(1803.000000, 6801.000000)">
+        <g id="Artboard" transform="translate(-1699.000000, -6833.000000)">
+            <g id="10x-image-3" transform="translate(1699.000000, 6833.000000)">
                 <g id="block">
                     <g id="block/rd0">
                         <g>
@@ -85,7 +85,7 @@
                                             <use xlink:href="#path-11"></use>
                                         </mask>
                                         <use id="Combined-Shape" fill="#E44608" xlink:href="#path-11"></use>
-                                        <g id="color-indigo-warm-70" mask="url(#mask-12)" fill="#433A7A">
+                                        <g id="color-indigo-warm-50v" mask="url(#mask-12)" fill="#7560EB">
                                             <rect id="Rectangle" x="0" y="0" width="22" height="22"></rect>
                                         </g>
                                     </g>
