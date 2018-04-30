@@ -7,73 +7,14 @@ USWDS UTILITIES SETTINGS
 $utilities-namespace-prefix:  'u-';
 $utilities-use-important:     false;
 
-$output-breakpoints: (
-  'compact':         false,   // 240px
-  'mobile':          false,   // 320px
-  'mobile-plus':     false,    // 480px
-  'tablet':          true,    // 640px
-  'tablet-plus':     true,    // 800px
-  'desktop':         true,    // 1040px
-  'desktop-plus':    false,   // 1200px
-  'wide':            false,   // 1400px
-);
+$output-all-utilities:  false;
 
-$output-all-utilities:  true;
-
-$output-utilities: (
-  align-items:      false,
-  background-color: true,
-  border:           false,
-  border-color:     false,
-  border-radius:    true,
-  border-style:     false,
-  border-width:     false,
-  bottom:           false,
-  box-shadow:       true,
-  circle:           true,
-  clearfix:         true,
-  color:            true,
-  column:           false,
-  display:          true,
-  flex:             false,
-  flex-direction:   false,
-  flex-wrap:        false,
-  float:            true,
-  font:             true,
-  font-family:      true,
-  font-feature:     false,
-  font-style:       true,
-  font-weight:      true,
-  height:           false,
-  left:             false,
-  letter-spacing:   true,
-  line-height:      true,
-  list-reset:       true,
-  manual-position:  false,
-  margin:           true,
-  max-height:       false,
-  max-width:        false,
-  min-height:       false,
-  min-width:        false,
-  opacity:          false,
-  order:            false,
-  outline-width:    false,
-  outline-color:    false,
-  overflow:         false,
-  padding:          true,
-  position:         false,
-  right:            false,
-  row:              false,
-  square:           false,
-  text-align:       true,
-  text-decoration:  true,
-  text-decoration-color:  false,
-  text-transform:   true,
-  top:              false,
-  vertical-align:   false,
-  whitespace:       false,
-  width:            false,
-  z-index:          false
+// By default, the following plugins
+// will be added to
+// each utility that accepts
+// color values
+$global-color-plugins: (
+  'plugin-color-palette-grayscale'
 );
 
 /*
@@ -83,6 +24,7 @@ $output-utilities: (
 */
 
 $align-items-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -93,15 +35,12 @@ $align-items-settings: (
 $align-items-plugins: (
   /*
   */
+  'plugin-standard-align-items'
 );
 
 $align-items-manual-values: (
   /*
   */
-  flex-start:   'flex-start',
-  flex-end:     'flex-end',
-  center:       'center',
-  stretch:      'stretch'
 );
 
 /*
@@ -111,6 +50,7 @@ $align-items-manual-values: (
 */
 
 $background-color-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -131,8 +71,8 @@ $background-color-plugins: (
   'plugin-color-[color]-vivid'
   'plugin-color-palette-status'
   */
-  'plugin-color-palette-theme',
-  'plugin-color-palette-grayscale',
+  'plugin-standard-background-color',
+  $global-color-plugins
 );
 
 $background-color-manual-values: (
@@ -147,6 +87,7 @@ $background-color-manual-values: (
 */
 
 $border-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -160,14 +101,12 @@ $border-plugins: (
   'plugin-spacing-uswds-small'
   'plugin-spacing-uswds-medium'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small'
+  'plugin-standard-border',
 );
 
 $border-manual-values: (
   /*
   */
-  0:            '0'
 );
 
 /*
@@ -177,10 +116,11 @@ $border-manual-values: (
 */
 
 $border-color-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
-  hover:        true,
+  hover:        false,
   visited:      false
 );
 
@@ -197,8 +137,8 @@ $border-color-plugins: (
   'plugin-color-[color]-vivid'
   'plugin-color-palette-status'
   */
-  'plugin-color-palette-theme',
-  'plugin-color-palette-grayscale'
+  'plugin-standard-border-color',
+  $global-color-plugins
 );
 
 $border-color-manual-values: (
@@ -213,6 +153,7 @@ $border-color-manual-values: (
 */
 
 $border-radius-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -226,7 +167,7 @@ $border-radius-plugins: (
   'plugin-spacing-uswds-small'
   'plugin-spacing-uswds-medium'
   */
-  'plugin-misc-border-radius'
+  'plugin-standard-border-radius'
 );
 
 $border-radius-manual-values: (
@@ -241,6 +182,7 @@ $border-radius-manual-values: (
 */
 
 $border-style-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -251,14 +193,12 @@ $border-style-settings: (
 $border-style-plugins: (
   /*
   */
+  'plugin-standard-border-style'
 );
 
 $border-style-manual-values: (
   /*
   */
-  dashed:       'dashed',
-  dotted:       'dotted',
-  solid:        'solid'
 );
 
 /*
@@ -268,6 +208,7 @@ $border-style-manual-values: (
 */
 
 $border-width-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -280,14 +221,12 @@ $border-width-plugins: (
   'plugin-spacing-uswds-small'
   'plugin-spacing-uswds-medium'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small'
+  'plugin-standard-border-width',
 );
 
 $border-width-manual-values: (
   /*
   */
-  0:       0,
 );
 
 /*
@@ -297,6 +236,7 @@ $border-width-manual-values: (
 */
 
 $bottom-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -318,17 +258,12 @@ $bottom-plugins: (
   'plugin-spacing-uswds-smaller'
   'plugin-spacing-uswds-smaller-negative'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-smaller-negative',
-  'plugin-spacing-uswds-small-negative'
+  'plugin-standard-bottom',
 );
 
 $bottom-manual-values: (
   /*
   */
-  0:        0,
-  auto:     'auto',
 );
 
 /*
@@ -338,6 +273,7 @@ $bottom-manual-values: (
 */
 
 $box-shadow-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -348,16 +284,12 @@ $box-shadow-settings: (
 $box-shadow-plugins: (
   /*
   */
+  'plugin-standard-box-shadow'
 );
 
 $box-shadow-manual-values: (
   /*
   */
-  none:     'none',
-  low:      '0 1px 2px 0 rgba(0,0,0,0.10)',
-  high:     '0 4px 8px 0 rgba(0,0,0,0.10)',
-  higher:   '0 6px 12px 0 rgba(0,0,0,0.10)',
-  highest:  '0 8px 16px 0 rgba(0,0,0,0.10)',
 );
 
 /*
@@ -367,6 +299,7 @@ $box-shadow-manual-values: (
 */
 
 $circle-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -385,10 +318,7 @@ $circle-plugins: (
   'plugin-spacing-uswds-large'
   'plugin-spacing-uswds-xlarge'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-medium',
-  'plugin-spacing-uswds-large',
+  'plugin-standard-circle',
 );
 
 $circle-manual-values: (
@@ -403,6 +333,7 @@ $circle-manual-values: (
 */
 
 $clearfix-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -417,6 +348,7 @@ $clearfix-settings: (
 */
 
 $color-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -437,8 +369,8 @@ $color-plugins: (
   'plugin-[color]-vivid'
   'plugin-palette-status'
   */
-  'plugin-color-palette-theme',
-  'plugin-color-palette-grayscale'
+  'plugin-standard-color',
+  $global-color-plugins
 );
 
 $color-manual-values: (
@@ -453,6 +385,7 @@ $color-manual-values: (
 */
 
 $display-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -463,18 +396,12 @@ $display-settings: (
 $display-plugins: (
   /*
   */
+  'plugin-standard-display'
 );
 
 $display-manual-values: (
   /*
   */
-  block:        'block',
-  flex:         'flex',
-  none:         'none',
-  inline:       'inline',
-  inline-block: 'inline-block',
-  table:        'table',
-  table-cell:   'table-cell'
 );
 
 /*
@@ -484,6 +411,7 @@ $display-manual-values: (
 */
 
 $flex-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -494,7 +422,7 @@ $flex-settings: (
 $flex-plugins: (
   /*
   */
-  'plugin-misc-flex'
+  'plugin-standard-flex'
 );
 
 $flex-manual-values: (
@@ -509,6 +437,7 @@ $flex-manual-values: (
 */
 
 $flex-direction-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -516,13 +445,13 @@ $flex-direction-settings: (
   visited:      false
 );
 
-$flex-direction-plugins: ();
+$flex-direction-plugins: (
+  'plugin-standard-flex-direction'
+);
 
 $flex-direction-manual-values: (
   /*
   */
-  row:          'row',
-  column:       'column'
 );
 
 /*
@@ -532,6 +461,7 @@ $flex-direction-manual-values: (
 */
 
 $flex-wrap-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -539,11 +469,11 @@ $flex-wrap-settings: (
   visited:      false
 );
 
-$flex-wrap-plugins: ();
+$flex-wrap-plugins: (
+  'plugin-standard-flex-wrap'
+);
 
 $flex-wrap-manual-values: (
-  wrap:         'wrap',
-  nowrap:       'nowrap'
 );
 
 /*
@@ -553,6 +483,7 @@ $flex-wrap-manual-values: (
 */
 
 $float-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -560,14 +491,13 @@ $float-settings: (
   visited:      false
 );
 
-$float-plugins: ();
+$float-plugins: (
+  'plugin-standard-float'
+);
 
 $float-manual-values: (
   /*
   */
-  left:         'left',
-  none:         'none',
-  right:        'right'
 );
 
 /*
@@ -577,7 +507,8 @@ $float-manual-values: (
 */
 
 $font-settings: (
-  responsive:   true,
+  output:       true,
+  responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
@@ -612,6 +543,7 @@ $font-manual-values: (
 */
 
 $font-family-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -622,7 +554,7 @@ $font-family-settings: (
 $font-family-plugins: (
   /*
   */
-  'plugin-font-stack-roles'
+  'plugin-standard-font-family'
 );
 
 $font-family-manual-values: (
@@ -637,6 +569,7 @@ $font-family-manual-values: (
 */
 
 $font-feature-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -647,7 +580,7 @@ $font-feature-settings: (
 $font-feature-plugins: (
   /*
   */
-  'plugin-misc-font-feature-settings'
+  'plugin-standard-font-feature-settings'
 );
 
 $font-feature-manual-values: (
@@ -662,6 +595,7 @@ $font-feature-manual-values: (
 */
 
 $font-style-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -669,11 +603,11 @@ $font-style-settings: (
   visited:      false
 );
 
-$font-style-plugins: ();
+$font-style-plugins: (
+  'plugin-standard-font-style'
+);
 
 $font-style-manual-values: (
-  normal:       'normal',
-  italic:       'italic'
 );
 
 /*
@@ -683,6 +617,7 @@ $font-style-manual-values: (
 */
 
 $font-weight-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -694,7 +629,7 @@ $font-weight-plugins: (
   /*
   'plugin-font-weights-numeric'
   */
-  'plugin-font-weights-theme'
+  'plugin-standard-font-weight'
 );
 
 $font-weight-manual-values: (
@@ -709,6 +644,7 @@ $font-weight-manual-values: (
 */
 
 $height-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -728,18 +664,49 @@ $height-plugins: (
   'plugin-spacing-uswds-large'
   'plugin-spacing-uswds-xlarge'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-medium',
-  'plugin-spacing-uswds-large',
+  'plugin-standard-height'
 );
 
 $height-manual-values: (
   /*
   */
-  0:      0,
-  auto:   auto,
-  100vh:  100vh
+);
+
+/*
+========================================
+.justify-content
+----------------------------------------
+*/
+
+$justify-content-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+);
+
+$justify-content-plugins: (
+  /*
+  'plugin-spacing-uswds-small'
+  'plugin-spacing-uswds-medium'
+  'plugin-spacing-uswds-large'
+  'plugin-spacing-uswds-xlarge'
+  'plugin-spacing-uswds-all'
+  'plugin-spacing-uswds-smaller-negative'
+  'plugin-spacing-uswds-medium-negative'
+  'plugin-spacing-uswds-negative'
+  'plugin-spacing-units-percentage'
+  'plugin-spacing-uswds-smaller'
+  'plugin-spacing-uswds-smaller-negative'
+  */
+  'plugin-standard-justify-content'
+);
+
+$justify-content-manual-values: (
+  /*
+  */
 );
 
 /*
@@ -749,6 +716,7 @@ $height-manual-values: (
 */
 
 $left-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -770,17 +738,12 @@ $left-plugins: (
   'plugin-spacing-uswds-smaller'
   'plugin-spacing-uswds-smaller-negative'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-smaller-negative',
-  'plugin-spacing-uswds-small-negative',
+  'plugin-standard-left'
 );
 
 $left-manual-values: (
   /*
   */
-  0:        0,
-  auto:     'auto',
 );
 
 /*
@@ -790,6 +753,7 @@ $left-manual-values: (
 */
 
 $letter-spacing-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -800,7 +764,7 @@ $letter-spacing-settings: (
 $letter-spacing-plugins: (
   /*
   */
-  'plugin-misc-letter-spacing'
+  'plugin-standard-letter-spacing'
 );
 
 $letter-spacing-manual-values: (
@@ -815,6 +779,7 @@ $letter-spacing-manual-values: (
 */
 
 $line-height-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -825,7 +790,7 @@ $line-height-settings: (
 $line-height-plugins: (
   /*
   */
-  'plugin-misc-line-heights'
+  'plugin-standard-line-height'
 );
 
 $line-height-manual-values: (
@@ -840,6 +805,7 @@ $line-height-manual-values: (
 */
 
 $list-reset-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -854,6 +820,7 @@ $list-reset-settings: (
 */
 
 $margin-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -872,18 +839,12 @@ $margin-plugins: (
   'plugin-spacing-units-ch-negative',
   'plugin-spacing-units-em'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-medium',
-  'plugin-spacing-uswds-smaller-negative',
-  'plugin-spacing-uswds-small-negative',
+  'plugin-standard-margin'
 );
 
 $margin-manual-values: (
   /*
   */
-  0:            '0',
-  auto:         'auto',
 );
 
 /*
@@ -893,6 +854,7 @@ $margin-manual-values: (
 */
 
 $max-height-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -906,16 +868,12 @@ $max-height-plugins: (
   'plugin-spacing-uswds-all',
   'plugin-spacing-uswds-smaller'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-medium',
-  'plugin-spacing-uswds-large',
+  'plugin-standard-max-height'
 );
 
 $max-height-manual-values: (
   /*
   */
-  none:         'none',
 );
 
 /*
@@ -925,6 +883,7 @@ $max-height-manual-values: (
 */
 
 $max-width-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -937,13 +896,38 @@ $max-width-plugins: (
   'plugin-spacing-units-percentage',
   'plugin-spacing-uswds-breakpoints'
   */
-  'plugin-misc-measure'
+  'plugin-standard-max-width'
 );
 
 $max-width-manual-values: (
   /*
   */
-  none:         'none',
+);
+
+/*
+========================================
+.measure
+----------------------------------------
+*/
+
+$measure-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+);
+
+$measure-plugins: (
+  /*
+  */
+  'plugin-standard-measure'
+);
+
+$measure-manual-values: (
+  /*
+  */
 );
 
 /*
@@ -953,7 +937,8 @@ $max-width-manual-values: (
 */
 
 $min-height-settings: (
-  responsive:   true,
+  output:       false,
+  responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
@@ -966,17 +951,12 @@ $min-height-plugins: (
   'plugin-spacing-uswds-small'
   'plugin-spacing-uswds-medium'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-medium',
-  'plugin-spacing-uswds-large',
+  'plugin-standard-min-height'
 );
 
 $min-height-manual-values: (
   /*
   */
-  '100ct':      100%,
-  '100vh':      100vh,
 );
 
 /*
@@ -986,7 +966,8 @@ $min-height-manual-values: (
 */
 
 $min-width-settings: (
-  responsive:   true,
+  output:       false,
+  responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
@@ -1001,10 +982,7 @@ $min-width-plugins: (
   'plugin-spacing-units-ch'
   'plugin-spacing-units-percentage'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-medium',
-  'plugin-spacing-uswds-large',
+  'plugin-standard-min-width'
 );
 
 $min-width-manual-values: (
@@ -1019,6 +997,7 @@ $min-width-manual-values: (
 */
 
 $opacity-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1029,7 +1008,7 @@ $opacity-settings: (
 $opacity-plugins: (
   /*
   */
-  'plugin-misc-opacity'
+  'plugin-standard-opacity'
 );
 
 $opacity-manual-values: (
@@ -1055,6 +1034,7 @@ $opacity-manual-values: (
 */
 
 $order-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1065,7 +1045,7 @@ $order-settings: (
 $order-plugins: (
   /*
   */
-  'plugin-misc-order'
+  'plugin-standard-order'
 );
 
 $order-manual-values: (
@@ -1094,6 +1074,7 @@ $order-manual-values: (
 */
 
 $outline-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1104,14 +1085,12 @@ $outline-settings: (
 $outline-plugins: (
   /*
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small'
+  'plugin-standard-outline'
 );
 
 $outline-manual-values: (
   /*
   */
-  0:            'none'
 );
 
 /*
@@ -1121,6 +1100,7 @@ $outline-manual-values: (
 */
 
 $outline-color-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1131,7 +1111,8 @@ $outline-color-settings: (
 $outline-color-plugins: (
   /*
   */
-  'plugin-color-palette-theme'
+  'plugin-standard-outline-color',
+  $global-color-plugins
 );
 
 $outline-color-manual-values: (
@@ -1146,6 +1127,7 @@ $outline-color-manual-values: (
 */
 
 $overflow-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1156,15 +1138,12 @@ $overflow-settings: (
 $overflow-plugins: (
   /*
   */
+  'plugin-standard-overflow'
 );
 
 $overflow-manual-values: (
   /*
   */
-  'hidden':            hidden,
-  'scroll':            scroll,
-  'auto':              auto,
-  'visiable':          visible,
 );
 
 /*
@@ -1174,7 +1153,8 @@ $overflow-manual-values: (
 */
 
 $padding-settings: (
-  responsive:   true,
+  output:       true,
+  responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
@@ -1185,15 +1165,12 @@ $padding-plugins: (
   /*
   'plugin-spacing-uswds-smaller',
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-medium',
+  'plugin-standard-padding'
 );
 
 $padding-manual-values: (
   /*
   */
-  0:            '0'
 );
 
 /*
@@ -1203,6 +1180,7 @@ $padding-manual-values: (
 */
 
 $position-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1213,16 +1191,12 @@ $position-settings: (
 $position-plugins: (
   /*
   */
+  'plugin-standard-position'
 );
 
 $position-manual-values: (
   /*
   */
-  absolute:     'absolute',
-  fixed:        'fixed',
-  relative:     'relative',
-  static:       'static',
-  sticky:       'sticky'
 );
 
 /*
@@ -1232,6 +1206,7 @@ $position-manual-values: (
 */
 
 $right-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1253,17 +1228,12 @@ $right-plugins: (
   'plugin-spacing-uswds-smaller'
   'plugin-spacing-uswds-smaller-negative'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-smaller-negative',
-  'plugin-spacing-uswds-small-negative'
+  'plugin-standard-right'
 );
 
 $right-manual-values: (
   /*
   */
-  0:        0,
-  auto:     'auto',
 );
 
 /*
@@ -1273,6 +1243,7 @@ $right-manual-values: (
 */
 
 $square-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1283,13 +1254,12 @@ $square-settings: (
 $square-plugins: (
   /*
   */
-  'plugin-spacing-uswds-all'
+  'plugin-standard-square'
 );
 
 $square-manual-values: (
   /*
   */
-  2px:          '2px'
 );
 
 /*
@@ -1299,7 +1269,8 @@ $square-manual-values: (
 */
 
 $text-align-settings: (
-  responsive:   true,
+  output:       true,
+  responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
@@ -1309,15 +1280,12 @@ $text-align-settings: (
 $text-align-plugins: (
   /*
   */
+  'plugin-standard-text-align'
 );
 
 $text-align-manual-values: (
   /*
   */
-  center:       'center',
-  left:         'left',
-  justify:      'justify',
-  right:        'right',
 );
 
 /*
@@ -1327,6 +1295,7 @@ $text-align-manual-values: (
 */
 
 $text-decoration-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1337,14 +1306,12 @@ $text-decoration-settings: (
 $text-decoration-plugins: (
   /*
   */
+  'plugin-standard-text-decoration'
 );
 
 $text-decoration-manual-values: (
   /*
   */
-  strike:           'strike',
-  underline:        'underline',
-  none:             'none'
 );
 
 /*
@@ -1354,6 +1321,7 @@ $text-decoration-manual-values: (
 */
 
 $text-decoration-color-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1365,8 +1333,8 @@ $text-decoration-color-plugins: (
   /*
   'plugin-color-palette-grayscale'
   */
-  'plugin-color-palette-theme',
-  'plugin-color-palette-required'
+  'plugin-standard-text-decoration-color',
+  $global-color-plugins
 );
 
 $text-decoration-color-manual-values: (
@@ -1375,11 +1343,39 @@ $text-decoration-color-manual-values: (
 );
 
 /*
+========================================
+.text-indent
+----------------------------------------
+*/
+
+$text-indent-settings: (
+  output:       false,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+);
+
+$text-indent-plugins: (
+  /*
+  */
+  'plugin-standard-text-indent'
+);
+
+$text-indent-manual-values: (
+  /*
+  */
+);
+
+/*
+========================================
 .text-transform
 ----------------------------------------
 */
 
 $text-transform-settings: (
+  output:       true,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1390,15 +1386,12 @@ $text-transform-settings: (
 $text-transform-plugins: (
   /*
   */
+  'plugin-standard-text-transform'
 );
 
 $text-transform-manual-values: (
   /*
   */
-  capitalize:     'capitalize',
-  lowercase:      'lowercase',
-  uppercase:      'uppercase',
-  none:           'none'
 );
 
 /*
@@ -1408,6 +1401,7 @@ $text-transform-manual-values: (
 */
 
 $top-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1429,17 +1423,12 @@ $top-plugins: (
   'plugin-spacing-uswds-smaller'
   'plugin-spacing-uswds-smaller-negative'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-smaller-negative',
-  'plugin-spacing-uswds-small-negative'
+  'plugin-standard-top'
 );
 
 $top-manual-values: (
   /*
   */
-  0:        0,
-  auto:     'auto',
 );
 
 /*
@@ -1449,6 +1438,7 @@ $top-manual-values: (
 */
 
 $vertical-align-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1459,19 +1449,12 @@ $vertical-align-settings: (
 $vertical-align-plugins: (
   /*
   */
+  'plugin-standard-vertical-align'
 );
 
 $vertical-align-manual-values: (
   /*
   */
-  baseline:     'baseline',
-  bottom:       'bottom',
-  middle:       'middle',
-  sub:          'sub',
-  super:        'super',
-  text-bottom:  'text-bottom',
-  text-top:     'text-top',
-  top:          'top',
 );
 
 /*
@@ -1481,6 +1464,7 @@ $vertical-align-manual-values: (
 */
 
 $whitespace-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1491,16 +1475,12 @@ $whitespace-settings: (
 $whitespace-plugins: (
   /*
   */
+  'plugin-standard-white-space'
 );
 
 $whitespace-manual-values: (
   /*
   */
-  pre:          'pre',
-  pre-line:     'pre-line',
-  pre-wrap:     'pre-wrap',
-  normal:       'normal',
-  nowrap:       'nowrap'
 );
 
 /*
@@ -1510,6 +1490,7 @@ $whitespace-manual-values: (
 */
 
 $width-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1525,17 +1506,13 @@ $width-plugins: (
   'plugin-spacing-units-ch'
   'plugin-spacing-units-percentage'
   */
-  'plugin-spacing-uswds-smaller',
-  'plugin-spacing-uswds-small',
-  'plugin-spacing-uswds-medium',
-  'plugin-spacing-uswds-large',
+  'plugin-standard-width'
 );
 
 $width-manual-values: (
   /*
   100ct:        '100%'
   */
-  auto:         'auto',
 );
 
 /*
@@ -1545,6 +1522,7 @@ $width-manual-values: (
 */
 
 $z-index-settings: (
+  output:       false,
   responsive:   false,
   active:       false,
   focus:        false,
@@ -1555,11 +1533,10 @@ $z-index-settings: (
 $z-index-plugins: (
   /*
   */
-  'plugin-misc-z-index'
+  'plugin-standard-z-index'
 );
 
 $z-index-manual-values: (
   /*
   */
-  auto:         'auto',
 );
