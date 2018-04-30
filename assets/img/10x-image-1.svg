@@ -86,7 +86,7 @@
                                                 <use xlink:href="#path-11"></use>
                                             </mask>
                                             <use id="Combined-Shape" fill="#E44608" xlink:href="#path-11"></use>
-                                            <g id="color-indigo-warm-70" mask="url(#mask-12)" fill="#433A7A">
+                                            <g id="color-indigo-warm-50v" mask="url(#mask-12)" fill="#7560EB">
                                                 <rect id="Rectangle" x="0" y="0" width="22" height="22"></rect>
                                             </g>
                                         </g>
@@ -119,7 +119,7 @@
                                                 <use xlink:href="#path-17"></use>
                                             </mask>
                                             <use id="Combined-Shape" fill="#E44608" xlink:href="#path-17"></use>
-                                            <g id="color-indigo-warm-70" mask="url(#mask-18)" fill="#433A7A">
+                                            <g id="color-indigo-warm-40" mask="url(#mask-18)" fill="#968ADE">
                                                 <rect id="Rectangle" x="0" y="0" width="12" height="12"></rect>
                                             </g>
                                         </g>
