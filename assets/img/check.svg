@@ -13,7 +13,7 @@
                     <mask id="mask-2" fill="white">
                         <use xlink:href="#path-1"></use>
                     </mask>
-                    <use id="Oval-6" fill="#222222" xlink:href="#path-1"></use>
+                    <use id="Oval-6" fill="#1C1C1B" xlink:href="#path-1"></use>
                     <polyline id="Path-4" stroke="#FFFFFF" stroke-width="6" mask="url(#mask-2)" points="13.4921875 26.5332031 23.234375 35.078125 37.1015625 13.3164062"></polyline>
                 </g>
             </g>
