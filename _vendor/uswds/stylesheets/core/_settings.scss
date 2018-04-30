@@ -25,7 +25,7 @@ property of all elements to
 ----------------------------------------
 */
 
-$border-box-sizing: true;
+$border-box-sizing: false !default;
 
 /*
 ----------------------------------------
@@ -37,6 +37,28 @@ Relative font and image file paths
 
 $theme-font-path:   '../fonts' !default;
 $theme-image-path:  '../img' !default;
+
+/*
+----------------------------------------
+Output breakpoints
+----------------------------------------
+Which breakpoints does your project
+need? Select as `true` any breakpoint
+used by utilities or layout grid
+----------------------------------------
+*/
+
+$theme-output-breakpoints: (
+  'card':            false,   // 160px
+  'card-plus':       false,   // 240px
+  'mobile':          false,   // 320px
+  'mobile-plus':     true,    // 480px
+  'tablet':          true,    // 640px
+  'tablet-plus':     false,   // 800px
+  'desktop':         true,    // 1040px
+  'desktop-plus':    false,   // 1200px
+  'widescreen':      false,   // 1400px
+) !default;
 
 /*
 ----------------------------------------
@@ -144,19 +166,19 @@ Type scale
 Define your project's type scale using
 values from the USWDS system type scale
 
-s1-s20
+1-20
 ----------------------------------------
 */
 
-$theme-type-scale-micro:         f1 !default;
-$theme-type-scale-smallest:      f3 !default;
-$theme-type-scale-smaller:       f5 !default;
-$theme-type-scale-small:         f6 !default;
-$theme-type-scale-base:          f7 !default;
-$theme-type-scale-large:         f10 !default;
-$theme-type-scale-larger:        f12 !default;
-$theme-type-scale-largest:       f14 !default;
-$theme-type-scale-mega:          f16 !default;
+$theme-type-scale-micro:         1 !default;
+$theme-type-scale-smallest:      3 !default;
+$theme-type-scale-smaller:       5 !default;
+$theme-type-scale-small:         6 !default;
+$theme-type-scale-base:          7 !default;
+$theme-type-scale-large:         10 !default;
+$theme-type-scale-larger:        12 !default;
+$theme-type-scale-largest:       14 !default;
+$theme-type-scale-mega:          16 !default;
 
 /*
 ----------------------------------------
@@ -205,12 +227,12 @@ $theme-color-secondary-vivid:     $theme-color-secondary, 50, vivid !default;
 $theme-color-secondary-dark:      $theme-color-secondary, 80 !default;
 
 $theme-color-accent-warm:         orange !default;
-$theme-color-accent-warm-lighter: $theme-color-accent-warm, 50, vivid !default;
-$theme-color-accent-warm-base:    $theme-color-accent-warm, 50, vivid !default;
+$theme-color-accent-warm-base:    $theme-color-accent-warm, 30, vivid !default;
+$theme-color-accent-warm-dark:    $theme-color-accent-warm, 60, vivid !default;
 
 $theme-color-accent-cool:         cyan !default;
-$theme-color-accent-cool-lighter: $theme-color-accent-cool, 50, vivid !default;
-$theme-color-accent-cool-base:    $theme-color-accent-cool, 50, vivid !default;
+$theme-color-accent-cool-base:    $theme-color-accent-cool, 30, vivid !default;
+$theme-color-accent-cool-dark:    $theme-color-accent-cool, 60, vivid !default;
 
 $theme-color-inverse:             white !default;
 $theme-color-inverse-base:        $theme-color-inverse, 0 !default;
@@ -254,21 +276,39 @@ $theme-color-disabled-base:    $theme-color-disabled, 30 !default;
 ----------------------------------------
 Border radius
 ----------------------------------------
-eighth          2px
-quarter         4px
-half            8px
-half-plus       12px
-base            16px
-base-plus       24px
-double          32px
-double-plus     40px
-triple          48px
-triple-plus     56px
-quad            64px
-quad-plus       72px
+2px     2px
+p5      4px
+1       8px
+1p5     12px
+2       16px
+3       24px
+4       32px
+5       40px
+6       48px
+7       56px
+8       64px
+9       72px
 ----------------------------------------
 */
 
-$theme-border-radius-small:       eighth !default;
-$theme-border-radius-base:        quarter !default;
+$theme-border-radius-small:       2px !default;
+$theme-border-radius-base:        p5 !default;
 $theme-border-radius-large:       false !default;
+
+/*
+----------------------------------------
+Column gap
+----------------------------------------
+2px         2px
+p5          4px
+1           8px
+2           16px
+3           24px
+4           32px
+5           48px
+----------------------------------------
+*/
+
+$theme-column-gap-small: 2px !default;
+$theme-column-gap:       2 !default;
+$theme-column-gap-large: 3 !default;
