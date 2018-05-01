@@ -3,7 +3,7 @@ layout: page
 title: About 10x
 permalink: /about-10x/
 description: 10x is the The Office of Investments in GSA’s Technology Transformation Service. We fund good-for-government ideas from federal civil servants.
-bg_color: black-warm-5
+bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-20
 graphic_middle_bg: yellow-20v
 graphic_inner_bg: red-warm-50v
