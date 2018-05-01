@@ -2,7 +2,7 @@
 layout: page
 title: Send us an idea
 permalink: /send-us-an-idea/
-description: 10x is currently accepting pitches. The current submission period is open until June 1, 2018.
+description: 10x is currently accepting ideas to be considered for funding from Federal Acquisition Service (FAS) employees. The window to submit your idea is open until June 1, 2018.
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: gold-20v
@@ -16,7 +16,7 @@ graphic_inner_bg: red-warm-50v
 
 <h2 class="docs-h2">Eligibility</h2>
 
-Any federal employee from any agency is eligible to submit an idea for 10x funding. We are not able to accept pitches from Federal contractors at this time.
+As we scale this program, 10x will be open to submissions from the entire federal government.
 
 <h2 class="docs-h2">What makes a good idea?</h2>
 
@@ -74,7 +74,7 @@ Any federal employee from any agency is eligible to submit an idea for 10x fundi
 
 <h2 class="docs-h2">Need some help?</h2>
 
-Don’t know where to begin? Need a second pair of eyes or a gut check with a technical expert? Send us an email at [10x@gsa.gov](mailto:10x@gsa.gov) and someone from our team will help you craft the perfect pitch.
+If you’d like help putting together an idea or have questions about what we’re looking for, email us at [{{ site.email }}](mailto:{{ site.email }}). We’re happy to connect you with a technology expert or someone to review what you have and make sure your idea is clear.
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix margin-top-2 tablet:margin-top-6">
   <a href="{{ site.submission_form }}" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-5 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Google form</span></a>
