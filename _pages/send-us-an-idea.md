@@ -16,7 +16,7 @@ graphic_inner_bg: red-warm-50v
 
 <h2 class="docs-h2">Eligibility</h2>
 
-As we scale this program, 10x will be open to submissions from the entire federal government.
+10x is currently accepting ideas to be considered for funding from Federal Acquisition Service (FAS) employees only. As we scale this program, 10x will be open to submissions from the entire federal government.
 
 <h2 class="docs-h2">What makes a good idea?</h2>
 

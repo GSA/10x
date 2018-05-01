@@ -1,6 +1,7 @@
 nav:
 - title: Home
   url: /
+  mobile_only: true
 - title: About 10x
   url: /about-10x/
 - title: Send us an idea
