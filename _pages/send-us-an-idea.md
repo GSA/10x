@@ -2,7 +2,11 @@
 layout: page
 title: Send us an idea
 permalink: /send-us-an-idea/
-description: 10x is currently accepting ideas for submission to its funding program. The current submission period is open until June 1, 2018.
+description: 10x is currently accepting pitches. The current submission period is open until June 1, 2018.
+bg_color: white-cool-3
+graphic_outer_bg: indigo-warm-50v
+graphic_middle_bg: gold-20v
+graphic_inner_bg: red-warm-50v
 ---
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix">

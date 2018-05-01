@@ -7,19 +7,21 @@ layout: default
     <h1 class="margin-y-0 padding-top-4 tablet-plus:padding-top-4 font-weight-900 tablet-plus:font-sans-17 letter-spacing-tightest">
       {{ page.title }}
     </h1>
-    <p class="font-weight-400 font-sans-11 line-height-small tablet-plus:font-sans-11 tablet-plus:line-height-base margin-top-1 margin-bottom-0">{{ page.description }}</p>
+    {% if page.description %}
+      <p class="font-weight-400 font-sans-11 line-height-small tablet-plus:font-sans-11 tablet-plus:line-height-base margin-top-1 margin-bottom-0">{{ page.description }}</p>
 
-    <div class="margin-x-neg-2 tablet:margin-x-0 margin-top-6 tablet-plus:margin-top-6 background-color-{{ page.graphic_outer_bg }}">
-      <div class="g-row padding-top-9">
-        <div class="g-col-6 margin-x-auto height-9 background-color-{{ page.graphic_middle_bg }}">
-          <div class="g-row padding-top-6">
-            <div class="g-col-2 height-3 margin-x-auto background-color-{{ page.graphic_inner_bg }}">
+      <div class="margin-x-neg-2 tablet:margin-x-0 margin-top-6 tablet-plus:margin-top-6 background-color-{{ page.graphic_outer_bg }}">
+        <div class="g-row padding-top-9">
+          <div class="g-col-6 margin-x-auto height-9 background-color-{{ page.graphic_middle_bg }}">
+            <div class="g-row padding-top-6">
+              <div class="g-col-2 height-3 margin-x-auto background-color-{{ page.graphic_inner_bg }}">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  {% endif %}
 
 </section>
 
