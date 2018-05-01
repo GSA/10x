@@ -10,16 +10,15 @@ graphic_inner_bg: red-warm-50v
 ---
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix">
-  <a href="#0" class="g-col tablet:g-col-auto background-color-70 color-white padding-2 border-radius-small tablet:margin-right-3 text-decoration-none hover:background-color-80 text-align-center margin-top-2 tablet:margin-top-0">Send your idea to 10x<span class="font-sans-4 display-block color-20">via Google form</span></a>
-  <p class="g-col-fill color-90 font-sans-6 tablet:font-sans-8 line-height-small margin-top-2 tablet:margin-y-0">or email your idea directly to <a href="mailto:10x-idea@gsa.gov" class="color-90 white-space-nowrap text-decoration-color-30 hover:text-decoration-color-90">10x-idea@gsa.gov</a>.</p>
+  <a href="{{ site.submission_form }}" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-5 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Google form</span></a>
+  <p class="g-col-fill color-90 font-sans-6 tablet:font-sans-8 line-height-small margin-top-2 tablet:margin-y-0">or email your idea directly to <a href="mailto:{{ site.email }}" class="color-90 white-space-nowrap text-decoration-color-30 hover:text-decoration-color-90">{{ site.email }}</a>.</p>
 </div>
 
-## Eligibility
+<h2 class="docs-h2">Eligibility</h2>
 
 Any federal employee from any agency is eligible to submit an idea for 10x funding. We are not able to accept pitches from Federal contractors at this time.
 
-
-## What makes a good idea?
+<h2 class="docs-h2">What makes a good idea?</h2>
 
 <h3><strong>10x is looking for ideas that:</strong></h3>
 
@@ -56,11 +55,7 @@ Any federal employee from any agency is eligible to submit an idea for 10x fundi
     Be as clear and descriptive as possible.</li>
 </ul>
 
-## Need some help?
-
-Don’t know where to begin? Need a second pair of eyes or a gut check with a technical expert? Send us an email at [10x@gsa.gov](mailto:10x@gsa.gov) and someone from our team will help you craft the perfect pitch.
-
-## Examples of ideas 10x has funded
+<h2 class="docs-h2">Examples of ideas 10x has funded</h2>
 
 <div class="usa-card">
   <h3 class="margin-top-0">Open Source Translation Services</h3>
@@ -75,4 +70,12 @@ Don’t know where to begin? Need a second pair of eyes or a gut check with a te
 <div class="usa-card">
   <h3 class="margin-top-0">PRA.Gov</h3>
   <p>OMB’s Office of Information and Regulatory Affairs (OIRA) is charged with overseeing Federal compliance with the Paperwork Reduction Act (PRA). Agencies often cite frustration with accessing and understanding OMB’s policies on the PRA, which are spread across numerous inaccessible PDFs. This situation has reduced compliance and created delays in the approval of information collection requests (ICRs). Through outreach to PRA desk officers and agency staff, and in consultation with OIRA, TTS will explore what it would take to modernize the way agencies interact with OMB’s policies in order to design an accessible, user-friendly online interface to respond to agency inquiries.</p>
+</div>
+
+<h2 class="docs-h2">Need some help?</h2>
+
+Don’t know where to begin? Need a second pair of eyes or a gut check with a technical expert? Send us an email at [10x@gsa.gov](mailto:10x@gsa.gov) and someone from our team will help you craft the perfect pitch.
+
+<div class="g-row tablet:display-flex tablet:align-items-center clearfix margin-top-2 tablet:margin-top-6">
+  <a href="{{ site.submission_form }}" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-5 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Google form</span></a>
 </div>
