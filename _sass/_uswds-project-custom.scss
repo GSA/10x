@@ -323,7 +323,6 @@ html {
   @include at-media(tablet){
     @include u-color(black-warm, 80)
     @include u-border-bottom(1px);
-    @include u-border-color(indigo-warm, 50);
     @include u-padding-bottom(p5);
     &:hover {
       @include u-border-color(red-warm, 50, vivid);
