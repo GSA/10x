@@ -13,7 +13,7 @@ graphic_inner_bg: red-warm-50v
 
 We focus on high-impact ideas from federal civil servants — supporting and investing in projects and ideas that might not find the capacity or resources elsewhere. Past projects include the [U.S. Web Design System](https://designsystem.digital.gov), [Federalist](https://federalist.18f.gov), and the [TTS Bug Bounty Program](https://hackerone.com/tts).
 
-Our funding source is the Digital Services Fund: a portion of the <a href="#1">Federal Citizen Services Fund</a> designated for new, good-for-government products and services. 10x (officially, The Office of Investments in the General Services Administration’s Office of Products and Programs) is the management vehicle of that fund.
+Our funding source is the Digital Services Fund: a portion of the Federal Citizen Services Fund designated for new, good-for-government products and services. 10x (officially, The Office of Investments in the General Services Administration’s Office of Products and Programs) is the management vehicle of that fund.
 
 <h2 class="docs-h2">Calls for ideas</h2>
 
