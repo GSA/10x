@@ -332,6 +332,18 @@ html {
   }
 }
 
+.graphic-outer-rectangle {
+  box-shadow: inset 0px 16px 80px color(black-transparent, 70);
+}
+
+.graphic-middle-rectangle {
+  box-shadow: inset 0px 12px 50px color(black-transparent, 60);
+}
+
+.graphic-inner-rectangle {
+  box-shadow: inset 0px 10px 20px color(black-transparent, 50);
+}
+
 /* ---------- G - R - I - D ---------- */
 
 .docs-text {
