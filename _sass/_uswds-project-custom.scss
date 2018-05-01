@@ -321,26 +321,16 @@ html {
     @include u-color(30);
   }
   @include at-media(tablet){
+    @include u-color(black-warm, 80)
     @include u-border-bottom(1px);
-    @include u-border-color(indigo-warm, 70);
+    @include u-border-color(indigo-warm, 50);
     @include u-padding-bottom(p5);
     &:hover {
-      @include u-border-color(white);
-      @include u-color(white);
+      @include u-border-color(red-warm, 50, vivid);
+      @include u-color(black-warm, 80);
+      @include u-border-width(2px);
     }
   }
-}
-
-.graphic-outer-rectangle {
-  box-shadow: inset 0px 16px 80px color(black-transparent, 70);
-}
-
-.graphic-middle-rectangle {
-  box-shadow: inset 0px 12px 50px color(black-transparent, 60);
-}
-
-.graphic-inner-rectangle {
-  box-shadow: inset 0px 10px 20px color(black-transparent, 50);
 }
 
 /* ---------- G - R - I - D ---------- */
