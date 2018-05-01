@@ -1,4 +1,6 @@
 nav:
+- title: Home
+  url: /
 - title: About 10x
   url: /about-10x/
 - title: Send us an idea
