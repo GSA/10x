@@ -7,6 +7,7 @@ bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: gold-20v
 graphic_inner_bg: red-warm-50v
+show_navbar: true
 ---
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix">

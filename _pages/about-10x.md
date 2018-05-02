@@ -7,6 +7,7 @@ bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-20
 graphic_middle_bg: yellow-20v
 graphic_inner_bg: red-warm-50v
+show_navbar: true
 ---
 
 10x is an incremental investment fund inside the United States federal government. We provide seed funding for internal projects that can scale across the federal government or significantly improve how our government builds technology for the public good.
