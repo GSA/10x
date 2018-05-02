@@ -7,6 +7,7 @@ bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: indigo-warm-70
 graphic_inner_bg: orange-40v
+show_navbar: true
 ---
 
 <h2 class="docs-h2">Overview</h2>

@@ -16,6 +16,10 @@
       {{ content }}
     </main>
 
+    {% if page.show_navbar %}
+      {% include navbar.html %}
+    {% endif %}
+
     {% include footer.html %}
     <script src="{{ "/assets/js/uswds.min.js" | relative_url }}"></script>
   </body>

@@ -6,6 +6,7 @@ bg_color: white
 graphic_outer_bg: black-warm-80
 graphic_middle_bg: indigo-warm-50v
 graphic_inner_bg: indigo-warm-30
+show_navbar: true
 ---
 
 <h2 class="margin-bottom-5 border-top-p5 padding-top-2 margin-top-5">Information you send us as a pitch</h2>

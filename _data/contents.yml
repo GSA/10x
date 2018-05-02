@@ -2,9 +2,20 @@ nav:
 - title: Home
   url: /
   mobile_only: true
+  description: 'An introduction to 10x and our mission.'
+  icon_img: '/assets/img/10x-icon-home.svg'
 - title: About 10x
   url: /about-10x/
+  mobile_only: false
+  description: 'Where did 10x come from and what does it do?'
+  icon_img: '/assets/img/10x-icon-about.svg'
 - title: Send us an idea
   url: /send-us-an-idea/
+  mobile_only: false
+  description: 'How do you get your idea to 10x? What is 10x looking for?'
+  icon_img: '/assets/img/10x-icon-idea.svg'
 - title: The 10x process
   url: /the-10x-process/
+  mobile_only: false
+  description: 'What happens if your idea is selected?'
+  icon_img: '/assets/img/10x-icon-process.svg'
