@@ -49,7 +49,7 @@ graphic_inner_bg: red-warm-50v
     Demonstrate a clear understanding of the problem you want to solve.</li>
   <li class="text-indent-neg-3 padding-left-3 tablet:text-indent-neg-4 tablet:padding-left-4">
     <img class="display-line-block width-2 tablet:width-3 margin-right-p5 position-relative bottom-2px vertical-align-middle" src="{{ '/assets/img/check.svg' | relative_url }}" alt="check">
-    Focus of creating a new product or service that is good for government.</li>
+    Focus on creating a new product or service that is good for government.</li>
   <li class="text-indent-neg-3 padding-left-3 tablet:text-indent-neg-4 tablet:padding-left-4">
     <img class="display-line-block width-2 tablet:width-3 margin-right-p5 position-relative bottom-2px vertical-align-middle" src="{{ '/assets/img/check.svg' | relative_url }}" alt="check">
     Be as clear and descriptive as possible.</li>
