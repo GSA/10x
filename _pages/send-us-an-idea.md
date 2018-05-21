@@ -60,7 +60,7 @@ show_navbar: true
 
 <div class="usa-card">
   <h3 class="margin-top-0">Open Source Translation Services</h3>
-  <p>60.6 million Americans are not fluent in English. Despite this, most Federal web content is only available in English. Having content available in multiple languages will make the information we produce more accessible to the members of the public whose primary language is not English. This can be done with existing open source tools for delivering localized content such as Pootle and gettext. TTS will investigate whether translation services could be shared as a GSA-sponsored service or as a reusable playbook.</p>
+  <p>60.6 million Americans are not fluent in English. Despite this, most federal web content is only available in English. Having content available in multiple languages will make the information we produce more accessible to the members of the public whose primary language is not English. This can be done with existing open source tools for delivering localized content such as Pootle and gettext. TTS will investigate whether translation services could be shared as a GSA-sponsored service or as a reusable playbook.</p>
 </div>
 
 <div class="usa-card">
@@ -70,7 +70,7 @@ show_navbar: true
 
 <div class="usa-card">
   <h3 class="margin-top-0">PRA.Gov</h3>
-  <p>OMB’s Office of Information and Regulatory Affairs (OIRA) is charged with overseeing Federal compliance with the Paperwork Reduction Act (PRA). Agencies often cite frustration with accessing and understanding OMB’s policies on the PRA, which are spread across numerous inaccessible PDFs. This situation has reduced compliance and created delays in the approval of information collection requests (ICRs). Through outreach to PRA desk officers and agency staff, and in consultation with OIRA, TTS will explore what it would take to modernize the way agencies interact with OMB’s policies in order to design an accessible, user-friendly online interface to respond to agency inquiries.</p>
+  <p>OMB’s Office of Information and Regulatory Affairs (OIRA) is charged with overseeing federal compliance with the Paperwork Reduction Act (PRA). Agencies often cite frustration with accessing and understanding OMB’s policies on the PRA, which are spread across numerous inaccessible PDFs. This situation has reduced compliance and created delays in the approval of information collection requests (ICRs). Through outreach to PRA desk officers and agency staff, and in consultation with OIRA, TTS will explore what it would take to modernize the way agencies interact with OMB’s policies in order to design an accessible, user-friendly online interface to respond to agency inquiries.</p>
 </div>
 
 <h2 class="docs-h2">Need some help?</h2>
