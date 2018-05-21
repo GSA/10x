@@ -17,7 +17,7 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-10x is currently accepting ideas to be considered for funding from Federal Acquisition Service (FAS) employees only. As we scale this program, 10x will be open to submissions from the entire federal government.
+As we scale this program, 10x will be open to submissions from the entire federal government.
 
 <h2 class="docs-h2">What makes a good idea?</h2>
 
@@ -39,7 +39,7 @@ show_navbar: true
     Are part of a big or rapidly growing market in government technology.</li>
 </ul>
 
-<h3><strong>How should you present your idea? Your idea should:</strong></h3>
+<h3><strong>Your idea should:</strong></h3>
 
 <ul class="line-height-small">
   <li class="text-indent-neg-3 padding-left-3 tablet:text-indent-neg-4 tablet:padding-left-4">
@@ -56,26 +56,26 @@ show_navbar: true
     Be as clear and descriptive as possible.</li>
 </ul>
 
+<h2 class="docs-h2">Need some help?</h2>
+
+If you’d like help putting together an idea or have questions about what we’re looking for, email us at [{{ site.email }}](mailto:{{ site.email }}). We’re happy to connect you with a technology expert or someone to review what you have and make sure your idea is clear.
+
 <h2 class="docs-h2">Examples of ideas 10x has funded</h2>
 
 <div class="usa-card">
-  <h3 class="margin-top-0">Open Source Translation Services</h3>
-  <p>60.6 million Americans are not fluent in English. Despite this, most federal web content is only available in English. Having content available in multiple languages will make the information we produce more accessible to the members of the public whose primary language is not English. This can be done with existing open source tools for delivering localized content such as Pootle and gettext. TTS will investigate whether translation services could be shared as a GSA-sponsored service or as a reusable playbook.</p>
+  <h3 class="margin-top-0">Federal Grantee Reporting</h3>
+  <p>“This project will identify opportunities to improve the federal grant reporting process, by eliminating redundancies and creating efficiencies through improved technology — with the goal of generating a prototype that could be adapted across federal programs, thereby increasing federal grant programs’ efficacy to those being served as well as taxpayers’ return on investment.”</p>
 </div>
 
 <div class="usa-card">
-  <h3 class="margin-top-0">Qualitative Data Management</h3>
-  <p>Each month, approximately 9,000 surveys are submitted through USA.gov and Gobierno.USA.gov. About 2,000 of these include open-ended comments. With current resource limitations, it's challenging to take advantage of this qualitative data. TTS will explore implementing a semi-automated product and/or process, using topic extraction, word/phrase frequencies, or other applications of text analysis, to help quickly respond to user feedback.</p>
+  <h3 class="margin-top-0">Notifications as a Service</h3>
+  <p>“TTS will investigate the opportunity to providing a common solution for government notifications to citizens via email, text message, and other contact methods. Many of the tools that TTS and other agencies build require a notification component, and this project will help TTS understand whether consolidating the ability to send notifications into a shared service available to all agencies would be effective.”</p>
 </div>
 
 <div class="usa-card">
   <h3 class="margin-top-0">PRA.Gov</h3>
-  <p>OMB’s Office of Information and Regulatory Affairs (OIRA) is charged with overseeing federal compliance with the Paperwork Reduction Act (PRA). Agencies often cite frustration with accessing and understanding OMB’s policies on the PRA, which are spread across numerous inaccessible PDFs. This situation has reduced compliance and created delays in the approval of information collection requests (ICRs). Through outreach to PRA desk officers and agency staff, and in consultation with OIRA, TTS will explore what it would take to modernize the way agencies interact with OMB’s policies in order to design an accessible, user-friendly online interface to respond to agency inquiries.</p>
+  <p>“OMB’s Office of Information and Regulatory Affairs (OIRA) is charged with overseeing federal compliance with the Paperwork Reduction Act (PRA). Agencies often cite frustration with accessing and understanding OMB’s policies on the PRA, which are spread across numerous inaccessible PDFs. This situation has reduced compliance and created delays in the approval of information collection requests (ICRs). Through outreach to PRA desk officers and agency staff, and in consultation with OIRA, TTS will explore what it would take to modernize the way agencies interact with OMB’s policies in order to design an accessible, user-friendly online interface to respond to agency inquiries.”</p>
 </div>
-
-<h2 class="docs-h2">Need some help?</h2>
-
-If you’d like help putting together an idea or have questions about what we’re looking for, email us at [{{ site.email }}](mailto:{{ site.email }}). We’re happy to connect you with a technology expert or someone to review what you have and make sure your idea is clear.
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix margin-top-2 tablet:margin-top-6">
   <a href="{{ site.submission_form }}" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-5 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Google form</span></a>
