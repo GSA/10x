@@ -52,7 +52,7 @@ Your idea will be evaluated based on the following 3 criteria, each given equal 
 
 <div class="usa-card border-color-orange-40v">
   <h3 class="margin-top-0">Identify a problem</h3>
-  <p>Point to the pain. We start by gathering pitches from federal civil servants. <em>Any federal employee can pitch an idea</em>, and your level of involvement in the work if your idea is selected is up to you. These pitch proposals are intentionally short, only about 2–3 sentences, to stay focused on a specific, concrete problem.</p>
+  <p>Point to the pain. We start by gathering pitches from federal civil servants. <em>Currently, 10x is currently accepting ideas from Federal Acquisition Service (FAS) employees.</em> These pitch proposals are intentionally short — only about 2–3 sentences — to stay focused on a specific, concrete problem. If your idea is selected, your level of involvement in the work is up to you.</p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-30">
