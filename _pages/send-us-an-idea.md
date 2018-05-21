@@ -2,7 +2,7 @@
 layout: page
 title: Send us an idea
 permalink: /send-us-an-idea/
-description: 10x is currently accepting ideas to be considered for funding from Federal Acquisition Service (FAS) employees. The window to submit your idea is open until June 1, 2018.
+description: 10x is currently accepting ideas from Federal Acquisition Service (FAS) employees. The window to submit your idea is open until June 1, 2018.
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: gold-20v
@@ -11,8 +11,8 @@ show_navbar: true
 ---
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix">
-  <a href="{{ site.submission_form }}" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-5 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Google form</span></a>
-  <p class="g-col-fill color-90 font-sans-6 tablet:font-sans-8 line-height-small margin-top-2 tablet:margin-y-0">or email your idea directly to <a href="mailto:{{ site.email }}" class="color-90 white-space-nowrap text-decoration-color-30 hover:text-decoration-color-90">{{ site.email }}</a>.</p>
+  <a href="{{ site.submission_form }}" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-3 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Google form</span></a>
+  <p class="g-col-fill color-90 font-sans-6 tablet:font-sans-8 line-height-small margin-top-2 tablet:margin-y-0 tablet:g-col-5">or email your idea directly to <a href="mailto:{{ site.email }}" class="color-90 white-space-nowrap text-decoration-color-30 hover:text-decoration-color-90">{{ site.email }}</a>.</p>
 </div>
 
 <h2 class="docs-h2">Eligibility</h2>
