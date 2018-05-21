@@ -110,6 +110,7 @@ $grid-namespace-prefix: 'g-';
 @each $width-key, $width-value in $uswds-layout-grid-widths {
   .#{$grid-namespace-prefix}col-#{$width-key} {
     @include u-width(override, $width-value);
+    @include u-flex(auto);
   }
 }
 
@@ -132,6 +133,7 @@ $grid-namespace-prefix: 'g-';
       @each $width-key, $width-value in $uswds-layout-grid-widths {
         .#{$mq-key}\:#{$grid-namespace-prefix}col-#{$width-key} {
           @include u-width(override, $width-value);
+          @include u-flex(auto);
         }
       }
     }

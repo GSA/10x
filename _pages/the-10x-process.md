@@ -13,17 +13,17 @@ show_navbar: true
 <h2 class="docs-h2">Overview</h2>
 
 - First, 10x collects a broad range of ideas.
-- Then we select ideas based on their potential impact and scalability.
+- Next, we select ideas based on their potential impact and scalability.
 - Finally, 10x funds each selected idea in phases, as the project matures.
 
 
-<h2 class="docs-h2">Collect a broad range of ideas</h2>
+<h2 class="docs-h2">Diverse ideas from civil servants</h2>
 
 10x believes that federal civil servants — with their front row view to the inner workings of our government — are uniquely positioned to identify the key problems that impede our government from achieving its mission. 10x aims to uncover and elevate the most promising ideas from the federal workforce.
 
-To do this, we explore a lot of ideas at once with a small initial investment in each. The goal is to identify the immediate opportunities as well as the risks that an idea might present without spending too much money too quickly. This approach enables us to identify the ideas and approaches to solving a problem that are most likely to have an impact within a matter of weeks.
+To do this, we explore a lot of ideas at once with a small initial investment in each. The goal is to identify the immediate opportunities as well as the risks that an idea might present without spending too much money too quickly. This approach enables us to identify – within a few weeks – ideas and approaches that are most likely to have an impact.
 
-Each subsequent stage of funding allows for a greater investment into an idea, and requires project teams to continue to prove potential impact and demonstrate that a project can thrive. This way, only the best ideas receive large investments, and we avoid spending millions of taxpayer dollars on ideas that won’t work.
+Each subsequent phase of funding allows for a greater investment into an idea, and requires project teams to continue to prove potential impact and demonstrate that a project can thrive. Between phases, we review progress to determine if we should continue investing in a project. This way, only the best ideas receive large investments, and we avoid spending millions of taxpayer dollars on ideas that won’t work.
 
 <h2 class="docs-h2">How 10x selects projects</h2>
 
@@ -43,7 +43,7 @@ Your idea will be evaluated based on the following 3 criteria, each given equal 
     <strong>Impact.</strong> Does solving this problem have an important effect on the federal government or the public?</li>
 </ul>
 
-<p>If selected, 10x starts its funding small — only magnifying its investment <a href="{{ site.baseurl }}{% link _pages/the-10x-process.md %}">as an idea develops, step-by-step, into a sustainable project</a>. This iterative approach, based on modern technology and investment practices, ensures that the best ideas turn into the best government products and services — funded with fewer taxpayer dollars.</p>
+<p>If selected, 10x starts its funding small — only magnifying its investment as an idea develops, step-by-step, into a sustainable project. This iterative approach, based on modern technology and investment practices, ensures that the best ideas turn into the best government products and services — funded with fewer taxpayer dollars.</p>
 
 <p>10x projects are managed and staffed by project teams within the <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Techology Transformation Services</a> department of the <a href="https://www.gsa.gov/">General Services Administration</a>.</p>
 
@@ -52,7 +52,7 @@ Your idea will be evaluated based on the following 3 criteria, each given equal 
 
 <div class="usa-card border-color-orange-40v">
   <h3 class="margin-top-0">Identify a problem</h3>
-  <p>Point to the pain. We start by gathering pitches from federal civil servants. <em>Any federal employee can pitch an idea</em>, and your level of involvement in the work if your idea is selected is up to you. These pitch proposals are intentionally short, only about 2–3 sentences, to stay focused on a specific, concrete problem.</p>
+  <p>Point to the pain. We start by gathering pitches from federal civil servants. <em>Currently, 10x is currently accepting ideas from Federal Acquisition Service (FAS) employees.</em> These pitch proposals are intentionally short — only about 2–3 sentences — to stay focused on a specific, concrete problem. If your idea is selected, your level of involvement in the work is up to you.</p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-30">
