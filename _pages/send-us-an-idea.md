@@ -2,7 +2,7 @@
 layout: page
 title: Send us an idea
 permalink: /send-us-an-idea/
-description: 10x is currently accepting ideas from Federal Acquisition Service (FAS) employees. The window to submit your idea is open until June 1, 2018.
+description: 10x is currently accepting ideas from Technology Transformation Service (TTS) employees. The window to submit your idea is open until July 13, 2018.
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: gold-20v
