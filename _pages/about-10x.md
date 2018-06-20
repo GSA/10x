@@ -18,7 +18,7 @@ Our funding source is the Digital Services Fund: a portion of the Federal Citize
 
 <h2 class="docs-h2">Calls for ideas</h2>
 
-10x is currently accepting ideas to be considered for funding from Federal Acquisition Service (FAS) employees.  The window to submit your idea is open until June 1, 2018.
+10x is currently accepting ideas to be considered for funding from Technology Transformation Service (TTS) employees.  The window to submit your idea is open until July 13, 2018.
 
 As we scale this program, 10x will be open to submissions from the entire federal government.
 
