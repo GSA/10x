@@ -17,7 +17,7 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-As we scale this program, 10x will be open to submissions from the entire federal government.
+10x is currently accepting ideas from Technology Transformation Service (TTS) employees. As we scale this program, 10x will be open to submissions from the entire federal government.
 
 <h2 class="docs-h2">What makes a good idea?</h2>
 
