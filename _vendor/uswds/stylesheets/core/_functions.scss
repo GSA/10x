@@ -231,21 +231,16 @@ Converts a value in px to a value in rem
 
 /*
 ----------------------------------------
-px-to-base-em()
+grid-to-base-em()
 ----------------------------------------
 Converts a value in px to a value in em
 ----------------------------------------
 */
 
-@function px-to-base-em($pixels) {
-  @if $pixels {
-    $px-to-base-em: strip-unit($pixels) / strip-unit($theme-root-font-size) * 1em;
+@function grid-to-base-em($grid-in-rem) {
+  $grid-to-base-em: strip-unit($grid-in-rem) * 1em;
 
-    @return $px-to-base-em;
-  }
-  @else {
-    @return false;
-  }
+  @return $grid-to-base-em;
 }
 
 /*
@@ -302,15 +297,16 @@ withholds certain errors.
 */
 
 @function utility-font($family, $scale){
+  $quote: quote($scale);
   @if not map-has-key($project-cap-heights, $family) {
     @error "#{$family} is not a valid font family. Valid values: #{map-keys($project-cap-heights)}";
   }
-  @elseif not map-get($all-type-scale, $scale) {
+  @elseif not map-get($all-type-scale, $quote) {
     @error "`#{$scale}` is not a valid font scale. Valid values: #{map-keys($all-type-scale)}";
   }
   @else {
     $this-cap: map-get($project-cap-heights, $family);
-    $this-scale: map-get($all-type-scale, $scale);
+    $this-scale: map-get($all-type-scale, $quote);
     @if $this-scale and $this-cap {
       @return type-scale($this-cap, $this-scale);
     }
@@ -322,7 +318,7 @@ withholds certain errors.
 
 /*
 ----------------------------------------
-system-color()
+get-uswds-color()
 ----------------------------------------
 Derive a system color from its
 family, value, and vivid or a passed
@@ -330,7 +326,7 @@ variable that is, itself, a list
 ----------------------------------------
 */
 
-@function system-color($props...){
+@function get-uswds-color($props...){
   @if length($props) == 0 {
     @return false;
   } @elseif type-of(nth($props,1)) == 'list' {
@@ -376,13 +372,14 @@ Get a value from the system type scale
 */
 
 @function system-type-scale($scale){
-  @if $scale and map-has-key($uswds-type-scale, $scale){
-    @return map-get($uswds-type-scale, $scale);
+  $quote: quote($scale);
+  @if $scale and map-has-key($uswds-type-scale, $quote){
+    @return map-get($uswds-type-scale, $quote);
   }
   @elseif $scale == false {
     @return false;
   }
-  @elseif not map-has-key($uswds-type-scale, $scale) {
+  @else {
     @error "`#{$scale}` is not a valid type scale value. Valid values: #{map-keys($uswds-type-scale)}";
   }
 };
@@ -417,6 +414,45 @@ TODO: convert/translate these to mixins?
 
 /*
 ----------------------------------------
+calc-gap-offset()
+----------------------------------------
+Calculate a valid uswds unit that is
+half the width of a given unit, for
+calculating gap offset in the layout
+grid.
+----------------------------------------
+*/
+
+@function calc-gap-offset($gap-size) {
+  @if map-has-key($spacing-calculator, quote($gap-size)) {
+    $numeric-eq: map-get($spacing-calculator, quote($gap-size));
+    @if map-has-key($spacing-calculator, ($numeric-eq / 2)){
+      @return map-get($spacing-calculator, ($numeric-eq / 2));
+    }
+    @else {
+      @error "`#{$gap-size}` is not a valid USWDS gap size. Column gaps need to have a standard size half their width.";
+    }
+  }
+  @else {
+    @error "`#{$gap-size}` is not a valid USWDS gap size.";
+  }
+}
+
+/*
+----------------------------------------
+get-standard-values()
+----------------------------------------
+Gets a map of USWDS standard values
+for a property
+----------------------------------------
+*/
+
+@function get-standard-values($property){
+ @return map-deep-get($uswds-properties, $property, standard);
+}
+
+/*
+----------------------------------------
 get-uswds-value()
 ----------------------------------------
 Finds and outputs a value from the
@@ -427,23 +463,27 @@ functions and mixins.
 ----------------------------------------
 */
 
-@function get-uswds-value($property, $value){
-  $quoted-value: quote($value);
-  $our-values: map-deep-get($uswds-properties, $property, allowed);
-  $our-values-extended: map-deep-get($uswds-properties, $property, extended);
-  @if map-has-key($our-values, $quoted-value) {
-    @return map-get($our-values, $quoted-value);
+@function get-uswds-value($property, $value...){
+  @if type-of($value) == 'arglist' and nth($value, 1) == override {
+    @return nth($value, 2);
   }
-  @if map-has-key($our-values-extended, $quoted-value) {
-    @warn "`#{$value}` is not an extended USWDS `#{$property}` unit. This is OK, but only components built with allowed values can be accepted back into the system. Accepted values: #{map-keys($our-values)}";
-    @return map-get($our-values-extended, $quoted-value);
+  $value: nth($value, 1);
+  $quoted-value: quote(nth($value, 1));
+  $our-standard-values: map-deep-get($uswds-properties, $property, standard);
+  $our-extended-values: map-deep-get($uswds-properties, $property, extended);
+  @if map-has-key($our-standard-values, $quoted-value) {
+    @return map-get($our-standard-values, $quoted-value);
+  }
+  @if map-has-key($our-extended-values, $quoted-value) {
+    @warn "`#{$value}` is an extended USWDS `#{$property}` unit. This is OK, but only components built with standard values can be accepted back into the system. Standard `#{$property}` values: #{map-keys($our-standard-values)}";
+    @return map-get($our-extended-values, $quoted-value);
   }
   @elseif type-of($value) == 'number' and not unitless($value) {
-    @warn "`#{$value}` is not a standard USWDS `#{$property}` unit. This is OK, but only components built with allowed values can be accepted back into the system. Accepted values: #{map-keys($our-values)}";
+    @warn "`#{$value}` is not a USWDS `#{$property}` unit. This is OK, but only components built with standard values can be accepted back into the system. Standard `#{$property}` values: #{map-keys($our-standard-values)}";
     @return $value;
   }
   @else {
-    @error "`#{$value}` is not a valid `#{$property}` value. Accepted values: #{map-keys($our-values)}";
+    @warn "`#{$value}` is not a valid `#{$property}` value. You should correct this. Standard `#{$property}` values: #{map-keys($our-standard-values)}";
   }
 };
 
@@ -480,10 +520,38 @@ colors: project and system
   } @elseif nth($props, 1) == false {
     @return false;
   } @elseif length($props) == 1 {
-    @return map-get(
+    @if map-has-key(
       $project-reserved-colors,
-      nth($props, 1)
-    );
+      quote(nth($props, 1))
+    ){
+      @return map-get(
+        $project-reserved-colors,
+        quote(nth($props, 1))
+      );
+    }
+    @if map-has-key(
+      $uswds-colors-basic,
+      quote(nth($props, 1))
+    ){
+      @warn "`#{nth($props, 1)}` is a basic color. This is OK for sketching and prototyping, but use a true color in production code.";
+      @return map-get(
+        $uswds-colors-basic,
+        quote(nth($props, 1))
+      );
+    }
+    @if map-has-key(
+      $uswds-colors-sketching,
+      quote(nth($props, 1))
+    ){
+      @warn "`color-#{nth($props, 1)}` is a sketching color. This is OK but consider replacing it with a true color value in production code.";
+      @return map-get(
+        $uswds-colors-sketching,
+        quote(nth($props, 1))
+      );
+    }
+    @else {
+      @error "#{nth($props, 1)} is not a USWDS color. Reserved values: #{map-keys($project-reserved-colors)}. Sketching values: #{map-keys($uswds-sketching-colors)}. Basic values: #{map-keys($uswds-basic-colors)}.";
+    }
   } @elseif length($props) == 2 {
     @return map-deep-get(
       $all-colors,
@@ -491,6 +559,14 @@ colors: project and system
       nth($props, 2)
     );
   } @else {
+    @if map-deep-get(
+      $all-colors,
+      nth($props, 1),
+      nth($props, 3),
+      nth($props, 2)
+    ) == false {
+      @error "`#{nth($props, 1)}` does not have a vivid variant for `#{nth($props, 2)}`.";
+    }
     @return map-deep-get(
       $all-colors,
       nth($props, 1),
@@ -666,21 +742,21 @@ the desired final units (currently rem)
 */
 
 @function spacing($value) {
-  @if map-has-key($project-spacing-all, quote($value)) {
-    @if map-get($project-spacing-all, quote($value)) == false {
+  @if map-has-key($project-spacing-standard, quote($value)) {
+    @if map-get($project-spacing-standard, quote($value)) == false {
       @warn "Spacing unit `#{$value}` has been disabled in your theme settings. It will output as `false`.";
     }
-    @return map-get($project-spacing-all, quote($value));
+    @return map-get($project-spacing-standard, quote($value));
   }
   @elseif $value == false {
     @return false;
   }
-  @elseif not unitless($value) {
+  @elseif type-of($value) == 'number' and not unitless($value) {
     @warn "`#{$value}` is not a standard USWDS unit. This is OK, but consider using a standard spacing unit instead.";
     @return $value;
   }
   @else {
-    @error "`#{$value}` is not a valid spacing value. Valid values: #{map-keys($project-spacing-all)}";
+    @error "`#{$value}` is not a valid spacing unit. Valid spacing unit values: #{map-keys($project-spacing-standard)}";
   }
 };
 
@@ -853,7 +929,7 @@ elegant
       }
     }
     @else {
-      $registry: map-get($plugin-registry, misc);
+      $registry: map-get($plugin-registry, standard);
     }
     // now the registry is set
     @if not map-has-key($registry, #{$plugin}){
@@ -876,6 +952,12 @@ elegant
 Build a utility from values calculated
 in the @render-utilities-in loop
 ----------------------------------------
+TODO: Determine the proper use of
+unquote() in the following. Changed to
+account for a "interpolation near
+operators will be simplified in a
+future version of Sass" warning.
+----------------------------------------
 */
 
 @mixin render-utility($utility, $selector, $property, $value, $val-props, $important) {
@@ -883,7 +965,7 @@ in the @render-utilities-in loop
   .#{$utilities-namespace-prefix}#{$selector} {
     @if map-has-key($val-props, extend) {
       @each $ext-prop, $ext-value in map-get($val-props, extend) {
-        #{strunquote($ext-prop)}: strunquote($ext-value)#{$important};
+        #{strunquote($ext-prop)}: unquote("#{strunquote($ext-value)}#{$important}");
       }
     }
 
@@ -892,12 +974,12 @@ in the @render-utilities-in loop
     }
 
     @each $this-property in $property {
-      #{$this-property}: $value#{$important};
+      #{$this-property}: unquote("#{$value}#{$important}");
     }
 
     @if map-has-key($utility, extend) {
       @each $ext-prop, $ext-value in map-get($utility, extend) {
-        #{strunquote($ext-prop)}: strunquote($ext-value)#{$important};
+        #{strunquote($ext-prop)}: unquote("#{strunquote($ext-value)}#{$important}");
       }
     }
   }
@@ -916,11 +998,11 @@ loop
 @mixin render-pseudoclass($pseudoclass, $selector, $property, $value, $val-props, $mq, $important) {
   $this-mq: null;
   @if $mq {
-    $this-mq: '#{$mq}\:';
+    $this-mq: '#{$mq}\\:';
   }
-  .#{$utilities-namespace-prefix}#{$this-mq}#{$pseudoclass}\:#{$selector}:#{$pseudoclass} {
+  .#{$this-mq}#{$pseudoclass}\:#{$utilities-namespace-prefix}#{$selector}:#{$pseudoclass} {
     @each $this-property in $property {
-      #{$this-property}: $value#{$important};
+      #{$this-property}: unquote("#{$value}#{$important}");
     }
   }
 }
@@ -946,7 +1028,7 @@ to style placeholder text
   }
   .#{$this-namespace}pl-#{$selector}::placeholder {
     @each $this-property in $property {
-      #{$this-property}: $value#{$important};
+      #{$this-property}: unquote("#{$value}#{$important}");
     }
   }
 }
@@ -962,26 +1044,28 @@ loop
 */
 
 @mixin render-media-queries($utility, $selector, $property, $value, $val-props, $important) {
+  $our-breakpoints: map-deep-get($uswds-properties, breakpoints, standard);
 
-  @each $media-key, $media-value in $project-breakpoints-em {
-    $mq: $media-key;
+  @each $media-key, $media-value in $our-breakpoints {
+    $mq: unquote($media-key);
+    $media-value-em: grid-to-base-em($media-value);
 
-    @if map-get($output-breakpoints, $media-key) {
-      @media (min-width: #{$media-value}) {
-        .#{$utilities-namespace-prefix}#{$media-key}\:#{$selector} {
+    @if map-get($theme-output-breakpoints, $media-key) {
+      @media (min-width: #{$media-value-em}) {
+        .#{$mq}\:#{$utilities-namespace-prefix}#{$selector} {
           @if map-has-key($val-props, extend) {
             @each $ext-prop, $ext-value in map-get($val-props, extend) {
-              #{strunquote($ext-prop)}: strunquote($ext-value)#{$important};
+              #{strunquote($ext-prop)}: unquote("#{strunquote($ext-value)}#{$important}");
             }
           }
 
           @each $this-property in $property {
-            #{$this-property}: $value#{$important};
+            #{$this-property}: unquote("#{$value}#{$important}");
           }
 
           @if map-has-key($utility, extend) {
             @each $ext-prop, $ext-value in map-get($utility, extend) {
-              #{strunquote($ext-prop)}: strunquote($ext-value)#{$important};
+              #{strunquote($ext-prop)}: unquote("#{strunquote($ext-value)}#{$important}");
             }
           }
           @if map-deep-get($utility, settings, hover) {
@@ -1020,7 +1104,7 @@ through all possible variants
 
     // Only do this if the the utility is meant to output
 
-    @if map-get($output-utilities, $utility-name) or
+    @if map-deep-get($utility, settings, output) or
       $output-all-utilities {
 
       // set intital variants
@@ -1184,7 +1268,7 @@ through all possible variants
 
             // -------- if the modifier is null ----------
 
-            @if map-get($mod-props, content) == null {
+            @if map-get($mod-props, content) == null or map-get($mod-props, content) == 'noModifier' or map-get($mod-props, content) == '' {
 
               // If mod-props.values is null, there's no modifier property
               // and we can set our rule's $property now
@@ -1250,23 +1334,25 @@ through all possible variants
               $property: multi-cat($property-default, map-get($mod-props, content));
 
               // Now we go through to finish setting the $selector.
-              // Check to see if the modifier is '' (noModifier)
+              // If not, check to see if either mod.isReadable or
+              // val.isReadable
 
-              @if map-get($mod-props, slug) == '' {
-
-                // If so, modifier-value == value
-
-                $mv: $v;
-
-                // If not, check to see if either mod.isReadable or
-                // val.isReadable
-
-              } @elseif map-has-key($mod-props, isReadable) or
+              @if map-has-key($mod-props, isReadable) or
                 map-has-key($val-props, isReadable) {
 
-                // If so, join with a '-' into selector $mv.
+                  // If valProps is `noValue`....
 
-                $mv: map-get($mod-props, slug) + '-' + map-get($val-props, slug);
+                  @if map-get($val-props, slug) == '' or map-get($val-props, slug) == 'noValue' {
+
+                    // ...$mv is just the modifier
+
+                    $mv: map-get($mod-props, slug);
+                  } @else {
+
+                    // Otherwise, join with a '-' into selector $mv.
+
+                    $mv: map-get($mod-props, slug) + '-' + map-get($val-props, slug);
+                  }
               } @else {
 
                 // If not, just join into selector $mv.

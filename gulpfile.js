@@ -66,8 +66,8 @@ gulp.task('clean-css', function () {
 
 gulp.task('build-sass', ['clean-css'], function (done) {
   var plugins = [
-      autoprefixer({browsers: ['> 3%', 'Last 2 versions'], cascade: false,}),
-      movecss(),
+      autoprefixer({ browsers: ['> 3%', 'Last 2 versions'], cascade: false, }),
+      movecss({ sort: true }),
       cssnano()
   ];
   return gulp.src([
@@ -92,7 +92,7 @@ gulp.task('build-app', ['build-sass'], function() {
   var plugins = [
     uncss({
       html: [`${BUILD_DEST}/**/*.html`],
-      ignore: [/\[aria-/],
+      ignore: [/\[aria-/, /is-visible/],
     }),
     cssnano()
   ];
@@ -105,9 +105,9 @@ gulp.task('build-app', ['build-sass'], function() {
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-gulp.task('watch', ['build-app'], function (){
-  gulp.watch(`${PROJECT_SASS_SRC}/*.scss`, ['build-app'])
-  gulp.watch(`${USWDS_SRC}/stylesheets/*.scss`, ['build-app']);
+gulp.task('watch', ['build-sass'], function (){
+  gulp.watch(`${PROJECT_SASS_SRC}/*.scss`, ['build-sass'])
+  gulp.watch(`${USWDS_SRC}/stylesheets/*.scss`, ['build-sass']);
 });
 
 

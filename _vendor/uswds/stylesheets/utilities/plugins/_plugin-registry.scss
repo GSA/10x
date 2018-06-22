@@ -15,7 +15,6 @@ $plugin-registry:(
   spacing:(
     units: $plugin-spacing-units,
     uswds: $plugin-spacing-uswds,
-    theme: $plugin-spacing-theme,
   ),
   font:(
     mono:(
@@ -69,5 +68,5 @@ $plugin-registry:(
     yellow: $plugin-color-yellow,
     misc: $plugin-color-all,
   ),
-  misc: $plugin-misc,
+  standard: $plugin-standard,
 );

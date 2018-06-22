@@ -2,6 +2,10 @@
 ========================================
 PROJECT THEME SETTINGS
 ----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
 */
 
 /*
@@ -17,25 +21,15 @@ $theme-root-font-size: 16px;
 
 /*
 ----------------------------------------
-Breakpoints
+Border box sizing
 ----------------------------------------
-Use pixel units.
-These will be automatically converted to
-em values based on the value of
-$theme-root-font-size.
-
-Use `false` if your project will not
-use that breakpoint.
+When set to true, it sets the box-sizing
+property of all elements to
+`border-box`.
 ----------------------------------------
 */
 
-$theme-breakpoints:(
-  xs: 400px,
-  sm: 481px, // 600px
-  md: 600px, // 800px
-  lg: 1201px, // 1000px
-  xl: 1200px, // 1200px
- );
+$border-box-sizing: false;
 
 /*
 ----------------------------------------
@@ -47,6 +41,27 @@ Relative font and image file paths
 
 $theme-font-path:   '../fonts';
 $theme-image-path:  '../img';
+
+/*
+----------------------------------------
+Output breakpoints
+----------------------------------------
+Which breakpoints does your project
+need? Select as `true` any breakpoint
+used by utilities or layout grid
+----------------------------------------
+*/
+
+$theme-output-breakpoints: (
+  'compact':         false,   // 240px
+  'mobile':          false,   // 320px
+  'mobile-plus':     true,    // 480px
+  'tablet':          true,    // 640px
+  'tablet-plus':     false,   // 800px
+  'desktop':         true,    // 1040px
+  'desktop-plus':    false,   // 1200px
+  'wide':            false,   // 1400px
+);
 
 /*
 ----------------------------------------
@@ -73,7 +88,7 @@ $theme-font-definitions: (
   /*
   font-new: (
     name: "Font Display Name",
-    dir: "filder-name", // relative to settings.$theme-font-path
+    dir: "folder-name", // relative to settings.$theme-font-path
     stack: $font-stack-system,
     system-font: false,
     cap-height: "364px", // height of a 500px `N` in Sketch
@@ -154,19 +169,19 @@ Type scale
 Define your project's type scale using
 values from the USWDS system type scale
 
-s1-s20
+1-20
 ----------------------------------------
 */
 
-$theme-type-scale-micro:         f1;
-$theme-type-scale-smallest:      f3;
-$theme-type-scale-smaller:       f5;
-$theme-type-scale-small:         f6;
-$theme-type-scale-base:          f7;
-$theme-type-scale-large:         f10;
-$theme-type-scale-larger:        f12;
-$theme-type-scale-largest:       f14;
-$theme-type-scale-mega:          f16;
+$theme-type-scale-micro:         1;
+$theme-type-scale-smallest:      3;
+$theme-type-scale-smaller:       5;
+$theme-type-scale-small:         6;
+$theme-type-scale-base:          7;
+$theme-type-scale-large:         10;
+$theme-type-scale-larger:        12;
+$theme-type-scale-largest:       14;
+$theme-type-scale-mega:          16;
 
 /*
 ----------------------------------------
@@ -215,12 +230,12 @@ $theme-color-secondary-vivid:     $theme-color-secondary, 50, vivid;
 $theme-color-secondary-dark:      $theme-color-secondary, 80;
 
 $theme-color-accent-warm:         orange;
-$theme-color-accent-warm-lighter: $theme-color-accent-warm, 50, vivid;
 $theme-color-accent-warm-base:    $theme-color-accent-warm, 50, vivid;
+$theme-color-accent-warm-dark:    $theme-color-accent-warm, 50, vivid;
 
 $theme-color-accent-cool:         cyan;
-$theme-color-accent-cool-lighter: $theme-color-accent-cool, 50, vivid;
 $theme-color-accent-cool-base:    $theme-color-accent-cool, 50, vivid;
+$theme-color-accent-cool-dark:    $theme-color-accent-cool, 50, vivid;
 
 $theme-color-inverse:             white;
 $theme-color-inverse-base:        $theme-color-inverse, 0;
@@ -264,21 +279,39 @@ $theme-color-disabled-base:    $theme-color-disabled, 30;
 ----------------------------------------
 Border radius
 ----------------------------------------
-eighth          2px
-quarter         4px
-half            8px
-half-plus       12px
-base            16px
-base-plus       24px
-double          32px
-double-plus     40px
-triple          48px
-triple-plus     56px
-quad            64px
-quad-plus       72px
+2px       2px
+sp5       4px
+s1        8px
+s1p5      12px
+s2        16px
+s3        24px
+s4        32px
+s5        40px
+s6        48px
+s7        56px
+s8        64px
+s9        72px
 ----------------------------------------
 */
 
-$theme-border-radius-small:       eighth;
-$theme-border-radius-base:        quarter;
+$theme-border-radius-small:       2px;
+$theme-border-radius-base:        sp5;
 $theme-border-radius-large:       false;
+
+/*
+----------------------------------------
+Column gap
+----------------------------------------
+2px         2px
+sp5         4px
+s1          8px
+s2          16px
+s3          24px
+s4          32px
+s5          48px
+----------------------------------------
+*/
+
+$theme-column-gap-small: 2px;
+$theme-column-gap: s2;
+$theme-column-gap-large: s2;
