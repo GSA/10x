@@ -52,12 +52,12 @@ Your idea will be evaluated based on the following 3 criteria, each given equal 
 
 <div class="usa-card border-color-orange-40v">
   <h3 class="margin-top-0">Identify a problem</h3>
-  <p>Point to the pain. We start by gathering ideas from federal civil servants. <em>Currently, 10x is currently accepting ideas from Technology Transformation Service (TTS) employees.</em> These idea proposals are intentionally short — only about 2–3 sentences — to stay focused on a specific, concrete problem. If your idea is selected, your level of involvement in the work is up to you.</p>
+  <p>Point to the pain. We start by gathering ideas from federal civil servants. <em>Currently, 10x is currently accepting ideas from Technology Transformation Services (TTS) employees.</em> These idea proposals are intentionally short — only about 2–3 sentences — to stay focused on a specific, concrete problem. If your idea is selected, your level of involvement in the work is up to you.</p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-30">
   <h3 class="margin-top-0">Phase 1: Investigation — $20,000</h3>
-  <p>Think it through. Accepted ideas spend 2-3 weeks exploring the idea to define what it would take to be successful — uncovering risks, roadblocks, and opportunities. At this point, people who submit ideas are expected to act as subject matter experts and, if possible, work alongside a research team inside of the Technology Transformation Service (TTS). </p>
+  <p>Think it through. Accepted ideas spend 2-3 weeks exploring the idea to define what it would take to be successful — uncovering risks, roadblocks, and opportunities. At this point, people who submit ideas are expected to act as subject matter experts and, if possible, work alongside a research team inside of the Technology Transformation Services (TTS). </p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-40v">
