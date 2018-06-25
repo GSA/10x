@@ -2,7 +2,7 @@
 layout: page
 title: Send us an idea
 permalink: /send-us-an-idea/
-description: 10x is currently accepting ideas from Technology Transformation Service (TTS) employees. The window to submit your idea is open until July 13, 2018.
+description: 10x is currently accepting ideas from Technology Transformation Services (TTS) employees. The window to submit your idea is open until July 13, 2018.
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: gold-20v
@@ -17,7 +17,7 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-10x is currently accepting ideas from Technology Transformation Service (TTS) employees. As we scale this program, 10x will be open to submissions from the entire federal government.
+10x is currently accepting ideas from Technology Transformation Services (TTS) employees. As we scale this program, 10x will be open to submissions from the entire federal government.
 
 <h2 class="docs-h2">What makes a good idea?</h2>
 
