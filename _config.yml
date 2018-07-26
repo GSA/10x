@@ -23,7 +23,8 @@ github_username:  jekyll
 optimize_css: false
 destination: _develop
 submission_form: 'https://docs.google.com/forms/d/e/1FAIpQLSdJJXKYxW8PERXJ_33oHB1JqUB4wBomHiwM8B7nnYdgyjW2bQ/viewform'
-
+submissions-live: false
+submission-deadline: ""
 
 # Build settings
 markdown: kramdown
