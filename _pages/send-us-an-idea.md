@@ -2,13 +2,15 @@
 layout: page
 title: Send us an idea
 permalink: /send-us-an-idea/
-description: 10x is currently accepting ideas from Technology Transformation Services (TTS) employees. The window to submit your idea is open until July 13, 2018.
+description: 10x wants ideas from federal employees that improve the public’s experience with government through technology.
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: gold-20v
 graphic_inner_bg: red-warm-50v
 show_navbar: true
 ---
+
+{% if site.submissions-live == true %}
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix">
   <a href="{{ site.submission_form }}" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-3 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Google form</span></a>
@@ -17,7 +19,15 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-10x is currently accepting ideas from Technology Transformation Services (TTS) employees. As we scale this program, 10x will be open to submissions from the entire federal government.
+10x is currently accepting ideas from Technology Transformation Service (TTS) employees. As we scale this program, 10x will be open to submissions from the entire federal government.
+
+{% else %}
+
+<h2 class="docs-h2">Eligibility</h2>
+
+10x will be accepting ideas again soon. Please check back!
+
+{% endif %}
 
 <h2 class="docs-h2">What makes a good idea?</h2>
 
@@ -77,6 +87,10 @@ If you’d like help putting together an idea or have questions about what we’
   <p>“OMB’s Office of Information and Regulatory Affairs (OIRA) is charged with overseeing federal compliance with the Paperwork Reduction Act (PRA). Agencies often cite frustration with accessing and understanding OMB’s policies on the PRA, which are spread across numerous inaccessible PDFs. This situation has reduced compliance and created delays in the approval of information collection requests (ICRs). Through outreach to PRA desk officers and agency staff, and in consultation with OIRA, TTS will explore what it would take to modernize the way agencies interact with OMB’s policies in order to design an accessible, user-friendly online interface to respond to agency inquiries.”</p>
 </div>
 
+{% if site.submissions-live == true %}
+
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix margin-top-2 tablet:margin-top-6">
   <a href="{{ site.submission_form }}" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-5 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Google form</span></a>
 </div>
+
+{% endif %}
