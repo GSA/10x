@@ -20,7 +20,7 @@ Demo: [demo.10x.gsa.gov](https://demo.10x.gsa.gov/)
 
 ### About 10x
 
-10x is an incremental investment pipeline that lives in GSA’s Technology Transformation Services’ (TTS) Office of Products and Programs (OPP). We fund products and services that possess groundbreaking ideas or technology with the potential for significant return on investment. We base our approach on modern venture capital practices. Our methods require spending fewer taxpayer dollars to ensure that only the best ideas get funded.
+10x is an incremental investment pipeline that lives in GSA’s Technology Transformation Service's (TTS) Office of Products and Programs (OPP). We fund products and services that possess groundbreaking ideas or technology with the potential for significant return on investment. We base our approach on modern venture capital practices. Our methods require spending fewer taxpayer dollars to ensure that only the best ideas get funded.
 
 ### Website goal
 
