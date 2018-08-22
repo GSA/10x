@@ -38,3 +38,5 @@ The next phase of 10x project work, Discovery, is intended to gain a detailed un
 * What are the possible risks associated with this project moving forward?
 ## Draft Discovery Phase Staffing Plan
 
+[Link to staffing issue template](https://github.com/GSA/10x/blob/docs-library/docs-library/10x-Staffing-Issue-For-Phase-2.md)
+
