@@ -1,9 +1,9 @@
 # [Insert Project Title]
 **10x Investigation Recommendations, [date], [project participants]**
 
-*This Investigation Phase template will serve as a guide for the formal report out on your early investigation findings as well as your reasoning for your “yes” to the question of whether or not we should move forward with work in this area. If your investigation resulted in a conclusion that we should not move forward in this area, please use this template instead.*
+*This Investigation Phase template will serve as a guide for the formal report out on your early investigation findings as well as your reasoning for your “yes” to the question of whether or not we should move forward with work in this area. If your investigation resulted in a conclusion that we should not move forward in this area, please use [this template](https://github.com/GSA/10x/blob/docs-library/docs-library/Template-for-10x-Investigation-Phase-One-No-Report.md) instead.*
 
-*10x requires this report as part of the Investigation close-out process. Projects may choose to develop a slide presentation to accompany their presentation as well. An example of a well-developed report can be found here, and examples of well-developed “yes” slide presentations can be found here, here, and here.*
+*10x requires this report as part of the Investigation close-out process. Projects may choose to develop a slide presentation to accompany their presentation as well. An example of a well-developed report can be found [here](https://docs.google.com/a/gsa.gov/document/d/1gStrQXQBsZO5XmWT-ThiOTfRet8QJ6Xk5NCZYWmYFNs/edit?usp=sharing), and examples of well-developed “yes” slide presentations can be found [here](https://docs.google.com/presentation/d/1UIlAwVmUNaedHNEN0wXsloNkrWTT7gXi0ZWe0cvqSlU/edit#slide=id.g1e302825a2_0_198), [here](https://docs.google.com/presentation/d/1ZSIbFb3CR3aUyJWLBVIQj0qMj_VfVVaBEj1tXkWvdLQ/edit?ts=59569845#slide=id.p), and [here](https://docs.google.com/presentation/d/1IGXLlgZbAZ9CKiRrd9MNPKclrl9qM9caODfKajkSgTY/edit#slide=id.g1f769d91df_0_0).*
 
 ## Recommendation
 
