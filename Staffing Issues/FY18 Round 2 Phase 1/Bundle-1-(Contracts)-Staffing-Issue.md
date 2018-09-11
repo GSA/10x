@@ -12,7 +12,7 @@ Direct questions about this engagement to Will Cahoe or Carolyn Dew
 
 ## Timeline
 
-**Duration of engagement:** 6-7 weeks, each of these investigation sprints has ~65 hours allocated to them, for a total of 195 hours for this staffing issue.
+**Duration of engagement:** 3-4 weeks, each of these investigation sprints has ~65 hours allocated to them, for a total of 195 hours for this staffing issue.
 
 **Last date on which work can be done per the agreement:** 9/30/2019 (flexible)
 
@@ -20,18 +20,23 @@ Direct questions about this engagement to Will Cahoe or Carolyn Dew
 
 - [ ] Strategist / Researcher: 
 
-* Number of weeks this role is needed: 6-7 weeks
+* Number of weeks this role is needed: 3-4 weeks
 
-* Hourly commitment per week: 25-32 hours
+* Hourly commitment per week: 32 hours
+
+- [ ] Strategist / Researcher: 
+
+* Number of weeks this role is needed: 3-4 weeks
+
+* Hourly commitment per week: 32 hours
 
 - [ ] Acquisition/Contract Vehicle SME:
 
-* Number of weeks this role is needed: 6-7 weeks
+* Number of weeks this role is needed: 3-4 weeks
 
-* Hourly commitment per week: 5-8 hrs
+* Hourly commitment per week: 8 hrs
 
-
-NOTE: The strategist/researcher role can be divided between two people if that better aligns with staffing availability or needs.
+Note for the staffing team: Please avoid staffing the pitch authors (Mark Headd) to these projects. Thanks!
 
 ## Prior to closing this issue
 
