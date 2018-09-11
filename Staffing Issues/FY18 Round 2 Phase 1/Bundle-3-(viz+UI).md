@@ -19,7 +19,7 @@ Direct questions about this engagement to Will Cahoe or Carolyn Dew
 
 ## Skills Needed
 
-- [ ] Strategist / Researcher: 
+- [ ] Strategist / Researcher (bonus if some background in visual or ui design): 
 
 * Number of weeks this role is needed: 4-5 weeks
 
