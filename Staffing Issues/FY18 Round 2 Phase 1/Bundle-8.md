@@ -10,7 +10,7 @@
   * *Municipal Data Products*. Federal agencies should be able to better leverage existing at the municipal and state level that is generated via federal programs and funding, in order to determine the effectiveness of the federal programs that generate this data and in order to be able to get greater value and impact out of this data at the federal level. Despite various attempts to bridge the gap between local and federal data operations, both sides struggle to effectively connect in order to make this exchange of data viable. TTS will explore the common challenges facing municipalities that impede their ability to transfer this data to the federal government, and investigate how the Federal government might build infrastructural solutions to ensure more effective data transfer. 
   * *The Sunset Vault*. With changes in funding or project needs, government websites often get shut down without a good digital archival plan. This may lead to program offices scrambling to figure out how to archive and shut down websites in ways that mean the public loses easy access to data. TTS will explore building guidelines and inexpensive tools for preserving government websites in a way that is transparent and publicly accessible after sites are sunsetted. In addition, TTS will provide guidance on how to build and govern websites in a way that are more easy to archive and sunset so their information is still accessible to the public.
 
-Direct questions about this engagement to Will Cahoe or Carolyn Dew
+Questions about this engagement? Please slack us at @will_cahoe or @carolyn.
 
 ## Timeline
 
