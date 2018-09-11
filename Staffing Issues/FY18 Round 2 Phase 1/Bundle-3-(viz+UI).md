@@ -31,6 +31,7 @@ Direct questions about this engagement to Will Cahoe or Carolyn Dew
 
 * Hourly commitment per week: 32 hours
 
+Note to the staffing team: Pleae avoid staffing the pitch authors (Eddie Tejeda, Micah Taylor, Andrew Maier, Will Slack) to these projects. Thanks!
 
 ## Prior to closing this issue
 
