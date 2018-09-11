@@ -9,7 +9,7 @@
   * *Writing Lab beyond 18F*. The 18F Writing Lab has proven to be a great resource for TTS. Time-limited research to identify areas for iteration, improvement, and expansion of the lab have been conducted. At present, however, the capacity to develop this service for other federal agencies has been limited by lack of resources. TTS will explore opportunities to improve the lab’s services in order to expand its availability to other parts of government.
   * *IT Innovation Program for Federal Executives*. This is a proposal to investigate and measure the value of an immersive, “hands-on” innovation program for federal technology executives to explore opportunities to reduce IT costs and in the building and acquisition of redundant technology systems. Building off from and amplifying existing initiatives such as innovation.gov, The Digital Acquisition Accelerator, the Department of Homeland Security’s Silicon Valley Innovation Program, and code.gov, TTS will explore the value of experiential and culture-driven approaches toward innovation initiatives for executives, using proven methodologies from within all agencies and industry-leading techniques adopted by and currently applied within the private sector.
 
-Direct questions about this engagement to Will Cahoe or Carolyn Dew
+Questions about this engagement? Please slack us at @will_cahoe or @carolyn.
 
 ## Timeline
 
