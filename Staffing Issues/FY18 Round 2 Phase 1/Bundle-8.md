@@ -22,15 +22,17 @@ Direct questions about this engagement to Will Cahoe or Carolyn Dew
 
 - [ ] Strategist / Researcher: 
 
-* Number of weeks this role is needed: 5-7 weeks
+* Number of weeks this role is needed: 5-6 weeks
 
-* Hourly commitment per week: 25-32 hours
+* Hourly commitment per week: 32 hours
 
 - [ ] Strategist / Researcher #2:
 
-* Number of weeks this role is needed: 5-7 weeks
+* Number of weeks this role is needed: 5-6 weeks
 
-* Hourly commitment per week: 25-32 hrs
+* Hourly commitment per week: 32 hrs
+
+Note to the staffing team: Please avoid staffing the pitch authors (Will Slack, Cordelia Yu) to these projects. Thanks!
 
 ## Prior to closing this issue
 
