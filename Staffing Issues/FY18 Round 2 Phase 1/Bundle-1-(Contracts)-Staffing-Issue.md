@@ -8,7 +8,7 @@
   * *CX Contract Vehicle*. Many agencies lack the expertise to reorient their current operations to be more customer-centric both on- and offline, relative to modern market expectations. TTS will explore the possibility of establishing a contract vehicle to assist federal agencies in procuring targeted customer experience (CX) services that could allow agencies to quickly find the support they need to properly fulfill their obligations both to administrative directives and to their customers.
   * *Contract Performance Analysis Vehicle*. Currently, the federal government uses two systems (CPARS and PPIRS) to document and analyze the past performance of firms that bid on government contracts. Many users of these systems find them cumbersome to use and less than helpful in awarding contracts, and vendors are sometimes unsatisfied by these systems as well. Meanwhile, online marketplaces like eBay, Etsy and Uber use simple, streamlined reputation and feedback systems to support millions of transactions. This project will explore if a similar reputational system could help GSA and other federal agencies make smarter buying decisions that make contracting officials and vendors more satisfied.
 
-Direct questions about this engagement to Will Cahoe or Carolyn Dew
+Questions about this engagement? Please slack us at @will_cahoe or @carolyn.
 
 ## Timeline
 
