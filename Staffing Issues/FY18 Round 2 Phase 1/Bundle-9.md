@@ -10,7 +10,7 @@
   * *RPA (Robotic Process Automation) for ATOs*. The government lacks a comprehensive view across agencies on which portions of the Authority-to-Operate (ATO) process impose the most burden. Reading the documentation can be time consuming, and security practitioners often speak to the significant challenges that exist with current tools — for example, the requirements to copy and paste information across systems or manually enter data when it could be automated. TTS will investigate ways to streamline and accelerate the authorization processes at agencies and identify some standard practices to share. 
   * *Scam Reporting Follow-Up*. When people call the USAGov call center to report a scam, they are provided the phone number of the agency with which to file the actual complaint. Existing data shows that there's a drop off point when members of the public choose not to continue with the scam reporting process. TTS will explore whether or not there’s an opportunity to follow-up with people in order to continue the reporting process or potentially automate that process altogether. This could result in a simpler and more effective scam reporting process that would benefit both the public and federal agencies.
 
-Direct questions about this engagement to Will Cahoe or Carolyn Dew
+Questions about this engagement? Please slack us at @will_cahoe or @carolyn.
 
 ## Timeline
 
