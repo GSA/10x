@@ -24,7 +24,7 @@ Direct questions about this engagement to Will Cahoe or Carolyn Dew
 
 * Hourly commitment per week: 32 hours
 
-- [ ] Strategist / Researcher: 
+- [ ] Strategist / Researcher #2: 
 
 * Number of weeks this role is needed: 3-4 weeks
 
