@@ -9,7 +9,7 @@
   * *Sustainable APIs*. Application Programming Interfaces (APIs) have changed how government technology services are provided. However, programs that use APIs, and particularly those developed by federal agencies that are typically used by third parties, can break as new API versions are released. TTS will investigate approaches to facilitating the development of sustainable APIs across the federal government that are more resilient in the face of ongoing development.
   * *HTML Form Endpoint*. As an organization, TTS recommends the use of static websites but does not currently provide a way of collecting feedback from the public without the use of Google Forms or providing a direct email address and relying on the user to have a properly configured email client. Allowing customized HTML forms could increase usability and improve the public’s experience with the government. TTS will investigate the opportunity to provide a shared service for processing HTML forms on government websites, particularly on static websites that do not have access to underlying backend technologies, such as Federalist.
 
-Direct questions about this engagement to Will Cahoe or Carolyn Dew
+Questions about this engagement? Please slack us at @will_cahoe or @carolyn.
 
 ## Timeline
 
