@@ -9,7 +9,7 @@
   * *Temporary Sub-domains*. Top level .gov domains are hard to obtain; however, teams across agencies often need temporary domains to host information or events, especially interagency task forces and groups that cannot be linked to a subdomain of a major agency to maintain interagency trust. TTS will explore offering a temporary, self-service domain name and DNS provisioning system, enabling agencies to rapidly deploy new sub-domains for their efforts under a neutral first tier domain title.
   * *CodeKit*. Starting a new, small website in government is challenging. Platforms like Federalist make it easier to host and manage your site but don't currently offer teams the tools or workflow guidance needed to configure and compose templates to fit a team’s mission. Existing research done by DigitalGov and the US Web Design System has identified an opportunity to build a "website composition kit" or layer that sits on top of Federalist and GitHub and the U.S. Web Design System that could provide government teams with the means to easily create, edit and compose small, focused websites that are compliant and maintainable in the open. This project will explore the viability of building out this website composition kit.
 
-Direct questions about this engagement to Will Cahoe or Carolyn Dew
+Questions about this engagement? Please slack us at @will_cahoe or @carolyn.
 
 ## Timeline
 
