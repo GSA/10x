@@ -25,13 +25,13 @@ Direct questions about this engagement to Will Cahoe or Carolyn Dew
 
 * Hourly commitment per week: 32 hours
 
-## Skills Needed
-
 - [ ] Strategist / Researcher #2: 
 
 * Number of weeks this role is needed: 4-5 weeks
 
 * Hourly commitment per week: 32 hours
+
+Note for the staffing team: Please avoid staffing the pitch authors to these projects. That's Mat Caughron and Peter Burkholder for this bundle. Thanks!
 
 ## Prior to closing this issue
 
