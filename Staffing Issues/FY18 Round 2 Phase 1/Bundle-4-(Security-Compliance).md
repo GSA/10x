@@ -9,7 +9,7 @@
   * *Certificate Transparency*. The future of assurance for HTTPS certificates is certificate transparency, an initiative piloted and adopted by Mozilla, Apple, and all major browsers. The project will explore ways to monitor all certificates from all sources to check for validity of .gov domain certificates. 
   * *Compliance Gap Analysis*. Cloud service vendors looking to do business with the government frequently complain to the Office of Management and Budget (OMB) and the Federal Chief Information Officer (CIO) that the FedRAMP process imposes additional compliance requirements on top of existing requirements like those mandated by the International Organization for Standardization (ISO) and the Health Insurance Portability and Accountability Act (HIPAA). TTS will conduct research to validate or invalidate this assertion with the goal of identifying any unique FedRAMP requirements that are beyond compliance frameworks such as ISO and HIPAA.
 
-Direct questions about this engagement to Will Cahoe or Carolyn Dew
+Questions about this engagement? Please slack us at @will_cahoe or @carolyn.
 
 ## Timeline
 
