@@ -10,7 +10,7 @@
   * *Program Analytics Dashboard*. The Digital Analytics Program (DAP) has a desire to get DAP data out of Google Analytics, where it currently resides, and into a data warehouse, in order to increase the ease and flexibility with which we could make use of this vast data set. This project will explore using a common tool as a place to house data for multiple cross-government OPP programs — DAP, Search.gov, Feedback Analytics, api.data.gov, data.gov, and challenge.gov — in order to have a single location from which to create both internal and public facing products and dashboards that could be shared with the rest of the government and the American public.
   * *Analytics Dashboard Framework*. This project will explore whether or not it would be valuable to provide tools, methodologies, and governmentwide support for data analytics and visualization dashboards that measure improvement in government performance. Just as the U.S. Web Design Style Guide packages reusable components for front-end web design, this framework could package reusable front and backend components supporting performance analytics dashboards. This could include generalizing the use of the data visualization libraries and the data aggregation/integration approaches employed by existing analytics dashboard projects.
 
-Direct questions about this engagement to Will Cahoe or Carolyn Dew
+Questions about this engagement? Please slack us at @will_cahoe or @carolyn.
 
 ## Timeline
 
