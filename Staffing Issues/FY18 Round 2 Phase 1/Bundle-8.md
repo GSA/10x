@@ -14,7 +14,7 @@ Direct questions about this engagement to Will Cahoe or Carolyn Dew
 
 ## Timeline
 
-**Duration of engagement:** 5-7 weeks, each of these investigation sprints has ~65 hours allocated to them, for a total of 325 hours for this staffing issue.
+**Duration of engagement:** 5-6 weeks, each of these investigation sprints has ~65 hours allocated to them, for a total of 325 hours for this staffing issue.
 
 **Last date on which work can be done per the agreement:** 9/30/2019 (flexible)
 
