@@ -13,7 +13,7 @@ Direct questions about this engagement to Will Cahoe or Carolyn Dew
 
 ## Timeline
 
-**Duration of engagement:** 8-10 weeks, each of these investigation sprints has ~65 hours allocated to them, for a total of 260 hours for this staffing issue.
+**Duration of engagement:** 4-5 weeks, each of these investigation sprints has ~65 hours allocated to them, for a total of 260 hours for this staffing issue.
 
 **Last date on which work can be done per the agreement:** 9/30/2019 (flexible)
 
@@ -21,9 +21,15 @@ Direct questions about this engagement to Will Cahoe or Carolyn Dew
 
 - [ ] Strategist / Researcher: 
 
-* Number of weeks this role is needed: 8-10 weeks
+* Number of weeks this role is needed: 4-5 weeks
 
-* Hourly commitment per week: 25-32 hours
+* Hourly commitment per week: 32 hours
+
+- [ ] Strategist / Researcher #2: 
+
+* Number of weeks this role is needed: 4-5 weeks
+
+* Hourly commitment per week: 32 hours
 
 
 ## Prior to closing this issue
