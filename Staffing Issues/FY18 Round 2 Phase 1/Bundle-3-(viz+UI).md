@@ -9,7 +9,7 @@
   * *Antipattern Reporting*. An antipattern is defined as “a commonly occurring solution to a problem that generates decidedly negative consequences.” Everyday, Americans regularly complain online about antipatterns on specific government websites, but there is no way for federal leaders to track which sites’ technical and user experience flaws are causing the most frustration for the public. This project will explore the value of creating a form for the public to identify poor government web practices, along with a mechanism to escalate repeatedly submitted sites to agency CIOs and oversight staff.
   * *Digital-Native Forms*. GSA's Standard and Optional Forms Management Program seeks to "achieve government-wide economies and efficiencies through the development, maintenance, and common use of conventional forms," yet these forms are only available as PDFs. This project will explore how digital-native versions of these forms might yield operational efficiencies and improve the user experience of government.
 
-Direct questions about this engagement to Will Cahoe or Carolyn Dew
+Questions about this engagement? Please slack us at @will_cahoe or @carolyn.
 
 ## Timeline
 
