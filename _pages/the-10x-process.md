@@ -27,7 +27,7 @@ Each subsequent phase of funding allows for a greater investment into an idea, a
 
 <h2 class="docs-h2">How 10x selects projects</h2>
 
-Once a submission period ends, 10x goes to work evaluating all the ideas and recommending a selection of those ideas for its incremental project funding.
+10x accepts ideas from federal employees throughout the year. A few times a year, 10x collects all the ideas and evaluates them for funding. The most promising ideas proceed to Phase 1. 
 
 Your idea will be evaluated based on the following 3 criteria, each given equal weight:
 
