@@ -52,17 +52,17 @@ Your idea will be evaluated based on the following 3 criteria, each given equal 
 
 <div class="usa-card border-color-orange-40v">
   <h3 class="margin-top-0">Identify a problem</h3>
-  <p>Point to the pain. We start by gathering ideas from federal civil servants. These idea proposals are intentionally short — only about 2–3 sentences — to stay focused on a specific, concrete problem. If your idea is selected, your level of involvement in the work is up to you.</p>
+  <p>Point to the pain. We start by gathering ideas from federal civil servants. These proposals are intentionally short — only about 2–3 sentences — to stay focused on a specific, concrete problem. If your idea is selected, 10x will notify you and will hire a small team for Phase 1 to further evaluate the idea.</p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-30">
   <h3 class="margin-top-0">Phase 1: Investigation — $20,000</h3>
-  <p>Think it through. Accepted ideas spend 2-3 weeks exploring the idea to define what it would take to be successful — uncovering risks, roadblocks, and opportunities. At this point, people who submit ideas are expected to act as subject matter experts and, if possible, work alongside a research team inside of the Technology Transformation Service (TTS). </p>
+  <p>Think it through. Accepted ideas spend 2-3 weeks exploring the idea to define what it would take to be successful — uncovering risks, roadblocks, and opportunities. At this point, people who submit ideas are expected to act as subject matter experts for a research team inside of the Technology Transformation Service (TTS). </p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-40v">
   <h3 class="margin-top-0">Phase 2: Discovery — $175,000</h3>
-  <p>Go deep. Gain a detailed understanding about the industry, problem, market fit, finances, timeline, regulatory environment, and how to scale. Analyze what could go right and wrong, and create an initial strategy to address these issues.</p>
+  <p>Go deep. Gain a detailed understanding about the industry, problem, market fit, finances, timeline, regulatory environment, and how to scale. Analyze what could go right and wrong, and create an initial strategy to address these issues. For this and later phases, you are welcome to work alongside the team that is developing this idea. </p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-60">
