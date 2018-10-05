@@ -19,13 +19,12 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-10x is currently accepting ideas from Technology Transformation Service (TTS) employees. As we scale this program, 10x will be open to submissions from the entire federal government.
-
+10x is currently accepting ideas from all U.S. federal employees. 
 {% else %}
 
 <h2 class="docs-h2">Eligibility</h2>
 
-10x will be accepting ideas again soon. Please check back!
+10x accepts ideas from all current U.S. federal government employees.
 
 {% endif %}
 
