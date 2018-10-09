@@ -20,7 +20,7 @@ Further context can be found in the [Phase 1 report](https://docs.google.com/doc
 
 • Were we to determine there would be value in building some sort of internal translation tool that differed from Trados in a meaningful way, what are the range of options available to us for sustaining it long-term (ie, cost-recoverability, appropriated funds inside TTS, appropriated funds outside TTS, or some other funding or support mechanism)?
 
-Questions about this project? Direct them to @lane or @adborden or @nicopapafil
+Questions about this project? Direct them to @adborden or @willcahoe
 
 **Timeline**
 
