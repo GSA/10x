@@ -24,7 +24,7 @@ Questions about this project? Direct them to @lane or @adborden or @nicopapafil
 
 **Timeline**
 
-• Duration of engagement: 350 hours at 18F rates
+• Duration of engagement: 350 hours at 18F rates, approximately 5-6 weeks with two full-time 18F staff
 
 • Last date on which work can be done per the agreement: 6/5/2019 
 
@@ -33,17 +33,12 @@ Questions about this project? Direct them to @lane or @adborden or @nicopapafil
 - [ ] Product Manager:
 
   - Number of weeks this role is needed 8-12
-  - Hourly commitment per week 10-32
+  - Hourly commitment per week 32
 
 - [ ] Strategist / Researcher:
 
   - Number of weeks this role is needed 8-12
-  - Hourly commitment per week 10-32
-
-- [ ] Developer/PO: 
-
-  - Number of weeks this role is needed 8-12
-  - Hourly commitment per week: sub-8
+  - Hourly commitment per week 32
 
 **Prior to closing this issue**
 
