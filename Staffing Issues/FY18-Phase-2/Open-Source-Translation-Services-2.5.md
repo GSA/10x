@@ -30,14 +30,14 @@ Questions about this project? Direct them to @adborden or @willcahoe
 
 **Skill type(s) needed**
 
-- [ ] Product Manager:
+- [ ] Strategist / Researcher #1:
 
-  - Number of weeks this role is needed 8-12
+  - Number of weeks this role is needed 5-6
   - Hourly commitment per week 32
 
-- [ ] Strategist / Researcher:
+- [ ] Strategist / Researcher #2:
 
-  - Number of weeks this role is needed 8-12
+  - Number of weeks this role is needed 5-6
   - Hourly commitment per week 32
 
 **Prior to closing this issue**
