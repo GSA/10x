@@ -20,9 +20,7 @@ Our funding source is the Digital Services Fund: a portion of the Federal Citize
 
 <h2 class="docs-h2">Calls for ideas</h2>
 
-10x is currently accepting ideas to be considered for funding from Technology Transformation Service (TTS) employees.  The window to submit your idea is open until {{ site.submission-deadline }}.
-
-As we scale this program, 10x will be open to submissions from the entire federal government.
+We’re accepting ideas on a rolling basis from U.S federal employees. Our next review and funding round will take place in early 2019.
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix margin-top-2 tablet:margin-top-3">
   <a href="{{ site.submission_form }}" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-5 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Google form</span></a>
