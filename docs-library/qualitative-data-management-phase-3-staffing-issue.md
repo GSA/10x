@@ -39,7 +39,7 @@ Questions about this project? Hit up [Will Cahoe](https://gsa-tts.slack.com/mess
   - Number of weeks this role is needed 20-25
   - Hourly commitment per week 32
 
-- [ ] Strategist / Researcher:
+- [ ] Data Scientist / Researcher:
 
   - Number of weeks this role is needed 20-25
   - Hourly commitment per week 32
