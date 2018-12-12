@@ -21,7 +21,7 @@
     "css-mqpacker": "^6.0.2",
     "cssnano": "^3.10.0",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-gzip": "^1.4.2",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
