@@ -19,7 +19,7 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-10x is currently accepting ideas from all U.S. federal employees &ndash; <strong>submit your idea by January 10, 2019 to be considered for our next round of funding! </strong>
+10x is currently accepting ideas from all U.S. federal employees &ndash; <strong>We’re not yet sure when our next reviews will happen — we’ll update you as soon as we know. Please keep sending your ideas! </strong>
 {% else %}
 
 <h2 class="docs-h2">Eligibility</h2>
