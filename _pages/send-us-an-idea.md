@@ -82,7 +82,7 @@ If you’d like help putting together an idea or have questions about what we’
 </div>
 
 <div class="usa-card">
-  <h3 class="margin-top-0">PRA.Gov</h3>
+  <h3 class="margin-top-0">Guide to the Paperwork Reduction Act</h3>
   <p>“OMB’s Office of Information and Regulatory Affairs (OIRA) is charged with overseeing federal compliance with the Paperwork Reduction Act (PRA). Agencies often cite frustration with accessing and understanding OMB’s policies on the PRA, which are spread across numerous inaccessible PDFs. This situation has reduced compliance and created delays in the approval of information collection requests (ICRs). Through outreach to PRA desk officers and agency staff, and in consultation with OIRA, TTS will explore what it would take to modernize the way agencies interact with OMB’s policies in order to design an accessible, user-friendly online interface to respond to agency inquiries.”</p>
 </div>
 
