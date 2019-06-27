@@ -19,7 +19,7 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-We’re accepting ideas on a rolling basis from U.S. federal employees. We review ideas for funding a few times a year. To be considered for our next round of evaluautions, submit your idea before <strong>July 30th</strong>.
+We’re accepting ideas on a rolling basis from U.S. federal employees. We review ideas for funding a few times a year. To be considered for our next round of evaluations, submit your idea before <strong>July 30th</strong>.
 {% else %}
 
 <h2 class="docs-h2">Eligibility</h2>
