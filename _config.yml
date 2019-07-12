@@ -14,15 +14,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 10x
-email: '10x@gsa.gov'
-description: '10x helps turn ideas from federal employees into real projects that improve the experience people have with our government.'
+email: '10x@innovatesac.org'
+description: '10x helps turn ideas from City employees into real projects that improve City operations and quality of life.'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://10x.gsa.gov" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://10x.innovatesac.org" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: innovatesac
+github_username:  innovatesac
 optimize_css: false
 destination: _develop
-submission_form: 'https://docs.google.com/forms/d/e/1FAIpQLSdJJXKYxW8PERXJ_33oHB1JqUB4wBomHiwM8B7nnYdgyjW2bQ/viewform'
+submission_form: 'https://innovatesac.typeform.com/to/nthjKb'
 submissions-live: true # this is the shut-off value for submissions. change to false to shut it off, true to open it up
 submission-deadline: ""
 
