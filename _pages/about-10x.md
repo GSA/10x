@@ -20,7 +20,7 @@ Our funding source is the Digital Services Fund: a portion of the Federal Citize
 
 <h2 class="docs-h2">Calls for ideas</h2>
 
-We’re accepting ideas on a rolling basis from U.S federal employees &ndash; <strong>Submit your idea before <strong>July 30th</strong> to be considered for our next round of evaluations in early August.</strong>
+We’re accepting ideas on a rolling basis from U.S federal employees &ndash; <strong>Submit your idea before <strong>July 30th at 5:00 PM EST</strong> to be considered for our next round of evaluations in early August.</strong>
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix margin-top-2 tablet:margin-top-3">
   <a href="{{ site.submission_form }}" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-5 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Google form</span></a>
