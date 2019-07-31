@@ -19,7 +19,7 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-We’re accepting ideas on a rolling basis from U.S. federal employees. We review ideas for funding a few times a year. To be considered for our next round of evaluations, submit your idea before <strong>July 30th at 5:00 PM EST</strong>.
+We are currently in the process of evaluating submissions. All idea submitters will be notified by August 13th via email whether or not their ideas have been selected for Phase One funding. In the meantime, 10x is still accepting submissions on a rolling basis. New ideas will be considered for the following round of evaluations next fiscal year.
 {% else %}
 
 <h2 class="docs-h2">Eligibility</h2>
