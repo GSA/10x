@@ -33,18 +33,15 @@ layout: default
       <h2 class="docs-h2">Projects</h2>
 
       {% for project in site.projects %}
-        <div class="project {% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
-          <p class="phase">Phase {{ project.phase }}</p>
-          <h3 class="title"><a href="{{ project.github_repo }}" title="View this project on GitHub">{{ project.title }}</a></h3>
-          <h4 class="deck">{{ project.deck }}</h4>
-          <div class="content">
-            {{ project.content }}
+        {% if project.phase == 4 %}
+          {% include project-listing.html %}
+        {% endif %}
+      {% endfor %}
 
-            <p class="github_repo_link"><a href="{{ project.github_repo }}" title="View GitHub Repo">View project on GitHub »</a></p>
-            
-          </div>
-
-        </div>
+      {% for project in site.projects %}
+        {% if project.phase == 3 %}
+          {% include project-listing.html %}
+        {% endif %}
       {% endfor %}
 
     </article>
