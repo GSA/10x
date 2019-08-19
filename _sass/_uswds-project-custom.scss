@@ -401,6 +401,9 @@ article .project{
     @include u-color(indigo-warm, 50);
     text-transform: uppercase;
   }
+  .phase-4{
+    @include u-color(orange, 50);
+  }
   h3{
     @include u-padding-top(1);
     @include u-margin-y(0);
@@ -419,6 +422,7 @@ article .project{
     @include u-padding-y(2px);
     @include u-font(sans, 10);
     @include u-font-weight(thin);
+    @include u-line-height(small);
   }
   .content *{
     @include u-font(sans, 6);
