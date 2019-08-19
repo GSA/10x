@@ -102,9 +102,9 @@ gulp.task('build-app', gulp.series('build-sass'), function() {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-gulp.task('watch', gulp.series('clean-css','build-sass'), function (){
-  gulp.watch(`${PROJECT_SASS_SRC}/*.scss`, gulp.series('clean-css','build-sass'))
-  gulp.watch(`${USWDS_SRC}/stylesheets/*.scss`, gulp.series('clean-css', 'build-sass'))
+gulp.task('watch', gulp.series('clean-css','build-sass', 'build-app'), function (){
+  gulp.watch(`${PROJECT_SASS_SRC}/*.scss`, gulp.series('clean-css','build-sass', 'build-app'))
+  gulp.watch(`${USWDS_SRC}/stylesheets/*.scss`, gulp.series('clean-css', 'build-sass', 'build-app'))
 });
 
 
