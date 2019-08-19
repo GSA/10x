@@ -14,5 +14,3 @@ github_repo: https://github.com/GSA/digitalgov-pra
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue aliquet tincidunt. Cras in libero rhoncus, semper metus eu, finibus nunc. Nunc feugiat lorem tellus, et sollicitudin eros feugiat vitae.
-
-[View this project on GitHub »](https://github.com/GSA/digitalgov-pra)
