@@ -64,7 +64,7 @@ gulp.task('clean-css', function () {
   ]);
 });
 
-gulp.task('build-sass', ['clean-css'], function (done) {
+gulp.task('build-sass', function (done) {
   var plugins = [
       autoprefixer({ browsers: ['> 3%', 'Last 2 versions'], cascade: false, }),
       movecss({ sort: true }),
@@ -82,13 +82,9 @@ gulp.task('build-sass', ['clean-css'], function (done) {
     .pipe(postcss(plugins))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(`${CSS_DEST}`))
-    .pipe(size())
-    .pipe(gzip({ extension: 'gz' }))
-    .pipe(gulp.dest(`${CSS_DEST}`))
-    .pipe(size());
 });
 
-gulp.task('build-app', ['build-sass'], function() {
+gulp.task('build-app', gulp.series('build-sass'), function() {
   var plugins = [
     uncss({
       html: [`${BUILD_DEST}/**/*.html`],
@@ -105,12 +101,13 @@ gulp.task('build-app', ['build-sass'], function() {
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-gulp.task('watch', ['build-sass'], function (){
-  gulp.watch(`${PROJECT_SASS_SRC}/*.scss`, ['build-sass'])
-  gulp.watch(`${USWDS_SRC}/stylesheets/*.scss`, ['build-sass']);
+
+gulp.task('watch', gulp.series('clean-css','build-sass'), function (){
+  gulp.watch(`${PROJECT_SASS_SRC}/*.scss`, gulp.series('clean-css','build-sass'))
+  gulp.watch(`${USWDS_SRC}/stylesheets/*.scss`, gulp.series('clean-css', 'build-sass'))
 });
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Set watch as default task
-gulp.task('default', ['watch', 'sass', 'copy-uswds-assets']);
+gulp.task('default', gulp.series('watch', 'copy-uswds-assets'));

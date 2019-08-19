@@ -30,13 +30,16 @@ layout: default
     <article class="usa-body-content padding-x-0 max-width-tablet-plus margin-x-auto line-height-large color-90">
       {{ content }}
 
-      <h2 class="docs-h2">PHASE THREE</h2>
+      <h2 class="docs-h2">Projects</h2>
 
       {% for project in site.projects %}
         <div class="project {% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
-          <h3 class="title"><a href="{{ page.url | absolute_url }}">{{ project.title }}</a></h3>
+          <p class="phase">Phase {{ project.phase }}</p>
+          <h3 class="title"><a href="{{ project.github_repo }}" title="View this project on GitHub">{{ project.title }}</a></h3>
           <h4 class="deck">{{ project.deck }}</h4>
-          {{ project.content }}
+          <div class="content">
+            {{ project.content }}
+          </div>
         </div>
       {% endfor %}
 
