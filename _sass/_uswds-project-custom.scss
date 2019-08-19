@@ -427,13 +427,16 @@ article .project{
   .content *{
     @include u-font(sans, 6);
   }
-
-  .github_repo_link a{
-    @include u-font(sans, 6);
-    @include u-text-decoration(none);
-    @include u-font-weight(normal);
-    &:hover{
-      @include u-text-decoration(underline);
+  .content{
+    .github_repo_link a{
+      @include u-color(indigo-warm, 50);
+      @include u-font(sans, 6);
+      @include u-text-decoration(none);
+      @include u-font-weight(normal);
+      &:hover{
+        @include u-color(indigo-warm, 60);
+        @include u-text-decoration(underline);
+      }
     }
   }
 }
