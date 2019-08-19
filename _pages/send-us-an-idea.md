@@ -19,7 +19,8 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-We are currently in the process of evaluating submissions. All idea submitters will be notified by August 13th via email whether or not their ideas have been selected for Phase One funding. In the meantime, 10x is still accepting submissions on a rolling basis. New ideas will be considered for the following round of evaluations next fiscal year.
+10x selected a round of projects to start at the Phase One Investigation Level in early August 2019. As always, we are accepting submissions on a rolling basis, and new ideas will be considered for the next round of funding during the next fiscal year.
+
 {% else %}
 
 <h2 class="docs-h2">Eligibility</h2>
