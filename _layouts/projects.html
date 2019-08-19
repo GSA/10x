@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<section class="color-black-warm-80 padding-bottom-0">
+  <div class="padding-x-2 max-width-tablet-plus margin-x-auto tablet:padding-x-5">
+    <h1 class="margin-y-0 padding-top-4 tablet-plus:padding-top-4 font-weight-900 font-sans-13 tablet-plus:font-sans-17 letter-spacing-tightest line-height-smaller">
+      {{ page.title }}
+    </h1>
+    {% if page.description %}
+      <p class="font-weight-400 font-sans-9 line-height-small tablet-plus:font-sans-11 tablet-plus:line-height-base margin-top-2 tablet:margin-top-1 margin-bottom-0">{{ page.description }}</p>
+
+      <div class="margin-x-neg-2 tablet:margin-x-0 margin-top-6 tablet-plus:margin-top-6 background-color-{{ page.graphic_outer_bg }}">
+        <div class="g-row padding-top-9">
+          <div class="g-col-6 margin-x-auto height-9 background-color-{{ page.graphic_middle_bg }}">
+            <div class="g-row padding-top-6">
+              <div class="g-col-2 height-3 margin-x-auto background-color-{{ page.graphic_inner_bg }}">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  {% endif %}
+  </div>
+</section>
+
+<section class="usa-body-content color-black-90 padding-top-1   padding-bottom-4 tablet-plus:padding-top-4 tablet-plus:padding-bottom-8 font-weight-300 background-color-0 clearfix">
+  <div class="padding-x-2 max-width-tablet-plus margin-x-auto line-height-large tablet:padding-x-5">
+
+    <article class="usa-body-content padding-x-0 max-width-tablet-plus margin-x-auto line-height-large color-90">
+      {{ content }}
+
+      <h2 class="docs-h2">PHASE THREE</h2>
+
+      {% for project in site.projects %}
+        <div class="project {% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
+          <h3 class="title"><a href="{{ page.url | absolute_url }}">{{ project.title }}</a></h3>
+          <h4 class="deck">{{ project.deck }}</h4>
+          {{ project.content }}
+        </div>
+      {% endfor %}
+
+    </article>
+  </div>
+</section>
