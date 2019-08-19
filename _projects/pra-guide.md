@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Improving Compliance with the Paperwork Reduction Act
-deck: Navigating the Paperwork Reduction Act with confidence
+title: "Navigating the Paperwork Reduction Act"
+deck: "A clear introduction to the clearance process around the PRA"
 permalink: /projects/pra-guide
 description:  TKTK
 phase: 3
@@ -13,4 +13,6 @@ show_navbar: true
 github_repo: https://github.com/GSA/digitalgov-pra
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue aliquet tincidunt. Cras in libero rhoncus, semper metus eu, finibus nunc. Nunc feugiat lorem tellus, et sollicitudin eros feugiat vitae.
+The PRA Guide is a plain language guide which answers the most common questions like, “What is the PRA for?”, “Do I need clearance?”, and “What’s the process?”
+
+It aims to give federal employees confidence working with the PRA—and through this, lower the barriers to working effectively with the public.
