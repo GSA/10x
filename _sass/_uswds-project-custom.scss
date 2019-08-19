@@ -398,7 +398,7 @@ article .project{
     @include u-font(sans, 6);
     @include u-font-weight(bold);
     @include u-line-height(smaller);
-    @include u-color(orange, 40);
+    @include u-color(indigo-warm, 50);
     text-transform: uppercase;
   }
   h3{
@@ -425,12 +425,10 @@ article .project{
   }
 
   .github_repo_link a{
-    @include u-color(indigo-warm, 50);
     @include u-font(sans, 6);
     @include u-text-decoration(none);
     @include u-font-weight(normal);
     &:hover{
-      @include u-color(indigo-warm, 60);
       @include u-text-decoration(underline);
     }
   }
