@@ -16,3 +16,5 @@ github_repo: https://github.com/GSA/digitalgov-pra/blob/master/README.md
 The PRA Guide is a plain language guide which answers the most common questions like, “What is the PRA for?”, “Do I need clearance?”, and “What’s the process?”
 
 It aims to give federal employees confidence working with the PRA—and through this, lower the barriers to working effectively with the public.
+
+Learn more at [pra.digital.gov »](https://pra.digital.gov)
