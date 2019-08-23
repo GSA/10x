@@ -2,7 +2,7 @@
 layout: projects
 title: The projects
 permalink: /projects/
-description: "The current Phase Three and Phase Four projects in the 10x pipeline"
+description: "The phase three and phase four projects in the 10x pipeline"
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: indigo-warm-70
