@@ -10,7 +10,7 @@ graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: indigo-warm-70
 graphic_inner_bg: orange-40v
 show_navbar: true
-github_repo: https://github.com/18F/federal-grant-reporting
+github_repo: https://github.com/18F/federal-grant-reporting/blob/master/README.md
 ---
 
 The 10x Federal Grantee Reporting project is building a prospective shared solution for the single audit finding resolution process, which is a high-priority element of post-award financial grant reporting.
