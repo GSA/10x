@@ -1,8 +1,8 @@
 ---
 layout: projects
-title: The Projects
+title: The projects
 permalink: /projects/
-description:  TKTK
+description: "The current Phase Three and Phase Four projects in the 10x pipeline"
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: indigo-warm-70
@@ -14,4 +14,6 @@ show_navbar: true
 
 This page provides an overview of the current Phase Three and Phase Four projects in the 10x pipeline. This page is still under development, and as our project pipeline grows we’ll  add new projects to the list.
 
-You can view more information about each project by clicking the link embedded in the project name. Additionally, you can access each team’s GitHub repository by following the link provided below each project description. If you have any additional questions you can reach out to [10x@gsa.gov](mailto:10x@gsa.gov).
+You can view more information about each project by clicking the link embedded in the project name. Additionally, you can access each team’s GitHub repository by following the link provided below each project description.
+
+If you have any additional questions you can reach out to [10x@gsa.gov](mailto:10x@gsa.gov).
