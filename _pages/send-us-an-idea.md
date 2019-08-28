@@ -19,7 +19,8 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-We’re accepting ideas on a rolling basis from U.S. federal employees. We review ideas for funding a few times a year. To be considered for our next round of evaluations, submit your idea by <strong>July 30th at 5:00 PM</strong>.
+10x selected a round of projects to start at the Phase One Investigation Level in early August 2019. As always, we are accepting submissions on a rolling basis, and new ideas will be considered for the next round of funding during the next fiscal year.
+
 {% else %}
 
 <h2 class="docs-h2">Eligibility</h2>
