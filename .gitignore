@@ -6,6 +6,7 @@ _develop/**/*.xml
 _develop/**/*.json
 _develop/**/*.css
 _develop/**/*.md
+_develop/**/*.html
 .sass-cache/
 .DS_Store
 node_modules/

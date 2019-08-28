@@ -26,6 +26,9 @@ submission_form: 'https://docs.google.com/forms/d/e/1FAIpQLSdJJXKYxW8PERXJ_33oHB
 submissions-live: true # this is the shut-off value for submissions. change to false to shut it off, true to open it up
 submission-deadline: ""
 
+collections:
+  - projects
+
 # Build settings
 markdown: kramdown
 plugins:
