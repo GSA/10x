@@ -19,7 +19,8 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-10x is currently accepting ideas from all U.S. federal employees &ndash; <strong>We’re not yet sure when our next reviews will happen — we’ll update you as soon as we know. Please keep sending your ideas! </strong>
+10x selected a round of projects to start at the Phase One Investigation Level in early August 2019. As always, we are accepting submissions on a rolling basis, and new ideas will be considered for the next round of funding during the next fiscal year.
+
 {% else %}
 
 <h2 class="docs-h2">Eligibility</h2>
