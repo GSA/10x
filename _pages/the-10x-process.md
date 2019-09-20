@@ -57,7 +57,7 @@ Your idea will be evaluated based on the following 3 criteria, each given equal 
 
 <div class="usa-card border-color-indigo-warm-30">
   <h3 class="margin-top-0">Phase 1: Investigation — $20,000</h3>
-  <p>Think it through. Accepted ideas spend 2-3 weeks exploring the idea to define what it would take to be successful — uncovering risks, roadblocks, and opportunities. At this point, people who submit ideas are expected to act as subject matter experts for a research and strategy team dedicated to quickly evaluating the idea. </p>
+  <p>Think it through. Accepted ideas spend 2-3 weeks exploring the idea to define what it would take to be successful — uncovering risks, roadblocks, and opportunities. At this point, people who submit ideas can act as subject matter experts for a research and strategy team dedicated to quickly evaluating the idea. Only the most promising ideas will proceed into Phase 2. </p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-40v">
