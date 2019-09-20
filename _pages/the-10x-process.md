@@ -23,7 +23,7 @@ show_navbar: true
 
 To do this, we explore a lot of ideas at once with a small initial investment in each. The goal is to identify the immediate opportunities as well as the risks that an idea might present without spending too much money too quickly. This approach enables us to identify – within a few weeks – ideas and approaches that are most likely to have an impact.
 
-Each subsequent phase of funding allows for a greater investment into an idea and requires project teams to continue to prove potential impact and demonstrate that a project can succeed. Between phases, we review progress to determine if we should continue investing in a project and many projects do not proceed beyond Phase One. This way, only the best ideas receive large investments and we avoid spending millions of taxpayer dollars on ideas that won’t work.
+Each subsequent phase of funding allows for a greater investment into an idea and requires project teams to continue to prove potential impact and demonstrate that a project can succeed. Between phases, we review progress to determine if we should continue investing in a project and many projects do not proceed beyond Phase 1. This way, only the best ideas receive large investments and we avoid spending millions of taxpayer dollars on ideas that won’t work.
 
 <h2 class="docs-h2">How 10x selects projects</h2>
 
