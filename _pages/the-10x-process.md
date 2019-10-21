@@ -66,7 +66,7 @@ Your idea will be evaluated based on the following 3 criteria, each given equal 
 </div>
 
 <div class="usa-card border-color-indigo-warm-60">
-  <h3 class="margin-top-0">Phase 3: Development — $650,000</h3>
+  <h3 class="margin-top-0">Phase 3: Development — $500,000</h3>
   <p>Build it out and plan for the future. Develop a functional minimum viable product with at least one active customer. Create a product roadmap tied to a customer acquisition strategy. Provide a data-backed market analysis. Estimate the cost and effort required to continue sustainably building and maintaining the product over the long-term.</p>
 </div>
 
