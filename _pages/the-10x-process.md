@@ -71,7 +71,7 @@ Your idea will be evaluated based on the following 3 criteria, each given equal 
 </div>
 
 <div class="usa-card border-color-indigo-warm-80">
-  <h3 class="margin-top-0">Phase 4: Scale — $1.28 million</h3>
+  <h3 class="margin-top-0">Phase 4: Scale — Up to $1.28 million</h3>
   <p>Bring the product or service to the largest possible audience.</p>
 </div>
 
