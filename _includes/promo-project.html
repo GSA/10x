@@ -2,7 +2,7 @@
   {% assign source = project.github_repo %}
   {% assign blurb = project.content %}
 {% else %}
-  {% assign source = project.url %}
+  {% assign source = project.url | relative_url %}
   {% assign blurb = project.blurb %}
 {% endif %}
 
