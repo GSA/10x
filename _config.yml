@@ -29,9 +29,12 @@ submission-deadline: ""
 include: ["_pages", "_projects"]
 
 collections:
-  projects:
-    output: true
-    permalink: pretty
+    projects:
+        permalink: /projects/:path/
+        output: true
+        values:
+            layout: "project"
+
 
 # Build settings
 markdown: kramdown
