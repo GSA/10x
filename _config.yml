@@ -60,7 +60,7 @@ exclude:
 # Live site: `production`
 # Demo site: `demo`
 # Preview site: `preview`
-environment: production
+environment: preview
 
 # This will be set to false by Federalist for non-live site builds.
 google_analytics: true
