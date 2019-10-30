@@ -386,4 +386,109 @@ strong {
   @include u-font(mono);
   @include u-padding-x(p5);
   @include u-padding-y(2px);
+
+}
+
+
+article .project{
+  @include u-padding-y(1);
+  @include u-margin-y(3);
+  .phase{
+    @include u-margin-y(0);
+    @include u-display(inline-block);
+    @include u-font(sans, 6);
+    @include u-font-weight(bold);
+    @include u-line-height(smaller);
+    @include u-color(indigo-warm, 50);
+    text-transform: uppercase;
+  }
+  .phase-4{
+    @include u-color(orange, 50);
+  }
+  h3{
+    @include u-padding-top(1);
+    @include u-margin-y(0);
+    @include u-font(sans, 10);
+    a{
+      @include u-color(black-warm, 80);
+      @include u-text-decoration(none);
+      &:hover{
+        @include u-color(black-warm, 80);
+        @include u-text-decoration(underline);
+      }
+    }
+  }
+  .deck{
+    @include u-margin-y(0);
+    @include u-padding-y(2px);
+    @include u-font(sans, 10);
+    @include u-font-weight(thin);
+    @include u-line-height(small);
+  }
+  .content *{
+    @include u-font(sans, 6);
+  }
+  .content{
+    .github_repo_link a{
+      @include u-color(indigo-warm, 50);
+      @include u-font(sans, 6);
+      @include u-text-decoration(none);
+      @include u-font-weight(normal);
+      &:hover{
+        @include u-color(indigo-warm, 60);
+        @include u-text-decoration(underline);
+      }
+    }
+  }
+  ol{
+    li{
+      @include u-font(sans, 5);
+    }
+  }
+  a{
+    @include u-color(indigo-warm, 50);
+    &:hover{
+      @include u-color(indigo-warm, 60);
+      @include u-text-decoration(underline);
+    }
+  }
+
+}
+
+.project-head{
+  .breadcrumb{
+    @include u-margin-bottom(3);
+    a{
+      @include u-padding(1);
+      @include u-color(white);
+      @include u-font(sans, 4);
+      @include u-font-weight(bold);
+      text-decoration: none;
+      &:hover{
+        span{
+          @include u-text-decoration(underline);
+        }
+      }
+    }
+  }
+  .phase{
+    @include u-margin-y(0);
+    @include u-display(inline-block);
+    @include u-font(sans, 6);
+    @include u-font-weight(bold);
+    @include u-line-height(smaller);
+    @include u-color(indigo-warm, 50);
+    text-transform: uppercase;
+  }
+  .phase-4{
+    @include u-color(orange, 50);
+  }
+}
+
+table{
+  @include u-background-color(white-warm, 3);
+  @include u-font(sans, 5);
+  th,td{
+    @include u-padding(2);
+  }
 }

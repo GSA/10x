@@ -1,0 +1,27 @@
+{% if project.skip_project_page == true %}
+  {% assign source = project.github_repo %}
+  {% assign blurb = project.content %}
+{% else %}
+  {% assign source =  site.baseurl | append: project.permalink %}
+  {% assign blurb = project.blurb %}
+{% endif %}
+
+{{ source }}
+
+<div class="project {% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
+
+  <p class="phase phase-{{ project.phase }}">Phase {{ project.phase }}</p>
+  <h3 class="title"><a href="{{ source }}" title="View this project on GitHub">{{ project.title }}</a></h3>
+  <h4 class="deck">{{ project.deck }}</h4>
+  <div class="content">
+    {{ blurb | markdownify }}
+
+    {% if project.skip_project_page == true %}
+    <p class="github_repo_link"><a href="{{ project.github_repo }}" title="View GitHub Repo">View project on GitHub »</a></p>
+    {% else %}
+    <p class="github_repo_link"><a href="{{ source }}" title="View project page">View project page »</a></p>
+    {% endif %}
+
+  </div>
+
+</div>

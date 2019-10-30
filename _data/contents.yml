@@ -19,3 +19,8 @@ nav:
   mobile_only: false
   description: 'What happens if your idea is selected?'
   icon_img: '/assets/img/10x-icon-process.svg'
+- title: The projects
+  url: /projects/
+  mobile_only: false
+  description: 'a list of the projects'
+  icon_img: '/assets/img/10x-icon-process.svg'
