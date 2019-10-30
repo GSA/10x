@@ -26,6 +26,8 @@ submission_form: 'https://docs.google.com/forms/d/e/1FAIpQLSdJJXKYxW8PERXJ_33oHB
 submissions-live: true # this is the shut-off value for submissions. change to false to shut it off, true to open it up
 submission-deadline: ""
 
+include: ["_pages", "_projects"]
+
 collections:
   - projects
 
@@ -33,8 +35,6 @@ collections:
 markdown: kramdown
 plugins:
   - jekyll-feed
-
-include: ["_pages", "_projects"]
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -58,7 +58,7 @@ exclude:
 # Live site: `production`
 # Demo site: `demo`
 # Preview site: `preview`
-environment: development
+environment: production
 
 # This will be set to false by Federalist for non-live site builds.
 google_analytics: true
