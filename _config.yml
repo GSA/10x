@@ -29,7 +29,8 @@ submission-deadline: ""
 include: ["_pages", "_projects"]
 
 collections:
-  - projects
+  projects:
+    output: true
 
 # Build settings
 markdown: kramdown
