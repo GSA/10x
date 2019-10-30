@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "U.S. Data Federation"
 deck: "Tools and best practices to support data exchange and collection efforts across government"
 permalink: /projects/us-data-federation
@@ -10,6 +10,7 @@ graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: indigo-warm-70
 graphic_inner_bg: orange-40v
 show_navbar: true
+skip_project_page: true
 github_repo: https://github.com/18F/data-federation-project/blob/master/README.md
 ---
 

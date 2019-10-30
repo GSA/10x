@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<section class="project-head color-black-warm-80 padding-bottom-0">
+  <div class="padding-x-2 padding-y-5 max-width-tablet-plus margin-x-auto tablet:padding-x-5">
+    <p class="breadcrumb"><a class="background-color-red-warm-50v" href="/projects">« <span>All projects</span></a></p>
+    <p class="phase phase-{{ page.phase }} margin-y-0"><span>Phase {{ page.phase }}</span></p>
+    <h1 class="margin-y-0 padding-top-0 font-weight-900 font-sans-13 tablet-plus:font-sans-17 letter-spacing-tightest line-height-smaller">
+      {{ page.title }}
+    </h1>
+    {% if page.description %}
+      <p class="font-weight-400 font-sans-9 line-height-small tablet-plus:font-sans-11 tablet-plus:line-height-base margin-top-2 tablet:margin-top-1 margin-bottom-0">{{ page.description }}</p>
+
+  {% endif %}
+  </div>
+</section>
+
+<section class="usa-body-content color-black-90 padding-top-1   padding-bottom-4 tablet-plus:padding-top-4 tablet-plus:padding-bottom-8 font-weight-300 background-color-0 clearfix">
+  <div class="padding-x-2 max-width-tablet-plus margin-x-auto line-height-large tablet:padding-x-5">
+
+    <article class="usa-body-content padding-x-0 max-width-tablet-plus margin-x-auto line-height-large color-90">
+
+      <div class="project">
+        {{ content }}
+      </div>
+
+    </article>
+  </div>
+</section>

@@ -20,6 +20,7 @@ layout: default
           </div>
         </div>
       </div>
+
   {% endif %}
   </div>
 </section>
@@ -28,19 +29,21 @@ layout: default
   <div class="padding-x-2 max-width-tablet-plus margin-x-auto line-height-large tablet:padding-x-5">
 
     <article class="usa-body-content padding-x-0 max-width-tablet-plus margin-x-auto line-height-large color-90">
-      {{ content }}
+      <div class="project">
+        {{ content }}
+      </div>
 
-      <h2 class="docs-h2">Projects</h2>
+      <h2 class="docs-h2">Other 10x Projects</h2>
 
       {% for project in site.projects %}
         {% if project.phase == 4 %}
-          {% include project-listing.html %}
+          {% include promo-project.html %}
         {% endif %}
       {% endfor %}
 
       {% for project in site.projects %}
         {% if project.phase == 3 %}
-          {% include project-listing.html %}
+          {% include promo-project.html %}
         {% endif %}
       {% endfor %}
 

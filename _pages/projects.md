@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: project-listing
 title: The projects
 permalink: /projects/
 description: "A list of the Phase Three and Phase Four projects in the 10x pipeline"

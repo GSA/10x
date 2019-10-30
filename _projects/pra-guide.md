@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Navigating the Paperwork Reduction Act"
 deck: "A clear introduction to the clearance process around the PRA"
 permalink: /projects/pra-guide
@@ -10,6 +10,7 @@ graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: indigo-warm-70
 graphic_inner_bg: orange-40v
 show_navbar: true
+skip_project_page: true
 github_repo: https://github.com/GSA/digitalgov-pra/blob/master/README.md
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: "Machine Learning as a Service (MLaaS)"
 deck: "The application of machine learning to improve customer service in government"
 permalink: /projects/machine-learning-service
@@ -10,6 +10,7 @@ graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: indigo-warm-70
 graphic_inner_bg: orange-40v
 show_navbar: true
+skip_project_page: true
 github_repo: https://github.com/18F/10x-MLaaS/blob/master/README.md
 ---
 
