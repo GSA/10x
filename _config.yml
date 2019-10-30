@@ -31,7 +31,7 @@ include: ["_pages", "_projects"]
 collections:
   projects:
     output: true
-    permalink: /:collection/:name
+    permalink: pretty
 
 # Build settings
 markdown: kramdown
