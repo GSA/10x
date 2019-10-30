@@ -21,7 +21,6 @@ url: "https://10x.gsa.gov" # the base hostname & protocol for your site, e.g. ht
 twitter_username: jekyllrb
 github_username:  jekyll
 optimize_css: false
-destination: _develop
 submission_form: 'https://docs.google.com/forms/d/e/1FAIpQLSdJJXKYxW8PERXJ_33oHB1JqUB4wBomHiwM8B7nnYdgyjW2bQ/viewform'
 submissions-live: true # this is the shut-off value for submissions. change to false to shut it off, true to open it up
 submission-deadline: ""
@@ -63,7 +62,7 @@ exclude:
 # Live site: `production`
 # Demo site: `demo`
 # Preview site: `preview`
-environment: preview
+# environment: preview
 
 # This will be set to false by Federalist for non-live site builds.
 google_analytics: true
