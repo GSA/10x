@@ -2,7 +2,7 @@
 layout: page
 title: About 10x
 permalink: /about-10x/
-description: 10x funds technology-focused ideas from federal employees with an aim to improve the experience all people have with our government.
+description: 10x funds, supports, and develops ideas from federal employees about how technology can improve the public’s experience with the government.
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-20
 graphic_middle_bg: yellow-20v
