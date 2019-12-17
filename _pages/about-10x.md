@@ -20,7 +20,7 @@ Our funding source is the Digital Services Fund: a portion of the Federal Citize
 
 <h2 class="docs-h2">Calls for ideas</h2>
 
-10x selected a round of projects to start at the Phase One Investigation Level in early August 2019. As always, we are accepting submissions on a rolling basis, and new ideas will be considered for the next round of funding during the next fiscal year.
+We accept ideas on a rolling basis from U.S. federal employees and evaluate them a few times a year. Submit your idea before January 30th to be considered for our next round of evaluations in early February.
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix margin-top-2 tablet:margin-top-3">
   <a href="https://feedback.gsa.gov/jfe/form/SV_1Im8dTPnjnV3HpP" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-5 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Submission form</span></a>
