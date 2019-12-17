@@ -18,7 +18,7 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-10x selected a round of projects to start at the Phase One Investigation Level in early August 2019. As always, we are accepting submissions on a rolling basis, and new ideas will be considered for the next round of funding during the next fiscal year.
+We accept ideas on a rolling basis from U.S. federal employees and evaluate them a few times a year. Submit your idea before January 30th to be considered for our next round of evaluations in early February.
 
 {% else %}
 
