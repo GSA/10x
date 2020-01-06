@@ -72,7 +72,7 @@ If you’d like help putting together an idea or have questions about what we’
 <h2 class="docs-h2">Examples of ideas 10x has funded</h2>
 
 <div class="usa-card">
-  <h3 class="margin-top-0">Federal Grantee Reporting</h3>
+  <h3 class="margin-top-0">Federal Grant Reporting</h3>
   <p>“This project will identify opportunities to improve the federal grant reporting process, by eliminating redundancies and creating efficiencies through improved technology — with the goal of generating a prototype that could be adapted across federal programs, thereby increasing federal grant programs’ efficacy to those being served as well as taxpayers’ return on investment.”</p>
 </div>
 
