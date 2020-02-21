@@ -18,7 +18,7 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-We accept ideas on a rolling basis from U.S. federal employees and evaluate them twice a year. The 10x team is in the process of evaluating ideas and will announce the selected projects in mid-to-late February. Our next round of evaluations is scheduled for later this Summer.
+We accept ideas on a rolling basis from U.S. federal employees and evaluate them twice a year. We completed the first round of evaluations for the fiscal year in early February. The second and final round of evaluations for the year will take place during the Summer of 2020--we will announce the exact date in the coming months.
 {% else %}
 
 <h2 class="docs-h2">Eligibility</h2>
