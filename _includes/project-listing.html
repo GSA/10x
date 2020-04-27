@@ -1,5 +1,10 @@
 <div class="project {% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
+  {% if project.graduated %}
+  <p class="phase phase-graduated">Phase {{ project.graduated }}</p>
+  {% endif %}
+  {% if project.phase %}
   <p class="phase phase-{{ project.phase }}">Phase {{ project.phase }}</p>
+  {% endif %}
   <h3 class="title"><a href="{{ project.github_repo }}" title="View this project on GitHub">{{ project.title }}</a></h3>
   <h4 class="deck">{{ project.deck }}</h4>
   <div class="content">
