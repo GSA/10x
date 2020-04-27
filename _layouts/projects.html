@@ -44,6 +44,12 @@ layout: default
         {% endif %}
       {% endfor %}
 
+      {% for project in site.projects %}
+        {% if project.phase == 2 %}
+          {% include project-listing.html %}
+        {% endif %}
+      {% endfor %}
+
     </article>
   </div>
 </section>
