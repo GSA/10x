@@ -4,7 +4,7 @@ title: "Site Scanning"
 deck: "Site Scanning"
 permalink: /projects/site-scanning
 description: "Sites"
-phase: 2
+phase: graduated
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: indigo-warm-70
