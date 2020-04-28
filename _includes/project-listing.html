@@ -1,6 +1,6 @@
 <div class="project {% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
-  {% if project.graduated %}
-  <p class="phase phase-graduated">Phase {{ project.graduated }}</p>
+  {% if project.graduated == true %}
+  <p class="phase phase-graduated">Graduated</p>
   {% endif %}
   {% if project.phase %}
   <p class="phase phase-{{ project.phase }}">Phase {{ project.phase }}</p>
