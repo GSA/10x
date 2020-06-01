@@ -405,6 +405,10 @@ article .project{
   .phase-4{
     @include u-color(orange, 50);
   }
+  }
+  .phase-graduated{
+    @include u-color(indigo-warm, 80);
+  }
   h3{
     @include u-padding-top(1);
     @include u-margin-y(0);
