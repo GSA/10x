@@ -13,3 +13,4 @@ show_navbar: true
 ---
 
 With the passage of the 21st Century IDEA and formal definition of the U.S. Web Design System (USWDS) as the GSA/Technology Transformation Services (TTS) Web Standard, agencies are increasingly turning to GSA’s TTS for guidance on implementing USWDS. We articulated principles, code, and guidance to help agencies meet their branding needs and bring their technology into compliance with this legislation.
+[Find out more about the Maturity Model >>](https://designsystem.digital.gov/maturity-model/)
