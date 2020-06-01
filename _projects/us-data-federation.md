@@ -4,7 +4,7 @@ title: "U.S. Data Federation"
 deck: "Reusable tools and repeatable practices to support data management, exchange, and use across government"
 permalink: /projects/us-data-federation
 description: "Reusable tools and repeatable practices to support data management, exchange, and use across government"
-phase: Graduated
+phase: graduated
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: indigo-warm-70
