@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Eligibility APIs Initiative
-deck: "Shared web services that could help states make eligibility determinations for human services programs"
+deck: "Shared web services that could help make eligibility determinations for human services programs"
 permalink: /projects/eligibility-apis
-description: "Shared web services that help states make eligibility determinations for human services programs"
+description: "Shared web services that could help make eligibility determinations for human services programs"
 phase: 4
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
@@ -13,4 +13,4 @@ show_navbar: true
 github_repo: https://github.com/18F/eligibility-rules-service/blob/master/README.md
 ---
 
-The Eligibility APIs Initiative is exploring how federal agencies could use a centralized web service, or _eligibility API_, to deliver their policy directly to states in a format they can ingest and utilize. We seek to pilot a new model where policy changes at the federal level will be made once, centrally, and propagate outward to states (rather than states each having to undertake a costly, redundant, time-consuming, error-prone process to update systems individually). We’re partnering with programs at the federal and state levels to understand their unique challenges and learn how to make this model viable across the wide variety of eligibility-based scenarios.
+The Eligibility APIs Initiative is exploring how to speed up eligibility decisions by streamlining a) how federal programs communicate policy to states and b) how states integrate eligibility policy into their systems. We’re piloting a model where eligibility rules are written collaboratively by policy and technical staff, in open-source, human readable code. These rules will be hosted as web services - APIs - that can connect to other systems. In some cases, where appropriate, programs could share logic to reduce effort, cost, and risk, and increase reusability and connectivity between each other. We’re partnering with programs at the federal and state levels to understand their unique challenges and learn how to make this model viable across the wide variety of eligibility-based scenarios.
