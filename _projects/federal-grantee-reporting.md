@@ -1,10 +1,10 @@
 ---
 layout: page
 title: "Federal Grant Reporting"
-deck: "Improving the experience of federal grant reporting"
+deck: "Making resolving federal grant findings easier by simplifying and automating access to single audit data"
 permalink: /projects/federal-grantee-reporting
-description:  TKTK
-phase: 3
+description:  "Making resolving federal grant findings easier by simplifying and automating access to single audit data"
+phase: graduated
 bg_color: white-cool-3
 graphic_outer_bg: indigo-warm-50v
 graphic_middle_bg: indigo-warm-70
@@ -13,8 +13,4 @@ show_navbar: true
 github_repo: https://github.com/18F/federal-grant-reporting/blob/master/README.md
 ---
 
-The 10x Federal Grant Reporting project is building a prospective shared solution for the single audit finding resolution process. This is a high-priority element of post-award financial grant reporting.
-
-The prototype dramatically streamlines the finding resolution process and gives agencies unprecedented visibility into single audit findings relevant to their shared grantees. This reduces costly and duplicative  efforts for agencies and grantees alike.
-
-The prototype also provides easier access to data, reducing the  multi-day process to less than five minutes. This stands to help auditors, grant managers, agency CFOs and grantees.
+Audit data for federal grants are trapped in PDFs and hidden within a dated and overly-complex search process. We created two tools, Distiller and the Audit Data Extractor, to quickly surface relevant audit data, reducing a multi-step—and potentially multi-day—process to minutes. Distiller makes it easy to access audit PDFs and relevant data through a streamlined intuitive interface that draws on data from the Federal Audit Clearinghouse and Beta.SAM.gov. The Audit Data Extractor Distiller reads Single Audit PDFs page by page with Natural Language Processing and extracts findings text and corrective action plans which can be viewed as a CSV. 
