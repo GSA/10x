@@ -33,12 +33,6 @@ layout: default
       <h2 class="docs-h2">Projects</h2>
 
       {% for project in site.projects %}
-        {% if project.phase == 'graduated' %}
-          {% include project-listing.html %}
-        {% endif %}
-      {% endfor %}
-
-      {% for project in site.projects %}
         {% if project.phase == 4 %}
           {% include project-listing.html %}
         {% endif %}
@@ -55,7 +49,13 @@ layout: default
           {% include project-listing.html %}
         {% endif %}
       {% endfor %}
-
+      
+      {% for project in site.projects %}
+        {% if project.phase == 'graduated' %}
+          {% include project-listing.html %}
+        {% endif %}
+      {% endfor %}
+      
     </article>
   </div>
 </section>
