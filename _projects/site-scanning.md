@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Spotlight"
-deck: "Spotlight"
+deck: "Highlighting the features contributing to any federal website's success"
 permalink: /projects/spotlight
 description: "Highlighting the features contributing to any federal website's success"
 phase: 4
