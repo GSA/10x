@@ -12,4 +12,4 @@ show_navbar: true
 
 <h2 class="docs-h2">Overview</h2>
 
-This page provides an overview of the current Phase 3 and Phase 4 projects in the 10x pipeline, as well as information about a subset of projects that have recently graduated. As our project pipeline grows we’ll add new projects to the list. If you have any additional questions you can reach out to [10x@gsa.gov](mailto:10x@gsa.gov).
+This page provides an overview of the current Phase 3 and Phase 4 projects in the 10x pipeline, as well as information about a subset of projects that have recently graduated. As our project pipeline grows, we’ll add new projects to the list. If you have any additional questions you can reach out to [10x@gsa.gov](mailto:10x@gsa.gov).
