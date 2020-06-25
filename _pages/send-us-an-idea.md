@@ -18,7 +18,7 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-We accept ideas on a rolling basis from U.S. federal employees and evaluate them twice a year. We completed the first round of evaluations for the fiscal year in early February. The second and final round of evaluations for the year will take place during the Summer of 2020--we will announce the exact date in the coming months.
+We accept ideas on a rolling basis from U.S. federal employees and evaluate them twice a year. Submit your idea before August 5, 2020 to be considered for our next round of evaluations.
 {% else %}
 
 <h2 class="docs-h2">Eligibility</h2>
