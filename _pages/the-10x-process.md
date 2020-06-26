@@ -54,7 +54,7 @@ Your idea will be evaluated based on the following 3 criteria, each given equal 
 
 <div class="usa-card border-color-orange-40v">
   <h3 class="margin-top-0">Identify a problem</h3>
-  <p>Point to the pain. We start by gathering ideas from federal civil servants. These proposals are intentionally short — only about 2–3 sentences — to stay focused on a specific, concrete problem. If your idea is selected, 10x will notify you and will hire a small team for Phase 1 to further evaluate the idea.</p>
+  <p>Point to the pain. We start by gathering ideas from federal civil servants. These proposals are intentionally short — only about 2–3 sentences (no more than 1000 characters) — to stay focused on a specific, concrete problem. If your idea is selected, 10x will notify you and will hire a small team for Phase 1 to further evaluate the idea.</p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-30">
