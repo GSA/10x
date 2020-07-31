@@ -58,22 +58,22 @@ Your idea will be evaluated based on the following 3 criteria, each given equal 
 </div>
 
 <div class="usa-card border-color-indigo-warm-30">
-  <h3 class="margin-top-0">Phase 1: Investigation — $20,000</h3>
+  <h3 class="margin-top-0">Phase 1: Investigation</h3>
   <p>Think it through. Accepted ideas spend 2-3 weeks exploring the idea to define what it would take to be successful — uncovering risks, roadblocks, and opportunities. At this point, people who submit ideas can act as subject matter experts for a research and strategy team dedicated to quickly evaluating the idea. Only the most promising ideas will proceed into Phase 2. </p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-40v">
-  <h3 class="margin-top-0">Phase 2: Discovery — $175,000</h3>
+  <h3 class="margin-top-0">Phase 2: Discovery</h3>
   <p>Go deep. Gain a detailed understanding about the industry, problem, market fit, finances, timeline, regulatory environment, and how to scale. Analyze what could go right and wrong, and create an initial strategy to address these issues. For this and later phases, you are welcome to work alongside the team that is developing this idea. </p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-60">
-  <h3 class="margin-top-0">Phase 3: Development — $500,000</h3>
+  <h3 class="margin-top-0">Phase 3: Development</h3>
   <p>Build it out and plan for the future. Develop a functional minimum viable product with at least one active customer. Create a product roadmap tied to a customer acquisition strategy. Provide a data-backed market analysis. Estimate the cost and effort required to continue sustainably building and maintaining the product over the long-term.</p>
 </div>
 
 <div class="usa-card border-color-indigo-warm-80">
-  <h3 class="margin-top-0">Phase 4: Scale — Up to $1.28 million</h3>
+  <h3 class="margin-top-0">Phase 4: Scale</h3>
   <p>Bring the product or service to the largest possible audience.</p>
 </div>
 
