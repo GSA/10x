@@ -43,8 +43,6 @@ Your idea will be evaluated based on the following 3 criteria, each given equal 
     <strong>Impact.</strong> Does solving this problem have an important effect on the federal government or the public?</li>
 </ul>
 
-**Please note: for the August 2020 idea evaluations, 10x is particularly interested in receiving ideas within the areas of *Disaster Management Efforts*, *Direct Public Services*, and *Diversity, Inclusion, and Accessibility*.** For more information, please see the [Send us an idea](https://10x.gsa.gov/send-us-an-idea/) page. 
-
 <p>If selected, 10x starts its funding small — only magnifying its investment as an idea develops, step-by-step, into a sustainable project. This iterative approach, based on modern technology and investment practices, ensures that the best ideas turn into the best government products and services — funded with fewer taxpayer dollars.</p>
 
 <p>10x projects are managed and staffed by project teams within the <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Technology Transformation Service</a> department of the <a href="https://www.gsa.gov/">General Services Administration</a>.</p>
