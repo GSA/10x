@@ -20,7 +20,7 @@ Our funding source is the Digital Services Fund: a portion of the Federal Citize
 
 <h2 class="docs-h2">Calls for ideas</h2>
 
-We are in the process of evaluating submissions for FY20 Round 2 funding. Thank you to everyone who submitted ideas to 10x. For those who submitted ideas prior by August 5: we will let you know whether your idea was or was not selected for this round by late August. Thank you for taking the time and effort to support government innovation!
+We are in the process of evaluating submissions for FY20 Round 2 funding. Thank you to everyone who submitted ideas to 10x. For those who submitted ideas by August 5: we will let you know whether your idea was or was not selected for this round by late August. Thank you for taking the time and effort to support government innovation!
 Our submission form is still open, but all new idea submissions (beginning August 6) will be evaluated as part of our next round of idea evaluations, currently slated for Winter 2021. 
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix margin-top-2 tablet:margin-top-3">
