@@ -18,7 +18,8 @@ show_navbar: true
 
 <h2 class="docs-h2">Eligibility</h2>
 
-We accept ideas on a rolling basis from U.S. federal employees and evaluate them twice a year. Submit your idea before August 5, 2020 to be considered for our next round of evaluations.
+We are in the process of evaluating submissions for FY20 Round 2 funding. Thank you to everyone who submitted ideas to 10x. For those who submitted ideas prior by August 5: we will let you know whether your idea was or was not selected for this round by late August. Thank you for taking the time and effort to support government innovation!
+Our submission form is still open, but all new idea submissions (beginning August 6) will be evaluated as part of our next round of idea evaluations, currently slated for Winter 2021. 
 {% else %}
 
 <h2 class="docs-h2">Eligibility</h2>
@@ -63,12 +64,6 @@ We accept ideas on a rolling basis from U.S. federal employees and evaluate them
     <img class="display-line-block width-2 tablet:width-3 margin-right-p5 position-relative bottom-2px vertical-align-middle" src="{{ '/assets/img/check.svg' | relative_url }}" alt="check">
     Be as clear and descriptive as possible.</li>
 </ul>
-
-**For our current round of idea evaluations, 10x is particularly interested in expanding our investment portfolio to include ideas related to:**
-* **Disaster management efforts.** These ideas could include problems or opportunities for improving the management of resources that are critical to the government’s handling of emergencies (preparedness, resilience, response, mitigation, and recovery). Areas of interest include how the government might more effectively address the COVID-19 health crisis and ensuing economic damage, as well as natural disasters.
-* **Direct public services.** These are digital services for which the primary customer (or end user) is a member of the public, as opposed to agencies, government systems, or government employees. 
-* **Diversity, inclusion, and accessibility.** 10x is particularly interested in ideas that further diversity, inclusion and accessibility for all members of the public. Areas of interest could include expanding access to government services for populations that may be traditionally underserved, and/or efforts to ensure equity of service across diverse segments of the population.
-In your submission, we also welcome some initial thoughts on how digital services (software, data, and guidance) can help solve the problem at-hand.
 
 <h2 class="docs-h2">Need some help?</h2>
 
