@@ -20,7 +20,8 @@ Our funding source is the Digital Services Fund: a portion of the Federal Citize
 
 <h2 class="docs-h2">Calls for ideas</h2>
 
-We accept ideas on a rolling basis from U.S. federal employees and evaluate them twice a year. Submit your idea before August 5, 2020 to be considered for our next round of evaluations.
+We are in the process of evaluating submissions for FY20 Round 2 funding. Thank you to everyone who submitted ideas to 10x. For those who submitted ideas by August 5: we will let you know whether your idea was or was not selected for this round by late August. Thank you for taking the time and effort to support government innovation!
+Our submission form is still open, but all new idea submissions (beginning August 6) will be evaluated as part of our next round of idea evaluations, currently slated for Winter 2021. 
 
 <div class="g-row tablet:display-flex tablet:align-items-center clearfix margin-top-2 tablet:margin-top-3">
   <a href="https://feedback.gsa.gov/jfe/form/SV_1Im8dTPnjnV3HpP" class="g-col tablet:g-col-auto background-color-red-warm-50v color-white padding-2 border-radius-small tablet:margin-right-5 text-decoration-none hover:background-color-indigo-warm-50v text-align-center margin-top-2 tablet:margin-top-0"><strong class="tablet:font-sans-8">Pitch an idea</strong><span class="font-sans-6 font-weight-300 display-block color-white">using our Submission form</span></a>
