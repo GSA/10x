@@ -35,11 +35,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "npx react-scripts build",
+    "test": "npx react-scripts test",
     "test:coverage": "npm test -- --coverage --watchAll=false",
     "federalist": "npm run federalist:build && npm run federalist:copy",
-    "federalist:build": "PUBLIC_URL=$BASEURL react-script build",
+    "federalist:build": "PUBLIC_URL=$BASEURL npx react-script build",
     "federalist:copy": "mkdir -p _site && rm -rf _site/* && cp -r build/* _site/"
   },
   "eslintConfig": {
