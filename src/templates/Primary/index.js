@@ -8,10 +8,8 @@ import PrimaryNav from "components/PrimaryNav";
 import Logo from "components/Logo";
 import { getMenuList } from "app/MenuModule";
 import Mdx from "features/Mdx";
-import scrollToTop from "utils/scrollToTop";
 
 const Primary = ({ children }) => {
-  scrollToTop();
   const dispatch = useDispatch();
   const page = useSelector((state) => state.content.page);
   useEffect(() => {
