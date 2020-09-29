@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./routes";
 import store from "./app";
 import * as serviceWorker from "./serviceWorker";
@@ -11,18 +11,12 @@ import OnPathChange from "utils/onPathChange";
 import "styles/index.scss";
 
 registerFontAwesome();
-const mainBranch = "/10x-website";
 
-let Router = BrowserRouter;
 let basename = process.env.PUBLIC_URL;
 
 if (process.env.NODE_ENV !== "production") {
   const axe = require("react-axe");
   axe(React, ReactDOM, 1000);
-}
-
-if (!process.env.PUBLIC_URL.includes(mainBranch)) {
-  Router = HashRouter;
 }
 
 ReactDOM.render(
