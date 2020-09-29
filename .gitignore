@@ -1,15 +1,24 @@
-_site/
-_develop/assets
-_develop/designs
-_develop/**/*.js
-_develop/**/*.xml
-_develop/**/*.json
-_develop/**/*.css
-_develop/**/*.md
-_develop/**/*.html
-.sass-cache/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
 .DS_Store
-node_modules/
-*.gz
-npm-debug.log
-.jekyll-metadata
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env

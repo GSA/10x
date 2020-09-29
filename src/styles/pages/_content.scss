@@ -1,0 +1,136 @@
+.TxContent {
+  @include u-padding-top(2);
+  @include u-color("primary-light");
+  @include u-font("sans", "sm");
+  @include at-media("tablet") {
+    @include u-padding-top(4);
+    @include u-font("sans", "lg");
+  }
+
+  p {
+    @include u-margin-y(2);
+    line-height: 1.5 !important;
+    @include at-media("tablet") {
+      @include u-margin-y(4);
+    }
+  }
+
+  a {
+    @include u-color("ink");
+    @include u-underline("base-lighter");
+    &:hover {
+      @include u-color("ink");
+      @include u-underline("ink");
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include u-color("ink");
+  }
+  h1 {
+    @include u-margin(0);
+
+    @include u-font("sans", 13);
+    font-weight: 900;
+    letter-spacing: -2px;
+    @include at-media("tablet") {
+      @include u-font("sans", 17);
+    }
+  }
+  h2 {
+    border-top: 4px solid;
+    @include u-border-color("ink");
+    @include u-padding-top(2);
+  }
+  h3 {
+    @include u-margin-bottom(1);
+  }
+  ul,
+  ol {
+    padding: 0;
+    margin: 0;
+
+    @include u-margin-bottom(2);
+    @include at-media("tablet") {
+      @include u-margin-bottom(4);
+    }
+    list-style: none;
+    li {
+      display: flex;
+      @include u-padding-y(1.5);
+      border-top: 1px solid;
+      @include u-border-color("primary-lightest");
+      @include u-color("ink");
+    }
+  }
+
+  ul {
+    li {
+      &:before {
+        display: inline-block;
+        @include u-margin-right(1);
+        font-family: "Font Awesome 5 Free";
+        content: "\f058";
+        font-weight: 900;
+      }
+    }
+  }
+  blockquote {
+    margin: 0;
+    padding: 0;
+    p {
+      margin: 0;
+      padding: 0;
+      @include u-font("sans", "lg");
+      @include at-media("tablet") {
+        @include u-font("sans", "xl");
+      }
+    }
+  }
+  hr {
+    height: 4px;
+    @include u-margin-y(6);
+    @include at-media("desktop") {
+      @include u-margin-y(8);
+    }
+    @include u-bg("primary-lightest");
+    border: none;
+    outline: none;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .usa-button {
+    border-radius: 2px;
+    @include u-padding-y(2);
+    @include u-padding-x(3);
+    @include u-font("sans", "md");
+    font-weight: 700;
+    line-height: 1.4;
+    @include u-color("white");
+    @include u-bg("accent-warm");
+    box-shadow: none;
+    border: none;
+
+    @include at-media("tablet") {
+      @include u-font("sans", "lg");
+    }
+    span {
+      @include u-font("sans", "md");
+      font-weight: 100;
+    }
+    &:hover,
+    &:focus {
+      @include u-bg("accent-cool");
+      @include u-color("white");
+      box-shadow: none;
+
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,164 @@
+backend:
+  name: github
+  repo: 10xWebsite/10x-content
+  branch: main
+
+media_folder: images
+public_folder: images
+
+collections:
+  - name: settings
+    extension: json
+    publish: false
+    label: Site Settings
+    label_singular: Site Settings
+    folder: settings
+    create: false
+    delete: false
+    preview_path: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Description
+        name: description
+        widget: string
+      - label: Author
+        name: author
+        widget: string
+      - name: searchgov
+        label: Search.gov Settings
+        widget: object
+        fields:
+          - name: endpoint
+            label: Endpoint
+            widget: string
+          - name: affiliate
+            label: Affiliate
+            widget: string
+          - name: access_key
+            label: Access Key
+            widget: string
+          - name: inline
+            label: inline
+            widget: boolean
+            default: true
+  - name: menu
+    extension: json
+    label: Menus
+    label_singular: Menu
+    folder: menus
+    create: true
+    delete: true
+    editor:
+      preview: false
+    slug: "{{key}}"
+    fields:
+      - name: key
+        label: key
+        widget: string
+      - name: items
+        label: Items
+        widget: list
+        fields:
+          - label: Text
+            name: text
+            widget: string
+          - label: Link
+            name: link
+            widget: string
+          - label: Description
+            name: desc
+            width: string
+          - label: img
+            name: img
+            widget: image
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - label: Text
+                name: text
+                widget: string
+              - label: Link
+                name: link
+                widget: string
+  - name: page
+    extension: json
+    label: Pages
+    label_singular: Page
+    folder: content/page
+    create: true
+    delete: true
+    slug: "{{title}}"
+    preview_path: "{{slug}}"
+    identifier_field: title
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Hero Content",
+          name: "hero",
+          widget: "markdown",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: project
+    extension: json
+    label: Projects
+    label_singular: Project
+    folder: content/project
+    create: true
+    delete: true
+    slug: "{{title}}"
+    preview_path: "{{slug}}"
+    identifier_field: title
+    fields:
+      - label: "Project Title"
+        name: "title"
+        widget: "string"
+      - label: "Headline"
+        name: "subtitle"
+        widget: "string"
+      - label: "Type"
+        name: "projectType"
+        widget: "select"
+        options: ["Innovative", "Transformational", "Incremental"]
+      - label: "Project Link"
+        name: "projectLink"
+        widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+      - label: "Phase"
+        name: "phaseData"
+        widget: "object"
+        collapsed: true
+        fields:
+          - label: "Phase"
+            name: "phase"
+            widget: "select"
+            options: ["1", "2", "3", "4"]
+          - label: "Status"
+            name: "status"
+            widget: "select"
+            options:
+              [
+                { label: "In Progress", value: "1" },
+                { label: "Done", value: "2" },
+                { label: "Graduated", value: "3" },
+              ]
+            default: "InProgress"
+          - label: "Message"
+            name: "message"
+            hint: "Override the default Phase status message."
+            widget: "string"
+            required: false
+      - label: "Topics"
+        name: "topics"
+        widget: "string"
+        hint: "Separate tag values by comma."
+      - label: "Body"
+        name: "body"
+        widget: "markdown"

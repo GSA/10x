@@ -1,0 +1,137 @@
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.8.0
+----------------------------------------
+COLOR SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS color tokens in the documentation:
+https://designsystem.digital.gov/design-tokens/color
+----------------------------------------
+*/
+
+/*
+----------------------------------------
+Theme palette colors
+----------------------------------------
+*/
+
+// Base colors
+$theme-color-base-family: "gray-cool";
+
+$theme-color-base-lightest: #f5f6f7;
+$theme-color-base-lighter: #919191;
+$theme-color-base-light: "gray-cool-30";
+$theme-color-base: "gray-cool-50";
+$theme-color-base-dark: "gray-cool-60";
+$theme-color-base-darker: #2b2b27;
+$theme-color-base-darkest: #292a2b;
+$theme-color-base-ink: #171717;
+
+// Primary colors
+$theme-color-primary-family: #000000;
+$theme-color-primary-lightest: #c9c9c9;
+$theme-color-primary-lighter: #757575;
+$theme-color-primary-light: #454545;
+$theme-color-primary: #2e2e2e;
+$theme-color-primary-vivid: #2e2e2e;
+$theme-color-primary-dark: #1c1c1b;
+$theme-color-primary-darker: #000000;
+$theme-color-primary-darkest: false;
+
+// Secondary colors
+$theme-color-secondary-family: "red";
+$theme-color-secondary-lightest: false;
+$theme-color-secondary-lighter: "red-cool-10";
+$theme-color-secondary-light: "red-30";
+$theme-color-secondary: "red-50";
+$theme-color-secondary-vivid: "red-cool-50v";
+$theme-color-secondary-dark: "red-60v";
+$theme-color-secondary-darker: "red-70v";
+$theme-color-secondary-darkest: false;
+
+// Accent warm colors
+$theme-color-accent-warm-family: "orange";
+$theme-color-accent-warm-lightest: #edc730;
+$theme-color-accent-warm-lighter: #faaf00;
+$theme-color-accent-warm-light: #ff7b0f;
+$theme-color-accent-warm: #d93f04;
+$theme-color-accent-warm-dark: #c84a23;
+$theme-color-accent-warm-darker: "orange-60";
+$theme-color-accent-warm-darkest: false;
+
+// Accent cool colors
+$theme-color-accent-cool-family: "blue-cool";
+$theme-color-accent-cool-lightest: false;
+$theme-color-accent-cool-lighter: #c9c2f2;
+$theme-color-accent-cool-light: #b1a7eb;
+$theme-color-accent-cool: #7560eb;
+$theme-color-accent-cool-dark: "blue-cool-40v";
+$theme-color-accent-cool-darker: #433a7a;
+$theme-color-accent-cool-darkest: #29263b;
+
+/*
+----------------------------------------
+State palette colors
+----------------------------------------
+*/
+
+// Error colors
+$theme-color-error-family: "red-warm";
+$theme-color-error-lighter: "red-warm-10";
+$theme-color-error-light: "red-warm-30v";
+$theme-color-error: "red-warm-50v";
+$theme-color-error-dark: "red-60v";
+$theme-color-error-darker: "red-70";
+
+// Warning colors
+$theme-color-warning-family: "gold";
+$theme-color-warning-lighter: "yellow-5";
+$theme-color-warning-light: "yellow-10v";
+$theme-color-warning: "gold-20v";
+$theme-color-warning-dark: "gold-30v";
+$theme-color-warning-darker: "gold-50v";
+
+// Success colors
+$theme-color-success-family: "green-cool";
+$theme-color-success-lighter: "green-cool-5";
+$theme-color-success-light: "green-cool-20v";
+$theme-color-success: "green-cool-40v";
+$theme-color-success-dark: "green-cool-50";
+$theme-color-success-darker: "green-cool-60";
+
+// Info colors
+$theme-color-info-family: "cyan";
+$theme-color-info-lighter: "cyan-5";
+$theme-color-info-light: "cyan-20";
+$theme-color-info: "cyan-30v";
+$theme-color-info-dark: "cyan-40v";
+$theme-color-info-darker: "blue-cool-60";
+
+// Disabled colors
+$theme-color-disabled-family: "gray";
+$theme-color-disabled-light: "gray-10";
+$theme-color-disabled: "gray-20";
+$theme-color-disabled-dark: "gray-30";
+
+/*
+----------------------------------------
+General colors
+----------------------------------------
+*/
+
+// Links
+$theme-link-color: "primary";
+$theme-link-visited-color: "violet-70v";
+$theme-link-hover-color: "primary-dark";
+$theme-link-active-color: "primary-darker";
+$theme-link-reverse-color: "base-lighter";
+$theme-link-reverse-hover-color: "base-lightest";
+$theme-link-reverse-active-color: "white";
