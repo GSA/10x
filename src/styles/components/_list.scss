@@ -14,11 +14,6 @@
       border-top: 1px solid;
       @include u-border-color("primary-lightest");
       @include u-color("ink");
-
-      &:last-child {
-        border-bottom: 1px solid;
-        @include u-border-color("primary-lightest");
-      }
     }
   }
 
@@ -28,7 +23,7 @@
         display: inline-block;
         @include u-margin-right(1);
         font-family: "Font Awesome 5 Free";
-        content: "\f058";
+        content: $fa-var-check-circle;
         font-weight: 900;
       }
     }

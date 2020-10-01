@@ -69,17 +69,6 @@
     }
   }
 
-  ul {
-    li {
-      &:before {
-        display: inline-block;
-        @include u-margin-right(1);
-        font-family: "Font Awesome 5 Free";
-        content: "\f058";
-        font-weight: 900;
-      }
-    }
-  }
   blockquote {
     margin: 0;
     padding: 0;

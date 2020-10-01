@@ -8,10 +8,13 @@ import Date from "components/Date";
 import { Grid, Row, Col } from "components/Grid";
 import Icon from "components/Icon";
 import Image from "components/Image";
+import List from "components/List";
 import Select from "components/Select";
 import ContentList from "features/ContentList";
 import LocationMenu from "features/LocationMenu";
 import ProjectList from "features/ProjectList";
+
+const Span = ({ children, ...props }) => <MDX {...props}>{children}</MDX>;
 
 export const shortcodes = {
   Button,
@@ -22,9 +25,11 @@ export const shortcodes = {
   Icon,
   Image,
   Link,
+  List,
   Row,
   Col,
   Select,
+  Span,
   ContentList,
   LocationMenu,
   ProjectList,
