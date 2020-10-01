@@ -14,7 +14,6 @@ const Card = ({
   variant,
   flat,
   color,
-  bg,
 }) => {
   return (
     <div
