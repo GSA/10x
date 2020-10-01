@@ -14,6 +14,7 @@ const Card = ({
   variant,
   flat,
   color,
+  bg,
 }) => {
   return (
     <div
@@ -86,6 +87,8 @@ Card.propTypes = {
   flat: PropTypes.bool,
   /** child node */
   children: PropTypes.node,
+  /** border color variant */
+  color: PropTypes.string,
 };
 
 export default Card;

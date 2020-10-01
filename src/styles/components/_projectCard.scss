@@ -4,11 +4,13 @@
   break-inside: avoid;
 
   &__link {
+    @include u-color("ink");
     .usa-card__container {
       transition: box-shadow 0.2s;
     }
     text-decoration: none;
     &:hover {
+      text-decoration: none;
       .usa-card__container {
         box-shadow: 0 0 0 6px #{color("accent-warm-dark")} inset;
         cursor: pointer;
@@ -16,15 +18,20 @@
     }
     &:active:focus,
     &:hover:active:focus {
+      text-decoration: none;
       .usa-card__container {
         box-shadow: 0 0 0 6px #{color("accent-cool")} inset;
       }
     }
     &:focus,
     &:hover:focus {
+      text-decoration: none;
       .usa-card__container {
         box-shadow: 0 0 0 6px #{color("accent-warm-lighter")} inset;
       }
+    }
+    &:visited {
+      @include u-color("ink");
     }
   }
   .usa-card {

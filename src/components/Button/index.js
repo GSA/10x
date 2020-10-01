@@ -29,7 +29,7 @@ export const Button = ({
   const Node =
     onClick || type
       ? nodes["b"]
-      : external || url.includes("://")
+      : external || (url ? url.includes("://") : false)
       ? nodes["a"]
       : nodes["link"];
   return (
@@ -39,11 +39,13 @@ export const Button = ({
       onClick={onClick}
       {...props}
       className={classnames({
-        "usa-button": true,
-        [`usa-button--${color}`]: color,
-        [`usa-button--${color}-${variant}`]: variant,
+        "usa-button": variant !== "link",
+        [`usa-button--${color}`]: color && variant !== "link",
+        [`usa-button--${color}-${variant}`]:
+          color && variant && variant !== "link",
         "usa-button--fullwidth": fullwidth,
         "usa-button--raised": raised,
+        "usa-button--unstyled": variant === "link",
         [className]: className,
       })}
     >
