@@ -9,6 +9,8 @@ const YAML = require("yaml");
 
 const excludedPathTypes = ["page"];
 
+const ROOT_PATH = path.join(__dirname, "/public");
+
 const parseHeading = (item, data = []) => {
   data.push({ text: item.value, url: `#${item.data.id}` });
 };
@@ -44,7 +46,9 @@ const remarkToc = markdown()
  *
  */
 const getConfig = () =>
-  YAML.parse(fs.readFileSync(path.join(__dirname, "/config.yml"), "utf-8"));
+  YAML.parse(
+    fs.readFileSync(ROOT_PATH, "/admin/config.yml"), "utf-8")
+  );
 
 /**
  * For a given filename, append the data and resave the file, the return the appended data
@@ -127,7 +131,7 @@ const indexContent = () => {
   );
   // iterate over the specified Content types
   collections.forEach((collection) => {
-    const collectionPath = path.join(__dirname, collection.folder);
+    const collectionPath = path.join(ROOT_PATH, collection.folder);
     fs.ensureDirSync(collectionPath);
     console.log("!!! collection");
     const contents = fs
@@ -163,7 +167,7 @@ const indexMenus = () => {
   const config = getConfig();
   const menus = config.collections.filter((col) => col.folder.includes("menu"));
   menus.forEach((menu) => {
-    const menuPath = path.join(__dirname, menu.folder);
+    const menuPath = path.join(ROOT_PATH, menu.folder);
     fs.ensureDirSync(menuPath);
 
     const contents = fs
@@ -184,22 +188,5 @@ const indexMenus = () => {
   });
 };
 
-const buildContent = () => {
-  const build = path.join(__dirname, "build");
-  const paths = {
-    content: path.join(__dirname, "content"),
-    images: path.join(__dirname, "images"),
-    menus: path.join(__dirname, "menus"),
-    settings: path.join(__dirname, "settings"),
-  };
-  fs.removeSync(build);
-
-  Object.entries(paths).forEach(([key, value]) => {
-    fs.ensureDirSync(value);
-    fs.copySync(value, path.join(build, key));
-  });
-};
-
 indexContent();
 indexMenus();
-buildContent();
