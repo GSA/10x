@@ -1,7 +1,6 @@
 backend:
   name: github
   repo: GSA/10x
-  base_url: /
   auth_endpoint: external/auth/github
   branch: content
   preview_context: federalist/build
