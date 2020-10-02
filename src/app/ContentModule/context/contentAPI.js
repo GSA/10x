@@ -3,7 +3,7 @@ const timeout = (t = 1000) => {
   return new Promise((resolve) => setTimeout(resolve, t));
 };
 
-const ROOT_URL = "";
+const ROOT_URL = process.env.PUBLIC_URL;
 export const getAllByContentType = async (props) => {
   await timeout();
   const { type } = props;
