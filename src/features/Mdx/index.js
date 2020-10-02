@@ -14,8 +14,6 @@ import ContentList from "features/ContentList";
 import LocationMenu from "features/LocationMenu";
 import ProjectList from "features/ProjectList";
 
-const Span = ({ children, ...props }) => <MDX {...props}>{children}</MDX>;
-
 export const shortcodes = {
   Button,
   Card,
@@ -29,7 +27,6 @@ export const shortcodes = {
   Row,
   Col,
   Select,
-  Span,
   ContentList,
   LocationMenu,
   ProjectList,

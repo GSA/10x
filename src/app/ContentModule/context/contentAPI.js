@@ -3,8 +3,7 @@ const timeout = (t = 1000) => {
   return new Promise((resolve) => setTimeout(resolve, t));
 };
 
-const ROOT_URL = "https://10xwebsite.github.io/10x-content";
-// const ROOT_URL = "https://raw.githubusercontent.com/10xWebsite/10x-content/main";
+const ROOT_URL = "";
 export const getAllByContentType = async (props) => {
   await timeout();
   const { type } = props;
