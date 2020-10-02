@@ -41,13 +41,14 @@ const remarkToc = markdown()
   .use(slug)
   .use(slugLink)
   .use(extractToc, { keys: ["data"] });
+
 /**
  * Gets the config file
  *
  */
 const getConfig = () =>
   YAML.parse(
-    fs.readFileSync(ROOT_PATH, "/admin/config.yml"), "utf-8")
+    fs.readFileSync(path.join(ROOT_PATH, "/admin/config.yml"), "utf-8")
   );
 
 /**
@@ -133,19 +134,16 @@ const indexContent = () => {
   collections.forEach((collection) => {
     const collectionPath = path.join(ROOT_PATH, collection.folder);
     fs.ensureDirSync(collectionPath);
-    console.log("!!! collection");
     const contents = fs
       .readdirSync(collectionPath)
       .filter(
         (filename) => filename !== "index.json" && filename.includes(".json")
       );
-    console.log("!!! contents");
     const contentIndex = contents.map((filename) => {
       const data = addContentMetaData(filename, collectionPath, collection);
       fs.outputJSONSync(path.join(collectionPath, filename), data);
       return data;
     });
-    console.log("!!! contentIndex");
 
     const taxonomyIndex = contentIndex.reduce(indexTaxonomies, []);
 
