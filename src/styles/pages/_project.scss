@@ -12,13 +12,6 @@
     h4 {
       @include u-margin-y(2);
     }
-    ol,
-    ul {
-      li:last-child {
-        border-bottom: 1px solid;
-        @include u-border-color("primary-lightest");
-      }
-    }
     &__link {
       a {
         @include u-color("accent-cool");

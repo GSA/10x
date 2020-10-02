@@ -71,6 +71,7 @@
 
 .usa-nav-open {
   width: auto;
+  box-shadow: none;
   @include at-media("desktop") {
     display: none;
   }
@@ -78,6 +79,7 @@
   @include u-bg("accent-cool-darker");
   &:hover {
     @include u-bg("accent-warm");
+    box-shadow: none;
   }
 }
 
