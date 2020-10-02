@@ -3,7 +3,7 @@ backend:
   repo: GSA/10x
   base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
-  branch: develop
+  branch: content
   preview_context: federalist/build
 
 media_folder: images
