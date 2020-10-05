@@ -197,15 +197,7 @@ const copyContent = () => {
   fs.copySync(CMS_PATH, DEST_PATH);
 };
 
-const fedConfig = () => {
-  const configPath = path.join(__dirname, "_config.yml");
-  if (fs.existsSync(configPath)) {
-    const data = fs.readFileSync(configPath);
-    console.log("CONFIG-YAML");
-    console.log(YAML.parse(data));
-  }
-};
-fedConfig();
+console.log(process.env);
 copyContent();
 indexContent();
 indexMenus();
