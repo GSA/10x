@@ -138,8 +138,8 @@ const indexContent = () => {
   );
   // iterate over the specified Content types
   collections.forEach((collection) => {
-    const folder = collection.folder.replace(`${CMS_KEY}/`, `${DEST_KEY}/`);
-    const collectionPath = path.join(CMS_PATH, folder);
+    const folder = collection.folder.replace(`${CMS_KEY}/`, "");
+    const collectionPath = path.join(DEST_PATH, folder);
     fs.ensureDirSync(collectionPath);
     const contents = fs
       .readdirSync(collectionPath)
@@ -151,7 +151,7 @@ const indexContent = () => {
       fs.outputJSONSync(path.join(collectionPath, filename), data);
       return data;
     });
-
+    console.log(collectionPath);
     const taxonomyIndex = contentIndex.reduce(indexTaxonomies, []);
 
     fs.outputJSONSync(path.join(collectionPath, "index.json"), contentIndex);
@@ -172,8 +172,8 @@ const indexMenus = () => {
   const config = getConfig();
   const menus = config.collections.filter((col) => col.folder.includes("menu"));
   menus.forEach((menu) => {
-    const folder = menu.folder.replace(`${CMS_KEY}/`, `${DEST_KEY}/`);
-    const menuPath = path.join(CMS_PATH, folder);
+    const folder = menu.folder.replace(`${CMS_KEY}/`, "");
+    const menuPath = path.join(DEST_PATH, folder);
     fs.ensureDirSync(menuPath);
 
     const contents = fs
@@ -181,7 +181,6 @@ const indexMenus = () => {
       .filter(
         (filename) => filename.includes(".json") && filename !== "index.json"
       );
-    console.log(`${contents.length} menus found!`);
     const menuIndex = contents.map((filename) => {
       const file = fs.readFileSync(path.join(menuPath, filename), "utf-8");
       if (file) {

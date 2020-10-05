@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 .env
 
-./public/content
-./public/settings
-./public/menus
+/public/content
+/public/settings
+/public/menus
