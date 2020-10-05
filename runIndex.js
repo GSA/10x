@@ -198,9 +198,12 @@ const copyContent = () => {
 };
 
 const fedConfig = () => {
-  const data = fs.readFileSync(path.join(__dirname, "_config.yml"));
-  console.log("CONFIG-YAML");
-  console.log(YAML.parse(data));
+  const configPath = path.join(__dirname, "_config.yml");
+  if (fs.existsSync(configPath)) {
+    const data = fs.readFileSync(configPath);
+    console.log("CONFIG-YAML");
+    console.log(YAML.parse(data));
+  }
 };
 fedConfig();
 copyContent();
