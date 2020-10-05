@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import Routes from "./routes";
 import store from "./app";
 import * as serviceWorker from "./serviceWorker";
@@ -12,9 +12,12 @@ import "styles/index.scss";
 
 registerFontAwesome();
 
-if (process.env.NODE_ENV !== "production") {
+let Router = BrowserRouter;
+
+if (process.env.BRANCH !== "main") {
   const axe = require("react-axe");
   axe(React, ReactDOM, 1000);
+  Router = HashRouter;
 }
 
 ReactDOM.render(
