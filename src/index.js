@@ -12,8 +12,6 @@ import "styles/index.scss";
 
 registerFontAwesome();
 
-let basename = process.env.PUBLIC_URL;
-
 if (process.env.NODE_ENV !== "production") {
   const axe = require("react-axe");
   axe(React, ReactDOM, 1000);
@@ -21,7 +19,7 @@ if (process.env.NODE_ENV !== "production") {
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename={basename}>
+    <Router>
       <Provider store={store}>
         <OnPathChange />
         <Primary>
