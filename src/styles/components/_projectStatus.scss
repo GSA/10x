@@ -25,6 +25,7 @@ $c-last: color("accent-cool-darker");
       left: 0;
       bottom: 0;
       background: linear-gradient(112deg, #{$c-first} 0%, #{$c-last} 100%);
+      z-index: 1;
     }
     &:after {
       display: inline-block;
