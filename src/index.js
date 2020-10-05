@@ -14,10 +14,12 @@ registerFontAwesome();
 
 let Router = BrowserRouter;
 
-if (process.env.BRANCH !== "main" || process.env.BRANCH !== "demo") {
-  console.log("NOT A PRIMARY ENV!");
+if (process.env.NODE_ENV !== "production") {
   const axe = require("react-axe");
   axe(React, ReactDOM, 1000);
+}
+
+if (process.env.BRANCH !== "main" || process.env.BRANCH !== "demo") {
   Router = HashRouter;
 }
 
