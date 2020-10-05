@@ -1,0 +1,41 @@
+.LocationMenu {
+  @include u-padding-top(4);
+  @include u-padding-bottom(2);
+  @include at-media("desktop") {
+    @include u-padding-y(4);
+  }
+  @include u-bg("black");
+  &__item {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    @include u-padding-y(3);
+    @include u-padding-x(2);
+    border: 1px solid;
+    @include u-border-color("base-lighter");
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+
+    &-img {
+      @include u-margin-bottom(2);
+    }
+    &-title {
+      @include u-margin-bottom(2);
+      @include u-text("white");
+      @include u-font("sans", "sm");
+      display: block;
+      font-weight: 600;
+    }
+    &-desc {
+      @include u-text("base-lighter");
+      @include u-font("sans", "xs");
+    }
+  }
+  [class*="grid-col"] {
+    @include u-margin-bottom(2);
+    @include at-media("desktop") {
+      @include u-margin-bottom(0);
+    }
+  }
+}

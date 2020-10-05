@@ -1,0 +1,95 @@
+.usa-nav {
+  width: 100%;
+  @include u-bg("primary-dark");
+  @include at-media("desktop") {
+    background-color: transparent;
+  }
+  .usa-nav__primary {
+    > .usa-nav__primary-item {
+      border: none;
+      &:first-child {
+        @include at-media("desktop") {
+          display: none !important;
+        }
+      }
+      > .usa-nav__url {
+        position: relative;
+        @include u-font("sans", "2xl");
+        @include u-color("white");
+        font-weight: 100;
+        &:hover {
+          @include u-color("base-lighter");
+          background-color: transparent;
+        }
+
+        &.usa-current {
+          @include u-color("white");
+          font-weight: 700;
+          &:hover {
+            @include u-color("primary-lighter");
+            background-color: transparent;
+          }
+          &:after {
+            display: none;
+          }
+        }
+
+        @include at-media("desktop") {
+          @include u-font("sans", "md");
+          @include u-color("base-darker");
+          &:after {
+            display: block;
+            content: "";
+            position: absolute;
+            height: 0.05em;
+            bottom: 0.5em;
+            left: 1rem;
+            right: 1rem;
+            @include u-bg("base-darker");
+          }
+          &:hover {
+            @include u-color("base-darker");
+            &:after {
+              height: 0.1em;
+            }
+          }
+          &.usa-current {
+            @include u-color("base-darker");
+            font-weight: 600;
+            &:hover {
+              @include u-color("base-darker");
+            }
+            &:after {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.usa-nav-open {
+  width: auto;
+  box-shadow: none;
+  @include at-media("desktop") {
+    display: none;
+  }
+  border-radius: 0;
+  @include u-bg("accent-cool-darker");
+  &:hover {
+    @include u-bg("accent-warm");
+    box-shadow: none;
+  }
+}
+
+.usa-nav-close {
+  text-align: right;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  @include at-media("desktop") {
+    display: none;
+  }
+}

@@ -1,0 +1,95 @@
+.ProjectCard {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+
+  &__link {
+    @include u-color("ink");
+    .usa-card__container {
+      transition: box-shadow 0.2s;
+    }
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      .usa-card__container {
+        box-shadow: 0 0 0 6px #{color("accent-warm-dark")} inset;
+        cursor: pointer;
+      }
+    }
+    &:active:focus,
+    &:hover:active:focus {
+      text-decoration: none;
+      .usa-card__container {
+        box-shadow: 0 0 0 6px #{color("accent-cool")} inset;
+      }
+    }
+    &:focus,
+    &:hover:focus {
+      text-decoration: none;
+      .usa-card__container {
+        box-shadow: 0 0 0 6px #{color("accent-warm-lighter")} inset;
+      }
+    }
+    &:visited {
+      @include u-color("ink");
+    }
+  }
+  .usa-card {
+    &__container {
+      border-radius: 0;
+      border: none;
+      @include u-bg("white");
+      box-shadow: 0 0 0 2px #{color("base-light")} inset;
+    }
+    &__header {
+      @include u-margin-bottom(2);
+    }
+    &__heading {
+      @include u-color("accent-warm");
+      @include u-font("sans", "lg");
+      @include u-margin-bottom(2);
+    }
+    &__subhead {
+      @include u-font("sans", "xl");
+    }
+    &__meta {
+      font-style: italic;
+    }
+  }
+
+  &__excerpt {
+    @include u-margin-y(2);
+
+    @include u-font("sans", "sm");
+  }
+  &__topics {
+    @include u-margin-bottom(2);
+  }
+  &__topics-heading {
+    display: block;
+    @include u-color("accent-warm");
+    @include u-margin-y(1);
+    @include u-font("sans", "md");
+  }
+  &__tag {
+    @include u-color("white");
+    @include u-font("sans", "2xs");
+    @include u-padding(1);
+    @include u-margin-right(1);
+    @include u-margin-bottom(1);
+    @include u-bg("accent-cool-darker");
+    line-height: 1;
+    display: inline-block;
+  }
+}
+
+.ProjectList {
+  width: 100%;
+  @include at-media("tablet") {
+    column-count: 2;
+  }
+
+  &.isLoading {
+    column-count: 1;
+  }
+}

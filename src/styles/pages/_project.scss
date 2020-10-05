@@ -1,0 +1,73 @@
+.TxContent {
+  .TxProject {
+    h2 {
+      @include u-margin-top(6);
+      @include u-margin-bottom(2);
+    }
+    h3 {
+      @include u-font("sans", "xl");
+      @include u-margin-top(6);
+      @include u-margin-bottom(2);
+    }
+    h4 {
+      @include u-margin-y(2);
+    }
+    &__link {
+      a {
+        @include u-color("accent-cool");
+        @include u-underline("accent-cool");
+        @include u-font("sans", 6);
+        &:hover {
+          @include u-color("accent-cool-darker");
+          @include u-underline("accent-cool-darker");
+        }
+        svg {
+          @include u-margin-right(1);
+        }
+      }
+    }
+    &__links {
+      a,
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    &__title {
+      @include u-margin-top(4);
+
+      @include u-font("sans", 11);
+      @include u-color("accent-warm-light");
+      font-weight: 600;
+
+      letter-spacing: 0;
+    }
+    &__subtitle {
+      @include u-margin-y(2);
+      @include u-font("sans", 13);
+      font-weight: 900;
+      letter-spacing: -2px;
+
+      @include u-color("ink");
+      @include at-media("tablet") {
+        @include u-font("sans", 17);
+      }
+    }
+    &__meta {
+      font-style: italic;
+    }
+    &__team {
+      &-icon {
+        min-width: 36px;
+        display: inline-block;
+        @include u-margin-right(1);
+      }
+      ul {
+        li {
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

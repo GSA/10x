@@ -1,0 +1,13 @@
+{
+  "phaseData": { "status": "1", "phase": "2", "message": "" },
+  "title": "Phase 2 In Progress",
+  "subtitle": "Making privacy management more efficient",
+  "type": "project",
+  "excerpt": "Compliance paperwork management can be a significant burden on privacy offices throughout the federal government as they manage personally identifiable information. The team built a privacy dashboard to manage compliance paperwork, providing easier access, leading to better compliance and time savings, and allowing staff to focus on higher level work.",
+  "topics": "Compliance, Privacy managers",
+  "body": "Compliance paperwork management can be a significant burden on privacy offices throughout the federal government as they manage personally identifiable information. The team built a privacy dashboard to manage compliance paperwork, providing easier access, leading to better compliance and time savings, and allowing staff to focus on higher level work.\n",
+  "projectType": "Incremental",
+  "name": "phase-2-in-progress",
+  "path": "/project/phase-2-in-progress",
+  "toc": []
+}
