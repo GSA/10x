@@ -197,7 +197,6 @@ const copyContent = () => {
   fs.copySync(CMS_PATH, DEST_PATH);
 };
 
-console.log(process.env);
 copyContent();
 indexContent();
 indexMenus();
