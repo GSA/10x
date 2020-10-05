@@ -14,7 +14,7 @@ registerFontAwesome();
 
 let Router = BrowserRouter;
 
-if (process.env.BRANCH !== "main") {
+if (process.env.BRANCH !== "main" || process.env.BRANCH !== "demo") {
   const axe = require("react-axe");
   axe(React, ReactDOM, 1000);
   Router = HashRouter;
