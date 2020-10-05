@@ -12,9 +12,6 @@ const PhaseItem = ({ data, phase, label }) => {
         ProjectStatus__item: true,
         inert: isInert,
         current: isCurrent,
-        inProgress: true,
-        complete: true,
-        graduated: true,
       })}
     >
       <span className="ProjectStatus__label">{label}</span>
@@ -53,6 +50,7 @@ const ProjectStatus = ({ data, phases }) => {
           ProjectStatus__bar: true,
           [phases[data.phase].className]: true,
           graduated: data.status === "3",
+          complete: data.status === "2",
         })}
       >
         {Object.entries(phases).map(([key, value]) => {

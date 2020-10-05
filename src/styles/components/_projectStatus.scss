@@ -16,7 +16,6 @@ $c-last: color("accent-cool-darker");
     height: 4px;
     width: 100%;
     @include u-margin-y(32px);
-    @include u-bg("base-lightest");
 
     &:before {
       display: inline-block;
@@ -26,6 +25,17 @@ $c-last: color("accent-cool-darker");
       left: 0;
       bottom: 0;
       background: linear-gradient(112deg, #{$c-first} 0%, #{$c-last} 100%);
+    }
+    &:after {
+      display: inline-block;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 0;
+      @include u-bg("base-lightest");
     }
 
     &.phase-two {
@@ -44,11 +54,21 @@ $c-last: color("accent-cool-darker");
         width: 100%;
       }
     }
+
     &.graduated {
       .current [class*="__icon"] {
         border-width: 1px;
         border-style: solid;
         @include u-border("white");
+      }
+    }
+    &.complete,
+    &.graduated {
+      &:after {
+        width: 0;
+      }
+      .inert {
+        display: none !important;
       }
     }
   }
@@ -58,6 +78,7 @@ $c-last: color("accent-cool-darker");
     width: 16px;
     overflow: visible;
     text-align: center;
+    z-index: 1;
 
     &:first-child {
       left: -2px;
