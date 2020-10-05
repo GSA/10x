@@ -9,7 +9,11 @@ const YAML = require("yaml");
 
 const excludedPathTypes = ["page"];
 
-const ROOT_PATH = path.join(__dirname);
+const CMS_KEY = "cms";
+const DEST_KEY = "public";
+
+const CMS_PATH = path.join(__dirname, CMS_KEY);
+const DEST_PATH = path.join(__dirname, DEST_KEY);
 
 const parseHeading = (item, data = []) => {
   data.push({ text: item.value, url: `#${item.data.id}` });
@@ -48,7 +52,7 @@ const remarkToc = markdown()
  */
 const getConfig = () =>
   YAML.parse(
-    fs.readFileSync(path.join(ROOT_PATH, "/public/admin/config.yml"), "utf-8")
+    fs.readFileSync(path.join(DEST_PATH, "/admin/config.yml"), "utf-8")
   );
 
 /**
@@ -64,7 +68,9 @@ const addContentMetaData = (filename, filePath, collection) => {
   fileData.type = collection.name;
   fileData.name = filename.replace(/\.json/, "");
   fileData.path = `/${
-    excludedPathTypes.includes(fileData.type) ? "" : `${fileData.type}/`
+    excludedPathTypes.includes(fileData.type)
+      ? fileData.name
+      : `${fileData.type}/`
   }${fileData.name}`;
 
   const process = remark.processSync(fileData.body);
@@ -132,7 +138,8 @@ const indexContent = () => {
   );
   // iterate over the specified Content types
   collections.forEach((collection) => {
-    const collectionPath = path.join(ROOT_PATH, collection.folder);
+    const folder = collection.folder.replace(`${CMS_KEY}/`, `${DEST_KEY}/`);
+    const collectionPath = path.join(CMS_PATH, folder);
     fs.ensureDirSync(collectionPath);
     const contents = fs
       .readdirSync(collectionPath)
@@ -165,7 +172,8 @@ const indexMenus = () => {
   const config = getConfig();
   const menus = config.collections.filter((col) => col.folder.includes("menu"));
   menus.forEach((menu) => {
-    const menuPath = path.join(ROOT_PATH, menu.folder);
+    const folder = menu.folder.replace(`${CMS_KEY}/`, `${DEST_KEY}/`);
+    const menuPath = path.join(CMS_PATH, folder);
     fs.ensureDirSync(menuPath);
 
     const contents = fs
@@ -186,5 +194,9 @@ const indexMenus = () => {
   });
 };
 
+const copyContent = () => {
+  fs.copySync(CMS_PATH, DEST_PATH);
+};
+copyContent();
 indexContent();
 indexMenus();

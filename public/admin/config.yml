@@ -15,7 +15,7 @@ collections:
     publish: false
     label: Site Settings
     label_singular: Site Settings
-    folder: public/settings
+    folder: cms/settings
     create: false
     delete: false
     preview_path: "{{slug}}"
@@ -52,7 +52,7 @@ collections:
     extension: json
     label: Menus
     label_singular: Menu
-    folder: public/menus
+    folder: cms/menus
     create: true
     delete: true
     editor:
@@ -92,7 +92,7 @@ collections:
     extension: json
     label: Pages
     label_singular: Page
-    folder: public/content/page
+    folder: cms/content/page
     create: true
     delete: true
     slug: "{{title}}"
@@ -111,7 +111,7 @@ collections:
     extension: json
     label: Projects
     label_singular: Project
-    folder: public/content/project
+    folder: cms/content/project
     create: true
     delete: true
     slug: "{{title}}"
