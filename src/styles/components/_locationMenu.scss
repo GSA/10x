@@ -1,7 +1,7 @@
 .LocationMenu {
   @include u-padding-top(4);
   @include u-padding-bottom(2);
-  @include at-media("tablet") {
+  @include at-media("desktop") {
     @include u-padding-y(4);
   }
   @include u-bg("black");
@@ -34,7 +34,7 @@
   }
   [class*="grid-col"] {
     @include u-margin-bottom(2);
-    @include at-media("tablet") {
+    @include at-media("desktop") {
       @include u-margin-bottom(0);
     }
   }

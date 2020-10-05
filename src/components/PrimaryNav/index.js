@@ -33,8 +33,8 @@ const NavItem = ({ id, text, url, items = [] }) => {
         <NavLink
           className="usa-nav__url"
           activeClassName="usa-current"
-          exact
-          to={url}
+          replace
+          to={`/${url}`}
         >
           <span>{text}</span>
         </NavLink>
