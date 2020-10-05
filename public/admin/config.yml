@@ -6,8 +6,8 @@ backend:
   branch: content
   preview_context: federalist/build
 
-media_folder: images
-public_folder: images
+media_folder: public/images
+public_folder: public/images
 
 collections:
   - name: settings
@@ -15,7 +15,7 @@ collections:
     publish: false
     label: Site Settings
     label_singular: Site Settings
-    folder: settings
+    folder: public/settings
     create: false
     delete: false
     preview_path: "{{slug}}"
@@ -52,7 +52,7 @@ collections:
     extension: json
     label: Menus
     label_singular: Menu
-    folder: menus
+    folder: public/menus
     create: true
     delete: true
     editor:
@@ -92,7 +92,7 @@ collections:
     extension: json
     label: Pages
     label_singular: Page
-    folder: content/page
+    folder: public/content/page
     create: true
     delete: true
     slug: "{{title}}"
@@ -111,7 +111,7 @@ collections:
     extension: json
     label: Projects
     label_singular: Project
-    folder: content/project
+    folder: public/content/project
     create: true
     delete: true
     slug: "{{title}}"

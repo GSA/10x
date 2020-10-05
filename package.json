@@ -36,11 +36,11 @@
   "scripts": {
     "index-content": "node runIndex.js",
     "start": "npm run index-content && react-scripts start",
-    "build": "npm run index-content && react-scripts build",
+    "build": "PUBLIC_URL=$BASEURL react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "npm test -- --coverage --watchAll=false",
     "federalist": "npm run federalist:build && npm run federalist:copy",
-    "federalist:build": "PUBLIC_URL=$BASEURL npm run build",
+    "federalist:build": "npm run index-content && npm run build",
     "federalist:copy": "mkdir -p _site && rm -rf _site/* && cp -r build/* _site/"
   },
   "eslintConfig": {

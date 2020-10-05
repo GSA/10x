@@ -9,7 +9,7 @@ const YAML = require("yaml");
 
 const excludedPathTypes = ["page"];
 
-const ROOT_PATH = path.join(__dirname, "/public");
+const ROOT_PATH = path.join(__dirname);
 
 const parseHeading = (item, data = []) => {
   data.push({ text: item.value, url: `#${item.data.id}` });
@@ -48,7 +48,7 @@ const remarkToc = markdown()
  */
 const getConfig = () =>
   YAML.parse(
-    fs.readFileSync(path.join(ROOT_PATH, "/admin/config.yml"), "utf-8")
+    fs.readFileSync(path.join(ROOT_PATH, "/public/admin/config.yml"), "utf-8")
   );
 
 /**
