@@ -12,9 +12,6 @@ const PhaseItem = ({ data, phase, label }) => {
         ProjectStatus__item: true,
         inert: isInert,
         current: isCurrent,
-        inProgress: true,
-        complete: true,
-        graduated: true,
       })}
     >
       <span className="ProjectStatus__label">{label}</span>
@@ -46,6 +43,20 @@ PhaseItem.propTypes = {
 };
 
 const ProjectStatus = ({ data, phases }) => {
+  const message = () => {
+    if (data.message) {
+      return data.message;
+    }
+    if (data.status === "1") {
+      return `Phase ${data.phase} is still in progress`;
+    }
+    if (data.status === "2") {
+      return `Project didn't advace to Phase ${parseInt(data.phase) + 1}`;
+    }
+    if (data.status === "3") {
+      return `Graduated after Phase ${data.phase}`;
+    }
+  };
   return (
     <div className="ProjectStatus">
       <div
@@ -53,6 +64,7 @@ const ProjectStatus = ({ data, phases }) => {
           ProjectStatus__bar: true,
           [phases[data.phase].className]: true,
           graduated: data.status === "3",
+          complete: data.status === "2",
         })}
       >
         {Object.entries(phases).map(([key, value]) => {
@@ -68,7 +80,7 @@ const ProjectStatus = ({ data, phases }) => {
           );
         })}
       </div>
-      <div className="ProjectStatus__message">{data.message}</div>
+      <div className="ProjectStatus__message">{message()}</div>
     </div>
   );
 };
