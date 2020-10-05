@@ -20,7 +20,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 if (process.env.BRANCH !== "main" || process.env.BRANCH !== "demo") {
-  console.log(process.env.BRANCH);
+  console.log("BRANCH", process.env.BRANCH);
   Router = HashRouter;
 }
 
