@@ -12,16 +12,15 @@ import "styles/index.scss";
 
 registerFontAwesome();
 
-let Router = BrowserRouter;
+let Router = HashRouter;
 
 if (process.env.NODE_ENV !== "production") {
   const axe = require("react-axe");
   axe(React, ReactDOM, 1000);
 }
 
-if (process.env.BRANCH !== "main" || process.env.BRANCH !== "demo") {
-  console.log("BRANCH", process.env.BRANCH);
-  Router = HashRouter;
+if (process.env.BRANCH === "main") {
+  Router = BrowserRouter;
 }
 
 ReactDOM.render(
