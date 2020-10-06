@@ -6,7 +6,7 @@ import { Grid } from "components/Grid";
 import Loading from "components/Loading";
 import Mdx from "features/Mdx";
 import FourOhFour from "routes/FourOhFour";
-import { Helmet } from "react-helmet";
+import Head from "routes/Head";
 
 const Page = ({ name }) => {
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const Page = ({ name }) => {
   if (pending) {
     return (
       <Grid>
-        <Helmet title="Loading..." />
+        <Head title="Loading..." />
         <div style={{ paddingTop: "15vh", paddingBottom: "15vh" }}>
           <Loading isLoading={true}>
             <span />
@@ -34,7 +34,7 @@ const Page = ({ name }) => {
   }
   return (
     <div className={`TxContent Tx__${pageName}`}>
-      <Helmet title={data.title} />
+      <Head title={data.title} />
       <Mdx>{data.body}</Mdx>
     </div>
   );
