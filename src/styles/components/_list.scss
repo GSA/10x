@@ -14,6 +14,7 @@
       border-top: 1px solid;
       @include u-border-color("primary-lightest");
       @include u-color("ink");
+      line-height: 1.6;
     }
   }
 

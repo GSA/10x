@@ -1,6 +1,6 @@
 .TxContent {
   @include u-padding-top(2);
-  @include u-color("primary-light");
+  @include u-color("ink");
   @include u-font("sans", "sm");
   @include at-media("tablet") {
     @include u-padding-top(4);

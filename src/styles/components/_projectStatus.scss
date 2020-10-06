@@ -106,6 +106,12 @@ $c-last: color("accent-cool-darker");
         border-radius: 100%;
       }
     }
+    &.graduated {
+      [class*="__icon"] {
+        font-size: 20px;
+        margin-top: -4px;
+      }
+    }
     &.inert {
       [class*="__icon"] {
         @include u-color("base-lightest");
@@ -114,7 +120,7 @@ $c-last: color("accent-cool-darker");
   }
   &__label {
     display: block;
-    @include u-font("sans", "3xs");
+    @include u-font("sans", "2xs");
     line-height: 16px;
   }
   &__icon {
@@ -124,7 +130,7 @@ $c-last: color("accent-cool-darker");
   }
 
   &__message {
-    @include u-font("sans", "3xs");
+    @include u-font("sans", "md");
     font-style: italic;
   }
 

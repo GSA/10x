@@ -133,8 +133,8 @@ const indexTaxonomies = (index, fileData) => {
  */
 const indexContent = () => {
   const config = getConfig();
-  const collections = config.collections.filter((col) =>
-    col.folder.includes("content")
+  const collections = config.collections.filter(({ folder = "" }) =>
+    folder.includes("content")
   );
   // iterate over the specified Content types
   collections.forEach((collection) => {
@@ -170,7 +170,9 @@ const indexContent = () => {
  */
 const indexMenus = () => {
   const config = getConfig();
-  const menus = config.collections.filter((col) => col.folder.includes("menu"));
+  const menus = config.collections.filter(({ folder = "" }) =>
+    folder.includes("menu")
+  );
   menus.forEach((menu) => {
     const folder = menu.folder.replace(`${CMS_KEY}/`, "");
     const menuPath = path.join(DEST_PATH, folder);

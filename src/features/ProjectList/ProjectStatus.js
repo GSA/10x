@@ -12,6 +12,7 @@ const PhaseItem = ({ data, phase, label }) => {
         ProjectStatus__item: true,
         inert: isInert,
         current: isCurrent,
+        graduated: isCurrent && data.status === "3",
       })}
     >
       <span className="ProjectStatus__label">{label}</span>

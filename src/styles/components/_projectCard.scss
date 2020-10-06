@@ -39,20 +39,22 @@
       border-radius: 0;
       border: none;
       @include u-bg("white");
-      box-shadow: 0 0 0 2px #{color("base-light")} inset;
+      box-shadow: 0 0 0 2px #{color("base")} inset;
     }
     &__header {
       @include u-margin-bottom(2);
     }
     &__heading {
-      @include u-color("accent-warm");
+      @include u-color("accent-warm-darker");
       @include u-font("sans", "lg");
       @include u-margin-bottom(2);
     }
     &__subhead {
       @include u-font("sans", "xl");
+      @include u-margin-bottom(1);
     }
     &__meta {
+      @include u-font("sans", "md");
       font-style: italic;
     }
   }
@@ -60,14 +62,14 @@
   &__excerpt {
     @include u-margin-y(2);
 
-    @include u-font("sans", "sm");
+    @include u-font("sans", "md");
   }
   &__topics {
     @include u-margin-bottom(2);
   }
   &__topics-heading {
     display: block;
-    @include u-color("accent-warm");
+    @include u-color("accent-warm-darker");
     @include u-margin-y(1);
     @include u-font("sans", "md");
   }

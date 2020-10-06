@@ -10,31 +10,30 @@
       @include u-margin-bottom(2);
     }
     h4 {
-      @include u-margin-y(2);
+      @include u-margin-top(2);
+      @include u-margin-bottom(1);
+    }
+    p {
+      margin-top: 0;
     }
     &__link {
       a {
         @include u-color("accent-cool");
         @include u-underline("accent-cool");
-        @include u-font("sans", 6);
+        line-height: 1.6;
+        text-decoration: none;
         &:hover {
           @include u-color("accent-cool-darker");
           @include u-underline("accent-cool-darker");
+          text-decoration: none;
         }
         svg {
           @include u-margin-right(1);
         }
       }
     }
-    &__links {
-      a,
-      a:hover {
-        text-decoration: none;
-      }
-    }
     &__title {
       @include u-margin-top(4);
-
       @include u-font("sans", 11);
       @include u-color("accent-warm-light");
       font-weight: 600;
@@ -55,6 +54,16 @@
     &__meta {
       font-style: italic;
     }
+    &__glance {
+      ul {
+        li {
+          strong {
+            display: inline-block;
+            @include u-margin-right(1);
+          }
+        }
+      }
+    }
     &__team {
       &-icon {
         min-width: 36px;
@@ -63,6 +72,7 @@
       }
       ul {
         li {
+          line-height: 1.6;
           &:before {
             display: none;
           }
