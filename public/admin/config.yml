@@ -3,7 +3,7 @@ backend:
   repo: GSA/10x
   base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
-  branch: content
+  branch: demo
   preview_context: federalist/build
 
 media_folder: public/images
@@ -15,39 +15,37 @@ collections:
     publish: false
     label: Site Settings
     label_singular: Site Settings
-    folder: cms/settings
     create: false
     delete: false
-    preview_path: "{{slug}}"
+    show_preview_links: false
+    identifier_field: settings
     editor:
       preview: false
-    fields:
-      - label: Title
-        name: title
-        widget: string
-      - label: Description
-        name: description
-        widget: string
-      - label: Author
-        name: author
-        widget: string
-      - name: searchgov
-        label: Search.gov Settings
-        widget: object
+    files:
+      - label: Settings
+        name: settings
+        file: cms/settings.json
         fields:
-          - name: endpoint
-            label: Endpoint
+          - label: Settings
+            name: settings
+            widget: hidden
+            default: settings
+          - label: Site Title
+            name: title
             widget: string
-          - name: affiliate
-            label: Affiliate
+          - label: Site Description
+            name: description
             widget: string
-          - name: access_key
-            label: Access Key
-            widget: string
-          - name: inline
-            label: inline
-            widget: boolean
-            default: true
+          - name: customFields
+            label: Custom Fields
+            widget: list
+            fields:
+              - name: key
+                label: Key
+                widget: string
+              - name: value
+                label: Value
+                widget: string
   - name: menu
     extension: json
     label: Menus
