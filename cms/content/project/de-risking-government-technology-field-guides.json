@@ -1,0 +1,12 @@
+{
+  "phaseData": {
+    "status": "3",
+    "phase": "3"
+  },
+  "title": "De-risking Government Technology Field Guides",
+  "subtitle": "Setting your gov tech projects up for success",
+  "projectType": "Innovative",
+  "projectLink": "https://derisking-guide.18f.gov/",
+  "excerpt": "Most government agencies rely on data from other agencies, state and local governments, and other data providers to make informed decisions on policy, operations, and budgets, but it’s currently very time consuming and complex to aggregate this data in a meaningful way. The team developed best practices and repeatable processes and tools that make it easier to collect, combine, standardize, govern, maintain, and exchange data across federal agencies. ",
+  "topics": "Legislators, Product owners, Government IT executives"
+}
