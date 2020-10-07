@@ -1,10 +1,5 @@
 const path = require("path");
 const fs = require("fs-extra");
-const markdown = require("remark");
-const slug = require("remark-slug");
-const parse = require("remark-parse");
-const slugLink = require("remark-autolink-headings");
-const extractToc = require("remark-extract-toc");
 const YAML = require("yaml");
 
 const excludedPathTypes = ["page"];
@@ -14,37 +9,6 @@ const DEST_KEY = "public";
 
 const CMS_PATH = path.join(__dirname, CMS_KEY);
 const DEST_PATH = path.join(__dirname, DEST_KEY);
-
-const parseHeading = (item, data = []) => {
-  data.push({ text: item.value, url: `#${item.data.id}` });
-};
-
-const parseToc = (items, data) => {
-  items.forEach((item) => {
-    parseHeading(item, data);
-    if (item.children) {
-      parseToc(item.children, data);
-    }
-  });
-};
-
-const excerpt = () => (tree = [], vfile) => {
-  let excerpt = tree.children.find((item) => item.type === "paragraph");
-  if (excerpt) {
-    vfile.data.excerpt = excerpt.children[0].value;
-  }
-  return tree;
-};
-
-// Set up Remark instances
-const remark = markdown().use(parse).use(slug).use(slugLink).use(excerpt);
-
-// Separate Remark because extractToc doesn't play nice.
-const remarkToc = markdown()
-  .use(parse)
-  .use(slug)
-  .use(slugLink)
-  .use(extractToc, { keys: ["data"] });
 
 /**
  * Gets the config file
@@ -72,18 +36,6 @@ const addContentMetaData = (filename, filePath, collection) => {
       ? fileData.name
       : `${fileData.type}/`
   }${fileData.name}`;
-
-  const process = remark.processSync(fileData.body);
-  if (!fileData.excerpt) {
-    fileData.excerpt = process.data.excerpt;
-  }
-  fileData.body = process.toString();
-
-  const node = remarkToc.parse(fileData.body);
-  const headings = remarkToc.runSync(node);
-  const toc = [];
-  parseToc(headings, toc);
-  fileData.toc = toc;
   return fileData;
 };
 
@@ -151,7 +103,7 @@ const indexContent = () => {
       fs.outputJSONSync(path.join(collectionPath, filename), data);
       return data;
     });
-    console.log(collectionPath);
+
     const taxonomyIndex = contentIndex.reduce(indexTaxonomies, []);
 
     fs.outputJSONSync(path.join(collectionPath, "index.json"), contentIndex);
