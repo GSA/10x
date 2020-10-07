@@ -97,14 +97,33 @@ collections:
     preview_path: "{{slug}}"
     identifier_field: title
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Hero Content",
-          name: "hero",
-          widget: "markdown",
-          required: false,
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: Meta
+        name: Meta
+        required: false
+        widget: "object"
+        fields:
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Facebook Image
+            name: fbImg
+            widget: image
+            required: false
+          - label: Twitter Image
+            name: twImg
+            widget: image
+            required: false
+      - label: "Hero Content"
+        name: "hero"
+        widget: "markdown"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
   - name: project
     extension: json
     label: Projects

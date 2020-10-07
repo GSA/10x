@@ -1,14 +1,18 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
 
 const Head = (props) => {
-  // TODO get meta data for page/site
+  const page = useSelector((state) => state.content.page.data);
+  const { meta = {} } = page;
+  const { pathname } = useLocation();
 
-  const title = ""; // page or site title
-  const description = ""; // page or site description
-  const url = ""; // page url/link
-  const fbImg = ""; // page image or site facebook image
-  const twImg = ""; // page image or site twitter image
+  const title = page.title; // page or site title
+  const description = meta.description; // page or site description
+  const url = pathname; // page url/link
+  const fbImg = meta.fbImg; // page image or site facebook image
+  const twImg = meta.twImg; // page image or site twitter image
 
   return (
     <Helmet {...props}>

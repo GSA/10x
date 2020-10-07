@@ -21,6 +21,7 @@ const Page = ({ name }) => {
     return (
       <Grid>
         <Head title="Loading..." />
+        <h1 className="display-none">Loading...</h1>
         <div className="margin-y-9">
           <Loading isLoading={true}>
             <span />
