@@ -160,19 +160,24 @@ collections:
         name: "topics"
         widget: "string"
         hint: "Separate tag values by comma."
+        required: false
       - label: "Team"
         name: "team"
         widget: "object"
+        required: false
         fields:
           - label: "Idea Submitter"
             name: "submitter"
             widget: "string"
+            required: false
           - label: "Members"
             name: "members"
             widget: "text"
+            required: false
       - label: "Links"
         name: "links"
         widget: "list"
+        required: false
         fields:
           - label: "Text"
             name: "text"
@@ -183,3 +188,4 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+        required: false
