@@ -148,6 +148,7 @@ collections:
       - label: "Project Link"
         name: "projectLink"
         widget: "string"
+        required: false
       - label: "Excerpt"
         name: "excerpt"
         widget: "text"
