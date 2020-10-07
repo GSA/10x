@@ -7,6 +7,6 @@
   "subtitle": "Setting your gov tech projects up for success",
   "projectType": "Innovation",
   "projectLink": "https://derisking-guide.18f.gov/",
-  "excerpt": "Most government agencies rely on data from other agencies, state and local governments, and other data providers to make informed decisions on policy, operations, and budgets, but it’s currently very time consuming and complex to aggregate this data in a meaningful way. The team developed best practices and repeatable processes and tools that make it easier to collect, combine, standardize, govern, maintain, and exchange data across federal agencies. ",
+  "excerpt": "State and federal IT projects are often costly, risky, and prone to failure. For this effort, the team compiled best practices for common issues like budgeting for agile projects, limiting contract size, and measuring success. These were then published into a “how to” field guide that agencies can use to point their projects in the right direction. ",
   "topics": "Legislators, Product owners, Government IT executives"
 }
