@@ -125,7 +125,7 @@ collections:
       - label: "Type"
         name: "projectType"
         widget: "select"
-        options: ["Innovative", "Transformational", "Incremental"]
+        options: ["Innovation", "Transformation", "Enhancement"]
       - label: "Project Link"
         name: "projectLink"
         widget: "string"

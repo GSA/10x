@@ -5,7 +5,7 @@
   },
   "title": "Eligibility APIs Initiative",
   "subtitle": "Speeding up eligibility decisions for human services programs",
-  "projectType": "Transformational",
+  "projectType": "Transformation",
   "projectLink": "https://portfolios.18f.gov/projects/eligibility-apis/",
   "excerpt": "Determining who is eligible for what government services isn’t easy with today’s technology. Eligibility policies change frequently, and the IT systems that power these safety net programs (think Medicaid and SNAP) are not great at keeping up with changing eligibility criteria—which can mean a delay for people who should receive benefits. This project explored what tomorrow’s technology for determining eligibility might look like to make it faster and more accurate when policies change, namely writing policies in a programming language so state IT systems can connect to the information automatically."
 }
