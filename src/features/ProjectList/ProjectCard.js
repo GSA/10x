@@ -18,7 +18,7 @@ const ProjectCard = ({ data }) => (
     </div>
     {data.topics && (
       <div className="ProjectCard__topics">
-        <span className="ProjectCard__topics-heading">IntendedAudience</span>
+        <span className="ProjectCard__topics-heading">Intended Audience</span>
         {data.topics.split(",").map((item, i) => (
           <span key={`topic-item-${i}`} className="ProjectCard__tag">
             {item}
