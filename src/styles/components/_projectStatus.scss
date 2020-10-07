@@ -132,6 +132,7 @@ $c-last: color("accent-cool-darker");
   &__message {
     @include u-font("sans", "md");
     font-style: italic;
+    line-height: 1.6;
   }
 
   .c-one {
