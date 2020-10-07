@@ -36,6 +36,7 @@ const Project = ({ type }) => {
   if (error) {
     return <FourOhFour pathname={name} />;
   }
+
   return (
     <div className={`TxContent `}>
       <Helmet title={data.title} />
@@ -73,6 +74,7 @@ const Project = ({ type }) => {
             </ul>
           </div>
         )}
+
         {Array.isArray(data.links) && data.links.length && (
           <div className="TxProject__links">
             <h3>Learn More</h3>

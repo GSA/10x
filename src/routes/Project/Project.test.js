@@ -15,7 +15,9 @@ describe("Project", () => {
         </TestProvider>
       );
       await runAsyncRender(wrapper);
-      expect(wrapper.find("h1").first().text()).toBe("test 1");
+
+      console.log(wrapper.html());
+      expect(wrapper.find("h1").first().text()).toBe("U.S. Data Federation");
     });
     it("should render error on incorrect path name", async () => {
       const wrapper = mount(

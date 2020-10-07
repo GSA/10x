@@ -44,19 +44,10 @@ PhaseItem.propTypes = {
 };
 
 const ProjectStatus = ({ data, phases }) => {
-  const message = () => {
-    if (data.message) {
-      return data.message;
-    }
-    if (data.status === "1") {
-      return `Phase ${data.phase} is still in progress`;
-    }
-    if (data.status === "2") {
-      return `Project didn't advance to Phase ${parseInt(data.phase) + 1}`;
-    }
-    if (data.status === "3") {
-      return `Graduated after Phase ${data.phase}`;
-    }
+  const message = {
+    1: `Phase ${data.phase} is still in progress`,
+    2: `Project didn't advance to Phase ${parseInt(data.phase) + 1}`,
+    3: `Graduated after Phase ${data.phase}`,
   };
   return (
     <div className="ProjectStatus">
@@ -81,7 +72,7 @@ const ProjectStatus = ({ data, phases }) => {
           );
         })}
       </div>
-      <div className="ProjectStatus__message">{message()}</div>
+      <div className="ProjectStatus__message">{message[data.status]}</div>
     </div>
   );
 };
