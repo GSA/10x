@@ -1,0 +1,13 @@
+{
+  "phaseData": {
+    "status": "3",
+    "phase": "4",
+    "message": "Graduated after Phase 4 and in use at OMB, USDA, OGIS, and for other initiatives like data.gov"
+  },
+  "title": "U.S. Data Federation",
+  "subtitle": "Easy federated data aggregation for better analysis & insights",
+  "projectType": "Innovative",
+  "excerpt": "Most government agencies rely on data from other agencies, state and local governments, and other data providers to make informed decisions on policy, operations, and budgets, but it’s currently very time consuming and complex to aggregate this data in a meaningful way. The team developed best practices and repeatable processes and tools that make it easier to collect, combine, standardize, govern, maintain, and exchange data across federal agencies.",
+  "projectLink": "https://github.com/18F/data-federation-project/blob/master/README.md",
+  "topics": "Data scientists, Program administrators"
+}
