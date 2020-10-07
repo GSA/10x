@@ -26,7 +26,7 @@ const Footer = () => {
             <p>
               Built with the{" "}
               <a href="https://designsystem.digital.gov/">
-                U.S. Web Design System 2.0 alpha
+                U.S. Web Design System 2.0
               </a>
             </p>
             <a href="https://designsystem.digital.gov/" className="uswds-stamp">
