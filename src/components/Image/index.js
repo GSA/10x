@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Image = ({ src, alt, className }) => {
-  const ROOT_URL = "/";
+  const ROOT_URL = "";
   return <img alt={alt} className={className} src={`${ROOT_URL}/${src}`} />;
 };
 
