@@ -9,13 +9,13 @@
     {
       "text": "About 10x",
       "link": "about-10x",
-      "img": "images/10x-icon-.svg",
+      "img": "images/10x-icon-about.svg",
       "desc": "Where did 10x come from and what does it do?"
     },
     {
       "text": "Send us an idea",
       "link": "send-us-an-idea",
-      "img": "images/10x-icon-.svg",
+      "img": "images/10x-icon-idea.svg",
       "desc": "How do you get your idea to 10x? What is 10x looking for?"
     },
     {
