@@ -40,7 +40,7 @@ export const Button = ({
       {...props}
       className={classnames({
         "usa-button": variant !== "link",
-        [`usa-button--${color}`]: color && variant !== "link",
+        [`usa-button--${color}`]: color,
         [`usa-button--${color}-${variant}`]:
           color && variant && variant !== "link",
         "usa-button--fullwidth": fullwidth,
@@ -69,6 +69,7 @@ Button.propTypes = {
     "secondary",
     "accent-warm",
     "accent-cool",
+    "white",
   ]),
   /** sets variant button type */
   variant: PropTypes.oneOf(["link", "media", "outline", "white"]),

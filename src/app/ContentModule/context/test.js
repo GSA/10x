@@ -1,8 +1,8 @@
 /* istanbul ignore file */
 
 const testData = [
-  { title: "test 1", body: "# test one" },
-  { title: "test 2", body: "# test two" },
+  { title: "test 1", body: "# test one", hero: "## Test Hero" },
+  { title: "test 2", body: "# test two", hero: "## Test Hero" },
 ];
 
 const testTax = [
