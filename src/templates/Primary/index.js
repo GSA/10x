@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import { useDispatch, useSelector } from "react-redux";
 import classnames from "classnames";
 import Header from "./Header";
@@ -8,6 +7,7 @@ import PrimaryNav from "components/PrimaryNav";
 import Logo from "components/Logo";
 import { getMenuList } from "app/MenuModule";
 import Mdx from "features/Mdx";
+import GSAFooter from "./GSAFooter";
 
 const Primary = ({ children }) => {
   const dispatch = useDispatch();
@@ -34,6 +34,7 @@ const Primary = ({ children }) => {
         )}
         {children}
       </main>
+      <GSAFooter />
       <Footer />
     </div>
   );

@@ -67,6 +67,7 @@
       "src/app/**/*.js",
       "src/features/**/*.js",
       "src/routes/**/*.js",
+      "src/templates/**/*.js",
       "!src/app/index.js",
       "!src/**/context.js",
       "!src/test/**/*.js",

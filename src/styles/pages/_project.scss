@@ -23,8 +23,8 @@
         line-height: 1.6;
         text-decoration: none;
         &:hover {
-          @include u-color("accent-cool-darker");
-          @include u-underline("accent-cool-darker");
+          @include u-color("accent-cool-dark");
+          @include u-underline("accent-cool-dark");
           text-decoration: none;
         }
         svg {

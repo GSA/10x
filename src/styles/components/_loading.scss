@@ -34,7 +34,7 @@
       animation-name: box-three-scale;
     }
     .box-four {
-      @include u-border-color("accent-cool-darker");
+      @include u-border-color("accent-cool-dark");
 
       animation-name: box-four-scale;
     }
