@@ -3,6 +3,7 @@
     .usa-nav__primary-item {
       a {
         @include u-color("base-lighter");
+        font-family: "Qualy";
       }
     }
   }
