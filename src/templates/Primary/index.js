@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import classnames from "classnames";
 import Header from "./Header";
 import Footer from "./Footer";
 import PrimaryNav from "components/PrimaryNav";
@@ -21,11 +20,7 @@ const Primary = ({ children }) => {
 
   return (
     <div className="App">
-      <Header
-        className={classnames({ "bg-base-lightest": page.data.hero })}
-        logo={<Logo />}
-        nav={<PrimaryNav items={navItems} />}
-      />
+      <Header logo={<Logo />} nav={<PrimaryNav items={navItems} />} />
       <main role="main" id="main-content">
         {page.data.hero && (
           <div className="TxContent bg-base-lightest">

@@ -1,0 +1,9 @@
+.usa-nav {
+  .usa-nav__primary {
+    .usa-nav__primary-item {
+      a {
+        @include u-color("base-lighter");
+      }
+    }
+  }
+}

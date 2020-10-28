@@ -1,15 +1,26 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import {
+  AnimatedRoutes as Switch,
+  RouteTransition as Route,
+} from "./AnimatedRoutes";
 import Default from "./Default";
 import FourOhFour from "./FourOhFour";
 import Page from "./Page";
 import Project from "./Project";
 
 export default ({ location }) => (
-  <Switch location={location}>
-    <Route key="default" path="/" component={Default} exact />
-    <Route key="page" path="/projects/:name" component={Project} />
-    <Route key="page" path="/:name" component={Page} />
-    <Route key="404" path="/" component={FourOhFour} />
+  <Switch>
+    <Route key="default" path="/" exact>
+      <Default />
+    </Route>
+    <Route key="page" path="/projects/:name">
+      <Project />
+    </Route>
+    <Route key="page" path="/:name">
+      <Page />
+    </Route>
+    <Route key="404" path="/">
+      <FourOhFour />
+    </Route>
   </Switch>
 );
