@@ -1,7 +1,7 @@
 {
   "title": "Our projects",
-  "body": "<Grid className=\"padding-bottom-6 tablet:padding-bottom-10\">\n\n## Background\n\n10x projects start as high-impact, “what-if” ideas from federal employees. We evaluate each idea, selecting the most promising ones — considering factors like clarity, feasibility, existing efforts, and impact — to promote to the next phase. Ideas gain both additional funding and increased scrutiny at each phase, as the project team continues to research and prototype solutions. If a project graduates, it means it’s ready for prime time and can start gaining traction within government agencies. \n\n## Projects\n\nWe’ve evaluated hundreds of project ideas — here are some of the innovative current and past projects we have under our belt.  \n\n<ProjectList />\n\n</Grid>\n\n",
-  "hero": "<Grid>\n\n# Our projects\n\n> 10x projects range from complex, inter-agency initiatives to more targeted, specialty solutions — but each are innovative, aiming to improve how folks interact with the government. \n\n\n\n</Grid>",
+  "body": "<Grid>\n\n# Our projects\n\n> 10x projects range from complex, inter-agency initiatives to more targeted, specialty solutions — but each are innovative, aiming to improve how folks interact with the government.  \n\n<ProjectList />\n\n</Grid>\n\n",
+  "hero": "",
   "type": "page",
   "name": "projects",
   "path": "/projects",
