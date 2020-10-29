@@ -23,26 +23,35 @@ Theme palette colors
 ----------------------------------------
 */
 
+$x-lilac: #a9a5ea;
+$x-grimace: #3a337b;
+$x-tiger: #ff6839;
+$x-sky: #78e3fb;
+$x-ocean: #45d9d9;
+$x-smoke: #d8d8d8;
+$x-lead: #4e5164;
+$x-charcoal: #292a2b;
+
 // Base colors
 $theme-color-base-family: "gray-cool";
 $theme-color-base-lightest: "gray-5";
-$theme-color-base-lighter: #45d9d9;
-$theme-color-base-light: "gray-cool-30";
-$theme-color-base: "gray-cool-50";
-$theme-color-base-dark: "gray-cool-60";
+$theme-color-base-lighter: $x-ocean;
+$theme-color-base-light: $x-smoke;
+$theme-color-base: $x-lead;
+$theme-color-base-dark: $x-charcoal;
 $theme-color-base-darker: "gray-cool-70";
-$theme-color-base-darkest: #292a2b;
-$theme-color-base-ink: #4e5164;
+$theme-color-base-darkest: $x-charcoal;
+$theme-color-base-ink: $x-lead;
 
 // Primary colors
 $theme-color-primary-family: "blue";
 $theme-color-primary-lightest: "blue-5";
-$theme-color-primary-lighter: "blue-10";
-$theme-color-primary-light: "blue-30";
-$theme-color-primary: "blue-60v";
+$theme-color-primary-lighter: $x-lilac;
+$theme-color-primary-light: $x-lilac;
+$theme-color-primary: $x-grimace;
 $theme-color-primary-vivid: "blue-warm-60v";
 $theme-color-primary-dark: "blue-warm-70v";
-$theme-color-primary-darker: "blue-warm-80v";
+$theme-color-primary-darker: $x-grimace;
 $theme-color-primary-darkest: "blue-warm-80v";
 
 // Secondary colors
@@ -50,7 +59,7 @@ $theme-color-secondary-family: "red";
 $theme-color-secondary-lightest: "red-cool-5";
 $theme-color-secondary-lighter: "red-cool-10";
 $theme-color-secondary-light: "red-30";
-$theme-color-secondary: "red-50";
+$theme-color-secondary: $x-ocean;
 $theme-color-secondary-vivid: "red-cool-50v";
 $theme-color-secondary-dark: "red-60v";
 $theme-color-secondary-darker: "red-70v";
@@ -61,7 +70,7 @@ $theme-color-accent-warm-family: "orange";
 $theme-color-accent-warm-lightest: "orange-5";
 $theme-color-accent-warm-lighter: "orange-10";
 $theme-color-accent-warm-light: "orange-20v";
-$theme-color-accent-warm: "orange-30v";
+$theme-color-accent-warm: $x-tiger;
 $theme-color-accent-warm-dark: "orange-50v";
 $theme-color-accent-warm-darker: "orange-60";
 $theme-color-accent-warm-darkest: "orange-70";
@@ -71,7 +80,7 @@ $theme-color-accent-cool-family: "blue-cool";
 $theme-color-accent-cool-lightest: "blue-cool-5";
 $theme-color-accent-cool-lighter: "blue-cool-5v";
 $theme-color-accent-cool-light: "blue-cool-20v";
-$theme-color-accent-cool: "cyan-30v";
+$theme-color-accent-cool: $x-sky;
 $theme-color-accent-cool-dark: "blue-cool-40v";
 $theme-color-accent-cool-darker: "blue-cool-60v";
 $theme-color-accent-cool-darkest: "blue-cool-60v";

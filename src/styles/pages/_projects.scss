@@ -1,0 +1,6 @@
+.Tx__projects {
+  @include u-color("white");
+  .ProjectList {
+    @include u-color("ink");
+  }
+}

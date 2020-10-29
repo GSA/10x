@@ -4,26 +4,29 @@ import classnames from "classnames";
 import { Grid, Row, Col } from "components/Grid";
 import Banner from "components/Banner";
 import { Link } from "react-router-dom";
+import Button from "components/Button";
 
 const Header = ({ logo, nav, hero, className }) => {
   return (
     <header
       className={classnames({
         "usa-header": true,
-        "usa-header--basic": true,
         [className]: className,
       })}
     >
+      <Banner />
       <Grid>
         <Row>
           <Col>
-            <Banner />
             <Row className="align-content-center margin-top-2">
-              <Col size={3}>
+              <Col size={1}>
                 <Link to="/">{logo}</Link>
               </Col>
-              <Col size={9} className="text-right">
-                {nav}
+              <Col size={9}>{nav}</Col>
+              <Col size={2}>
+                <Button color="primary-lighter" url="/">
+                  Submit an idea
+                </Button>
               </Col>
             </Row>
           </Col>

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import classnames from "classnames";
 import Header from "./Header";
 import Footer from "./Footer";
 import PrimaryNav from "components/PrimaryNav";
@@ -17,20 +18,23 @@ const Primary = ({ children }) => {
   const menus = useSelector((state) => state.menu.data);
   const primary = menus.find(({ key }) => key === "primary");
   const navItems = primary ? primary.items : [];
-
   return (
     <div className="App">
       <Header logo={<Logo />} nav={<PrimaryNav items={navItems} />} />
       <main role="main" id="main-content">
         {page.data.hero && (
-          <div className="TxContent bg-base-lightest">
+          <div
+            className={classnames({
+              TxContent: true,
+              [`Tx__${page.data.name}`]: page.data.name,
+            })}
+          >
             <Mdx>{page.data.hero}</Mdx>
           </div>
         )}
         {children}
       </main>
       <GSAFooter />
-      <Footer />
     </div>
   );
 };

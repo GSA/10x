@@ -1,0 +1,37 @@
+blockquote {
+  @include u-font("serif", "xl");
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  @include u-font("serif", "2xl");
+  margin-top: 0;
+  @include u-margin-bottom(4);
+}
+
+h2 {
+  @include u-font("serif", "xl");
+}
+h3 {
+  @include u-font("serif", "3xl");
+}
+h4 {
+  @include u-font("serif", "sm");
+}
+h5 {
+  @include u-font("serif", "xs");
+}
+h6 {
+  @include u-font("serif", "3xs");
+}
+
+body {
+  background: rgb(69, 217, 217);
+  background: linear-gradient(
+    0deg,
+    #{$x-smoke} 60%,
+    #{$x-lead} 75%,
+    #{$x-charcoal} 100%
+  );
+}

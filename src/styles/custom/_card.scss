@@ -1,0 +1,19 @@
+.ProjectCard {
+  .usa-card {
+    * {
+      @include u-color("ink");
+    }
+    &__container {
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__link,
+  &__link:hover {
+    text-decoration: none;
+    @include u-color("ink");
+  }
+}

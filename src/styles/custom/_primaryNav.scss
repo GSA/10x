@@ -1,9 +1,13 @@
 .usa-nav {
+  float: none;
   .usa-nav__primary {
     .usa-nav__primary-item {
       a {
         @include u-color("base-lighter");
-        font-family: "Qualy";
+        @include u-font-family("cond");
+        &:after {
+          display: none !important;
+        }
       }
     }
   }

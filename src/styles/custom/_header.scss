@@ -1,3 +1,4 @@
 .usa-header {
   @include u-bg("base-darkest");
+  @include u-margin-bottom(4);
 }
