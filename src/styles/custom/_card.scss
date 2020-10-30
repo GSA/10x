@@ -1,32 +1,45 @@
+$thingDir: "~styles/images";
 .ProjectList {
   .usa-card {
     break-inside: avoid;
 
     &.bg1 {
       .usa-card__container {
-        &:before {
-          @include u-bg("primary-lighter");
+        background-image: url($thingDir + "/portfolio-paint-stroke-1.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-brush-stroke.svg");
+          }
         }
       }
     }
     &.bg2 {
       .usa-card__container {
-        &:before {
-          @include u-bg("secondary");
+        background-image: url($thingDir + "/portfolio-paint-stroke-2.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-brush-stroke.svg");
+          }
         }
       }
     }
     &.bg3 {
       .usa-card__container {
-        &:before {
-          @include u-bg("accent-warm");
+        background-image: url($thingDir + "/portfolio-paint-stroke-3.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-brush-stroke.svg");
+          }
         }
       }
     }
     &.bg4 {
       .usa-card__container {
-        &:before {
-          @include u-bg("accent-cool");
+        background-image: url($thingDir + "/portfolio-paint-stroke-4.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-brush-stroke.svg");
+          }
         }
       }
     }
@@ -40,11 +53,11 @@
       border-radius: 0;
       box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
 
-      &:before {
-        display: block;
-        content: "";
-        height: 75px;
-      }
+      @include u-padding-top(8);
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: top;
+      background-size: contain;
     }
     &__heading {
       @include u-font("serif", "xl");
@@ -55,11 +68,18 @@
       @include u-font("serif", 11);
       &:before {
         display: block;
-        content: "\f068";
-        font-family: "Font Awesome 5 Free Solid";
-        @include u-margin-y(1);
-        font-size: 32px;
-        @include u-color("primary-lighter");
+        content: "";
+        background-image: url("~styles/images/short-brush-stroke.svg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+        height: 12px;
+        @include u-margin-y(4);
+      }
+    }
+    &__body {
+      p {
+        margin-top: 0;
       }
     }
   }

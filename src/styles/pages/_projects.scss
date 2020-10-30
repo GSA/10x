@@ -3,4 +3,8 @@
   .ProjectList {
     @include u-color("ink");
   }
+  blockquote {
+    @include u-margin-right(15);
+    @include u-margin-bottom(8);
+  }
 }

@@ -1,5 +1,5 @@
 blockquote {
-  @include u-font("serif", "xl");
+  @include u-font("serif", "lg");
   padding: 0;
   margin: 0;
 }
@@ -35,11 +35,28 @@ h6 {
 }
 
 body {
+  min-height: 100vh;
+  position: relative;
   background: rgb(69, 217, 217);
   background: linear-gradient(
-    0deg,
-    #{$x-smoke} 60%,
-    #{$x-lead} 75%,
-    #{$x-charcoal} 100%
+    180deg,
+    #{$x-charcoal} 2px,
+    #{$x-lead} 700px,
+    #{$x-smoke} 1400px
   );
+  &:after {
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-image: url("~styles/images/portfolio-background-Xs.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 1400px;
+    z-index: -1;
+  }
 }
