@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import classnames from "classnames";
 import Header from "./Header";
-import Footer from "./Footer";
 import PrimaryNav from "components/PrimaryNav";
 import Logo from "components/Logo";
 import { getMenuList } from "app/MenuModule";

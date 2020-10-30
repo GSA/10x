@@ -1,5 +1,36 @@
-.ProjectCard {
+.ProjectList {
   .usa-card {
+    break-inside: avoid;
+
+    &.bg1 {
+      .usa-card__container {
+        &:before {
+          @include u-bg("primary-lighter");
+        }
+      }
+    }
+    &.bg2 {
+      .usa-card__container {
+        &:before {
+          @include u-bg("secondary");
+        }
+      }
+    }
+    &.bg3 {
+      .usa-card__container {
+        &:before {
+          @include u-bg("accent-warm");
+        }
+      }
+    }
+    &.bg4 {
+      .usa-card__container {
+        &:before {
+          @include u-bg("accent-cool");
+        }
+      }
+    }
+
     * {
       @include u-color("ink");
     }
@@ -8,6 +39,28 @@
       border: none;
       border-radius: 0;
       box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
+
+      &:before {
+        display: block;
+        content: "";
+        height: 75px;
+      }
+    }
+    &__heading {
+      @include u-font("serif", "xl");
+      font-weight: 500;
+      @include u-color("primary-darker");
+    }
+    &__subhead {
+      @include u-font("serif", 11);
+      &:before {
+        display: block;
+        content: "\f068";
+        font-family: "Font Awesome 5 Free Solid";
+        @include u-margin-y(1);
+        font-size: 32px;
+        @include u-color("primary-lighter");
+      }
     }
   }
 

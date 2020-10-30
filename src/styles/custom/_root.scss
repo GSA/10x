@@ -3,11 +3,19 @@ blockquote {
   padding: 0;
   margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  line-height: 1;
+}
 
 h1 {
   @include u-font("serif", "2xl");
-  margin-top: 0;
-  @include u-margin-bottom(4);
+  @include u-margin-bottom(2);
 }
 
 h2 {
