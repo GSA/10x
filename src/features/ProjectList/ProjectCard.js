@@ -4,13 +4,11 @@ import classnames from "classnames";
 import Card from "components/Card";
 import Mdx from "features/Mdx";
 
-const backgrounds = ["bg1", "bg2", "bg3", "bg4"];
-
 const ProjectCard = ({ data }) => (
   <Card
     className={classnames({
       ProjectCard: true,
-      [backgrounds[parseInt(data.phaseData.phase) - 1]]: true,
+      [`bg${data.template}`]: true,
     })}
     title={data.subtitle}
     subtitle={data.title}
