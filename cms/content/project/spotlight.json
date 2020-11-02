@@ -8,5 +8,6 @@
   "projectType": "Innovation",
   "projectLink": "https://github.com/18F/site-scanning/blob/main/README.md",
   "excerpt": "A lot of government websites fall short when compared to the private sector—they can be less secure, less accessible, and less monitored. The project team worked to improve this by creating Spotlight, a website scanner that allows government web managers to gather real-time intel on the performance of the websites they oversee. The tool runs customizable scans and provides data about everything from the use of the U.S. Web Design System to the presence of secure web components, with more functionality coming each sprint.",
-  "topics": "Compliance officers, Designers, Engineers, Government web managers"
+  "topics": "Compliance officers, Designers, Engineers, Government web managers",
+  "template": "1"
 }
