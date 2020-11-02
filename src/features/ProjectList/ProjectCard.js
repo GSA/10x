@@ -8,7 +8,7 @@ const ProjectCard = ({ data }) => (
   <Card
     className={classnames({
       ProjectCard: true,
-      [`bg${data.template}`]: true,
+      [`template-${data.template}`]: true,
     })}
     title={data.subtitle}
     subtitle={data.title}

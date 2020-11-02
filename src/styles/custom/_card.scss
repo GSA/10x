@@ -3,7 +3,7 @@ $thingDir: "~styles/images";
   .usa-card {
     break-inside: avoid;
 
-    &.bg1 {
+    &.template-1 {
       .usa-card__container {
         background-image: url($thingDir + "/portfolio-paint-stroke-1.png");
         .usa-card__subhead {
@@ -13,7 +13,7 @@ $thingDir: "~styles/images";
         }
       }
     }
-    &.bg2 {
+    &.template-2 {
       .usa-card__container {
         background-image: url($thingDir + "/portfolio-paint-stroke-2.png");
         .usa-card__subhead {
@@ -23,7 +23,7 @@ $thingDir: "~styles/images";
         }
       }
     }
-    &.bg3 {
+    &.template-3 {
       .usa-card__container {
         background-image: url($thingDir + "/portfolio-paint-stroke-3.png");
         .usa-card__subhead {
@@ -33,7 +33,7 @@ $thingDir: "~styles/images";
         }
       }
     }
-    &.bg4 {
+    &.template-4 {
       .usa-card__container {
         background-image: url($thingDir + "/portfolio-paint-stroke-4.png");
         .usa-card__subhead {
@@ -43,7 +43,7 @@ $thingDir: "~styles/images";
         }
       }
     }
-    &.bg5 {
+    &.template-5 {
       .usa-card__container {
         background-image: url($thingDir + "/portfolio-paint-stroke-5.png");
         .usa-card__subhead {
@@ -53,7 +53,7 @@ $thingDir: "~styles/images";
         }
       }
     }
-    &.bg6 {
+    &.template-6 {
       .usa-card__container {
         background-image: url($thingDir + "/portfolio-paint-stroke-6.png");
         .usa-card__subhead {
