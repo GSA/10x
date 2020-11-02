@@ -8,5 +8,6 @@
   "projectType": "Innovation",
   "excerpt": "The intent of the Paperwork Reduction Act (PRA) of 1980 is to reduce the burden of paperwork placed on the public by government agencies who are seeking information. But over the last 40 years, the law has been a source of confusion for federal employees trying to gather data from the public, often in pursuit of user research to make the public’s experience with government better. The project team worked very closely with dozens of compliance attorneys to agree on precise language and common interpretations of the law so they could better explain its purpose, how it works, and how to stay on the right side of compliance—taking decades of legalese and translating it into plain-language web content, lowering the barrier for feds to collect key information from the public so they can continue to improve government services. ",
   "projectLink": "https://pra.digital.gov",
-  "topics": "Designers, Program administrators, Researchers"
+  "topics": "Designers, Program administrators, Researchers",
+  "template": "1"
 }

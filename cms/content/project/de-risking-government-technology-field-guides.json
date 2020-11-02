@@ -8,5 +8,6 @@
   "projectType": "Innovation",
   "projectLink": "https://derisking-guide.18f.gov/",
   "excerpt": "State and federal IT projects are often costly, risky, and prone to failure. For this effort, the team compiled best practices for common issues like budgeting for agile projects, limiting contract size, and measuring success. These were then published into a “how to” field guide that agencies can use to point their projects in the right direction. ",
-  "topics": "Legislators, Product owners, Government IT executives"
+  "topics": "Legislators, Product owners, Government IT executives",
+  "template": "4"
 }
