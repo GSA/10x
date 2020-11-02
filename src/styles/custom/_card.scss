@@ -8,7 +8,7 @@ $thingDir: "~styles/images";
         background-image: url($thingDir + "/portfolio-paint-stroke-1.png");
         .usa-card__subhead {
           &:before {
-            background-image: url("~styles/images/short-brush-stroke.svg");
+            background-image: url("~styles/images/short-tiger-brush-stroke.svg");
           }
         }
       }
@@ -18,7 +18,7 @@ $thingDir: "~styles/images";
         background-image: url($thingDir + "/portfolio-paint-stroke-2.png");
         .usa-card__subhead {
           &:before {
-            background-image: url("~styles/images/short-brush-stroke.svg");
+            background-image: url("~styles/images/short-sky-brush-stroke.svg");
           }
         }
       }
@@ -28,7 +28,7 @@ $thingDir: "~styles/images";
         background-image: url($thingDir + "/portfolio-paint-stroke-3.png");
         .usa-card__subhead {
           &:before {
-            background-image: url("~styles/images/short-brush-stroke.svg");
+            background-image: url("~styles/images/short-ocean-brush-stroke.svg");
           }
         }
       }
@@ -38,7 +38,27 @@ $thingDir: "~styles/images";
         background-image: url($thingDir + "/portfolio-paint-stroke-4.png");
         .usa-card__subhead {
           &:before {
-            background-image: url("~styles/images/short-brush-stroke.svg");
+            background-image: url("~styles/images/short-tiger-brush-stroke.svg");
+          }
+        }
+      }
+    }
+    &.bg5 {
+      .usa-card__container {
+        background-image: url($thingDir + "/portfolio-paint-stroke-5.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-lilac-brush-stroke.svg");
+          }
+        }
+      }
+    }
+    &.bg6 {
+      .usa-card__container {
+        background-image: url($thingDir + "/portfolio-paint-stroke-6.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-sky-brush-stroke.svg");
           }
         }
       }
@@ -69,7 +89,6 @@ $thingDir: "~styles/images";
       &:before {
         display: block;
         content: "";
-        background-image: url("~styles/images/short-brush-stroke.svg");
         background-repeat: no-repeat;
         background-position-x: left;
         background-position-y: center;

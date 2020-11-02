@@ -5,8 +5,19 @@
       a {
         @include u-color("base-lighter");
         @include u-font-family("cond");
+        &:before {
+          display: block;
+          content: "Our";
+          @include u-font("serif", "2xs");
+          font-weight: 200;
+          @include u-margin-bottom("2px");
+        }
         &:after {
-          display: none !important;
+          display: inline-block;
+          background: transparent;
+          content: "\f107";
+          font-family: "Font Awesome 5 Free Solid";
+          @include u-margin-left("2px");
         }
       }
     }

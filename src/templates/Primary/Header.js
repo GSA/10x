@@ -24,7 +24,11 @@ const Header = ({ logo, nav, hero, className }) => {
               </Col>
               <Col size={9}>{nav}</Col>
               <Col size={2}>
-                <Button color="primary-lighter" url="/">
+                <Button
+                  color="primary-lighter"
+                  className="margin-top-1"
+                  url="/"
+                >
                   Submit an idea
                 </Button>
               </Col>
