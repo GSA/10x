@@ -1,5 +1,6 @@
 .usa-nav {
   float: none;
+  @include u-margin-left(6);
   .usa-nav__primary {
     .usa-nav__primary-item {
       a {

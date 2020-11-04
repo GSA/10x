@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "components/Button";
 import Icon from "components/Icon";
 import { Col, Grid, Row } from "components/Grid";
+import GSALogo from "./gsa-logo.svg";
 
 const links = [
   {
@@ -42,7 +43,7 @@ const GSAFooter = () => {
                 className="GSAFooter__logo"
               >
                 <img
-                  src="/images/gsa-logo.svg"
+                  src={GSALogo}
                   alt="GSA
                     logo"
                 />
