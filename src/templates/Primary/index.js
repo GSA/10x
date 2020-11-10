@@ -19,7 +19,6 @@ const Primary = ({ children }) => {
   const navItems = primary ? primary.items : [];
   return (
     <div className="App">
-      {/*
       <Header logo={<Logo />} nav={<PrimaryNav items={navItems} />} />
       <main role="main" id="main-content">
         {page.data.hero && (
@@ -33,7 +32,7 @@ const Primary = ({ children }) => {
           </div>
         )}
         {children}
-          </main>*/}
+      </main>
       <Footer />
     </div>
   );
