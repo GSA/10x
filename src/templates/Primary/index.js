@@ -6,7 +6,7 @@ import PrimaryNav from "components/PrimaryNav";
 import Logo from "components/Logo";
 import { getMenuList } from "app/MenuModule";
 import Mdx from "features/Mdx";
-import GSAFooter from "./GSAFooter";
+import Footer from "./Footer";
 
 const Primary = ({ children }) => {
   const dispatch = useDispatch();
@@ -19,6 +19,7 @@ const Primary = ({ children }) => {
   const navItems = primary ? primary.items : [];
   return (
     <div className="App">
+      {/*
       <Header logo={<Logo />} nav={<PrimaryNav items={navItems} />} />
       <main role="main" id="main-content">
         {page.data.hero && (
@@ -32,8 +33,8 @@ const Primary = ({ children }) => {
           </div>
         )}
         {children}
-      </main>
-      <GSAFooter />
+          </main>*/}
+      <Footer />
     </div>
   );
 };

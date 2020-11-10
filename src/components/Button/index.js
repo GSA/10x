@@ -39,7 +39,7 @@ export const Button = ({
       onClick={onClick}
       {...props}
       className={classnames({
-        "usa-button": variant !== "link",
+        "usa-button": true,
         [`usa-button--${color}`]: color,
         [`usa-button--${color}-${variant}`]:
           color && variant && variant !== "link",

@@ -1,11 +1,12 @@
-$thingDir: "~styles/images";
+$bgImgDir: "~styles/images";
+
 .ProjectList {
   .usa-card {
     break-inside: avoid;
 
     &.template-1 {
       .usa-card__container {
-        background-image: url($thingDir + "/portfolio-paint-stroke-1.png");
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-1.png");
         .usa-card__subhead {
           &:before {
             background-image: url("~styles/images/short-tiger-brush-stroke.svg");
@@ -15,7 +16,7 @@ $thingDir: "~styles/images";
     }
     &.template-2 {
       .usa-card__container {
-        background-image: url($thingDir + "/portfolio-paint-stroke-2.png");
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-2.png");
         .usa-card__subhead {
           &:before {
             background-image: url("~styles/images/short-sky-brush-stroke.svg");
@@ -25,7 +26,7 @@ $thingDir: "~styles/images";
     }
     &.template-3 {
       .usa-card__container {
-        background-image: url($thingDir + "/portfolio-paint-stroke-3.png");
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-3.png");
         .usa-card__subhead {
           &:before {
             background-image: url("~styles/images/short-ocean-brush-stroke.svg");
@@ -35,7 +36,7 @@ $thingDir: "~styles/images";
     }
     &.template-4 {
       .usa-card__container {
-        background-image: url($thingDir + "/portfolio-paint-stroke-4.png");
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-4.png");
         .usa-card__subhead {
           &:before {
             background-image: url("~styles/images/short-tiger-brush-stroke.svg");
@@ -45,7 +46,7 @@ $thingDir: "~styles/images";
     }
     &.template-5 {
       .usa-card__container {
-        background-image: url($thingDir + "/portfolio-paint-stroke-5.png");
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-5.png");
         .usa-card__subhead {
           &:before {
             background-image: url("~styles/images/short-lilac-brush-stroke.svg");
@@ -55,7 +56,7 @@ $thingDir: "~styles/images";
     }
     &.template-6 {
       .usa-card__container {
-        background-image: url($thingDir + "/portfolio-paint-stroke-6.png");
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-6.png");
         .usa-card__subhead {
           &:before {
             background-image: url("~styles/images/short-sky-brush-stroke.svg");

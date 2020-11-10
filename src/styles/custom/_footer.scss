@@ -1,0 +1,49 @@
+$bgImgDir: "~styles/images";
+
+.usa-footer {
+  @include u-padding-top(4);
+  @include u-bg("base");
+  @include u-color("white");
+  @include u-font("serif", "xs");
+  font-weight: 300;
+
+  .usa-button--unstyled {
+    @include u-color("primary-lighter");
+    &:visited {
+      @include u-color("primary-lighter");
+    }
+  }
+  &__primary {
+    @include u-bg("base-dark");
+
+    @include u-font-family("sans");
+    &-content {
+      position: relative;
+      margin-top: 92px;
+      &:after {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        top: -66px;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: top;
+        background-image: url($bgImgDir + "/footer-brush-stroke.svg");
+        background-repeat: no-repeat;
+      }
+
+      .usa-button--unstyled {
+        @include u-color("primary-lighter");
+        @include u-font-family("sans");
+
+        &:visited {
+          @include u-color("primary-lighter");
+        }
+      }
+    }
+  }
+}

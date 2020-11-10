@@ -60,3 +60,7 @@ body {
     z-index: -1;
   }
 }
+
+.grid-container {
+  @include u-padding-x(2);
+}
