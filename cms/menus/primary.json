@@ -3,8 +3,18 @@
     {
       "text": "Our STORY",
       "link": "about-10x",
-      "img": "images/about.svg",
-      "desc": "Where did 10x come from and what does it do?"
+      "img": "public/images/10x-icon-about.svg",
+      "desc": "Where did 10x come from and what does it do?",
+      "items": [
+        {
+          "text": "Making each dollar count",
+          "link": "test"
+        },
+        {
+          "text": "Another item",
+          "link": "test"
+        }
+      ]
     },
     {
       "text": "Our PROCESS",
