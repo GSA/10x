@@ -34,7 +34,7 @@
     },
     {
       "text": "CHALLENGE TO YOU",
-      "link": "/",
+      "link": "challenge-to-you",
       "img": "images/home.svg",
       "desc": "An introduction to 10x and our mission.",
       "prefix": "Our"
