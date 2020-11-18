@@ -63,7 +63,12 @@ collections:
       - name: items
         label: Items
         widget: list
+        summary: "{{fields.text}}"
         fields:
+          - label: Prefix
+            name: prefix
+            widget: string
+            required: false
           - label: Text
             name: text
             widget: string
@@ -73,9 +78,6 @@ collections:
           - label: Description
             name: desc
             width: string
-          - label: img
-            name: img
-            widget: image
           - label: Items
             name: items
             widget: list
@@ -100,6 +102,11 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
+      - label: "Template"
+        name: "template"
+        required: false
+        widget: "select"
+        options: ["1", "2", "3", "4"]
       - label: Meta
         name: Meta
         required: false

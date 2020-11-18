@@ -1,0 +1,10 @@
+.usa-banner {
+  &__button {
+    line-height: 0;
+    &-text {
+      display: inline-block;
+      @include u-margin-right(1);
+      @include u-font("sans", "3xs");
+    }
+  }
+}

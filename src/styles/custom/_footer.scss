@@ -15,11 +15,11 @@ $bgImgDir: "~styles/images";
   }
   &__primary {
     @include u-bg("base-dark");
-
     @include u-font-family("sans");
     &-content {
       position: relative;
       margin-top: 92px;
+      line-height: 16px;
       &:after {
         display: inline-block;
         position: absolute;

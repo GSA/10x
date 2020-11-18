@@ -1,7 +1,11 @@
 blockquote {
-  @include u-font("serif", "lg");
+  @include u-font("serif", "md");
   padding: 0;
   margin: 0;
+  line-height: 150%;
+  p {
+    margin: 0;
+  }
 }
 h1,
 h2,
@@ -10,57 +14,39 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  line-height: 1;
+  line-height: 130%;
 }
 
-h1 {
-  @include u-font("serif", "2xl");
-  @include u-margin-bottom(2);
-}
-
+h1,
 h2 {
-  @include u-font("serif", "xl");
+  @include u-text("normal");
 }
-h3 {
-  @include u-font("serif", "3xl");
-}
+h3,
 h4 {
-  @include u-font("serif", "sm");
-}
-h5 {
-  @include u-font("serif", "xs");
-}
-h6 {
-  @include u-font("serif", "3xs");
+  @include u-text("medium");
 }
 
-body {
+.usa-app {
   min-height: 100vh;
   position: relative;
   background: rgb(69, 217, 217);
-  background: linear-gradient(
-    180deg,
-    #{$x-charcoal} 2px,
-    #{$x-lead} 700px,
-    #{$x-smoke} 1400px
-  );
-  &:after {
-    display: inline-block;
-    position: absolute;
-    top: 150px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: "";
-    background-image: url("~styles/images/portfolio-background-Xs.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: top;
-    background-size: 1400px;
-    z-index: -1;
-  }
+  background: url("~styles/images/portfolio-background-Xs.png"),
+    linear-gradient(
+      180deg,
+      #{$x-charcoal} 2px,
+      #{$x-lead} 700px,
+      #{$x-smoke} 1400px
+    );
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: 1400px;
 }
 
 .grid-container {
   @include u-padding-x(2);
+}
+
+#main-content {
+  z-index: 1;
 }

@@ -81,7 +81,8 @@ $bgImgDir: "~styles/images";
       background-size: contain;
     }
     &__heading {
-      @include u-font("serif", "xl");
+      @include u-font("serif", "lg");
+      line-height: 130%;
       font-weight: 500;
       @include u-color("primary-darker");
     }
@@ -94,12 +95,13 @@ $bgImgDir: "~styles/images";
         background-position-x: left;
         background-position-y: center;
         height: 12px;
-        @include u-margin-y(4);
+        @include u-margin-top(2);
+        @include u-margin-bottom(4);
       }
     }
     &__body {
       p {
-        margin-top: 0;
+        margin: 0;
       }
     }
   }

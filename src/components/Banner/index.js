@@ -26,9 +26,6 @@ const Banner = () => {
             <p className="usa-banner__header-text">
               An official website of the United States government
             </p>
-            <p className="usa-banner__header-action" aria-hidden="true">
-              Here’s how you know
-            </p>
           </div>
           <Button
             className="usa-accordion__button usa-banner__button"

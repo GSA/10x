@@ -1,26 +1,66 @@
 .usa-nav {
   float: none;
   @include u-margin-left(6);
+  button {
+    @include u-color("white");
+    &:hover {
+      @include u-color("white");
+      cursor: pointer;
+    }
+  }
   .usa-nav__primary {
-    .usa-nav__primary-item {
-      a {
-        @include u-color("base-lighter");
-        @include u-font-family("cond");
-        &:before {
-          display: block;
-          content: "Our";
-          @include u-font("serif", "2xs");
-          font-weight: 200;
-          @include u-margin-bottom("2px");
+    .usa-nav__url {
+      position: relative;
+      @include u-padding-y(4);
+      @include u-color("white");
+      @include u-font("serif", "2xs");
+
+      &.usa-accordion__button {
+        background: none;
+        &[aria-expanded="true"] {
+          background: none;
+          @include u-bg("base");
+          &:before {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            left: 1rem;
+            bottom: 0;
+            width: 100%;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: center;
+            background-size: 30%;
+            background-image: url("~styles/images/short-ocean-brush-stroke.svg");
+          }
+          .usa-nav__url-text {
+            &:after {
+              content: "\f106";
+            }
+          }
         }
-        &:after {
-          display: inline-block;
-          background: transparent;
-          content: "\f107";
-          font-family: "Font Awesome 5 Free Solid";
-          @include u-margin-left("2px");
+        .usa-nav__url-text {
+          display: block;
+          &:after {
+            display: inline-block;
+            @include u-margin-left(1);
+            background: transparent;
+            content: "\f107";
+            font-family: "Font Awesome 5 Free Solid";
+          }
         }
       }
     }
+    .usa-nav__submenu {
+      @include u-bg("base");
+      font-weight: 400;
+      button {
+        font-weight: 400;
+      }
+    }
+  }
+  .usa-nav__url-prefix {
+    display: block;
   }
 }

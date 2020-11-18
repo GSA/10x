@@ -7,7 +7,6 @@ import store from "./app";
 import * as serviceWorker from "./serviceWorker";
 import Primary from "templates/Primary";
 import registerFontAwesome from "utils/registerFontAwesome";
-import OnPathChange from "utils/onPathChange";
 import "styles/index.scss";
 
 registerFontAwesome();
@@ -27,7 +26,6 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Provider store={store}>
-        <OnPathChange />
         <Primary>
           <Routes />
         </Primary>

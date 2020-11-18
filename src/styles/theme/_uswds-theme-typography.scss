@@ -65,9 +65,9 @@ unclassed elements:
 ----------------------------------------
 */
 
-$theme-global-paragraph-styles: false;
-$theme-global-link-styles: false;
-$theme-global-content-styles: false;
+$theme-global-paragraph-styles: true;
+$theme-global-link-styles: true;
+$theme-global-content-styles: true;
 
 /*
 ----------------------------------------
@@ -383,14 +383,14 @@ values from the USWDS system type scale
 ----------------------------------------
 */
 
-$theme-type-scale-3xs: 2;
+$theme-type-scale-3xs: 1;
 $theme-type-scale-2xs: 3;
-$theme-type-scale-xs: 6;
-$theme-type-scale-sm: 8;
+$theme-type-scale-xs: 4;
+$theme-type-scale-sm: 6;
 $theme-type-scale-md: 10;
-$theme-type-scale-lg: 12;
+$theme-type-scale-lg: 13;
 $theme-type-scale-xl: 14;
-$theme-type-scale-2xl: 17;
+$theme-type-scale-2xl: 16;
 $theme-type-scale-3xl: 18;
 
 /*

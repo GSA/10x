@@ -22,12 +22,24 @@ https://designsystem.digital.gov/design-tokens/color
 Theme palette colors
 ----------------------------------------
 */
-
+$x-lilac-light: #d8d6ee;
 $x-lilac: #a9a5ea;
+
 $x-grimace: #3a337b;
+$x-grimace-light: #7570a3;
+
+$x-tiger-light: #f3afa6;
 $x-tiger: #ff6839;
+$x-tiger-dark: #b34928;
+
+$x-sky-light: #c9f4fd;
 $x-sky: #78e3fb;
+$x-sky-dark: #549fb0;
+
+$x-ocean-light: #b5f0f0;
 $x-ocean: #45d9d9;
+$x-ocean-dark: #309898;
+
 $x-smoke: #d8d8d8;
 $x-lead: #4e5164;
 $x-charcoal: #292a2b;
@@ -50,7 +62,7 @@ $theme-color-primary-lighter: $x-lilac;
 $theme-color-primary-light: $x-lilac;
 $theme-color-primary: $x-grimace;
 $theme-color-primary-vivid: "blue-warm-60v";
-$theme-color-primary-dark: "blue-warm-70v";
+$theme-color-primary-dark: $x-grimace-light;
 $theme-color-primary-darker: $x-grimace;
 $theme-color-primary-darkest: "blue-warm-80v";
 
@@ -58,9 +70,9 @@ $theme-color-primary-darkest: "blue-warm-80v";
 $theme-color-secondary-family: "red";
 $theme-color-secondary-lightest: "red-cool-5";
 $theme-color-secondary-lighter: "red-cool-10";
-$theme-color-secondary-light: "red-30";
+$theme-color-secondary-light: $x-ocean-light;
 $theme-color-secondary: $x-ocean;
-$theme-color-secondary-vivid: "red-cool-50v";
+$theme-color-secondary-vivid: $x-ocean-dark;
 $theme-color-secondary-dark: "red-60v";
 $theme-color-secondary-darker: "red-70v";
 $theme-color-secondary-darkest: "red-80v";
@@ -69,9 +81,9 @@ $theme-color-secondary-darkest: "red-80v";
 $theme-color-accent-warm-family: "orange";
 $theme-color-accent-warm-lightest: "orange-5";
 $theme-color-accent-warm-lighter: "orange-10";
-$theme-color-accent-warm-light: "orange-20v";
+$theme-color-accent-warm-light: $x-tiger-light;
 $theme-color-accent-warm: $x-tiger;
-$theme-color-accent-warm-dark: "orange-50v";
+$theme-color-accent-warm-dark: $x-tiger-dark;
 $theme-color-accent-warm-darker: "orange-60";
 $theme-color-accent-warm-darkest: "orange-70";
 
@@ -79,9 +91,9 @@ $theme-color-accent-warm-darkest: "orange-70";
 $theme-color-accent-cool-family: "blue-cool";
 $theme-color-accent-cool-lightest: "blue-cool-5";
 $theme-color-accent-cool-lighter: "blue-cool-5v";
-$theme-color-accent-cool-light: "blue-cool-20v";
+$theme-color-accent-cool-light: $x-sky-light;
 $theme-color-accent-cool: $x-sky;
-$theme-color-accent-cool-dark: "blue-cool-40v";
+$theme-color-accent-cool-dark: $x-sky-dark;
 $theme-color-accent-cool-darker: "blue-cool-60v";
 $theme-color-accent-cool-darkest: "blue-cool-60v";
 

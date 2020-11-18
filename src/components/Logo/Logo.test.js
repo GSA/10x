@@ -6,7 +6,7 @@ describe("<Logo />", () => {
   describe("default render", () => {
     it("should render", () => {
       const wrapper = mount(<Logo />);
-      expect(wrapper.text()).toBe("10x");
+      expect(wrapper.find(".usa-logo").hostNodes().length).toBe(1);
     });
   });
 });

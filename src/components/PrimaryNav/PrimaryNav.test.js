@@ -44,6 +44,10 @@ describe("<PrimaryNav />", () => {
           <PrimaryNav items={items1} />
         </TestProvider>
       );
+      console.log(wrapper.html());
+      const button = wrapper.find("#usa-nav-item-1").hostNodes();
+      button.simulate("click");
+      wrapper.update();
       expect(wrapper.find(".usa-nav__primary-item").length).toBe(3);
     });
     it("should render nested menu", () => {
@@ -52,6 +56,9 @@ describe("<PrimaryNav />", () => {
           <PrimaryNav items={items2} />
         </TestProvider>
       );
+      const button = wrapper.find(".usa-nav__url").hostNodes();
+      button.simulate("click");
+      wrapper.update();
       expect(wrapper.find(".usa-nav__submenu-item").length).toBe(2);
     });
   });
