@@ -112,12 +112,12 @@ const Nav = ({
           </Button>
           <ul className="usa-accordion usa-nav__primary">
             {items.map((item, idx) => {
-              const nodeId = ++idx;
+              const nodeId = `usa-nav-item-${idx}`;
               return (
                 <NavItem
                   data={item}
-                  key={`usa-nav-item-${nodeId}`}
-                  id={`usa-nav-item-${nodeId}`}
+                  key={nodeId}
+                  id={nodeId}
                   renderText={renderText}
                   isOpen={activeMenuItem === nodeId}
                   handleActiveMenuItem={handleActiveMenuItem}

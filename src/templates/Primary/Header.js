@@ -51,7 +51,6 @@ const Header = ({ logo, hero, className }) => {
   const menus = useSelector((state) => state.menu.data);
   const primary = menus.find(({ key }) => key === "primary");
   const navItems = primary ? primary.items : [];
-
   return (
     <header
       className={classnames({
