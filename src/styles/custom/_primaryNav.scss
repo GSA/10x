@@ -53,6 +53,7 @@
   .usa-nav__footer {
     @include u-margin-top(2);
     @include u-margin-bottom(4);
+    text-align: left;
   }
 }
 

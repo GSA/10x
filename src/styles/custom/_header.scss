@@ -1,6 +1,5 @@
 .usa-header {
   @include u-bg("base-darkest");
-  @include u-margin-bottom(10);
   position: relative;
   & > .grid-container {
     padding: 0;

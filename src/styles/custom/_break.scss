@@ -1,0 +1,25 @@
+.TxBreak {
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  height: 12px;
+  @include u-margin-y(4);
+
+  &__primary-lighter {
+    background-image: url("~styles/images/short-lilac-brush-stroke.svg");
+  }
+  &__secondary {
+    background-image: url("~styles/images/short-ocean-brush-stroke.svg");
+  }
+  &__accent-warm {
+    background-image: url("~styles/images/short-tiger-brush-stroke.svg");
+  }
+  &__accent-cool {
+    background-image: url("~styles/images/short-sky-brush-stroke.svg");
+  }
+  &__base-lighter {
+    background-image: url("~styles/images/short-ocean-brush-stroke.svg");
+  }
+}

@@ -1,0 +1,114 @@
+$bgImgDir: "~styles/images";
+
+.ProjectList {
+  .usa-card {
+    break-inside: avoid;
+
+    &.template-1 {
+      .usa-card__container {
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-1.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-tiger-brush-stroke.svg");
+          }
+        }
+      }
+    }
+    &.template-2 {
+      .usa-card__container {
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-2.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-sky-brush-stroke.svg");
+          }
+        }
+      }
+    }
+    &.template-3 {
+      .usa-card__container {
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-3.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-ocean-brush-stroke.svg");
+          }
+        }
+      }
+    }
+    &.template-4 {
+      .usa-card__container {
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-4.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-tiger-brush-stroke.svg");
+          }
+        }
+      }
+    }
+    &.template-5 {
+      .usa-card__container {
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-5.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-lilac-brush-stroke.svg");
+          }
+        }
+      }
+    }
+    &.template-6 {
+      .usa-card__container {
+        background-image: url($bgImgDir + "/portfolio-paint-stroke-6.png");
+        .usa-card__subhead {
+          &:before {
+            background-image: url("~styles/images/short-sky-brush-stroke.svg");
+          }
+        }
+      }
+    }
+
+    * {
+      @include u-color("ink");
+    }
+    &__container {
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
+
+      @include u-padding-top(8);
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: top;
+      background-size: contain;
+    }
+    &__heading {
+      @include u-font("serif", "lg");
+      line-height: 130%;
+      font-weight: 500;
+      @include u-color("primary-darker");
+    }
+    &__subhead {
+      @include u-font("serif", 11);
+      &:before {
+        display: block;
+        content: "";
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+        height: 12px;
+        @include u-margin-top(2);
+        @include u-margin-bottom(4);
+      }
+    }
+    &__body {
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  &__link,
+  &__link:hover {
+    text-decoration: none;
+    @include u-color("ink");
+  }
+}

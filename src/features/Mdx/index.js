@@ -1,6 +1,7 @@
 import React from "react";
 import MDX from "@mdx-js/runtime";
 import { Link } from "react-router-dom";
+import Break from "components/Break";
 import Button from "components/Button";
 import Card from "components/Card";
 import ColorBox from "components/ColorBox";
@@ -15,6 +16,7 @@ import LocationMenu from "features/LocationMenu";
 import ProjectList from "features/ProjectList";
 
 export const shortcodes = {
+  Break,
   Button,
   Card,
   ColorBox,

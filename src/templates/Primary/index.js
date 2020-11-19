@@ -32,7 +32,7 @@ const Primary = ({ children }) => {
             <div
               className={classnames({
                 TxContent: true,
-                [`Tx__${page.data.name}`]: page.data.name,
+                [`Tx__${page.data.name}-hero`]: page.data.name,
               })}
             >
               <Mdx>{page.data.hero}</Mdx>
