@@ -6,7 +6,9 @@
   bottom: unset;
   width: 100%;
   @include u-bg("base-darkest");
-
+  &.is-visible {
+    animation: unset;
+  }
   button {
     padding: 0;
     @include u-font-family("serif");

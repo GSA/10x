@@ -20,11 +20,12 @@ $bgImgDir: "~styles/images";
       position: relative;
       margin-top: 92px;
       line-height: 16px;
+      border: none;
       &:after {
         display: inline-block;
         position: absolute;
         content: "";
-        top: -66px;
+        top: -32px;
         bottom: 100%;
         left: 0;
         right: 0;
@@ -34,6 +35,12 @@ $bgImgDir: "~styles/images";
         background-position-y: top;
         background-image: url($bgImgDir + "/footer-brush-stroke.svg");
         background-repeat: no-repeat;
+        @include at-media("tablet") {
+          top: -50px;
+        }
+        @include at-media("desktop") {
+          top: -66px;
+        }
       }
 
       .usa-button--unstyled {
@@ -44,6 +51,21 @@ $bgImgDir: "~styles/images";
           @include u-color("primary-lighter");
         }
       }
+    }
+  }
+  &__links {
+    text-align: center;
+    flex-direction: column;
+    @include u-padding-bottom("10");
+
+    a {
+      text-align: center;
+      width: auto;
+      @include u-margin-bottom(2);
+    }
+    @include at-media("desktop") {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }

@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="usa-footer">
       <Grid>
         <Row>
-          <Col tablet="9">
+          <Col size="12" tablet="9">
             <Button variant="link" url="https://code.gov" external>
               Code.gov
             </Button>
@@ -35,7 +35,11 @@ const Footer = () => {
             </Button>
             {" all started as ideas submitted to and funded by 10x!"}
           </Col>
-          <Col tablet="3" className="text-right">
+          <Col
+            size="12"
+            tablet="3"
+            className="text-right padding-top-4 desktop:padding-top-0"
+          >
             <Button url="/projects" color="primary-lighter">
               VIEW PROJECTS
             </Button>
@@ -49,7 +53,7 @@ const Footer = () => {
               <GSAFooter />
             </Col>
           </Row>
-          <Row className="text-center desktop:flex-justify padding-bottom-10">
+          <Row className="usa-footer__links">
             <Button variant="link" external url="https://10x.gsa.gov">
               {"View No FEAR Act"}
             </Button>
@@ -58,7 +62,11 @@ const Footer = () => {
             </Button>
             <div>
               {"Built with the "}
-              <Button variant="link" external>
+              <Button
+                variant="link"
+                external
+                url="https://designsystem.digital.gov/"
+              >
                 U.S. Web Design System
               </Button>
             </div>
