@@ -16,7 +16,9 @@ const Header = ({ logo, hero, className }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [activeMenuItem, setActiveMenuItem] = useState(null);
 
-  const handleMenuToggle = (v) => setMenuOpen((state) => (v ? v : !state));
+  const handleMenuToggle = (v) => {
+    setMenuOpen((state) => (typeof v === "boolean" ? v : !state));
+  };
 
   const handleActiveMenuItemClick = (e) => {
     let id = null;
@@ -51,6 +53,7 @@ const Header = ({ logo, hero, className }) => {
   const menus = useSelector((state) => state.menu.data);
   const primary = menus.find(({ key }) => key === "primary");
   const navItems = primary ? primary.items : [];
+
   return (
     <header
       className={classnames({
@@ -63,10 +66,10 @@ const Header = ({ logo, hero, className }) => {
         <Row>
           <Col>
             <Row className="align-content-center">
-              <Col size={1}>
+              <Col size={1} className="usa-header__logo">
                 <Link to="/">{logo}</Link>
               </Col>
-              <Col size={9}>
+              <Col size={11} className="usa-header__nav">
                 <PrimaryNav
                   items={navItems}
                   isMobileMenuOpen={isMenuOpen}
@@ -80,16 +83,14 @@ const Header = ({ logo, hero, className }) => {
                       <span className="usa-nav__url-text">{data.text}</span>
                     </>
                   )}
-                />
-              </Col>
-              <Col size={2}>
-                <div className="display-flex flex-align-center height-full">
-                  <div className="width-full text-right">
+                  footer={
                     <Button color="primary-lighter" url="/">
                       Submit an idea
                     </Button>
-                  </div>
-                </div>
+                  }
+                  open=""
+                  close=""
+                />
               </Col>
             </Row>
           </Col>

@@ -25,21 +25,23 @@ const Primary = ({ children }) => {
         [`usa-theme-${template}`]: Boolean(template),
       })}
     >
-      <Header logo={<Logo />} />
-      <main role="main" id="main-content">
-        {page.data.hero && (
-          <div
-            className={classnames({
-              TxContent: true,
-              [`Tx__${page.data.name}`]: page.data.name,
-            })}
-          >
-            <Mdx>{page.data.hero}</Mdx>
-          </div>
-        )}
-        {children}
-      </main>
-      <Footer />
+      <div className="usa-app__bg">
+        <Header logo={<Logo />} />
+        <main role="main" id="main-content">
+          {page.data.hero && (
+            <div
+              className={classnames({
+                TxContent: true,
+                [`Tx__${page.data.name}`]: page.data.name,
+              })}
+            >
+              <Mdx>{page.data.hero}</Mdx>
+            </div>
+          )}
+          {children}
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 };

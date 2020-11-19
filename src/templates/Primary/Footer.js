@@ -49,7 +49,7 @@ const Footer = () => {
               <GSAFooter />
             </Col>
           </Row>
-          <Row className="text-center flex-justify padding-bottom-10">
+          <Row className="text-center desktop:flex-justify padding-bottom-10">
             <Button variant="link" external url="https://10x.gsa.gov">
               {"View No FEAR Act"}
             </Button>

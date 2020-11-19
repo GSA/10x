@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
-import close from "./close.svg";
 import Button from "components/Button";
 
 const NavItem = ({
@@ -18,7 +17,7 @@ const NavItem = ({
   return (
     <li className="usa-nav__primary-item">
       {items.length ? (
-        <div>
+        <>
           <button
             id={id}
             className={classnames({
@@ -49,7 +48,7 @@ const NavItem = ({
               </li>
             ))}
           </ul>
-        </div>
+        </>
       ) : (
         <button
           id={id}
@@ -82,6 +81,10 @@ const Nav = ({
   handleNav,
   currentMenuItem,
   renderText,
+  header,
+  footer,
+  open,
+  close,
 }) => {
   return (
     <>
@@ -91,7 +94,7 @@ const Nav = ({
         onClick={handleMobileMenu}
         className="usa-nav-open"
       >
-        Menu
+        {open}
       </Button>
       <nav
         role="navigation"
@@ -108,8 +111,9 @@ const Nav = ({
             className="usa-nav-close"
             onClick={handleMobileMenu}
           >
-            <img src={close} alt="close" />
+            {close}
           </Button>
+          {header && <div className="usa-nav__header">{header}</div>}
           <ul className="usa-accordion usa-nav__primary">
             {items.map((item, idx) => {
               const nodeId = `usa-nav-item-${idx}`;
@@ -128,6 +132,7 @@ const Nav = ({
             })}
           </ul>
         </div>
+        {footer && <div className="usa-nav__footer">{footer}</div>}
       </nav>
     </>
   );
@@ -143,6 +148,8 @@ Nav.defaultProps = {
   activeMenuItem: null,
   handleActiveMenuItem: () => console.log("handleActiveMenuItem clicked!"),
   handleNav: () => console.log("handleNav clicked!"),
+  open: "Menu",
+  close: "Close",
 };
 
 Nav.propTypes = {

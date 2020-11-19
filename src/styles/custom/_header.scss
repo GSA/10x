@@ -2,10 +2,34 @@
   @include u-bg("base-darkest");
   @include u-margin-bottom(10);
   position: relative;
+  & > .grid-container {
+    padding: 0;
+    @include at-media("desktop") {
+      @include u-padding-x(2);
+    }
+  }
 
+  &__nav {
+    position: static;
+    @include u-padding(2);
+    text-align: right;
+    @include at-media("desktop") {
+      text-align: left;
+      padding: 0;
+    }
+  }
   .usa-logo {
     display: flex;
     align-items: center;
     height: 100%;
+    @include u-padding(2);
+
+    @include at-media("desktop") {
+      padding: 0;
+    }
+    img {
+      height: 40px;
+      max-width: unset;
+    }
   }
 }

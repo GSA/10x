@@ -1,5 +1,5 @@
 blockquote {
-  @include u-font("serif", "md");
+  @include u-font("serif", 10);
   padding: 0;
   margin: 0;
   line-height: 150%;
@@ -30,17 +30,23 @@ h4 {
   min-height: 100vh;
   position: relative;
   background: rgb(69, 217, 217);
-  background: url("~styles/images/portfolio-background-Xs.png"),
-    linear-gradient(
+
+  &.usa-theme-1 {
+    background: linear-gradient(
       180deg,
       #{$x-charcoal} 2px,
       #{$x-lead} 700px,
       #{$x-smoke} 1400px
     );
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: top;
-  background-size: 1400px;
+
+    .usa-app__bg {
+      background-image: url("~styles/images/portfolio-background-Xs.png");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: 120px;
+      background-size: 1400px;
+    }
+  }
 }
 
 .grid-container {
