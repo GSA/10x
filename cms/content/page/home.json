@@ -24,5 +24,5 @@
   "title": "10x",
   "template": "2",
   "type": "page",
-  "hero": "<Grid className=\"margin-bottom-4\">\n\n# What if your idea could change how the government communicates with the public?\n\n</Grid>"
+  "hero": "<Grid>\n\n# What if your idea could change how the government communicates with the public?\n\n</Grid>"
 }
