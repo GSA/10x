@@ -1,10 +1,7 @@
 {
-  "title": "10x",
-  "body": "<Grid className=\"bg-white\">\n\n# Test h1\n\n## Test h2\n\n### Test h3\n\n#### Test h4\n\n> This is a test Blockquote\n>\n> Blah blah blah.\n\n\n\n<Button url=\"#\"> Base Button </Button>\n\n<Button url=\"#\" color=\"secondary\"> Base Button </Button>\n\n<Button url=\"#\" color=\"accent-warm\"> Base Button </Button>\n\n<Button url=\"#\" color=\"accent-cool\"> Base Button </Button>\n\n<Button url=\"#\" color=\"primary-lighter\"> Base Button </Button>\n\n<Button url=\"#\" color=\"primary-darker\"> Base Button </Button>\n\n</Grid>",
-  "type": "page",
-  "name": "home",
-  "path": "/home",
   "excerpt": "<span className=\"usa-subtitle\">",
+  "body": "<Grid>\n\n<Row>\n\n<Col desktop=\"8\">\n\n## Turning good-for-government ideas into good-for-people solutions\n\n<Break color=\"accent-warm\" />\n\n### 10x crowdsources ideas from federal employees and turns them into real products that improve the public’s experience with the federal government. \n\nWe start small, validating the idea and increasing the investment as we go, to ensure we’re funding the ideas that deliver the most impact. We believe that the most creative, game-changing ideas come from those who work most closely to the problem—people like  you. \n\nWe invite any federal employee to submit an idea for how to use technology to improve public service. Twice a year, we evaluate submissions and choose the most promising ones for a deeper dive into their potential impact, feasibility, and scope. We’re talking things like using artificial intelligence to eliminate bias, improving the public’s experience with the federal government, and sharing data and analytics across agencies. So, how do you want to improve public service?\n\n</Col>\n\n<Col desktop=\"4\">\n\n<Card>\n\n10x has funded 68 projects in 2020. \nWill the next be yours? \n\nOur next submission deadline is February 2021.\n\n<Button color=\"primary\" url=\"/\">SUBMIT AND IDEA</Button>\n\n</Card>\n\n</Col>\n\n</Row>\n\n<Row>\n\n<Col size=\"12\">\n\n## What's new with us\n\n<Break color=\"accent-cool\" />\n\n<Row>\n\n<Col size=\"12\" tablet=\"6\"><Card title=\"Featured Project\">Using machine learning to combat bias</Card></Col>\n<Col size=\"12\" tablet=\"6\"><Card title=\"Inside Look\">View 10x Lightening Talks from successful idea submitters</Card></Col>\n<Col size=\"12\" tablet=\"6\"><Card title=\"Media\">Government reinvention with a venture capital mindset</Card></Col>\n<Col size=\"12\" tablet=\"6\"><Card title=\"Awards\">10x is proud to have been recognized with a 2019 Public Sector Innovation award</Card></Col>\n\n</Col>\n\n</Row>\n\n</Grid>",
+  "path": "/home",
   "toc": [
     {
       "text": "First, send 10x your idea.",
@@ -23,5 +20,9 @@
       "url": "#then-10x-goes-to-work"
     }
   ],
-  "template": "2"
+  "name": "home",
+  "title": "10x",
+  "template": "2",
+  "type": "page",
+  "hero": "# What if your idea could change how the government communicates with the public?"
 }
