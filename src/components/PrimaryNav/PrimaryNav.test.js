@@ -41,14 +41,19 @@ describe("<PrimaryNav />", () => {
     it("should render", () => {
       const wrapper = mount(
         <TestProvider>
-          <PrimaryNav items={items1} />
+          <PrimaryNav
+            items={items1}
+            header={<div className="test-header" />}
+            footer={<div className="test-footer" />}
+          />
         </TestProvider>
       );
-      console.log(wrapper.html());
       const button = wrapper.find("#usa-nav-item-1").hostNodes();
       button.simulate("click");
       wrapper.update();
       expect(wrapper.find(".usa-nav__primary-item").length).toBe(3);
+      expect(wrapper.find(".test-header").hostNodes().length).toBe(1);
+      expect(wrapper.find(".test-footer").hostNodes().length).toBe(1);
     });
     it("should render nested menu", () => {
       const wrapper = mount(
