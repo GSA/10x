@@ -30,6 +30,18 @@
       "members": "Chris Goranson, Catherine Devlin, Tony Garvan, Mike Gintz, Mark Headd, Ethan Heppner, Joe Krzystan, Julia Lindpaintner, Amy Mok, Princess Ojiaku, James Tranovich\n"
     }
   },
+  "summary": [
+    {
+      "Text": "Getting good, reliable data is hard"
+    },
+    {
+      "Text": "Data from different sources makes this even harder"
+    },
+    {
+      "Text": "We aren’t effectively capitalizing on lessons learned from other data coordination efforts to improve data sharing for everyone"
+    }
+  ],
+  "intro": "Data informs all kinds of decision making in the federal government, but the wide array of sources and structures and units make sharing data — an activity that could result in better, more complete analysis — come down somewhere between horribly difficult and impossible. By creating tools and processes to make it easier, the Team was able to help make decision-making founded on data better. And they did this through extensive research with users and stakeholders to define what was needed and how it needs to be available. ",
   "subtitle": "What if we could create an easy federated data aggregation for better analysis & insights?",
   "title": "U.S. Data Federation",
   "content": [
@@ -45,17 +57,6 @@
     {
       "title": "Next Steps",
       "body": "Here are our recommendations for ways to further the mission of the U.S. Data Federation:\n\n- Work with agencies to surface their unique data resources to extrapolate and catalogue them for reuse by as many other agencies as possible \n- Support the work of communities of practice, the Federal Data Strategy, the CDO Council, and individual managers and practitioners across the government \n- Provide the infrastructure for sharing resources across the government with clear contribution and publication guidelines and support"
-    }
-  ],
-  "summary": [
-    {
-      "Text": "Getting good, reliable data is hard"
-    },
-    {
-      "Text": "Data from different sources makes this even harder"
-    },
-    {
-      "Text": "We aren’t effectively capitalizing on lessons learned from other data coordination efforts to improve data sharing for everyone"
     }
   ]
 }
