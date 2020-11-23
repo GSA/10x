@@ -31,13 +31,16 @@
     },
     "summary": [
       {
-        "Text": "Getting good, reliable data is hard"
+        "Text": "Getting good, reliable data is hard",
+        "text": "Getting good, reliable data is hard"
       },
       {
-        "Text": "Data from different sources makes this even harder"
+        "Text": "Data from different sources makes this even harder",
+        "text": "Data from different sources makes this even harder"
       },
       {
-        "Text": "We aren’t effectively capitalizing on lessons learned from other data coordination efforts to improve data sharing for everyone"
+        "Text": "We aren’t effectively capitalizing on lessons learned from other data coordination efforts to improve data sharing for everyone",
+        "text": "We aren’t effectively capitalizing on lessons learned from other data coordination efforts to improve data sharing for everyone"
       }
     ]
   },
