@@ -45,10 +45,10 @@
       }
     ]
   },
+  "slug": "us-data-federation",
+  "intro": "Data informs all kinds of decision making in the federal government, but the wide array of sources and structures and units make sharing data — an activity that could result in better, more complete analysis — come down somewhere between horribly difficult and impossible. By creating tools and processes to make it easier, the Team was able to help make decision-making founded on data better. And they did this through extensive research with users and stakeholders to define what was needed and how it needs to be available. ",
   "subtitle": "What if we could create an easy federated data aggregation for better analysis & insights?",
   "title": "U.S. Data Federation",
-  "intro": "Data informs all kinds of decision making in the federal government, but the wide array of sources and structures and units make sharing data — an activity that could result in better, more complete analysis — come down somewhere between horribly difficult and impossible. By creating tools and processes to make it easier, the Team was able to help make decision-making founded on data better. And they did this through extensive research with users and stakeholders to define what was needed and how it needs to be available. ",
-
   "content": [
     {
       "body": "High-quality, shareable data is a critical component of how the government makes decisions that affect us all. It’s also a strategic asset for economic growth, transparency, and accountability. The problem is that there are billions of government data points that vary widely in structure, source, and quality, making effective sharing and usage a seemingly insurmountable challenge. There are many efforts happening across government to address this issue, but many are siloed and improvised with little coordination between them. 10x’s U.S. Data Federation aims to help coordinate these efforts—however we can—to create new, open-source tools and resources to put our country’s data to work.",
