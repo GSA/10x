@@ -12,6 +12,7 @@ blockquote {
 
 p {
   @include u-margin-bottom(2);
+  max-width: 100%;
 }
 
 h1,
@@ -37,8 +38,7 @@ h4 {
   min-height: 100vh;
   position: relative;
   background: rgb(69, 217, 217);
-
-  &.usa-theme-1 {
+  &__theme-2 {
     background: linear-gradient(
       180deg,
       #{$x-charcoal} 2px,
@@ -61,5 +61,10 @@ h4 {
 }
 
 #main-content {
+  min-height: 75vh;
   z-index: 1;
+}
+
+.TxContent {
+  @include u-padding-top(8);
 }

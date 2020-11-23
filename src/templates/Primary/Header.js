@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getMenuList } from "app/MenuModule";
 import useOnPathChange from "utils/useOnPathChange";
 
-const Header = ({ logo, hero, className }) => {
+const Header = ({ logo, className }) => {
   const history = useHistory();
   const dispatch = useDispatch();
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -96,7 +96,6 @@ const Header = ({ logo, hero, className }) => {
           </Col>
         </Row>
       </Grid>
-      {hero}
     </header>
   );
 };

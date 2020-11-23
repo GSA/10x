@@ -3,10 +3,10 @@ import { useSelector } from "react-redux";
 import classnames from "classnames";
 import Header from "./Header";
 import Logo from "components/Logo";
-import Mdx from "features/Mdx";
 import Footer from "./Footer";
 import useOnPathChange from "utils/useOnPathChange";
 import registerAnalytics from "utils/registerAnalytics";
+import { useLocation } from "react-router-dom";
 
 const Primary = ({ children }) => {
   useOnPathChange(() => {
@@ -14,30 +14,23 @@ const Primary = ({ children }) => {
     registerAnalytics();
   });
 
+  const { pathname } = useLocation();
+
   const page = useSelector((state) => state.content.page);
   /* istanbul ignore next */
-  const template = page.data ? page.data.template : "";
+  const theme = page.data ? page.data.theme : "";
 
   return (
     <div
       className={classnames({
         "usa-app": true,
-        [`usa-theme-${template}`]: Boolean(template),
+        "usa-app__theme-projects": pathname.includes("projects"),
+        [`usa-app__theme-${theme}`]: Boolean(theme),
       })}
     >
       <div className="usa-app__bg">
         <Header logo={<Logo />} />
         <main role="main" id="main-content">
-          {page.data.hero && (
-            <div
-              className={classnames({
-                TxContent: true,
-                [`Tx__${page.data.name}-hero`]: page.data.name,
-              })}
-            >
-              <Mdx>{page.data.hero}</Mdx>
-            </div>
-          )}
           {children}
         </main>
         <Footer />

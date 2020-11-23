@@ -114,6 +114,7 @@
           }
           .usa-nav__url-text {
             display: block;
+            padding-right: 0 !important;
             &:after {
               display: inline-block;
               @include u-margin-left(2);
@@ -140,7 +141,9 @@
     }
     .usa-nav__url-prefix {
       display: block;
-      @include u-color("base-light");
+      @include u-color("secondary");
+      margin-right: 0 !important;
+      padding-right: 0 !important;
       @include u-margin-bottom(1);
     }
   }

@@ -1,6 +1,5 @@
 $bgImgDir: "~styles/images";
 .Tx__home {
-  @include u-padding-top(10);
   background: linear-gradient(
     180deg,
     rgba(194, 194, 245, 0.5) 0%,
@@ -43,6 +42,7 @@ $bgImgDir: "~styles/images";
 
           .usa-card__heading {
             @include u-font("serif", 7);
+            @include u-color("base");
             text-transform: uppercase;
             font-weight: 600;
           }
@@ -60,7 +60,8 @@ $bgImgDir: "~styles/images";
 
   &-hero {
     background-color: #ddf1f5;
-
+    @include u-margin-top(-4rem);
+    @include u-margin-bottom(10);
     h1 {
       display: inline;
       line-height: 125%;

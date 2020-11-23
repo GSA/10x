@@ -102,8 +102,8 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-      - label: "Template"
-        name: "template"
+      - label: "Theme"
+        name: "theme"
         required: false
         widget: "select"
         options: ["1", "2", "3", "4"]
@@ -138,97 +138,152 @@ collections:
     folder: cms/content/project
     create: true
     delete: true
-    slug: "{{title}}"
+    slug: "{{slug}}"
     preview_path: "{{slug}}"
-    identifier_field: title
+    identifier_field: slug
     fields:
+      - widget: string
+        name: "slug"
+        label: "Slug"
+        required: true
+        pattern:
+          [
+            "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "A slug can have no spaces or special characters",
+          ]
+        hint: "The project URL (do not include folder or file extension)"
       - label: "Project Title"
         name: "title"
         widget: "string"
-      - label: "Template"
-        name: "template"
-        widget: "select"
-        options:
-          - label: "1"
-            value: "1"
-          - label: "2"
-            value: "2"
-          - label: "3"
-            value: "3"
-          - label: "4"
-            value: "4"
-          - label: "5"
-            value: "5"
-          - label: "6"
-            value: "6"
       - label: "Headline"
         name: "subtitle"
         widget: "string"
-      - label: "Type"
-        name: "projectType"
-        widget: "select"
-        options: ["Innovation", "Transformation", "Enhancement"]
-      - label: "Project Link"
-        name: "projectLink"
-        widget: "string"
-        required: false
-      - label: "Excerpt"
-        name: "excerpt"
-        widget: "text"
-      - label: "Phase"
-        name: "phaseData"
+      - label: "Portfolio Card"
+        name: "card"
+        hint: "Customize the Card content that will display on the Portfolio page"
         widget: "object"
-        collapsed: true
         fields:
-          - label: "Phase"
-            name: "phase"
-            widget: "select"
-            options: ["1", "2", "3", "4"]
-          - label: "Status"
-            name: "status"
-            widget: "select"
-            options:
-              [
-                { label: "In Progress", value: "1" },
-                { label: "Done", value: "2" },
-                { label: "Graduated", value: "3" },
-              ]
-            default: "InProgress"
-          - label: "Message"
-            name: "message"
-            hint: "Override the default Phase status message."
+          - label: "Title"
+            name: "title"
             widget: "string"
             required: false
-      - label: "Topics"
-        name: "topics"
-        widget: "string"
-        hint: "Separate tag values by comma."
-        required: false
-      - label: "Team"
-        name: "team"
-        widget: "object"
-        required: false
-        fields:
-          - label: "Idea Submitter"
-            name: "submitter"
+            hint: "Cust card Title (defaults to Project Title)"
+          - label: "Headline"
+            name: "subtitle"
+            required: false
+            hint: "Custom card Headline (defaults to Project Headline)"
+          - label: "Project Url"
+            name: "projectUrl"
             widget: "string"
             required: false
-          - label: "Members"
-            name: "members"
+            hint: "Valid full URL for the Portfilio card (defaults to Project Slug)"
+          - label: "Excerpt"
+            name: "excerpt"
             widget: "text"
             required: false
-      - label: "Links"
-        name: "links"
+      - label: "Introduction"
+        name: "intro"
+        widget: "text"
+      - label: "Content"
+        name: "content"
         widget: "list"
+        summary: "{{fields.title}}"
         required: false
         fields:
-          - label: "Text"
-            name: "text"
+          - label: "Title"
+            name: "title"
             widget: "string"
-          - label: "Link"
-            name: "link"
+            required: false
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            required: false
+          - label: "Phase Data"
+            name: "phase"
+            widget: "boolean"
+            required: false
+      - label: "Meta Data"
+        name: "meta"
+        widget: "object"
+        fields:
+          - label: "Type"
+            name: "projectType"
+            widget: "select"
+            options: ["Innovation", "Transformation", "Enhancement"]
+          - label: "Template"
+            name: "template"
+            widget: "select"
+            options:
+              - label: "1"
+                value: "1"
+              - label: "2"
+                value: "2"
+              - label: "3"
+                value: "3"
+              - label: "4"
+                value: "4"
+              - label: "5"
+                value: "5"
+              - label: "6"
+                value: "6"
+          - label: "Phase"
+            name: "phaseData"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Phase"
+                name: "phase"
+                widget: "select"
+                options: ["1", "2", "3", "4"]
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options:
+                  [
+                    { label: "In Progress", value: "1" },
+                    { label: "Done", value: "2" },
+                    { label: "Graduated", value: "3" },
+                  ]
+                default: "InProgress"
+              - label: "Message"
+                name: "message"
+                hint: "Override the default Phase status message."
+                widget: "string"
+                required: false
+          - label: "Topics"
+            name: "topics"
             widget: "string"
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: false
+            hint: "Separate tag values by comma."
+            required: false
+          - label: "Summary"
+            name: "summary"
+            widget: "list"
+            required: false
+            fields:
+              - label: "Text"
+                name: "text"
+                widget: "string"
+          - label: "Team"
+            name: "team"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Idea Submitter"
+                name: "submitter"
+                widget: "string"
+                required: false
+              - label: "Members"
+                name: "members"
+                widget: "text"
+                required: false
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            required: false
+            fields:
+              - label: "Text"
+                name: "text"
+                widget: "string"
+              - label: "Link"
+                name: "link"
+                widget: "string"

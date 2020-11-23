@@ -5,9 +5,9 @@ import { Route, Switch, useLocation } from "react-router-dom";
 
 export const MountTransition = ({ children, slide, slideUp }) => (
   <motion.div
-    exit={{ opacity: 0, x: slide, y: slideUp }}
-    initial={{ opacity: 0, x: slide, y: slideUp }}
-    animate={{ opacity: 1, x: 0, y: 0 }}
+    exit={{ opacity: 1 }}
+    initial={{ opacity: 1 }}
+    animate={{ opacity: 1 }}
   >
     {children}
   </motion.div>
@@ -66,7 +66,7 @@ AnimatedRoutes.propTypes = {
 
 AnimatedRoutes.defaultProps = {
   exitBeforeEnter: true,
-  initial: false,
+  initial: true,
 };
 
 export default AnimatedRoutes;

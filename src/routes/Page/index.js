@@ -36,7 +36,15 @@ const Page = ({ name }) => {
   return (
     <div className={`TxContent Tx__${pageName}`}>
       <Head title={data.title} />
-      <Mdx>{data.body}</Mdx>
+
+      {data.hero && (
+        <div className={`Tx__${data.name}-hero`}>
+          <Mdx>{data.hero}</Mdx>
+        </div>
+      )}
+      <div className={`Tx__${data.name}-content`}>
+        <Mdx>{data.body}</Mdx>
+      </div>
     </div>
   );
 };

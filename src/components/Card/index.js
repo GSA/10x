@@ -14,6 +14,7 @@ const Card = ({
   variant,
   flat,
   color,
+  ...props
 }) => {
   return (
     <div
@@ -25,6 +26,7 @@ const Card = ({
         "usa-card--flat": flat,
         [className]: Boolean(className),
       })}
+      {...props}
     >
       <div
         className={classnames({

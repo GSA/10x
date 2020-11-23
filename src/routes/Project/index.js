@@ -6,10 +6,14 @@ import { Helmet } from "react-helmet";
 import { getPage } from "app/ContentModule";
 import FourOhFour from "routes/FourOhFour";
 import Mdx from "features/Mdx";
-import { Grid } from "components/Grid";
+import { Col, Grid, Row } from "components/Grid";
 import Loading from "components/Loading";
+import Links from "./Links";
+import Team from "./Team";
+import Phase from "./ProjectStatus";
 import Icon from "components/Icon";
-import Button from "components/Button";
+import Break from "components/Break";
+import Card from "components/Card";
 
 const Project = ({ type }) => {
   const dispatch = useDispatch();
@@ -20,7 +24,8 @@ const Project = ({ type }) => {
   }, [dispatch, name, type]);
   const { pending, data, error } = page;
 
-  const team = data.team || {};
+  const { meta = {} } = data;
+
   if (pending) {
     return (
       <Grid>
@@ -41,60 +46,59 @@ const Project = ({ type }) => {
     <div className={`TxContent `}>
       <Helmet title={data.title} />
       <Grid className={`TxProject TxProject--${name}`}>
-        <div className="TxProject__link">
+        <div className="TxProject__nav-link">
           <Link to="/projects">
             <Icon icon="arrow-left" />
             Return to our projects
           </Link>
         </div>
-        <h1 className="TxProject__title">{data.title}</h1>
-        <div className="TxProject__subtitle">{data.subtitle}</div>
-        <div className="TxProject__meta">Type: {data.projectType}</div>
-        <Mdx>{data.body}</Mdx>
-        {(team.submitter || team.members) && (
-          <div className="TxProject__team">
-            <h3>Team</h3>
-            <ul>
-              <li>
-                <div className="TxProject__team-icon">
-                  <Icon icon="user" className="margin-right-1" />
-                </div>
-                <span>
-                  <strong>Idea Submitter: </strong> {team.submitter}
-                </span>
-              </li>
-              <li>
-                <div className="TxProject__team-icon">
-                  <Icon icon="users" className="margin-right-1" />
-                </div>
-                <span>
-                  <strong>Team: </strong> {team.members}
-                </span>
-              </li>
-            </ul>
-          </div>
-        )}
 
-        {Array.isArray(data.links) && data.links.length && (
-          <div className="TxProject__links">
-            <h3>Learn More</h3>
-            <ol>
-              {data.links.map((item) => {
-                return (
-                  <li className="TxProject__link">
-                    <Button variant="link" url={item.link}>
-                      {item.text}{" "}
+        <h1 className="TxProject__subtitle">{data.subtitle}</h1>
+
+        <Row gap="4">
+          <Col size="12" desktop="8">
+            <h2 className="TxProject__title">{data.title}</h2>
+            <p className="TxProject__intro">{data.intro}</p>
+            <Break color="accent-cool" />
+          </Col>
+          {meta.summary && (
+            <Col size="12" desktop="4">
+              <Card className="TxProject__summary" title="In a nutshell">
+                <ul>
+                  {meta.summary.map((item) => (
+                    <li>
                       <Icon
-                        className="margin-left-1"
-                        icon="external-link-alt"
+                        icon="check-circle"
+                        className="text-accent-cool margin-right-1"
                       />
-                    </Button>
-                  </li>
-                );
-              })}
-            </ol>
-          </div>
-        )}
+                      <span>{item.text}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            </Col>
+          )}
+        </Row>
+
+        <Row gap="4">
+          <Col size="12" desktop="8" className="TxProject__content">
+            {data.content &&
+              data.content.map((item) => (
+                <Card title={item.title}>
+                  <Mdx>{item.body}</Mdx>
+                  {item.phase && <Phase data={meta.phaseData} />}
+                </Card>
+              ))}
+          </Col>
+
+          <Col size="12" desktop="4">
+            <div className="TxProject__details">
+              <Team data={meta.team} />
+              <Break color="base-lighter" />
+              <Links data={meta.links} />
+            </div>
+          </Col>
+        </Row>
       </Grid>
     </div>
   );

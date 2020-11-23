@@ -1,10 +1,135 @@
+.TxProject,
 .Tx__projects {
   @include u-color("white");
+  a,
+  .usa-button--primary.usa-button--unstyled {
+    @include u-color("primary-lighter");
+    &:visited {
+      @include u-color("primary-lighter");
+    }
+  }
+  &__nav-link {
+    svg {
+      @include u-margin-right(1);
+    }
+  }
+  &__title {
+    @include u-margin-top(2);
+  }
+  &__subtitle {
+    @include u-margin-top(2);
+  }
+
+  &__intro {
+    @include u-font("serif", 10);
+  }
+
+  &__summary {
+    @include u-color("white");
+    .usa-card {
+      &__container {
+        margin: 0;
+        @include u-padding-top(4);
+        @include u-padding-bottom(2);
+        border: none;
+        background-size: 100% 100%;
+        background-color: transparent;
+        background-position-x: center;
+        background-position-y: center;
+        background-image: url($bgImgDir + "/home-callout-bg.png");
+        background-repeat: no-repeat;
+      }
+      &__header {
+        h2 {
+          @include u-padding-y(2);
+          @include u-color("white");
+        }
+      }
+      &__body {
+        padding-top: 0;
+        @include u-padding-right(10);
+        @include u-color("white");
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          @include u-font("sans", "xs");
+
+          li {
+            display: flex;
+            align-items: baseline;
+            @include u-margin-bottom(2);
+
+            svg {
+              transform: translateY(2px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    .usa-card__container {
+      box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__details {
+    @include u-padding-x(3);
+    h3 {
+      @include u-margin-bottom(2);
+    }
+  }
+
   .ProjectList {
     @include u-color("ink");
+
+    .usa-card {
+      &__subhead {
+        @include u-font("serif", "md");
+      }
+    }
   }
   blockquote {
     @include u-margin-right(15);
     @include u-margin-bottom(8);
+  }
+  .usa-card {
+    @include u-color("ink");
+  }
+}
+
+.usa-app {
+  &__theme-projects {
+    background: linear-gradient(
+      180deg,
+      #{$x-charcoal} 2px,
+      #{$x-lead} 1000px,
+      #{$x-smoke} 1800px
+    );
+  }
+}
+
+.TxTeam {
+  &__icon {
+    display: inline-block;
+    @include u-margin-right(1);
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      display: flex;
+    }
+  }
+}
+
+.TxLinks {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
 }

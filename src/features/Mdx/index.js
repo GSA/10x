@@ -34,12 +34,15 @@ export const shortcodes = {
   ProjectList,
 };
 
-const Mdx = ({ children, scope }) => {
+const Mdx = ({ children, components, scope }) => {
   return (
-    <MDX components={shortcodes} scope={scope}>
+    <MDX components={{ ...shortcodes, ...components }} scope={scope}>
       {children}
     </MDX>
   );
 };
 
+Mdx.defaultProps = {
+  components: {},
+};
 export default Mdx;

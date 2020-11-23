@@ -58,7 +58,6 @@ const NavItem = ({
             "usa-nav__url": true,
             "usa-current": isCurrent,
           })}
-          activeClassName="usa-current"
         >
           <Text {...data} />
         </button>
