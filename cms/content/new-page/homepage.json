@@ -1,0 +1,42 @@
+{
+  "title": "10x",
+  "sections": [
+    {
+      "type": "markdown",
+      "body": "<Grid>\n\n# What if your idea could change how the government communicates with the public?\n\n</Grid>"
+    },
+    {
+      "type": "markdown",
+      "body": "<Grid>\n\n<Row>\n\n<Col size=\"12\" desktop=\"8\">\n\n## Turning good-for-government ideas into good-for-people solutions\n\n10x crowdsources ideas from federal employees and turns them into real products that improve the public’s experience with the federal government. \n\nWe start small, validating the idea and increasing the investment as we go, to ensure we’re funding the ideas that deliver the most impact. We believe that the most creative, game-changing ideas come from those who work most closely to the problem—people like  you. \n\nWe invite any federal employee to submit an idea for how to use technology to improve public service. Twice a year, we evaluate submissions and choose the most promising ones for a deeper dive into their potential impact, feasibility, and scope. We’re talking things like using artificial intelligence to eliminate bias, improving the public’s experience with the federal government, and sharing data and analytics across agencies. So, how do you want to improve public service?\n\n<Break color=\"accent-warm\" variant=\"wide\" />\n\n</Col>\n\n<Col size=\"12\" desktop=\"4\">\n\n<Card className=\"Home__callout\">\n\n#### 10x has funded 68 projects in 2020. Will the next be yours?\n\nOur next submission deadline is February 2021.\n\n<Button color=\"primary\" url=\"/\">SUBMIT AND IDEA</Button>\n\n<span />\n\n</Card>\n\n</Col>\n\n</Row>\n\n<Row>\n\n<Col size=\"12\">\n\n</Grid>"
+    },
+    {
+      "type": "cards",
+      "className": "Home__cards",
+      "title": "What's new with us",
+      "items": [
+        {
+          "title": "FEATURED PROJECT",
+          "text": "Using machine learning to combat bias",
+          "link": "/"
+        },
+        {
+          "title": "MEDIA",
+          "text": "Government reinvention with a venture capital mindset",
+          "link": "/"
+        },
+        {
+          "title": "INSIDE LOOK",
+          "text": "View 10x Lightening Talks from successful idea submitters",
+          "link": "/"
+        },
+        {
+          "title": "AWARDS",
+          "text": "10x is proud to have been recognized with a 2019 Public Sector Innovation award",
+          "link": "/"
+        }
+      ]
+    }
+  ],
+  "subtitle": "What if your idea could change how the government communicates with the public?",
+  "slug": "homepage"
+}
