@@ -17,9 +17,9 @@ const Header = ({ logo, className }) => {
   const [activeMenuItem, setActiveMenuItem] = useState(null);
 
   const handleMenuToggle = (v) => {
-    setMenuOpen((state) => (typeof v === "boolean" ? v : !state));
+    setMenuOpen((state) => !state);
   };
-
+  console.log("HEADER", isMenuOpen);
   const handleActiveMenuItemClick = (e) => {
     let id = null;
     /* istanbul ignore next */
@@ -31,11 +31,13 @@ const Header = ({ logo, className }) => {
   };
 
   const handleMenuClose = () => {
+    console.log("MENU CLOSE");
     handleMenuToggle(false);
     handleActiveMenuItemClick();
   };
 
   const handleNavClick = (e) => {
+    console.log("NAV CLICK");
     /* istanbul ignore next */
     const clicked = e ? e.currentTarget.value : "";
     handleMenuClose();
@@ -85,7 +87,7 @@ const Header = ({ logo, className }) => {
                   )}
                   footer={
                     <Button color="primary-lighter" url="/">
-                      Submit an idea
+                      SUBMIT AN IDEA
                     </Button>
                   }
                   open=""

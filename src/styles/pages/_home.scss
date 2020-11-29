@@ -6,6 +6,10 @@ $bgImgDir: "~styles/images";
     rgba(255, 107, 82, 0.5) 1000px,
     rgba(120, 227, 251, 0.44) 1800px
   );
+  &-content {
+    position: relative;
+    z-index: 1000;
+  }
   .Home {
     &__callout {
       &.usa-card {
@@ -29,6 +33,11 @@ $bgImgDir: "~styles/images";
         .usa-card__body {
           @include u-padding-top(10);
           @include u-padding-right(10);
+          @include u-margin-right(10);
+
+          @include at-media("desktop") {
+            margin-right: 0;
+          }
         }
       }
     }
@@ -129,21 +138,30 @@ $bgImgDir: "~styles/images";
         @include at-media("desktop") {
           bottom: -36px;
         }
+
+        @include at-media("desktop") {
+        }
       }
       &:after {
         content: "";
         position: absolute;
         display: inline-block;
-        top: -50px;
-        right: -250px;
-        width: 700px;
-        height: 700px;
+        top: 10px;
+        right: -100px;
+        width: 400px;
+        height: 400px;
         background-image: url($bgImgDir + "/home-x.png");
         background-size: cover;
         background-position-x: center;
         background-position-y: center;
         background-repeat: no-repeat;
         z-index: 1;
+        @include at-media("desktop") {
+          top: -50px;
+          right: -250px;
+          width: 700px;
+          height: 700px;
+        }
       }
     }
   }

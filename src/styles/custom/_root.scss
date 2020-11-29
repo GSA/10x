@@ -1,3 +1,14 @@
+html {
+  font-size: 10px;
+
+  @include at-media("tablet") {
+    font-size: 13px;
+  }
+  @include at-media("desktop") {
+    font-size: 16px;
+  }
+}
+
 blockquote {
   @include u-font("serif", 10);
   padding: 0;
@@ -37,6 +48,7 @@ h4 {
 .usa-app {
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
   background: rgb(69, 217, 217);
   &__theme-2 {
     background: linear-gradient(
