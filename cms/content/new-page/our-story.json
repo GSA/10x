@@ -1,0 +1,120 @@
+{
+  "title": "Our Story",
+  "subtitle": "No other government program is powered 100% by ideas — our sole purpose is to fan the flames of tech innovation, one candle at a time.",
+  "slug": "our-story",
+  "sections": [
+    {
+      "type": "markdown",
+      "body": "We evaluate  ideas submitted by federal employees about ways to improve how the government uses technology to serve the public good. Then we fund the exploration and development of those ideas. But instead of the more traditional government project approach of “all or nothing,” we model our funding on venture capital practices, making incremental investments on only the most promising ideas. We start with a small level of investment — of time and money — and only increase that investment as we determine the idea has the potential to be successful.\n\nBy doing this, we [dramatically diminish wasted spending](http://10x.gsa.gov) on projects that aren’t likely to succeed — maybe there’s already a similar effort underway in another agency, perhaps the infrastructure doesn’t exist yet to support the idea, or it simply isn’t an effective solution to the problem. But because we research each idea at inception, and then re-evaluate them at each incremental funding stage, we don’t waste time or resources pursuing deadend projects."
+    },
+    {
+      "type": "break",
+      "variant": "wide",
+      "color": "accent-warm"
+    },
+    {
+      "type": "callout",
+      "button": {
+        "text": "DIVE INTO OUR PROCESS",
+        "link": "/something"
+      },
+      "items": [
+        {
+          "title": "We source differently",
+          "text": " All our projects come from public servants who submit ideas to see if they can move the needle forward to solve a real problem. "
+        },
+        {
+          "title": "We support differently",
+          "text": "We complete rigorous analysis to assess ideas before moving them forward, looking at each idea as a learning opportunity — even if it doesn’t come to fruition."
+        },
+        {
+          "title": "We fund differently",
+          "text": " The projects use a phased, incremental funding approach, so we can focus investments on the most promising, impactful ideas."
+        }
+      ],
+      "className": "",
+      "title": "We’re different, by design",
+      "subtitle": "10x isn’t a typical government agency. The very way we’re structured ensures that we operate differently. "
+    },
+    {
+      "type": "break",
+      "variant": "wide",
+      "color": "accent-warm"
+    },
+    {
+      "type": "links",
+      "title": "Prioritizing solutions with impact ",
+      "text": " At 10x, we know that not all good ideas can evolve into impactful solutions that will be embraced by customers. We focus on the ideas that can make the biggest difference, nurturing them with expertise and being willing to acknowledge when the idea doesn’t have the potential or support required to make it successful. Solutions developed by 10x have broad applications across the government and provide substantial improvement to how we serve people.  Because of 10x...",
+      "subtitle": "Because of 10x...",
+      "button": {
+        "text": "EXPLORE OTHER PROJECTS",
+        "link": "/our-projects"
+      },
+      "items": [
+        {
+          "text": "Benefits applicants can more easily assess their eligibility",
+          "link": "/"
+        },
+        {
+          "text": "USA.gov can better respond to the public’s needs for information",
+          "link": "/"
+        },
+        {
+          "text": "The government has the clearest-ever picture of the federal web experience",
+          "link": "/"
+        },
+        {
+          "text": "Privacy offices can focus more effort on protecting the public’s information",
+          "link": "/"
+        },
+        {
+          "text": "Data practitioners can make smarter use of data in government",
+          "link": "/"
+        },
+        {
+          "text": "Government can more effectively plan and oversee custom technology projects",
+          "link": "/"
+        },
+        {
+          "text": "Users have a more consistent experience with forms on government web pages",
+          "link": "/"
+        },
+        {
+          "text": "AI practitioners can ensure more equitable application of AI tools",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "body": "\\## The backstory\n\nSeveral U.S. government agencies worked with 10x to develop the structures necessary to allow the program to function. The Office of Management and Budget (OMB) developed the regulatory structure to allow us to spend appropriated funds in this way, while the General Services Administration (GSA)’s Office of General Counsel helped us develop an innovative contractual approach that allows us to legally work with other agencies to determine how to spend these funds to address their problems. The Digital Services Fund (DSF) is the funding authority that allows 10x to provide seed-funding and to support low-cost exploratory activities to identify and prototype promising technology investments."
+    },
+    {
+      "type": "cards",
+      "title": "We'd like to thank the Academy",
+      "text": "10x has been recognized for its contribution to smart technology investment and good government. ",
+      "items": [
+        {
+          "link": "/",
+          "title": "MEDIA",
+          "text": "GSA’s 10x Offers Seed Funding to Develop Feds’ Tech Ideas"
+        },
+        {
+          "title": "MEDIA",
+          "text": "Scaling GSA’s 10x program",
+          "link": "/"
+        },
+        {
+          "title": "AWARDS",
+          "text": "10x wins the 2019 Government Innovation Award for public sector innovation",
+          "link": "/"
+        },
+        {
+          "title": "MEDIA",
+          "text": "Government reinvention with a venture capitalist mindset",
+          "link": "/"
+        }
+      ]
+    }
+  ]
+}
