@@ -14,4 +14,8 @@
       @include u-color("base-dark");
     }
   }
+
+  &--unstyled {
+    @include u-font-family("sans");
+  }
 }

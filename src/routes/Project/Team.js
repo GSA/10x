@@ -11,7 +11,7 @@ const Team = ({ data }) => {
           <div className="TxTeam__icon">
             <Icon icon="user" className="margin-right-1" />
           </div>
-          <span>
+          <span className="TxTeam__submitter">
             <strong>Idea Submitter: </strong> {data.submitter}
           </span>
         </li>
@@ -19,7 +19,7 @@ const Team = ({ data }) => {
           <div className="TxTeam__icon">
             <Icon icon="users" className="margin-right-1" />
           </div>
-          <span>
+          <span className="TxTeam__members">
             <strong>Team: </strong> {data.members}
           </span>
         </li>

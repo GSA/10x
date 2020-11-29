@@ -5,8 +5,6 @@ $bgImgDir: "~styles/images";
     &:hover {
       cursor: pointer;
     }
-    break-inside: avoid;
-
     * {
       @include u-color("ink");
     }
@@ -115,11 +113,5 @@ $bgImgDir: "~styles/images";
         }
       }
     }
-  }
-
-  &__link,
-  &__link:hover {
-    text-decoration: none;
-    @include u-color("ink");
   }
 }

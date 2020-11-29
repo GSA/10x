@@ -44,11 +44,6 @@ PhaseItem.propTypes = {
 };
 
 const ProjectStatus = ({ data, phases }) => {
-  const defaultMessage = {
-    1: `Phase ${data.phase} is still in progress`,
-    2: `Project didn't advance to Phase ${parseInt(data.phase) + 1}`,
-    3: `Graduated after Phase ${data.phase}`,
-  };
   return (
     <div className="ProjectStatus">
       <div
@@ -71,9 +66,6 @@ const ProjectStatus = ({ data, phases }) => {
             />
           );
         })}
-      </div>
-      <div className="ProjectStatus__message">
-        {data.message || defaultMessage[data.status]}
       </div>
     </div>
   );

@@ -1,0 +1,20 @@
+.usa-footer {
+  @include u-padding-top(4);
+
+  &__links {
+    text-align: center;
+    flex-direction: column;
+    @include u-padding-bottom("10");
+
+    a {
+      text-align: center;
+      width: auto;
+      @include u-margin-bottom(2);
+    }
+
+    @include at-media("desktop") {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

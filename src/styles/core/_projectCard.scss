@@ -1,0 +1,13 @@
+.ProjectCard {
+  display: inline-block;
+  width: 100%;
+  break-inside: avoid;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  * {
+    @include u-color("ink");
+  }
+}

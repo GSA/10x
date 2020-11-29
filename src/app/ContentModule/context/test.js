@@ -11,240 +11,82 @@ const testTax = [
 
 const projectData = [
   {
-    excerpt:
-      "Data collected and produced across the federal government come in many forms, and for it to be most useful in informing services and policy it needs to be aggregated, which is often time consuming and difficult. The team developed an approach to create repeatable processes and tools to make it easier to collect, combine, and exchange data from disparate sources.",
-    body:
-      '## [](#overview)[](#overview)[](#overview)[](#overview)[](#overview)Overview\n\nData informs all kinds of decision making in the federal government, but the wide array of sources and structures and units make sharing data — an activity that could result in better, more complete analysis — come down somewhere between horribly difficult and impossible. By creating tools and processes to make it easier, the Team was able to help make decision-making founded on data better. And they did this through extensive research with users and stakeholders to define what was needed and how it needs to be available. \n\n## [](#at-a-glance)[](#at-a-glance)[](#at-a-glance)[](#at-a-glance)[](#at-a-glance)At a glance\n\n<List className="TxProject__glance">\n\n-   **Federated data resources**\n-   **Intended Audience:** Government efficiencies, Program administrators\n-   **Phase:** Phase 4 - Graduated\n-   **Idea Submitted:** 20XX\n-   **Contact:** XX\n\n</List>\n\n### [](#our-goal)[](#our-goal)[](#our-goal)[](#our-goal)[](#our-goal)Our goal\n\nIncrease government transparency, promote data-driven decision making, and help the government build faster and smarter by developing reusable tooling and processes to enable federated data efforts.\n\n#### [](#how-we-did-it)[](#how-we-did-it)[](#how-we-did-it)[](#how-we-did-it)[](#how-we-did-it)How we did it\n\nDeep research and stakeholder input informed the development of resources.data.gov, an open repository of policies, tools, case studies, and other resources to support data governance, management, exchange, and use throughout the federal government. \n\n#### [](#where-we-are-today)[](#where-we-are-today)[](#where-we-are-today)[](#where-we-are-today)[](#where-we-are-today)Where we are today\n\nResources.data.gov is available and maintained by Federal Enterprise Data Resources. The tools and resources are currently in use at many agencies, including XXX.\n\n<Card color="accent-warm-light">\n\n#### [](#why-this-matters)[](#why-this-matters)[](#why-this-matters)[](#why-this-matters)[](#why-this-matters)Why this matters\n\nFederated data efforts are increasingly seen as an engine for transparency, economic growth, and accountability, yet collecting that data remains a challenge. Despite the fact that efforts of this sort are increasing in frequency, each new effort is still improvising solutions in terms of processes, tooling, and compliance infrastructure. It\'s time to take this problem seriously and invest in reusable tools and approaches that will streamline federated data efforts in the years to come. In short,\n\n<List variant="check" className="margin-bottom-2">\n\n-   Getting good, reliable data is hard\n-   Data from different sources makes this even harder\n-   Data providers are less likely to contribute to system that are difficult and time consuming to useList\n\n</List>\n\n</Card>\n\n## [](#next-steps)[](#next-steps)[](#next-steps)[](#next-steps)[](#next-steps)Next steps\n\nWe’d recommend continuing to extend resources.data.gov to include:\n\n<List variant="check">\n\n-   Working with agency partners to surface resources, from agency-specific examples to generalized, plug-and-play components\n-   Provide the infrastructure for sharing resources across the government with clear contribution and publication guidelines and support\n-   Support the work of communities of practice, the Federal Data Strategy, the CDO Council, and individual managers and practitioners across the government\n\n</List>\n',
-    topics:
-      "Type: Innovative, Category: Government efficiencies, Audience: Program administrators",
-    path: "/project/u-s-data-federation",
-    phaseData: {
-      status: "1",
-      phase: "4",
-      message: "",
+    card: {
+      headline: "",
+      title: "",
+      excerpt:
+        "Most government agencies rely on data from other agencies, state and local governments, and other data providers to make informed decisions on policy, operations, and budgets, but it’s currently very time consuming and complex to aggregate this data in a meaningful way. The team developed best practices and repeatable processes and tools that make it easier to collect, combine, standardize, govern, maintain, and exchange data across federal agencies.",
+      projectLink: "/projects/u-s-data-federation",
     },
-    toc: [
-      {
-        text: "Overview",
-        url: "#overview",
+    meta: {
+      topics: "Data scientists, Program administrators",
+      phaseData: {
+        status: "3",
+        phase: "4",
+        message:
+          "Graduated after Phase 4 and in use at OMB, USDA, OGIS, and for other initiatives like data.gov",
       },
-      {
-        text: "At a glance",
-        url: "#at-a-glance",
+      projectType: "Innovation",
+      links: [
+        {
+          link: "https://resources.data.gov/",
+          text: "Resources.data.gov",
+        },
+        {
+          text: "GitHub README",
+          link:
+            "https://github.com/18F/data-federation-project/blob/master/README.md",
+        },
+        {
+          text:
+            "The U.S. Data Federation wants to make it easier to collect, combine, and exchange data across government",
+          link: "https://18f.gsa.gov/2019/03/05/the-us-data-federation/",
+        },
+      ],
+      template: "6",
+      team: {
+        submitter:
+          "Philip Ashlock, Data and Analytics Portfolio Lead, TTS Office of Solution",
+        members:
+          "Chris Goranson, Catherine Devlin, Tony Garvan, Mike Gintz, Mark Headd, Ethan Heppner, Joe Krzystan, Julia Lindpaintner, Amy Mok, Princess Ojiaku, James Tranovich\n",
       },
-      {
-        text: "Our goal",
-        url: "#our-goal",
-      },
-      {
-        text: "How we did it",
-        url: "#how-we-did-it",
-      },
-      {
-        text: "Where we are today",
-        url: "#where-we-are-today",
-      },
-      {
-        text: "Why this matters",
-        url: "#why-this-matters",
-      },
-      {
-        text: "Next steps",
-        url: "#next-steps",
-      },
-    ],
-    name: "u-s-data-federation",
-    projectType: "Innovative",
-    subtitle: "Easy federated data aggregation for better analysis & insights",
+      summary: [
+        {
+          text: "Getting good, reliable data is hard",
+        },
+        {
+          text: "Data from different sources makes this even harder",
+        },
+        {
+          text:
+            "We aren’t effectively capitalizing on lessons learned from other data coordination efforts to improve data sharing for everyone",
+        },
+      ],
+    },
+    slug: "us-data-federation",
+    intro:
+      "Data informs all kinds of decision making in the federal government, but the wide array of sources and structures and units make sharing data — an activity that could result in better, more complete analysis — come down somewhere between horribly difficult and impossible. By creating tools and processes to make it easier, the Team was able to help make decision-making founded on data better. And they did this through extensive research with users and stakeholders to define what was needed and how it needs to be available. ",
+    subtitle:
+      "What if we could create an easy federated data aggregation for better analysis & insights?",
     title: "U.S. Data Federation",
-    links: [
+    content: [
       {
-        text: "GitHub README",
-        link: "https://github.com",
+        body:
+          "High-quality, shareable data is a critical component of how the government makes decisions that affect us all. It’s also a strategic asset for economic growth, transparency, and accountability. The problem is that there are billions of government data points that vary widely in structure, source, and quality, making effective sharing and usage a seemingly insurmountable challenge. There are many efforts happening across government to address this issue, but many are siloed and improvised with little coordination between them. 10x’s U.S. Data Federation aims to help coordinate these efforts—however we can—to create new, open-source tools and resources to put our country’s data to work.",
+        title: "Why this matters",
       },
       {
-        text:
-          "The U.S. Data Federation wants to make it easier to collect, combine, and exchange data across government",
-        link: "/",
+        body:
+          "We discovered common pain points and challenges with data sharing efforts so we could create best practices, reusable tools, and resources around things like data governance, automated aggregation, data validation, and specifications. This would help agencies avoid having to solve the same problems over and over again, often in different ways, by providing consolidated guidance for handling federated data. \n\n#### How we did it\n\nWe interviewed leaders across several federated data management projects as well as experts from academia and the private sector to create an understanding of common themes and patterns. We synthesized this information to create a Data Federation Framework, including a maturity model and playbook. The key takeaway was that creating reusable tools and processes would benefit these efforts in the future. We then prototyped and built a reusable data validation tool, ReVal, that allows users to easily submit data that’s then validated against a set of customizable rules in real time. This significantly streamlined and simplified data collection and validation processes for our initial users: The USDA Food & Nutrition Service (FNS), the Census Bureau, and the Department of Transportation. As we continued to align our efforts with other data projects and stakeholders at OMB, OGIS, and data.gov, we identified an opportunity to enhance resources.data.gov (an online collection of policies, tools, case studies, and more that supports data governance, management, and use throughout the federal government). We interviewed over 30 people across 14 different agencies to define a long-term vision and strategy for resources.data.gov, implementing new organization and functionality to make the information it contained more findable and useful across all agencies. \n\n#### Where we are today\n\nThis project has graduated from 10x, and resources.data.gov is currently available and maintained by GSA, and the ReVAL tool continues to serve user needs and promote effective data leveraging.",
+        title: "What we did",
+        phase: true,
       },
       {
-        text: "Phase 4 Closeout Deck",
-        link: "/",
-      },
-      {
-        text: "Resources.data.gov",
-        link: "https://resources.data.gov",
-      },
-      {
-        text: "Trello task board",
-        link: "/",
+        title: "Next Steps",
+        body:
+          "Here are our recommendations for ways to further the mission of the U.S. Data Federation:\n\n- Work with agencies to surface their unique data resources to extrapolate and catalogue them for reuse by as many other agencies as possible \n- Support the work of communities of practice, the Federal Data Strategy, the CDO Council, and individual managers and practitioners across the government \n- Provide the infrastructure for sharing resources across the government with clear contribution and publication guidelines and support",
       },
     ],
-    type: "project",
-    team: {
-      members:
-        "Chris Goranson, Catherine Devlin, Tony Garvan, Joe Krzystan, Mark Headd, Amy Mok, Julia Lindpaintner, Ethan Heppner, Mike Gintz, Julia Lindpaintner, Mike Gintz, Princess Ojiaku, James Tranovich\n\n",
-      text: "Philip Ashlock - Data Services Portfolio Acting Lead, OCSIT",
-      submitter: "Philip Ashlock - Data Services Portfolio Acting Lead, OCSIT",
-    },
-  },
-  {
-    excerpt:
-      "Data collected and produced across the federal government come in many forms, and for it to be most useful in informing services and policy it needs to be aggregated, which is often time consuming and difficult. The team developed an approach to create repeatable processes and tools to make it easier to collect, combine, and exchange data from disparate sources.",
-    body:
-      '## [](#overview)[](#overview)[](#overview)[](#overview)[](#overview)Overview\n\nData informs all kinds of decision making in the federal government, but the wide array of sources and structures and units make sharing data — an activity that could result in better, more complete analysis — come down somewhere between horribly difficult and impossible. By creating tools and processes to make it easier, the Team was able to help make decision-making founded on data better. And they did this through extensive research with users and stakeholders to define what was needed and how it needs to be available. \n\n## [](#at-a-glance)[](#at-a-glance)[](#at-a-glance)[](#at-a-glance)[](#at-a-glance)At a glance\n\n<List className="TxProject__glance">\n\n-   **Federated data resources**\n-   **Intended Audience:** Government efficiencies, Program administrators\n-   **Phase:** Phase 4 - Graduated\n-   **Idea Submitted:** 20XX\n-   **Contact:** XX\n\n</List>\n\n### [](#our-goal)[](#our-goal)[](#our-goal)[](#our-goal)[](#our-goal)Our goal\n\nIncrease government transparency, promote data-driven decision making, and help the government build faster and smarter by developing reusable tooling and processes to enable federated data efforts.\n\n#### [](#how-we-did-it)[](#how-we-did-it)[](#how-we-did-it)[](#how-we-did-it)[](#how-we-did-it)How we did it\n\nDeep research and stakeholder input informed the development of resources.data.gov, an open repository of policies, tools, case studies, and other resources to support data governance, management, exchange, and use throughout the federal government. \n\n#### [](#where-we-are-today)[](#where-we-are-today)[](#where-we-are-today)[](#where-we-are-today)[](#where-we-are-today)Where we are today\n\nResources.data.gov is available and maintained by Federal Enterprise Data Resources. The tools and resources are currently in use at many agencies, including XXX.\n\n<Card color="accent-warm-light">\n\n#### [](#why-this-matters)[](#why-this-matters)[](#why-this-matters)[](#why-this-matters)[](#why-this-matters)Why this matters\n\nFederated data efforts are increasingly seen as an engine for transparency, economic growth, and accountability, yet collecting that data remains a challenge. Despite the fact that efforts of this sort are increasing in frequency, each new effort is still improvising solutions in terms of processes, tooling, and compliance infrastructure. It\'s time to take this problem seriously and invest in reusable tools and approaches that will streamline federated data efforts in the years to come. In short,\n\n<List variant="check" className="margin-bottom-2">\n\n-   Getting good, reliable data is hard\n-   Data from different sources makes this even harder\n-   Data providers are less likely to contribute to system that are difficult and time consuming to useList\n\n</List>\n\n</Card>\n\n## [](#next-steps)[](#next-steps)[](#next-steps)[](#next-steps)[](#next-steps)Next steps\n\nWe’d recommend continuing to extend resources.data.gov to include:\n\n<List variant="check">\n\n-   Working with agency partners to surface resources, from agency-specific examples to generalized, plug-and-play components\n-   Provide the infrastructure for sharing resources across the government with clear contribution and publication guidelines and support\n-   Support the work of communities of practice, the Federal Data Strategy, the CDO Council, and individual managers and practitioners across the government\n\n</List>\n',
-    topics:
-      "Type: Innovative, Category: Government efficiencies, Audience: Program administrators",
-    path: "/project/u-s-data-federation",
-    phaseData: {
-      status: "2",
-      phase: "4",
-      message: "",
-    },
-    toc: [
-      {
-        text: "Overview",
-        url: "#overview",
-      },
-      {
-        text: "At a glance",
-        url: "#at-a-glance",
-      },
-      {
-        text: "Our goal",
-        url: "#our-goal",
-      },
-      {
-        text: "How we did it",
-        url: "#how-we-did-it",
-      },
-      {
-        text: "Where we are today",
-        url: "#where-we-are-today",
-      },
-      {
-        text: "Why this matters",
-        url: "#why-this-matters",
-      },
-      {
-        text: "Next steps",
-        url: "#next-steps",
-      },
-    ],
-    name: "u-s-data-federation",
-    projectType: "Innovative",
-    projectLink: "/projects/u-s-data-federation",
-    subtitle: "Easy federated data aggregation for better analysis & insights",
-    title: "U.S. Data Federation",
-    links: [
-      {
-        text: "GitHub README",
-        link: "https://github.com",
-      },
-      {
-        text:
-          "The U.S. Data Federation wants to make it easier to collect, combine, and exchange data across government",
-        link: "/",
-      },
-      {
-        text: "Phase 4 Closeout Deck",
-        link: "/",
-      },
-      {
-        text: "Resources.data.gov",
-        link: "https://resources.data.gov",
-      },
-      {
-        text: "Trello task board",
-        link: "/",
-      },
-    ],
-    type: "project",
-    team: {
-      members:
-        "Chris Goranson, Catherine Devlin, Tony Garvan, Joe Krzystan, Mark Headd, Amy Mok, Julia Lindpaintner, Ethan Heppner, Mike Gintz, Julia Lindpaintner, Mike Gintz, Princess Ojiaku, James Tranovich\n\n",
-      text: "Philip Ashlock - Data Services Portfolio Acting Lead, OCSIT",
-      submitter: "Philip Ashlock - Data Services Portfolio Acting Lead, OCSIT",
-    },
-  },
-  {
-    excerpt:
-      "Data collected and produced across the federal government come in many forms, and for it to be most useful in informing services and policy it needs to be aggregated, which is often time consuming and difficult. The team developed an approach to create repeatable processes and tools to make it easier to collect, combine, and exchange data from disparate sources.",
-    body:
-      '## [](#overview)[](#overview)[](#overview)[](#overview)[](#overview)Overview\n\nData informs all kinds of decision making in the federal government, but the wide array of sources and structures and units make sharing data — an activity that could result in better, more complete analysis — come down somewhere between horribly difficult and impossible. By creating tools and processes to make it easier, the Team was able to help make decision-making founded on data better. And they did this through extensive research with users and stakeholders to define what was needed and how it needs to be available. \n\n## [](#at-a-glance)[](#at-a-glance)[](#at-a-glance)[](#at-a-glance)[](#at-a-glance)At a glance\n\n<List className="TxProject__glance">\n\n-   **Federated data resources**\n-   **Intended Audience:** Government efficiencies, Program administrators\n-   **Phase:** Phase 4 - Graduated\n-   **Idea Submitted:** 20XX\n-   **Contact:** XX\n\n</List>\n\n### [](#our-goal)[](#our-goal)[](#our-goal)[](#our-goal)[](#our-goal)Our goal\n\nIncrease government transparency, promote data-driven decision making, and help the government build faster and smarter by developing reusable tooling and processes to enable federated data efforts.\n\n#### [](#how-we-did-it)[](#how-we-did-it)[](#how-we-did-it)[](#how-we-did-it)[](#how-we-did-it)How we did it\n\nDeep research and stakeholder input informed the development of resources.data.gov, an open repository of policies, tools, case studies, and other resources to support data governance, management, exchange, and use throughout the federal government. \n\n#### [](#where-we-are-today)[](#where-we-are-today)[](#where-we-are-today)[](#where-we-are-today)[](#where-we-are-today)Where we are today\n\nResources.data.gov is available and maintained by Federal Enterprise Data Resources. The tools and resources are currently in use at many agencies, including XXX.\n\n<Card color="accent-warm-light">\n\n#### [](#why-this-matters)[](#why-this-matters)[](#why-this-matters)[](#why-this-matters)[](#why-this-matters)Why this matters\n\nFederated data efforts are increasingly seen as an engine for transparency, economic growth, and accountability, yet collecting that data remains a challenge. Despite the fact that efforts of this sort are increasing in frequency, each new effort is still improvising solutions in terms of processes, tooling, and compliance infrastructure. It\'s time to take this problem seriously and invest in reusable tools and approaches that will streamline federated data efforts in the years to come. In short,\n\n<List variant="check" className="margin-bottom-2">\n\n-   Getting good, reliable data is hard\n-   Data from different sources makes this even harder\n-   Data providers are less likely to contribute to system that are difficult and time consuming to useList\n\n</List>\n\n</Card>\n\n## [](#next-steps)[](#next-steps)[](#next-steps)[](#next-steps)[](#next-steps)Next steps\n\nWe’d recommend continuing to extend resources.data.gov to include:\n\n<List variant="check">\n\n-   Working with agency partners to surface resources, from agency-specific examples to generalized, plug-and-play components\n-   Provide the infrastructure for sharing resources across the government with clear contribution and publication guidelines and support\n-   Support the work of communities of practice, the Federal Data Strategy, the CDO Council, and individual managers and practitioners across the government\n\n</List>\n',
-    topics:
-      "Type: Innovative, Category: Government efficiencies, Audience: Program administrators",
-    path: "/project/u-s-data-federation",
-    phaseData: {
-      status: "3",
-      phase: "4",
-      message: "",
-    },
-    toc: [
-      {
-        text: "Overview",
-        url: "#overview",
-      },
-      {
-        text: "At a glance",
-        url: "#at-a-glance",
-      },
-      {
-        text: "Our goal",
-        url: "#our-goal",
-      },
-      {
-        text: "How we did it",
-        url: "#how-we-did-it",
-      },
-      {
-        text: "Where we are today",
-        url: "#where-we-are-today",
-      },
-      {
-        text: "Why this matters",
-        url: "#why-this-matters",
-      },
-      {
-        text: "Next steps",
-        url: "#next-steps",
-      },
-    ],
-    name: "u-s-data-federation",
-    projectType: "Innovative",
-    projectLink: "/projects/u-s-data-federation",
-    subtitle: "Easy federated data aggregation for better analysis & insights",
-    title: "U.S. Data Federation",
-    links: [
-      {
-        text: "GitHub README",
-        link: "https://github.com",
-      },
-      {
-        text:
-          "The U.S. Data Federation wants to make it easier to collect, combine, and exchange data across government",
-        link: "/",
-      },
-      {
-        text: "Phase 4 Closeout Deck",
-        link: "/",
-      },
-      {
-        text: "Resources.data.gov",
-        link: "https://resources.data.gov",
-      },
-      {
-        text: "Trello task board",
-        link: "/",
-      },
-    ],
-    type: "project",
-    team: {
-      members:
-        "Chris Goranson, Catherine Devlin, Tony Garvan, Joe Krzystan, Mark Headd, Amy Mok, Julia Lindpaintner, Ethan Heppner, Mike Gintz, Julia Lindpaintner, Mike Gintz, Princess Ojiaku, James Tranovich\n\n",
-      text: "Philip Ashlock - Data Services Portfolio Acting Lead, OCSIT",
-      submitter: "Philip Ashlock - Data Services Portfolio Acting Lead, OCSIT",
-    },
   },
 ];
 

@@ -2,15 +2,20 @@ $bgImgDir: "~styles/images";
 .Tx__home {
   background: linear-gradient(
     180deg,
-    rgba(194, 194, 245, 0.5) 0%,
-    rgba(255, 107, 82, 0.5) 51.77%,
-    rgba(120, 227, 251, 0.44) 87.5%
+    rgba(194, 194, 245, 0.5) 400px,
+    rgba(255, 107, 82, 0.5) 1000px,
+    rgba(120, 227, 251, 0.44) 1800px
   );
   .Home {
     &__callout {
+      &.usa-card {
+        @include at-media("desktop") {
+          margin-bottom: 0 !important;
+        }
+      }
       .usa-card__container {
-        margin: 0;
-        @include u-padding-y(6);
+        @include u-padding-top(6);
+        @include u-padding-bottom(2);
         border: none;
         background-size: 100% 100%;
         background-color: transparent;
@@ -18,7 +23,9 @@ $bgImgDir: "~styles/images";
         background-position-y: center;
         background-image: url($bgImgDir + "/home-callout-bg.png");
         background-repeat: no-repeat;
-
+        @include at-media("desktop") {
+          margin-top: 150px;
+        }
         .usa-card__body {
           @include u-padding-top(10);
           @include u-padding-right(10);
@@ -34,12 +41,15 @@ $bgImgDir: "~styles/images";
         @include u-padding-bottom(4);
         .usa-card__container {
           height: 100%;
-
           @include u-margin-x(2);
           @include u-padding-y(4);
           border: none;
           box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
 
+          background-size: contain;
+          background-position-x: right;
+          background-position-y: top;
+          background-repeat: no-repeat;
           .usa-card__heading {
             @include u-font("serif", 7);
             @include u-color("base");
@@ -55,23 +65,50 @@ $bgImgDir: "~styles/images";
           }
         }
       }
+      > div {
+        &:nth-child(1) {
+          .usa-card__container {
+            background-image: url($bgImgDir + "/home-featured-brush-stroke-1.png");
+          }
+        }
+        &:nth-child(2) {
+          .usa-card__container {
+            background-image: url($bgImgDir + "/home-featured-brush-stroke-2.png");
+          }
+        }
+        &:nth-child(3) {
+          .usa-card__container {
+            background-image: url($bgImgDir + "/home-featured-brush-stroke-3.png");
+          }
+        }
+        &:nth-child(4) {
+          .usa-card__container {
+            background-image: url($bgImgDir + "/home-featured-brush-stroke-4.png");
+          }
+        }
+      }
     }
   }
 
   &-hero {
-    background-color: #ddf1f5;
+    position: relative;
     @include u-margin-top(-4rem);
     @include u-margin-bottom(10);
-    h1 {
-      display: inline;
-      line-height: 125%;
-      @include u-bg("white");
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    }
+    background-color: #ddf1f5;
+
     .grid-container {
       position: relative;
       @include u-padding-y(10);
-      &:after {
+
+      h1 {
+        position: relative;
+        display: inline;
+        line-height: 125%;
+        @include u-bg("white");
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+      }
+      &:before {
         display: inline-block;
         position: absolute;
         content: "";
@@ -92,6 +129,21 @@ $bgImgDir: "~styles/images";
         @include at-media("desktop") {
           bottom: -36px;
         }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: -50px;
+        right: -250px;
+        width: 700px;
+        height: 700px;
+        background-image: url($bgImgDir + "/home-x.png");
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        z-index: 1;
       }
     }
   }

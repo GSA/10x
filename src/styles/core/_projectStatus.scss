@@ -1,12 +1,14 @@
 $c-first: color("accent-warm-dark");
 $c-three-two: #883d3d;
-$c-four-two: #a63e28;
-$c-four-three: #693c52;
-$c-last: color("accent-cool-dark");
+$c-four-two: #bb594e;
+$c-four-three: #7b4a60;
+$c-end: color("accent-cool");
+$c-last: color("primary");
 
 .ProjectStatus {
-  margin-top: 2px;
-  margin-bottom: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px !important;
+  max-width: 400px;
   line-height: 1;
   font-size: 16px;
   &__bar {
@@ -24,7 +26,7 @@ $c-last: color("accent-cool-dark");
       top: 0;
       left: 0;
       bottom: 0;
-      background: linear-gradient(112deg, #{$c-first} 0%, #{$c-last} 100%);
+      background: linear-gradient(112deg, #{$c-first} 0%, #{$c-end} 100%);
       z-index: 1;
     }
     &:after {
@@ -75,7 +77,7 @@ $c-last: color("accent-cool-dark");
   }
   &__item {
     position: absolute;
-    margin-top: -22px;
+    margin-top: -28px;
     width: 16px;
     overflow: visible;
     text-align: center;
@@ -122,6 +124,7 @@ $c-last: color("accent-cool-dark");
     display: block;
     @include u-font("sans", "2xs");
     line-height: 16px;
+    margin-bottom: 6px;
   }
   &__icon {
     display: inline-block;

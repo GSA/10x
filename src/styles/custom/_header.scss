@@ -1,6 +1,7 @@
 .usa-header {
   @include u-bg("base-darkest");
   position: relative;
+
   & > .grid-container {
     padding: 0;
     @include at-media("desktop") {
@@ -15,6 +16,10 @@
     @include at-media("desktop") {
       text-align: left;
       padding: 0;
+
+      .usa-nav {
+        min-height: 100px;
+      }
     }
   }
   .usa-logo {

@@ -16,5 +16,19 @@ describe("ProjectList", () => {
       await runAsyncRender(wrapper);
       expect(wrapper).toBeTruthy();
     });
+
+    it("should click card", async () => {
+      const wrapper = mount(
+        <TestProvider store={store}>
+          <ProjectList />
+        </TestProvider>
+      );
+      await runAsyncRender(wrapper);
+
+      const card = wrapper.find(".ProjectCard").first();
+      card.simulate("click");
+      await runAsyncRender(wrapper);
+      expect(wrapper.find(".ProjectList").hostNodes().length).toBe(1);
+    });
   });
 });

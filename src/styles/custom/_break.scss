@@ -1,25 +1,54 @@
 .TxBreak {
   display: block;
-  content: "";
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
+  position: relative;
   height: 12px;
   @include u-margin-y(4);
+  &:before {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  &__wide {
+    @include u-margin-y(6);
+    text-align: center;
+    &:before {
+      transform: translateY(-8px);
+      width: 150px;
+      margin: 0 auto;
+      opacity: 0.3;
+      background-size: 100% 100%;
+    }
+  }
 
   &__primary-lighter {
-    background-image: url("~styles/images/short-lilac-brush-stroke.svg");
+    &:before {
+      background-image: url("~styles/images/short-lilac-brush-stroke.png");
+    }
   }
   &__secondary {
-    background-image: url("~styles/images/short-ocean-brush-stroke.svg");
+    &:before {
+      background-image: url("~styles/images/short-ocean-brush-stroke.png");
+    }
   }
   &__accent-warm {
-    background-image: url("~styles/images/short-tiger-brush-stroke.svg");
+    &:before {
+      background-image: url("~styles/images/short-tiger-brush-stroke.png");
+    }
   }
   &__accent-cool {
-    background-image: url("~styles/images/short-sky-brush-stroke.svg");
+    &:before {
+      background-image: url("~styles/images/short-sky-brush-stroke.png");
+    }
   }
   &__base-lighter {
-    background-image: url("~styles/images/short-ocean-brush-stroke.svg");
+    &:before {
+      background-image: url("~styles/images/short-ocean-brush-stroke.png");
+    }
   }
 }

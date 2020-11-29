@@ -21,23 +21,6 @@ describe("ProjectStatus", () => {
       await runAsyncRender(wrapper);
       expect(wrapper).toBeTruthy();
     });
-    it("should render project status with message", async () => {
-      const message = "test message";
-      const wrapper = mount(
-        <TestProvider store={store}>
-          <ProjectStatus
-            data={{
-              ...data,
-              message,
-            }}
-          />
-        </TestProvider>
-      );
-      await runAsyncRender(wrapper);
-      expect(wrapper.find(".ProjectStatus__message").hostNodes().text()).toBe(
-        message
-      );
-    });
 
     it("should render project status as graduated", async () => {
       const wrapper = mount(

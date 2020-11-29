@@ -15,5 +15,9 @@
 
   &__text {
     font-weight: 400;
+
+    .usa-button--unstyled {
+      display: inline;
+    }
   }
 }

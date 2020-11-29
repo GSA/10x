@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import classnames from "classnames";
 import { getPage } from "app/ContentModule";
 import FourOhFour from "routes/FourOhFour";
 import Mdx from "features/Mdx";
@@ -45,7 +46,13 @@ const Project = ({ type }) => {
   return (
     <div className={`TxContent `}>
       <Helmet title={data.title} />
-      <Grid className={`TxProject TxProject--${name}`}>
+      <Grid
+        className={classnames({
+          TxProject: true,
+          [`TxProject--${name}`]: true,
+          [`TxProject--template-${meta.template}`]: Boolean(meta.template),
+        })}
+      >
         <div className="TxProject__nav-link">
           <Link to="/projects">
             <Icon icon="arrow-left" />
@@ -59,7 +66,7 @@ const Project = ({ type }) => {
           <Col size="12" desktop="8">
             <h2 className="TxProject__title">{data.title}</h2>
             <p className="TxProject__intro">{data.intro}</p>
-            <Break color="accent-cool" />
+            <Break color="accent-cool" variant="wide" />
           </Col>
           {meta.summary && (
             <Col size="12" desktop="4">
@@ -93,9 +100,13 @@ const Project = ({ type }) => {
 
           <Col size="12" desktop="4">
             <div className="TxProject__details">
-              <Team data={meta.team} />
-              <Break color="base-lighter" />
-              <Links data={meta.links} />
+              <Card>
+                <Team data={meta.team} />
+              </Card>
+              <Break color="base-lighter" variant="wide" />
+              <Card>
+                <Links data={meta.links} />
+              </Card>
             </div>
           </Col>
         </Row>

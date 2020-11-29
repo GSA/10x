@@ -1,7 +1,6 @@
 $bgImgDir: "~styles/images";
 
 .usa-footer {
-  @include u-padding-top(4);
   @include u-bg("base");
   @include u-color("white");
   @include u-font("serif", "xs");
@@ -51,21 +50,6 @@ $bgImgDir: "~styles/images";
           @include u-color("primary-lighter");
         }
       }
-    }
-  }
-  &__links {
-    text-align: center;
-    flex-direction: column;
-    @include u-padding-bottom("10");
-
-    a {
-      text-align: center;
-      width: auto;
-      @include u-margin-bottom(2);
-    }
-    @include at-media("desktop") {
-      flex-direction: row;
-      justify-content: space-between;
     }
   }
 }
