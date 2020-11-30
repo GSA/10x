@@ -1,0 +1,66 @@
+{
+  "title": "Making each dollar count",
+  "slug": "making-each-dollar-count",
+  "sections": [
+    {
+      "type": "title",
+      "title": "Making each dollar count",
+      "subtitle": "We’re focused on getting the most bang for the buck at every stage of the process."
+    },
+    {
+      "type": "markdown",
+      "body": "Our model of small-dollar investments enables us to be good stewards of taxpayer dollars by spending the smallest possible amount of funding necessary at every stage of a project to determine whether or not it’s worth pursuing. About one third⅓ ofOnly one or two of every 10 projects selected for initial funding will actually make its way into design and development work, and even those projects must be able to prove they’re delivering clear value in order to continue to receive funding. This iterative approach to investing allows us to innovate without overspending, ensuring the products and services produced meet a real, verifiable need in the federal space."
+    },
+    {
+      "type": "break",
+      "color": "accent-warm",
+      "variant": "wide"
+    },
+    {
+      "type": "callout",
+      "title": "Key questions for funding",
+      "text": "Our funding model can be broken down into four simple questions. \n",
+      "items": [
+        {
+          "title": "Investigation",
+          "text": "Teams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities and reach. "
+        },
+        {
+          "title": "Discovery",
+          "text": "Teams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong."
+        },
+        {
+          "title": "Development",
+          "text": "Teams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan."
+        },
+        {
+          "title": "Scale",
+          "text": "Teams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. "
+        }
+      ]
+    },
+    {
+      "type": "break",
+      "color": "accent-warm",
+      "variant": "wide"
+    },
+    {
+      "type": "cards",
+      "className": "Dollars__cards",
+      "title": "A record-setting year for 10x",
+      "text": "In FY20, 10x accepted both new ideas and oversaw the continuation of projects that were still ongoing from past fiscal years. ",
+      "items": [
+        {
+          "title": "XX",
+          "text": "projects kicked off Phase 1 in 2020, or started late in FY19",
+          "link": "/"
+        },
+        {
+          "title": "XX",
+          "text": "projects continued into phases 2, 3, and 4",
+          "link": "/"
+        }
+      ]
+    }
+  ]
+}
