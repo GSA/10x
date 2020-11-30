@@ -168,6 +168,10 @@ collections:
                 name: "subtitle"
                 widget: string
                 required: false
+                - label: "Text"
+                name: "text"
+                widget: text
+                required: false
               - label: Button
                 name: button
                 widget: "object"
