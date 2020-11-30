@@ -3,7 +3,8 @@
   "sections": [
     {
       "type": "markdown",
-      "body": "<Grid>\n\n# What if your idea could change how the government communicates with the public?\n\n</Grid>"
+      "body": "<Grid>\n\n# What if your idea could change how the government communicates with the public?\n\n</Grid>",
+      "className": "Home__hero"
     },
     {
       "type": "markdown",
