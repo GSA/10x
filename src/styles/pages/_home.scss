@@ -110,8 +110,7 @@ $bgImgDir: "~styles/images";
     }
 
     &__cards {
-      @include u-margin-bottom(8);
-      @include u-margin-x(-2);
+      @include u-padding-bottom(8);
       .usa-card {
         height: 100%;
         @include u-padding-bottom(4);
