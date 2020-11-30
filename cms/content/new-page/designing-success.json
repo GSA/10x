@@ -12,18 +12,22 @@
       "text": "As we evaluated ideas for FY21, we experimented with distinct investment themes — targeted areas of the government tech ecosystem that we wanted to invest in and explore. While all ideas are still up for consideration, we wanted to try something different by tailoring our pipeline into specific areas. The three themes we settled on were:\n",
       "items": [
         {
-          "text": "test",
+          "text": "",
           "title": "Direct public services "
         },
         {
           "title": "Disaster management and response ",
-          "text": "test"
+          "text": ""
         },
         {
           "title": "Diversity, inclusion, and accessibility ",
-          "text": "test"
+          "text": ""
         }
       ]
+    },
+    {
+      "type": "markdown",
+      "body": "We felt that these areas were unique, apt, and ripe for investigation. Of the 145 ideas we received, 111 were aligned with these focus areas. "
     },
     {
       "type": "break",
