@@ -21,7 +21,11 @@ const Callout = ({ className, title, subtitle, text, items, button }) => {
           {items.map((item) => (
             <Col size="12" desktop="6">
               <div className="display-flex margin-bottom-4">
-                <Icon icon="circle" className="margin-right-2" />
+                <Icon
+                  icon="circle"
+                  size="xs"
+                  className="margin-right-2 text-accent-warm"
+                />
                 <Button variant="link" url={item.link}>
                   {item.text}
                 </Button>

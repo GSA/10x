@@ -1,12 +1,7 @@
 $bgImgDir: "~styles/images";
 .Tx__homepage {
   padding-top: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(194, 194, 245, 0.5) 400px,
-    rgba(255, 107, 82, 0.5) 1000px,
-    rgba(120, 227, 251, 0.44) 1800px
-  );
+
   &-content {
     position: relative;
     z-index: 1000;
@@ -115,35 +110,10 @@ $bgImgDir: "~styles/images";
         height: 100%;
         @include u-padding-bottom(4);
         .usa-card__container {
-          height: 100%;
-          @include u-margin-x(2);
           @include u-padding-y(4);
-          border: none;
-          box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
-
-          background-size: contain;
-          background-position-x: right;
-          background-position-y: top;
-          background-repeat: no-repeat;
-          .usa-card__heading {
-            @include u-font("serif", 7);
-            @include u-color("base");
-            text-transform: uppercase;
-            font-weight: 600;
-          }
-
-          .usa-card__body {
-            padding-top: 0;
-            @include u-font("serif", 8);
-            @include u-color("primary");
-            font-weight: 500;
-            .usa-button--unstyled {
-              @include u-font("serif", "md");
-            }
-          }
         }
       }
-      > div {
+      > .grid-row > div {
         &:nth-child(1) {
           .usa-card__container {
             background-image: url($bgImgDir + "/home-featured-brush-stroke-1.png");

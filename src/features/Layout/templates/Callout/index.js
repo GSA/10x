@@ -19,7 +19,7 @@ const Callout = ({ className, title, subtitle, text, items, button }) => {
       {items && (
         <Row>
           {items.map((item) => (
-            <Col size="12" desktop="4">
+            <Col size="12" desktop="auto">
               <div className="display-flex margin-right-2">
                 <Icon icon="check" className="margin-right-2" />
                 <div>
