@@ -4,6 +4,11 @@
   "slug": "our-story",
   "sections": [
     {
+      "type": "title",
+      "title": "Our Story",
+      "subtitle": "No other government program is powered 100% by ideas — our sole purpose is to fan the flames of tech innovation, one candle at a time. "
+    },
+    {
       "type": "markdown",
       "body": "We evaluate  ideas submitted by federal employees about ways to improve how the government uses technology to serve the public good. Then we fund the exploration and development of those ideas. But instead of the more traditional government project approach of “all or nothing,” we model our funding on venture capital practices, making incremental investments on only the most promising ideas. We start with a small level of investment — of time and money — and only increase that investment as we determine the idea has the potential to be successful.\n\nBy doing this, we [dramatically diminish wasted spending](http://10x.gsa.gov) on projects that aren’t likely to succeed — maybe there’s already a similar effort underway in another agency, perhaps the infrastructure doesn’t exist yet to support the idea, or it simply isn’t an effective solution to the problem. But because we research each idea at inception, and then re-evaluate them at each incremental funding stage, we don’t waste time or resources pursuing deadend projects."
     },
