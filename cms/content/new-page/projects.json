@@ -9,5 +9,8 @@
     {
       "type": "projects"
     }
-  ]
+  ],
+  "meta": {
+    "theme": "2"
+  }
 }
