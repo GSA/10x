@@ -39,8 +39,7 @@
       ],
       "className": "",
       "title": "We’re different, by design",
-      "subtitle": "",
-      "text": "10x isn’t a typical government agency. The very way we’re structured ensures that we operate differently. "
+      "subtitle": "10x isn’t a typical government agency. The very way we’re structured ensures that we operate differently. "
     },
     {
       "type": "break",
@@ -94,6 +93,11 @@
     {
       "type": "markdown",
       "body": "## The backstory\n\nSeveral U.S. government agencies worked with 10x to develop the structures necessary to allow the program to function. The Office of Management and Budget (OMB) developed the regulatory structure to allow us to spend appropriated funds in this way, while the General Services Administration (GSA)’s Office of General Counsel helped us develop an innovative contractual approach that allows us to legally work with other agencies to determine how to spend these funds to address their problems. The Digital Services Fund (DSF) is the funding authority that allows 10x to provide seed-funding and to support low-cost exploratory activities to identify and prototype promising technology investments."
+    },
+    {
+      "type": "break",
+      "variant": "wide",
+      "color": "accent-warm"
     },
     {
       "type": "cards",
