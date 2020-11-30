@@ -1,16 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classnames from "classnames";
 import { Col, Row } from "components/Grid";
 import Card from "components/Card";
 import Button from "components/Button";
 
 const Cards = ({ title, text, items, className }) => {
   return (
-    <div className={className}>
+    <div
+      className={classnames({
+        TxContent__cards: true,
+        [className]: Boolean(className),
+      })}
+    >
       {title && <h2>{title}</h2>}
-      {text && <div>{title}</div>}
+      {text && <div className="margin-bottom-4">{text}</div>}
 
-      <Row className="Home__cards">
+      <Row>
         {items.map((item) => {
           return (
             <Col size="12" desktop="6">

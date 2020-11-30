@@ -4,7 +4,9 @@ import Break from "components/Break";
 import Mdx from "features/Mdx";
 import ProjectList from "features/ProjectList";
 import { Grid } from "components/Grid";
+import Callout from "./templates/Callout";
 import Cards from "./templates/Cards";
+import Links from "./templates/Links";
 import Title from "./templates/Title";
 
 const components = {
@@ -15,8 +17,10 @@ const components = {
     </div>
   ),
   projects: ProjectList,
+  callout: Callout,
   cards: Cards,
   title: Title,
+  links: Links,
 };
 
 const Layout = ({ items }) => {

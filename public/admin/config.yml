@@ -168,7 +168,7 @@ collections:
                 name: "subtitle"
                 widget: string
                 required: false
-                - label: "Text"
+              - label: "Text"
                 name: "text"
                 widget: text
                 required: false
@@ -226,7 +226,6 @@ collections:
           - label: Links
             name: links
             widget: "object"
-            summary: "{{ fields.title }}"
             fields:
               - label: Classname
                 name: className
