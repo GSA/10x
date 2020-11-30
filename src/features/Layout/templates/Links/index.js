@@ -18,8 +18,8 @@ const Callout = ({ className, title, subtitle, text, items, button }) => {
       {subtitle && <h3>{subtitle}</h3>}
       {items && (
         <Row gap="6">
-          {items.map((item) => (
-            <Col size="12" desktop="6">
+          {items.map((item, i) => (
+            <Col key={`txLinks-${i}`} size="12" desktop="6">
               <div className="display-flex margin-bottom-4">
                 <Icon
                   icon="circle"

@@ -153,7 +153,7 @@ Nav.defaultProps = {
 
 Nav.propTypes = {
   items: PropTypes.array,
-  renderText: PropTypes.node,
+  renderText: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
 };
 
 export default Nav;

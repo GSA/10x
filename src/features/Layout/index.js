@@ -26,13 +26,12 @@ const components = {
 const Layout = ({ items }) => {
   return items.map(({ type, fullwidth, ...props }, i) => {
     const Comp = components[type];
-    console.log("FULLWIDTH", fullwidth, type);
     return Comp ? (
       fullwidth ? (
-        <Comp key={`layout-${++i}`} {...props} />
+        <Comp key={`txLayout-${++i}`} {...props} />
       ) : (
-        <Grid>
-          <Comp key={`layout-${++i}`} {...props} />
+        <Grid key={`layout-${++i}`}>
+          <Comp {...props} />
         </Grid>
       )
     ) : null;

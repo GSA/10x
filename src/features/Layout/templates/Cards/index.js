@@ -17,9 +17,9 @@ const Cards = ({ title, text, items, className }) => {
       {text && <div className="margin-bottom-4">{text}</div>}
 
       <Row>
-        {items.map((item) => {
+        {items.map((item, i) => {
           return (
-            <Col size="12" desktop="6">
+            <Col key={`txCards-${i}`} size="12" desktop="6">
               <Card title={item.title}>
                 <Button variant="link" url={item.link}>
                   {item.text}
