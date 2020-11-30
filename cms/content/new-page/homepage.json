@@ -40,5 +40,8 @@
     }
   ],
   "subtitle": "What if your idea could change how the government communicates with the public?",
-  "slug": "homepage"
+  "slug": "homepage",
+  "meta": {
+    "theme": "1"
+  }
 }
