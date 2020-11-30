@@ -9,7 +9,7 @@ export const initialState = {
 
 export const getPage = createAsyncThunk(
   "content/getPage",
-  async ({ type = "page", name = "" }) =>
+  async ({ type = "new-page", name = "" }) =>
     await context.getContentTypeByName({ type, name })
 );
 export const getTaxonomy = createAsyncThunk(

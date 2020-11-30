@@ -88,6 +88,230 @@ collections:
               - label: Link
                 name: link
                 widget: string
+  - name: new-pages
+    label: Layout Pages
+    extension: json
+    label_singular: Layout Page
+    folder: cms/content/new-page
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    preview_path: "{{slug}}"
+    identifier_field: slug
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Headline"
+        name: "subtitle"
+        widget: "string"
+        required: false
+      - widget: string
+        name: "slug"
+        label: "Slug"
+        required: true
+        pattern:
+          [
+            "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "A slug can have no spaces or special characters",
+          ]
+        hint: "The project URL (do not include folder or file extension)"
+
+      - label: "Sections"
+        name: "sections"
+        widget: "list"
+        types:
+          - label: Title
+            name: title
+            widget: "object"
+            fields:
+              - label: Classname
+                name: className
+                widget: string
+                required: false
+              - label: Title
+                name: title
+                widget: string
+              - label: "Headline"
+                name: "subtitle"
+                widget: text
+
+          - label: "Markdown"
+            name: "markdown"
+            widget: "object"
+            fields:
+              - label: Classname
+                name: className
+                widget: string
+                required: false
+              - label: Fullwidth
+                name: fullwidth
+                widget: boolean
+                required: false
+              - label: "Body"
+                name: "body"
+                widget: "markdown"
+
+          - label: Callout
+            name: callout
+            widget: "object"
+            fields:
+              - label: Classname
+                name: className
+                widget: string
+                required: false
+              - label: Title
+                name: title
+                widget: string
+                required: false
+              - label: "Subtitle"
+                name: "subtitle"
+                widget: string
+                required: false
+              - label: Button
+                name: button
+                widget: "object"
+                required: false
+                fields:
+                  - label: Text
+                    name: "text"
+                    widget: string
+                    required: false
+                  - label: Link
+                    name: "link"
+                    widget: string
+                    required: false
+              - label: Items
+                name: items
+                widget: list
+                summary: "{{ fields.title }}"
+                fields:
+                  - label: Title
+                    name: "title"
+                    widget: string
+                  - label: Text
+                    name: "text"
+                    widget: string
+
+          - label: Break
+            name: break
+            widget: "object"
+            fields:
+              - label: Classname
+                name: className
+                widget: string
+                required: false
+              - label: Color
+                name: color
+                widget: select
+                required: false
+                options:
+                  [
+                    "primary-lighter",
+                    "secondary",
+                    "accent-warm",
+                    "accent-cool",
+                    "base-lighter",
+                  ]
+              - label: variant
+                name: variant
+                widget: select
+                required: false
+                options: [0, "wide"]
+
+          - label: Links
+            name: links
+            widget: "object"
+            summary: "{{ fields.title }}"
+            fields:
+              - label: Classname
+                name: className
+                widget: string
+                required: false
+              - label: Title
+                name: title
+                widget: string
+                required: false
+              - label: "Subtitle"
+                name: "subtitle"
+                widget: string
+                required: false
+              - label: "Text"
+                name: "text"
+                widget: string
+                required: false
+              - label: Button
+                name: button
+                widget: "object"
+                required: false
+                fields:
+                  - label: Text
+                    name: "text"
+                    widget: string
+                    required: false
+                  - label: Link
+                    name: "link"
+                    widget: string
+                    required: false
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - label: Text
+                    name: text
+                    widget: string
+                  - label: Link
+                    name: link
+                    widget: string
+
+          - label: Cards
+            name: cards
+            widget: "object"
+            fields:
+              - label: Classname
+                name: className
+                widget: string
+                required: false
+              - label: Title
+                name: title
+                widget: string
+                required: false
+              - label: "Text"
+                name: "text"
+                widget: string
+                required: false
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Text
+                    name: text
+                    widget: string
+                  - label: Link
+                    name: "link"
+                    widget: string
+
+          - label: Projects
+            name: projects
+            widget: "object"
+            fields:
+              - label: Classname
+                name: className
+                widget: string
+                required: false
+
+      - label: Meta
+        name: meta
+        widget: "object"
+        fields:
+          - label: "Theme"
+            name: "theme"
+            required: false
+            widget: "select"
+            options: ["1", "2", "3", "4"]
   - name: page
     extension: json
     label: Pages

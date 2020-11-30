@@ -19,7 +19,7 @@ const Header = ({ logo, className }) => {
   const handleMenuToggle = (v) => {
     setMenuOpen((state) => !state);
   };
-  console.log("HEADER", isMenuOpen);
+
   const handleActiveMenuItemClick = (e) => {
     let id = null;
     /* istanbul ignore next */

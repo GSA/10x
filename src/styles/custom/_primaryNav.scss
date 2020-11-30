@@ -78,6 +78,7 @@
     justify-content: space-between;
     float: none;
     text-align: left;
+    padding: 0;
     @include u-padding-left(6);
     button {
       @include u-color("white");

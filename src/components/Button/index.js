@@ -66,6 +66,7 @@ Button.propTypes = {
   /** defines the component base color */
   color: PropTypes.oneOf([
     "primary",
+    "primary-lighter",
     "secondary",
     "accent-warm",
     "accent-cool",

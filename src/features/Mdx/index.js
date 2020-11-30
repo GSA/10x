@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Break from "components/Break";
 import Button from "components/Button";
 import Card from "components/Card";
-import ColorBox from "components/ColorBox";
 import Date from "components/Date";
 import { Grid, Row, Col } from "components/Grid";
 import Icon from "components/Icon";
@@ -19,7 +18,6 @@ export const shortcodes = {
   Break,
   Button,
   Card,
-  ColorBox,
   Date,
   Grid,
   Icon,
@@ -34,7 +32,7 @@ export const shortcodes = {
   ProjectList,
 };
 
-const Mdx = ({ children, components, scope }) => {
+const Mdx = ({ children, className, components, scope }) => {
   return (
     <MDX components={{ ...shortcodes, ...components }} scope={scope}>
       {children}

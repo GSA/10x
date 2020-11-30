@@ -1,5 +1,6 @@
 $bgImgDir: "~styles/images";
-.Tx__home {
+.Tx__homepage {
+  padding-top: 0;
   background: linear-gradient(
     180deg,
     rgba(194, 194, 245, 0.5) 400px,
@@ -10,7 +11,73 @@ $bgImgDir: "~styles/images";
     position: relative;
     z-index: 1000;
   }
+
   .Home {
+    &__hero {
+      position: relative;
+      @include u-margin-bottom(10);
+      background-color: #ddf1f5;
+
+      .grid-container {
+        position: relative;
+        @include u-padding-y(10);
+
+        h1 {
+          position: relative;
+          display: inline;
+          line-height: 125%;
+          @include u-bg("white");
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+          z-index: 2;
+        }
+        &:before {
+          display: inline-block;
+          position: absolute;
+          content: "";
+          top: 100%;
+          bottom: -32px;
+          left: 0;
+          right: 0;
+          z-index: 0;
+          background-size: cover;
+          background-position-x: center;
+          background-position-y: bottom;
+          background-image: url($bgImgDir + "/home-hero-bg-stroke.png");
+          background-repeat: no-repeat;
+
+          @include at-media("tablet") {
+            bottom: -50px;
+          }
+          @include at-media("desktop") {
+            bottom: -36px;
+          }
+
+          @include at-media("desktop") {
+          }
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          top: 10px;
+          right: -100px;
+          width: 400px;
+          height: 400px;
+          background-image: url($bgImgDir + "/home-x.png");
+          background-size: cover;
+          background-position-x: center;
+          background-position-y: center;
+          background-repeat: no-repeat;
+          z-index: 1;
+          @include at-media("desktop") {
+            top: -50px;
+            right: -250px;
+            width: 700px;
+            height: 700px;
+          }
+        }
+      }
+    }
     &__callout {
       &.usa-card {
         @include at-media("desktop") {
@@ -71,6 +138,9 @@ $bgImgDir: "~styles/images";
             @include u-font("serif", 8);
             @include u-color("primary");
             font-weight: 500;
+            .usa-button--unstyled {
+              @include u-font("serif", "md");
+            }
           }
         }
       }
@@ -94,73 +164,6 @@ $bgImgDir: "~styles/images";
           .usa-card__container {
             background-image: url($bgImgDir + "/home-featured-brush-stroke-4.png");
           }
-        }
-      }
-    }
-  }
-
-  &-hero {
-    position: relative;
-    @include u-margin-top(-4rem);
-    @include u-margin-bottom(10);
-    background-color: #ddf1f5;
-
-    .grid-container {
-      position: relative;
-      @include u-padding-y(10);
-
-      h1 {
-        position: relative;
-        display: inline;
-        line-height: 125%;
-        @include u-bg("white");
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 2;
-      }
-      &:before {
-        display: inline-block;
-        position: absolute;
-        content: "";
-        top: 100%;
-        bottom: -32px;
-        left: 0;
-        right: 0;
-        z-index: 0;
-        background-size: cover;
-        background-position-x: center;
-        background-position-y: bottom;
-        background-image: url($bgImgDir + "/home-hero-bg-stroke.png");
-        background-repeat: no-repeat;
-
-        @include at-media("tablet") {
-          bottom: -50px;
-        }
-        @include at-media("desktop") {
-          bottom: -36px;
-        }
-
-        @include at-media("desktop") {
-        }
-      }
-      &:after {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        top: 10px;
-        right: -100px;
-        width: 400px;
-        height: 400px;
-        background-image: url($bgImgDir + "/home-x.png");
-        background-size: cover;
-        background-position-x: center;
-        background-position-y: center;
-        background-repeat: no-repeat;
-        z-index: 1;
-        @include at-media("desktop") {
-          top: -50px;
-          right: -250px;
-          width: 700px;
-          height: 700px;
         }
       }
     }

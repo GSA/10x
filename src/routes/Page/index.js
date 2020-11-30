@@ -7,6 +7,7 @@ import Loading from "components/Loading";
 import Mdx from "features/Mdx";
 import FourOhFour from "routes/FourOhFour";
 import Head from "routes/Head";
+import Layout from "features/Layout";
 
 const Page = ({ name }) => {
   const dispatch = useDispatch();
@@ -43,7 +44,7 @@ const Page = ({ name }) => {
         </div>
       )}
       <div className={`Tx__${data.name}-content`}>
-        <Mdx>{data.body}</Mdx>
+        <Layout items={data.sections} />
       </div>
     </div>
   );
