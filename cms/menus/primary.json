@@ -1,44 +1,4 @@
 {
-  "items": [
-    {
-      "text": "STORY",
-      "link": "about-10x",
-      "img": "public/images/10x-icon-about.svg",
-      "desc": "Where did 10x come from and what does it do?",
-      "items": [
-        {
-          "text": "Making each dollar count",
-          "link": "test"
-        },
-        {
-          "text": "Another item",
-          "link": "test"
-        }
-      ],
-      "prefix": "Our"
-    },
-    {
-      "text": "PROCESS",
-      "link": "the-10x-process",
-      "img": "images/process.svg",
-      "Description": "What happens if your idea is selected?",
-      "desc": "What happens if your idea is selected?",
-      "prefix": "Our"
-    },
-    {
-      "text": "PROJECTS",
-      "link": "projects",
-      "img": "images/process.svg",
-      "desc": "A list of the projects",
-      "prefix": "Our"
-    },
-    {
-      "text": "CHALLENGE TO YOU",
-      "link": "challenge-to-you",
-      "img": "images/home.svg",
-      "desc": "An introduction to 10x and our mission.",
-      "prefix": "Our"
-    }
-  ],
+  "items": [],
   "key": "primary"
 }

@@ -63,31 +63,90 @@ collections:
       - name: items
         label: Items
         widget: list
-        summary: "{{fields.text}}"
-        fields:
-          - label: Prefix
-            name: prefix
-            widget: string
-            required: false
-          - label: Text
-            name: text
-            widget: string
-          - label: Link
-            name: link
-            widget: string
-          - label: Description
-            name: desc
-            width: string
-          - label: Items
-            name: items
-            widget: list
+        types:
+          - label: Page Link
+            name: page
+            summary: { { fields.text } }
+            widget: object
             fields:
+              - label: Prefix
+                name: prefix
+                widget: string
+                required: false
               - label: Text
                 name: text
                 widget: string
               - label: Link
                 name: link
+                widget: relation
+                collection: "new-pages"
+                search_fields: ["slug"]
+                value_field: "slug"
+                display_fields: ["title"]
+          - label: Custom Link
+            name: custom
+            widget: object
+            summary: { { fields.text } }
+            fields:
+              - label: Prefix
+                name: prefix
                 widget: string
+                required: false
+              - label: Text
+                name: text
+                widget: string
+              - label: Link
+                name: link
+                widget: list
+          - label: Nested Link
+            name: nested
+            widget: object
+            summary: { { fields.text } }
+            fields:
+              - label: Prefix
+                name: prefix
+                widget: string
+                required: false
+              - label: Text
+                name: text
+                widget: string
+              - label: Items
+                name: items
+                widget: list
+                types:
+                  - label: Page Link
+                    name: page
+                    widget: object
+                    fields:
+                      - label: Prefix
+                        name: prefix
+                        widget: string
+                        required: false
+                      - label: Text
+                        name: text
+                        widget: string
+                      - label: Link
+                        name: link
+                        widget: relation
+                        collection: "new-pages"
+                        search_fields: ["slug"]
+                        value_field: "slug"
+                        display_fields: ["title"]
+                  - label: Custom Link
+                    name: custom
+                    widget: object
+                    fields:
+                      - label: Prefix
+                        name: prefix
+                        widget: string
+                        required: false
+                      - label: Text
+                        name: text
+                        widget: string
+                      - label: Link
+                        name: link
+                        widget: list
+
   - name: new-pages
     label: Layout Pages
     extension: json

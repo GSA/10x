@@ -2,9 +2,12 @@ import React from "react";
 import { Grid, Row, Col } from "components/Grid";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
+import Card from "components/Card";
+import image from "styles/images/portfolio-paint-stroke-1.png";
 
 const FourOhFour = ({ pathname }) => {
   const { search } = useLocation();
+  console.log();
   return (
     <Grid>
       <Helmet title="404 Error" />
@@ -18,6 +21,15 @@ const FourOhFour = ({ pathname }) => {
               <h4>h4</h4>
               <h5>h5</h5>
               <blockquote>blockquote</blockquote>
+              <Card
+                title="Card Title"
+                subtitle="Card Subtitle"
+                image={image}
+                imageAlt="Image alt"
+                className="width-mobile"
+              >
+                Card Content
+              </Card>
             </div>
           ) : (
             <div

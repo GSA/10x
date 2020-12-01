@@ -46,10 +46,7 @@ const Card = ({
         {image && (
           <div className="usa-card__media">
             <div className="usa-card__img">
-              <div
-                className="usa-card__img-container"
-                style={{ backgroundImage: `url('${image}')` }}
-              >
+              <div className="usa-card__img-container">
                 <img src={image} alt={imageAlt} />
               </div>
             </div>
