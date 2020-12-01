@@ -16,6 +16,12 @@
           "text": "Designing success"
         }
       ]
+    },
+    {
+      "type": "page",
+      "link": "projects",
+      "prefix": "Our",
+      "text": "PROJECTS"
     }
   ],
   "key": "primary"
