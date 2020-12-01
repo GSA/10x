@@ -5,11 +5,11 @@ import { Col, Row } from "components/Grid";
 import Button from "components/Button";
 import Icon from "components/Icon";
 
-const Links = ({ className, title, subtitle, text, items, button }) => {
+const List = ({ className, title, subtitle, text, items, button }) => {
   return (
     <div
       className={classnames({
-        TxContent__links: true,
+        TxContent__list: true,
         [className]: Boolean(className),
       })}
     >
@@ -24,11 +24,12 @@ const Links = ({ className, title, subtitle, text, items, button }) => {
                 <Icon
                   icon="circle"
                   size="xs"
-                  className="margin-right-2 text-accent-warm"
+                  className="margin-right-2 margin-top-1 text-accent-warm"
                 />
-                <Button variant="link" url={item.link}>
-                  {item.text}
-                </Button>
+                <div>
+                  <b className="margin-right-2px">{item.title}</b>
+                  <span>{item.text}</span>
+                </div>
               </div>
             </Col>
           ))}
@@ -45,12 +46,12 @@ const Links = ({ className, title, subtitle, text, items, button }) => {
   );
 };
 
-Links.defaultProps = {
+List.defaultProps = {
   button: {},
   items: [],
 };
 
-Links.propTypes = {
+List.propTypes = {
   className: PropTypes.string,
   title: PropTypes.node,
   subtitle: PropTypes.node,
@@ -59,4 +60,4 @@ Links.propTypes = {
   items: PropTypes.array,
 };
 
-export default Links;
+export default List;

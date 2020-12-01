@@ -193,9 +193,11 @@ collections:
                   - label: Title
                     name: "title"
                     widget: string
+                    required: false
                   - label: Text
                     name: "text"
                     widget: string
+                    required: false
 
           - label: Break
             name: break
@@ -266,6 +268,52 @@ collections:
                   - label: Link
                     name: link
                     widget: string
+
+          - label: List
+            name: list
+            widget: "object"
+            fields:
+              - label: Classname
+                name: className
+                widget: string
+                required: false
+              - label: Title
+                name: title
+                widget: string
+                required: false
+              - label: "Subtitle"
+                name: "subtitle"
+                widget: string
+                required: false
+              - label: "Text"
+                name: "text"
+                widget: string
+                required: false
+              - label: Button
+                name: button
+                widget: "object"
+                required: false
+                fields:
+                  - label: Text
+                    name: "text"
+                    widget: string
+                    required: false
+                  - label: Link
+                    name: "link"
+                    widget: string
+                    required: false
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                    required: false
+                  - label: Text
+                    name: text
+                    widget: string
+                    required: false
 
           - label: Cards
             name: cards

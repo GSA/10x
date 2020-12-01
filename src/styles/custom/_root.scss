@@ -1,8 +1,8 @@
 html {
-  font-size: 10px;
+  font-size: 12px;
 
   @include at-media("tablet") {
-    font-size: 13px;
+    font-size: 14px;
   }
   @include at-media("desktop") {
     font-size: 16px;
@@ -13,9 +13,9 @@ blockquote {
   @include u-font("serif", 10);
   padding: 0;
   margin: 0;
-  @include u-margin-bottom(2);
-
+  @include u-margin-bottom(5);
   line-height: 150%;
+
   p {
     margin: 0;
   }
@@ -43,6 +43,24 @@ h2 {
 h3,
 h4 {
   @include u-text("medium");
+}
+
+h1 {
+  @include u-margin-bottom(4);
+}
+h2 {
+  @include u-margin-bottom(3);
+}
+h3 {
+  @include u-margin-bottom(2.5);
+}
+h4,
+h5 {
+  @include u-margin-bottom(2);
+}
+
+h5 {
+  text-transform: uppercase;
 }
 
 .usa-app {
@@ -78,6 +96,15 @@ h4 {
   }
 
   &__theme-3 {
+    background: linear-gradient(
+      180deg,
+      #d8d8d8 8.7%,
+      rgba(208, 226, 231, 0.672254) 35.58%,
+      rgba(120, 227, 251, 0.05) 87.96%
+    );
+  }
+
+  &__theme-4 {
     background: linear-gradient(
       180deg,
       #d8d8d8 8.7%,

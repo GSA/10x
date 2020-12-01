@@ -1,26 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Break from "components/Break";
-import Mdx from "features/Mdx";
-import ProjectList from "features/ProjectList";
 import { Grid } from "components/Grid";
+import Break from "components/Break";
 import Callout from "./templates/Callout";
 import Cards from "./templates/Cards";
 import Links from "./templates/Links";
+import List from "./templates/List";
+import Mdx from "features/Mdx";
+import ProjectList from "features/ProjectList";
 import Title from "./templates/Title";
 
 const components = {
   break: Break,
+  callout: Callout,
+  cards: Cards,
+  links: Links,
+  list: List,
   markdown: ({ body, className }) => (
     <div className={className}>
       <Mdx className={className}>{body}</Mdx>
     </div>
   ),
   projects: ProjectList,
-  callout: Callout,
-  cards: Cards,
   title: Title,
-  links: Links,
 };
 
 const Layout = ({ items }) => {
@@ -42,6 +44,8 @@ Layout.defaultProps = {
   items: [],
 };
 
-Layout.propTypes = {};
+Layout.propTypes = {
+  items: PropTypes.array,
+};
 
 export default Layout;
