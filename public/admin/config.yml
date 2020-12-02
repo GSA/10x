@@ -352,7 +352,7 @@ collections:
                       - label: Link
                         name: link
                         widget: relation
-                        collection: "new-pages"
+                        collection: "pages"
                         search_fields: ["slug"]
                         value_field: "slug"
                         display_fields: ["title"]
