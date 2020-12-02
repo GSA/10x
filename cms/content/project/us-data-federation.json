@@ -60,6 +60,14 @@
           "type": "phase"
         }
       ]
+    },
+    {
+      "modules": [
+        {
+          "type": "markdown",
+          "body": "## Next steps\n\nHere are our recommendations for ways to further the mission of the U.S. Data Federation: \n\n- Work with agencies to surface their unique data resources to extrapolate and catalogue them for reuse by as many other agencies as possible \n- Support the work of communities of practice, the Federal Data Strategy, the CDO Council, and individual managers and practitioners across the government\n- Provide the infrastructure for sharing resources across the government with clear contribution and publication guidelines and support\n"
+        }
+      ]
     }
   ],
   "card": {
