@@ -19,22 +19,26 @@
         {
           "title": "FEATURED PROJECT",
           "text": "Using machine learning to combat bias",
-          "link": "/"
+          "link": "/",
+          "body": "##### featured project\n\n[Using machine learning to combat bias](/)"
         },
         {
           "title": "MEDIA",
           "text": "Government reinvention with a venture capital mindset",
-          "link": "/"
+          "link": "/",
+          "body": "##### inside look\n\nView 10x Lightening Talks from successful idea submitters\n"
         },
         {
           "title": "INSIDE LOOK",
           "text": "View 10x Lightening Talks from successful idea submitters",
-          "link": "/"
+          "link": "/",
+          "body": "##### Media\n\nGovernment reinvention with a venture capital mindset"
         },
         {
           "title": "AWARDS",
           "text": "10x is proud to have been recognized with a 2019 Public Sector Innovation award",
-          "link": "/"
+          "link": "/",
+          "body": "##### Awards\n\n10x is proud to have been recognized with a 2019 Public Sector Innovation award"
         }
       ]
     }
