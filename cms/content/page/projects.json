@@ -1,21 +1,16 @@
 {
-  "excerpt": "10x projects start as high-impact, “what-if” ideas from federal employees. Our project teams evaluate each idea as it moves through different phases, selecting only a few to promote to the next phase where it gets closer to a launchable product. If a project graduates, it means it’s ready for prime time and can start gaining traction within government agencies. ",
-  "body": "<Grid>\n\n# Our projects\n\n> 10x projects range from complex, inter-agency initiatives to more targeted, specialty solutions — but each are innovative, aiming to improve how folks interact with the government.  \n\n<ProjectList />\n\n</Grid>\n\n",
-  "path": "/projects",
-  "toc": [
+  "title": "Our Projects",
+  "slug": "projects",
+  "sections": [
     {
-      "text": "About our projects",
-      "url": "#about-our-projects"
+      "type": "markdown",
+      "body": "# Our Projects\n\n> 10x projects range from complex, inter-agency initiatives to more targeted, specialty solutions — but each are innovative, aiming to improve how folks interact with the government."
     },
     {
-      "text": "Projects",
-      "url": "#projects"
+      "type": "projects"
     }
   ],
-  "theme": "2",
-  "name": "projects",
-  "title": "Our projects",
-  "template": "1",
-  "type": "page",
-  "hero": ""
+  "meta": {
+    "theme": "2"
+  }
 }

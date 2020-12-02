@@ -6,15 +6,14 @@ import { Helmet } from "react-helmet";
 import classnames from "classnames";
 import { getPage } from "app/ContentModule";
 import FourOhFour from "routes/FourOhFour";
-import Mdx from "features/Mdx";
 import { Col, Grid, Row } from "components/Grid";
 import Loading from "components/Loading";
 import Links from "./Links";
 import Team from "./Team";
-import Phase from "./ProjectStatus";
 import Icon from "components/Icon";
 import Break from "components/Break";
 import Card from "components/Card";
+import Layout from "features/Layout";
 
 const Project = ({ type }) => {
   const dispatch = useDispatch();
@@ -65,7 +64,7 @@ const Project = ({ type }) => {
         <Row gap="4">
           <Col size="12" desktop="8">
             <h2 className="TxProject__title">{data.title}</h2>
-            <p className="TxProject__intro">{data.intro}</p>
+            <p className="TxProject__intro">{data.body}</p>
             <Break color="accent-cool" variant="wide" />
           </Col>
           {meta.summary && (
@@ -89,11 +88,10 @@ const Project = ({ type }) => {
 
         <Row gap="4">
           <Col size="12" desktop="8" className="TxProject__content">
-            {data.content &&
-              data.content.map((item) => (
-                <Card title={item.title}>
-                  <Mdx>{item.body}</Mdx>
-                  {item.phase && <Phase data={meta.phaseData} />}
+            {data.sections &&
+              data.sections.map(({ modules: items }, i) => (
+                <Card key={`ProjectSection--${i}`}>
+                  {items && <Layout items={items} data={data} />}
                 </Card>
               ))}
           </Col>

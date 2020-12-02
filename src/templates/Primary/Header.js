@@ -31,17 +31,15 @@ const Header = ({ logo, className }) => {
   };
 
   const handleMenuClose = () => {
-    console.log("MENU CLOSE");
     handleMenuToggle(false);
     handleActiveMenuItemClick();
   };
 
   const handleNavClick = (e) => {
-    console.log("NAV CLICK");
     /* istanbul ignore next */
     const clicked = e ? e.currentTarget.value : "";
     handleMenuClose();
-    history.push(clicked);
+    history.push(`/${clicked}`);
   };
 
   useOnPathChange(() => {

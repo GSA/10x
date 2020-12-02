@@ -7,7 +7,6 @@ import image from "styles/images/portfolio-paint-stroke-1.png";
 
 const FourOhFour = ({ pathname }) => {
   const { search } = useLocation();
-  console.log();
   return (
     <Grid>
       <Helmet title="404 Error" />

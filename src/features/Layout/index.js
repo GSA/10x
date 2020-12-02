@@ -25,15 +25,15 @@ const components = {
   title: Title,
 };
 
-const Layout = ({ items }) => {
+const Layout = ({ items, data }) => {
   return items.map(({ type, fullwidth, ...props }, i) => {
     const Comp = components[type];
     return Comp ? (
       fullwidth ? (
-        <Comp key={`txLayout-${++i}`} {...props} />
+        <Comp key={`txLayout-${++i}`} {...props} data={data} />
       ) : (
         <Grid key={`layout-${++i}`}>
-          <Comp {...props} />
+          <Comp {...props} data={data} />
         </Grid>
       )
     ) : null;
@@ -42,6 +42,7 @@ const Layout = ({ items }) => {
 
 Layout.defaultProps = {
   items: [],
+  data: {},
 };
 
 Layout.propTypes = {
