@@ -15,18 +15,14 @@
       background-position-x: right;
       background-position-y: top;
       background-repeat: no-repeat;
-      .usa-card__heading {
-        @include u-font("serif", 7);
-        @include u-color("base");
-        text-transform: uppercase;
-        font-weight: 600;
-      }
 
       .usa-card__body {
-        padding-top: 0;
         @include u-font("serif", 8);
-        @include u-color("primary");
         font-weight: 500;
+
+        h5 {
+          @include u-color("base");
+        }
         .usa-button--unstyled {
           @include u-font("serif", "md");
         }

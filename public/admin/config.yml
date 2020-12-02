@@ -191,6 +191,7 @@ modules:
       - label: Items
         name: items
         widget: list
+        summary: "List Item"
         fields:
           - <<: *title
             required: false
@@ -211,10 +212,9 @@ modules:
       - label: Items
         name: items
         widget: list
+        summary: "Card"
         fields:
-          - <<: *title
-          - <<: *text
-          - <<: *link
+          - <<: *body
 
   modProjects: &modProjects
     label: Projects
@@ -454,7 +454,7 @@ collections:
         fields:
           - <<: *title
             required: false
-            hint: "Cust card Title (defaults to Project Title)"
+            hint: "Custom card Title (defaults to Project Title)"
           - <<: *headline
             required: false
             hint: "Custom card Headline (defaults to Project Headline)"

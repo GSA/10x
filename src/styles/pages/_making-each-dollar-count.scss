@@ -10,10 +10,23 @@ $theme-h6-font-size: "xs";
   p {
     width: 80%;
   }
+
+  .usa-card {
+    &__body {
+      text-align: center;
+      p {
+        width: 100%;
+      }
+    }
+  }
 }
 .TxRinger {
   .grid-row {
     position: relative;
+    @include u-margin-x(-2);
+    @include u-margin-bottom(15);
+    @include u-padding-y(10);
+    @include u-padding-x(4);
     @include u-color("white");
     background: linear-gradient(
       180deg,
@@ -21,13 +34,16 @@ $theme-h6-font-size: "xs";
       color("base-darkest") 300px
     );
 
+    @include at-media("desktop") {
+      @include u-margin-bottom(2);
+    }
+
     &:before,
     &:after {
       position: absolute;
       content: "";
       display: block;
       width: 100%;
-      height: 50px;
 
       @include at-media("desktop") {
         display: none;
@@ -46,7 +62,8 @@ $theme-h6-font-size: "xs";
     }
 
     &:after {
-      bottom: -50px;
+      height: 150px;
+      bottom: -75px;
       left: 0;
       background-image: url("~styles/images/phases-mobile-background-bottom.png");
       background-size: 100% 100%;
@@ -66,17 +83,47 @@ $theme-h6-font-size: "xs";
     }
 
     .grid-col-12 {
-      @include u-margin-right(8);
+      &:after {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 5px;
+        @include u-margin-y(6);
+        background-size: contain;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-image: url("~styles/images/ring-separater.png");
+
+        @include at-media("desktop") {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+
+      @include at-media("desktop") {
+        @include u-margin-right(8);
+      }
 
       .margin-right-2 {
         margin-right: 0;
       }
 
       p {
-        @include u-margin-y(2);
-        @include u-margin-x(1);
-        font-weight: 300;
         width: 100%;
+        @include u-margin-y(4);
+        @include u-padding-x(8);
+        @include at-media("desktop") {
+          @include u-margin-y(2);
+          @include u-margin-x(1);
+          @include u-padding-x(0);
+          font-weight: 300;
+        }
       }
 
       &:nth-child(1) {
@@ -137,37 +184,56 @@ $theme-h6-font-size: "xs";
     position: relative;
     list-style: none;
     margin: 0;
-    @include u-padding-y(6);
-    @include u-padding-x(3);
+    @include u-padding(10);
     text-align: center;
     @include u-font-family("serif");
     background-size: contain;
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
+
+    @include at-media("desktop") {
+      @include u-padding-y(6);
+      @include u-padding-x(3);
+    }
     &:after {
-      position: absolute;
-      display: inline-block;
-      content: "";
-      width: 3.5rem;
-      height: 8px;
-      right: -3.75rem;
-      top: 50%;
-      transform: translateY(-4px);
-      background-size: contain;
-      background-position-x: center;
-      background-position-y: center;
-      background-repeat: no-repeat;
-      background-image: url("~styles/images/ring-separater.png");
+      display: none;
+      @include at-media("desktop") {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 3.5rem;
+        height: 8px;
+        right: -3.75rem;
+        top: 50%;
+        transform: translateY(-4px);
+        background-size: contain;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-image: url("~styles/images/ring-separater.png");
+      }
     }
     li {
+      @include u-padding-x(4);
+      @include at-media("desktop") {
+        @include u-padding-x(0);
+      }
       &:nth-child(1) {
         text-transform: uppercase;
+        @include u-color("white");
+        @include u-font("serif", "md");
 
-        @include u-font("serif", "sm");
+        @include at-media("desktop") {
+          @include u-font("serif", "sm");
+        }
       }
       &:nth-child(2) {
         @include u-font("serif", "lg");
+        @include u-padding-x(8);
+        @include at-media("desktop") {
+          @include u-padding-x(0);
+        }
       }
       &:nth-child(3) {
         @include u-font("serif", "lg");
