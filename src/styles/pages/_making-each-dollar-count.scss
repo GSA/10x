@@ -17,8 +17,8 @@ $theme-h6-font-size: "xs";
     @include u-color("white");
     background: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0) 0px,
-      color("base-darkest") 500px
+      rgba(0, 0, 0, 0) 200px,
+      color("base-darkest") 300px
     );
 
     &:before,
