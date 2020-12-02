@@ -11,11 +11,36 @@ $theme-h6-font-size: "xs";
     width: 80%;
   }
 
-  .usa-card {
-    &__body {
-      text-align: center;
-      p {
-        width: 100%;
+  .Dollars__cards {
+    .usa-card {
+      .usa-card__container {
+        background: none;
+        box-shadow: none;
+      }
+      &:nth-child(1) {
+        .usa-card__container {
+          background-image: url("~styles/images/our-story-stat-1-background.png");
+          background-size: 100% 100%;
+          background-position-x: center;
+          background-position-y: center;
+          background-repeat: no-repeat;
+        }
+      }
+      &:nth-child(2) {
+        .usa-card__container {
+          background-image: url("~styles/images/our-story-stat-2-background.png");
+          background-size: 100% 100%;
+          background-position-x: center;
+          background-position-y: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &__body {
+        text-align: center;
+        p {
+          width: 100%;
+        }
       }
     }
   }
