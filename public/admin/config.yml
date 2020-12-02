@@ -92,6 +92,7 @@ modules:
       - <<: *fullwidth
       - <<: *title
       - <<: *level
+        required: false
       - <<: *headline
         required: false
 
@@ -122,6 +123,7 @@ modules:
       - label: Items
         name: items
         widget: list
+        summary: "Item"
         fields:
           - <<: *body
             required: false
@@ -379,6 +381,8 @@ collections:
     slug: "{{slug}}"
     preview_path: "{{slug}}"
     identifier_field: slug
+    editor:
+      preview: false
     fields:
       - <<: *title
       - <<: *slug
@@ -414,6 +418,8 @@ collections:
     slug: "{{slug}}"
     preview_path: "{{slug}}"
     identifier_field: slug
+    editor:
+      preview: false
     fields:
       - <<: *slug
       - <<: *title

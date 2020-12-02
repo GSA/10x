@@ -1,0 +1,178 @@
+/*
+$theme-h1-font-size: "2xl";
+$theme-h2-font-size: "xl";
+$theme-h3-font-size: "lg";
+$theme-h4-font-size: "md";
+$theme-h5-font-size: "sm";
+$theme-h6-font-size: "xs";
+*/
+.Tx__making-each-dollar-count {
+  p {
+    width: 80%;
+  }
+}
+.TxRinger {
+  .grid-row {
+    position: relative;
+    @include u-color("white");
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0px,
+      color("base-darkest") 500px
+    );
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 50px;
+
+      @include at-media("desktop") {
+        display: none;
+      }
+    }
+
+    &:before {
+      height: 500px;
+      top: 0;
+      left: 0;
+      background-image: url("~styles/images/phases-mobile-background-top.png");
+      background-size: contain;
+      background-position-x: center;
+      background-position-y: top;
+      background-repeat: no-repeat;
+    }
+
+    &:after {
+      bottom: -50px;
+      left: 0;
+      background-image: url("~styles/images/phases-mobile-background-bottom.png");
+      background-size: 100% 100%;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+    }
+
+    @include at-media("desktop") {
+      margin: -3rem -3rem 0;
+      padding: 7rem 6rem 3rem;
+      background-image: url("~styles/images/phases-background.png");
+      background-size: 100% 100%;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+    }
+
+    .grid-col-12 {
+      @include u-margin-right(8);
+
+      .margin-right-2 {
+        margin-right: 0;
+      }
+
+      p {
+        @include u-margin-y(2);
+        @include u-margin-x(1);
+        font-weight: 300;
+        width: 100%;
+      }
+
+      &:nth-child(1) {
+        ul {
+          background-image: url("~styles/images/sky-phase-circle.png");
+          li {
+            @include u-color("accent-cool");
+            &:nth-child(1) {
+              @include u-color("white");
+            }
+          }
+        }
+      }
+      &:nth-child(2) {
+        ul {
+          background-image: url("~styles/images/lilac-phase-circle.png");
+          li {
+            @include u-color("primary-light");
+            &:nth-child(1) {
+              @include u-color("white");
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        ul {
+          background-image: url("~styles/images/ocean-phase-circle.png");
+          li {
+            @include u-color("base-lighter");
+            &:nth-child(1) {
+              @include u-color("white");
+            }
+          }
+        }
+      }
+      &:nth-child(4) {
+        margin-right: 0;
+        ul {
+          background-image: url("~styles/images/tiger-phase-circle.png");
+          &:after {
+            display: none;
+          }
+          li {
+            @include u-color("accent-warm");
+            &:nth-child(1) {
+              @include u-color("white");
+            }
+          }
+        }
+      }
+    }
+  }
+  .TxCallout__icon {
+    display: none;
+  }
+
+  ul {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    @include u-padding-y(6);
+    @include u-padding-x(3);
+    text-align: center;
+    @include u-font-family("serif");
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    &:after {
+      position: absolute;
+      display: inline-block;
+      content: "";
+      width: 3.5rem;
+      height: 8px;
+      right: -3.75rem;
+      top: 50%;
+      transform: translateY(-4px);
+      background-size: contain;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-image: url("~styles/images/ring-separater.png");
+    }
+    li {
+      &:nth-child(1) {
+        text-transform: uppercase;
+
+        @include u-font("serif", "sm");
+      }
+      &:nth-child(2) {
+        @include u-font("serif", "lg");
+      }
+      &:nth-child(3) {
+        @include u-font("serif", "lg");
+        line-height: 1;
+      }
+    }
+  }
+}

@@ -46,19 +46,19 @@ $x-charcoal: #292a2b;
 
 // Base colors
 $theme-color-base-family: "gray-cool";
-$theme-color-base-lightest: "gray-5";
+$theme-color-base-lightest: $x-ocean-light;
 $theme-color-base-lighter: $x-ocean;
 $theme-color-base-light: $x-smoke;
 $theme-color-base: $x-lead;
 $theme-color-base-dark: $x-charcoal;
-$theme-color-base-darker: "gray-cool-70";
+$theme-color-base-darker: $x-charcoal;
 $theme-color-base-darkest: $x-charcoal;
 $theme-color-base-ink: $x-charcoal;
 
 // Primary colors
 $theme-color-primary-family: "blue";
 $theme-color-primary-lightest: "blue-5";
-$theme-color-primary-lighter: $x-lilac;
+$theme-color-primary-lighter: $x-lilac-light;
 $theme-color-primary-light: $x-lilac;
 $theme-color-primary: $x-grimace;
 $theme-color-primary-vivid: "blue-warm-60v";
