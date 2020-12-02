@@ -1,0 +1,22 @@
+{
+  "title": "Submitting a Great Idea",
+  "slug": "submitting-a-great-idea",
+  "sections": [
+    {
+      "type": "title",
+      "title": "Submitting a Great Idea",
+      "subtitle": "Lorem ipsom etc."
+    },
+    {
+      "type": "callout",
+      "items": [
+        {
+          "body": "### Test\n\nLorem **ipsom and other t**hings on a really cold sunny day."
+        },
+        {
+          "body": "### Test\n\nLorem **ipsom and other t**hings on a really cold sunny day."
+        }
+      ]
+    }
+  ]
+}
