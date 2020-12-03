@@ -14,6 +14,11 @@
           "type": "page",
           "link": "designing-success",
           "text": "Designing success"
+        },
+        {
+          "type": "page",
+          "link": "fueling-innovation",
+          "text": "Fueling innovation"
         }
       ]
     },
@@ -22,6 +27,17 @@
       "link": "projects",
       "prefix": "Our",
       "text": "PROJECTS"
+    },
+    {
+      "type": "nested",
+      "text": "Our Process",
+      "items": [
+        {
+          "type": "page",
+          "link": "submitting-a-great-idea",
+          "text": "Submitting a Great Idea"
+        }
+      ]
     }
   ],
   "key": "primary"
