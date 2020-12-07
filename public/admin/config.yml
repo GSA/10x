@@ -28,6 +28,16 @@ types:
     name: level
     widget: select
     options: ["1", "2", "3", "4", "5"]
+
+  preFooter: &preFooter
+    label: Pre-Footer
+    name: footer
+    widget: relation
+    collection: "footers"
+    search_fields: ["slug"]
+    value_field: "slug"
+    display_fields: ["slug"]
+
   headline: &headline
     label: "Headline"
     name: "subtitle"
@@ -272,6 +282,7 @@ collections:
               - name: value
                 label: Value
                 widget: string
+
   - name: menu
     extension: json
     label: Menus
@@ -289,7 +300,7 @@ collections:
       - name: items
         label: Items
         widget: list
-        summary: "{{ summary }}"
+        summary: "Primary Item"
         types:
           - label: Page Link
             name: page
@@ -337,6 +348,7 @@ collections:
               - label: Items
                 name: items
                 widget: list
+                summary: "Subitem"
                 types:
                   - label: Page Link
                     name: page
@@ -407,6 +419,7 @@ collections:
             required: false
             widget: "select"
             options: ["1", "2", "3", "4"]
+          - <<: *preFooter
 
   - name: project
     extension: json
@@ -491,6 +504,7 @@ collections:
                 value: "5"
               - label: "6"
                 value: "6"
+          - <<: *preFooter
           - label: "Phase"
             name: "phaseData"
             widget: "object"
@@ -546,3 +560,20 @@ collections:
             fields:
               - <<: *text
               - <<: *link
+
+  - name: footers
+    extension: json
+    label: Footer
+    label_singular: Footer
+    folder: cms/content/footer
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    preview_path: "{{slug}}"
+    identifier_field: slug
+    editor:
+      preview: false
+    fields:
+      - <<: *slug
+      - <<: *text
+      - <<: *button
