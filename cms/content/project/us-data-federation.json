@@ -37,7 +37,8 @@
       {
         "text": "Data providers are less likely to contribute to systems that are difficult and time consuming to use"
       }
-    ]
+    ],
+    "footer": "every-solution-starts-as-an-idea"
   },
   "slug": "us-data-federation",
   "intro": "Data informs all kinds of decision making in the federal government, but the wide array of sources and structures and units make sharing data — an activity that could result in better, more complete analysis — come down somewhere between horribly difficult and impossible. By creating tools and processes to make it easier, the Team was able to help make decision-making founded on data better. And they did this through extensive research with users and stakeholders to define what was needed and how it needs to be available. ",
@@ -76,7 +77,7 @@
     "excerpt": "Most government agencies rely on data from other agencies, state and local governments, and other data providers to make informed decisions on policy, operations, and budgets, but it’s currently very time consuming and complex to aggregate this data in a meaningful way. The team developed best practices and repeatable processes and tools that make it easier to collect, combine, standardize, govern, maintain, and exchange data across federal agencies.",
     "projectLink": "/projects/u-s-data-federation"
   },
-  "subtitle": "What if we could create an easy federated data aggregation for better analysis & insights?",
+  "subtitle": "What if you could help the government harness data by making it easier to exchange and aggregate?",
   "title": "U.S. Data Federation",
   "content": [
     {
