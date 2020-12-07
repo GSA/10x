@@ -1,0 +1,8 @@
+{
+  "slug": "test",
+  "text": "This is some test footer stuffs.",
+  "button": {
+    "text": "Click Me",
+    "link": "/"
+  }
+}
