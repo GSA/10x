@@ -1,0 +1,78 @@
+{
+  "title": "Our process",
+  "slug": "process",
+  "sections": [
+    {
+      "type": "title",
+      "title": "Our process",
+      "subtitle": "It all starts with an idea  —  learn how we can transform a “what if…” question into a government-wide solution. "
+    },
+    {
+      "type": "markdown",
+      "body": "We believe that federal civil servants — with their front row view to the inner workings of our government — are uniquely positioned to identify the key problems that hold our government back. Feds submit their ideas through a simple form, and we evaluate them using a formal process twice a year (generally in February and August). But only a handful of the most promising ideas submitted are selected for Phase 1 funding. \n\nAs we explore ideas, we whittle down projects to move on to the next phase, where we continue to research and iterate on the idea. Rinse and repeat, until an idea fails to move on to the next phase or graduates from the process, which can happen anywhere along the journey that we feel the solution is ready for go-time. \n\n## It’s a funnel, not a tunnel\n\nWe purposefully decide to continue funding and developing an idea at each stage in the process, which means that deciding what not to advance to the next phase is as important as choosing what will. By applying lean development principles and targeting the most impactful ideas, we can focus time and resources on the things that have the best chance of success. \n\nIn August 2020 we:"
+    },
+    {
+      "type": "list",
+      "text": "If an idea doesn’t make the cut to Phase 1, it doesn’t mean it’s a bad or unworkable idea — it just may not fit the criteria for 10x. Each idea is evaluated on three things: ",
+      "items": [
+        {
+          "text": "- Does it make the case that there’s a compelling problem?",
+          "title": "Clarity"
+        },
+        {
+          "title": "Alignment",
+          "text": "- Does it help develop innovative technology that aligns with 10x’s strategy?"
+        },
+        {
+          "title": "Impact",
+          "text": "- Will solving the problem make a big difference in how the government serves the public?"
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "body": "## The method to the madness\n\nProjects move through four phases after submission, though not all make it past Phase 1."
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "Identify the problem and initial solution",
+          "text": "We carefully review all submitted ideas and select the most promising ones based on our evaluation criteria. We limit the submission to only a few sentences (less than 1,000 characters, to be exact), really challenging you to simplify complex problems down into concrete, understandable pieces. If your idea is selected, we’ll give you a heads up as it moves into Phase 1. \n\nLearn more about pitching a successful idea."
+        },
+        {
+          "title": "Uncover barriers",
+          "text": "During Phase 1, we hire a project team — consisting of experts in user research, engineering, and design —  who asks and answers key questions about the idea and the problem space. Is this a bad idea? Are there any red flags? Would buying a solution be better than building one? What are the barriers and risks? The team consults subject matter experts, customers, and others to reach a “hard no” (there’s something blocking this from being successful), or a “soft yes” (continue exploring this idea based on what we know thus far).\n\nEvery new project starts at Phase 1 —  there’s no jumping the line, no matter how much research has already been done. Part of the rigor of our process, and how we ensure unbiased, data-based decision-making, is that the team asks key questions at each phase before deciding how to move forward."
+        },
+        {
+          "title": "Imagine a solution",
+          "text": "During Phase 2, the 10x team does a deeper dive, assessing specific questions about how this project could unfold. What might a solution look like? What’s the market for a potential solution? Are there existing products, services, or in-the-works projects that already solve the problem? How does the regulatory environment affect things?\n\nThe projects that measure up in Phase 2 and move on to Phase 3 have been well-researched, and the problem space and potential solution are well understood.\n"
+        },
+        {
+          "title": "Build an MVP",
+          "text": "In Phase 3, the team dedicates even more resources to the project. They may build an MVP (minimum viable product) or a prototype to test how the solution could play out. They outline the roadmap for development, estimate the cost and effort required to sustain the project, and determine which agency or organization will be the steward of the product in the long term.  \n\n10x projects are not owned by 10x or TTS. As part of the process we look for a “home” for each effort  —  somewhere the project will be nurtured and have the best chance of continued success."
+        },
+        {
+          "title": "Evangelize and spread",
+          "text": "In Phase 4, we try to scale what we’re building for as many other use cases and agencies as possible. We want to have the biggest impact possible for as many people as possible, and broadening the project’s reach helps us do just that. "
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Dive deeper",
+      "text": "Need an even deeper dive?",
+      "items": [
+        {
+          "body": "### Recent orientation video\n\nGet behind the scenes on what happens after an idea is submitted and accepted into Phase 1."
+        },
+        {
+          "body": "[Our story](https://10x.gsa.gov/story)\n\nGet schooled on how our unique investment strategy fuels our success."
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "footer": "test"
+  }
+}
