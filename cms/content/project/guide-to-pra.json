@@ -13,7 +13,13 @@
       "members": "Qituwra Anderson, Elizabeth Ayer, Christine Bath, Anna Heller-Sebok Brian Hurst, and Cordelia Yu"
     },
     "projectType": "Innovation",
-    "template": "3"
+    "template": "3",
+    "links": [
+      {
+        "text": "pra.digital.gov",
+        "link": "https://pra.digital.gov/"
+      }
+    ]
   },
   "phaseData": {
     "status": "3",
@@ -24,16 +30,9 @@
     {
       "modules": [
         {
-          "type": "markdown",
-          "body": "## Why this matters\n\nThe PRA has been a source of frustration for many government employees for years. It was passed during a time before the internet existed and was not designed to govern interactions between the government and the public during the digital age. Because the law restricts the amount and types of information that the government is allowed to request from the public, some federal employees shy away from conducting user research with the public at all because they are afraid of running afoul of the law or are intimidated by the process it takes to receive PRA clearance. Because of this project, government researchers can more confidently navigate the PRA process and are more empowered to interact with the public in critical ways—like for user research for improved web content—and the initial intent of the law is clear and easy to understand."
-        },
-        {
-          "type": "markdown",
-          "body": "## What we did\n\nWe built a website that serves as the go-to place for the thousands of federal employees seeking PRA clearance to learn about the PRA, how it may or may not affect their work, and how to successfully navigate the process of getting clearance to interact with the public.\n\n### How we did it\n\nWe interviewed dozens of PRA officers and staffers from OMB who interpret the PRA to learn about common misperceptions of the law and we spoke with federal employees who have navigated the compliance process. We focused on a key audience with specific needs  —  smaller agencies without dedicated internal PRA support—and conducted research with them to understand their needs. Then, we partnered with legal experts who have deep knowledge of the law to interpret the necessary components and guidance into user-friendly digital content, Finally,  we built a website to host this guidance."
-        },
-        {
-          "type": "markdown",
-          "body": "### Where we are today\n\n[PRA.digital.gov](https://pra.digital.gov/) lives as a partnership between GSA and OMB. GSA maintains the digital infrastructure; OMB maintains and updates the content."
+          "type": "cards",
+          "text": "We built a website that serves as the go-to place for the thousands of federal employees seeking PRA clearance to learn about the PRA, how it may or may not affect their work, and how to successfully navigate the process of getting clearance to interact with the public.\n\nHow we did it\n\nWe interviewed dozens of PRA officers and staffers from OMB who interpret the PRA to learn about common misperceptions of the law and we spoke with federal employees who have navigated the compliance process. We focused on a key audience with specific needs  —  smaller agencies without dedicated internal PRA support—and conducted research with them to understand their needs. Then, we partnered with legal experts who have deep knowledge of the law to interpret the necessary components and guidance into user-friendly digital content, Finally,  we built a website to host this guidance.\n\nWhere we are today\n\nPRA.digital.gov lives as a partnership between GSA and OMB. GSA maintains the digital infrastructure; OMB maintains and updates the content. ",
+          "title": "What we did"
         }
       ]
     },
