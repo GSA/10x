@@ -11,6 +11,7 @@
     }
   ],
   "meta": {
-    "theme": "2"
+    "theme": "2",
+    "footer": "10x-in-the-wild"
   }
 }
