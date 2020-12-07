@@ -130,5 +130,8 @@
     {
       "type": "break"
     }
-  ]
+  ],
+  "meta": {
+    "footer": "10x-in-the-wild"
+  }
 }
