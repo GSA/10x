@@ -7,6 +7,11 @@
       "items": [
         {
           "type": "page",
+          "link": "fueling-innovation",
+          "text": "Fueling innovation"
+        },
+        {
+          "type": "page",
           "link": "making-each-dollar-count",
           "text": "Making each dollar count"
         },
@@ -14,13 +19,14 @@
           "type": "page",
           "link": "designing-success",
           "text": "Designing success"
-        },
-        {
-          "type": "page",
-          "link": "fueling-innovation",
-          "text": "Fueling innovation"
         }
       ]
+    },
+    {
+      "type": "page",
+      "text": "PROCESS",
+      "link": "process",
+      "prefix": "Our"
     },
     {
       "type": "page",
@@ -30,12 +36,13 @@
     },
     {
       "type": "nested",
-      "text": "Our Process",
+      "prefix": "Our",
+      "text": "CHALLENGE TO YOU",
       "items": [
         {
           "type": "page",
-          "link": "submitting-a-great-idea",
-          "text": "Submitting a Great Idea"
+          "text": "Submitting a great idea",
+          "link": "submitting-a-great-idea"
         }
       ]
     }
