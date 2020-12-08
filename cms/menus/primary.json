@@ -35,16 +35,10 @@
       "text": "PROJECTS"
     },
     {
-      "type": "nested",
+      "type": "page",
       "prefix": "Our",
       "text": "CHALLENGE TO YOU",
-      "items": [
-        {
-          "type": "page",
-          "text": "Submitting a great idea",
-          "link": "submitting-a-great-idea"
-        }
-      ]
+      "link": "submitting-a-great-idea"
     }
   ],
   "key": "primary"
