@@ -59,7 +59,7 @@
         },
         {
           "text": "USA.gov can better respond to the public’s needs for information",
-          "link": "/"
+          "link": "https://github.com/18F/10x-MeL"
         },
         {
           "text": "The government has the clearest-ever picture of the federal web experience",
@@ -71,15 +71,15 @@
         },
         {
           "text": "Data practitioners can make smarter use of data in government",
-          "link": "/"
+          "link": "https://18f.gsa.gov/2019/03/05/the-us-data-federation/"
         },
         {
           "text": "Government can more effectively plan and oversee custom technology projects",
-          "link": "/"
+          "link": "https://derisking-guide.18f.gov/"
         },
         {
           "text": "Users have a more consistent experience with forms on government web pages",
-          "link": "/"
+          "link": "https://designsystem.digital.gov/components/form-controls/"
         },
         {
           "text": "AI practitioners can ensure more equitable application of AI tools",
