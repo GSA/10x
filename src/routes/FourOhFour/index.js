@@ -43,7 +43,7 @@ const FourOhFour = ({ search }) => {
     <div className={`TxContent Tx__FourOhFour`}>
       <Head title={"404"} />
       <div className={`Tx__FourOhFour-content`}>
-        <Layout items={data.sections} />
+        <Layout items={data} />
       </div>
     </div>
   );

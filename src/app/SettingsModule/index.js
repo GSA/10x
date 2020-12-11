@@ -5,9 +5,7 @@ export const initialState = {
   pending: false,
   error: null,
   data: [],
-  404: {
-    sections: [],
-  },
+  404: [],
   footers: [],
 };
 
