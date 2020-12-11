@@ -290,11 +290,10 @@ collections:
           - label: Site Description
             name: description
             widget: string
-          - label: "404 Content"
+          - <<: *modSections
+            label: "404 Content"
             name: "404"
             widget: object
-            fields:
-              - <<: *modSections
           - name: customFields
             label: Custom Fields
             widget: list

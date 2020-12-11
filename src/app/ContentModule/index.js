@@ -35,7 +35,6 @@ const fulfilled = (key, state, action) => {
   };
 };
 const rejected = (key, state, action) => {
-  console.log("Runs rejected because server returned error");
   return {
     ...state,
     [key]: { ...initialState[key], error: action.error },

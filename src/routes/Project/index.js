@@ -40,7 +40,6 @@ const Project = ({ type }) => {
     );
   }
   if (error) {
-    console.log("Loads error because store returned error");
     return <FourOhFour pathname={name} />;
   }
 

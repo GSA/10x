@@ -5,6 +5,9 @@ export const initialState = {
   pending: false,
   error: null,
   data: [],
+  404: {
+    sections: [],
+  },
   footers: [],
 };
 

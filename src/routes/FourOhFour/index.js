@@ -1,20 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Grid, Row, Col } from "components/Grid";
 import { Helmet } from "react-helmet";
 import Card from "components/Card";
 import image from "styles/images/portfolio-paint-stroke-1.png";
-import { useDispatch, useSelector } from "react-redux";
-import { getPage } from "app/ContentModule";
+import { useSelector } from "react-redux";
 import Head from "routes/Head";
 import Layout from "features/Layout";
 
 const FourOhFour = ({ search }) => {
-  const dispatch = useDispatch();
-  const page = useSelector((state) => state.content.page);
-  useEffect(() => {
-    dispatch(getPage({ name: "404" }));
-  }, [dispatch]);
-  const { data } = page;
+  const data = useSelector((state) => state.settings["404"]);
 
   if (search) {
     return (
@@ -47,8 +41,8 @@ const FourOhFour = ({ search }) => {
 
   return (
     <div className={`TxContent Tx__FourOhFour`}>
-      <Head title={data.title} />
-      <div className={`Tx__${data.name}-content`}>
+      <Head title={"404"} />
+      <div className={`Tx__FourOhFour-content`}>
         <Layout items={data.sections} />
       </div>
     </div>

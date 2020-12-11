@@ -28,8 +28,6 @@ describe("Project", () => {
         </TestProvider>
       );
       await runAsyncRender(wrapper);
-      const state = store.getState();
-      console.log(state.content.page.data);
       expect(wrapper.find(".Tx__FourOhFour").length).toBe(1);
     });
   });

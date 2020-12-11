@@ -32,7 +32,6 @@ const Page = ({ name }) => {
     );
   }
   if (error) {
-    console.log("ERROR");
     return <FourOhFour pathname={pageName} />;
   }
   return (
