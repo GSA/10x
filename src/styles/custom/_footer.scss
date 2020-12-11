@@ -55,4 +55,10 @@ $bgImgDir: "~styles/images";
       }
     }
   }
+
+  &__bottom-link {
+    @include at-media("desktop") {
+      transform: translateY(-2rem);
+    }
+  }
 }

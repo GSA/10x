@@ -8,11 +8,12 @@ import useOnPathChange from "utils/useOnPathChange";
 import registerAnalytics from "utils/registerAnalytics";
 import { useLocation } from "react-router-dom";
 import { getMenuList } from "app/MenuModule";
-import { getFooterList } from "app/SettingsModule";
+import { getFooterList, getSettings } from "app/SettingsModule";
 
 const Primary = ({ children }) => {
   const dispatch = useDispatch();
   useEffect(() => {
+    dispatch(getSettings());
     dispatch(getMenuList({}));
     dispatch(getFooterList({}));
   }, [dispatch]);

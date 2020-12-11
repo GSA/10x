@@ -19,7 +19,7 @@ const Footer = () => {
     })
   );
 
-  const data = footers.find(({ slug = "default" }) => slug === meta.footer);
+  const data = footers.find(({ slug }) => slug === meta.footer || "default");
 
   return (
     <footer className="usa-footer">
@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
       <div className="usa-footer__primary">
         <Grid className="usa-footer__primary-content">
-          <Row className="padding-y-8">
+          <Row className="padding-top-8 padding-bottom-3 tablet:padding-y-8">
             <Col>
               <GSAFooter />
             </Col>
@@ -71,7 +71,7 @@ const Footer = () => {
             <Col size="12" tablet="3">
               <Button
                 variant="link"
-                className="display-block u-margin-bottom-1"
+                className="display-block"
                 external
                 url="https://10x.gsa.gov"
               >
@@ -79,7 +79,7 @@ const Footer = () => {
               </Button>
               <Button
                 variant="link"
-                className="display-block u-margin-bottom-1"
+                className="display-block "
                 external
                 url="https://10x.gsa.gov"
               >
@@ -87,24 +87,14 @@ const Footer = () => {
               </Button>
               <Button
                 variant="link"
-                className="display-block u-margin-bottom-1"
+                className="display-block"
                 url="/privacy-policy"
               >
                 {"Privacy Policy"}
               </Button>
-            </Col>
-            <Col size="12" desktop="9">
-              <div className="display-inline-block u-margin-left-1">
-                {"Looking for U.S. government information and services?  "}
-              </div>
-              <Button variant="link" url="https://usa.gov">
-                Visit USA.gov
-              </Button>
-            </Col>
-            <Col size="12" desktop="3">
               <Button
                 variant="link"
-                className="display-block u-margin-bottom-1"
+                className="display-block"
                 external
                 url="mailto:10x@gsa.gov"
               >
@@ -112,6 +102,14 @@ const Footer = () => {
                 {"Email Us"}
               </Button>
             </Col>
+            <div className="usa-footer__bottom-link">
+              <div className="display-inline-block margin-right-1">
+                {"Looking for U.S. government information and services?  "}
+              </div>
+              <Button variant="link" url="https://usa.gov">
+                Visit USA.gov
+              </Button>
+            </div>
           </Row>
         </Grid>
       </div>
