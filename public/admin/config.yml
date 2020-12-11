@@ -293,7 +293,6 @@ collections:
           - <<: *modSections
             label: "404 Content"
             name: "404"
-            widget: object
           - name: customFields
             label: Custom Fields
             widget: list
