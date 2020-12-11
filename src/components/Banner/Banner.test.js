@@ -24,7 +24,7 @@ describe("<Banner />", () => {
       const button = wrapper.find("button");
       button.simulate("click");
       wrapper.update();
-      expect(wrapper.find("#gov-banner").hasClass("is-visible")).toBeTruthy();
+      expect(wrapper.find(".usa-banner__content").hostNodes().length).toBe(1);
     });
   });
 });

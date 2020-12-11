@@ -1,0 +1,45 @@
+.usa-nav {
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  float: none;
+  text-align: left;
+  @include u-padding-left(6);
+
+  &.is-visible {
+    display: flex;
+  }
+
+  @include at-media("desktop") {
+    display: flex;
+  }
+  .usa-nav__primary {
+    button {
+      &:hover {
+        cursor: pointer;
+        background: transparent;
+        @include u-color("accent-cool-dark");
+      }
+    }
+  }
+}
+
+.usa-nav__footer {
+  margin: 0;
+  text-align: right;
+}
+
+.usa-nav-open {
+  width: auto;
+  @include at-media("desktop") {
+    display: none;
+  }
+}
+
+.usa-nav-close {
+  float: right;
+  @include at-media("desktop") {
+    display: none;
+  }
+}

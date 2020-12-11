@@ -1,0 +1,21 @@
+.usa-button {
+  border-radius: 100px;
+  @include u-font-family("serif");
+
+  &--primary-lighter {
+    @include buttonCustom(
+      "primary-lighter",
+      "primary-lightest",
+      "primary-light"
+    );
+    @include u-color("base-dark");
+    font-weight: 500;
+    &:visited {
+      @include u-color("base-dark");
+    }
+  }
+
+  &--unstyled {
+    @include u-font-family("sans");
+  }
+}

@@ -1,0 +1,32 @@
+.TxContent__cards {
+  .grid-row {
+    @include u-margin-x(-2);
+  }
+  .usa-card {
+    height: 100%;
+    @include u-padding-bottom(4);
+    .usa-card__container {
+      height: 100%;
+      @include u-margin-x(2);
+      border: none;
+      box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
+
+      background-size: contain;
+      background-position-x: right;
+      background-position-y: top;
+      background-repeat: no-repeat;
+
+      .usa-card__body {
+        @include u-font("serif", 8);
+        font-weight: 500;
+
+        h5 {
+          @include u-color("base");
+        }
+        .usa-button--unstyled {
+          @include u-font("serif", "md");
+        }
+      }
+    }
+  }
+}

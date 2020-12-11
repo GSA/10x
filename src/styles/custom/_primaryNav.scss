@@ -1,0 +1,194 @@
+.usa-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: unset;
+  width: 100%;
+  @include u-bg("base-darkest");
+  @include u-padding(4);
+  &.is-visible {
+    animation: unset;
+  }
+  button {
+    padding: 0;
+    @include u-font-family("serif");
+    @include u-color("white");
+    .usa-nav__url-prefix {
+      @include u-margin-right(1);
+    }
+  }
+
+  .usa-nav__inner {
+    width: 100%;
+    @include at-media("desktop") {
+      width: auto;
+    }
+  }
+  .usa-nav__url {
+    @include u-margin-bottom(2);
+    &.usa-accordion__button {
+      @include u-margin-bottom(1);
+    }
+  }
+  .usa-nav__primary {
+    text-align: left;
+  }
+
+  .usa-nav__submenu,
+  .usa-nav__primary .usa-accordion__button {
+    background: none;
+    @include u-color("white");
+  }
+  .usa-nav__submenu {
+    @include u-padding-left(2);
+    @include u-margin-bottom(2);
+
+    &[hidden] {
+      display: inline-block;
+    }
+    button {
+      @include u-font-family("sans");
+      @include u-margin-bottom(1);
+    }
+  }
+  ul,
+  li {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .usa-nav__footer {
+    @include u-margin-top(2);
+    @include u-margin-bottom(4);
+    text-align: left;
+    width: 100%;
+
+    .usa-button {
+      width: 100%;
+    }
+  }
+}
+
+@include at-media("desktop") {
+  .usa-nav {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    float: none;
+    text-align: left;
+    padding: 0;
+    @include u-padding-left(6);
+    button {
+      @include u-color("white");
+      &:hover {
+        @include u-color("white");
+        cursor: pointer;
+      }
+    }
+
+    .usa-nav__footer {
+      width: auto;
+      margin: 0;
+      text-align: right;
+    }
+    .usa-nav__primary {
+      .usa-nav__url {
+        position: relative;
+        margin: 0;
+        @include u-padding(4);
+        @include u-color("white");
+        @include u-font("serif", "2xs");
+        height: 100%;
+        &.usa-accordion__button {
+          background: none;
+          margin: 0;
+          &[aria-expanded="true"] {
+            background: none;
+            @include u-bg("base");
+            &:before {
+              display: inline-block;
+              position: absolute;
+              content: "";
+              left: 2rem;
+              bottom: 0;
+              width: 100%;
+              height: 20px;
+              background-repeat: no-repeat;
+              background-position-x: left;
+              background-position-y: center;
+              background-size: 30%;
+              background-image: url("~styles/images/short-ocean-brush-stroke.png");
+            }
+            .usa-nav__url-text {
+              &:after {
+                content: "\f106";
+              }
+            }
+          }
+          .usa-nav__url-text {
+            display: block;
+            padding-right: 0 !important;
+            &:after {
+              display: inline-block;
+              @include u-margin-left(2);
+              background: transparent;
+              content: "\f107";
+              font-family: "Font Awesome 5 Free Solid";
+            }
+          }
+        }
+      }
+      .usa-nav__submenu {
+        display: block;
+        @include u-padding-y(3);
+        @include u-padding-x(4);
+        @include u-bg("base");
+        font-weight: 400;
+        &[hidden] {
+          display: none;
+        }
+        button {
+          font-weight: 400;
+        }
+      }
+    }
+    .usa-nav__url-prefix {
+      display: block;
+      @include u-color("secondary");
+      margin-right: 0 !important;
+      padding-right: 0 !important;
+      @include u-margin-bottom(1);
+    }
+  }
+}
+
+.usa-nav-open,
+.usa-nav-close {
+  display: inline-block;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  width: 40px;
+  height: 40px;
+  background: none;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  background-size: contain;
+  @include at-media("desktop") {
+    display: none;
+  }
+  &:hover {
+    background-color: transparent;
+    opacity: 0.8;
+  }
+}
+
+.usa-nav-open {
+  background-image: url("~styles/images/menu-open.png");
+}
+.usa-nav-close {
+  background-image: url("~styles/images/menu-close.png");
+}

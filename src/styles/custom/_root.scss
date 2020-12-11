@@ -1,0 +1,136 @@
+html {
+  font-size: 12px;
+
+  @include at-media("tablet") {
+    font-size: 14px;
+  }
+  @include at-media("desktop") {
+    font-size: 16px;
+  }
+}
+
+blockquote {
+  @include u-font("serif", 10);
+  padding: 0;
+  margin: 0;
+  @include u-margin-bottom(5);
+  line-height: 150%;
+
+  p {
+    margin: 0;
+  }
+}
+
+p {
+  @include u-margin-bottom(2);
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  line-height: 130%;
+}
+
+h1,
+h2 {
+  @include u-text("normal");
+}
+h3,
+h4 {
+  @include u-text("medium");
+}
+
+h1 {
+  @include u-margin-bottom(4);
+}
+h2 {
+  @include u-margin-bottom(3);
+}
+h3 {
+  @include u-margin-bottom(2.5);
+}
+h4,
+h5 {
+  @include u-margin-bottom(2);
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+.usa-app {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: rgb(69, 217, 217);
+
+  &__theme-1 {
+    background: linear-gradient(
+      180deg,
+      rgba(194, 194, 245, 0.5) 400px,
+      rgba(255, 107, 82, 0.5) 1000px,
+      rgba(120, 227, 251, 0.44) 1800px
+    );
+  }
+
+  &__theme-2 {
+    background: linear-gradient(
+      180deg,
+      #{$x-charcoal} 2px,
+      #{$x-lead} 1400px,
+      #{$x-smoke} 2800px
+    );
+
+    .usa-app__bg {
+      background-image: url("~styles/images/portfolio-background-Xs.png");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: 120px;
+      background-size: 1400px;
+    }
+  }
+
+  &__theme-3 {
+    background: linear-gradient(
+      180deg,
+      #d8d8d8 8.7%,
+      rgba(208, 226, 231, 0.672254) 35.58%,
+      rgba(120, 227, 251, 0.05) 87.96%
+    );
+  }
+
+  &__theme-4 {
+    background: linear-gradient(
+      180deg,
+      #d8d8d8 8.7%,
+      rgba(208, 226, 231, 0.672254) 35.58%,
+      rgba(120, 227, 251, 0.05) 87.96%
+    );
+  }
+  &__theme-5 {
+    background: linear-gradient(
+      180deg,
+      #d8d8d8 8.7%,
+      rgba(194, 194, 245, 0.6) 35.58%,
+      rgba(194, 194, 245, 0.15) 87.96%
+    );
+  }
+}
+
+.grid-container {
+  @include u-padding-x(2);
+}
+
+#main-content {
+  min-height: 75vh;
+  z-index: 1;
+}
+
+.TxContent {
+  @include u-padding-top(8);
+}

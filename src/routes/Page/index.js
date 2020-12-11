@@ -7,6 +7,7 @@ import Loading from "components/Loading";
 import Mdx from "features/Mdx";
 import FourOhFour from "routes/FourOhFour";
 import Head from "routes/Head";
+import Layout from "features/Layout";
 
 const Page = ({ name }) => {
   const dispatch = useDispatch();
@@ -36,7 +37,15 @@ const Page = ({ name }) => {
   return (
     <div className={`TxContent Tx__${pageName}`}>
       <Head title={data.title} />
-      <Mdx>{data.body}</Mdx>
+
+      {data.hero && (
+        <div className={`Tx__${data.name}-hero`}>
+          <Mdx>{data.hero}</Mdx>
+        </div>
+      )}
+      <div className={`Tx__${data.name}-content`}>
+        <Layout items={data.sections} />
+      </div>
     </div>
   );
 };

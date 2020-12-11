@@ -1,0 +1,140 @@
+$bgImgDir: "~styles/images";
+.Tx__homepage {
+  padding-top: 0;
+
+  &-content {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .Home {
+    &__hero {
+      position: relative;
+      @include u-margin-bottom(10);
+      background-color: #ddf1f5;
+
+      .grid-container {
+        position: relative;
+        @include u-padding-y(10);
+
+        h1 {
+          position: relative;
+          display: inline;
+          line-height: 125%;
+          @include u-bg("white");
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+          z-index: 2;
+        }
+        &:before {
+          display: inline-block;
+          position: absolute;
+          content: "";
+          top: 100%;
+          bottom: -32px;
+          left: 0;
+          right: 0;
+          z-index: 0;
+          background-size: cover;
+          background-position-x: center;
+          background-position-y: bottom;
+          background-image: url($bgImgDir + "/home-hero-bg-stroke.png");
+          background-repeat: no-repeat;
+
+          @include at-media("tablet") {
+            bottom: -50px;
+          }
+          @include at-media("desktop") {
+            bottom: -36px;
+          }
+
+          @include at-media("desktop") {
+          }
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          display: inline-block;
+          top: 10px;
+          right: -100px;
+          width: 400px;
+          height: 400px;
+          background-image: url($bgImgDir + "/home-x.png");
+          background-size: cover;
+          background-position-x: center;
+          background-position-y: center;
+          background-repeat: no-repeat;
+          z-index: 1;
+          @include at-media("desktop") {
+            top: -50px;
+            right: -250px;
+            width: 700px;
+            height: 700px;
+          }
+        }
+      }
+    }
+    &__callout {
+      &.usa-card {
+        @include at-media("desktop") {
+          margin-bottom: 0 !important;
+        }
+      }
+      .usa-card__container {
+        @include u-padding-top(6);
+        @include u-padding-bottom(2);
+        border: none;
+        background-size: 100% 100%;
+        background-color: transparent;
+        background-position-x: center;
+        background-position-y: center;
+        background-image: url($bgImgDir + "/home-callout-bg.png");
+        background-repeat: no-repeat;
+        @include at-media("desktop") {
+          margin-top: 150px;
+        }
+        .usa-card__body {
+          @include u-padding-top(10);
+          @include u-padding-right(10);
+          @include u-margin-right(10);
+
+          @include at-media("desktop") {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &__cards {
+      @include u-padding-bottom(8);
+      .usa-card {
+        height: 100%;
+        @include u-padding-bottom(4);
+        .usa-card__container {
+          @include u-padding-y(4);
+        }
+      }
+      > .grid-row > div {
+        &:nth-child(1) {
+          .usa-card__container {
+            background-image: url($bgImgDir + "/home-featured-brush-stroke-1.png");
+          }
+        }
+        &:nth-child(2) {
+          .usa-card__container {
+            background-image: url($bgImgDir + "/home-featured-brush-stroke-2.png");
+          }
+        }
+        &:nth-child(3) {
+          .usa-card__container {
+            background-image: url($bgImgDir + "/home-featured-brush-stroke-3.png");
+          }
+        }
+        &:nth-child(4) {
+          .usa-card__container {
+            background-image: url($bgImgDir + "/home-featured-brush-stroke-4.png");
+          }
+        }
+      }
+    }
+  }
+}

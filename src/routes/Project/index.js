@@ -3,24 +3,30 @@ import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import classnames from "classnames";
 import { getPage } from "app/ContentModule";
 import FourOhFour from "routes/FourOhFour";
-import Mdx from "features/Mdx";
-import { Grid } from "components/Grid";
+import { Col, Grid, Row } from "components/Grid";
 import Loading from "components/Loading";
+import Links from "./Links";
+import Team from "./Team";
 import Icon from "components/Icon";
-import Button from "components/Button";
+import Break from "components/Break";
+import Card from "components/Card";
+import Layout from "features/Layout";
 
 const Project = ({ type }) => {
   const dispatch = useDispatch();
   const { name } = useParams();
-  const page = useSelector((state) => state.content.page);
   useEffect(() => {
     dispatch(getPage({ type, name }));
   }, [dispatch, name, type]);
+
+  const page = useSelector((state) => state.content.page);
   const { pending, data, error } = page;
 
-  const team = data.team || {};
+  const { meta = {} } = data;
+
   if (pending) {
     return (
       <Grid>
@@ -40,61 +46,69 @@ const Project = ({ type }) => {
   return (
     <div className={`TxContent `}>
       <Helmet title={data.title} />
-      <Grid className={`TxProject TxProject--${name}`}>
-        <div className="TxProject__link">
+      <Grid
+        className={classnames({
+          TxProject: true,
+          [`TxProject--${name}`]: true,
+          [`TxProject--template-${meta.template}`]: Boolean(meta.template),
+        })}
+      >
+        <div className="TxProject__nav-link">
           <Link to="/projects">
             <Icon icon="arrow-left" />
             Return to our projects
           </Link>
         </div>
-        <h1 className="TxProject__title">{data.title}</h1>
-        <div className="TxProject__subtitle">{data.subtitle}</div>
-        <div className="TxProject__meta">Type: {data.projectType}</div>
-        <Mdx>{data.body}</Mdx>
-        {(team.submitter || team.members) && (
-          <div className="TxProject__team">
-            <h3>Team</h3>
-            <ul>
-              <li>
-                <div className="TxProject__team-icon">
-                  <Icon icon="user" className="margin-right-1" />
-                </div>
-                <span>
-                  <strong>Idea Submitter: </strong> {team.submitter}
-                </span>
-              </li>
-              <li>
-                <div className="TxProject__team-icon">
-                  <Icon icon="users" className="margin-right-1" />
-                </div>
-                <span>
-                  <strong>Team: </strong> {team.members}
-                </span>
-              </li>
-            </ul>
-          </div>
-        )}
 
-        {Array.isArray(data.links) && data.links.length && (
-          <div className="TxProject__links">
-            <h3>Learn More</h3>
-            <ol>
-              {data.links.map((item) => {
-                return (
-                  <li className="TxProject__link">
-                    <Button variant="link" url={item.link}>
-                      {item.text}{" "}
+        <h1 className="TxProject__subtitle">{data.subtitle}</h1>
+
+        <Row gap="4">
+          <Col size="12" desktop="8">
+            <h2 className="TxProject__title">{data.title}</h2>
+            <p className="TxProject__intro">{data.body}</p>
+            <Break color="accent-cool" variant="wide" />
+          </Col>
+          {meta.summary && (
+            <Col size="12" desktop="4">
+              <Card className="TxProject__summary" title="In a nutshell">
+                <ul>
+                  {meta.summary.map((item) => (
+                    <li>
                       <Icon
-                        className="margin-left-1"
-                        icon="external-link-alt"
+                        icon="check-circle"
+                        className="text-accent-cool margin-right-1"
                       />
-                    </Button>
-                  </li>
-                );
-              })}
-            </ol>
-          </div>
-        )}
+                      <span>{item.text}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            </Col>
+          )}
+        </Row>
+
+        <Row gap="4">
+          <Col size="12" desktop="8" className="TxProject__content">
+            {data.sections &&
+              data.sections.map(({ modules: items }, i) => (
+                <Card key={`ProjectSection--${i}`}>
+                  {items && <Layout items={items} data={data} />}
+                </Card>
+              ))}
+          </Col>
+
+          <Col size="12" desktop="4">
+            <div className="TxProject__details">
+              <Card>
+                <Team data={meta.team} />
+              </Card>
+              <Break color="base-lighter" variant="wide" />
+              <Card>
+                <Links data={meta.links} />
+              </Card>
+            </div>
+          </Col>
+        </Row>
       </Grid>
     </div>
   );

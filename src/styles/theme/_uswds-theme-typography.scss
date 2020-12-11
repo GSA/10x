@@ -7,7 +7,7 @@
 ========================================
 ========================================
 ----------------------------------------
-USWDS 2.8.0
+USWDS 2.8.1
 ----------------------------------------
 TYPOGRAPHY SETTINGS
 ----------------------------------------
@@ -65,9 +65,9 @@ unclassed elements:
 ----------------------------------------
 */
 
-$theme-global-paragraph-styles: false;
-$theme-global-link-styles: false;
-$theme-global-content-styles: false;
+$theme-global-paragraph-styles: true;
+$theme-global-link-styles: true;
+$theme-global-content-styles: true;
 
 /*
 ----------------------------------------
@@ -77,7 +77,37 @@ Relative font file path
 ----------------------------------------
 */
 
-$theme-font-path: "~styles/theme/fonts";
+$theme-font-path: "~styles/fonts";
+
+/*
+----------------------------------------
+Custom font stacks
+----------------------------------------
+Add custom font stacks to any of the
+type-based fonts. Any USWDS typeface
+token already has a default stack.
+
+Custom stacks don't need to include the
+font's display name. It will
+automatically appear at the start of
+the stack.
+----------------------------------------
+Example:
+$theme-font-type-sans: 'source-sans-pro';
+$theme-font-sans-custom-stack: "Helvetica Neue", Helvetica, Arial, sans;
+
+Output:
+font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans;
+----------------------------------------
+*/
+
+$theme-font-cond-custom-stack: false;
+$theme-font-icon-custom-stack: false;
+$theme-font-lang-custom-stack: false;
+$theme-font-mono-custom-stack: false;
+$theme-font-sans-custom-stack: "Helvetica Neue", "Helvetica", "Roboto", "Arial";
+$theme-font-serif-custom-stack: "Georgia", "Cambria", "Times New Roman", "Times",
+  serif;
 
 /*
 ----------------------------------------
@@ -122,34 +152,95 @@ names to something more descriptive.
 */
 
 $theme-typeface-tokens: (
-  united-sans: (
-    display-name: "United Sans Web",
+  lato: (
+    display-name: "Lato",
+    cap-height: 362px,
+    stack: $theme-font-sans-custom-stack,
     src: (
-      dir: "united-sans",
+      dir: "Lato",
       roman: (
-        100: "UnitedSans-Thin",
-        200: "UnitedSans-ExtraLight",
-        300: "UnitedSans-Light",
-        400: "UnitedSans-Regular",
-        500: "UnitedSans-Medium",
-        600: "UnitedSans-SemiBold",
-        700: "UnitedSans-Bold",
-        800: "UnitedSans-ExtraBold",
-        900: "UnitedSans-Black",
+        100: "lato-thin",
+        200: "lato-thin",
+        300: "lato-light",
+        400: "lato-regular",
+        500: "lato-regular",
+        600: "lato-regular",
+        700: "lato-bold",
+        800: "lato-bold",
+        900: "lato-black",
       ),
       italic: (
-        100: "UnitedSans-ThinItalic",
-        200: "UnitedSans-ExtraLightItalic",
-        300: "UnitedSans-LightItalic",
-        400: "UnitedSans-Italic",
-        500: "UnitedSans-MediumItalic",
-        600: "UnitedSans-SemiBoldItalic",
-        700: "UnitedSans-BoldItalic",
-        800: "UnitedSans-ExtraBoldItalic",
-        900: "UnitedSans-BlackItalic",
+        100: "lato-thinitalic",
+        200: "lato-thinitalic",
+        300: "lato-lightitalic",
+        400: "lato-italic",
+        500: "lato-italic",
+        600: "lato-italic",
+        700: "lato-bolditalic",
+        800: "lato-bolditalic",
+        900: "lato-blackitalic",
       ),
     ),
-    cap-height: 364px,
+  ),
+  faustina: (
+    display-name: "Faustina",
+    cap-height: 362px,
+    stack: $theme-font-serif-custom-stack,
+    src: (
+      dir: "Faustina",
+      roman: (
+        100: "Faustina-Regular",
+        200: "Faustina-Regular",
+        300: "Faustina-Regular",
+        400: "Faustina-Regular",
+        500: "Faustina-Medium",
+        600: "Faustina-SemiBold",
+        700: "Faustina-Bold",
+        800: "Faustina-Bold",
+        900: "Faustina-Bold",
+      ),
+      italic: (
+        100: "Faustina-Italic",
+        200: "Faustina-Italic",
+        300: "Faustina-Italic",
+        400: "Faustina-Italic",
+        500: "Faustina-MediumItalic",
+        600: "Faustina-SemiBoldItalic",
+        700: "Faustina-BoldItalic",
+        800: "Faustina-BoldItalic",
+        900: "Faustina-BoldItalic",
+      ),
+    ),
+  ),
+  qualy: (
+    display-name: "Qualy",
+    cap-height: 362px,
+    stack: $theme-font-sans-custom-stack,
+    src: (
+      dir: "Qualy",
+      roman: (
+        100: "Qualy-Bold",
+        200: "Qualy-Bold",
+        300: "Qualy-Bold",
+        400: "Qualy-Bold",
+        500: "Qualy-Bold",
+        600: "Qualy-Bold",
+        700: "Qualy-Bold",
+        800: "Qualy-Bold",
+        900: "Qualy-Bold",
+      ),
+      italic: (
+        100: "Qualy-Bold",
+        200: "Qualy-Bold",
+        300: "Qualy-Bold",
+        400: "Qualy-Bold",
+        500: "Qualy-Bold",
+        600: "Qualy-Bold",
+        700: "Qualy-Bold",
+        800: "Qualy-Bold",
+        900: "Qualy-Bold",
+      ),
+    ),
   ),
 );
 
@@ -176,7 +267,7 @@ $theme-typeface-tokens.
 */
 
 // condensed
-$theme-font-type-cond: false;
+$theme-font-type-cond: "qualy";
 
 // icon
 $theme-font-type-icon: false;
@@ -188,40 +279,10 @@ $theme-font-type-lang: false;
 $theme-font-type-mono: "roboto-mono";
 
 // sans-serif
-$theme-font-type-sans: "united-sans";
+$theme-font-type-sans: "lato";
 
 // serif
-$theme-font-type-serif: "merriweather";
-
-/*
-----------------------------------------
-Custom font stacks
-----------------------------------------
-Add custom font stacks to any of the
-type-based fonts. Any USWDS typeface
-token already has a default stack.
-
-Custom stacks don't need to include the
-font's display name. It will
-automatically appear at the start of
-the stack.
-----------------------------------------
-Example:
-$theme-font-type-sans: 'source-sans-pro';
-$theme-font-sans-custom-stack: "Helvetica Neue", Helvetica, Arial, sans;
-
-Output:
-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans;
-----------------------------------------
-*/
-
-$theme-font-cond-custom-stack: false;
-$theme-font-icon-custom-stack: false;
-$theme-font-lang-custom-stack: false;
-$theme-font-mono-custom-stack: false;
-$theme-font-sans-custom-stack: "United Sans Web", United Sans Web, -apple-system,
-  BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-$theme-font-serif-custom-stack: false;
+$theme-font-type-serif: "faustina";
 
 /*
 ----------------------------------------
@@ -306,7 +367,7 @@ tokens.
 */
 
 $theme-font-role-ui: "sans";
-$theme-font-role-heading: "sans";
+$theme-font-role-heading: "serif";
 $theme-font-role-body: "sans";
 $theme-font-role-code: "mono";
 $theme-font-role-alt: "serif";
@@ -322,15 +383,15 @@ values from the USWDS system type scale
 ----------------------------------------
 */
 
-$theme-type-scale-3xs: 2;
+$theme-type-scale-3xs: 1;
 $theme-type-scale-2xs: 3;
 $theme-type-scale-xs: 4;
-$theme-type-scale-sm: 5;
-$theme-type-scale-md: 7;
-$theme-type-scale-lg: 9;
-$theme-type-scale-xl: 12;
-$theme-type-scale-2xl: 14;
-$theme-type-scale-3xl: 15;
+$theme-type-scale-sm: 6;
+$theme-type-scale-md: 8;
+$theme-type-scale-lg: 11;
+$theme-type-scale-xl: 13;
+$theme-type-scale-2xl: 16;
+$theme-type-scale-3xl: 18;
 
 /*
 ----------------------------------------
@@ -341,7 +402,7 @@ Or use `false` for unneeded weights.
 ----------------------------------------
 */
 
-$theme-font-weight-thin: 200;
+$theme-font-weight-thin: 100;
 $theme-font-weight-light: 300;
 $theme-font-weight-normal: 400;
 $theme-font-weight-medium: 500;
@@ -353,7 +414,7 @@ $theme-font-weight-heavy: 900;
 // should we generate all available weights
 // regardless of the assignments above?
 
-$theme-generate-all-weights: false;
+$theme-generate-all-weights: true;
 
 /*
 ----------------------------------------
@@ -418,15 +479,15 @@ $theme-body-font-size: "sm";
 $theme-body-line-height: 5;
 
 // If true, explicitly style the <body> element with the base styles
-$theme-style-body-element: false;
+$theme-style-body-element: true;
 
 // Headings
-$theme-h1-font-size: "3xl";
+$theme-h1-font-size: "2xl";
 $theme-h2-font-size: "xl";
 $theme-h3-font-size: "lg";
-$theme-h4-font-size: "sm";
-$theme-h5-font-size: "xs";
-$theme-h6-font-size: "3xs";
+$theme-h4-font-size: "md";
+$theme-h5-font-size: "sm";
+$theme-h6-font-size: "xs";
 $theme-heading-line-height: 2;
 $theme-small-font-size: "2xs";
 $theme-display-font-size: "3xl";

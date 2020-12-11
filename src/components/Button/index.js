@@ -39,7 +39,7 @@ export const Button = ({
       onClick={onClick}
       {...props}
       className={classnames({
-        "usa-button": variant !== "link",
+        "usa-button": true,
         [`usa-button--${color}`]: color,
         [`usa-button--${color}-${variant}`]:
           color && variant && variant !== "link",
@@ -66,6 +66,7 @@ Button.propTypes = {
   /** defines the component base color */
   color: PropTypes.oneOf([
     "primary",
+    "primary-lighter",
     "secondary",
     "accent-warm",
     "accent-cool",

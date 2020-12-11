@@ -1,0 +1,78 @@
+{
+  "title": "Making each dollar count",
+  "slug": "making-each-dollar-count",
+  "sections": [
+    {
+      "type": "title",
+      "title": "Making each dollar count",
+      "subtitle": "We’re focused on getting the most bang for the buck at every stage of the process.",
+      "level": "1"
+    },
+    {
+      "type": "markdown",
+      "body": "Our model of small-dollar investments enables us to be good stewards of taxpayer dollars by spending the smallest possible amount of funding necessary at every stage of a project to determine whether or not it’s worth pursuing. About one third of projects selected for initial funding will actually make their way into design and development, and even those projects must be able to prove they’re delivering clear value in order to continue to receive funding. This iterative approach to investing allows us to innovate without overspending, ensuring the products and services produced meet a real, verifiable need in the federal space.\n\nAnd we’re not doling out money to agencies directly — our funding isn’t a grant, but an investment into a potential solution. We use the budget for each project to hire and staff the teams that explore and evaluate ideas at each phase."
+    },
+    {
+      "type": "break",
+      "color": "accent-warm",
+      "variant": "wide"
+    },
+    {
+      "type": "callout",
+      "title": "Key questions for funding",
+      "text": "Our funding model can be broken down into four simple questions. \n",
+      "items": [
+        {
+          "title": "Scale",
+          "text": "Teams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
+          "body": "* Investigation\n* Is this a bad idea?\n* $\n\nTeams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities, and reach."
+        },
+        {
+          "title": "Investigation",
+          "text": "Teams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities and reach. ",
+          "body": "- Discovery\n- Is this a good idea?\n- $$\n\nTeams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong."
+        },
+        {
+          "title": "Discovery",
+          "text": "Teams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
+          "body": "- Development\n- Will anyone use this?\n- $$$\n\nTeams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan."
+        },
+        {
+          "title": "Development",
+          "text": "Teams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
+          "body": "- Scale\n- Will everyone use this?\n- $$$$\n\nTeams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. "
+        }
+      ],
+      "className": "TxRinger"
+    },
+    {
+      "type": "break",
+      "color": "accent-warm",
+      "variant": "wide"
+    },
+    {
+      "type": "cards",
+      "className": "Dollars__cards",
+      "title": "A record-setting year for 10x",
+      "text": "In FY20, 10x accepted both new ideas and oversaw the continuation of projects that were still ongoing from past fiscal years. ",
+      "items": [
+        {
+          "title": "XX",
+          "text": "projects kicked off Phase 1 in 2020, or started late in FY19",
+          "link": "/",
+          "body": "# 45\n\nprojects kicked off Phase 1 in 2020, or started late in FY19"
+        },
+        {
+          "title": "XX",
+          "text": "projects continued into phases 2, 3, and 4",
+          "link": "/",
+          "body": "# 19\n\nprojects continued into phases 2, 3, and 4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "theme": "3",
+    "footer": "10x-in-the-wild"
+  }
+}

@@ -1,9 +1,9 @@
 import React from "react";
 import MDX from "@mdx-js/runtime";
 import { Link } from "react-router-dom";
+import Break from "components/Break";
 import Button from "components/Button";
 import Card from "components/Card";
-import ColorBox from "components/ColorBox";
 import Date from "components/Date";
 import { Grid, Row, Col } from "components/Grid";
 import Icon from "components/Icon";
@@ -15,9 +15,9 @@ import LocationMenu from "features/LocationMenu";
 import ProjectList from "features/ProjectList";
 
 export const shortcodes = {
+  Break,
   Button,
   Card,
-  ColorBox,
   Date,
   Grid,
   Icon,
@@ -32,12 +32,15 @@ export const shortcodes = {
   ProjectList,
 };
 
-const Mdx = ({ children, scope }) => {
+const Mdx = ({ children, className, components, scope }) => {
   return (
-    <MDX components={shortcodes} scope={scope}>
+    <MDX components={{ ...shortcodes, ...components }} scope={scope}>
       {children}
     </MDX>
   );
 };
 
+Mdx.defaultProps = {
+  components: {},
+};
 export default Mdx;

@@ -1,35 +1,101 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
 import { Grid, Row, Col } from "components/Grid";
 import Banner from "components/Banner";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import Button from "components/Button";
+import PrimaryNav from "components/PrimaryNav";
+import { useDispatch, useSelector } from "react-redux";
+import { getMenuList } from "app/MenuModule";
+import useOnPathChange from "utils/useOnPathChange";
 
-const Header = ({ logo, nav, hero, className }) => {
+const Header = ({ logo, className }) => {
+  const history = useHistory();
+  const dispatch = useDispatch();
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [activeMenuItem, setActiveMenuItem] = useState(null);
+
+  const handleMenuToggle = (v) => {
+    setMenuOpen((state) => !state);
+  };
+
+  const handleActiveMenuItemClick = (e) => {
+    let id = null;
+    /* istanbul ignore next */
+    const clicked = e ? e.currentTarget.id : null;
+    if (clicked !== id && clicked !== activeMenuItem) {
+      id = clicked;
+    }
+    setActiveMenuItem(id);
+  };
+
+  const handleMenuClose = () => {
+    handleMenuToggle(false);
+    handleActiveMenuItemClick();
+  };
+
+  const handleNavClick = (e) => {
+    /* istanbul ignore next */
+    const clicked = e ? e.currentTarget.value : "";
+    handleMenuClose();
+    history.push(`/${clicked}`);
+  };
+
+  useOnPathChange(() => {
+    handleMenuClose();
+  });
+
+  useEffect(() => {
+    dispatch(getMenuList({}));
+  }, [dispatch]);
+
+  const menus = useSelector((state) => state.menu.data);
+  const primary = menus.find(({ key }) => key === "primary");
+  const navItems = primary ? primary.items : [];
+
   return (
     <header
       className={classnames({
         "usa-header": true,
-        "usa-header--basic": true,
         [className]: className,
       })}
     >
+      <Banner />
       <Grid>
         <Row>
           <Col>
-            <Banner />
-            <Row className="align-content-center margin-top-2">
-              <Col size={3}>
+            <Row className="align-content-center">
+              <Col size={1} className="usa-header__logo">
                 <Link to="/">{logo}</Link>
               </Col>
-              <Col size={9} className="text-right">
-                {nav}
+              <Col size={11} className="usa-header__nav">
+                <PrimaryNav
+                  items={navItems}
+                  isMobileMenuOpen={isMenuOpen}
+                  handleMobileMenu={handleMenuToggle}
+                  activeMenuItem={activeMenuItem}
+                  handleActiveMenuItem={handleActiveMenuItemClick}
+                  handleNav={handleNavClick}
+                  renderText={(data) => (
+                    <>
+                      <span className="usa-nav__url-prefix">{data.prefix}</span>
+                      <span className="usa-nav__url-text">{data.text}</span>
+                    </>
+                  )}
+                  footer={
+                    <Button color="primary-lighter" url="/">
+                      SUBMIT AN IDEA
+                    </Button>
+                  }
+                  open=""
+                  close=""
+                />
               </Col>
             </Row>
           </Col>
         </Row>
       </Grid>
-      {hero}
     </header>
   );
 };

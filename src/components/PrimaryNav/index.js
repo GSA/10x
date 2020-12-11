@@ -1,105 +1,159 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
-import { Link, NavLink, useLocation } from "react-router-dom";
-import close from "./close.svg";
 import Button from "components/Button";
 
-const NavItem = ({ id, text, url, items = [] }) => {
+const NavItem = ({
+  data,
+  id,
+  isOpen,
+  isCurrent,
+  handleActiveMenuItem,
+  handleNav,
+  renderText,
+}) => {
+  const Text = renderText;
+  const { link, items = [] } = data;
   return (
     <li className="usa-nav__primary-item">
       {items.length ? (
-        <div>
+        <>
           <button
-            className={`usa-accordion__button usa-nav__url`}
+            id={id}
+            className={classnames({
+              "usa-accordion__button": true,
+              "usa-nav__url": true,
+              "usa-current": isCurrent,
+            })}
             aria-controls={`extended-nav-section-${id}`}
-            aria-expanded={false}
+            aria-expanded={isOpen}
+            onClick={handleActiveMenuItem}
           >
-            <span>{text}</span>
+            <Text {...data} />
           </button>
           <ul
             id={`extended-nav-section-${id}`}
             className="usa-accordion__content usa-nav__submenu"
-            hidden
+            hidden={!isOpen}
           >
             {items.map((item, idx) => (
               <li key={idx} className="usa-nav__submenu-item">
-                <Link to={item.link}>{item.text}</Link>
+                <button
+                  className="usa-nav__submenu-url"
+                  value={item.link}
+                  onClick={handleNav}
+                >
+                  {item.text}
+                </button>
               </li>
             ))}
           </ul>
-        </div>
+        </>
       ) : (
-        <NavLink
-          className="usa-nav__url"
-          activeClassName="usa-current"
-          replace
-          to={`/${url}`}
+        <button
+          id={id}
+          value={link}
+          onClick={handleNav}
+          className={classnames({
+            "usa-nav__url": true,
+            "usa-current": isCurrent,
+          })}
         >
-          <span>{text}</span>
-        </NavLink>
+          <Text {...data} />
+        </button>
       )}
     </li>
   );
 };
 
-const Nav = ({ items }) => {
-  const [isOpen, setOpen] = useState(false);
-  const handleClick = () => {
-    setOpen((state) => !state);
-  };
-  const location = useLocation();
-  useEffect(() => {
-    setOpen(false);
-  }, [location]);
+NavItem.defaultProps = {
+  data: {},
+  isOpen: null,
+};
+
+const Nav = ({
+  items,
+  isMobileMenuOpen,
+  handleMobileMenu,
+  activeMenuItem,
+  handleActiveMenuItem,
+  handleNav,
+  currentMenuItem,
+  renderText,
+  header,
+  footer,
+  open,
+  close,
+}) => {
   return (
     <>
       <Button
         type="button"
         id="usa-nav-open"
-        onClick={handleClick}
+        onClick={handleMobileMenu}
         className="usa-nav-open"
       >
-        Menu
+        {open}
       </Button>
       <nav
         role="navigation"
         aria-label="Primary navigation"
-        className={classnames({ "usa-nav": true, "is-visible": isOpen })}
+        className={classnames({
+          "usa-nav": true,
+          "is-visible": isMobileMenuOpen,
+        })}
       >
         <div className="usa-nav__inner">
           <Button
             id="usa-nav-close"
             type="button"
             className="usa-nav-close"
-            onClick={handleClick}
+            onClick={handleMobileMenu}
           >
-            <img src={close} alt="close" />
+            {close}
           </Button>
+          {header && <div className="usa-nav__header">{header}</div>}
           <ul className="usa-accordion usa-nav__primary">
-            {items.map(({ text, link, items }, idx) => {
+            {items.map((item, idx) => {
+              const nodeId = `usa-nav-item-${idx}`;
               return (
                 <NavItem
-                  key={`usa-nav-item-${idx}`}
-                  id={idx}
-                  text={text}
-                  url={link}
-                  items={items}
+                  data={item}
+                  key={nodeId}
+                  id={nodeId}
+                  renderText={renderText}
+                  isOpen={activeMenuItem === nodeId}
+                  handleActiveMenuItem={handleActiveMenuItem}
+                  handleNav={handleNav}
+                  isCurrent={currentMenuItem === nodeId}
                 />
               );
             })}
           </ul>
         </div>
+        {footer && <div className="usa-nav__footer">{footer}</div>}
       </nav>
     </>
   );
 };
+
+const Text = (item) => item.text;
+
 Nav.defaultProps = {
   items: [],
+  renderText: Text,
+  isMobileMenuOpen: false,
+  handleMobileMenu: () => console.log("handleMobileMenu clicked!"),
+  activeMenuItem: null,
+  handleActiveMenuItem: () => console.log("handleActiveMenuItem clicked!"),
+  handleNav: () => console.log("handleNav clicked!"),
+  open: "Menu",
+  close: "Close",
 };
 
 Nav.propTypes = {
   items: PropTypes.array,
+  renderText: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
 };
 
 export default Nav;

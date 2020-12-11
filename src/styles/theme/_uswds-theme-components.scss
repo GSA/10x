@@ -7,7 +7,7 @@
 ========================================
 ========================================
 ----------------------------------------
-USWDS 2.8.0
+USWDS 2.8.1
 ----------------------------------------
 COMPONENT SETTINGS
 ----------------------------------------
@@ -19,7 +19,7 @@ https://designsystem.digital.gov/design-tokens
 
 // Accordion
 $theme-accordion-border-width: 0.5;
-$theme-accordion-border-color: "primary-lightest";
+$theme-accordion-border-color: "base-lightest";
 $theme-accordion-font-family: "body";
 
 // Alert
@@ -29,7 +29,7 @@ $theme-alert-icon-size: 4;
 $theme-alert-padding-x: 2.5;
 
 // Banner
-$theme-banner-background-color: "primary-lightest";
+$theme-banner-background-color: "base-lightest";
 $theme-banner-font-family: "ui";
 $theme-banner-link-color: default;
 $theme-banner-max-width: "desktop";
@@ -66,6 +66,7 @@ $theme-card-padding-y: 2;
 
 // Footer
 $theme-footer-font-family: "body";
+$theme-footer-max-width: "desktop";
 
 // Form and input
 $theme-checkbox-border-radius: "sm";
@@ -99,5 +100,5 @@ $theme-sidenav-font-family: "ui";
 
 // Tooltips
 $theme-tooltip-background-color: "ink";
-$theme-tooltip-font-color: "primary-lightest";
+$theme-tooltip-font-color: "base-lightest";
 $theme-tooltip-font-size: "xs";

@@ -16,6 +16,7 @@
     "classnames": "^2.2.6",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4",
+    "framer-motion": "^2.9.4",
     "netlify-cms-app": "^2.12.18",
     "node-env-run": "^3.0.2",
     "node-sass": "^4.14.1",
@@ -71,7 +72,8 @@
       "!src/app/index.js",
       "!src/**/context.js",
       "!src/test/**/*.js",
-      "!src/routes/index.js"
+      "!src/routes/index.js",
+      "!src/routes/AnimatedRoutes/index.js"
     ],
     "coverageThreshold": {
       "global": {

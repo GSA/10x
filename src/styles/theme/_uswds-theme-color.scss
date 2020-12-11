@@ -7,7 +7,7 @@
 ========================================
 ========================================
 ----------------------------------------
-USWDS 2.8.0
+USWDS 2.8.1
 ----------------------------------------
 COLOR SETTINGS
 ----------------------------------------
@@ -22,60 +22,80 @@ https://designsystem.digital.gov/design-tokens/color
 Theme palette colors
 ----------------------------------------
 */
+$x-lilac-light: #d8d6ee;
+$x-lilac: #c2c2f5;
+
+$x-grimace: #3a337b;
+$x-grimace-light: #7570a3;
+
+$x-tiger-light: #f3afa6;
+$x-tiger: #ff6839;
+$x-tiger-dark: #b34928;
+
+$x-sky-light: #c9f4fd;
+$x-sky: #78e3fb;
+$x-sky-dark: #549fb0;
+
+$x-ocean-light: #b5f0f0;
+$x-ocean: #45d9d9;
+$x-ocean-dark: #309898;
+
+$x-smoke: #d8d8d8;
+$x-lead: #4e5164;
+$x-charcoal: #292a2b;
 
 // Base colors
 $theme-color-base-family: "gray-cool";
-
-$theme-color-base-lightest: #f5f6f7;
-$theme-color-base-lighter: #919191;
-$theme-color-base-light: "gray-cool-30";
-$theme-color-base: "gray-cool-50";
-$theme-color-base-dark: "gray-cool-60";
-$theme-color-base-darker: #2b2b27;
-$theme-color-base-darkest: #292a2b;
-$theme-color-base-ink: #171717;
+$theme-color-base-lightest: $x-ocean-light;
+$theme-color-base-lighter: $x-ocean;
+$theme-color-base-light: $x-smoke;
+$theme-color-base: $x-lead;
+$theme-color-base-dark: $x-charcoal;
+$theme-color-base-darker: $x-charcoal;
+$theme-color-base-darkest: $x-charcoal;
+$theme-color-base-ink: $x-charcoal;
 
 // Primary colors
-$theme-color-primary-family: #000000;
-$theme-color-primary-lightest: #c9c9c9;
-$theme-color-primary-lighter: #757575;
-$theme-color-primary-light: #454545;
-$theme-color-primary: #2e2e2e;
-$theme-color-primary-vivid: #2e2e2e;
-$theme-color-primary-dark: #1c1c1b;
-$theme-color-primary-darker: #000000;
-$theme-color-primary-darkest: false;
+$theme-color-primary-family: "blue";
+$theme-color-primary-lightest: "blue-5";
+$theme-color-primary-lighter: $x-lilac-light;
+$theme-color-primary-light: $x-lilac;
+$theme-color-primary: $x-grimace;
+$theme-color-primary-vivid: "blue-warm-60v";
+$theme-color-primary-dark: $x-grimace-light;
+$theme-color-primary-darker: $x-grimace;
+$theme-color-primary-darkest: "blue-warm-80v";
 
 // Secondary colors
 $theme-color-secondary-family: "red";
-$theme-color-secondary-lightest: #f5f5f0;
+$theme-color-secondary-lightest: "red-cool-5";
 $theme-color-secondary-lighter: "red-cool-10";
-$theme-color-secondary-light: "red-30";
-$theme-color-secondary: #d93f04;
-$theme-color-secondary-vivid: "red-cool-50v";
-$theme-color-secondary-dark: #a56931;
+$theme-color-secondary-light: $x-ocean-light;
+$theme-color-secondary: $x-ocean;
+$theme-color-secondary-vivid: $x-ocean-dark;
+$theme-color-secondary-dark: "red-60v";
 $theme-color-secondary-darker: "red-70v";
-$theme-color-secondary-darkest: false;
+$theme-color-secondary-darkest: "red-80v";
 
 // Accent warm colors
 $theme-color-accent-warm-family: "orange";
-$theme-color-accent-warm-lightest: #edc730;
-$theme-color-accent-warm-lighter: #faaf00;
-$theme-color-accent-warm-light: #ff7b0f;
-$theme-color-accent-warm: #d93f04;
-$theme-color-accent-warm-dark: #c84a23;
-$theme-color-accent-warm-darker: #a56931;
-$theme-color-accent-warm-darkest: false;
+$theme-color-accent-warm-lightest: "orange-5";
+$theme-color-accent-warm-lighter: "orange-10";
+$theme-color-accent-warm-light: $x-tiger-light;
+$theme-color-accent-warm: $x-tiger;
+$theme-color-accent-warm-dark: $x-tiger-dark;
+$theme-color-accent-warm-darker: "orange-60";
+$theme-color-accent-warm-darkest: "orange-70";
 
 // Accent cool colors
 $theme-color-accent-cool-family: "blue-cool";
-$theme-color-accent-cool-lightest: false;
-$theme-color-accent-cool-lighter: #c9c2f2;
-$theme-color-accent-cool-light: #b1a7eb;
-$theme-color-accent-cool: #7560eb;
-$theme-color-accent-cool-dark: #433a7a;
-$theme-color-accent-cool-darker: #1f2e4a;
-$theme-color-accent-cool-darkest: #29263b;
+$theme-color-accent-cool-lightest: "blue-cool-5";
+$theme-color-accent-cool-lighter: "blue-cool-5v";
+$theme-color-accent-cool-light: $x-sky-light;
+$theme-color-accent-cool: $x-sky;
+$theme-color-accent-cool-dark: $x-sky-dark;
+$theme-color-accent-cool-darker: "blue-cool-60v";
+$theme-color-accent-cool-darkest: "blue-cool-60v";
 
 /*
 ----------------------------------------

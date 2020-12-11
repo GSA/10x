@@ -9,7 +9,261 @@ backend:
 media_folder: public/images
 public_folder: public/images
 
+#########################
+types:
+  #########################
+
+  body: &body
+    label: "Body"
+    name: "body"
+    widget: "markdown"
+
+  button: &button
+    label: Button
+    name: button
+    widget: "object"
+    required: false
+    fields:
+      - label: "Text"
+        name: "text"
+        widget: text
+        required: false
+      - label: "Link"
+        name: "link"
+        widget: string
+        required: false
+
+  classname: &classname
+    label: Classname
+    name: className
+    widget: string
+    required: false
+
+  fullwidth: &fullwidth
+    label: Fullwidth
+    name: fullwidth
+    widget: boolean
+    required: false
+
+  headline: &headline
+    label: "Headline"
+    name: "subtitle"
+    widget: "string"
+    required: false
+
+  level: &level
+    label: Level
+    name: level
+    widget: select
+    options: ["1", "2", "3", "4", "5"]
+
+  link: &link
+    label: "Link"
+    name: "link"
+    widget: string
+
+  preFooter: &preFooter
+    label: Pre-Footer
+    name: footer
+    widget: relation
+    collection: "footers"
+    search_fields: ["slug"]
+    value_field: "slug"
+    display_fields: ["slug"]
+
+  slug: &slug
+    widget: string
+    name: "slug"
+    label: "Slug"
+    required: true
+    pattern:
+      [
+        "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "A slug can have no spaces or special characters",
+      ]
+    hint: "The project URL (do not include folder or file extension)"
+
+  text: &text
+    label: "Text"
+    name: "text"
+    widget: text
+
+  title: &title
+    label: Title
+    name: title
+    widget: string
+
+#########################
+modules:
+  #########################
+
+  modTitle: &modTitle
+    label: Title
+    name: title
+    widget: "object"
+    fields:
+      - <<: *classname
+      - <<: *fullwidth
+      - <<: *title
+      - <<: *level
+        required: false
+      - <<: *headline
+        required: false
+
+  modMarkdown: &modMarkdown
+    label: "Markdown"
+    name: "markdown"
+    widget: "object"
+    fields:
+      - <<: *classname
+      - <<: *fullwidth
+      - <<: *body
+
+  modCallout: &modCallout
+    label: Callout
+    name: callout
+    widget: "object"
+    fields:
+      - <<: *classname
+      - <<: *fullwidth
+      - <<: *title
+        required: false
+      - <<: *headline
+        label: "Subtitle"
+        required: false
+      - <<: *text
+        required: false
+      - <<: *button
+      - label: Items
+        name: items
+        widget: list
+        summary: "Item"
+        fields:
+          - <<: *body
+            required: false
+
+  modBreak: &modBreak
+    label: Break
+    name: break
+    widget: "object"
+    fields:
+      - <<: *classname
+      - <<: *fullwidth
+      - label: Color
+        name: color
+        widget: select
+        required: false
+        options:
+          [
+            "primary-lighter",
+            "secondary",
+            "accent-warm",
+            "accent-cool",
+            "base-lighter",
+          ]
+      - label: variant
+        name: variant
+        widget: select
+        required: false
+        options: [0, "wide"]
+
+  modLinks: &modLinks
+    label: Links
+    name: links
+    widget: "object"
+    fields:
+      - <<: *classname
+      - <<: *fullwidth
+      - <<: *title
+        required: false
+      - <<: *headline
+        required: false
+      - <<: *text
+        required: false
+      - <<: *button
+      - label: Items
+        name: items
+        widget: list
+        fields:
+          - <<: *text
+          - <<: *link
+
+  modList: &modList
+    label: List
+    name: list
+    widget: "object"
+    fields:
+      - <<: *classname
+      - <<: *fullwidth
+      - <<: *title
+        required: false
+      - <<: *headline
+        required: false
+      - <<: *text
+        required: false
+      - <<: *button
+      - label: Items
+        name: items
+        widget: list
+        summary: "List Item"
+        fields:
+          - <<: *title
+            required: false
+          - <<: *text
+            required: false
+
+  modCards: &modCards
+    label: Cards
+    name: cards
+    widget: "object"
+    fields:
+      - <<: *classname
+      - <<: *fullwidth
+      - <<: *title
+        required: false
+      - <<: *text
+        required: false
+      - label: Items
+        name: items
+        widget: list
+        summary: "Card"
+        fields:
+          - <<: *body
+
+  modProjects: &modProjects
+    label: Projects
+    name: projects
+    widget: "object"
+    fields:
+      - <<: *classname
+      - <<: *fullwidth
+
+  modPhase: &modPhase
+    label: Phase
+    name: phase
+    widget: "object"
+    fields:
+      - <<: *classname
+      - <<: *fullwidth
+
+  modSections: &modSections
+    label: "Sections"
+    name: "sections"
+    widget: "list"
+    types:
+      - <<: *modBreak
+      - <<: *modCallout
+      - <<: *modCards
+      - <<: *modLinks
+      - <<: *modList
+      - <<: *modMarkdown
+      - <<: *modProjects
+      - <<: *modTitle
+
+#########################
 collections:
+  #########################
+
   - name: settings
     extension: json
     publish: false
@@ -36,6 +290,9 @@ collections:
           - label: Site Description
             name: description
             widget: string
+          - <<: *modSections
+            label: "404 Content"
+            name: "404"
           - name: customFields
             label: Custom Fields
             widget: list
@@ -46,6 +303,7 @@ collections:
               - name: value
                 label: Value
                 widget: string
+
   - name: menu
     extension: json
     label: Menus
@@ -63,67 +321,127 @@ collections:
       - name: items
         label: Items
         widget: list
-        fields:
-          - label: Text
-            name: text
-            widget: string
-          - label: Link
-            name: link
-            widget: string
-          - label: Description
-            name: desc
-            width: string
-          - label: img
-            name: img
-            widget: image
-          - label: Items
-            name: items
-            widget: list
+        summary: "Primary Item"
+        types:
+          - label: Page Link
+            name: page
+            widget: object
             fields:
+              - label: Prefix
+                name: prefix
+                widget: string
+                required: false
               - label: Text
                 name: text
                 widget: string
               - label: Link
                 name: link
+                widget: relation
+                collection: "pages"
+                search_fields: ["slug"]
+                value_field: "slug"
+                display_fields: ["title"]
+          - label: Custom Link
+            name: custom
+            widget: object
+            fields:
+              - label: Prefix
+                name: prefix
                 widget: string
-  - name: page
-    extension: json
+                required: false
+              - label: Text
+                name: text
+                widget: string
+              - label: Link
+                name: link
+                widget: list
+          - label: Nested Link
+            name: nested
+            widget: object
+            fields:
+              - label: Prefix
+                name: prefix
+                widget: string
+                required: false
+              - label: Text
+                name: text
+                widget: string
+              - label: Items
+                name: items
+                widget: list
+                summary: "Subitem"
+                types:
+                  - label: Page Link
+                    name: page
+                    widget: object
+                    fields:
+                      - label: Prefix
+                        name: prefix
+                        widget: string
+                        required: false
+                      - label: Text
+                        name: text
+                        widget: string
+                      - label: Link
+                        name: link
+                        widget: relation
+                        collection: "pages"
+                        search_fields: ["slug"]
+                        value_field: "slug"
+                        display_fields: ["title"]
+                  - label: Custom Link
+                    name: custom
+                    widget: object
+                    fields:
+                      - label: Prefix
+                        name: prefix
+                        widget: string
+                        required: false
+                      - label: Text
+                        name: text
+                        widget: string
+                      - label: Link
+                        name: link
+                        widget: list
+
+  - name: pages
     label: Pages
+    extension: json
     label_singular: Page
     folder: cms/content/page
     create: true
     delete: true
-    slug: "{{title}}"
+    slug: "{{slug}}"
     preview_path: "{{slug}}"
-    identifier_field: title
+    identifier_field: slug
+    editor:
+      preview: false
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
+      - <<: *title
+      - <<: *slug
+      - label: "Sections"
+        name: "sections"
+        widget: "list"
+        types:
+          - <<: *modBreak
+          - <<: *modCallout
+          - <<: *modCards
+          - <<: *modLinks
+          - <<: *modList
+          - <<: *modMarkdown
+          - <<: *modProjects
+          - <<: *modTitle
       - label: Meta
-        name: Meta
-        required: false
+        name: meta
         widget: "object"
         fields:
-          - label: Description
-            name: description
-            widget: string
+          - label: "Theme"
+            name: "theme"
             required: false
-          - label: Facebook Image
-            name: fbImg
-            widget: image
-            required: false
-          - label: Twitter Image
-            name: twImg
-            widget: image
-            required: false
-      - label: "Hero Content"
-        name: "hero"
-        widget: "markdown"
-        required: false
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
+            widget: "select"
+            options: ["1", "2", "3", "4"]
+          - <<: *preFooter
+
   - name: project
     extension: json
     label: Projects
@@ -131,81 +449,152 @@ collections:
     folder: cms/content/project
     create: true
     delete: true
-    slug: "{{title}}"
+    slug: "{{slug}}"
     preview_path: "{{slug}}"
-    identifier_field: title
+    identifier_field: slug
+    editor:
+      preview: false
     fields:
-      - label: "Project Title"
-        name: "title"
-        widget: "string"
-      - label: "Headline"
-        name: "subtitle"
-        widget: "string"
-      - label: "Type"
-        name: "projectType"
-        widget: "select"
-        options: ["Innovation", "Transformation", "Enhancement"]
-      - label: "Project Link"
-        name: "projectLink"
-        widget: "string"
-        required: false
-      - label: "Excerpt"
-        name: "excerpt"
-        widget: "text"
-      - label: "Phase"
-        name: "phaseData"
-        widget: "object"
-        collapsed: true
-        fields:
-          - label: "Phase"
-            name: "phase"
-            widget: "select"
-            options: ["1", "2", "3", "4"]
-          - label: "Status"
-            name: "status"
-            widget: "select"
-            options:
-              [
-                { label: "In Progress", value: "1" },
-                { label: "Done", value: "2" },
-                { label: "Graduated", value: "3" },
-              ]
-            default: "InProgress"
-          - label: "Message"
-            name: "message"
-            hint: "Override the default Phase status message."
-            widget: "string"
-            required: false
-      - label: "Topics"
-        name: "topics"
-        widget: "string"
-        hint: "Separate tag values by comma."
-        required: false
-      - label: "Team"
-        name: "team"
-        widget: "object"
-        required: false
-        fields:
-          - label: "Idea Submitter"
-            name: "submitter"
-            widget: "string"
-            required: false
-          - label: "Members"
-            name: "members"
-            widget: "text"
-            required: false
-      - label: "Links"
-        name: "links"
+      - <<: *slug
+      - <<: *title
+        label: "Project title"
+      - <<: *headline
+      - <<: *body
+        label: "Introduction"
+      - label: "Sections"
+        name: "sections"
         widget: "list"
         required: false
+        summary: "Section Card"
+        hint: "Each section's content modules are displayed in a Card."
         fields:
-          - label: "Text"
-            name: "text"
+          - label: "Modules"
+            name: "modules"
+            widget: list
+            types:
+              - <<: *modBreak
+              - <<: *modCallout
+              - <<: *modCards
+              - <<: *modLinks
+              - <<: *modList
+              - <<: *modMarkdown
+              - <<: *modPhase
+              - <<: *modProjects
+              - <<: *modTitle
+      - label: "Portfolio Card"
+        name: "card"
+        hint: "Customize the Card content that will display on the Portfolio page"
+        widget: "object"
+        fields:
+          - <<: *title
+            required: false
+            hint: "Custom card Title (defaults to Project Title)"
+          - <<: *headline
+            required: false
+            hint: "Custom card Headline (defaults to Project Headline)"
+          - label: "Project Url"
+            name: "projectUrl"
             widget: "string"
-          - label: "Link"
-            name: "link"
+            required: false
+            hint: "Valid full URL for the Portfilio card (defaults to Project Slug)"
+          - label: "Excerpt"
+            name: "excerpt"
+            widget: "text"
+            required: false
+      - label: "Meta Data"
+        name: "meta"
+        widget: "object"
+        fields:
+          - label: "Type"
+            name: "projectType"
+            widget: "select"
+            options: ["Innovation", "Transformation", "Enhancement"]
+          - label: "Template"
+            name: "template"
+            widget: "select"
+            options:
+              - label: "1"
+                value: "1"
+              - label: "2"
+                value: "2"
+              - label: "3"
+                value: "3"
+              - label: "4"
+                value: "4"
+              - label: "5"
+                value: "5"
+              - label: "6"
+                value: "6"
+          - <<: *preFooter
+          - label: "Phase"
+            name: "phaseData"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Phase"
+                name: "phase"
+                widget: "select"
+                options: ["1", "2", "3", "4"]
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options:
+                  [
+                    { label: "In Progress", value: "1" },
+                    { label: "Done", value: "2" },
+                    { label: "Graduated", value: "3" },
+                  ]
+                default: "InProgress"
+              - label: "Message"
+                name: "message"
+                hint: "Override the default Phase status message."
+                widget: "string"
+                required: false
+          - label: "Topics"
+            name: "topics"
             widget: "string"
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: false
+            hint: "Separate tag values by comma."
+            required: false
+          - label: "Summary"
+            name: "summary"
+            widget: "list"
+            required: false
+            fields:
+              - *text
+          - label: "Team"
+            name: "team"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Idea Submitter"
+                name: "submitter"
+                widget: "string"
+                required: false
+              - label: "Members"
+                name: "members"
+                widget: "text"
+                required: false
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            required: false
+            fields:
+              - <<: *text
+              - <<: *link
+
+  - name: footers
+    extension: json
+    label: Footer
+    label_singular: Footer
+    folder: cms/content/footer
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    preview_path: "{{slug}}"
+    identifier_field: slug
+    editor:
+      preview: false
+    fields:
+      - <<: *slug
+      - <<: *body
+      - <<: *button
