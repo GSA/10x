@@ -246,6 +246,20 @@ modules:
       - <<: *classname
       - <<: *fullwidth
 
+  modSections: &modSections
+    label: "Sections"
+    name: "sections"
+    widget: "list"
+    types:
+      - <<: *modBreak
+      - <<: *modCallout
+      - <<: *modCards
+      - <<: *modLinks
+      - <<: *modList
+      - <<: *modMarkdown
+      - <<: *modProjects
+      - <<: *modTitle
+
 #########################
 collections:
   #########################
@@ -276,6 +290,11 @@ collections:
           - label: Site Description
             name: description
             widget: string
+          - label: "404 Content"
+            name: "404"
+            widget: object
+            fields:
+              - <<: *modSections
           - name: customFields
             label: Custom Fields
             widget: list

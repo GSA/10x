@@ -11,7 +11,7 @@ describe("<FourOhFour />", () => {
           <FourOhFour />
         </TestProvider>
       );
-      expect(wrapper.find("h1").text()).toBe("404");
+      expect(wrapper.find(".Tx__FourOhFour").hostNodes().length).toBe(1);
     });
   });
 });

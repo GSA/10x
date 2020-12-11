@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid, Row, Col } from "components/Grid";
 import { Helmet } from "react-helmet";
-import { useLocation } from "react-router-dom";
 import Card from "components/Card";
 import image from "styles/images/portfolio-paint-stroke-1.png";
+import { useDispatch, useSelector } from "react-redux";
+import { getPage } from "app/ContentModule";
+import Head from "routes/Head";
+import Layout from "features/Layout";
 
-const FourOhFour = ({ pathname }) => {
-  const { search } = useLocation();
-  return (
-    <Grid>
-      <Helmet title="404 Error" />
-      <Row>
-        <Col size={12}>
-          {search ? (
+const FourOhFour = ({ search }) => {
+  const dispatch = useDispatch();
+  const page = useSelector((state) => state.content.page);
+  useEffect(() => {
+    dispatch(getPage({ name: "404" }));
+  }, [dispatch]);
+  const { data } = page;
+
+  if (search) {
+    return (
+      <Grid>
+        <Helmet title="404 Error" />
+        <Row>
+          <Col size={12}>
             <div>
               <h1>h1</h1>
               <h2>h2</h2>
@@ -30,18 +39,19 @@ const FourOhFour = ({ pathname }) => {
                 Card Content
               </Card>
             </div>
-          ) : (
-            <div
-              className="Page__error"
-              style={{ paddingTop: "5vh", minHeight: "50vh" }}
-            >
-              <h1>404</h1>
-              <h2>The path "{pathname}" returned no results.</h2>
-            </div>
-          )}
-        </Col>
-      </Row>
-    </Grid>
+          </Col>
+        </Row>
+      </Grid>
+    );
+  }
+
+  return (
+    <div className={`TxContent Tx__FourOhFour`}>
+      <Head title={data.title} />
+      <div className={`Tx__${data.name}-content`}>
+        <Layout items={data.sections} />
+      </div>
+    </div>
   );
 };
 

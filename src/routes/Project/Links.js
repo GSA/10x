@@ -14,7 +14,7 @@ const Links = ({ data }) => {
             return (
               <li className="TxLinks__item">
                 <Button variant="link" url={item.link}>
-                  {item.text}{" "}
+                  {item.text}
                   <Icon className="margin-left-1" icon="external-link-alt" />
                 </Button>
               </li>
@@ -27,7 +27,7 @@ const Links = ({ data }) => {
 };
 
 Links.defaultProps = {
-  data: {},
+  data: [],
 };
 
 Links.propTypes = {

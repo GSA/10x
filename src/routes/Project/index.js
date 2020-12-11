@@ -18,10 +18,11 @@ import Layout from "features/Layout";
 const Project = ({ type }) => {
   const dispatch = useDispatch();
   const { name } = useParams();
-  const page = useSelector((state) => state.content.page);
   useEffect(() => {
     dispatch(getPage({ type, name }));
   }, [dispatch, name, type]);
+
+  const page = useSelector((state) => state.content.page);
   const { pending, data, error } = page;
 
   const { meta = {} } = data;
@@ -39,6 +40,7 @@ const Project = ({ type }) => {
     );
   }
   if (error) {
+    console.log("Loads error because store returned error");
     return <FourOhFour pathname={name} />;
   }
 

@@ -4,7 +4,6 @@ import {
   RouteTransition as Route,
 } from "./AnimatedRoutes";
 import Default from "./Default";
-import FourOhFour from "./FourOhFour";
 import Page from "./Page";
 import Project from "./Project";
 
@@ -18,9 +17,6 @@ export default ({ location }) => (
     </Route>
     <Route key="page" path="/:name">
       <Page />
-    </Route>
-    <Route key="404" path="/">
-      <FourOhFour />
     </Route>
   </Switch>
 );
