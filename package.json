@@ -72,7 +72,8 @@
       "!src/app/index.js",
       "!src/**/context.js",
       "!src/test/**/*.js",
-      "!src/routes/index.js"
+      "!src/routes/index.js",
+      "!src/routes/AnimatedRoutes/index.js"
     ],
     "coverageThreshold": {
       "global": {

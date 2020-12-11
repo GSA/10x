@@ -1,51 +1,48 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid, Row, Col } from "components/Grid";
 import GSAFooter from "./GSAFooter";
 import Button from "components/Button";
 import Icon from "components/Icon";
+import { useDispatch, useSelector } from "react-redux";
+import Mdx from "features/Mdx";
+import { getMenuList } from "app/MenuModule";
 
 const Footer = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getMenuList({}));
+  }, [dispatch]);
+  const { page: { meta = {} } = {}, footers } = useSelector(
+    ({ content, settings }) => ({
+      page: content.page.data,
+      footers: settings.footers,
+    })
+  );
+
+  const data = footers.find(({ slug = "default" }) => slug === meta.footer);
+
   return (
     <footer className="usa-footer">
-      <Grid>
-        <Row>
-          <Col size="12" tablet="9">
-            <Button variant="link" url="https://code.gov" external>
-              Code.gov
-            </Button>
-            {", "}
-            <Button variant="link" url="https://login.gov" external>
-              Login.gov
-            </Button>
-            {", "}
-            <Button variant="link" url="https://Pra.digital.gov" external>
-              Pra.digital.gov
-            </Button>
-            {", "}
-            <Button variant="link" url="https://federalistapp.18f.gov" external>
-              Federalist
-            </Button>
-            {", and the "}
-            <Button
-              variant="link"
-              url="https://designsystem.digital.gov/"
-              external
-            >
-              U.S. Web Design Standards
-            </Button>
-            {" all started as ideas submitted to and funded by 10x!"}
-          </Col>
-          <Col
-            size="12"
-            tablet="3"
-            className="text-right padding-top-4 desktop:padding-top-0"
-          >
-            <Button url="/projects" color="primary-lighter">
-              VIEW PROJECTS
-            </Button>
-          </Col>
-        </Row>
-      </Grid>
+      <div>
+        <Grid className="u-margin-x-2">
+          {data && (
+            <Row className="flex-align-center">
+              <Col size="12" tablet="9" className="usa-footer__preFooter">
+                <Mdx>{data.body}</Mdx>
+              </Col>
+              <Col
+                size="12"
+                tablet="3"
+                className="text-right padding-top-4 desktop:padding-top-0"
+              >
+                <Button url={data.button.link} color="primary-lighter">
+                  {data.button.text}
+                </Button>
+              </Col>
+            </Row>
+          )}
+        </Grid>
+      </div>
       <div className="usa-footer__primary">
         <Grid className="usa-footer__primary-content">
           <Row className="padding-y-8">
@@ -53,27 +50,68 @@ const Footer = () => {
               <GSAFooter />
             </Col>
           </Row>
-          <Row className="usa-footer__links">
-            <Button variant="link" external url="https://10x.gsa.gov">
-              {"View No FEAR Act"}
-            </Button>
-            <Button variant="link" url="/privacy-policy">
-              Privacy Policy
-            </Button>
-            <div>
-              {"Built with the "}
+          <Row className="usa-footer__links" gap="4">
+            <Col size="12" tablet="3">
+              <Button url="/" variant="link">
+                {
+                  "Report fraud, waste, or abuse to the Office of the Inspector General"
+                }
+              </Button>
+            </Col>
+            <Col size="12" tablet="3">
+              <Button url="/" variant="link">
+                {"Submit a Freedom of Information Act (FOIA), request"}
+              </Button>
+            </Col>
+            <Col size="12" tablet="3">
+              <Button url="/" variant="link">
+                {"View budget and performance reports"}
+              </Button>
+            </Col>
+            <Col size="12" tablet="3">
               <Button
                 variant="link"
+                className="display-block u-margin-bottom-1"
                 external
-                url="https://designsystem.digital.gov/"
+                url="https://10x.gsa.gov"
               >
-                U.S. Web Design System
+                {"View accessibility statement"}
               </Button>
-            </div>
-            <Button variant="link" external url="mailto:10x@gsa.gov">
-              <Icon icon="envelope" className="margin-right-1" />
-              {"Email Us"}
-            </Button>
+              <Button
+                variant="link"
+                className="display-block u-margin-bottom-1"
+                external
+                url="https://10x.gsa.gov"
+              >
+                {"View No FEAR Act"}
+              </Button>
+              <Button
+                variant="link"
+                className="display-block u-margin-bottom-1"
+                url="/privacy-policy"
+              >
+                {"Privacy Policy"}
+              </Button>
+            </Col>
+            <Col size="12" desktop="9">
+              <div className="display-inline-block u-margin-left-1">
+                {"Looking for U.S. government information and services?  "}
+              </div>
+              <Button variant="link" url="https://usa.gov">
+                Visit USA.gov
+              </Button>
+            </Col>
+            <Col size="12" desktop="3">
+              <Button
+                variant="link"
+                className="display-block u-margin-bottom-1"
+                external
+                url="mailto:10x@gsa.gov"
+              >
+                <Icon icon="envelope" className="margin-right-1" />
+                {"Email Us"}
+              </Button>
+            </Col>
           </Row>
         </Grid>
       </div>

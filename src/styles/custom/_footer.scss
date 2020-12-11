@@ -3,13 +3,16 @@ $bgImgDir: "~styles/images";
 .usa-footer {
   @include u-bg("base");
   @include u-color("white");
-  @include u-font("serif", "xs");
+  @include u-font-family("sans");
   font-weight: 300;
 
-  .usa-button--unstyled {
-    @include u-color("primary-lighter");
-    &:visited {
+  &__preFooter {
+    .usa-button--unstyled,
+    a {
       @include u-color("primary-lighter");
+      &:visited {
+        @include u-color("primary-lighter");
+      }
     }
   }
   &__primary {

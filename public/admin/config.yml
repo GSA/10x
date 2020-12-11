@@ -18,41 +18,20 @@ types:
     name: "body"
     widget: "markdown"
 
-  title: &title
-    label: Title
-    name: title
-    widget: string
-
-  level: &level
-    label: Level
-    name: level
-    widget: select
-    options: ["1", "2", "3", "4", "5"]
-
-  preFooter: &preFooter
-    label: Pre-Footer
-    name: footer
-    widget: relation
-    collection: "footers"
-    search_fields: ["slug"]
-    value_field: "slug"
-    display_fields: ["slug"]
-
-  headline: &headline
-    label: "Headline"
-    name: "subtitle"
-    widget: "string"
+  button: &button
+    label: Button
+    name: button
+    widget: "object"
     required: false
-
-  text: &text
-    label: "Text"
-    name: "text"
-    widget: text
-
-  link: &link
-    label: "Link"
-    name: "link"
-    widget: string
+    fields:
+      - label: "Text"
+        name: "text"
+        widget: text
+        required: false
+      - label: "Link"
+        name: "link"
+        widget: string
+        required: false
 
   classname: &classname
     label: Classname
@@ -66,6 +45,32 @@ types:
     widget: boolean
     required: false
 
+  headline: &headline
+    label: "Headline"
+    name: "subtitle"
+    widget: "string"
+    required: false
+
+  level: &level
+    label: Level
+    name: level
+    widget: select
+    options: ["1", "2", "3", "4", "5"]
+
+  link: &link
+    label: "Link"
+    name: "link"
+    widget: string
+
+  preFooter: &preFooter
+    label: Pre-Footer
+    name: footer
+    widget: relation
+    collection: "footers"
+    search_fields: ["slug"]
+    value_field: "slug"
+    display_fields: ["slug"]
+
   slug: &slug
     widget: string
     name: "slug"
@@ -78,16 +83,15 @@ types:
       ]
     hint: "The project URL (do not include folder or file extension)"
 
-  button: &button
-    label: Button
-    name: button
-    widget: "object"
-    required: false
-    fields:
-      - <<: *text
-        required: false
-      - <<: *link
-        required: false
+  text: &text
+    label: "Text"
+    name: "text"
+    widget: text
+
+  title: &title
+    label: Title
+    name: title
+    widget: string
 
 #########################
 modules:
@@ -575,5 +579,5 @@ collections:
       preview: false
     fields:
       - <<: *slug
-      - <<: *text
+      - <<: *body
       - <<: *button

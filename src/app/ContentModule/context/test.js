@@ -114,6 +114,7 @@ export const getContentTypeByName = async (props) => {
   if (props.type === "project") {
     return projectData[0];
   }
+  console.log("TEST");
   return testData[0];
 };
 

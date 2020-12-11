@@ -1,5 +1,5 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import classnames from "classnames";
 import Header from "./Header";
 import Logo from "components/Logo";
@@ -7,8 +7,15 @@ import Footer from "./Footer";
 import useOnPathChange from "utils/useOnPathChange";
 import registerAnalytics from "utils/registerAnalytics";
 import { useLocation } from "react-router-dom";
+import { getMenuList } from "app/MenuModule";
+import { getFooterList } from "app/SettingsModule";
 
 const Primary = ({ children }) => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getMenuList({}));
+    dispatch(getFooterList({}));
+  }, [dispatch]);
   useOnPathChange(() => {
     /* istanbul ignore next */
     registerAnalytics();
