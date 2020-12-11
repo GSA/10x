@@ -1,6 +1,4 @@
 {
-  "title": "10x.gsa.gov",
-  "description": "Test site description",
   "404": {
     "sections": [
       {
@@ -11,7 +9,7 @@
       {
         "type": "markdown",
         "body": "> An inventory fails 999 times, and if he succeeds once, he's in. He treats his failures simply as practice shots. *- Charles F. Kettering*",
-        "className": "404__quote"
+        "className": "FourOhFour__quote"
       },
       {
         "type": "markdown",
@@ -19,6 +17,8 @@
       }
     ]
   },
+  "title": "10x.gsa.gov",
+  "description": "Test site description",
   "customFields": [
     {
       "key": "test1",
