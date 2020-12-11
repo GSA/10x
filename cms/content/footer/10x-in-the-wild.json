@@ -1,8 +1,9 @@
 {
   "slug": "10x-in-the-wild",
-  "text": "10x projects in the wild\nCode.gov<https://code.gov/>, Login.gov<https://login.gov/>, Pra.digital.gov<https://pra.digital.gov/>, Federalist<https://federalist.18f.gov/>, and the U.S. Web Design System<https://designsystem.digital.gov/> all started as ideas submitted to and funded by 10x! \n",
+  "text": "\n",
   "button": {
     "text": "VIEW PROJECTS",
     "link": "https://10x.gsa.gov/projects"
-  }
+  },
+  "body": "10x projects in the wild\n[Code.gov](https://code.gov), [Login.gov](https://login.gov/), [Pra.digital.gov](https://pra.digital.gov), [Federalist](https://federalist.18f.gov), and the [U.S. Web Design System](https://designsystem.digital.gov) all started as ideas submitted to and funded by 10x!"
 }
