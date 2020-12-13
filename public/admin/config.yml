@@ -173,6 +173,29 @@ modules:
         required: false
         options: [0, "wide"]
 
+  modCards: &modCards
+    label: Cards
+    name: cards
+    widget: "object"
+    fields:
+      - <<: *classname
+      - <<: *fullwidth
+      - <<: *title
+        required: false
+      - <<: *text
+        required: false
+      - label: "Columns"
+        name: columns
+        widget: select
+        options: ["1", "2", "3", "4"]
+        required: false
+      - label: Items
+        name: items
+        widget: list
+        summary: "Card"
+        fields:
+          - <<: *body
+
   modLinks: &modLinks
     label: Links
     name: links
@@ -217,24 +240,6 @@ modules:
             required: false
           - <<: *text
             required: false
-
-  modCards: &modCards
-    label: Cards
-    name: cards
-    widget: "object"
-    fields:
-      - <<: *classname
-      - <<: *fullwidth
-      - <<: *title
-        required: false
-      - <<: *text
-        required: false
-      - label: Items
-        name: items
-        widget: list
-        summary: "Card"
-        fields:
-          - <<: *body
 
   modProjects: &modProjects
     label: Projects

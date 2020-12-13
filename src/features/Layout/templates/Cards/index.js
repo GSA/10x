@@ -5,7 +5,13 @@ import { Col, Row } from "components/Grid";
 import Card from "components/Card";
 import Mdx from "features/Mdx";
 
-const Cards = ({ title, text, items, className }) => {
+const Cards = ({ title, text, items, className, columns }) => {
+  const columnSize = {
+    1: "12",
+    2: "6",
+    3: "4",
+    4: "3",
+  };
   return (
     <div
       className={classnames({
@@ -19,7 +25,7 @@ const Cards = ({ title, text, items, className }) => {
       <Row>
         {items.map(({ body }, i) => {
           return (
-            <Col key={`txCards-${i}`} size="12" desktop="6">
+            <Col key={`txCards-${i}`} size="12" desktop={columnSize[columns]}>
               <Card>
                 <Mdx>{body}</Mdx>
               </Card>
@@ -32,6 +38,7 @@ const Cards = ({ title, text, items, className }) => {
 };
 
 Cards.defaultProps = {
+  columns: "2",
   items: [],
 };
 
