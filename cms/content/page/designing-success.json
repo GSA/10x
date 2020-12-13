@@ -26,7 +26,8 @@
           "text": "",
           "body": "#### Diversity, inclusion, and accessibility \n"
         }
-      ]
+      ],
+      "variant": "number"
     },
     {
       "type": "markdown",
