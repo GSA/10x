@@ -12,10 +12,10 @@
       "variant": "check",
       "items": [
         {
-          "body": "\\#### Will improve the public’s experience with government through technology"
+          "body": "#### Will improve the public’s experience with government through technology"
         },
         {
-          "body": "\\#### Will create a new product or service that’s good for government"
+          "body": "#### Will create a new product or service that’s good for government"
         }
       ]
     },
@@ -26,13 +26,13 @@
       "variant": "number",
       "items": [
         {
-          "body": "\\#### Clearly state the problem or opportunity, and keep it simple (under 1,000 characters!). Tech for tech’s sake isn’t what we’re about. Let’s solve a real problem!"
+          "body": "#### Clearly state the problem or opportunity, and keep it simple (under 1,000 characters!). Tech for tech’s sake isn’t what we’re about. Let’s solve a real problem!"
         },
         {
-          "body": "\\#### Explain who the solution benefits. Government employees? Medicare recipients? Wild bird enthusiasts? Be specific."
+          "body": "#### Explain who the solution benefits. Government employees? Medicare recipients? Wild bird enthusiasts? Be specific."
         },
         {
-          "body": "\\#### Outline the benefits. Does it make something faster, more accurate, clearer, easier? Tell us why it matters."
+          "body": "#### Outline the benefits. Does it make something faster, more accurate, clearer, easier? Tell us why it matters."
         }
       ]
     },
