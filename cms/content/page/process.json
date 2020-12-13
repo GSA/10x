@@ -75,7 +75,8 @@
           "body": "> **PHASE 4** Scale\n\n## Evangelize and spread\n\nIn Phase 4, we try to scale what we’re building for as many other use cases and agencies as possible. We want to have the biggest impact possible for as many people as possible, and broadening the project’s reach helps us do just that. "
         }
       ],
-      "variant": "ringer"
+      "variant": "ringer",
+      "columns": "1"
     },
     {
       "type": "cards",
