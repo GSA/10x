@@ -55,9 +55,14 @@
       );
 
       @include at-media("desktop") {
-        @include u-margin-bottom(2);
+        margin: -3rem -3rem 0 1rem;
+        padding: 7rem 6rem 3rem;
+        background-image: url("~styles/images/phases-background.png");
+        background-size: 100% 100%;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
       }
-
       &:before,
       &:after {
         position: absolute;
@@ -86,16 +91,6 @@
         bottom: -75px;
         left: 0;
         background-image: url("~styles/images/phases-mobile-background-bottom.png");
-        background-size: 100% 100%;
-        background-position-x: center;
-        background-position-y: center;
-        background-repeat: no-repeat;
-      }
-
-      @include at-media("desktop") {
-        margin: -3rem -3rem 0;
-        padding: 7rem 6rem 3rem;
-        background-image: url("~styles/images/phases-background.png");
         background-size: 100% 100%;
         background-position-x: center;
         background-position-y: center;
@@ -147,50 +142,39 @@
         }
 
         &:nth-child(1) {
-          ul {
+          h3,
+          blockquote {
             background-image: url("~styles/images/sky-phase-circle.png");
-            li {
-              @include u-color("accent-cool");
-              &:nth-child(1) {
-                @include u-color("white");
-              }
-            }
+            @include u-color("accent-cool");
           }
         }
         &:nth-child(2) {
-          ul {
+          h3,
+          blockquote {
             background-image: url("~styles/images/lilac-phase-circle.png");
-            li {
-              @include u-color("primary-light");
-              &:nth-child(1) {
-                @include u-color("white");
-              }
-            }
+            @include u-color("primary-light");
           }
         }
         &:nth-child(3) {
-          ul {
+          h3,
+          blockquote {
             background-image: url("~styles/images/ocean-phase-circle.png");
-            li {
-              @include u-color("base-lighter");
-              &:nth-child(1) {
-                @include u-color("white");
-              }
-            }
+            @include u-color("base-lighter");
           }
         }
         &:nth-child(4) {
-          margin-right: 0;
-          ul {
+          h3,
+          blockquote {
             background-image: url("~styles/images/tiger-phase-circle.png");
+            @include u-color("accent-warm");
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+          h3,
+          blockquote {
             &:after {
               display: none;
-            }
-            li {
-              @include u-color("accent-warm");
-              &:nth-child(1) {
-                @include u-color("white");
-              }
             }
           }
         }
@@ -200,13 +184,14 @@
       display: none;
     }
 
-    ul {
+    h3,
+    blockquote {
       position: relative;
       list-style: none;
       margin: 0;
       @include u-padding(10);
       text-align: center;
-      @include u-font-family("serif");
+      @include u-font("serif", "lg");
       background-size: contain;
       background-position-x: center;
       background-position-y: center;
@@ -214,8 +199,9 @@
 
       @include at-media("desktop") {
         @include u-padding-y(6);
-        @include u-padding-x(3);
+        @include u-padding-x(2);
       }
+
       &:after {
         display: none;
         @include at-media("desktop") {
@@ -234,31 +220,21 @@
           background-image: url("~styles/images/ring-separater.png");
         }
       }
-      li {
-        @include u-padding-x(4);
-        @include at-media("desktop") {
-          @include u-padding-x(0);
-        }
-        &:nth-child(1) {
-          text-transform: uppercase;
-          @include u-color("white");
-          @include u-font("serif", "md");
 
-          @include at-media("desktop") {
-            @include u-font("serif", "sm");
-          }
+      strong {
+        display: block;
+        text-transform: uppercase;
+        @include u-color("white");
+        @include u-font("serif", "md");
+
+        @include at-media("desktop") {
+          @include u-font("serif", "sm");
         }
-        &:nth-child(2) {
-          @include u-font("serif", "lg");
-          @include u-padding-x(8);
-          @include at-media("desktop") {
-            @include u-padding-x(0);
-          }
-        }
-        &:nth-child(3) {
-          @include u-font("serif", "lg");
-          line-height: 1;
-        }
+      }
+      em {
+        display: block;
+        @include u-font("serif", "lg");
+        line-height: 1;
       }
     }
   }
