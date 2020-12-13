@@ -76,7 +76,8 @@
         }
       ],
       "variant": "ringer",
-      "columns": "1"
+      "columns": "1",
+      "className": "TxRingCards"
     },
     {
       "type": "cards",
