@@ -43,7 +43,8 @@
           "body": "- Scale\n- Will everyone use this?\n- $$$$\n\nTeams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. "
         }
       ],
-      "className": "TxRinger"
+      "className": "",
+      "variant": "ringer"
     },
     {
       "type": "break",
