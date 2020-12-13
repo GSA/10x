@@ -72,8 +72,8 @@ const Project = ({ type }) => {
             <Col size="12" desktop="4">
               <Card className="TxProject__summary" title="In a nutshell">
                 <ul>
-                  {meta.summary.map((item) => (
-                    <li>
+                  {meta.summary.map((item, i) => (
+                    <li key={`summary-${i}`}>
                       <Icon
                         icon="check-circle"
                         className="text-accent-cool margin-right-1"

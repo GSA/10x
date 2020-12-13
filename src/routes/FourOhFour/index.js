@@ -38,7 +38,6 @@ const FourOhFour = ({ search }) => {
       </Grid>
     );
   }
-  console.log(data);
   return (
     <div className={`TxContent Tx__FourOhFour`}>
       <Head title={"404"} />

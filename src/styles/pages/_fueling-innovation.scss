@@ -1,0 +1,49 @@
+.Tx__fueling-innovation {
+  .TxCallout {
+    margin-top: -3rem;
+    padding-top: 3rem;
+
+    margin-right: -2rem;
+    padding-right: 2rem;
+
+    padding-bottom: 2rem;
+    margin-bottom: -2rem;
+
+    margin-left: -3rem;
+    padding-left: 3rem;
+
+    @include fullWidthBg("fueling-innovation-callout-bg.png");
+  }
+  .TxCards {
+    .grid-row > div {
+      .usa-card__container {
+        margin-top: -1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: -1rem;
+        background-color: transparent;
+        box-shadow: none;
+      }
+      &:nth-child(1) {
+        .usa-card__container {
+          @include fullWidthBg("featured-bg-1.png");
+        }
+      }
+      &:nth-child(2) {
+        .usa-card__container {
+          @include fullWidthBg("featured-bg-2.png");
+        }
+      }
+      &:nth-child(3) {
+        .usa-card__container {
+          @include fullWidthBg("featured-bg-3.png");
+        }
+      }
+      &:nth-child(4) {
+        .usa-card__container {
+          @include fullWidthBg("featured-bg-4.png");
+        }
+      }
+    }
+  }
+}

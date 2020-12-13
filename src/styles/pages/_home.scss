@@ -111,6 +111,10 @@ $bgImgDir: "~styles/images";
         @include u-padding-bottom(4);
         .usa-card__container {
           @include u-padding-y(4);
+          background-size: contain;
+          background-position-x: right;
+          background-position-y: top;
+          background-repeat: no-repeat;
         }
       }
       > .grid-row > div {

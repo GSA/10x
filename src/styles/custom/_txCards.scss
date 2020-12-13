@@ -1,4 +1,4 @@
-.TxContent__cards {
+.TxCards {
   .grid-row {
     @include u-margin-x(-2);
   }
@@ -10,11 +10,6 @@
       @include u-margin-x(2);
       border: none;
       box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
-
-      background-size: contain;
-      background-position-x: right;
-      background-position-y: top;
-      background-repeat: no-repeat;
 
       .usa-card__body {
         @include u-font("serif", 8);

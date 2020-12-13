@@ -9,7 +9,7 @@ const Cards = ({ title, text, items, className }) => {
   return (
     <div
       className={classnames({
-        TxContent__cards: true,
+        TxCards: true,
         [className]: Boolean(className),
       })}
     >

@@ -9,7 +9,7 @@ const Callout = ({ className, title, subtitle, text, items, button }) => {
   return (
     <div
       className={classnames({
-        TxContent__callout: true,
+        TxCallout: true,
         [className]: Boolean(className),
       })}
     >

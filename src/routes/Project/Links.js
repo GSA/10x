@@ -10,9 +10,9 @@ const Links = ({ data }) => {
       <div className="TxLinks">
         <h3>Learn More</h3>
         <ul>
-          {data.map((item) => {
+          {data.map((item, i) => {
             return (
-              <li className="TxLinks__item">
+              <li key={`TxLinks__item-${i}`} className="TxLinks__item">
                 <Button variant="link" url={item.link}>
                   {item.text}
                   <Icon className="margin-left-1" icon="external-link-alt" />
