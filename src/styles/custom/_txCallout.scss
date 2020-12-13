@@ -1,19 +1,43 @@
 .TxCallout {
+  counter-reset: callout;
+  &__items {
+    padding-top: 8px;
+  }
   &__icon {
     &:after {
       color: white;
       display: inline-block;
-      @include u-margin-left("2px");
-      @include u-margin-right(2);
-      @include u-padding-top(1);
-      @include u-padding-bottom(2);
-      @include u-padding-x(1.5);
-      background-image: url("~styles/images/callout-icon-bg.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center center;
-      content: "\f00c";
-      font-family: "Font Awesome 5 Free Solid";
+    }
+    &--check {
+      &:after {
+        @include u-margin-left("2px");
+        @include u-margin-right(2);
+        @include u-padding-top(1);
+        @include u-padding-bottom(2);
+        @include u-padding-x(1.5);
+        @include fullWidthBg("callout-icon-bg.png");
+        font-family: "Font Awesome 5 Free Solid";
+        content: "\f00c";
+      }
+    }
+    &--number {
+      &:after {
+        width: 2.75rem;
+        height: 2.75rem;
+        line-height: 140%;
+        @include u-margin-right(1);
+        text-align: center;
+        border-radius: 100%;
+        @include u-bg("primary-dark");
+        counter-increment: callout;
+        content: counter(callout);
+
+        @include u-font("serif", "lg");
+
+        @include at-media("desktop") {
+          margin-top: -8px;
+        }
+      }
     }
   }
 }

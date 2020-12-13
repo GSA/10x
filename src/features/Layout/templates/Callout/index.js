@@ -5,7 +5,15 @@ import { Col, Row } from "components/Grid";
 import Button from "components/Button";
 import Mdx from "features/Mdx";
 
-const Callout = ({ className, title, subtitle, text, items, button }) => {
+const Callout = ({
+  className,
+  title,
+  subtitle,
+  text,
+  items,
+  button,
+  variant,
+}) => {
   return (
     <div
       className={classnames({
@@ -17,11 +25,16 @@ const Callout = ({ className, title, subtitle, text, items, button }) => {
       {text && <div className="margin-bottom-4">{text}</div>}
       {subtitle && <h3>{subtitle}</h3>}
       {items && (
-        <Row>
+        <Row className="TxCallout__items">
           {items.map((item, i) => (
             <Col key={`txCallout-${i}`} size="12" desktop="auto">
               <div className="display-flex margin-right-2">
-                <div className="TxCallout__icon" />
+                <div
+                  className={classnames({
+                    TxCallout__icon: true,
+                    [`TxCallout__icon--${variant}`]: variant,
+                  })}
+                />
                 <div>
                   <Mdx>{item.body}</Mdx>
                 </div>
@@ -44,6 +57,7 @@ const Callout = ({ className, title, subtitle, text, items, button }) => {
 Callout.defaultProps = {
   button: {},
   items: [],
+  variant: "check",
 };
 
 Callout.propTypes = {
@@ -53,6 +67,7 @@ Callout.propTypes = {
   text: PropTypes.node,
   button: PropTypes.object,
   items: PropTypes.array,
+  variant: PropTypes.oneOf(["check", "none", "number"]),
 };
 
 export default Callout;

@@ -134,11 +134,17 @@ modules:
       - <<: *text
         required: false
       - <<: *button
+      - label: variant
+        name: variant
+        widget: select
+        options: ["none", "check", "number"]
+        hint: Default displays check
       - label: Items
         name: items
         widget: list
         summary: "Item"
         fields:
+          - <<: *classname
           - <<: *body
             required: false
 

@@ -22,7 +22,8 @@ blockquote {
 }
 
 p {
-  @include u-margin-bottom(2);
+  margin-top: 0;
+  @include u-margin-bottom(3);
   max-width: 100%;
 }
 
@@ -108,8 +109,8 @@ h5 {
     background: linear-gradient(
       180deg,
       #d8d8d8 8.7%,
-      rgba(208, 226, 231, 0.672254) 35.58%,
-      rgba(120, 227, 251, 0.05) 87.96%
+      rgba(255, 104, 57, 0.25) 58.64%,
+      rgba(255, 104, 57, 0.05) 87.96%
     );
   }
 }
