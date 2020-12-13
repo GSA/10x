@@ -17,7 +17,8 @@
         {
           "body": "#### Will create a new product or service that’s good for government"
         }
-      ]
+      ],
+      "className": "margin-bottom-8"
     },
     {
       "type": "callout",
@@ -34,7 +35,8 @@
         {
           "body": "#### Outline the benefits. Does it make something faster, more accurate, clearer, easier? Tell us why it matters."
         }
-      ]
+      ],
+      "className": "margin-bottom-4"
     },
     {
       "type": "markdown",
