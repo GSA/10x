@@ -137,7 +137,7 @@ modules:
       - label: variant
         name: variant
         widget: select
-        options: ["none", "check", "number"]
+        options: ["none", "check", "number", "ringer"]
         hint: Default displays check
       - label: Items
         name: items

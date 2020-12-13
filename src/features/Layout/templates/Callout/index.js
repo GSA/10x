@@ -18,6 +18,7 @@ const Callout = ({
     <div
       className={classnames({
         TxCallout: true,
+        [`TxCallout__${variant}`]: variant,
         [className]: Boolean(className),
       })}
     >
@@ -67,7 +68,7 @@ Callout.propTypes = {
   text: PropTypes.node,
   button: PropTypes.object,
   items: PropTypes.array,
-  variant: PropTypes.oneOf(["check", "none", "number"]),
+  variant: PropTypes.oneOf(["check", "none", "number", "ringer"]),
 };
 
 export default Callout;
