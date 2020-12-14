@@ -1,25 +1,7 @@
 {
   "title": "Test Page",
   "slug": "test",
-  "sections": [
-    {
-      "type": "grid",
-      "className": "testClass",
-      "columns": [
-        {
-          "size": "11",
-          "desktop": "6",
-          "sections": [
-            {
-              "type": "markdown",
-              "className": "testClass2",
-              "body": "# Test"
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "sections": [],
   "meta": {
     "footer": "default"
   }
