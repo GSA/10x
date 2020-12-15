@@ -49,7 +49,8 @@
           "text": "A similar solution is already in development"
         }
       ],
-      "className": ""
+      "className": "",
+      "columns": "1"
     },
     {
       "type": "markdown",
