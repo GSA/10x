@@ -62,10 +62,31 @@
     @include u-margin-top(2);
     @include u-margin-bottom(4);
     text-align: left;
-    width: 100%;
+    align-self: flex-start;
 
+    .usa-search {
+      width: auto;
+      @include u-margin-bottom(4);
+      .usa-input {
+        @include u-color("base-light");
+        border: 1px solid #{color("base-light")};
+        @include u-bg("base-dark");
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        max-width: 100%;
+      }
+      .usa-button {
+        background-image: none;
+        width: auto;
+        min-width: 2rem;
+        @include u-color("ink");
+      }
+    }
     .usa-button {
       width: 100%;
+      height: 2rem;
+      @include u-padding-y(1);
+      @include u-font("serif", 4);
     }
   }
 }
@@ -79,7 +100,7 @@
     float: none;
     text-align: left;
     padding: 0;
-    @include u-padding-left(6);
+
     button {
       @include u-color("white");
       &:hover {
@@ -89,17 +110,34 @@
     }
 
     .usa-nav__footer {
+      display: flex;
+      align-self: center;
+      align-items: center;
       width: auto;
       margin: 0;
       text-align: right;
+      .usa-search {
+        margin: 0;
+        @include u-margin-right(4);
+
+        .usa-button {
+          min-width: auto;
+        }
+      }
+
+      .usa-button {
+        width: auto;
+
+        @include u-font("serif", 3);
+      }
     }
     .usa-nav__primary {
       .usa-nav__url {
         position: relative;
         margin: 0;
-        @include u-padding(4);
+        padding: 1rem;
         @include u-color("white");
-        @include u-font("serif", "2xs");
+        @include u-font("serif", 3);
         height: 100%;
         &.usa-accordion__button {
           background: none;
@@ -163,7 +201,22 @@
     }
   }
 }
-
+@include at-media("desktop-lg") {
+  .usa-nav {
+    .usa-nav__footer {
+      .usa-button {
+        width: auto;
+        @include u-font("serif", 7);
+      }
+    }
+    .usa-nav__primary {
+      .usa-nav__url {
+        padding: 1.25rem;
+        @include u-font("serif", 7);
+      }
+    }
+  }
+}
 .usa-nav-open,
 .usa-nav-close {
   display: inline-block;

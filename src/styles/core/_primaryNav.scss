@@ -5,7 +5,7 @@
   justify-content: space-between;
   float: none;
   text-align: left;
-  @include u-padding-left(6);
+  padding-left: 0;
 
   &.is-visible {
     display: flex;

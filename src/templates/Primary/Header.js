@@ -9,6 +9,7 @@ import PrimaryNav from "components/PrimaryNav";
 import { useDispatch, useSelector } from "react-redux";
 import { getMenuList } from "app/MenuModule";
 import useOnPathChange from "utils/useOnPathChange";
+import Icon from "components/Icon";
 
 const Header = ({ logo, className }) => {
   const history = useHistory();
@@ -84,9 +85,28 @@ const Header = ({ logo, className }) => {
                     </>
                   )}
                   footer={
-                    <Button color="primary-lighter" url="/">
-                      SUBMIT AN IDEA
-                    </Button>
+                    <>
+                      <form class="usa-search usa-search--small" role="search">
+                        <label class="usa-sr-only" for="search-field-small">
+                          Search
+                        </label>
+                        <input
+                          class="usa-input"
+                          id="search-field-small"
+                          type="search"
+                          name="search"
+                        />
+                        <button
+                          class="usa-button usa-button--primary-lighter"
+                          type="submit"
+                        >
+                          <Icon icon="search" />
+                        </button>
+                      </form>
+                      <Button color="primary-lighter" url="/">
+                        SUBMIT AN IDEA
+                      </Button>
+                    </>
                   }
                   open=""
                   close=""
