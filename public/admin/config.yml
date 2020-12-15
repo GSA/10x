@@ -528,6 +528,7 @@ collections:
           - label: "Template"
             name: "template"
             widget: "select"
+            required: false
             options:
               - label: "1"
                 value: "1"
@@ -542,6 +543,7 @@ collections:
               - label: "6"
                 value: "6"
           - <<: *preFooter
+            required: false
           - label: "Phase"
             name: "phaseData"
             widget: "object"
@@ -552,9 +554,11 @@ collections:
                 name: "phase"
                 widget: "select"
                 options: ["1", "2", "3", "4"]
+                required: false
               - label: "Status"
                 name: "status"
                 widget: "select"
+                required: false
                 options:
                   [
                     { label: "In Progress", value: "1" },
@@ -597,7 +601,9 @@ collections:
             required: false
             fields:
               - <<: *text
+                required: false
               - <<: *link
+                required: false
 
   - name: footers
     extension: json
