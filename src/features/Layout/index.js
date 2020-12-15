@@ -4,6 +4,7 @@ import { Grid } from "components/Grid";
 import Break from "components/Break";
 import Callout from "./templates/Callout";
 import Cards from "./templates/Cards";
+import GridModule from "./templates/Grid";
 import Links from "./templates/Links";
 import List from "./templates/List";
 import Mdx from "features/Mdx";
@@ -14,6 +15,7 @@ const components = {
   break: Break,
   callout: Callout,
   cards: Cards,
+  grid: GridModule,
   links: Links,
   list: List,
   markdown: ({ body, className }) => (
@@ -28,6 +30,9 @@ const components = {
 const Layout = ({ items, data }) => {
   return items.map(({ type, fullwidth, ...props }, i) => {
     const Comp = components[type];
+    if (!Comp) {
+      return null;
+    }
     return Comp ? (
       fullwidth ? (
         <Comp key={`txLayout-${++i}`} {...props} data={data} />

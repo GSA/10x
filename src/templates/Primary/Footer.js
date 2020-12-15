@@ -35,9 +35,11 @@ const Footer = () => {
                 tablet="3"
                 className="text-right padding-top-4 desktop:padding-top-0"
               >
-                <Button url={data.button.link} color="primary-lighter">
-                  {data.button.text}
-                </Button>
+                {data.button && (
+                  <Button url={data.button.link} color="primary-lighter">
+                    {data.button.text}
+                  </Button>
+                )}
               </Col>
             </Row>
           )}

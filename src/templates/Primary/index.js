@@ -6,7 +6,6 @@ import Logo from "components/Logo";
 import Footer from "./Footer";
 import useOnPathChange from "utils/useOnPathChange";
 import registerAnalytics from "utils/registerAnalytics";
-import { useLocation } from "react-router-dom";
 import { getMenuList } from "app/MenuModule";
 import { getFooterList, getSettings } from "app/SettingsModule";
 
@@ -22,18 +21,15 @@ const Primary = ({ children }) => {
     registerAnalytics();
   });
 
-  const { pathname } = useLocation();
-
   const page = useSelector((state) => state.content.page);
   /* istanbul ignore next */
-  const { meta = {} } = page.data;
-
+  const { meta = {}, type } = page.data;
+  const theme = type === "project" ? "5" : meta.theme;
   return (
     <div
       className={classnames({
         "usa-app": true,
-        "usa-app__theme-projects": pathname.includes("projects"),
-        [`usa-app__theme-${meta.theme}`]: Boolean(meta.theme),
+        [`usa-app__theme-${theme}`]: Boolean(theme),
       })}
     >
       <div className="usa-app__bg">

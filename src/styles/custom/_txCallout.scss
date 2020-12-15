@@ -55,8 +55,18 @@
       );
 
       @include at-media("desktop") {
-        margin: -3rem -3rem 0 1rem;
-        padding: 7rem 6rem 3rem;
+        margin-top: 0;
+        padding-top: 2rem;
+
+        margin-right: 0;
+        padding-right: 0;
+
+        margin-bottom: 0;
+        padding-bottom: 2rem;
+
+        margin-left: 0;
+        padding-left: 0;
+
         background-image: url("~styles/images/phases-background.png");
         background-size: 100% 100%;
         background-position-x: center;
