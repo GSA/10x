@@ -470,8 +470,10 @@ collections:
       - <<: *title
         label: "Project title"
       - <<: *headline
+        required: false
       - <<: *body
         label: "Introduction"
+        required: false
       - label: "Sections"
         name: "sections"
         widget: "list"
@@ -482,6 +484,7 @@ collections:
           - label: "Modules"
             name: "modules"
             widget: list
+            required: false
             types:
               - <<: *modBreak
               - <<: *modCallout
@@ -515,10 +518,12 @@ collections:
       - label: "Meta Data"
         name: "meta"
         widget: "object"
+        required: false
         fields:
           - label: "Type"
             name: "projectType"
             widget: "select"
+            required: false
             options: ["Innovation", "Transformation", "Enhancement"]
           - label: "Template"
             name: "template"
@@ -541,6 +546,7 @@ collections:
             name: "phaseData"
             widget: "object"
             collapsed: true
+            required: false
             fields:
               - label: "Phase"
                 name: "phase"
