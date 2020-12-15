@@ -2,10 +2,13 @@
  * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@import "variables";
+@import "faVariables.scss";
+
+$fa-fas: "Font Awesome 5 Free Solid";
+$fa-far: "Font Awesome 5 Free Regular";
 
 @font-face {
-  font-family: "Font Awesome 5 Free Regular";
+  font-family: $fa-far;
   font-style: normal;
   font-weight: 400;
   font-display: $fa-font-display;
@@ -19,7 +22,7 @@
 }
 
 @font-face {
-  font-family: "Font Awesome 5 Free Solid";
+  font-family: $fa-fas;
   font-style: normal;
   font-weight: 900;
   font-display: $fa-font-display;

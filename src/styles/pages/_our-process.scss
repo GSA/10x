@@ -1,0 +1,67 @@
+.TxFunnel {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include u-padding-y(8);
+    @include fullWidthBg("funnel-mobile-bg.png");
+    @include at-media("desktop") {
+      @include fullWidthBg("funnel-bg.png");
+    }
+
+    li {
+      position: relative;
+      display: block;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+      @include u-margin-bottom(10);
+      @include u-font("serif", 10);
+      text-align: center;
+      /*
+      &:before {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-25%);
+        display: inline-block;
+        content: "\f078";
+        font-family: $fa-fas;
+      }*/
+      &:after {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-1px);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        content: "\f078";
+        font-family: "Font Awesome 5 Free Solid";
+        width: 1px;
+        height: 4.5rem;
+        text-align: center;
+        line-height: 0;
+        overflow: visible;
+        border: 1px dashed #{color("ink")};
+        @include u-color("ink");
+      }
+
+      &:last-child {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        @include u-margin-bottom(4);
+        &:after {
+          display: none;
+        }
+      }
+
+      strong {
+        display: block;
+        @include u-font("serif", "3xl");
+        line-height: 1;
+        @include u-margin-bottom(1);
+      }
+    }
+  }
+}
