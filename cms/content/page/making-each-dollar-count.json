@@ -57,7 +57,7 @@
     },
     {
       "type": "cards",
-      "className": "Dollars__cards",
+      "className": "TxBrushCard",
       "title": "A record-setting year for 10x",
       "text": "In FY20, 10x accepted both new ideas and oversaw the continuation of projects that were still ongoing from past fiscal years. ",
       "items": [
