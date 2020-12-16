@@ -97,11 +97,11 @@
         },
         {
           "body": "> ## **PHASE 3** Develop\n\n### Build an MVP\n\nIn Phase 3, the team dedicates even more resources to the project. They may build an MVP (minimum viable product) or a prototype to test how the solution could play out. They outline the roadmap for development, estimate the cost and effort required to sustain the project, and determine which agency or organization will be the steward of the product in the long term.  \n\n10x projects are not owned by 10x or TTS. As part of the process we look for a “home” for each effort  —  somewhere the project will be nurtured and have the best chance of continued success.",
-          "className": ".bg--3"
+          "className": "bg--3"
         },
         {
           "body": "> ## **PHASE 4** Scale\n\n### Evangelize and spread\n\nIn Phase 4, we try to scale what we’re building for as many other use cases and agencies as possible. We want to have the biggest impact possible for as many people as possible, and broadening the project’s reach helps us do just that. ",
-          "className": ".bg--4"
+          "className": "bg--4"
         }
       ],
       "variant": "ringer",
