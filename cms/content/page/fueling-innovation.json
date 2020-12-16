@@ -89,6 +89,11 @@
       ]
     },
     {
+      "type": "break",
+      "color": "accent-warm",
+      "variant": "wide"
+    },
+    {
       "type": "markdown",
       "body": "## The backstory\n\n10x began as a one-time experiment to bring private sector practices to government. What started in 2015 as a one-time-only Shark Tank-ish competition evolved into a monthly mini-pitch competition based on ideas from employees. We then added more structure and rigor to our investment strategy. Taking everything we’d learned thus far, we founded 10x in 2017 and continue to refine and improve the process — for instance, we now use a four-phased approach, while providing project teams with better guidance and support.   \n\nTl; dr — we put our money where our mouths are, applying the 10x process of critical thinking and iterative improvement to ourselves as we continue to learn and change our approach to optimize outcomes.\n\n## Exploring our dark side\n\nWe continue to apply what we’ve learned, focusing not only on the projects themselves, but also on the bigger picture issues that affect the broader tech community — what we call dark matter.\n\nDark matter — a concept shamelessly stolen from our friends at NASA, another federal agency that isn’t afraid to think big and try new things — is a way of looking beyond the product to uncover intriguing nuggets of possibility. We ask the questions in the margins, about how we’re working, why we’re working that way, and to identify opportunities for transformation."
     },
