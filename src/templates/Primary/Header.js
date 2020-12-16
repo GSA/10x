@@ -86,18 +86,24 @@ const Header = ({ logo, className }) => {
                   )}
                   footer={
                     <>
-                      <form class="usa-search usa-search--small" role="search">
-                        <label class="usa-sr-only" for="search-field-small">
+                      <form
+                        className="usa-search usa-search--small"
+                        role="search"
+                      >
+                        <label
+                          className="usa-sr-only"
+                          htmlFor="search-field-small"
+                        >
                           Search
                         </label>
                         <input
-                          class="usa-input"
+                          className="usa-input"
                           id="search-field-small"
                           type="search"
                           name="search"
                         />
                         <button
-                          class="usa-button usa-button--primary-lighter"
+                          className="usa-button usa-button--primary-lighter"
                           type="submit"
                         >
                           <Icon icon="search" />

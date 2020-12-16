@@ -24,4 +24,123 @@
       }
     }
   }
+
+  &.TxRingCards {
+    .usa-card__container {
+      background: transparent;
+      box-shadow: none;
+      margin: 0;
+
+      .usa-card__body {
+        padding: 0;
+      }
+    }
+    h3 {
+      display: inline-block;
+    }
+
+    blockquote {
+      @include u-margin-right(8);
+      float: left;
+      height: 100%;
+      h2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 14rem;
+        height: 14rem;
+        margin: 0;
+
+        @include u-padding-y(10);
+        @include u-padding-x(15);
+        text-align: center;
+        @include u-font("serif", "lg");
+        @include fullWidthBg("phase-circle-smoke.png");
+        background-size: contain;
+        @include u-color("white");
+
+        @include at-media("desktop") {
+          @include u-padding-y(6);
+          @include u-padding-x(4);
+        }
+
+        strong {
+          display: block;
+          text-transform: uppercase;
+          @include u-color("white");
+          @include u-font("serif", "md");
+
+          @include at-media("desktop") {
+            @include u-font("serif", "sm");
+          }
+        }
+        em {
+          display: block;
+          @include u-font("serif", "lg");
+          line-height: 1;
+        }
+      }
+    }
+    [class*="grid-col"] {
+      &.bg--1 {
+        blockquote h2 {
+          background-image: url("~styles/images/phase-circle-sky.png");
+          @include u-color("accent-cool");
+        }
+      }
+      &.bg--2 {
+        blockquote h2 {
+          background-image: url("~styles/images/phase-circle-lilac.png");
+          @include u-color("primary-light");
+        }
+      }
+      &.bg--3 {
+        blockquote h2 {
+          background-image: url("~styles/images/phase-circle-ocean.png");
+          @include u-color("base-lighter");
+        }
+      }
+      &.bg--4 {
+        blockquote h2 {
+          background-image: url("~styles/images/phase-circle-tiger.png");
+          @include u-color("accent-warm");
+        }
+      }
+      &.bg--5 {
+        blockquote h2 {
+          background-image: url("~styles/images/phase-circle-smoke.png");
+          @include u-color("base-light");
+        }
+      }
+    }
+  }
+
+  &.TxBrushCard {
+    .usa-card {
+      .usa-card__container {
+        background: none;
+        box-shadow: none;
+      }
+      &:nth-child(1) {
+        .usa-card__container {
+          @include fullWidthBg("our-story-stat-1-background.png");
+        }
+      }
+      &:nth-child(2) {
+        .usa-card__container {
+          @include fullWidthBg("our-story-stat-2-background.png");
+        }
+      }
+
+      .usa-card__body {
+        @include u-padding(4);
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

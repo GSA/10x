@@ -28,7 +28,12 @@ const Callout = ({
       {items && (
         <Row className="TxCallout__items">
           {items.map((item, i) => (
-            <Col key={`txCallout-${i}`} size="12" desktop="auto">
+            <Col
+              key={`txCallout-${i}`}
+              className={classnames({ [item.className]: item.className })}
+              size="12"
+              desktop="auto"
+            >
               <div className="display-flex margin-right-2">
                 <div
                   className={classnames({

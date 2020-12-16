@@ -194,6 +194,7 @@ modules:
         widget: list
         summary: "Card"
         fields:
+          - <<: *classname
           - <<: *body
 
   modLinks: &modLinks
@@ -231,6 +232,11 @@ modules:
       - <<: *text
         required: false
       - <<: *button
+      - label: Columns
+        name: columns
+        widget: select
+        options: ["1", "2", "3"]
+        required: false
       - label: Items
         name: items
         widget: list

@@ -23,11 +23,16 @@ const Cards = ({ title, text, items, className, columns }) => {
       {text && <div className="margin-bottom-4">{text}</div>}
 
       <Row>
-        {items.map(({ body }, i) => {
+        {items.map((item, i) => {
           return (
-            <Col key={`txCards-${i}`} size="12" desktop={columnSize[columns]}>
+            <Col
+              key={`txCards-${i}`}
+              className={classnames({ [item.className]: item.className })}
+              ize="12"
+              desktop={columnSize[columns]}
+            >
               <Card>
-                <Mdx>{body}</Mdx>
+                <Mdx>{item.body}</Mdx>
               </Card>
             </Col>
           );

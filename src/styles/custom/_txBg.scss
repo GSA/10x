@@ -1,0 +1,12 @@
+.TxBG {
+  &--1 {
+    @include fullWidthBg("pitch-structure-bg.png");
+
+    margin-left: -3rem;
+    padding-left: 3rem;
+    margin-right: -2rem;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+}

@@ -5,11 +5,16 @@ import { Col, Row } from "components/Grid";
 import Button from "components/Button";
 import Icon from "components/Icon";
 
-const List = ({ className, title, subtitle, text, items, button }) => {
+const List = ({ className, title, subtitle, text, items, button, columns }) => {
+  const desktop = {
+    1: "12",
+    2: "6",
+    3: "4",
+  };
   return (
     <div
       className={classnames({
-        TxContent__list: true,
+        TxList: true,
         [className]: Boolean(className),
       })}
     >
@@ -19,7 +24,7 @@ const List = ({ className, title, subtitle, text, items, button }) => {
       {items && (
         <Row gap="6">
           {items.map((item, i) => (
-            <Col key={`txLinks-${i}`} size="12" desktop="6">
+            <Col key={`txLinks-${i}`} size="12" desktop={desktop[columns]}>
               <div className="display-flex margin-bottom-4">
                 <Icon
                   icon="circle"
@@ -49,6 +54,7 @@ const List = ({ className, title, subtitle, text, items, button }) => {
 List.defaultProps = {
   button: {},
   items: [],
+  columns: "2",
 };
 
 List.propTypes = {
@@ -58,6 +64,7 @@ List.propTypes = {
   text: PropTypes.node,
   button: PropTypes.object,
   items: PropTypes.array,
+  columns: PropTypes.oneOf(["1", "2", "3"]),
 };
 
 export default List;
