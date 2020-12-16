@@ -25,22 +25,26 @@
         {
           "title": "Scale",
           "text": "Teams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
-          "body": "### **Investigation** Is this a bad idea? *$*\n\nTeams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities, and reach."
+          "body": "### **Investigation** Is this a bad idea? *$*\n\nTeams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities, and reach.",
+          "className": ".bg--1"
         },
         {
           "title": "Investigation",
           "text": "Teams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities and reach. ",
-          "body": "### **Discovery** Is this a good idea? *$$*\n\nTeams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong."
+          "body": "### **Discovery** Is this a good idea? *$$*\n\nTeams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
+          "className": "bg--2"
         },
         {
           "title": "Discovery",
           "text": "Teams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
-          "body": "### **Development** Will anyone use this? *$$$*\n\nTeams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan."
+          "body": "### **Development** Will anyone use this? *$$$*\n\nTeams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
+          "className": "bg--3"
         },
         {
           "title": "Development",
           "text": "Teams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
-          "body": "### **Scale** Will everyone use this? *$$$$*\n\nTeams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. "
+          "body": "### **Scale** Will everyone use this? *$$$$*\n\nTeams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
+          "className": "bg--4"
         }
       ],
       "className": "",
