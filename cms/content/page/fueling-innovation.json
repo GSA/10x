@@ -25,18 +25,19 @@
       },
       "items": [
         {
-          "body": "### We source differently\n\nAll our projects come from public servants who submit ideas to see if they can move the needle forward to solve a real problem."
+          "body": "#### We source differently\n\nAll our projects come from public servants who submit ideas to see if they can move the needle forward to solve a real problem."
         },
         {
-          "body": "### We fund differently\n\nThe projects use a phased, incremental funding approach, so we can focus investments on the most promising, impactful ideas."
+          "body": "#### We fund differently\n\nThe projects use a phased, incremental funding approach, so we can focus investments on the most promising, impactful ideas."
         },
         {
-          "body": "### We support differently\n\nWe complete rigorous analysis to assess ideas before moving them forward, looking at each idea as a learning opportunity —even if it doesn’t come to fruition."
+          "body": "#### We support differently\n\nWe complete rigorous analysis to assess ideas before moving them forward, looking at each idea as a learning opportunity —even if it doesn’t come to fruition."
         }
       ],
       "className": "",
       "title": "We’re different, by design",
-      "text": "10x isn’t your average government program — our venture capital model lets us operate a bit outside the box. "
+      "text": "10x isn’t your average government program — our venture capital model lets us operate a bit outside the box. ",
+      "variant": "check"
     },
     {
       "type": "break",
