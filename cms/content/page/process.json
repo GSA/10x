@@ -77,7 +77,8 @@
       ],
       "variant": "ringer",
       "text": "Projects move through four phases after submission, though not all make it past Phase 1.",
-      "title": "The method to the madness"
+      "title": "The method to the madness",
+      "className": "margin-bottom-8"
     },
     {
       "type": "cards",
