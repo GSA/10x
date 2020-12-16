@@ -109,7 +109,10 @@ const Header = ({ logo, className }) => {
                           <Icon icon="search" />
                         </button>
                       </form>
-                      <Button color="primary-lighter" url="/">
+                      <Button
+                        color="primary-lighter"
+                        url="https://feedback.gsa.gov/jfe/form/SV_1Im8dTPnjnV3HpP"
+                      >
                         SUBMIT AN IDEA
                       </Button>
                     </>

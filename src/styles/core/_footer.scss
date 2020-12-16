@@ -3,7 +3,7 @@
 
   &__links {
     flex-direction: column;
-    @include u-padding-bottom("10");
+    @include u-padding-bottom(2);
 
     a {
       width: auto;

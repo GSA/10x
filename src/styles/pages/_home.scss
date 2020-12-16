@@ -85,12 +85,11 @@ $bgImgDir: "~styles/images";
         border: none;
         background-size: 100% 100%;
         background-color: transparent;
-        background-position-x: center;
-        background-position-y: center;
-        background-image: url($bgImgDir + "/home-callout-bg.png");
-        background-repeat: no-repeat;
+        @include fullWidthBg("submit-idea-bg.png");
         @include at-media("desktop") {
           margin-top: 150px;
+          padding-bottom: 3rem;
+          margin-bottom: -1rem;
         }
         .usa-card__body {
           @include u-padding-top(10);
@@ -99,6 +98,10 @@ $bgImgDir: "~styles/images";
 
           @include at-media("desktop") {
             margin-right: 0;
+          }
+
+          .usa-button {
+            width: auto;
           }
         }
       }
@@ -110,7 +113,6 @@ $bgImgDir: "~styles/images";
         height: 100%;
         @include u-padding-bottom(4);
         .usa-card__container {
-          @include u-padding-y(4);
           background-size: contain;
           background-position-x: right;
           background-position-y: top;

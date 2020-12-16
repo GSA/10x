@@ -9,6 +9,16 @@ html {
   }
 }
 
+a {
+  @include u-color("primary-darker");
+  &:visited {
+    @include u-color("primary-darker");
+  }
+  &:hover {
+    @include u-color("primary-dark");
+  }
+}
+
 blockquote {
   @include u-font("serif", 10);
   padding: 0;
@@ -47,7 +57,7 @@ h4 {
 }
 
 h1 {
-  @include u-margin-bottom(4);
+  @include u-margin-bottom(2);
 }
 h2 {
   @include u-margin-bottom(3);
@@ -73,9 +83,9 @@ h5 {
   &__theme-1 {
     background: linear-gradient(
       180deg,
-      rgba(194, 194, 245, 0.5) 400px,
-      rgba(255, 107, 82, 0.5) 1000px,
-      rgba(120, 227, 251, 0.44) 1800px
+      #d7d7f0 400px,
+      #f4ada2 1000px,
+      #dcc5c2 1800px
     );
   }
 

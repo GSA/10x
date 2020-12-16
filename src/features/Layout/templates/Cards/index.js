@@ -28,7 +28,7 @@ const Cards = ({ title, text, items, className, columns }) => {
             <Col
               key={`txCards-${i}`}
               className={classnames({ [item.className]: item.className })}
-              ize="12"
+              size="12"
               desktop={columnSize[columns]}
             >
               <Card>

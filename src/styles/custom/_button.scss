@@ -1,6 +1,7 @@
 .usa-button {
   border-radius: 100px;
   @include u-font-family("serif");
+  line-height: 0.8;
 
   &--primary-lighter {
     @include buttonCustom(
@@ -16,6 +17,14 @@
   }
 
   &--unstyled {
+    line-height: inherit;
     @include u-font-family("sans");
+    @include u-color("primary-darker");
+    &:visited {
+      @include u-color("primary-darker");
+    }
+    &:hover {
+      @include u-color("primary-dark");
+    }
   }
 }

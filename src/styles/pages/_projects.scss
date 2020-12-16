@@ -6,8 +6,11 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
 
   &__nav-link {
     a {
-      @include u-color("primary-lighter");
+      @include u-color("primary-light");
       &:visited {
+        @include u-color("primary-light");
+      }
+      &:hover {
         @include u-color("primary-lighter");
       }
     }
@@ -118,8 +121,11 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
     @include at-media("desktop") {
       a,
       .usa-button--primary.usa-button--unstyled {
-        @include u-color("primary-lighter");
+        @include u-color("primary-light");
         &:visited {
+          @include u-color("primary-light");
+        }
+        &:hover {
           @include u-color("primary-lighter");
         }
       }
@@ -270,7 +276,6 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
       @include u-margin-bottom(2);
       a {
         line-height: 150%;
-        text-decoration: none;
       }
     }
   }

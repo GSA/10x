@@ -4,13 +4,16 @@ $bgImgDir: "~styles/images";
   @include u-bg("base");
   @include u-color("white");
   @include u-font-family("sans");
-  font-weight: 300;
+  font-weight: 400;
 
   &__preFooter {
     .usa-button--unstyled,
     a {
-      @include u-color("primary-lighter");
+      @include u-color("primary-light");
       &:visited {
+        @include u-color("primary-light");
+      }
+      &:hover {
         @include u-color("primary-lighter");
       }
     }
@@ -20,7 +23,7 @@ $bgImgDir: "~styles/images";
     @include u-font-family("sans");
     &-content {
       position: relative;
-      margin-top: 92px;
+      margin-top: 48px;
       line-height: 16px;
       border: none;
       &:after {
@@ -44,18 +47,18 @@ $bgImgDir: "~styles/images";
           top: -66px;
         }
       }
-
-      .usa-button--unstyled {
-        @include u-color("primary-lighter");
-        @include u-font-family("sans");
-
-        &:visited {
-          @include u-color("primary-lighter");
-        }
-      }
     }
   }
-
+  .usa-button--unstyled {
+    @include u-color("primary-light");
+    @include u-font-family("sans");
+    &:visited {
+      @include u-color("primary-light");
+    }
+    &:hover {
+      @include u-color("primary-lighter");
+    }
+  }
   &__bottom-link {
     @include at-media("desktop") {
       transform: translateY(-2rem);
