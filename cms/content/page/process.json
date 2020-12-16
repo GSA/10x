@@ -60,19 +60,24 @@
       "type": "callout",
       "items": [
         {
-          "body": "### Evaluate Idea\n\n* Clarity\n* Alignment\n* Impact"
+          "body": "### Evaluate Idea\n\n* Clarity\n* Alignment\n* Impact",
+          "className": "bg--5"
         },
         {
-          "body": "### **PHASE 1** Investigate\n\n* Major red flags\n* Demand"
+          "body": "### **PHASE 1** Investigate\n\n* Major red flags\n* Demand",
+          "className": "bg--1"
         },
         {
-          "body": "### **PHASE 2** Discover\n\n* Current state\n* Market fit\n* Regulatory requirements\n* Timeline\n* Funding model"
+          "body": "### **PHASE 2** Discover\n\n* Current state\n* Market fit\n* Regulatory requirements\n* Timeline\n* Funding model",
+          "className": "bg--2"
         },
         {
-          "body": "### **PHASE 3** Develop\n\n* MVP\n* Recruit agency customer\n* Product roadmap\n* Business plan\n"
+          "body": "### **PHASE 3** Develop\n\n* MVP\n* Recruit agency customer\n* Product roadmap\n* Business plan\n",
+          "className": "bg--3"
         },
         {
-          "body": "### **PHASE 4** Scale\n\n* Additional customers\n* Largest possible audience\n"
+          "body": "### **PHASE 4** Scale\n\n* Additional customers\n* Largest possible audience\n",
+          "className": "bg--4"
         }
       ],
       "variant": "ringer",
