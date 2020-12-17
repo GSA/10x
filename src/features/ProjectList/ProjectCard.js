@@ -9,7 +9,7 @@ const ProjectCard = ({ data }) => {
   /* istanbul ignore next */
   const { card = {}, meta = {} } = data;
   const handleClick = () => {
-    const slug = card.url || data.slug;
+    const slug = card.projectUrl || data.slug;
     history.push(`${history.location.pathname}/${slug}`);
   };
   /* istanbul ignore next */

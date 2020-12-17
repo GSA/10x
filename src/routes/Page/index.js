@@ -8,6 +8,7 @@ import Mdx from "features/Mdx";
 import FourOhFour from "routes/FourOhFour";
 import Head from "routes/Head";
 import Layout from "features/Layout";
+import { motion } from "framer-motion";
 
 const Page = ({ name }) => {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ const Page = ({ name }) => {
     return (
       <Grid>
         <Head title="Loading..." />
-        <h1 className="display-none">Loading...</h1>
+        <h1>Loading...</h1>
         <div className="margin-y-9">
           <Loading isLoading={true}>
             <span />
@@ -35,7 +36,12 @@ const Page = ({ name }) => {
     return <FourOhFour pathname={pageName} />;
   }
   return (
-    <div className={`TxContent Tx__${pageName}`}>
+    <motion.div
+      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className={`TxContent Tx__${pageName}`}
+    >
       <div className="usa-app__bg">
         <Head title={data.title} />
 
@@ -48,7 +54,7 @@ const Page = ({ name }) => {
           <Layout items={data.sections} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

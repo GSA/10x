@@ -10,14 +10,6 @@
   &.is-visible {
     animation: unset;
   }
-  button {
-    padding: 0;
-    @include u-font-family("serif");
-    @include u-color("white");
-    .usa-nav__url-prefix {
-      @include u-margin-right(1);
-    }
-  }
 
   .usa-nav__inner {
     width: 100%;
@@ -33,6 +25,14 @@
   }
   .usa-nav__primary {
     text-align: left;
+    button {
+      padding: 0;
+      @include u-font-family("serif");
+      @include u-color("white");
+      .usa-nav__url-prefix {
+        @include u-margin-right(1);
+      }
+    }
     .usa-nav__url {
       font-weight: 400;
     }
@@ -104,14 +104,6 @@
     text-align: left;
     padding: 0;
 
-    button {
-      @include u-color("white");
-      &:hover {
-        @include u-color("white");
-        cursor: pointer;
-      }
-    }
-
     .usa-nav__footer {
       display: flex;
       align-self: center;
@@ -135,6 +127,13 @@
       }
     }
     .usa-nav__primary {
+      button {
+        @include u-color("white");
+        &:hover {
+          @include u-color("white");
+          cursor: pointer;
+        }
+      }
       .usa-nav__url {
         position: relative;
         margin: 0;

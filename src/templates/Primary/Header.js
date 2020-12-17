@@ -89,7 +89,7 @@ const Header = ({ logo, className }) => {
                       <form
                         className="usa-search usa-search--small"
                         role="search"
-                        accept-charset="UTF-8"
+                        acceptCharset="UTF-8"
                         action="https://search.usa.gov/search"
                         id="search_form"
                         method="get"

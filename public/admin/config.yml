@@ -321,7 +321,7 @@ collections:
                 label: Value
                 widget: string
       - label: 404 Content
-        name: 404
+        name: "404"
         file: cms/404.json
         fields:
           - <<: *modSections

@@ -29,9 +29,9 @@
     }
     &--number {
       &:after {
-        width: 2.75rem;
-        height: 2.75rem;
-        line-height: 140%;
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 130%;
         @include u-margin-right(1);
         text-align: center;
         border-radius: 100%;
