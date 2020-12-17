@@ -48,21 +48,25 @@
           "type": "cards",
           "title": "Why this matters",
           "text": "Social Safety Net programs provide critical benefits to millions of Americans and improving the way these programs work could have a real impact on people’s lives. In addition to real outcomes, IT modernization efforts for these programs fail at an alarming rate at great cost to the federal budget. Based on potential impact, we believe that seeinghow modern technology might improve the functioning of these programs is worth exploring through the 10x process."
-        },
-        {
-          "type": "cards",
-          "title": "What we did",
-          "text": "We spent the better part of two years researching these benefits programs to understand their technical challenges. Part of understanding this landscape involved building prototypes and rigorously testing them with users and then presenting them to program staffers. The primary product the team shipped at the end of the engagement was the first open API for SNAP eligibility criteria that we know of, which powered a benefits calculator that members of the public can use to estimate their potential benefits.\n\nHow we did it\n\nWe began by speaking with both program and technical staffers at many different benefits programs at several different agencies to understand the landscape. We validated the potential for an agency-hosted centralized eligibility API could provide massive impact. Our engineers worked with program staffers to understand the eligibility criteria and translate it into computer code. We then explored what kinds of downstream apps could be built based off of the central API. \n\nWhere we are today\n\nThe open-source benefits calculator we shipped was originally used by a non-profit group in Virginia. Since the end of the engagement, Code for America volunteers have taken over where we left off and forked the code for the benefits calculator, modifying it to include eligibility criteria for all 50 states. This is a great example of the scale that 10x aims to produce in Phase 4 and a good example of what sharable software components can do the government’s benefits programs."
-        },
-        {
-          "type": "cards",
-          "title": "Next Steps",
-          "text": "From here, we are continuing to socialize our approach with interested partners and fielding incoming inquiries into our work. Our next step is to document the affect that this project will have long-term by tracking where our products and methodologies are reproduced. "
         }
       ]
     },
-    {},
-    {},
+    {
+      "modules": [
+        {
+          "type": "markdown",
+          "body": "\\## Next Steps\n\nFrom here, we are continuing to socialize our approach with interested partners and fielding incoming inquiries into our work. Our next step is to document the affect that this project will have long-term by tracking where our products and methodologies are reproduced."
+        }
+      ]
+    },
+    {
+      "modules": [
+        {
+          "type": "markdown",
+          "body": "\\## What we did\n\nWe spent the better part of two years researching these benefits programs to understand their technical challenges. Part of understanding this landscape involved building prototypes and rigorously testing them with users and then presenting them to program staffers. The primary product the team shipped at the end of the engagement was the first open API for SNAP eligibility criteria that we know of, which powered a benefits calculator that members of the public can use to estimate their potential benefits.\n\n\\### How we did it\n\nWe began by speaking with both program and technical staffers at many different benefits programs at several different agencies to understand the landscape. We validated the potential for an agency-hosted centralized eligibility API could provide massive impact. Our engineers worked with program staffers to understand the eligibility criteria and translate it into computer code. We then explored what kinds of downstream apps could be built based off of the central API. \n\n\\### Where we are today\n\nThe open-source benefits calculator we shipped was originally used by a non-profit group in Virginia. Since the end of the engagement, Code for America volunteers have taken over where we left off and forked the code for the benefits calculator, modifying it to include eligibility criteria for all 50 states. This is a great example of the scale that 10x aims to produce in Phase 4 and a good example of what sharable software components can do the government’s benefits programs."
+        }
+      ]
+    },
     {}
   ],
   "card": {
