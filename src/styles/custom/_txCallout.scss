@@ -1,7 +1,14 @@
 .TxCallout {
   counter-reset: callout;
+  @include u-margin-bottom(3);
   &__items {
     padding-top: 8px;
+    > div {
+      @include u-margin-bottom(3);
+      @include at-media("desktop") {
+        margin-bottom: 0;
+      }
+    }
   }
   &__icon {
     &:after {
@@ -28,7 +35,7 @@
         @include u-margin-right(1);
         text-align: center;
         border-radius: 100%;
-        @include u-bg("primary-dark");
+        @include u-bg("base");
         counter-increment: callout;
         content: counter(callout);
 
@@ -59,13 +66,13 @@
         margin-top: 0;
         padding-top: 5rem;
 
-        margin-right: -3rem;
+        margin-right: -1rem;
         padding-right: 3rem;
 
         margin-bottom: 0;
         padding-bottom: 4rem;
 
-        margin-left: -3rem;
+        margin-left: -1rem;
         padding-left: 3rem;
 
         @include fullWidthBg("phases-bg.png");
@@ -100,6 +107,12 @@
       }
 
       [class*="grid-col"] {
+        .TxCallout__content {
+          width: 100%;
+          @include at-media("desktop") {
+            width: auto;
+          }
+        }
         &:after {
           display: block;
           content: "";
@@ -132,6 +145,17 @@
           width: 100%;
           @include u-margin-y(4);
           @include u-padding-x(8);
+          @include at-media("desktop") {
+            @include u-margin-y(2);
+            @include u-margin-x(1);
+            @include u-padding-x(0);
+            font-weight: 300;
+          }
+        }
+        ul {
+          width: 100%;
+          @include u-margin-y(4);
+          @include u-padding-x(15);
           @include at-media("desktop") {
             @include u-margin-y(2);
             @include u-margin-x(1);
@@ -218,11 +242,8 @@
           right: -3.75rem;
           top: 50%;
           transform: translateY(-4px);
+          @include fullWidthBg("ring-separater.png");
           background-size: contain;
-          background-position-x: center;
-          background-position-y: center;
-          background-repeat: no-repeat;
-          background-image: url("~styles/images/ring-separater.png");
         }
       }
 
@@ -231,7 +252,7 @@
         text-transform: uppercase;
         @include u-color("white");
         @include u-font("serif", "md");
-
+        font-weight: 400;
         @include at-media("desktop") {
           @include u-font("serif", "sm");
         }
@@ -239,6 +260,7 @@
       em {
         display: block;
         @include u-font("serif", "lg");
+        font-style: normal;
         line-height: 1;
       }
     }

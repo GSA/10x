@@ -10,4 +10,22 @@ $theme-h6-font-size: "xs";
   p {
     width: 80%;
   }
+  .TxBrushCard {
+    .usa-card {
+      .usa-card__body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include u-padding-x(4);
+
+        p {
+          margin-bottom: 0;
+        }
+        strong {
+          @include u-font("serif", $theme-h1-font-size);
+          @include u-color("base");
+        }
+      }
+    }
+  }
 }

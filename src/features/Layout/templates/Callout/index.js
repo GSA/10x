@@ -41,7 +41,7 @@ const Callout = ({
                     [`TxCallout__icon--${variant}`]: variant,
                   })}
                 />
-                <div>
+                <div className="TxCallout__content">
                   <Mdx>{item.body}</Mdx>
                 </div>
               </div>
@@ -50,7 +50,7 @@ const Callout = ({
         </Row>
       )}
       {button.text && button.link && (
-        <div className="text-center margin-y-4">
+        <div className="text-center margin-top-2 margin-bottom-4">
           <Button variant="outline" url={button.link}>
             {button.text}
           </Button>

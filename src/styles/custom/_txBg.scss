@@ -9,4 +9,11 @@
     padding-top: 3rem;
     padding-bottom: 1rem;
   }
+
+  &--2 {
+    @include fullWidthBg("our-process-callout-bg-mobile.png");
+    @include at-media("desktop") {
+      @include fullWidthBg("our-process-callout-bg.png");
+    }
+  }
 }

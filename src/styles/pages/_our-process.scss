@@ -1,3 +1,22 @@
+.Tx__process {
+  .TxCallout__ringer {
+    .TxCallout__items {
+      [class*="grid-col"] {
+        &:first-child {
+          h3 {
+            padding-left: 9rem;
+            padding-right: 9rem;
+
+            @include at-media("desktop") {
+              @include u-padding-x(4);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .TxFunnel {
   ul {
     list-style: none;
@@ -75,6 +94,8 @@
       strong {
         display: block;
         @include u-font("serif", "3xl");
+        @include u-color("base");
+        font-weight: 500;
         line-height: 1;
         @include u-margin-bottom(1);
         @include at-media("desktop") {

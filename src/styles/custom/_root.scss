@@ -109,9 +109,9 @@ h5 {
   &__theme-3 {
     background: linear-gradient(
       180deg,
-      #d8d8d8 8.7%,
-      rgba(208, 226, 231, 0.672254) 35.58%,
-      rgba(120, 227, 251, 0.05) 87.96%
+      #{color("base-light")} 8.7%,
+      #d1e8ed 35.58%,
+      #e6eced 87.96%
     );
   }
 

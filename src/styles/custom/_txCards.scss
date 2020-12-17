@@ -26,13 +26,23 @@
   }
 
   &.TxRingCards {
+    .usa-card {
+      padding-bottom: 0;
+    }
     .usa-card__container {
       background: transparent;
       box-shadow: none;
       margin: 0;
 
       .usa-card__body {
-        padding: 0;
+        @include u-padding-y(0);
+        @include at-media("desktop") {
+          padding: 0;
+        }
+
+        p {
+          @include u-font-family("sans");
+        }
       }
     }
     h3 {
@@ -40,9 +50,13 @@
     }
 
     blockquote {
-      @include u-margin-right(8);
-      float: left;
-      height: 100%;
+      display: flex;
+      justify-content: center;
+      @include at-media("desktop") {
+        float: left;
+        height: 100%;
+        @include u-margin-right(8);
+      }
       h2 {
         position: relative;
         display: flex;
@@ -68,7 +82,9 @@
         }
 
         strong {
+          min-width: 100px;
           display: block;
+          font-weight: 400;
           text-transform: uppercase;
           @include u-color("white");
           @include u-font("serif", "md");
@@ -121,8 +137,13 @@
   &.TxBrushCard {
     .usa-card {
       .usa-card__container {
+        margin: 0;
         background: none;
         box-shadow: none;
+
+        h5 {
+          font-weight: 400;
+        }
       }
       &:nth-child(1) {
         .usa-card__container {
