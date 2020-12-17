@@ -22,9 +22,9 @@ const ProjectCard = ({ data }) => {
         ProjectCard: true,
         [`template-${meta.template}`]: true,
       })}
-      title={card.subtitle || data.subtitle}
-      subtitle={card.title || data.title}
     >
+      <h3 className="usa-card__heading">{card.subtitle || data.subtitle}</h3>
+      <h4 className="usa-card__subhead">{card.title || data.title}</h4>
       <div className="ProjectCard__excerpt">{excerpt}</div>
     </Card>
   );

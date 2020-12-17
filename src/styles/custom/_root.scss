@@ -92,9 +92,9 @@ h5 {
   &__theme-2 {
     background: linear-gradient(
       180deg,
-      #{$x-charcoal} 2px,
-      #{$x-lead} 1400px,
-      #{$x-smoke} 2800px
+      #{color("base-dark")} 2px,
+      #{color("base")} 1400px,
+      #a6a7ae 2800px
     );
 
     .usa-app__bg {

@@ -1,5 +1,3 @@
-$bgImgDir: "~styles/images";
-
 .ProjectList {
   .usa-card {
     &:hover {
@@ -38,12 +36,13 @@ $bgImgDir: "~styles/images";
       &:before {
         display: block;
         content: "";
+        @include u-margin-top(2);
+        @include u-margin-bottom(4);
+        height: 12px;
         background-repeat: no-repeat;
         background-position-x: left;
         background-position-y: center;
-        height: 12px;
-        @include u-margin-top(2);
-        @include u-margin-bottom(4);
+        background-size: contain;
       }
     }
     &__body {
@@ -54,7 +53,7 @@ $bgImgDir: "~styles/images";
     &.template {
       &-1 {
         .usa-card__container {
-          background-image: url($bgImgDir + "/portfolio-paint-stroke-1.png");
+          background-image: url("~styles/images/portfolio-paint-stroke-1.png");
           .usa-card__subhead {
             &:before {
               background-image: url("~styles/images/short-tiger-brush-stroke.png");
@@ -64,7 +63,7 @@ $bgImgDir: "~styles/images";
       }
       &-2 {
         .usa-card__container {
-          background-image: url($bgImgDir + "/portfolio-paint-stroke-2.png");
+          background-image: url("~styles/images/portfolio-paint-stroke-2.png");
           .usa-card__subhead {
             &:before {
               background-image: url("~styles/images/short-sky-brush-stroke.png");
@@ -74,7 +73,7 @@ $bgImgDir: "~styles/images";
       }
       &-3 {
         .usa-card__container {
-          background-image: url($bgImgDir + "/portfolio-paint-stroke-3.png");
+          background-image: url("~styles/images/portfolio-paint-stroke-3.png");
           .usa-card__subhead {
             &:before {
               background-image: url("~styles/images/short-ocean-brush-stroke.png");
@@ -84,7 +83,7 @@ $bgImgDir: "~styles/images";
       }
       &-4 {
         .usa-card__container {
-          background-image: url($bgImgDir + "/portfolio-paint-stroke-4.png");
+          background-image: url("~styles/images/portfolio-paint-stroke-4.png");
           .usa-card__subhead {
             &:before {
               background-image: url("~styles/images/short-tiger-brush-stroke.png");
@@ -94,7 +93,7 @@ $bgImgDir: "~styles/images";
       }
       &-5 {
         .usa-card__container {
-          background-image: url($bgImgDir + "/portfolio-paint-stroke-5.png");
+          background-image: url("~styles/images/portfolio-paint-stroke-5.png");
           .usa-card__subhead {
             &:before {
               background-image: url("~styles/images/short-lilac-brush-stroke.png");
@@ -104,7 +103,7 @@ $bgImgDir: "~styles/images";
       }
       &-6 {
         .usa-card__container {
-          background-image: url($bgImgDir + "/portfolio-paint-stroke-6.png");
+          background-image: url("~styles/images/portfolio-paint-stroke-6.png");
           .usa-card__subhead {
             &:before {
               background-image: url("~styles/images/short-sky-brush-stroke.png");

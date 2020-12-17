@@ -1,5 +1,6 @@
 .Tx__process {
   .TxCallout__ringer {
+    @include u-margin-bottom(8);
     .TxCallout__items {
       [class*="grid-col"] {
         &:first-child {
