@@ -6,6 +6,12 @@
     "phase": "3"
   },
   "slug": "ai-experience-sharing-platform",
+  "card": {
+    "title": "AI Experience Sharing Platform",
+    "subtitle": "What if we could enable AI success?",
+    "projectUrl": "https://github.com/GSA/ai-experience-sharing-platform/projects/1",
+    "excerpt": "Most agencies that are experimenting with artificial intelligence are improvising and building the plane as they fly, simply because this field is still quite new. We want to provide a platform for agencies to learn from one another about how to best tackle this new frontier of technology-driven public service and implement responsible AI practices. We've invested in an AI experience sharing platform that allows government agencies to share tools, lessons, and experiments with one another. The platform will also serve as the infrastructure for the emerging artificial intelligence community of practice that represents dozens of agencies across the government. "
+  },
   "projectType": "Innovation",
   "projectLink": "",
   "subtitle": "Enabling AI success ",
