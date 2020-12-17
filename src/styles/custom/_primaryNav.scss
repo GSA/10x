@@ -33,6 +33,9 @@
   }
   .usa-nav__primary {
     text-align: left;
+    .usa-nav__url {
+      font-weight: 400;
+    }
   }
 
   .usa-nav__submenu,
@@ -170,6 +173,7 @@
             padding-right: 0 !important;
             &:after {
               display: inline-block;
+              @include u-color("secondary");
               @include u-margin-left(2);
               background: transparent;
               content: "\f107";
@@ -189,6 +193,11 @@
         }
         button {
           font-weight: 400;
+
+          &:hover {
+            @include u-color("white");
+            text-decoration: underline;
+          }
         }
       }
     }

@@ -12,7 +12,7 @@ const Team = ({ data }) => {
             <Icon icon="user" className="margin-right-1" />
           </div>
           <span className="TxTeam__submitter">
-            <strong>Idea Submitter: </strong> {data.submitter}
+            <strong>Idea submitter: </strong> {data.submitter}
           </span>
         </li>
         <li>

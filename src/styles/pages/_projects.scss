@@ -51,7 +51,7 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
         @include u-padding-left(6);
         @include u-padding-top(10);
         @include u-padding-bottom(2);
-        background-image: url($bgImgDir + "/in-nutshell-header.png");
+        background-image: url("~styles/images/in-nutshell-header.png");
         h2 {
           padding: 0;
           margin: 0;
@@ -61,8 +61,9 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
       &__body {
         @include u-padding-left(6);
         @include u-padding-right(10);
+        @include u-padding-bottom(6);
         @include u-color("white");
-        background-image: url($bgImgDir + "/in-nutshell-body.png");
+        background-image: url("~styles/images/in-nutshell-body.png");
         ul {
           list-style: none;
           margin: 0;
@@ -175,7 +176,7 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
       }
       .usa-card:nth-child(1) {
         .usa-card__container {
-          background-image: url($bgImgDir + "/portfolio-paint-stroke-#{$t}.png");
+          background-image: url("~styles/images/portfolio-paint-stroke-#{$t}.png");
         }
       }
       .usa-card:nth-child(2) {
@@ -191,7 +192,7 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
             height: 100px;
             transform: rotate(180deg);
             background-size: contain;
-            background-image: url($bgImgDir + "/portfolio-paint-stroke-#{$t}.png");
+            background-image: url("~styles/images/portfolio-paint-stroke-#{$t}.png");
 
             background-repeat: no-repeat;
           }
@@ -203,7 +204,7 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
           background-position-x: 100.05%;
           background-position-y: 100px;
           background-size: 10%;
-          background-image: url($bgImgDir + "/portfolio-paint-stroke-#{$t}-v.png");
+          background-image: url("~styles/images/portfolio-paint-stroke-#{$t}-v.png");
           background-repeat: no-repeat;
         }
       }

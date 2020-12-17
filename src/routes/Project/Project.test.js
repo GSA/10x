@@ -60,7 +60,7 @@ describe("Team", () => {
     const wrapper = mount(<Team data={team} />);
     await runAsyncRender(wrapper);
     expect(wrapper.find(".TxTeam__submitter").text()).toBe(
-      "Idea Submitter:  test1"
+      "Idea submitter:  test1"
     );
 
     expect(wrapper.find(".TxTeam__members").text()).toBe("Team:  test2");

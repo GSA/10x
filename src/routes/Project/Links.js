@@ -8,7 +8,7 @@ const Links = ({ data }) => {
     Array.isArray(data) &&
     data.length && (
       <div className="TxLinks">
-        <h3>Learn More</h3>
+        <h3>Learn more</h3>
         <ul>
           {data.map((item, i) => {
             return (

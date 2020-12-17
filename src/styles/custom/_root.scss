@@ -127,9 +127,9 @@ h5 {
   &__theme-5 {
     background: linear-gradient(
       180deg,
-      #{$x-charcoal} 2px,
-      #{$x-lead} 1400px,
-      #{$x-smoke} 2800px
+      #{color("base-dark")} 2px,
+      #{color("base")} 1400px,
+      #a6a7ae 2800px
     );
 
     .usa-app__bg {
@@ -137,8 +137,11 @@ h5 {
       background-repeat: no-repeat;
       background-position-x: left;
       background-position-y: 90%;
-      background-size: contain;
+      background-size: 80%;
     }
+  }
+  &__theme-6 {
+    background: linear-gradient(180deg, #{color("base-light")} 0, #ffffff 100%);
   }
 }
 

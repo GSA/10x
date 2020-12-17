@@ -18,8 +18,14 @@ const Footer = () => {
       footers: settings.footers,
     })
   );
+  let data = {};
+  const footer = footers.find(({ slug }) =>
+    meta.footer ? slug === meta.footer : slug === "default"
+  );
 
-  const data = footers.find(({ slug }) => slug === meta.footer || "default");
+  if (footer) {
+    data = footer;
+  }
 
   return (
     <footer className="usa-footer">
