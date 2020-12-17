@@ -7,6 +7,12 @@
     "message": "Phase 3 was completed and is being used by GSA; Phase 4 is still in progress"
   },
   "slug": "devops-for-privacy-offices",
+  "card": {
+    "title": "DevOps for Privacy Offices",
+    "subtitle": "What if we could help the folks who keep private information private?",
+    "excerpt": "Government agencies manage a vast number of systems that contain personally identifiable information (PII) for both their own employees and in some cases, the public. Every agency has an office dedicated to protecting this data, but not all of them are equipped with the modern technology needed to protect it. The project team looked at the  end-to-end processes used by government privacy offices and developed an innovative enhancement to their workflows — a customizable, interactive dashboard that allows privacy offices easy access to the PII living within the systems they oversee, making it easier to manage and protect.  ",
+    "projectUrl": "https://github.com/18F/privacy-tools/blob/master/README.md"
+  },
   "projectType": "Innovation",
   "projectLink": "https://github.com/18F/privacy-tools/blob/master/README.md",
   "subtitle": "Empowering the folks who keep private information private",
