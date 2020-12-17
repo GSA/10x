@@ -12,8 +12,17 @@
 
   &--2 {
     @include fullWidthBg("our-process-callout-bg-mobile.png");
+
+    margin: 0 -3rem;
+    padding: 3rem;
     @include at-media("desktop") {
       @include fullWidthBg("our-process-callout-bg.png");
+      margin-left: -3rem;
+      padding-left: 3rem;
+      margin-right: -3rem;
+      padding-right: -3rem;
+      margin-top: -1rem;
+      @include u-padding-y(6);
     }
   }
 }
