@@ -42,8 +42,14 @@
       "modules": [
         {
           "type": "cards",
-          "text": "We built a website that serves as the go-to place for the thousands of federal employees seeking PRA clearance to learn about the PRA, how it may or may not affect their work, and how to successfully navigate the process of getting clearance to interact with the public.\n\nHow we did it\n\nWe interviewed dozens of PRA officers and staffers from OMB who interpret the PRA to learn about common misperceptions of the law and we spoke with federal employees who have navigated the compliance process. We focused on a key audience with specific needs  —  smaller agencies without dedicated internal PRA support—and conducted research with them to understand their needs. Then, we partnered with legal experts who have deep knowledge of the law to interpret the necessary components and guidance into user-friendly digital content, Finally,  we built a website to host this guidance.\n\nWhere we are today\n\nPRA.digital.gov lives as a partnership between GSA and OMB. GSA maintains the digital infrastructure; OMB maintains and updates the content. ",
-          "title": "What we did"
+          "text": "",
+          "title": "",
+          "items": [
+            {
+              "body": "## What we did\n\nWe built a website that serves as the go-to place for the thousands of federal employees seeking PRA clearance to learn about the PRA, how it may or may not affect their work, and how to successfully navigate the process of getting clearance to interact with the public.\n\n### How we did it\n\nWe interviewed dozens of PRA officers and staffers from OMB who interpret the PRA to learn about common misperceptions of the law and we spoke with federal employees who have navigated the compliance process. We focused on a key audience with specific needs  —  smaller agencies without dedicated internal PRA support—and conducted research with them to understand their needs. Then, we partnered with legal experts who have deep knowledge of the law to interpret the necessary components and guidance into user-friendly digital content, Finally,  we built a website to host this guidance.\n\n### Where we are today\n\nPRA.digital.gov lives as a partnership between GSA and OMB. GSA maintains the digital infrastructure; OMB maintains and updates the content."
+            }
+          ],
+          "columns": "1"
         }
       ]
     },
