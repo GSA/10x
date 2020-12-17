@@ -36,15 +36,17 @@ const Page = ({ name }) => {
   }
   return (
     <div className={`TxContent Tx__${pageName}`}>
-      <Head title={data.title} />
+      <div className="usa-app__bg">
+        <Head title={data.title} />
 
-      {data.hero && (
-        <div className={`Tx__${data.name}-hero`}>
-          <Mdx>{data.hero}</Mdx>
+        {data.hero && (
+          <div className={`Tx__${data.name}-hero`}>
+            <Mdx>{data.hero}</Mdx>
+          </div>
+        )}
+        <div className={`Tx__${data.name}-content`}>
+          <Layout items={data.sections} />
         </div>
-      )}
-      <div className={`Tx__${data.name}-content`}>
-        <Layout items={data.sections} />
       </div>
     </div>
   );

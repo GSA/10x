@@ -44,72 +44,74 @@ const Project = ({ type }) => {
   }
 
   return (
-    <div className={`TxContent `}>
-      <Helmet title={data.title} />
-      <Grid
-        className={classnames({
-          TxProject: true,
-          [`TxProject--${name}`]: true,
-          [`TxProject--template-${meta.template}`]: Boolean(meta.template),
-        })}
-      >
-        <div className="TxProject__nav-link">
-          <Link to="/projects">
-            <Icon icon="arrow-left" />
-            Return to our projects
-          </Link>
-        </div>
+    <div className={`TxContent`}>
+      <div className="usa-app__bg">
+        <Helmet title={data.title} />
+        <Grid
+          className={classnames({
+            TxProject: true,
+            [`TxProject--${name}`]: true,
+            [`TxProject--template-${meta.template}`]: Boolean(meta.template),
+          })}
+        >
+          <div className="TxProject__nav-link">
+            <Link to="/projects">
+              <Icon icon="arrow-left" />
+              Return to our projects
+            </Link>
+          </div>
 
-        <h1 className="TxProject__subtitle">{data.subtitle}</h1>
+          <h1 className="TxProject__subtitle">{data.subtitle}</h1>
 
-        <Row gap="4">
-          <Col size="12" desktop="8">
-            <h2 className="TxProject__title">{data.title}</h2>
-            <p className="TxProject__intro">{data.body}</p>
-            <Break color="accent-cool" variant="wide" />
-          </Col>
-          {meta.summary && (
-            <Col size="12" desktop="4">
-              <Card className="TxProject__summary" title="In a nutshell">
-                <ul>
-                  {meta.summary.map((item, i) => (
-                    <li key={`summary-${i}`}>
-                      <Icon
-                        icon="check-circle"
-                        className="text-accent-cool margin-right-1"
-                      />
-                      <span>{item.text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
+          <Row gap="4">
+            <Col size="12" desktop="8">
+              <h2 className="TxProject__title">{data.title}</h2>
+              <p className="TxProject__intro">{data.body}</p>
+              <Break color="accent-cool" variant="wide" />
             </Col>
-          )}
-        </Row>
-
-        <Row gap="4">
-          <Col size="12" desktop="8" className="TxProject__content">
-            {data.sections &&
-              data.sections.map(({ modules: items }, i) => (
-                <Card key={`ProjectSection--${i}`}>
-                  {items && <Layout items={items} data={data} />}
+            {meta.summary && (
+              <Col size="12" desktop="4">
+                <Card className="TxProject__summary" title="In a nutshell">
+                  <ul>
+                    {meta.summary.map((item, i) => (
+                      <li key={`summary-${i}`}>
+                        <Icon
+                          icon="check-circle"
+                          className="text-accent-cool margin-right-1"
+                        />
+                        <span>{item.text}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </Card>
-              ))}
-          </Col>
+              </Col>
+            )}
+          </Row>
 
-          <Col size="12" desktop="4">
-            <div className="TxProject__details">
-              <Card>
-                <Team data={meta.team} />
-              </Card>
-              <Break color="base-lighter" variant="wide" />
-              <Card>
-                <Links data={meta.links} />
-              </Card>
-            </div>
-          </Col>
-        </Row>
-      </Grid>
+          <Row gap="4">
+            <Col size="12" desktop="8" className="TxProject__content">
+              {data.sections &&
+                data.sections.map(({ modules: items }, i) => (
+                  <Card key={`ProjectSection--${i}`}>
+                    {items && <Layout items={items} data={data} />}
+                  </Card>
+                ))}
+            </Col>
+
+            <Col size="12" desktop="4">
+              <div className="TxProject__details">
+                <Card>
+                  <Team data={meta.team} />
+                </Card>
+                <Break color="base-lighter" variant="wide" />
+                <Card>
+                  <Links data={meta.links} />
+                </Card>
+              </div>
+            </Col>
+          </Row>
+        </Grid>
+      </div>
     </div>
   );
 };

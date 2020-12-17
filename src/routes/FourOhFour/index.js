@@ -40,9 +40,11 @@ const FourOhFour = ({ search }) => {
   }
   return (
     <div className={`TxContent Tx__FourOhFour`}>
-      <Head title={"404"} />
-      <div className={`Tx__FourOhFour-content`}>
-        <Layout items={data} />
+      <div className="usa-app__bg">
+        <Head title={"404"} />
+        <div className={`Tx__FourOhFour-content`}>
+          <Layout items={data} />
+        </div>
       </div>
     </div>
   );

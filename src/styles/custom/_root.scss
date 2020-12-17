@@ -81,67 +81,83 @@ h5 {
   background: rgb(69, 217, 217);
 
   &__theme-1 {
-    background: linear-gradient(
-      180deg,
-      #d7d7f0 400px,
-      #f4ada2 1000px,
-      #dcc5c2 1800px
-    );
+    .TxContent {
+      background: linear-gradient(
+        180deg,
+        #d7d7f0 400px,
+        #f4ada2 1000px,
+        #dcc5c2 1800px
+      );
+    }
   }
 
   &__theme-2 {
-    background: linear-gradient(
-      180deg,
-      #{color("base-dark")} 2px,
-      #{color("base")} 1400px,
-      #a6a7ae 2800px
-    );
+    .TxContent {
+      background: linear-gradient(
+        180deg,
+        #{color("base-dark")} 2px,
+        #{color("base")} 1400px,
+        #a6a7ae 2800px
+      );
 
-    .usa-app__bg {
-      background-image: url("~styles/images/theme-2-bg.png");
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: 120px;
-      background-size: 1400px;
+      .usa-app__bg {
+        background-image: url("~styles/images/theme-2-bg.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 120px;
+        background-size: 1400px;
+      }
     }
   }
 
   &__theme-3 {
-    background: linear-gradient(
-      180deg,
-      #{color("base-light")} 8.7%,
-      #d1e8ed 35.58%,
-      #e6eced 87.96%
-    );
+    .TxContent {
+      background: linear-gradient(
+        180deg,
+        #{color("base-light")} 8.7%,
+        #d1e8ed 35.58%,
+        #e6eced 87.96%
+      );
+    }
   }
 
   &__theme-4 {
-    background: linear-gradient(
-      180deg,
-      #d8d8d8 8.7%,
-      rgba(255, 104, 57, 0.25) 58.64%,
-      rgba(255, 104, 57, 0.05) 87.96%
-    );
+    .TxContent {
+      background: linear-gradient(
+        180deg,
+        #d8d8d8 8.7%,
+        rgba(255, 104, 57, 0.25) 58.64%,
+        rgba(255, 104, 57, 0.05) 87.96%
+      );
+    }
   }
 
   &__theme-5 {
-    background: linear-gradient(
-      180deg,
-      #{color("base-dark")} 2px,
-      #{color("base")} 1400px,
-      #a6a7ae 2800px
-    );
+    .TxContent {
+      background: linear-gradient(
+        180deg,
+        #{color("base-dark")} 2px,
+        #{color("base")} 1400px,
+        #a6a7ae 2800px
+      );
 
-    .usa-app__bg {
-      background-image: url("~styles/images/theme-5-bg.png");
-      background-repeat: no-repeat;
-      background-position-x: left;
-      background-position-y: 90%;
-      background-size: 80%;
+      .usa-app__bg {
+        background-image: url("~styles/images/theme-5-bg.png");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: 90%;
+        background-size: 80%;
+      }
     }
   }
   &__theme-6 {
-    background: linear-gradient(180deg, #{color("base-light")} 0, #ffffff 100%);
+    .TxContent {
+      background: linear-gradient(
+        180deg,
+        #{color("base-light")} 0,
+        #ffffff 100%
+      );
+    }
   }
 }
 
