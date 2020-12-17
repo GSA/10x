@@ -70,5 +70,16 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
     <div id="root"></div>
+    <script>
+      //<![CDATA[
+            var usasearch_config = { siteHandle:"10x" };
+      
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "//search.usa.gov/javascripts/remote.loader.js";
+            document.getElementsByTagName("head")[0].appendChild(script);
+      
+      //]]>
+      </script>
   </body>
 </html>

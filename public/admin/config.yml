@@ -320,6 +320,13 @@ collections:
               - name: value
                 label: Value
                 widget: string
+      - label: 404 Content
+        name: 404
+        file: cms/404.json
+        fields:
+          - <<: *modSections
+            label: "404 Content"
+            name: "404"
 
   - name: menu
     extension: json

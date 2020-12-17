@@ -20,7 +20,8 @@ describe("SettingsModule", () => {
     it("should load settings", async () => {
       await store.dispatch(getSettings());
       const state = store.getState();
-      expect(state.data.title).toBeTruthy();
+      console.log(state);
+      expect(state.title).toBeTruthy();
     });
     it("should load an error", async () => {
       await store.dispatch(getSettings({ error: true }));

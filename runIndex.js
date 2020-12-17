@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs-extra");
 const YAML = require("yaml");
+const xml = require("js2xmlparser");
 
 const excludedPathTypes = ["page"];
 
@@ -147,6 +148,24 @@ const indexMenus = () => {
   });
 };
 
+const generateSitemap = (collections = ["page", "project"]) => {
+  const sitePaths = { page: "", project: "/project" };
+  const data = collections.reduce((acc, name) => {
+    const file = path.join(DEST_PATH, "content", name, "index.json");
+    fs.ensureFile(file);
+    const contents = fs.readJsonSync(file);
+    const pages = contents.map(
+      (item) => `${process.env.PUBLIC_URL}${sitePaths[name]}/${item.name}`
+    );
+    return [...acc, ...pages];
+  }, []);
+
+  const xmlJson = { url: data.map((item) => ({ loc: item })) };
+
+  const xmlData = xml.parse("urlset", xmlJson);
+  fs.outputFileSync(path.join(DEST_PATH, "sitemap.xml"), xmlData);
+};
+
 const copyContent = () => {
   fs.copySync(CMS_PATH, DEST_PATH);
 };
@@ -154,3 +173,4 @@ const copyContent = () => {
 copyContent();
 indexContent();
 indexMenus();
+generateSitemap();

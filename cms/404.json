@@ -1,0 +1,19 @@
+{
+  "404": [
+    {
+      "type": "title",
+      "title": "Oopsy daisy! ",
+      "subtitle": "We can’t find the page you requested. But at 10x, we believe in smart experimentation and trying to make a difference."
+    },
+    {
+      "type": "markdown",
+      "body": "> An inventory fails 999 times, and if he succeeds once, he's in. He treats his failures simply as practice shots. * - Charles F. Kettering*",
+      "className": "FourOhFour__quote"
+    },
+    {
+      "type": "markdown",
+      "body": "Be the one in 1,000. See if these help:\n\n[10x home](/)\n\n[Fueling innovation](/)\n\n[Our process](/)\n\n[Submitting a great idea](/)",
+      "className": "FourOhFour__links"
+    }
+  ]
+}

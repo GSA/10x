@@ -26,3 +26,4 @@ yarn-error.log*
 public/content
 public/menus
 public/settings.json
+public/sitemap.xml

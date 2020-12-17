@@ -84,5 +84,7 @@
       }
     }
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "js2xmlparser": "^4.0.1"
+  }
 }
