@@ -61,7 +61,7 @@
   "card": {
     "subtitle": "What if the government had a window into the performance of the entire federal webspace, on-demand for free?",
     "title": "Spotlight",
-    "projectUrl": "https://10x.gsa.gov/spotlight",
+    "projectUrl": "https://10x.gsa.gov/#/projects/spotlight",
     "excerpt": "A lot of government websites fall short when compared to the private sector — they can be less secure, less accessible, and less monitored. The project team worked to improve this by creating Spotlight, a website scanner that allows government web managers to gather real-time intel on the performance of the websites they oversee. The tool runs customizable scans and provides data about everything from the use of the U.S. Web Design System to the presence of secure web components, with more functionality coming each sprint. "
   },
   "projectType": "Innovation",
