@@ -24,7 +24,7 @@ const Primary = ({ children }) => {
   const page = useSelector((state) => state.content.page);
   /* istanbul ignore next */
   const { meta = {}, type } = page.data;
-  const theme = type === "project" ? "5" : meta.theme;
+  const theme = type === "project" ? "5" : !meta.theme ? "6" : meta.theme;
   return (
     <div
       className={classnames({

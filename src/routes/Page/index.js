@@ -9,12 +9,14 @@ import FourOhFour from "routes/FourOhFour";
 import Head from "routes/Head";
 import Layout from "features/Layout";
 import { motion } from "framer-motion";
+import useScrollToTop from "utils/useScrollToTop";
 
 const Page = ({ name }) => {
   const dispatch = useDispatch();
   const params = useParams();
   const pageName = name ? name : params.name;
   const page = useSelector((state) => state.content.page);
+  useScrollToTop();
   useEffect(() => {
     dispatch(getPage({ name: pageName }));
   }, [dispatch, pageName]);

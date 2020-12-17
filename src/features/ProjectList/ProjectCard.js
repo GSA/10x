@@ -10,6 +10,10 @@ const ProjectCard = ({ data }) => {
   const { card = {}, meta = {} } = data;
   const handleClick = () => {
     const slug = card.projectUrl || data.slug;
+
+    if (slug.includes("://")) {
+      window.location.replace(slug);
+    }
     history.push(`${history.location.pathname}/${slug}`);
   };
   /* istanbul ignore next */

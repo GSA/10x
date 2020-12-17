@@ -29,7 +29,10 @@ export const Button = ({
   const Node =
     onClick || type
       ? nodes["b"]
-      : external || url.includes("://")
+      : external ||
+        url.includes("://") ||
+        url.includes("mailto:") ||
+        url.includes("tel:")
       ? nodes["a"]
       : nodes["link"];
   return (

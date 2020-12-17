@@ -14,6 +14,7 @@ import Icon from "components/Icon";
 import Break from "components/Break";
 import Card from "components/Card";
 import Layout from "features/Layout";
+import useScrollToTop from "utils/useScrollToTop";
 
 const Project = ({ type }) => {
   const dispatch = useDispatch();
@@ -21,7 +22,7 @@ const Project = ({ type }) => {
   useEffect(() => {
     dispatch(getPage({ type, name }));
   }, [dispatch, name, type]);
-
+  useScrollToTop();
   const page = useSelector((state) => state.content.page);
   const { pending, data, error } = page;
 

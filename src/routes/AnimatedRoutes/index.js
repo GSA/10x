@@ -8,6 +8,7 @@ export const MountTransition = ({ children, slide, slideUp }) => (
     exit={{ opacity: 0 }}
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
+    style={{ minHeight: "100%" }}
   >
     {children}
   </motion.div>

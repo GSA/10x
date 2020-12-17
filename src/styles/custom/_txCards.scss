@@ -51,7 +51,7 @@
 
     blockquote {
       display: flex;
-      justify-content: center;
+      justify-content: left;
       @include at-media("desktop") {
         float: left;
         height: 100%;

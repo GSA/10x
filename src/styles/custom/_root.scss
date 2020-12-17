@@ -64,6 +64,7 @@ h2 {
 }
 h3 {
   @include u-margin-bottom(2.5);
+  font-weight: 400;
 }
 h4,
 h5 {
@@ -126,9 +127,9 @@ h5 {
     .TxContent {
       background: linear-gradient(
         180deg,
-        #d8d8d8 8.7%,
-        rgba(255, 104, 57, 0.25) 58.64%,
-        rgba(255, 104, 57, 0.05) 87.96%
+        #{color("base-light")} 8.7%,
+        #f6c5b5 58.64%,
+        #fff7f5 87.96%
       );
     }
   }
@@ -147,7 +148,6 @@ h5 {
         background-repeat: no-repeat;
         background-position-x: left;
         background-position-y: 90%;
-        background-size: 80%;
       }
     }
   }
@@ -160,6 +160,16 @@ h5 {
       );
     }
   }
+  &__theme-7 {
+    .TxContent {
+      background: linear-gradient(
+        180deg,
+        #{color("base-light")} 0,
+        #bce9e9 50%,
+        #daf7f750 100%
+      );
+    }
+  }
 }
 
 .grid-container {
@@ -167,10 +177,9 @@ h5 {
 }
 
 #main-content {
-  min-height: 75vh;
   z-index: 1;
 }
 
 .TxContent {
-  @include u-padding-top(8);
+  @include u-padding-y(8);
 }
