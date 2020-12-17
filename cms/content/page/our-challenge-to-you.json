@@ -5,7 +5,13 @@
     {
       "type": "title",
       "title": "Our challenge to you",
-      "subtitle": "You’re smack dab in the middle of it all — your vantage point from within public service makes you uniquely qualified to see what we can do to create new good-for-government technology that enables good-for-people services."
+      "subtitle": "You’re smack dab in the middle of it all — your vantage point from within public service makes you uniquely qualified to see what we can do to create new good-for-government technology that enables good-for-people services.",
+      "className": "width-tablet-lg"
+    },
+    {
+      "type": "markdown",
+      "className": "width-tablet-lg",
+      "body": "C’mon, don’t be shy! We know you’ve looked at something during your daily routine and thought, “There has to be a better way to do that!” Now’s your chance to share that problem or idea and see if it’s the next big thing to improve how we serve the public. And if you don’t have an idea today, start looking around for opportunities to make things better. Be on the lookout for things that: "
     },
     {
       "type": "callout",
@@ -19,7 +25,7 @@
         }
       ],
       "className": "margin-bottom-2",
-      "text": "C’mon, don’t be shy! We know you’ve looked at something during your daily routine and thought, “There has to be a better way to do that!” Now’s your chance to share that problem or idea and see if it’s the next big thing to improve how we serve the public. And if you don’t have an idea today, start looking around for opportunities to make things better. Be on the lookout for things that: "
+      "text": ""
     },
     {
       "type": "callout",
@@ -42,7 +48,7 @@
     {
       "type": "markdown",
       "body": "It helps to structure the pitch as if you’re filling in the blank spaces on a Mad Libs-like game.\n\n### I’ve observed [problem or opportunity] and believe that if we [do this] it’ll result in [this benefit] for [this group of people].",
-      "className": "TxChallenge__pitch"
+      "className": "TxChallenge__pitch width-tablet-lg"
     },
     {
       "type": "break",
@@ -52,7 +58,8 @@
     },
     {
       "type": "markdown",
-      "body": "## A little more inspiration, a little more action, please\n\nNeed something to kick off your aha moment? Here are some pitches that 10x has funded. \n\n### Life Event Information for Seniors\n\n\nTurning 65 is an important milestone for American adults: it comes with new access to health insurance (Medicare), changing eligibility rules for common benefits programs (SNAP), new health recommendations (additional vaccinations and health screening), and important decisions about when to retire and start accepting Social Security retirement benefits. Information about these decisions come separately from multiple Federal agencies (SSA, CMS, CDC, USDA, etc.) at different times depending on the program’s schedule. 10x will investigate a one-stop solution aimed at older adults, that connects them to important information and resources about their health, benefits, and retirement decisions in a coherent and streamlined way that makes decision-making easy and intuitive, and takes into account how these decisions interact with one another.\n\n### Monitoring Uptime for Government Services\n\n\nGovernment digital services are occasionally offline and unavailable to the public due to system errors or planned maintenance, but members of the public do not have visibility into when these critical services may be unavailable and do not know when they will be back online. There is an opportunity to monitor and collect uptime and availability statistics on various government services to help users plan ahead. 10x will investigate the creation of a government service uptime and availability monitor to provide transparent statistics.\n\n### Navigating Public Records\n\n\nAcross the government, hundreds of online FOIA Libraries contain a wealth of information, yet these libraries are disconnected and lack a centralized search capability to allow the public to easily navigate the records. 10x will investigate a centralized search capability that would allow the public to search across all agency FOIA Libraries, enhancing the public’s interaction with government by facilitating the discovery of records already in the public domain, and creating efficiencies in agency FOIA operations as resources are directed to processing FOIA requests for information not previously disclosed and available to the public.\n\n<Button className=\"margin-bottom-8\" color=\"primary-dark\" url=\"https://feedback.gsa.gov/jfe/form/SV_1Im8dTPnjnV3HpP\">SUBMIT AN IDEA</Button>\n\n## Need some help?\n\nIf you’d like help putting together an idea or have questions about what we’re looking for [toss an email our way](mailto:10x@gsa.gov). We’re happy to connect you with a technology expert or someone to review what you have and make sure your idea is on point."
+      "body": "## A little more inspiration, a little more action, please\n\nNeed something to kick off your aha moment? Here are some pitches that 10x has funded. \n\n### Life Event Information for Seniors\n\n\nTurning 65 is an important milestone for American adults: it comes with new access to health insurance (Medicare), changing eligibility rules for common benefits programs (SNAP), new health recommendations (additional vaccinations and health screening), and important decisions about when to retire and start accepting Social Security retirement benefits. Information about these decisions come separately from multiple Federal agencies (SSA, CMS, CDC, USDA, etc.) at different times depending on the program’s schedule. 10x will investigate a one-stop solution aimed at older adults, that connects them to important information and resources about their health, benefits, and retirement decisions in a coherent and streamlined way that makes decision-making easy and intuitive, and takes into account how these decisions interact with one another.\n\n### Monitoring Uptime for Government Services\n\n\nGovernment digital services are occasionally offline and unavailable to the public due to system errors or planned maintenance, but members of the public do not have visibility into when these critical services may be unavailable and do not know when they will be back online. There is an opportunity to monitor and collect uptime and availability statistics on various government services to help users plan ahead. 10x will investigate the creation of a government service uptime and availability monitor to provide transparent statistics.\n\n### Navigating Public Records\n\n\nAcross the government, hundreds of online FOIA Libraries contain a wealth of information, yet these libraries are disconnected and lack a centralized search capability to allow the public to easily navigate the records. 10x will investigate a centralized search capability that would allow the public to search across all agency FOIA Libraries, enhancing the public’s interaction with government by facilitating the discovery of records already in the public domain, and creating efficiencies in agency FOIA operations as resources are directed to processing FOIA requests for information not previously disclosed and available to the public.\n\n<Button className=\"margin-bottom-8\" color=\"primary-dark\" url=\"https://feedback.gsa.gov/jfe/form/SV_1Im8dTPnjnV3HpP\">SUBMIT AN IDEA</Button>\n\n## Need some help?\n\nIf you’d like help putting together an idea or have questions about what we’re looking for [toss an email our way](mailto:10x@gsa.gov). We’re happy to connect you with a technology expert or someone to review what you have and make sure your idea is on point.",
+      "className": "width-tablet-lg"
     },
     {
       "type": "break",
@@ -61,7 +68,8 @@
     },
     {
       "type": "markdown",
-      "body": "## What happens to my idea after I hit “Submit”?\n\nTiming is everything. We evaluate submissions twice a year, generally in February and August. So while we’ll let you know we received your idea right away, you might not hear whether it’s been selected for a while – but you’ll definitely hear either way when the time comes. Yeah, yeah, we know. Hurry up and wait. \n\nTo find out what happens after that, learn more about [how we select and fund ideas](https://10x.gsa.gov). \n\n### It’s a coffee date, not a commitment\n\nWhile the ideas come from federal employees across the government, those folks aren’t ultimately involved in the selection process. We intentionally leave them out to get a clear, unbiased assessment of the project’s potential success and need. \n\nBut we do look to the idea submitter (hopefully, that’s you!) as a domain expert to suggest resources and research for us to consider. They’re an integral part of the Phase 1 kickoff and can attend phase close-out meetings to keep tabs on how (or if) the project is progressing. "
+      "body": "## What happens to my idea after I hit “Submit”?\n\nTiming is everything. We evaluate submissions twice a year, generally in February and August. So while we’ll let you know we received your idea right away, you might not hear whether it’s been selected for a while – but you’ll definitely hear either way when the time comes. Yeah, yeah, we know. Hurry up and wait. \n\nTo find out what happens after that, learn more about [how we select and fund ideas](https://10x.gsa.gov). \n\n### It’s a coffee date, not a commitment\n\nWhile the ideas come from federal employees across the government, those folks aren’t ultimately involved in the selection process. We intentionally leave them out to get a clear, unbiased assessment of the project’s potential success and need. \n\nBut we do look to the idea submitter (hopefully, that’s you!) as a domain expert to suggest resources and research for us to consider. They’re an integral part of the Phase 1 kickoff and can attend phase close-out meetings to keep tabs on how (or if) the project is progressing. ",
+      "className": "width-tablet-lg"
     }
   ],
   "meta": {
