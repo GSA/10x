@@ -18,7 +18,7 @@ if (process.env.NODE_ENV !== "production") {
   axe(React, ReactDOM, 1000);
 }
 
-if (process.env.BRANCH === "main") {
+if (process.env.BRANCH === "main" || process.env.BRANCH === "demo") {
   Router = BrowserRouter;
 }
 

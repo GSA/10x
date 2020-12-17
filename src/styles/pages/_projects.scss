@@ -44,7 +44,6 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
         border: none;
         background-size: 100% 100%;
         background-position-x: center;
-        background-position-y: center;
         background-repeat: no-repeat;
       }
       &__header {
@@ -52,6 +51,7 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
         @include u-padding-top(10);
         @include u-padding-bottom(2);
         background-image: url("~styles/images/in-nutshell-header.png");
+        background-position-y: bottom;
         h2 {
           padding: 0;
           margin: 0;
@@ -64,6 +64,7 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
         @include u-padding-bottom(6);
         @include u-color("white");
         background-image: url("~styles/images/in-nutshell-body.png");
+        background-position-y: top;
         ul {
           list-style: none;
           margin: 0;
