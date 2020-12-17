@@ -5,11 +5,17 @@
     {
       "type": "title",
       "title": "Designing success",
-      "subtitle": "We build success through careful experimentation."
+      "subtitle": "We build success through careful experimentation.",
+      "className": "width-tablet-lg"
+    },
+    {
+      "type": "markdown",
+      "body": "As we evaluated ideas for FY21, we experimented with distinct investment themes—targeted areas of the government tech ecosystem that we wanted to invest in and explore. While all ideas are still up for consideration, we wanted to try something different by tailoring our pipeline into specific areas. The three themes we settled on were:\n",
+      "className": "width-tablet-lg"
     },
     {
       "type": "callout",
-      "text": "As we evaluated ideas for FY21, we experimented with distinct investment themes—targeted areas of the government tech ecosystem that we wanted to invest in and explore. While all ideas are still up for consideration, we wanted to try something different by tailoring our pipeline into specific areas. The three themes we settled on were:\n",
+      "text": "",
       "items": [
         {
           "text": "",
@@ -31,7 +37,8 @@
     },
     {
       "type": "markdown",
-      "body": "We felt that these areas were unique, apt, and ripe for investigation. Of the 145 ideas we received, 111 were aligned with these focus areas. "
+      "body": "We felt that these areas were unique, apt, and ripe for investigation. Of the 145 ideas we received, 111 were aligned with these focus areas. ",
+      "className": "width-tablet-lg"
     },
     {
       "type": "break",
@@ -68,7 +75,8 @@
     },
     {
       "type": "markdown",
-      "body": "## A community of innovation\n\n10x continues to move forward with extending our innovative approach throughout the federal government. We’re pleased to see the GSA’s FAS Systems Governance Committee (FSGC) piloting a model that’s similar to 10x in FY21. We’re also rolling out The Halo Network — a group of 10x project alums who can advise and coach on the 10x process, good ideas, and innovation. \n\n\n\n\n\n\n"
+      "body": "## A community of innovation\n\n10x continues to move forward with extending our innovative approach throughout the federal government. We’re pleased to see the GSA’s FAS Systems Governance Committee (FSGC) piloting a model that’s similar to 10x in FY21. We’re also rolling out The Halo Network — a group of 10x project alums who can advise and coach on the 10x process, good ideas, and innovation. \n\n\n\n\n\n\n",
+      "className": "width-tablet-lg"
     }
   ],
   "meta": {
