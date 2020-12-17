@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "phaseData": {
+      "status": "InProgress"
+    }
+  },
+  "slug": "test-project",
+  "title": "Test Project",
+  "card": {
+    "title": "Test Card Title"
+  }
+}
