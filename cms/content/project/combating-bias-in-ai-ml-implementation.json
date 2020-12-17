@@ -14,7 +14,7 @@
     "title": "Combating Bias in AI/ML Implementation",
     "subtitle": "What if we could help remove bias from data sets for more equitable AI?",
     "excerpt": "Many of the biases that are found in our society can be reflected in data — there have already been recorded instances of datasets that reflect racial and other forms of bias being used to power artificial intelligence (AI) logic, which means the output produced also contains unfair biases, leading to unfair determinations. The project team is working to develop user-friendly, online web applications that can detect bias in data before it’s put through AI pipelines, addressing the needs of technical and non-technical users alike. ",
-    "projectUrl": "https://10x.gsa.gov/projects/combating-bias-in-aiml-implementation"
+    "projectUrl": "/"
   },
   "projectType": "Innovation",
   "projectLink": "",
