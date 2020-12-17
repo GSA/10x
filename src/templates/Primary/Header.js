@@ -89,6 +89,10 @@ const Header = ({ logo, className }) => {
                       <form
                         className="usa-search usa-search--small"
                         role="search"
+                        accept-charset="UTF-8"
+                        action="https://search.usa.gov/search"
+                        id="search_form"
+                        method="get"
                       >
                         <label
                           className="usa-sr-only"
@@ -111,6 +115,7 @@ const Header = ({ logo, className }) => {
                       </form>
                       <Button
                         color="primary-lighter"
+                        type="submit"
                         url="https://feedback.gsa.gov/jfe/form/SV_1Im8dTPnjnV3HpP"
                       >
                         SUBMIT AN IDEA
