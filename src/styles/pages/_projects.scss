@@ -182,6 +182,7 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
       .usa-card:nth-child(2) {
         .usa-card__container {
           position: relative;
+          @include u-padding-bottom(6);
           &:before {
             content: "";
             position: absolute;
