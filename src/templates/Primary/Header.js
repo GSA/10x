@@ -94,6 +94,13 @@ const Header = ({ logo, className }) => {
                         id="search_form"
                         method="get"
                       >
+                        <input name="utf8" type="hidden" value="&#x2713;" />
+                        <input
+                          type="hidden"
+                          name="affiliate"
+                          id="affiliate"
+                          value="10x"
+                        />
                         <label
                           className="usa-sr-only"
                           htmlFor="search-field-small"
@@ -101,10 +108,12 @@ const Header = ({ logo, className }) => {
                           Search
                         </label>
                         <input
+                          name="query"
+                          id="query"
+                          autocomplete="off"
+                          class="usagov-search-autocomplete"
                           className="usa-input"
-                          id="search-field-small"
                           type="search"
-                          name="search"
                         />
                         <button
                           className="usa-button usa-button--primary-lighter"
