@@ -1,7 +1,11 @@
 .usa-banner {
   background-color: transparent;
+  border-bottom: 1px solid #{color("base")};
   .usa-banner__header {
     @include u-color("white");
+  }
+  .usa-banner__inner {
+    max-width: $theme-grid-container-max-width;
   }
   .usa-banner__content {
     @include u-color("white");
