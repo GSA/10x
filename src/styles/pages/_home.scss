@@ -1,4 +1,16 @@
 $bgImgDir: "~styles/images";
+
+@keyframes cursor {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: color("ink");
+  }
+  100% {
+    color: #fff;
+  }
+}
 .Tx__homepage {
   padding-top: 0;
 
@@ -17,14 +29,21 @@ $bgImgDir: "~styles/images";
         position: relative;
         @include u-padding-y(10);
 
-        h1 {
+        .GhostWriter {
           position: relative;
           display: inline;
+          @include u-font("heading", "2xl");
+
           line-height: 125%;
           @include u-bg("white");
-          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+
           z-index: 2;
+
+          &__cursor {
+            animation: cursor 1s infinite;
+          }
         }
+
         &:before {
           display: inline-block;
           position: absolute;

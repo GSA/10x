@@ -6,10 +6,12 @@ import image from "styles/images/portfolio-paint-stroke-1.png";
 import { useSelector } from "react-redux";
 import Head from "routes/Head";
 import Layout from "features/Layout";
+import GhostWriter from "features/GhostWriter";
+import { useLocation } from "react-router-dom";
 
-const FourOhFour = ({ search }) => {
+const FourOhFour = () => {
   const data = useSelector((state) => state.settings["404"]);
-
+  const { search } = useLocation();
   if (search) {
     return (
       <Grid>
@@ -32,6 +34,7 @@ const FourOhFour = ({ search }) => {
               >
                 Card Content
               </Card>
+              <GhostWriter />
             </div>
           </Col>
         </Row>

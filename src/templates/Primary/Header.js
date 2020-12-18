@@ -9,7 +9,6 @@ import PrimaryNav from "components/PrimaryNav";
 import { useDispatch, useSelector } from "react-redux";
 import { getMenuList } from "app/MenuModule";
 import useOnPathChange from "utils/useOnPathChange";
-import Icon from "components/Icon";
 import Search from "./Search";
 
 const Header = ({ logo, className }) => {
