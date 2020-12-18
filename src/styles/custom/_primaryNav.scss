@@ -1,14 +1,15 @@
 .usa-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  bottom: unset;
+  bottom: 0;
   width: 100%;
   @include u-bg("base-darkest");
   @include u-padding(4);
   &.is-visible {
     animation: unset;
+    justify-content: left;
   }
 
   .usa-nav__inner {
@@ -19,6 +20,7 @@
   }
   .usa-nav__url {
     @include u-margin-bottom(2);
+    @include u-font("serif", "lg");
     &.usa-accordion__button {
       @include u-margin-bottom(1);
     }
@@ -44,6 +46,7 @@
     @include u-color("white");
   }
   .usa-nav__submenu {
+    @include u-padding-top(1);
     @include u-padding-left(2);
     @include u-margin-bottom(2);
 
@@ -51,9 +54,13 @@
       display: inline-block;
     }
     button {
-      @include u-font-family("sans");
-      @include u-margin-bottom(1);
+      @include u-font("sans", 9);
+      font-weight: 300;
+      @include u-margin-bottom(2);
     }
+  }
+  .usa-nav__url-prefix {
+    @include u-color("secondary");
   }
   ul,
   li {
@@ -141,26 +148,27 @@
         @include u-color("white");
         @include u-font("serif", 3);
         height: 100%;
+        &:hover,
+        &[aria-expanded="true"] {
+          &:before {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            bottom: 3px;
+            width: 100%;
+            height: 8px;
+            @include fullWidthBg("short-ocean-brush-stroke.png");
+            background-size: contain;
+            background-position-x: left;
+          }
+        }
         &.usa-accordion__button {
           background: none;
           margin: 0;
           &[aria-expanded="true"] {
             background: none;
             @include u-bg("base");
-            &:before {
-              display: inline-block;
-              position: absolute;
-              content: "";
-              left: 2rem;
-              bottom: 0;
-              width: 100%;
-              height: 20px;
-              background-repeat: no-repeat;
-              background-position-x: left;
-              background-position-y: center;
-              background-size: 30%;
-              background-image: url("~styles/images/short-ocean-brush-stroke.png");
-            }
+
             .usa-nav__url-text {
               &:after {
                 content: "\f106";
@@ -191,6 +199,8 @@
           display: none;
         }
         button {
+          @include u-margin-bottom(0);
+          @include u-font("sans", 3);
           font-weight: 400;
 
           &:hover {
@@ -202,7 +212,6 @@
     }
     .usa-nav__url-prefix {
       display: block;
-      @include u-color("secondary");
       margin-right: 0 !important;
       padding-right: 0 !important;
       @include u-margin-bottom(1);
@@ -231,8 +240,8 @@
   border: none;
   box-shadow: none;
   border-radius: 0;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: none;
   background-repeat: no-repeat;
   background-position-x: left;

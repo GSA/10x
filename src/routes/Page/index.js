@@ -25,8 +25,7 @@ const Page = ({ name }) => {
     return (
       <Grid>
         <Head title="Loading..." />
-        <h1>Loading...</h1>
-        <div className="margin-y-9">
+        <div className="margin-y-9 margin-x-auto">
           <Loading isLoading={true}>
             <span />
           </Loading>

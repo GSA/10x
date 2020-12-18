@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getMenuList } from "app/MenuModule";
 import useOnPathChange from "utils/useOnPathChange";
 import Icon from "components/Icon";
+import Search from "./Search";
 
 const Header = ({ logo, className }) => {
   const history = useHistory();
@@ -86,42 +87,7 @@ const Header = ({ logo, className }) => {
                   )}
                   footer={
                     <>
-                      <form
-                        className="usa-search usa-search--small"
-                        role="search"
-                        acceptCharset="UTF-8"
-                        action="https://search.usa.gov/search"
-                        id="search_form"
-                        method="get"
-                      >
-                        <input name="utf8" type="hidden" value="&#x2713;" />
-                        <input
-                          type="hidden"
-                          name="affiliate"
-                          id="affiliate"
-                          value="10x"
-                        />
-                        <label
-                          className="usa-sr-only"
-                          htmlFor="search-field-small"
-                        >
-                          Search
-                        </label>
-                        <input
-                          name="query"
-                          id="query"
-                          autocomplete="off"
-                          class="usagov-search-autocomplete"
-                          className="usa-input"
-                          type="search"
-                        />
-                        <button
-                          className="usa-button usa-button--primary-lighter"
-                          type="submit"
-                        >
-                          <Icon icon="search" />
-                        </button>
-                      </form>
+                      <Search />
                       <Button
                         color="primary-lighter"
                         type="submit"

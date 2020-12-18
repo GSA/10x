@@ -34,11 +34,9 @@ $bgImgDir: "~styles/images";
           left: 0;
           right: 0;
           z-index: 0;
-          background-size: cover;
-          background-position-x: center;
+          @include fullWidthBg("/home-hero-bg-stroke.png");
           background-position-y: bottom;
-          background-image: url($bgImgDir + "/home-hero-bg-stroke.png");
-          background-repeat: no-repeat;
+          background-size: cover;
 
           @include at-media("tablet") {
             bottom: -50px;
@@ -58,11 +56,7 @@ $bgImgDir: "~styles/images";
           right: -100px;
           width: 400px;
           height: 400px;
-          background-image: url($bgImgDir + "/home-x.png");
-          background-size: cover;
-          background-position-x: center;
-          background-position-y: center;
-          background-repeat: no-repeat;
+          @include fullWidthBg("/home-x.png");
           z-index: 1;
           @include at-media("desktop") {
             top: -50px;

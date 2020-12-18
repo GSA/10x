@@ -52,7 +52,9 @@
       position: relative;
       @include u-margin-x(-2);
       @include u-margin-bottom(15);
-      @include u-padding-y(10);
+
+      @include u-padding-top(15);
+      @include u-padding-bottom(10);
       @include u-padding-x(4);
       @include u-color("white");
 
@@ -90,11 +92,11 @@
       }
 
       &:before {
-        height: 500px;
+        height: 200px;
         top: 0;
         left: 0;
         @include fullWidthBg("phases-mobile-bg-top.png");
-        background-size: auto;
+        background-size: cover;
         background-position-x: center;
         background-position-y: top;
       }

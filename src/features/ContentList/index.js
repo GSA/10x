@@ -15,28 +15,28 @@ const ContentList = ({ type, render, error: errorRender }) => {
 
   const Error = errorRender;
   const Comp = render;
-  return (
-    <Loading isLoading={pending}>
-      {error ? (
-        Error ? (
-          <Error data={error} />
-        ) : (
-          <h1 className="ContentList__error">{error.message}</h1>
-        )
-      ) : !data.length ? (
-        <h1>No content found.</h1>
-      ) : (
-        data.map((item, i) =>
-          Comp ? (
-            <Comp key={`ContentList__${type}-${i}`} data={item} />
-          ) : (
-            <h1 className="ContentList__item" key={`ContentList__${type}-${i}`}>
-              {item.title}
-            </h1>
-          )
-        )
-      )}
-    </Loading>
+
+  if (pending) {
+    return <Loading isLoading={pending} />;
+  }
+  if (error) {
+    return Error ? (
+      <Error data={error} />
+    ) : (
+      <h1 className="ContentList__error">{error.message}</h1>
+    );
+  }
+  if (!data.length) {
+    return <h1>No content found.</h1>;
+  }
+  return data.map((item, i) =>
+    Comp ? (
+      <Comp key={`ContentList__${type}-${i}`} data={item} />
+    ) : (
+      <h1 className="ContentList__item" key={`ContentList__${type}-${i}`}>
+        {item.title}
+      </h1>
+    )
   );
 };
 
