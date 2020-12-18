@@ -28,9 +28,14 @@
       "text": ""
     },
     {
+      "type": "markdown",
+      "body": "\\## Make your good idea great\n\nA great idea can get buried behind a lot of words, but we can help you turn word salad into a clearly communicated vision. \n\nHere are some suggestions for how to turn a good pitch into a winning pitch.",
+      "className": "desktop:width-tablet-lg"
+    },
+    {
       "type": "callout",
-      "text": "A great idea can get buried behind a lot of words, but we can help you turn word salad into a clearly communicated vision. \n\nHere are some suggestions for how to turn a good pitch into a winning pitch. ",
-      "title": "Make your good idea great",
+      "text": "",
+      "title": "",
       "variant": "number",
       "items": [
         {
