@@ -13,8 +13,9 @@ const ProjectCard = ({ data }) => {
 
     if (slug.includes("://")) {
       window.location.replace(slug);
+    } else {
+      history.push(`${history.location.pathname}/${slug}`);
     }
-    history.push(`${history.location.pathname}/${slug}`);
   };
   /* istanbul ignore next */
   const excerpt = card.excerpt || data.intro;

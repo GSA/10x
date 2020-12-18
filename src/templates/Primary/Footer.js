@@ -60,19 +60,25 @@ const Footer = () => {
           </Row>
           <Row className="usa-footer__links" gap="4">
             <Col size="12" tablet="3">
-              <Button url="/" variant="link">
+              <Button url="https://www.gsaig.gov/" variant="link">
                 {
                   "Report fraud, waste, or abuse to the Office of the Inspector General"
                 }
               </Button>
             </Col>
             <Col size="12" tablet="3">
-              <Button url="/" variant="link">
+              <Button
+                url="https://www.gsa.gov/reference/freedom-of-information-act-foia"
+                variant="link"
+              >
                 {"Submit a Freedom of Information Act (FOIA), request"}
               </Button>
             </Col>
             <Col size="12" tablet="3">
-              <Button url="/" variant="link">
+              <Button
+                url="https://www.gsa.gov/reference/reports/budget-performance"
+                variant="link"
+              >
                 {"View budget and performance reports"}
               </Button>
             </Col>
@@ -81,7 +87,7 @@ const Footer = () => {
                 variant="link"
                 className="display-block"
                 external
-                url="https://10x.gsa.gov"
+                url="https://www.gsa.gov/website-information/accessibility-aids"
               >
                 {"View accessibility statement"}
               </Button>
@@ -89,7 +95,7 @@ const Footer = () => {
                 variant="link"
                 className="display-block "
                 external
-                url="https://10x.gsa.gov"
+                url="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002"
               >
                 {"View No FEAR Act"}
               </Button>

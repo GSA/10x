@@ -7,7 +7,7 @@ const GSAFooter = () => {
     <div className="GSAFooter">
       <div>
         <a
-          href="https://www.gsa.gov"
+          href="https://10x.gsa.gov"
           title="U.S. General Services Administration"
           className="GSAFooter__logo"
         >
@@ -19,7 +19,7 @@ const GSAFooter = () => {
         An official website of the GSA’s
         <Button
           variant="link"
-          url="https://www.gsa.gov/tts/"
+          url="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services"
           className="margin-left-05"
           title="Technology Transformation Services"
         >

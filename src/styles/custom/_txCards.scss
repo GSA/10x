@@ -41,7 +41,7 @@
         }
 
         p {
-          @include u-font-family("sans");
+          @include u-font("sans", "sm");
         }
       }
     }
