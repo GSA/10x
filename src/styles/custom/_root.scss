@@ -147,7 +147,7 @@ h5 {
         background-image: url("~styles/images/theme-5-bg.png");
         background-repeat: no-repeat;
         background-position-x: left;
-        background-position-y: 90%;
+        background-position-y: 1000px;
       }
     }
   }
@@ -192,5 +192,7 @@ h5 {
 }
 
 .TxContent {
-  @include u-padding-y(8);
+  .usa-app__bg {
+    @include u-padding-y(8);
+  }
 }

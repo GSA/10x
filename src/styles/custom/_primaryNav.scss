@@ -77,19 +77,21 @@
     .usa-search {
       width: auto;
       @include u-margin-bottom(4);
+      border: 2px solid #{color("primary-light")};
+      border-radius: 100px;
       .usa-input {
         @include u-color("base-light");
-        border: 1px solid #{color("base-light")};
-        @include u-bg("base-dark");
-        border-top-left-radius: 100px;
-        border-bottom-left-radius: 100px;
+        border: none;
+        border-right: none;
+        background-color: transparent;
         max-width: 100%;
       }
       .usa-button {
         background-image: none;
         width: auto;
         min-width: 2rem;
-        @include u-color("ink");
+        @include u-color("primary-light");
+        background-color: transparent;
       }
     }
     .usa-button {
@@ -97,6 +99,8 @@
       height: 2rem;
       @include u-padding-y(1);
       @include u-font("serif", 4);
+      border-left: none;
+      box-shadow: none;
     }
   }
 }

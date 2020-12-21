@@ -2,13 +2,13 @@ $bgImgDir: "~styles/images";
 
 @keyframes cursor {
   0% {
-    color: #fff;
+    opacity: 0;
   }
   50% {
-    color: color("ink");
+    opacity: 1;
   }
   100% {
-    color: #fff;
+    opacity: 0;
   }
 }
 .Tx__homepage {
@@ -22,14 +22,15 @@ $bgImgDir: "~styles/images";
   .Home {
     &__hero {
       position: relative;
+      margin-top: -4rem;
       @include u-margin-bottom(10);
       background-color: #ddf1f5;
 
       .grid-container {
         position: relative;
         @include u-padding-y(10);
-
         .GhostWriter {
+          min-height: 140px;
           position: relative;
           display: inline;
           @include u-font("heading", "2xl");
@@ -38,12 +39,13 @@ $bgImgDir: "~styles/images";
           @include u-bg("white");
 
           z-index: 2;
-
           &__cursor {
             animation: cursor 1s infinite;
           }
+          .Typewriter {
+            display: inline;
+          }
         }
-
         &:before {
           display: inline-block;
           position: absolute;
