@@ -42,6 +42,11 @@
     }
   }
   &__accent-cool {
+    &.TxBreak__wide {
+      &:before {
+        opacity: 0.6;
+      }
+    }
     &:before {
       background-image: url("~styles/images/short-sky-brush-stroke.png");
     }
