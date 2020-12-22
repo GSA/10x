@@ -291,14 +291,17 @@ modules:
       - name: custom
         label: Custom SEO fields
         widget: list
-        hint: "Adds custom <link> or <meta> tags to the header"
+        hint: "Adds custom <meta> tag to the header"
+        required: false
         fields:
           - label: Name
             name: name
             widget: string
+            required: false
           - label: Content
             name: content
             widget: string
+            required: false
 
 #########################
 collections:
