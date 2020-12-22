@@ -79,6 +79,10 @@
   ],
   "meta": {
     "theme": "4",
-    "footer": "10x-in-the-wild"
+    "footer": "10x-in-the-wild",
+    "seo": {
+      "title": "How can you turn your great idea into a great 10x pitch? | 10x.GSA.gov",
+      "text": "How you pitch your great idea makes a big difference. Learn how to create a great pitch for 10x's good-for-government, good-for-people tech solutions."
+    }
   }
 }
