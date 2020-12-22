@@ -10,6 +10,9 @@
   &.is-visible {
     animation: unset;
     justify-content: left;
+    @include at-media("desktop") {
+      justify-content: space-between;
+    }
   }
 
   .usa-nav__inner {
