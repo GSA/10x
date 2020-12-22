@@ -20,31 +20,35 @@
           "title": "FEATURED PROJECT",
           "text": "Using machine learning to combat bias",
           "link": "/",
-          "body": "##### featured project\n\n[Rapid implementation of policy as code](https://18f.gsa.gov/2020/05/12/rapid-implementation-of-policy-as-code/)"
+          "body": "##### featured project\n\n[Rapid implementation of policy as code](https://18f.gsa.gov/2020/05/12/rapid-implementation-of-policy-as-code/)",
+          "className": "card-bg--1"
         },
         {
           "title": "MEDIA",
           "text": "Government reinvention with a venture capital mindset",
           "link": "https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx",
-          "body": "##### inside look\n\n[View 10x Lightning Talks from successful idea submitters](https://digital.gov/event/2020/06/30/10x-project-lightning-talks-2020/)\n"
+          "body": "##### inside look\n\n[View 10x Lightning Talks from successful idea submitters](https://digital.gov/event/2020/06/30/10x-project-lightning-talks-2020/)\n",
+          "className": "card-bg--2"
         },
         {
           "title": "INSIDE LOOK",
           "text": "View 10x Lightening Talks from successful idea submitters",
           "link": "https://digital.gov/event/2020/06/30/10x-project-lightning-talks-2020/",
-          "body": "##### Media\n\n[Government reinvention with a venture capital mindset](https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx)"
+          "body": "##### Media\n\n[Government reinvention with a venture capital mindset](https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx)",
+          "className": "card-bg--3"
         },
         {
           "title": "AWARDS",
           "text": "10x is proud to have been recognized with a 2019 Public Sector Innovation award",
           "link": "https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx",
-          "body": "##### Awards\n\n[10x is proud to receive a 2019 Public Sector Innovation award](https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx)"
+          "body": "##### Awards\n\n[10x is proud to receive a 2019 Public Sector Innovation award](https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx)",
+          "className": "card-bg--4"
         }
       ]
     }
   ],
   "subtitle": "What if your idea could change how the government communicates with the public?",
-  "slug": "home",
+  "slug": "homepage",
   "meta": {
     "theme": "1",
     "footer": "10x-in-the-wild",
