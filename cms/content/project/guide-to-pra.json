@@ -30,7 +30,11 @@
       {
         "text": "Helping federal employees navigate the PRA process can lead to improved interaction with the public and enable a more responsive government "
       }
-    ]
+    ],
+    "seo": {
+      "title": "A Guide to the PRA - 10x Project | 10x.GSA.gov",
+      "text": "What if we could make it easier for civil servants to interact with the public they serve? Find out how 10x created a guide to the Paperwork Reduction Act."
+    }
   },
   "phaseData": {
     "status": "3",
