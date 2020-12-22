@@ -7,6 +7,17 @@
       "phase": "4",
       "message": "Graduated after Phase 4 and in use at OMB, USDA, OGIS, and for other initiatives like data.gov"
     },
+    "summary": [
+      {
+        "text": "Getting good, reliable data is hard"
+      },
+      {
+        "text": "Data from different sources makes this even harder"
+      },
+      {
+        "text": "Data providers are less likely to contribute to systems that are difficult and time consuming to use"
+      }
+    ],
     "projectType": "Innovation",
     "links": [
       {
@@ -23,22 +34,15 @@
       }
     ],
     "template": "6",
+    "footer": "every-solution-starts-as-an-idea",
+    "seo": {
+      "title": "U.S. Data Federation - 10x Project | 10x.GSA.gov",
+      "text": "What if you could easily aggregate federated data for better analysis & insights? Find out how 10x made it happen."
+    },
     "team": {
       "submitter": "Philip Ashlock, Data and Analytics Portfolio Lead, TTS Office of Solution",
       "members": "Chris Goranson, Catherine Devlin, Tony Garvan, Mike Gintz, Mark Headd, Ethan Heppner, Joe Krzystan, Julia Lindpaintner, Amy Mok, Princess Ojiaku, James Tranovich\n"
-    },
-    "summary": [
-      {
-        "text": "Getting good, reliable data is hard"
-      },
-      {
-        "text": "Data from different sources makes this even harder"
-      },
-      {
-        "text": "Data providers are less likely to contribute to systems that are difficult and time consuming to use"
-      }
-    ],
-    "footer": "every-solution-starts-as-an-idea"
+    }
   },
   "slug": "us-data-federation",
   "intro": "Data informs all kinds of decision making in the federal government, but the wide array of sources and structures and units make sharing data — an activity that could result in better, more complete analysis — come down somewhere between horribly difficult and impossible. By creating tools and processes to make it easier, the Team was able to help make decision-making founded on data better. And they did this through extensive research with users and stakeholders to define what was needed and how it needs to be available. ",
