@@ -1,3 +1,12 @@
+@mixin cardReset {
+  .usa-card {
+    .usa-card__container {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
 .TxCards {
   .grid-row {
     @include u-margin-x(-2);
@@ -21,6 +30,36 @@
         .usa-button--unstyled {
           @include u-font("serif", "md");
         }
+      }
+    }
+  }
+  [class*="card-bg"] {
+    @include cardReset();
+    .usa-card__container {
+      @include u-padding-y(2);
+    }
+  }
+  .card-bg {
+    &--1 {
+      .usa-card__container {
+        @include fullWidthBg("featured-bg-1.png");
+      }
+    }
+    &--2 {
+      .usa-card__container {
+        @include fullWidthBg("featured-bg-2.png");
+      }
+    }
+    &--3 {
+      .usa-card__container {
+        @include fullWidthBg("featured-bg-3.png");
+        @include u-padding-top(4);
+      }
+    }
+    &--4 {
+      .usa-card__container {
+        @include fullWidthBg("featured-bg-4.png");
+        @include u-padding-top(4);
       }
     }
   }

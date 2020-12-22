@@ -14,25 +14,31 @@ const getRand = (min = 1000, max = 2000) => Math.random() * (max - min) + min;
 const GhostWriter = (props) => {
   return (
     <div className="GhostWriter">
-      {"What if your idea could change how the government "}
-      <Typewriter
-        options={{
-          loop: false,
-          delay: 50,
-          wrapperClassName: "GhostWriter__text",
-          cursorClassName: "GhostWriter GhostWriter__cursor",
-        }}
-        onInit={(typewriter) => {
-          items.forEach((item, i) => {
-            typewriter.pauseFor(getRand()).typeString(item).pauseFor(getRand());
-            if (i + 1 !== items.length) {
-              typewriter.deleteAll();
-            }
-          });
+      <h1 className="usa-sr-only">10x Homepage</h1>
+      <div className="GhostWriter__content">
+        {"What if your idea could change how the government "}
+        <Typewriter
+          options={{
+            loop: false,
+            delay: 50,
+            wrapperClassName: "GhostWriter__text",
+            cursorClassName: "GhostWriter GhostWriter__cursor",
+          }}
+          onInit={(typewriter) => {
+            items.forEach((item, i) => {
+              typewriter
+                .pauseFor(getRand())
+                .typeString(item)
+                .pauseFor(getRand());
+              if (i + 1 !== items.length) {
+                typewriter.deleteAll();
+              }
+            });
 
-          typewriter.start();
-        }}
-      />
+            typewriter.start();
+          }}
+        />
+      </div>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Search = (props) => {
     >
       <input name="utf8" type="hidden" value="&#x2713;" />
       <input type="hidden" name="affiliate" id="affiliate" value="10x" />
-      <label className="usa-sr-only" htmlFor="search-field-small">
+      <label className="usa-sr-only" htmlFor="query">
         Search
       </label>
       <input

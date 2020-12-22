@@ -96,8 +96,8 @@ const Header = ({ logo, className }) => {
                       </Button>
                     </>
                   }
-                  open=""
-                  close=""
+                  open={<span className="usa-sr-only">Menu</span>}
+                  close={<span className="usa-sr-only">Close</span>}
                 />
               </Col>
             </Row>

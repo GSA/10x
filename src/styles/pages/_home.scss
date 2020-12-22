@@ -29,16 +29,21 @@ $bgImgDir: "~styles/images";
       .grid-container {
         position: relative;
         @include u-padding-y(10);
+
         .GhostWriter {
-          min-height: 140px;
-          position: relative;
-          display: inline;
-          @include u-font("heading", "2xl");
+          min-height: 210px;
+          @include at-media("desktop") {
+            min-height: 140px;
+          }
+          &__content {
+            display: inline;
+            position: relative;
+            @include u-font("heading", "2xl");
+            line-height: 125%;
+            @include u-bg("white");
+            z-index: 2;
+          }
 
-          line-height: 125%;
-          @include u-bg("white");
-
-          z-index: 2;
           &__cursor {
             animation: cursor 1s infinite;
           }
@@ -117,42 +122,6 @@ $bgImgDir: "~styles/images";
 
           .usa-button {
             width: auto;
-          }
-        }
-      }
-    }
-
-    &__cards {
-      @include u-padding-bottom(8);
-      .usa-card {
-        height: 100%;
-        @include u-padding-bottom(4);
-        .usa-card__container {
-          background-size: contain;
-          background-position-x: right;
-          background-position-y: top;
-          background-repeat: no-repeat;
-        }
-      }
-      > .grid-row > div {
-        &:nth-child(1) {
-          .usa-card__container {
-            background-image: url($bgImgDir + "/home-featured-brush-stroke-1.png");
-          }
-        }
-        &:nth-child(2) {
-          .usa-card__container {
-            background-image: url($bgImgDir + "/home-featured-brush-stroke-2.png");
-          }
-        }
-        &:nth-child(3) {
-          .usa-card__container {
-            background-image: url($bgImgDir + "/home-featured-brush-stroke-3.png");
-          }
-        }
-        &:nth-child(4) {
-          .usa-card__container {
-            background-image: url($bgImgDir + "/home-featured-brush-stroke-4.png");
           }
         }
       }

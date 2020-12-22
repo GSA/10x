@@ -5,8 +5,12 @@ const xml = require("js2xmlparser");
 
 const excludedPathTypes = ["page"];
 
+const PROD_URL = "http://10x.gsa.gov";
+
 const CMS_KEY = "cms";
 const DEST_KEY = "public";
+
+const HOMEPAGE_KEY = "homepage";
 
 const CMS_PATH = path.join(__dirname, CMS_KEY);
 const DEST_PATH = path.join(__dirname, DEST_KEY);
@@ -155,7 +159,10 @@ const generateSitemap = (collections = ["page", "project"]) => {
     fs.ensureFile(file);
     const contents = fs.readJsonSync(file);
     const pages = contents.map(
-      (item) => `${process.env.PUBLIC_URL}${sitePaths[name]}/${item.name}`
+      (item) =>
+        `${PROD_URL}${sitePaths[name]}/${
+          item.name === HOMEPAGE_KEY ? "" : item.name
+        }`
     );
     return [...acc, ...pages];
   }, []);

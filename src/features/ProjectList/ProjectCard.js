@@ -12,7 +12,7 @@ const ProjectCard = ({ data }) => {
     const slug = card.projectUrl || data.slug;
 
     if (slug.includes("://")) {
-      window.location.replace(slug);
+      window.location.assign(slug);
     } else {
       history.push(`${history.location.pathname}/${slug}`);
     }

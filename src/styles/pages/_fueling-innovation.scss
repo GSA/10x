@@ -14,46 +14,4 @@
 
     @include fullWidthBg("fueling-innovation-callout-bg.png");
   }
-  .TxCards {
-    .usa-card {
-      margin-bottom: 0;
-      &:last-child {
-        margin-bottom: 0;
-        padding-bottom: 0;
-        @include at-media("desktop") {
-          margin-bottom: 0;
-        }
-      }
-    }
-    .usa-card__container {
-      margin-top: -1rem;
-      padding-top: 1rem;
-      padding-bottom: 3rem;
-      margin-bottom: -1rem;
-      background-color: transparent;
-      box-shadow: none;
-    }
-    .grid-row > div {
-      &:nth-child(1) {
-        .usa-card__container {
-          @include fullWidthBg("featured-bg-1.png");
-        }
-      }
-      &:nth-child(2) {
-        .usa-card__container {
-          @include fullWidthBg("featured-bg-2.png");
-        }
-      }
-      &:nth-child(3) {
-        .usa-card__container {
-          @include fullWidthBg("featured-bg-3.png");
-        }
-      }
-      &:nth-child(4) {
-        .usa-card__container {
-          @include fullWidthBg("featured-bg-4.png");
-        }
-      }
-    }
-  }
 }
