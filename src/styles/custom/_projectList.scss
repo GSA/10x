@@ -15,7 +15,11 @@
 
       transition: box-shadow 0.2s;
       &:hover {
-        box-shadow: 0px 16px 28px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 16px 28px rgba(0, 0, 0, 0.5);
+        .usa-card__heading {
+          @include u-color("primary-dark");
+          text-decoration: underline;
+        }
       }
 
       @include u-padding-top(10);
@@ -30,6 +34,7 @@
       line-height: 130%;
       font-weight: 500;
       @include u-color("primary-darker");
+      transition: all 0.2s;
     }
     &__subhead {
       @include u-font("serif", 11);
