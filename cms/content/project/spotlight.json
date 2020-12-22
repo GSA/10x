@@ -30,7 +30,11 @@
         "text": "Github repository",
         "link": "https://github.com/18F/site-scanning"
       }
-    ]
+    ],
+    "seo": {
+      "title": "Spotlight - 10x Project | 10x.GSA.gov",
+      "text": "What is the government had a window into the performance of the entire federal webspace, on-demand, for free? Find out how 10x made this happen."
+    }
   },
   "phaseData": {
     "status": "1",
