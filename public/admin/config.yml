@@ -277,6 +277,29 @@ modules:
       - <<: *modProjects
       - <<: *modTitle
 
+  modSeo: &modSeo
+    label: SEO
+    name: seo
+    widget: object
+    fields:
+      - <<: *title
+        required: false
+        hint: "Document title attribute"
+      - <<: *text
+        required: false
+        hint: "Document description attribute"
+      - name: custom
+        label: Custom SEO fields
+        widget: list
+        hint: "Adds custom <link> or <meta> tags to the header"
+        fields:
+          - label: Name
+            name: name
+            widget: string
+          - label: Content
+            name: content
+            widget: string
+
 #########################
 collections:
   #########################
@@ -459,6 +482,7 @@ collections:
         name: meta
         widget: "object"
         fields:
+          - <<: *modSeo
           - label: "Theme"
             name: "theme"
             required: false
@@ -533,6 +557,7 @@ collections:
         widget: "object"
         required: false
         fields:
+          - <<: *modSeo
           - label: "Type"
             name: "projectType"
             widget: "select"

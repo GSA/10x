@@ -37,7 +37,7 @@
     "remark-toc": "^7.0.0",
     "typewriter-effect": "^2.17.0",
     "uswds": "^2.8.1",
-    "yaml": "^1.10.0"
+    "yaml": "^2.0.0-1"
   },
   "scripts": {
     "index-content": "node runIndex.js",
