@@ -34,7 +34,11 @@
         "link": "https://github.com/18F/eligibility-rules-service "
       }
     ],
-    "template": "4"
+    "template": "4",
+    "seo": {
+      "title": "Eligibility APIs - 10x Project | 10x.GSA.gov",
+      "text": "What if you could help make government program eligibility requirements easier for state, local, and tribal governments to implement? See what 10x did."
+    }
   },
   "phaseData": {
     "status": "3",
