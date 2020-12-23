@@ -3,9 +3,9 @@
   "sections": [
     {
       "type": "markdown",
-      "body": "<GhostWriter />\n",
+      "body": "<Grid>\n<GhostWriter />\n</Grid>\n",
       "className": "Home__hero",
-      "fullwidth": false
+      "fullwidth": true
     },
     {
       "type": "markdown",
