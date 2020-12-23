@@ -7,6 +7,9 @@
           max-width: 360px;
           margin-left: auto;
           margin-right: auto;
+          @include at-media("desktop") {
+            @include u-padding-left(3);
+          }
         }
         &:first-child {
           h3 {

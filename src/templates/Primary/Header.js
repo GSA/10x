@@ -89,7 +89,6 @@ const Header = ({ logo, className }) => {
                       <Search />
                       <Button
                         color="primary-lighter"
-                        type="submit"
                         url="https://feedback.gsa.gov/jfe/form/SV_1Im8dTPnjnV3HpP"
                       >
                         SUBMIT AN IDEA

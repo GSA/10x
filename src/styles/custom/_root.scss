@@ -66,6 +66,9 @@ h3 {
   @include u-margin-bottom(2.5);
   font-weight: 400;
 }
+h4 {
+  font-weight: 400;
+}
 h4,
 h5 {
   @include u-margin-bottom(2);

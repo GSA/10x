@@ -4,7 +4,7 @@ import classnames from "classnames";
 import Card from "components/Card";
 import { useHistory } from "react-router-dom";
 
-const ProjectCard = ({ data }) => {
+const ProjectCard = ({ data, tabOrder }) => {
   const history = useHistory();
   /* istanbul ignore next */
   const { card = {}, meta = {} } = data;
@@ -22,7 +22,9 @@ const ProjectCard = ({ data }) => {
 
   return (
     <Card
+      tabIndex="0"
       onClick={handleClick}
+      onKeyDown={handleClick}
       className={classnames({
         ProjectCard: true,
         [`template-${meta.template}`]: true,

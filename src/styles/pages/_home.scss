@@ -119,7 +119,9 @@ $bgImgDir: "~styles/images";
           @include at-media("desktop") {
             margin-right: 0;
           }
-
+          strong {
+            @include u-font("heading", "md");
+          }
           .usa-button {
             width: auto;
           }
