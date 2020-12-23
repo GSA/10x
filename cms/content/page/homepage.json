@@ -5,7 +5,7 @@
       "type": "markdown",
       "body": "<GhostWriter />\n",
       "className": "Home__hero",
-      "fullwidth": true
+      "fullwidth": false
     },
     {
       "type": "markdown",
