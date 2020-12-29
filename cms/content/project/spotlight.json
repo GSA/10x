@@ -58,7 +58,7 @@
       "modules": [
         {
           "type": "markdown",
-          "body": "## What we did\n\nWe conducted extensive user research into the needs of web managers, we spoke with the teams behind existing web analysis tools to see how we could complement their work, and we brought on engineers to build the scans.\n\n### Where we are today\n\nSpotlight is an active product currently maintained within the Technology Transformation Services. It is also still an active 10x project, currently in Phase 4. As part of Phase 4 work, the team is looking for ways to expand Spotlight to serve as many different users as possible. Currently, the team is building out the front-end interface of the scanner to allow more non-technical users to benefit from the tool, in addition to developing new scanning capabilities. "
+          "body": "## What we did\n\nWe delivered a platform that hosts customizable scans that uncover business intelligence and real-time analysis for government web managers. \n\n### How we did it\n\nWe conducted extensive user research into the needs of web managers, we spoke with the teams behind existing web analysis tools to see how we could complement their work, and we brought on engineers to build the scans.\n\n### Where we are today\n\nSpotlight is an active product currently maintained within the Technology Transformation Services. It is also still an active 10x project, currently in Phase 4. As part of Phase 4 work, the team is looking for ways to expand Spotlight to serve as many different users as possible. Currently, the team is building out the front-end interface of the scanner to allow more non-technical users to benefit from the tool, in addition to developing new scanning capabilities. "
         }
       ]
     },
@@ -66,13 +66,13 @@
       "modules": [
         {
           "type": "markdown",
-          "body": "## Next steps\n\nIn early 2021s, Spotlight will continue to develop new functionalities to solve problems for more people. It looks like the long-term home and support for Spotlight will come from within 10x’s own organization—TTS, where it can thrive alongside other offerings, including the USWDS and the Digital Analytics Program."
+          "body": "## Next steps\n\nIn early 2021s, Spotlight will continue to develop new functionalities to solve problems for more people. It looks like the long-term home and support for Spotlight will come from within 10x’s own organization — TTS, where it can thrive alongside other offerings, including the USWDS and the Digital Analytics Program."
         }
       ]
     }
   ],
   "card": {
-    "subtitle": "What if the government had a window into the performance of the entire federal webspace, on-demand for free?",
+    "subtitle": "What if the government had a window into the performance of the entire federal webspace, on-demand, for free?",
     "title": "Spotlight",
     "projectUrl": "",
     "excerpt": "A lot of government websites fall short when compared to the private sector — they can be less secure, less accessible, and less monitored. The project team worked to improve this by creating Spotlight, a website scanner that allows government web managers to gather real-time intel on the performance of the websites they oversee. The tool runs customizable scans and provides data about everything from the use of the U.S. Web Design System to the presence of secure web components, with more functionality coming each sprint. "
