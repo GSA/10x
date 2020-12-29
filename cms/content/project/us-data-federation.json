@@ -51,7 +51,7 @@
       "modules": [
         {
           "type": "markdown",
-          "body": "## Why this matters\n\nFederated data efforts are increasingly seen as an engine for transparency, economic growth, and accountability, yet collecting that data remains a challenge. Despite the fact that efforts to aggregate data are increasing in frequency, each new effort is still improvising solutions in terms of processes, tooling, and compliance infrastructure. It’s time to take this problem seriously and invest in reusable tools and approaches that will streamline federated data efforts in the years to come, In short,\n\n* Getting good, reliable data is hard\n* Data from differences sources makes this even harder\n* Data providers are less likely to contribute to systems that are difficult and time consuming to use"
+          "body": "## Why this matters\n\nFederated data efforts are increasingly seen as an engine for transparency, economic growth, and accountability, yet collecting that data remains a challenge. Despite the fact that efforts to aggregate data are increasing in frequency, each new effort is still improvising solutions in terms of processes, tooling, and compliance infrastructure. It’s time to take this problem seriously and invest in reusable tools and approaches that will streamline federated data efforts in the years to come."
         }
       ]
     },
