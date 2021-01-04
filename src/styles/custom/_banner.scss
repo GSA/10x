@@ -6,6 +6,7 @@
   }
   .usa-banner__inner {
     max-width: $theme-grid-container-max-width;
+    @include u-padding-x(2);
   }
   .usa-banner__content {
     @include u-color("white");

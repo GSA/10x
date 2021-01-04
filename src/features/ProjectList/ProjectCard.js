@@ -8,13 +8,22 @@ const ProjectCard = ({ data, tabOrder }) => {
   const history = useHistory();
   /* istanbul ignore next */
   const { card = {}, meta = {} } = data;
-  const handleClick = () => {
+
+  const handleLink = () => {
     const slug = card.projectUrl || data.slug;
 
     if (slug.includes("://")) {
       window.location.assign(slug);
     } else {
       history.push(`${history.location.pathname}/${slug}`);
+    }
+  };
+  const handleClick = () => {
+    handleLink();
+  };
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 13) {
+      handleLink();
     }
   };
   /* istanbul ignore next */
@@ -24,7 +33,7 @@ const ProjectCard = ({ data, tabOrder }) => {
     <Card
       tabIndex="0"
       onClick={handleClick}
-      onKeyDown={handleClick}
+      onKeyDown={handleKeyDown}
       className={classnames({
         ProjectCard: true,
         [`template-${meta.template}`]: true,

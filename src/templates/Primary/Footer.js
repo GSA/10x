@@ -71,7 +71,7 @@ const Footer = () => {
                 url="https://www.gsa.gov/reference/freedom-of-information-act-foia"
                 variant="link"
               >
-                {"Submit a Freedom of Information Act (FOIA), request"}
+                {"Submit a Freedom of Information Act (FOIA) request"}
               </Button>
             </Col>
             <Col size="12" tablet="3">
