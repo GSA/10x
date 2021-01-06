@@ -43,7 +43,7 @@
   "scripts": {
     "index-content": "node runIndex.js",
     "start": "npm run index-content && react-scripts start",
-    "build": "PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-scripts build && react-snapshot",
+    "build": "PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-scripts build && react-snap",
     "test": "react-scripts test",
     "test:coverage": "npm test -- --coverage --watchAll=false",
     "federalist": "npm run federalist:build && npm run federalist:copy",
@@ -64,18 +64,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "reactSnapshot": {
-    "include": [
-      "/designing-success",
-      "/fueling-innovation",
-      "/making-each-dollar-count"
-    ],
-    "exclude": [
-      "/signup",
-      "/other-path/exclude-me/**"
-    ],
-    "snapshotDelay": 300
   },
   "jest": {
     "collectCoverageFrom": [

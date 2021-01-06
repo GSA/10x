@@ -1,6 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { render } from "react-snapshot";
+import ReactDOM, { hydrate, render } from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter, HashRouter } from "react-router-dom";
 import Routes from "./routes";
@@ -26,20 +25,24 @@ if (
   Router = BrowserRouter;
 }
 
-ReactDOM.render(
-  render(
-    <React.StrictMode>
-      <Router>
-        <Provider store={store}>
-          <Primary>
-            <Routes />
-          </Primary>
-        </Provider>
-      </Router>
-    </React.StrictMode>
-  ),
-  document.getElementById("root")
+const App = () => (
+  <React.StrictMode>
+    <Router>
+      <Provider store={store}>
+        <Primary>
+          <Routes />
+        </Primary>
+      </Provider>
+    </Router>
+  </React.StrictMode>
 );
+
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(<App />, rootElement);
+} else {
+  render(<App />, rootElement);
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
