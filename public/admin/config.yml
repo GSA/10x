@@ -286,6 +286,8 @@ modules:
         required: false
         hint: "Document title attribute"
       - <<: *text
+        label: Description
+        name: description
         required: false
         hint: "Document description attribute"
       - name: custom
