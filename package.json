@@ -66,6 +66,9 @@
       "last 1 safari version"
     ]
   },
+  "reactSnap": {
+    "puppeteerExecutablePath": "/usr/bin/chromium-browser"
+  },
   "jest": {
     "collectCoverageFrom": [
       "src/components/**/*.js",
