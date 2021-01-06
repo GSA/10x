@@ -5,8 +5,8 @@ import { Route, Switch, useLocation } from "react-router-dom";
 
 export const MountTransition = ({ children, slide, slideUp }) => (
   <motion.div
-    exit={{ opacity: 0 }}
-    initial={{ opacity: 0 }}
+    exit={{ opacity: 1 }}
+    initial={{ opacity: 1 }}
     animate={{ opacity: 1 }}
     style={{ minHeight: "100%" }}
   >

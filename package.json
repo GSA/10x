@@ -67,7 +67,12 @@
     ]
   },
   "reactSnap": {
-    "puppeteerExecutablePath": "/usr/bin/google-chrome"
+    "puppeteerExecutablePath": "/usr/bin/google-chrome",
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-gpu"
+    ]
   },
   "jest": {
     "collectCoverageFrom": [
