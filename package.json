@@ -44,7 +44,7 @@
   "scripts": {
     "index-content": "node runIndex.js",
     "start": "npm run index-content && react-scripts start",
-    "build": "PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-scripts build",
+    "build": "PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-scripts build && react-snap",
     "test": "react-scripts test",
     "test:coverage": "npm test -- --coverage --watchAll=false",
     "federalist": "npm run federalist:build && npm run federalist:copy",
@@ -67,7 +67,7 @@
     ]
   },
   "reactSnap": {
-    "puppeteerExecutablePath": "/usr/bin/chromium-browser"
+    "puppeteerExecutablePath": "/usr/bin/google-chrome"
   },
   "jest": {
     "collectCoverageFrom": [
