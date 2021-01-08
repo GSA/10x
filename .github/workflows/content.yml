@@ -19,3 +19,10 @@ jobs:
           pr_label: "content-deploy"
           pr_allow_empty: false
           github_token: ${{ github.token }}
+  ssr-build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - run: npm run build
