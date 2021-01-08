@@ -8,5 +8,5 @@ jobs:
         node-version: [12.x]
     steps:
       - run: |
-      npm i
-      npm run build
+        npm i
+        npm run build
