@@ -1,5 +1,8 @@
 name: Content Merge
-on: "push"
+on:
+  push:
+    branches:
+      - "demo"
 jobs:
   pull-request:
     runs-on: ubuntu-latest
