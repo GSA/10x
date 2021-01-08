@@ -1,0 +1,10 @@
+name: SSR Build
+on: "push"
+jobs:
+  ssr-build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - run: npm run build
