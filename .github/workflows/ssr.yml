@@ -14,4 +14,4 @@ jobs:
       - name: SSR Build
         run: |
           npm ci
-          npm run build
+          npm run federalist:build
