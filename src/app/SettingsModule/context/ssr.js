@@ -1,7 +1,7 @@
 /* istanbul ignore file */
-import SettingsData from "../../app/json/settings.json";
-import FourOhFourData from "../../app/json/404.json";
-import FooterData from "../../app/json/content/footer/index.json";
+import SettingsData from "../../json/settings.json";
+import FourOhFourData from "../../json/404.json";
+import FooterData from "../../json/content/footer/index.json";
 
 export const getSettings = async (props = {}) => {
   return { ...SettingsData, ...FourOhFourData };
