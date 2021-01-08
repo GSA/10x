@@ -1,11 +1,11 @@
 /* istanbul ignore file */
-import * as menuAPI from "./menuAPI";
 import * as test from "./test";
+import * as ssr from "./ssr";
 
 let context = test;
 
 if (process.env.NODE_ENV !== "test") {
-  context = menuAPI;
+  context = ssr;
 }
 
 export default context;

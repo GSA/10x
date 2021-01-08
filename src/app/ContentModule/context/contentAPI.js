@@ -14,10 +14,3 @@ export const getContentTypeByName = async (props) => {
   const data = await response.json();
   return data;
 };
-
-export const getTaxonomyByContentType = async (props) => {
-  const { type } = props;
-  const response = await fetch(`${ROOT_URL}/content/${type}/taxonomy.json`);
-  const data = await response.json();
-  return data;
-};

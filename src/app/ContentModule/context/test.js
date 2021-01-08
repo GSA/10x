@@ -1,8 +1,18 @@
 /* istanbul ignore file */
 
 const testData = [
-  { title: "test 1", body: "# test one", hero: "## Test Hero" },
-  { title: "test 2", body: "# test two", hero: "## Test Hero" },
+  {
+    slug: "test-1",
+    title: "test 1",
+    body: "# test one",
+    hero: "## Test Hero",
+  },
+  {
+    slug: "test-2",
+    title: "test 2",
+    body: "# test two",
+    hero: "## Test Hero",
+  },
 ];
 
 const testTax = [
@@ -64,6 +74,7 @@ const projectData = [
       ],
     },
     slug: "us-data-federation",
+    path: "/projects/test",
     intro:
       "Data informs all kinds of decision making in the federal government, but the wide array of sources and structures and units make sharing data — an activity that could result in better, more complete analysis — come down somewhere between horribly difficult and impossible. By creating tools and processes to make it easier, the Team was able to help make decision-making founded on data better. And they did this through extensive research with users and stakeholders to define what was needed and how it needs to be available. ",
     subtitle:

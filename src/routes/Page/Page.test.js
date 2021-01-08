@@ -9,6 +9,7 @@ import { Route } from "react-router-dom";
 describe("Page", () => {
   describe("default render", () => {
     it("should render", async () => {
+      window.scrollTo = jest.fn();
       const wrapper = mount(
         <TestProvider store={store} route={["/test"]}>
           <Route path="/:name" component={Page} />
