@@ -2,47 +2,29 @@ import React from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
 import Card from "components/Card";
-import { useHistory } from "react-router-dom";
+import Button from "components/Button";
 
-const ProjectCard = ({ data, tabOrder }) => {
-  const history = useHistory();
+const ProjectCard = ({ data }) => {
   /* istanbul ignore next */
   const { card = {}, meta = {} } = data;
+  const slug = card.projectUrl || data.path;
 
-  const handleLink = () => {
-    const slug = card.projectUrl || data.slug;
-
-    if (slug.includes("://")) {
-      window.location.assign(slug);
-    } else {
-      history.push(`${history.location.pathname}/${slug}`);
-    }
-  };
-  const handleClick = () => {
-    handleLink();
-  };
-  const handleKeyDown = (e) => {
-    if (e.keyCode === 13) {
-      handleLink();
-    }
-  };
   /* istanbul ignore next */
   const excerpt = card.excerpt || data.intro;
 
   return (
-    <Card
-      tabIndex="0"
-      onClick={handleClick}
-      onKeyDown={handleKeyDown}
-      className={classnames({
-        ProjectCard: true,
-        [`template-${meta.template}`]: true,
-      })}
-    >
-      <h3 className="usa-card__heading">{card.subtitle || data.subtitle}</h3>
-      <h4 className="usa-card__subhead">{card.title || data.title}</h4>
-      <div className="ProjectCard__excerpt">{excerpt}</div>
-    </Card>
+    <Button url={slug} variant="link">
+      <Card
+        className={classnames({
+          ProjectCard: true,
+          [`template-${meta.template}`]: true,
+        })}
+      >
+        <h3 className="usa-card__heading">{card.subtitle || data.subtitle}</h3>
+        <h4 className="usa-card__subhead">{card.title || data.title}</h4>
+        <div className="ProjectCard__excerpt">{excerpt}</div>
+      </Card>
+    </Button>
   );
 };
 

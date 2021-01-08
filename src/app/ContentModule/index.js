@@ -22,6 +22,15 @@ export const getList = createAsyncThunk(
   async ({ type }) => await context.getAllByContentType({ type })
 );
 
+export const getAllContent = createAsyncThunk(
+  "content/getList",
+  async ({ types }) =>
+    types.reduce(async (acc, type) => {
+      const typeData = await context.getAllByContentType({ type });
+      return { ...acc, [type]: typeData };
+    }, {})
+);
+
 const pending = (key, state) => {
   return {
     ...state,
