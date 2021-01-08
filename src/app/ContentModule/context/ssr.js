@@ -1,6 +1,6 @@
 /* istanbul ignore file */
-import PageData from "app/json/content/page/index.json";
-import ProjectData from "app/json/content/project/index.json";
+import PageData from "../../app/json/content/page/index.json";
+import ProjectData from "../../app/json/content/project/index.json";
 
 const types = {
   page: PageData,
