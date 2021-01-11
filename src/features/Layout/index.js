@@ -8,6 +8,7 @@ import GridModule from "./templates/Grid";
 import Links from "./templates/Links";
 import List from "./templates/List";
 import Mdx from "features/Mdx";
+import PhaseStatus from "./templates/PhaseStatus";
 import ProjectList from "features/ProjectList";
 import Title from "./templates/Title";
 
@@ -23,6 +24,7 @@ const components = {
       <Mdx className={className}>{body}</Mdx>
     </div>
   ),
+  pahse: PhaseStatus,
   projects: ProjectList,
   title: Title,
 };
@@ -31,6 +33,7 @@ const Layout = ({ items, data }) => {
   return items.map(({ type, fullwidth, ...props }, i) => {
     const Comp = components[type];
     if (!Comp) {
+      console.warn(`Module type "${type}" not defined.`);
       return null;
     }
     return Comp ? (

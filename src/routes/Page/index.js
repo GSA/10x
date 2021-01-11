@@ -45,12 +45,6 @@ const Page = ({ name }) => {
     >
       <div className="usa-app__bg">
         <Head title={data.title} />
-
-        {data.hero && (
-          <div className={`Tx__${data.name}-hero`}>
-            <Mdx>{data.hero}</Mdx>
-          </div>
-        )}
         <div className={`Tx__${data.name}-content`}>
           <Layout items={data.sections} />
         </div>

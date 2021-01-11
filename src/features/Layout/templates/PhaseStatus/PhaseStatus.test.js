@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
-import ProjectStatus from "./ProjectStatus";
+import PhaseStatus from ".";
 import TestProvider from "test/TestProvider";
 import store from "app";
 import runAsyncRender from "test/utils/runAsyncRender";
@@ -10,12 +10,12 @@ const data = {
   phase: "4",
 };
 
-describe("ProjectStatus", () => {
+describe("PhaseStatus", () => {
   describe("default render", () => {
     it("should render project status", async () => {
       const wrapper = mount(
         <TestProvider store={store}>
-          <ProjectStatus data={data} />
+          <PhaseStatus data={data} />
         </TestProvider>
       );
       await runAsyncRender(wrapper);
@@ -25,7 +25,7 @@ describe("ProjectStatus", () => {
     it("should render project status as graduated", async () => {
       const wrapper = mount(
         <TestProvider store={store}>
-          <ProjectStatus
+          <PhaseStatus
             phase="4"
             data={{
               ...data,

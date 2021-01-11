@@ -9,16 +9,16 @@ const PhaseItem = ({ data, phase, label }) => {
   return (
     <div
       className={classnames({
-        ProjectStatus__item: true,
+        PhaseStatus__item: true,
         inert: isInert,
         current: isCurrent,
         graduated: isCurrent && data.status === "3",
       })}
     >
-      <span className="ProjectStatus__label">{label}</span>
+      <span className="PhaseStatus__label">{label}</span>
       <span
         className={classnames({
-          ProjectStatus__icon: true,
+          PhaseStatus__icon: true,
           "c-one": phase === "1",
           "c-two": phase === "2" && data.phase === "2",
           "c-three-two": phase === "2" && data.phase === "3",
@@ -43,12 +43,12 @@ PhaseItem.propTypes = {
   label: PropTypes.string,
 };
 
-const ProjectStatus = ({ data, phases }) => {
+const PhaseStatus = ({ data, phases }) => {
   return (
-    <div className="ProjectStatus">
+    <div className="PhaseStatus">
       <div
         className={classnames({
-          ProjectStatus__bar: true,
+          PhaseStatus__bar: true,
           [phases[data.phase].className]: true,
           graduated: data.status === "3",
           complete: data.status === "2",
@@ -71,7 +71,7 @@ const ProjectStatus = ({ data, phases }) => {
   );
 };
 
-ProjectStatus.defaultProps = {
+PhaseStatus.defaultProps = {
   data: {},
   phases: {
     1: {
@@ -87,6 +87,6 @@ ProjectStatus.defaultProps = {
   },
 };
 
-ProjectStatus.propTypes = { data: PropTypes.object };
+PhaseStatus.propTypes = { data: PropTypes.object };
 
-export default ProjectStatus;
+export default PhaseStatus;

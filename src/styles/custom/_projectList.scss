@@ -1,4 +1,8 @@
 .ProjectList {
+  @include at-media("desktop") {
+    column-count: 2;
+    column-gap: 2rem;
+  }
   .usa-card {
     &:hover {
       cursor: pointer;
@@ -117,5 +121,22 @@
         }
       }
     }
+  }
+}
+
+.ProjectCard {
+  display: inline-block;
+  width: 100%;
+  break-inside: avoid;
+  &.usa-card:not(.usa-card--flag) .usa-card__container > :only-child {
+    @include u-padding-x(4);
+    @include u-padding-bottom(6);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  * {
+    @include u-color("ink");
   }
 }
