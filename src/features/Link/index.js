@@ -11,7 +11,7 @@ const nodes = {
   link: ({ url, ...props }) => <Link to={url} {...props} />,
 };
 
-export const Button = ({ children, className, url, external, ...props }) => {
+export const Button = ({ children, url, external, ...props }) => {
   const Node =
     external ||
     url.includes("://") ||

@@ -10,11 +10,13 @@ const NavItem = ({
   currentMenuItem,
   renderLink,
   renderMenuItem,
+  renderSubItem,
 }) => {
   const { items = [] } = data;
 
   const Link = renderLink;
   const Button = renderMenuItem;
+  const Sub = renderSubItem;
   return (
     <li className="usa-nav__primary-item">
       {items.length ? (
@@ -41,7 +43,7 @@ const NavItem = ({
           >
             {items.map((item, idx) => (
               <li key={idx} className="usa-nav__submenu-item">
-                <Link {...item} isCurrent={currentMenuItem} onClick={onClick} />
+                <Sub {...item} isCurrent={currentMenuItem} onClick={onClick} />
               </li>
             ))}
           </ul>

@@ -21,9 +21,15 @@
       width: auto;
     }
   }
-  .usa-nav__url {
+  .usa-nav__link {
     @include u-margin-bottom(2);
     @include u-font("serif", "lg");
+
+    &:hover {
+      .usa-nav__link-text {
+        @include u-color("white");
+      }
+    }
     &.usa-accordion__button {
       @include u-margin-bottom(1);
     }
@@ -40,11 +46,11 @@
         @include u-color("accent-cool-dark");
       }
 
-      .usa-nav__url-prefix {
+      .usa-nav__link-prefix {
         @include u-margin-right(1);
       }
     }
-    .usa-nav__url {
+    .usa-nav__link {
       font-weight: 400;
     }
   }
@@ -62,13 +68,13 @@
     &[hidden] {
       display: inline-block;
     }
-    button {
+    .usa-nav__link {
       @include u-font("sans", 9);
       font-weight: 300;
       @include u-margin-bottom(2);
     }
   }
-  .usa-nav__url-prefix {
+  .usa-nav__link-prefix {
     @include u-color("secondary");
   }
   ul,
@@ -154,7 +160,7 @@
           cursor: pointer;
         }
       }
-      .usa-nav__url {
+      .usa-nav__link {
         position: relative;
         margin: 0;
         padding: 1rem;
@@ -182,13 +188,13 @@
             background: none;
             @include u-bg("base");
 
-            .usa-nav__url-text {
+            .usa-nav__link-text {
               &:after {
                 content: "\f106";
               }
             }
           }
-          .usa-nav__url-text {
+          .usa-nav__link-text {
             display: block;
             padding-right: 0 !important;
             &:after {
@@ -223,7 +229,7 @@
         }
       }
     }
-    .usa-nav__url-prefix {
+    .usa-nav__link-prefix {
       display: block;
       margin-right: 0 !important;
       padding-right: 0 !important;
@@ -240,7 +246,7 @@
       }
     }
     .usa-nav__primary {
-      .usa-nav__url {
+      .usa-nav__link {
         padding: 1.25rem;
         @include u-font("serif", 7);
       }

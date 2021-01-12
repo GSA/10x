@@ -13,6 +13,7 @@ const Nav = ({
   onClick,
   renderLink,
   renderMenuItem,
+  renderSubItem,
   header,
   footer,
   open,
@@ -61,6 +62,7 @@ const Nav = ({
                   onClick={onClick}
                   renderLink={renderLink}
                   renderMenuItem={renderMenuItem}
+                  renderSubItem={renderSubItem}
                 />
               );
             })}

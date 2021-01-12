@@ -100,11 +100,11 @@ const Header = ({ logo, className, variant }) => {
                         })}
                       >
                         {data.prefix && (
-                          <span className="usa-nav__url-prefix">
+                          <span className="usa-nav__link-prefix">
                             {data.prefix}
                           </span>
                         )}
-                        <span className="usa-nav__url-text">{data.text}</span>
+                        <span className="usa-nav__link-text">{data.text}</span>
                       </a>
                     );
                   }}
@@ -127,12 +127,32 @@ const Header = ({ logo, className, variant }) => {
                         })}
                       >
                         {data.prefix && (
-                          <span className="usa-nav__url-prefix">
+                          <span className="usa-nav__link-prefix">
                             {data.prefix}
                           </span>
                         )}
-                        <span className="usa-nav__url-text">{data.text}</span>
+                        <span className="usa-nav__link-text">{data.text}</span>
                       </button>
+                    );
+                  }}
+                  renderSubItem={(data) => {
+                    return (
+                      <a
+                        href={data.link || ""}
+                        onClick={(e) => {
+                          if (e.preventDefault) {
+                            e.preventDefault();
+                          }
+                          handleClick(data.link);
+                        }}
+                      >
+                        {data.prefix && (
+                          <span className="usa-nav__link-prefix">
+                            {data.prefix}
+                          </span>
+                        )}
+                        <span className="usa-nav__link-text">{data.text}</span>
+                      </a>
                     );
                   }}
                   footer={

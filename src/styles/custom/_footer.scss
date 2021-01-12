@@ -5,7 +5,16 @@ $bgImgDir: "~styles/images";
   @include u-color("white");
   @include u-font-family("sans");
   font-weight: 400;
-
+  .usa-button--unstyled,
+  a {
+    @include u-color("primary-light");
+    &:visited {
+      @include u-color("primary-light");
+    }
+    &:hover {
+      @include u-color("primary-lighter");
+    }
+  }
   &__preFooter {
     .usa-button--unstyled,
     a {

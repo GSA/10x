@@ -61,7 +61,7 @@ describe("<PrimaryNav />", () => {
           <PrimaryNav items={items2} />
         </TestProvider>
       );
-      const button = wrapper.find(".usa-nav__url").hostNodes();
+      const button = wrapper.find(".usa-nav__link").hostNodes();
       button.simulate("click");
       wrapper.update();
       expect(wrapper.find(".usa-nav__submenu-item").length).toBe(2);
