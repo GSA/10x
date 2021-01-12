@@ -223,7 +223,7 @@
         &[hidden] {
           display: none;
         }
-        button {
+        a {
           @include u-margin-bottom(0);
           @include u-font("sans", 3);
           font-weight: 400;
