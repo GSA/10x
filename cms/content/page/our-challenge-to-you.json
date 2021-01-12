@@ -53,7 +53,7 @@
     {
       "type": "markdown",
       "body": "It helps to structure the pitch as if you’re filling in the blank spaces on a Mad Libs-like game.\n\n### I’ve observed [problem or opportunity] and believe that if we [do this] it’ll result in [this benefit] for [this group of people].",
-      "className": "TxChallenge__pitch width-tablet-lg"
+      "className": "TxChallenge__pitch desktop:width-tablet-lg"
     },
     {
       "type": "break",
