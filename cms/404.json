@@ -4,7 +4,7 @@
       "type": "title",
       "title": "Oopsy daisy! ",
       "subtitle": "We can’t find the page you requested. But at 10x, we believe in smart experimentation and trying to make a difference.",
-      "className": "desktop:width-tablet-lg"
+      "className": "desktop:maxw-tablet-lg"
     },
     {
       "type": "markdown",

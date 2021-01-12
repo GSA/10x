@@ -21,6 +21,10 @@
         @include fullWidthBg("pitch-structure-bg.png");
       }
     }
+
+    @include at-media("desktop") {
+      @include u-maxw("tablet-lg");
+    }
   }
   @include u-padding-bottom(10);
 }
