@@ -12,6 +12,7 @@
     @include u-color("white");
   }
   .usa-banner__button {
+    position: relative;
     line-height: 0;
     @include u-margin-left(2);
     @include u-margin-top(2);

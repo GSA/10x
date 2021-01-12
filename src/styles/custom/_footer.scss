@@ -1,20 +1,9 @@
-$bgImgDir: "~styles/images";
-
 .usa-footer {
   @include u-bg("base");
   @include u-color("white");
   @include u-font-family("sans");
   font-weight: 400;
-  .usa-button--unstyled,
-  a {
-    @include u-color("primary-light");
-    &:visited {
-      @include u-color("primary-light");
-    }
-    &:hover {
-      @include u-color("primary-lighter");
-    }
-  }
+
   &__preFooter {
     .usa-button--unstyled,
     a {
@@ -47,7 +36,7 @@ $bgImgDir: "~styles/images";
         background-size: cover;
         background-position-x: center;
         background-position-y: top;
-        background-image: url($bgImgDir + "/footer-brush-stroke.svg");
+        background-image: url("~styles/images/footer-brush-stroke.svg");
         background-repeat: no-repeat;
         @include at-media("tablet") {
           top: -50px;
@@ -57,17 +46,18 @@ $bgImgDir: "~styles/images";
         }
       }
     }
-  }
-  .usa-button--unstyled {
-    @include u-color("primary-light");
-    @include u-font-family("sans");
-    &:visited {
+    .usa-button--unstyled,
+    a {
       @include u-color("primary-light");
-    }
-    &:hover {
-      @include u-color("primary-lighter");
+      &:visited {
+        @include u-color("primary-light");
+      }
+      &:hover {
+        @include u-color("primary-lighter");
+      }
     }
   }
+
   &__bottom-link {
     @include at-media("desktop") {
       transform: translateY(-2rem);

@@ -81,7 +81,7 @@ const Header = ({ logo, className, variant }) => {
                 <PrimaryNav
                   items={navItems}
                   isMobileMenuOpen={isMenuOpen}
-                  handleMobileMenu={handleMenuToggle}
+                  onMobileMenuClick={handleMenuToggle}
                   activeMenuItem={activeMenuItem}
                   currentMenuItem={currentMenuItem}
                   renderLink={(data) => {

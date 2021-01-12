@@ -22,6 +22,7 @@
     }
   }
   .usa-nav__link {
+    @include u-color("white");
     @include u-margin-bottom(2);
     @include u-font("serif", "lg");
 
@@ -33,10 +34,18 @@
     &.usa-accordion__button {
       @include u-margin-bottom(1);
     }
+
+    &.usa-current:after {
+      display: none;
+    }
   }
   .usa-nav__primary {
     text-align: left;
-    button {
+    .usa-nav__link {
+      font-weight: 400;
+    }
+    button,
+    a {
       padding: 0;
       @include u-font-family("serif");
       @include u-color("white");
@@ -49,9 +58,6 @@
       .usa-nav__link-prefix {
         @include u-margin-right(1);
       }
-    }
-    .usa-nav__link {
-      font-weight: 400;
     }
   }
 
@@ -68,7 +74,7 @@
     &[hidden] {
       display: inline-block;
     }
-    .usa-nav__link {
+    a {
       @include u-font("sans", 9);
       font-weight: 300;
       @include u-margin-bottom(2);
