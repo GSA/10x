@@ -47,10 +47,14 @@
       "color": "accent-warm"
     },
     {
+      "type": "markdown",
+      "body": "## Prioritizing solutions with impact \n\nAt 10x, we recognize that not all ideas will evolve into successful products that will be embraced by users. We look at a lot of ideas and then focus on the ones that can make the biggest difference for the most people, nurturing them with expertise along the way. Solutions developed by 10x have broad applications across the government and provide substantial improvement to how we serve people.\n\n### Because of 10x..."
+    },
+    {
       "type": "links",
-      "title": "Prioritizing solutions with impact ",
-      "text": "At 10x, we recognize that not all ideas will evolve into successful products that will be embraced by users. We look at a lot of ideas and then focus on the ones that can make the biggest difference for the most people, nurturing them with expertise along the way. Solutions developed by 10x have broad applications across the government and provide substantial improvement to how we serve people.",
-      "subtitle": "Because of 10x...",
+      "title": "",
+      "text": "",
+      "subtitle": "",
       "button": {
         "text": "EXPLORE OTHER PROJECTS",
         "link": "/projects"
@@ -107,7 +111,8 @@
     },
     {
       "type": "markdown",
-      "body": "## Exploring our dark side\n\nWe continue to apply what we’ve learned, focusing not only on the projects themselves, but also on the bigger picture issues that affect the broader tech community — what we call dark matter.\n\nDark matter — a concept shamelessly stolen from our friends at NASA, another federal agency that isn’t afraid to think big and try new things — is a way of looking beyond the product to uncover intriguing nuggets of possibility. We ask the questions in the margins, about how we’re working, why we’re working that way, and where we can find the opportunities for transformation."
+      "body": "## Exploring our dark side\n\nWe continue to apply what we’ve learned, focusing not only on the projects themselves, but also on the bigger picture issues that affect the broader tech community — what we call dark matter.\n\nDark matter — a concept shamelessly stolen from our friends at NASA, another federal agency that isn’t afraid to think big and try new things — is a way of looking beyond the product to uncover intriguing nuggets of possibility. We ask the questions in the margins, about how we’re working, why we’re working that way, and where we can find the opportunities for transformation.",
+      "className": "desktop:width-tablet-lg"
     },
     {
       "type": "break",
