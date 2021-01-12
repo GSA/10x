@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
 import Card from "components/Card";
-import Button from "components/Button";
+import Link from "features/Link";
 
 const ProjectCard = ({ data }) => {
   /* istanbul ignore next */
@@ -13,7 +13,7 @@ const ProjectCard = ({ data }) => {
   const excerpt = card.excerpt || data.intro;
 
   return (
-    <Button url={slug} variant="link">
+    <Link url={slug} variant="link">
       <Card
         className={classnames({
           ProjectCard: true,
@@ -24,7 +24,7 @@ const ProjectCard = ({ data }) => {
         <h4 className="usa-card__subhead">{card.title || data.title}</h4>
         <div className="ProjectCard__excerpt">{excerpt}</div>
       </Card>
-    </Button>
+    </Link>
   );
 };
 

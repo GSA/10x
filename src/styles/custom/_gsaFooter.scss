@@ -1,4 +1,5 @@
 .GSAFooter {
+  @include u-text("white");
   line-height: 1.2;
   @include at-media("tablet") {
     display: flex;

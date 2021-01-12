@@ -2,7 +2,7 @@ import React from "react";
 import MDX from "@mdx-js/runtime";
 import { Link } from "react-router-dom";
 import Break from "components/Break";
-import Button from "components/Button";
+import Button from "features/Button";
 import Card from "components/Card";
 import Date from "components/Date";
 import { Grid, Row, Col } from "components/Grid";

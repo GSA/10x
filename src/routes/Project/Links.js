@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "components/Button";
+import Link from "features/Link";
 import Icon from "components/Icon";
 import PropTypes from "prop-types";
 
@@ -13,10 +13,10 @@ const Links = ({ data }) => {
           {data.map((item, i) => {
             return (
               <li key={`TxLinks__item-${i}`} className="TxLinks__item">
-                <Button variant="link" url={item.link}>
+                <Link url={item.link}>
                   {item.text}
                   <Icon className="margin-left-1" icon="external-link-alt" />
-                </Button>
+                </Link>
               </li>
             );
           })}

@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { Grid, Row, Col } from "components/Grid";
 import GSAFooter from "./GSAFooter";
-import Button from "components/Button";
+import Button from "features/Button";
+import Link from "features/Link";
 import Icon from "components/Icon";
 import { useDispatch, useSelector } from "react-redux";
 import Mdx from "features/Mdx";
@@ -60,69 +61,50 @@ const Footer = () => {
           </Row>
           <Row className="usa-footer__links" gap="4">
             <Col size="12" tablet="3">
-              <Button url="https://www.gsaig.gov/" variant="link">
+              <Link url="https://www.gsaig.gov/">
                 {
                   "Report fraud, waste, or abuse to the Office of the Inspector General"
                 }
-              </Button>
+              </Link>
             </Col>
             <Col size="12" tablet="3">
-              <Button
-                url="https://www.gsa.gov/reference/freedom-of-information-act-foia"
-                variant="link"
-              >
+              <Link url="https://www.gsa.gov/reference/freedom-of-information-act-foia">
                 {"Submit a Freedom of Information Act (FOIA) request"}
-              </Button>
+              </Link>
             </Col>
             <Col size="12" tablet="3">
-              <Button
-                url="https://www.gsa.gov/reference/reports/budget-performance"
-                variant="link"
-              >
+              <Link url="https://www.gsa.gov/reference/reports/budget-performance">
                 {"View budget and performance reports"}
-              </Button>
+              </Link>
             </Col>
             <Col size="12" tablet="3">
-              <Button
-                variant="link"
+              <Link
                 className="display-block"
                 external
                 url="https://www.gsa.gov/website-information/accessibility-aids"
               >
                 {"View accessibility statement"}
-              </Button>
-              <Button
-                variant="link"
+              </Link>
+              <Link
                 className="display-block "
                 external
                 url="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002"
               >
                 {"View No FEAR Act"}
-              </Button>
-              <Button
-                variant="link"
-                className="display-block"
-                url="/privacy-policy"
-              >
+              </Link>
+              <Link className="display-block" url="/privacy-policy">
                 {"Privacy Policy"}
-              </Button>
-              <Button
-                variant="link"
-                className="display-block"
-                external
-                url="mailto:10x@gsa.gov"
-              >
+              </Link>
+              <Link className="display-block" external url="mailto:10x@gsa.gov">
                 <Icon icon="envelope" className="margin-right-1" />
                 {"Email Us"}
-              </Button>
+              </Link>
             </Col>
             <div className="usa-footer__bottom-link">
               <div className="display-inline-block margin-right-1">
                 {"Looking for U.S. government information and services?  "}
               </div>
-              <Button variant="link" url="https://usa.gov">
-                Visit USA.gov
-              </Button>
+              <Link url="https://usa.gov">Visit USA.gov</Link>
             </div>
           </Row>
         </Grid>

@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
 import { Col, Row } from "components/Grid";
-import Button from "components/Button";
+import Button from "features/Button";
+import Link from "features/Link";
 import Icon from "components/Icon";
 
 const Links = ({ className, title, subtitle, text, items, button }) => {
@@ -26,9 +27,7 @@ const Links = ({ className, title, subtitle, text, items, button }) => {
                   size="xs"
                   className="margin-right-2 text-accent-warm"
                 />
-                <Button variant="link" url={item.link}>
-                  {item.text}
-                </Button>
+                <Link url={item.link}>{item.text}</Link>
               </div>
             </Col>
           ))}

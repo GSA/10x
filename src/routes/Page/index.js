@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import { getPage } from "app/ContentModule";
 import { Grid } from "components/Grid";
 import Loading from "components/Loading";
-import Mdx from "features/Mdx";
 import FourOhFour from "routes/FourOhFour";
 import Head from "routes/Head";
 import Layout from "features/Layout";

@@ -9,4 +9,8 @@ if (process.env.NODE_ENV !== "test") {
   context = api;
 }
 
+if (process.env.REACT_APP_STATE_MODE === "ssr") {
+  context = ssr;
+}
+
 export default context;

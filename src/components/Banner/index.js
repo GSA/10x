@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "components/Button";
 import Flag from "./us_flag_small.png";
 import DotGov from "./icon-dot-gov.svg";
 import Https from "./icon-https.svg";
@@ -7,7 +6,10 @@ import Https from "./icon-https.svg";
 const Banner = () => {
   const [isOpen, setOpen] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = (e) => {
+    if (e.preventDefault) {
+      e.preventDefault();
+    }
     setOpen((state) => !state);
   };
 
@@ -31,15 +33,15 @@ const Banner = () => {
               An official website of the United States government
             </p>
           </div>
-          <Button
+          <a
+            href="/#"
             className="usa-accordion__button usa-banner__button"
             aria-expanded="false"
             aria-controls="gov-banner"
-            variant="link"
             onClick={handleClick}
           >
             <span className="usa-banner__button-text">Here’s how you know</span>
-          </Button>
+          </a>
         </div>
       </header>
       {isOpen && (

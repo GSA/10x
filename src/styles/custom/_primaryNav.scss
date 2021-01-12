@@ -34,6 +34,12 @@
       padding: 0;
       @include u-font-family("serif");
       @include u-color("white");
+      &:hover {
+        cursor: pointer;
+        background: transparent;
+        @include u-color("accent-cool-dark");
+      }
+
       .usa-nav__url-prefix {
         @include u-margin-right(1);
       }

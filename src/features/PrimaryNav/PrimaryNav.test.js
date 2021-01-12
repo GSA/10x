@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
-import PrimaryNav from "components/PrimaryNav";
+import PrimaryNav from "features/PrimaryNav";
 import TestProvider from "test/TestProvider";
 import resizeWindow from "test/utils/resizeWindow";
 
