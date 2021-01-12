@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 import * as test from "./test";
-import * as api from "./menuApi";
+import * as api from "./menuAPI";
 import * as ssr from "./ssr";
 
 let context = test;

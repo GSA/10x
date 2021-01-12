@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { AnimatePresence, motion } from "framer-motion";
 import { Route, Switch, useLocation } from "react-router-dom";
 
-export const MountTransition = ({ children, slide, slideUp }) => (
+export const MountTransition = ({ children }) => (
   <motion.div
     exit={{ opacity: 1 }}
     initial={{ opacity: 1 }}

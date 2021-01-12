@@ -6,12 +6,12 @@
       "type": "title",
       "title": "Our process",
       "subtitle": "It all starts with an idea  —  learn how we can transform a “what if…” question into a government-wide solution. ",
-      "className": "desktop:maxw-tablet-lg"
+      "className": "desktop:width-tablet-lg"
     },
     {
       "type": "markdown",
       "body": "We believe that federal civil servants — with their front row view to the inner workings of our government — are uniquely positioned to identify the key problems that hold our government back. Feds submit their ideas through a simple form, and we evaluate them using a formal process twice a year (generally in February and August). But only a handful of the most promising ideas submitted are selected for Phase 1 funding. \n\nAs we explore ideas, we whittle down projects to move on to the next phase, where we continue to research and iterate on the idea. Rinse and repeat, until an idea fails to move on to the next phase or graduates from the process, which can happen anywhere along the journey when we feel the solution is ready for go-time. \n\n## It’s a funnel, not a tunnel\n\nWe purposefully decide to continue funding and developing an idea at each stage in the process, which means that deciding what not to advance to the next phase is as important as choosing what will. By applying lean development principles and targeting the most impactful ideas, we can focus time and resources on the things that have the best chance of success. ",
-      "className": "desktop:maxw-tablet-lg"
+      "className": "desktop:width-tablet-lg"
     },
     {
       "type": "markdown",
@@ -56,13 +56,13 @@
           "text": "A similar solution is already in development"
         }
       ],
-      "className": "desktop:maxw-tablet-lg",
+      "className": "desktop:width-tablet-lg",
       "columns": "1"
     },
     {
       "type": "markdown",
       "body": "For a more complete discussion of why projects exit 10x, see the [2020 Impact Report (PDF)](/images/10x_fy20_impact_report.pdf).",
-      "className": "desktop:maxw-tablet-lg"
+      "className": "desktop:width-tablet-lg"
     },
     {
       "type": "callout",

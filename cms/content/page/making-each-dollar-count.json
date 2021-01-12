@@ -7,12 +7,12 @@
       "title": "Making each dollar count",
       "subtitle": "We’re focused on getting the most bang for the buck at every stage of the process.",
       "level": "1",
-      "className": "desktop:maxw-tablet-lg"
+      "className": "desktop:width-tablet-lg"
     },
     {
       "type": "markdown",
       "body": "Our model of small-dollar investments enables us to be good stewards of taxpayer dollars by spending the smallest possible amount of funding necessary at every stage of a project to determine whether or not it’s worth pursuing. About one third of projects selected for initial funding will actually make their way into design and development, and even those projects must be able to prove they’re delivering clear value in order to continue to receive funding. This iterative approach to investing allows us to innovate without overspending, ensuring the products and services produced meet a real, verifiable need in the federal space.\n\nAnd we’re not doling out money to agencies directly — our funding isn’t a grant, but an investment into a potential solution. We use the budget for each project to hire and staff the teams that explore and evaluate ideas at each phase.",
-      "className": "desktop:maxw-tablet-lg"
+      "className": "desktop:width-tablet-lg"
     },
     {
       "type": "break",

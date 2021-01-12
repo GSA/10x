@@ -7,7 +7,6 @@ import Loading from "components/Loading";
 import FourOhFour from "routes/FourOhFour";
 import Head from "routes/Head";
 import Layout from "features/Layout";
-import { motion } from "framer-motion";
 import useScrollToTop from "utils/useScrollToTop";
 
 const Page = ({ name }) => {
@@ -36,19 +35,14 @@ const Page = ({ name }) => {
     return <FourOhFour pathname={pageName} />;
   }
   return (
-    <motion.div
-      exit={{ opacity: 0 }}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className={`TxContent Tx__${pageName}`}
-    >
+    <div className={`TxContent Tx__${pageName}`}>
       <div className="usa-app__bg">
         <Head title={data.title} />
         <div className={`Tx__${data.name}-content`}>
           <Layout items={data.sections} />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
