@@ -12,7 +12,7 @@ import { getMenuList } from "app/MenuModule";
 import useOnPathChange from "utils/useOnPathChange";
 import Search from "./Search";
 
-const Header = ({ logo, className }) => {
+const Header = ({ logo, className, variant }) => {
   const history = useHistory();
   const dispatch = useDispatch();
   // For mobile menu
@@ -44,14 +44,9 @@ const Header = ({ logo, className }) => {
     handleMenuItemClick();
   };
   // For menu items
-  const handleClick = (e) => {
-    console.log("FAAAAART");
-    /* istanbul ignore next */
-    if (e.preventDefault) {
-      e.preventDefault();
-    }
-    const clicked = e ? e.currentTarget.href : "";
-    history.push(`/${clicked}`);
+  const handleClick = (link) => {
+    setActiveMenuItem(null);
+    history.push(`/${link}`);
   };
 
   useOnPathChange(() => {
@@ -70,6 +65,7 @@ const Header = ({ logo, className }) => {
     <header
       className={classnames({
         "usa-header": true,
+        "usa-header--basic": variant === "basic",
         [className]: className,
       })}
     >
@@ -88,34 +84,67 @@ const Header = ({ logo, className }) => {
                   handleMobileMenu={handleMenuToggle}
                   activeMenuItem={activeMenuItem}
                   currentMenuItem={currentMenuItem}
-                  onMenuItemClick={handleMenuItemClick}
-                  onClick={handleClick}
                   renderLink={(data) => {
                     return (
-                      <Link url={data.link || ""} onClick={data.onClick}>
+                      <a
+                        href={data.link || ""}
+                        onClick={(e) => {
+                          if (e.preventDefault) {
+                            e.preventDefault();
+                          }
+                          handleClick(data.link);
+                        }}
+                        className={classnames({
+                          "usa-nav__link": true,
+                          "usa-current": currentMenuItem.includes(data.link),
+                        })}
+                      >
                         {data.prefix && (
                           <span className="usa-nav__url-prefix">
                             {data.prefix}
                           </span>
                         )}
                         <span className="usa-nav__url-text">{data.text}</span>
-                      </Link>
+                      </a>
+                    );
+                  }}
+                  renderMenuItem={(data) => {
+                    console.log(data.id);
+                    return (
+                      <button
+                        id={data.id}
+                        onClick={handleMenuItemClick}
+                        aria-expanded={activeMenuItem === data.id}
+                        className={classnames({
+                          "usa-nav__link": true,
+                          "usa-accordion__button": true,
+                          "usa-current": data.items.reduce((acc, cur) => {
+                            console.log(acc, cur, currentMenuItem);
+                            return currentMenuItem.includes(cur.link)
+                              ? acc + 1
+                              : acc;
+                          }, 0),
+                        })}
+                      >
+                        {data.prefix && (
+                          <span className="usa-nav__url-prefix">
+                            {data.prefix}
+                          </span>
+                        )}
+                        <span className="usa-nav__url-text">{data.text}</span>
+                      </button>
                     );
                   }}
                   footer={
-                    <Row className="flex-align-center">
-                      <Col>
-                        <Search />
-                      </Col>
-                      <Col>
-                        <Button
-                          color="primary-lighter"
-                          url="https://feedback.gsa.gov/jfe/form/SV_1Im8dTPnjnV3HpP"
-                        >
-                          SUBMIT AN IDEA
-                        </Button>
-                      </Col>
-                    </Row>
+                    <>
+                      <Search />
+                      <Button
+                        color="primary-lighter"
+                        url="https://feedback.gsa.gov/jfe/form/SV_1Im8dTPnjnV3HpP"
+                      >
+                        SUBMIT AN IDEA
+                      </Button>
+                    </>
                   }
                   open={<span className="usa-sr-only">Menu</span>}
                   close={<span className="usa-sr-only">Close</span>}

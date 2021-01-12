@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 
 const NavItem = ({
   data,
@@ -6,7 +7,7 @@ const NavItem = ({
   onClick,
   id,
   isOpen,
-  isCurrent,
+  currentMenuItem,
   renderLink,
   renderMenuItem,
 }) => {
@@ -14,12 +15,23 @@ const NavItem = ({
 
   const Link = renderLink;
   const Button = renderMenuItem;
-
   return (
     <li className="usa-nav__primary-item">
       {items.length ? (
         <>
-          <Button {...data} isCurrent={isCurrent} onClick={onMenuItemClick}>
+          <Button
+            {...data}
+            id={id}
+            onClick={onMenuItemClick}
+            className={classnames({
+              "usa-nav__link": true,
+              "usa-accordion__button": true,
+              "usa-current": items.reduce(
+                (acc, cur) => (cur.link === currentMenuItem ? acc + 1 : acc),
+                0
+              ),
+            })}
+          >
             {data.text}
           </Button>
           <ul
@@ -29,13 +41,19 @@ const NavItem = ({
           >
             {items.map((item, idx) => (
               <li key={idx} className="usa-nav__submenu-item">
-                <Link {...item} isCurrent={isCurrent} onClick={onClick} />
+                <Link {...item} isCurrent={currentMenuItem} onClick={onClick} />
               </li>
             ))}
           </ul>
         </>
       ) : (
-        <Link {...data} isCurrent={isCurrent} />
+        <Link
+          {...data}
+          className={classnames({
+            "usa-nav__link": true,
+            "usa-current": currentMenuItem.includes(data.link),
+          })}
+        />
       )}
     </li>
   );

@@ -12,11 +12,13 @@ const Nav = ({
   onMenuItemClick,
   onClick,
   renderLink,
+  renderMenuItem,
   header,
   footer,
   open,
   close,
 }) => {
+  console.log(activeMenuItem);
   return (
     <>
       <button
@@ -54,10 +56,11 @@ const Nav = ({
                   key={nodeId}
                   id={nodeId}
                   isOpen={activeMenuItem === nodeId}
-                  isCurrent={currentMenuItem === item.link}
+                  currentMenuItem={currentMenuItem}
                   onMenuItemClick={onMenuItemClick}
                   onClick={onClick}
                   renderLink={renderLink}
+                  renderMenuItem={renderMenuItem}
                 />
               );
             })}
