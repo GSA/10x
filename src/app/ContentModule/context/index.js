@@ -6,11 +6,11 @@ import * as ssr from "./ssr";
 let context = test;
 
 if (process.env.NODE_ENV !== "test") {
-  context = api;
+  context = ssr;
 }
 
-if (process.env.REACT_APP_STATE_MODE === "ssr") {
-  context = ssr;
+if (process.env.REACT_APP_STATE_MODE === "api") {
+  context = api;
 }
 
 export default context;

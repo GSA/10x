@@ -109,7 +109,6 @@ const Header = ({ logo, className, variant }) => {
                     );
                   }}
                   renderMenuItem={(data) => {
-                    console.log(data.id);
                     return (
                       <button
                         id={data.id}
@@ -119,7 +118,6 @@ const Header = ({ logo, className, variant }) => {
                           "usa-nav__link": true,
                           "usa-accordion__button": true,
                           "usa-current": data.items.reduce((acc, cur) => {
-                            console.log(acc, cur, currentMenuItem);
                             return currentMenuItem.includes(cur.link)
                               ? acc + 1
                               : acc;

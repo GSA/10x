@@ -4,7 +4,7 @@ import ProjectData from "app/json/content/project/index.json";
 
 const types = {
   page: PageData,
-  projects: ProjectData,
+  project: ProjectData,
 };
 
 export const getAllByContentType = async (props) => {

@@ -12,7 +12,7 @@ export default ({ location }) => (
     <Route key="default" path="/" exact>
       <Default />
     </Route>
-    <Route key="page" path="/projects/:name">
+    <Route key="project" path="/projects/:name">
       <Project />
     </Route>
     <Route key="page" path="/:name">

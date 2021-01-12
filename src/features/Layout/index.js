@@ -24,7 +24,9 @@ const components = {
       <Mdx className={className}>{body}</Mdx>
     </div>
   ),
-  pahse: PhaseStatus,
+  phase: ({ data: { meta: { phaseData } = {} } = {} }) => (
+    <PhaseStatus data={phaseData} />
+  ),
   projects: ProjectList,
   title: Title,
 };
