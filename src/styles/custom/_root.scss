@@ -79,6 +79,12 @@ h5 {
   font-weight: 400;
 }
 
+.usa-skipnav {
+  &:focus {
+    z-index: 10000;
+  }
+}
+
 .usa-app {
   min-height: 100vh;
   position: relative;
