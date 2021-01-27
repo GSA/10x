@@ -18,9 +18,16 @@ $theme-h6-font-size: "xs";
         p {
           margin-bottom: 0;
         }
-        strong {
-          @include u-font("serif", $theme-h1-font-size);
-          @include u-color("base");
+        span {
+          text-align: center;
+          strong,
+          em {
+            display: block;
+          }
+          strong {
+            @include u-font("serif", $theme-h1-font-size);
+            @include u-color("base");
+          }
         }
       }
     }
