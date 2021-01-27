@@ -63,23 +63,23 @@
       "type": "callout",
       "items": [
         {
-          "body": "<span className=\"us-text-h3\"> Evaluate Idea</span>\n\n* Clarity\n* Alignment\n* Impact",
+          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h3\"> Evaluate Idea</span>\n</span>\n\n* Clarity\n* Alignment\n* Impact",
           "className": "bg--5"
         },
         {
-          "body": "<span className=\"us-text-h3\"> **PHASE 1** Investigate</span>\n\n* Major red flags\n* Demand",
+          "body": "<span className=\"TxCallout__card-header\">\n\n<span className=\"us-text-h5\">PHASE 1</span> \n<span className=\"us-text-h3\">Investigate</span>\n</span>\n\n* Major red flags\n* Demand\n",
           "className": "bg--1"
         },
         {
-          "body": "<span className=\"us-text-h3\"> **PHASE 2** Discover</span>\n\n* Current state\n* Market fit\n* Regulatory requirements\n* Timeline\n* Funding model",
+          "body": "<span className=\"TxCallout__card-header\">\n\n<span className=\"us-text-h5\">PHASE 2</span> \n<span className=\"us-text-h3\">Discover</span>\n</span>\n\n* Current state\n* Market fit\n* Regulatory requirements\n* Timeline\n* Funding model",
           "className": "bg--2"
         },
         {
-          "body": "<span className=\"us-text-h3\"> **PHASE 3** Develop</span>\n\n* MVP\n* Recruit agency customer\n* Product roadmap\n* Business plan\n",
+          "body": "<span className=\"TxCallout__card-header\">\n\n<span className=\"us-text-h5\">PHASE 3</span> \n<span className=\"us-text-h3\">Develop</span>\n</span>\n\n* MVP\n* Recruit agency customer\n* Product roadmap\n* Business plan\n",
           "className": "bg--3"
         },
         {
-          "body": "<span className=\"us-text-h3\"> **PHASE 4** Scale</span>\n\n* Additional customers\n* Largest possible audience\n",
+          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">PHASE 4</span> \n<span className=\"us-text-h3\">Scale</span>\n</span>\n\n* Additional customers\n* Largest possible audience\n",
           "className": "bg--4"
         }
       ],
