@@ -13,7 +13,7 @@ const ProjectCard = ({ data }) => {
   const excerpt = card.excerpt || data.intro;
 
   return (
-    <Link url={slug} variant="link">
+    <Link url={slug} className="display-inline-block margin-top-1">
       <Card
         className={classnames({
           ProjectCard: true,
