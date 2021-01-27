@@ -27,25 +27,25 @@
         {
           "title": "Scale",
           "text": "Teams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">Investigation</span>\n<span className=\"us-text-h3\">Is this a bad idea?</span>\n<span className=\"us-text-h3 text-italic\">$</span>\n</span>\n\nTeams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities, and reach.",
+          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">Investigation</span>\n<span className=\"us-text-h3\">Is this a bad idea?</span>\n<span className=\"us-text-h3 text-italic margin-bottom-0\">$</span>\n</span>\n\nTeams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities, and reach.",
           "className": "bg--1"
         },
         {
           "title": "Investigation",
           "text": "Teams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities and reach. ",
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">Discovery</span>\n<span className=\"us-text-h3\">Is this a good idea?</span>\n<span className=\"us-text-h3 text-italic\">$$</span>\n</span>\n\nTeams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
+          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">Discovery</span>\n<span className=\"us-text-h3\">Is this a good idea?</span>\n<span className=\"us-text-h3 text-italic margin-bottom-0\">$$</span>\n</span>\n\nTeams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
           "className": "bg--2"
         },
         {
           "title": "Discovery",
           "text": "Teams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">Development</span>\n<span className=\"us-text-h3\">Will anyone use this?</span>\n<span className=\"us-text-h3 text-italic\">$$$</span>\n</span>\n\nTeams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
+          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">Development</span>\n<span className=\"us-text-h3\">Will anyone use this?</span>\n<span className=\"us-text-h3 text-italic margin-bottom-0\">$$$</span>\n</span>\n\nTeams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
           "className": "bg--3"
         },
         {
           "title": "Development",
           "text": "Teams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">Scale</span> \n<span className=\"us-text-h3\"> Will everyone use this?</span> \n<span className=\"us-text-h3 text-italic\">$$$$</span>\n</span>\n\nTeams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
+          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">Scale</span> \n<span className=\"us-text-h3\"> Will everyone use this?</span> \n<span className=\"us-text-h3 text-italic margin-bottom-0\">$$$$</span>\n</span>\n\nTeams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
           "className": "bg--4"
         }
       ],
