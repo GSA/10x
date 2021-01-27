@@ -45,7 +45,7 @@
         {
           "title": "Development",
           "text": "Teams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
-          "body": "<span className=\"us-text-h3\"> \n\n**Scale** Will everyone use this? *$$$$*\n\n</span>\n\nTeams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
+          "body": "<span className=\"us-text-h5>Scale</span> \n<span className=\"us-text-h3\"> Will everyone use this?</span> \n*$$$$*\n\nTeams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
           "className": "bg--4"
         }
       ],
