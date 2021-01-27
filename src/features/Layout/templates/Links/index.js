@@ -25,7 +25,7 @@ const Links = ({ className, title, subtitle, text, items, button }) => {
                 <Icon
                   icon="circle"
                   size="xs"
-                  className="margin-right-2 text-accent-warm"
+                  className="margin-right-2 margin-top-1 text-accent-warm"
                 />
                 <Link url={item.link}>{item.text}</Link>
               </div>
