@@ -27,13 +27,13 @@
         {
           "title": "Scale",
           "text": "Teams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
-          "body": "<span className=\"us-text-h3\"> \n\n**Investigation** Is this a bad idea? *$*\n\n</span>\n\nTeams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities, and reach.",
+          "body": "<span className=\"us-text-h5\">Investigation</span>\n<span className=\"us-text-h3\">Is this a bad idea?</span>\n*$*\n\nTeams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities, and reach.",
           "className": "bg--1"
         },
         {
           "title": "Investigation",
           "text": "Teams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities and reach. ",
-          "body": "<span className=\"us-text-h3\">\n\n**Discovery** Is this a good idea? *$$*\n\n</span>\n\nTeams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
+          "body": "<span className=\"us-text-h5\">Discovery</span>\n<span className=\"us-text-h3\">Is this a good idea?</span>\n*$$*\n\nTeams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
           "className": "bg--2"
         },
         {
