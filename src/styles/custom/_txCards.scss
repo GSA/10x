@@ -67,6 +67,7 @@
   &.TxRingCards {
     .usa-card {
       padding-bottom: 0;
+      @include u-margin-bottom(6);
     }
     .usa-card__container {
       background: transparent;
@@ -84,11 +85,12 @@
         }
       }
     }
+
     h3 {
       display: inline-block;
     }
 
-    blockquote {
+    .TxRingCards__aside {
       display: flex;
       justify-content: left;
       @include at-media("desktop") {
@@ -96,76 +98,58 @@
         height: 100%;
         @include u-margin-right(8);
       }
-      h2 {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        width: 14rem;
-        height: 14rem;
-        margin: 0;
+    }
+    .TxRingCards__ring {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      width: 14rem;
+      height: 14rem;
+      margin: 0;
 
-        @include u-padding-y(10);
-        @include u-padding-x(15);
-        text-align: center;
-        @include u-font("serif", "lg");
-        @include fullWidthBg("phase-circle-smoke.png");
-        background-size: contain;
-        @include u-color("white");
+      @include u-padding-y(10);
+      @include u-padding-x(15);
+      text-align: center;
+      @include u-font("serif", "lg");
+      @include fullWidthBg("phase-circle-smoke.png");
+      background-size: contain;
+      @include u-color("white");
 
-        @include at-media("desktop") {
-          @include u-padding-y(6);
-          @include u-padding-x(4);
-        }
-
-        strong {
-          min-width: 100px;
-          display: block;
-          font-weight: 400;
-          text-transform: uppercase;
-          @include u-color("white");
-          @include u-font("serif", "md");
-
-          @include at-media("desktop") {
-            @include u-font("serif", "sm");
-          }
-        }
-        em {
-          display: block;
-          @include u-font("serif", "lg");
-          line-height: 1;
-        }
+      @include at-media("desktop") {
+        @include u-padding-y(6);
+        @include u-padding-x(4);
       }
     }
     [class*="grid-col"] {
       &.bg--1 {
-        blockquote h2 {
+        .TxRingCards__ring {
           background-image: url("~styles/images/phase-circle-sky.png");
           @include u-color("accent-cool");
         }
       }
       &.bg--2 {
-        blockquote h2 {
+        .TxRingCards__ring {
           background-image: url("~styles/images/phase-circle-lilac.png");
           @include u-color("primary-light");
         }
       }
       &.bg--3 {
-        blockquote h2 {
+        .TxRingCards__ring {
           background-image: url("~styles/images/phase-circle-ocean.png");
           @include u-color("base-lighter");
         }
       }
       &.bg--4 {
-        blockquote h2 {
+        .TxRingCards__ring {
           background-image: url("~styles/images/phase-circle-tiger.png");
           @include u-color("accent-warm");
         }
       }
       &.bg--5 {
-        blockquote h2 {
+        .TxRingCards__ring {
           background-image: url("~styles/images/phase-circle-smoke.png");
           @include u-color("base-light");
         }

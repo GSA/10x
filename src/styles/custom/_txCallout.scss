@@ -166,35 +166,35 @@
         }
 
         &.bg--1 {
-          h3,
+          .TxCallout__card-header,
           blockquote {
             background-image: url("~styles/images/phase-circle-sky.png");
             @include u-color("accent-cool");
           }
         }
         &.bg--2 {
-          h3,
+          .TxCallout__card-header,
           blockquote {
             background-image: url("~styles/images/phase-circle-lilac.png");
             @include u-color("primary-light");
           }
         }
         &.bg--3 {
-          h3,
+          .TxCallout__card-header,
           blockquote {
             background-image: url("~styles/images/phase-circle-ocean.png");
             @include u-color("base-lighter");
           }
         }
         &.bg--4 {
-          h3,
+          .TxCallout__card-header,
           blockquote {
             background-image: url("~styles/images/phase-circle-tiger.png");
             @include u-color("accent-warm");
           }
         }
         &.bg--5 {
-          h3,
+          .TxCallout__card-header,
           blockquote {
             background-image: url("~styles/images/phase-circle-smoke.png");
             @include u-color("base-light");
@@ -202,7 +202,7 @@
         }
         &:last-child {
           margin-right: 0;
-          h3,
+          .TxCallout__card-header,
           blockquote {
             &:after {
               display: none;
@@ -215,8 +215,8 @@
       display: none;
     }
 
-    h3,
-    blockquote {
+    .TxCallout__card-header {
+      display: block;
       position: relative;
       list-style: none;
       margin: 0;
@@ -246,23 +246,6 @@
           @include fullWidthBg("ring-separater.png");
           background-size: contain;
         }
-      }
-
-      strong {
-        display: block;
-        text-transform: uppercase;
-        @include u-color("white");
-        @include u-font("serif", "md");
-        font-weight: 400;
-        @include at-media("desktop") {
-          @include u-font("serif", "sm");
-        }
-      }
-      em {
-        display: block;
-        @include u-font("serif", "lg");
-        font-style: normal;
-        line-height: 1;
       }
     }
   }

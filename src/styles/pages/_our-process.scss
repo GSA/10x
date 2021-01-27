@@ -24,6 +24,15 @@
       }
     }
   }
+
+  .TxRingCards {
+    &__ring {
+      .us-text-h5 {
+        margin-left: -2rem;
+        margin-right: -2rem;
+      }
+    }
+  }
 }
 
 .TxFunnel {
