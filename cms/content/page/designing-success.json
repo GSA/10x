@@ -20,17 +20,17 @@
         {
           "text": "",
           "title": "Direct public services ",
-          "body": "#### Direct public services \n"
+          "body": "<span className=\"us-text-h4\">Direct public services</span>\n"
         },
         {
           "title": "Disaster management and response ",
           "text": "",
-          "body": "#### Disaster management and response \n\n"
+          "body": "<span className=\"us-text-h4\">Disaster management and response</span>\n\n"
         },
         {
           "title": "Diversity, inclusion, and accessibility ",
           "text": "",
-          "body": "#### Diversity, inclusion, and accessibility \n"
+          "body": "<span className=\"us-text-h4\">Diversity, inclusion, and accessibility</span> \n"
         }
       ],
       "variant": "number"
