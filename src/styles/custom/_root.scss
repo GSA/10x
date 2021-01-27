@@ -42,41 +42,50 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.us-text-h1,
+.us-text-h2,
+.us-text-h3,
+.us-text-h4,
+.us-text-h5,
+.us-text-h6 {
   margin-top: 0;
   line-height: 130%;
 }
 
 h1,
-h2 {
+.us-text-h1 {
+  @include h1;
   @include u-text("normal");
-}
-h3,
-h4 {
-  @include u-text("medium");
-}
-
-h1 {
   @include u-margin-bottom(2);
 }
-h2 {
+
+h2,
+.us-text-h2 {
+  @include h2;
+  @include u-text("normal");
   @include u-margin-bottom(3);
 }
-h3 {
+h3,
+.us-text-h3 {
+  @include h3;
   @include u-margin-bottom(2.5);
   font-weight: 400;
-}
-h4 {
-  font-weight: 400;
+  @include u-text("medium");
 }
 h4,
-h5 {
+.us-text-h4 {
+  @include h4;
+  font-weight: 400;
+  @include u-text("medium");
   @include u-margin-bottom(2);
 }
-
-h5 {
+h5,
+.us-text-h5 {
+  @include h5;
   text-transform: uppercase;
   font-weight: 400;
+  @include u-margin-bottom(2);
 }
 
 .usa-skipnav {

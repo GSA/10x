@@ -27,13 +27,13 @@
       },
       "items": [
         {
-          "body": "#### We source differently\n\nAll our projects come from public servants who submit ideas to see if they can move the needle forward to solve a real problem."
+          "body": "<span className=\"us-text-h4\"> We source differently</span>\n\nAll our projects come from public servants who submit ideas to see if they can move the needle forward to solve a real problem."
         },
         {
-          "body": "#### We fund differently\n\nThe projects use a phased, incremental funding approach, so we can focus investments on the most promising, impactful ideas."
+          "body": "<span className=\"us-text-h4\"> We fund differently</span>\n\nThe projects use a phased, incremental funding approach, so we can focus investments on the most promising, impactful ideas."
         },
         {
-          "body": "#### We support differently\n\nWe complete rigorous analysis to assess ideas before moving them forward, looking at each idea as a learning opportunity —even if it doesn’t come to fruition."
+          "body": "<span className=\"us-text-h4\"> We support differently</span>\n\nWe complete rigorous analysis to assess ideas before moving them forward, looking at each idea as a learning opportunity —even if it doesn’t come to fruition."
         }
       ],
       "className": "",
@@ -128,28 +128,28 @@
           "link": "https://www.oecd-opsi.org/innovations/10x-investments/",
           "title": "MEDIA",
           "text": "International recognition from the Organisation for Economic Cooperation and Development (OECD) Observatory for Public Sector Innovation (OPSI)",
-          "body": "##### Media\n\n[International recognition from the Organisation for Economic Cooperation and Development (OECD) Observatory for Public Sector Innovation (OPSI)](https://www.oecd-opsi.org/innovations/10x-investments/)",
+          "body": "<span className=\"us-text-h5\"> Media</span>\n\n[International recognition from the Organisation for Economic Cooperation and Development (OECD) Observatory for Public Sector Innovation (OPSI)](https://www.oecd-opsi.org/innovations/10x-investments/)",
           "className": "card-bg--1"
         },
         {
           "title": "MEDIA",
           "text": "Scaling GSA’s 10x program",
           "link": "https://govmatters.tv/scaling-gsas-10x-program/",
-          "body": "##### Awards\n\n[10x wins the 2019 Government Innovation Award for public sector innovation](https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx)",
+          "body": "<span className=\"us-text-h5\"> Awards</span>\n\n[10x wins the 2019 Government Innovation Award for public sector innovation](https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx)",
           "className": "card-bg--2"
         },
         {
           "title": "AWARDS",
           "text": "10x wins the 2019 Government Innovation Award for public sector innovation",
           "link": "https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx",
-          "body": "##### Media\n\n[Scaling GSA’s 10x program](https://govmatters.tv/scaling-gsas-10x-program)",
+          "body": "<span className=\"us-text-h5\"> Media</span>\n\n[Scaling GSA’s 10x program](https://govmatters.tv/scaling-gsas-10x-program)",
           "className": "card-bg--3"
         },
         {
           "title": "MEDIA",
           "text": "Government reinvention with a venture capitalist mindset",
           "link": "https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx",
-          "body": "##### Media\n\n[Government reinvention with a venture capitalist mindset](https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx)",
+          "body": "<span className=\"us-text-h5\"> Media</span>\n\n[Government reinvention with a venture capitalist mindset](https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx)",
           "className": "card-bg--4"
         }
       ]
