@@ -7,11 +7,19 @@ import { useSelector } from "react-redux";
 import Head from "routes/Head";
 import Layout from "features/Layout";
 import GhostWriter from "features/GhostWriter";
-import { useLocation } from "react-router-dom";
+import { Redirect, useLocation } from "react-router-dom";
 
 const FourOhFour = () => {
-  const data = useSelector((state) => state.settings["404"]);
-  const { search } = useLocation();
+  const state = useSelector((state) => state);
+  const { redirects } = state.settings;
+  const data = state.settings["404"];
+  const { search, pathname } = useLocation();
+
+  const redirectList = redirects.map((item) => item.origin);
+  if (redirectList.includes(pathname)) {
+    const url = redirects.find((item) => item.origin === pathname);
+    return <Redirect to={url.forward} />;
+  }
   if (search) {
     return (
       <Grid>

@@ -1,5 +1,5 @@
 {
-  "items": [
+  "redirects": [
     {
       "origin": "/test",
       "forward": "/"

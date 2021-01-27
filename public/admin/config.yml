@@ -335,9 +335,6 @@ collections:
           - label: Site Description
             name: description
             widget: string
-          - <<: *modSections
-            label: "404 Content"
-            name: "404"
           - name: customFields
             label: Custom Fields
             widget: list
@@ -355,6 +352,21 @@ collections:
           - <<: *modSections
             label: "404 Content"
             name: "404"
+      - label: Redirects
+        name: "redirects"
+        file: cms/redirects.json
+        fields:
+          - label: Redirects
+            name: redirects
+            widget: list
+            summary: "{{fields.origin}}"
+            fields:
+              - name: origin
+                label: Origin URL
+                widget: string
+              - name: forward
+                label: Forward URL
+                widget: string
 
   - name: menu
     extension: json
