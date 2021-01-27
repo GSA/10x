@@ -139,4 +139,8 @@
   * {
     @include u-color("ink");
   }
+  &__link {
+    display: inline-block;
+    margin-top: 0.25rem;
+  }
 }
