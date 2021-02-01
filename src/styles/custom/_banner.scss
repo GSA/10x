@@ -16,15 +16,7 @@
     line-height: 0;
     @include u-margin-left(2);
     @include u-margin-top(2);
-    @include u-color("primary-light");
-    &:visited,
-    &:active,
-    &:focus {
-      @include u-color("primary-light");
-    }
-    &:hover {
-      @include u-color("primary-lighter");
-    }
+    @include linkVariant--light;
     &:after {
       display: none;
     }

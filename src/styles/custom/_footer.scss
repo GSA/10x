@@ -7,13 +7,7 @@
   &__preFooter {
     .usa-button--unstyled,
     a {
-      @include u-color("primary-light");
-      &:visited {
-        @include u-color("primary-light");
-      }
-      &:hover {
-        @include u-color("primary-lighter");
-      }
+      @include linkVariant--light;
     }
   }
   &__primary {
@@ -48,13 +42,7 @@
     }
     .usa-button--unstyled,
     a {
-      @include u-color("primary-light");
-      &:visited {
-        @include u-color("primary-light");
-      }
-      &:hover {
-        @include u-color("primary-lighter");
-      }
+      @include linkVariant--light;
     }
   }
 

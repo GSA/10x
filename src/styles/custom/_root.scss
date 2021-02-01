@@ -10,13 +10,7 @@ html {
 }
 
 a {
-  @include u-color("primary-darker");
-  &:visited {
-    @include u-color("primary-darker");
-  }
-  &:hover {
-    @include u-color("primary-dark");
-  }
+  @include linkVariant--dark;
 }
 
 blockquote {

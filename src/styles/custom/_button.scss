@@ -9,25 +9,14 @@
       "primary-lighter",
       "primary-lighter"
     );
-    @include u-color("base-dark");
+
     font-weight: 500;
-    &:visited {
-      @include u-color("base-dark");
-    }
-    &:hover {
-      @include u-color("base-dark");
-    }
+    @include linkVariant--dark;
   }
 
   &--unstyled {
     line-height: inherit;
     @include u-font-family("sans");
-    @include u-color("primary-darker");
-    &:visited {
-      @include u-color("primary-darker");
-    }
-    &:hover {
-      @include u-color("primary-dark");
-    }
+    @include linkVariant--dark;
   }
 }
