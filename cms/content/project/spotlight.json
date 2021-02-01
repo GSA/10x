@@ -55,6 +55,9 @@
         {
           "type": "markdown",
           "body": "## What we did\n\nWe delivered a platform that hosts customizable scans that uncover business intelligence and real-time analysis for government web managers. \n\n### How we did it\n\nWe conducted extensive user research into the needs of web managers, we spoke with the teams behind existing web analysis tools to see how we could complement their work, and we brought on engineers to build the scans.\n\n### Where we are today\n\nSpotlight is an active product currently maintained within the Technology Transformation Services. It is also still an active 10x project, currently in Phase 4. As part of Phase 4 work, the team is looking for ways to expand Spotlight to serve as many different users as possible. Currently, the team is building out the front-end interface of the scanner to allow more non-technical users to benefit from the tool, in addition to developing new scanning capabilities. "
+        },
+        {
+          "type": "phase"
         }
       ]
     },
