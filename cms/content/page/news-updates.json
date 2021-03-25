@@ -1,0 +1,25 @@
+{
+  "title": "News and Updates",
+  "slug": "news-updates",
+  "sections": [
+    {
+      "type": "title",
+      "title": "News and updates",
+      "subtitle": "Recent updates from the 10x team",
+      "className": "desktop:width-tablet-lg"
+    },
+    {
+      "type": "markdown",
+      "body": ".....\n",
+      "className": "desktop:width-tablet-lg"
+    }
+  ],
+  "meta": {
+    "theme": "3",
+    "footer": "10x-in-the-wild",
+    "seo": {
+      "title": "News and Updates",
+      "description": "..."
+    }
+  }
+}

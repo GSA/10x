@@ -19,6 +19,11 @@
           "type": "page",
           "link": "designing-success",
           "text": "Designing success"
+        },
+        {
+          "type": "page",
+          "link": "news-updates",
+          "text": "News and updates"
         }
       ]
     },
