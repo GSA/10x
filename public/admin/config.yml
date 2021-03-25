@@ -3,7 +3,8 @@ backend:
   repo: GSA/10x
   base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
-  branch: demo
+  # remember to change back when finished
+  branch: feature/improve-cms-ux
   preview_context: federalist/build
 
 media_folder: public/images
@@ -283,12 +284,12 @@ modules:
     widget: object
     fields:
       - <<: *title
-        required: false
+        required: true
         hint: "Document title attribute"
       - <<: *text
         label: Description
         name: description
-        required: false
+        required: true
         hint: "Document description attribute"
       - name: custom
         label: Custom SEO fields
@@ -321,30 +322,31 @@ collections:
     editor:
       preview: false
     files:
-      - label: Settings
-        name: settings
-        file: cms/settings.json
-        fields:
-          - label: Settings
-            name: settings
-            widget: hidden
-            default: settings
-          - label: Site Title
-            name: title
-            widget: string
-          - label: Site Description
-            name: description
-            widget: string
-          - name: customFields
-            label: Custom Fields
-            widget: list
-            fields:
-              - name: key
-                label: Key
-                widget: string
-              - name: value
-                label: Value
-                widget: string
+      # see cms/__example-settings.json for example usage
+      # - label: Settings
+      #   name: settings
+      #   file: cms/settings.json
+      #   fields:
+      #     - label: Settings
+      #       name: settings
+      #       widget: hidden
+      #       default: settings
+      #     - label: Site Title
+      #       name: title
+      #       widget: string
+      #     - label: Site Description
+      #       name: description
+      #       widget: string
+      #     - name: customFields
+      #       label: Custom Fields
+      #       widget: list
+      #       fields:
+      #         - name: key
+      #           label: Key
+      #           widget: string
+      #         - name: value
+      #           label: Value
+      #           widget: string
       - label: 404 Content
         name: "404"
         file: cms/404.json
@@ -370,8 +372,8 @@ collections:
 
   - name: menu
     extension: json
-    label: Menus
-    label_singular: Menu
+    label: Nav menus
+    label_singular: Nav menu
     folder: cms/menus
     create: true
     delete: true
@@ -483,6 +485,17 @@ collections:
     fields:
       - <<: *title
       - <<: *slug
+      - label: Meta
+        name: meta
+        widget: "object"
+        fields:
+          - <<: *modSeo
+          - label: "Theme"
+            name: "theme"
+            required: false
+            widget: "select"
+            options: ["1", "2", "3", "4", "5", "6", "7", "8"]
+          - <<: *preFooter
       - label: "Sections"
         name: "sections"
         widget: "list"
@@ -495,17 +508,6 @@ collections:
           - <<: *modMarkdown
           - <<: *modProjects
           - <<: *modTitle
-      - label: Meta
-        name: meta
-        widget: "object"
-        fields:
-          - <<: *modSeo
-          - label: "Theme"
-            name: "theme"
-            required: false
-            widget: "select"
-            options: ["1", "2", "3", "4", "5", "6", "7", "8"]
-          - <<: *preFooter
 
   - name: projects
     extension: json

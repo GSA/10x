@@ -2,7 +2,7 @@
 
 const testData = [
   {
-    key: "primary",
+    key: "global",
     items: [
       { link: "/about", text: "About 10x" },
       { link: "/ideas", text: "Send us an idea" },

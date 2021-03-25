@@ -58,7 +58,7 @@ const Header = ({ logo, className, variant }) => {
   }, [dispatch]);
 
   const menus = useSelector((state) => state.menu.data);
-  const primary = menus.find(({ key }) => key === "primary");
+  const primary = menus.find(({ key }) => key === "global");
   const navItems = primary ? primary.items : [];
 
   return (
