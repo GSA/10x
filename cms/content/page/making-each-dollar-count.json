@@ -67,13 +67,13 @@
           "title": "XX",
           "text": "projects kicked off Phase 1 in 2020, or started late in FY19",
           "link": "/",
-          "body": "<span className=\"text-center\"><b>45</b></span>\n\n<span className=\"text-center\">projects kicked off Phase 1 in 2020, or started late in FY19</span>"
+          "body": "<span className=\"text-center\"><strong>45</strong></span>\n\n<span className=\"text-center\">projects kicked off Phase 1 in 2020, or started late in FY19</span>"
         },
         {
           "title": "XX",
           "text": "projects continued into phases 2, 3, and 4",
           "link": "/",
-          "body": "<span className=\"text-center\"><b>19</b></span>\n\n<span className=\"text-center\">projects continued into Phases 2, 3, and 4</span>"
+          "body": "<span className=\"text-center\"><strong>19</strong></span>\n\n<span className=\"text-center\">projects continued into Phases 2, 3, and 4</span>"
         }
       ]
     }
