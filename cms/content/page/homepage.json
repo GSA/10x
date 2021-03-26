@@ -3,8 +3,7 @@
   "sections": [
     {
       "type": "ghostwriter",
-      "body": "<Grid>\n<GhostWriter />\n</Grid>\n",
-      "className": "Home__hero"
+      "body": "<Grid>\n<GhostWriter />\n</Grid>\n"
     },
     {
       "type": "markdown",
@@ -12,24 +11,19 @@
     },
     {
       "type": "cards",
-      "className": "Home__cards",
       "title": "What's new with us",
       "items": [
         {
-          "body": "<span className=\"us-text-h5\">featured project</span>\n\n[Rapid implementation of policy as code](https://18f.gsa.gov/2020/05/12/rapid-implementation-of-policy-as-code/)",
-          "className": "card-bg--1"
+          "body": "<span className=\"us-text-h5\">featured project</span>\n\n[Rapid implementation of policy as code](https://18f.gsa.gov/2020/05/12/rapid-implementation-of-policy-as-code/)"
         },
         {
-          "body": "<span className=\"us-text-h5\">inside look</span>\n\n[View 10x Lightning Talks from successful idea submitters](https://digital.gov/event/2020/06/30/10x-project-lightning-talks-2020/)\n",
-          "className": "card-bg--2"
+          "body": "<span className=\"us-text-h5\">inside look</span>\n\n[View 10x Lightning Talks from successful idea submitters](https://digital.gov/event/2020/06/30/10x-project-lightning-talks-2020/)\n"
         },
         {
-          "body": "<span className=\"us-text-h5\">Media</span>\n\n[Government reinvention with a venture capital mindset](https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx)",
-          "className": "card-bg--3"
+          "body": "<span className=\"us-text-h5\">Media</span>\n\n[Government reinvention with a venture capital mindset](https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx)"
         },
         {
-          "body": "<span className=\"us-text-h5\">Awards</span>\n\n[10x is proud to receive a 2019 Public Sector Innovation award](https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx)",
-          "className": "card-bg--4"
+          "body": "<span className=\"us-text-h5\">Awards</span>\n\n[10x is proud to receive a 2019 Public Sector Innovation award](https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx)"
         }
       ]
     }

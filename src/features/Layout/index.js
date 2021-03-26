@@ -24,9 +24,9 @@ const components = {
       <Mdx className={className}>{body}</Mdx>
     </div>
   ),
-  ghostwriter: ({ body, className }) => (
-    <div className={className}>
-      <Mdx className={className}>{body}</Mdx>
+  ghostwriter: ({ body }) => (
+    <div className="Home__hero">
+      <Mdx>{body}</Mdx>
     </div>
   ),
   phase: ({ data: { phaseData } = {} = {} }) => (

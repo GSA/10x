@@ -45,7 +45,6 @@ types:
     label: "Ghostwriter hero"
     name: "ghostwriter"
     widget: "markdown"
-    
 
   headline: &headline
     label: "Headline"
@@ -106,7 +105,6 @@ modules:
     name: title
     widget: "object"
     fields:
-      - <<: *classname
       - <<: *title
       - <<: *level
         required: false
@@ -188,6 +186,12 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
+        widget: "select"
+        options: 
+          - label: "Brush cards"
+            value: "TxBrushCard"
+          - label: "Process Ring cards"
+            value: "TxRingCards"
       - <<: *title
         required: false
       - <<: *text
@@ -202,7 +206,6 @@ modules:
         widget: list
         summary: "Card"
         fields:
-          - <<: *classname
           - <<: *body
 
   modLinks: &modLinks
