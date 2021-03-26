@@ -27,7 +27,7 @@ types:
     fields:
       - label: "Text"
         name: "text"
-        widget: text
+        widget: string
         required: false
       - label: "Link"
         name: "link"
@@ -696,7 +696,7 @@ collections:
                 value: "6"
   - name: footers
     extension: json
-    label: Footer
+    label: Footers
     label_singular: Footer
     folder: cms/content/footer
     create: true

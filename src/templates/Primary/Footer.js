@@ -21,7 +21,7 @@ const Footer = () => {
   );
   let data = {};
   const footer = footers.find(({ slug }) =>
-    page.footer ? slug === page.footer : slug === "default"
+    page.footer ? slug === page.footer : slug === "10x-in-the-wild"
   );
 
   if (footer) {
