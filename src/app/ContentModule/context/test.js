@@ -26,7 +26,6 @@ const projectData = [
       title: "",
       excerpt:
         "Most government agencies rely on data from other agencies, state and local governments, and other data providers to make informed decisions on policy, operations, and budgets, but it’s currently very time consuming and complex to aggregate this data in a meaningful way. The team developed best practices and repeatable processes and tools that make it easier to collect, combine, standardize, govern, maintain, and exchange data across federal agencies.",
-      projectLink: "/projects/u-s-data-federation",
       template: "6",
     },
     topics: "Data scientists, Program administrators",
