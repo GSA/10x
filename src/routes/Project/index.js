@@ -26,6 +26,7 @@ const Project = ({ type }) => {
   const page = useSelector((state) => state.content.page);
   const { pending, data, error } = page;
 
+  const { card = {} } = data;
   if (pending) {
     return (
       <Grid>
@@ -50,7 +51,7 @@ const Project = ({ type }) => {
           className={classnames({
             TxProject: true,
             [`TxProject--${name}`]: true,
-            [`TxProject--template-${data.template}`]: Boolean(data.template),
+            [`TxProject--template-${card.template}`]: Boolean(card.template),
           })}
         >
           <div className="TxProject__nav-link">
