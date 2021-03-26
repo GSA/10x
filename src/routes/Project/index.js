@@ -66,7 +66,7 @@ const Project = ({ type }) => {
           <Row gap="4">
             <Col size="12" desktop="8">
               <h2 className="TxProject__title">{data.title}</h2>
-              <p className="TxProject__intro">{data.body}</p>
+              <p className="TxProject__intro">{data.intro}</p>
               <Break color="accent-cool" variant="wide" />
             </Col>
             {data.summary && (

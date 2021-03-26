@@ -67,6 +67,8 @@ types:
   preFooter: &preFooter
     label: Pre-Footer
     name: footer
+    hint: "Most pages use the '10x-in-the-wild' prefooter."
+    default: "10x-in-the-wild"
     widget: relation
     collection: "footers"
     search_fields: ["slug"]
@@ -258,17 +260,17 @@ modules:
       - <<: *fullwidth
 
   modPhase: &modPhase
-    label: Phase
+    label: "Phase timeline graphic"
     name: phase
-    widget: "object" #might be a boolean
+    widget: "boolean" #might be a boolean
     fields:
       - <<: *classname
-      - <<: *fullwidth
 
   modSections: &modSections
     label: "Sections"
     name: "sections"
     widget: "list"
+    hint: "Choose sections from the dropdown to fill out the page."
     types:
       - <<: *modBreak
       - <<: *modCallout
@@ -280,13 +282,14 @@ modules:
       - <<: *modTitle
 
   modSeo: &modSeo
-    label: SEO (Required)
+    label: SEO
     name: seo
     widget: object
     fields:
       - <<: *title
         label: "Meta Title"
         required: true
+        default: " | 10x.GSA.gov"
         hint: "Document title attribute - should include site title as well. e.g., 'Project Name Here - 10x Project | 10x.GSA.gov' "
       - <<: *text
         label: "Meta Description"
@@ -482,7 +485,7 @@ collections:
     delete: true
     slug: "{{slug}}"
     preview_path: "{{slug}}"
-    identifier_field: slug
+    identifier_field: title
     editor:
       preview: false
     fields:
@@ -535,7 +538,7 @@ collections:
     delete: true
     slug: "{{slug}}"
     preview_path: "{{slug}}"
-    identifier_field: slug
+    identifier_field: title
     editor:
       preview: false
     fields:
@@ -585,7 +588,8 @@ collections:
         widget: "select"
         required: false
         options: ["Innovation", "Transformation", "Enhancement"]
-      - label: "In a nutshell sidebar"
+      - label: "In a nutshell sidebar list"
+        label_singular: "list item"
         name: "summary"
         hint: "These items fill out the 'In a nutshell' sidebar"
         widget: "list"
@@ -608,7 +612,8 @@ collections:
             widget: "text"
             required: false
             hint: "Curly, Moe, and Larry."
-      - label: "Links sidebar"
+      - label: "Links in sidebar list"
+        label_singular: "link"
         name: "links"
         widget: "list"
         required: false
@@ -618,20 +623,24 @@ collections:
           - <<: *link
             required: true
       - <<: *body
+        name: "intro"
         label: "Project Page Introduction"
         required: false
         hint: "Displays just below the Project Page Headline and Project Page Title."
       - label: "Project Page Sections"
+        label_singular: "Project page section"
         name: "sections"
         widget: "list"
         required: false
-        summary: "Section Card"
-        hint: "Each section's content modules are displayed in a Card."
+        summary: "Project page section"
+        hint: "Each section displays content items in a Card on the project detail page. Most project pages have 3 cards: 'Why this matters', 'What we did' or 'Our goal', and 'Next steps'."
         fields:
-          - label: "Modules"
+          - label: "Content items in this project section"
+            label_singular: "Content item"
             name: "modules"
             widget: list
             required: false
+            hint: "Choose sections from the dropdown to fill out the card."
             types:
               - <<: *modBreak
               - <<: *modCallout
@@ -644,7 +653,7 @@ collections:
               - <<: *modTitle
       - <<: *preFooter
         required: false
-      - label: "Project Card (Required)"
+      - label: "Project Card on /projects page"
         name: "card"
         hint: "Customize the Card content that will display on the Projects page"
         widget: "object"
@@ -664,10 +673,12 @@ collections:
             hint: "If provided, this overrides the default link to the Project's Detail Page. Provide a full link including https:// for project cards that should link externally instead of the Project Detail Page."
           - label: "Project Card Excerpt"
             name: "excerpt"
+            hint: "A short paragraph describing the project. If not provided, uses the project introduction."
             widget: "text"
             required: true
           - label: "Project Card Style"
             name: "template"
+            hint: "Choose one of the card style templates for this project."
             widget: "select"
             required: true
             options:
