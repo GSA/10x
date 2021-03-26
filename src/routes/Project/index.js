@@ -26,8 +26,6 @@ const Project = ({ type }) => {
   const page = useSelector((state) => state.content.page);
   const { pending, data, error } = page;
 
-  const { meta = {} } = data;
-
   if (pending) {
     return (
       <Grid>
@@ -52,7 +50,7 @@ const Project = ({ type }) => {
           className={classnames({
             TxProject: true,
             [`TxProject--${name}`]: true,
-            [`TxProject--template-${meta.template}`]: Boolean(meta.template),
+            [`TxProject--template-${data.template}`]: Boolean(data.template),
           })}
         >
           <div className="TxProject__nav-link">
@@ -70,11 +68,11 @@ const Project = ({ type }) => {
               <p className="TxProject__intro">{data.body}</p>
               <Break color="accent-cool" variant="wide" />
             </Col>
-            {meta.summary && (
+            {data.summary && (
               <Col size="12" desktop="4">
                 <Card className="TxProject__summary" title="In a nutshell">
                   <ul>
-                    {meta.summary.map((item, i) => (
+                    {data.summary.map((item, i) => (
                       <li key={`summary-${i}`}>
                         <Icon
                           icon="check-circle"
@@ -102,11 +100,11 @@ const Project = ({ type }) => {
             <Col size="12" desktop="4">
               <div className="TxProject__details">
                 <Card>
-                  <Team data={meta.team} />
+                  <Team data={data.team} />
                 </Card>
                 <Break color="base-lighter" variant="wide" />
                 <Card>
-                  <Links data={meta.links} />
+                  <Links data={data.links} />
                 </Card>
               </div>
             </Col>

@@ -49,12 +49,10 @@
   ],
   "subtitle": "What if your idea could change how the government communicates with the public?",
   "slug": "homepage",
-  "meta": {
-    "theme": "1",
-    "footer": "10x-in-the-wild",
-    "seo": {
-      "title": "10x - Funding Ideas for Better Public Service | 10x.GSA.gov",
-      "description": "10x crowdsources ideas from federal employees and turns them into good-for-people tech solutions. Find out how we approach funding and development."
-    }
+  "theme": "1",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "10x - Funding Ideas for Better Public Service | 10x.GSA.gov",
+    "description": "10x crowdsources ideas from federal employees and turns them into good-for-people tech solutions. Find out how we approach funding and development."
   }
 }

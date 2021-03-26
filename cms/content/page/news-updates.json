@@ -14,12 +14,10 @@
       "className": "desktop:width-tablet-lg"
     }
   ],
-  "meta": {
-    "theme": "3",
-    "footer": "10x-in-the-wild",
-    "seo": {
-      "title": "News and Updates",
-      "description": "..."
-    }
+  "theme": "3",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "News and Updates",
+    "description": "..."
   }
 }

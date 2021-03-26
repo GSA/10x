@@ -27,52 +27,50 @@ const projectData = [
       excerpt:
         "Most government agencies rely on data from other agencies, state and local governments, and other data providers to make informed decisions on policy, operations, and budgets, but it’s currently very time consuming and complex to aggregate this data in a meaningful way. The team developed best practices and repeatable processes and tools that make it easier to collect, combine, standardize, govern, maintain, and exchange data across federal agencies.",
       projectLink: "/projects/u-s-data-federation",
-    },
-    meta: {
-      topics: "Data scientists, Program administrators",
-      phaseData: {
-        status: "3",
-        phase: "4",
-        message:
-          "Graduated after Phase 4 and in use at OMB, USDA, OGIS, and for other initiatives like data.gov",
-      },
-      projectType: "Innovation",
-      links: [
-        {
-          link: "https://resources.data.gov/",
-          text: "Resources.data.gov",
-        },
-        {
-          text: "GitHub README",
-          link:
-            "https://github.com/18F/data-federation-project/blob/master/README.md",
-        },
-        {
-          text:
-            "The U.S. Data Federation wants to make it easier to collect, combine, and exchange data across government",
-          link: "https://18f.gsa.gov/2019/03/05/the-us-data-federation/",
-        },
-      ],
       template: "6",
-      team: {
-        submitter:
-          "Philip Ashlock, Data and Analytics Portfolio Lead, TTS Office of Solution",
-        members:
-          "Chris Goranson, Catherine Devlin, Tony Garvan, Mike Gintz, Mark Headd, Ethan Heppner, Joe Krzystan, Julia Lindpaintner, Amy Mok, Princess Ojiaku, James Tranovich\n",
-      },
-      summary: [
-        {
-          text: "Getting good, reliable data is hard",
-        },
-        {
-          text: "Data from different sources makes this even harder",
-        },
-        {
-          text:
-            "We aren’t effectively capitalizing on lessons learned from other data coordination efforts to improve data sharing for everyone",
-        },
-      ],
     },
+    topics: "Data scientists, Program administrators",
+    phaseData: {
+      status: "3",
+      phase: "4",
+      message:
+        "Graduated after Phase 4 and in use at OMB, USDA, OGIS, and for other initiatives like data.gov",
+    },
+    projectType: "Innovation",
+    links: [
+      {
+        link: "https://resources.data.gov/",
+        text: "Resources.data.gov",
+      },
+      {
+        text: "GitHub README",
+        link:
+          "https://github.com/18F/data-federation-project/blob/master/README.md",
+      },
+      {
+        text:
+          "The U.S. Data Federation wants to make it easier to collect, combine, and exchange data across government",
+        link: "https://18f.gsa.gov/2019/03/05/the-us-data-federation/",
+      },
+    ],
+    team: {
+      submitter:
+        "Philip Ashlock, Data and Analytics Portfolio Lead, TTS Office of Solution",
+      members:
+        "Chris Goranson, Catherine Devlin, Tony Garvan, Mike Gintz, Mark Headd, Ethan Heppner, Joe Krzystan, Julia Lindpaintner, Amy Mok, Princess Ojiaku, James Tranovich\n",
+    },
+    summary: [
+      {
+        text: "Getting good, reliable data is hard",
+      },
+      {
+        text: "Data from different sources makes this even harder",
+      },
+      {
+        text:
+          "We aren’t effectively capitalizing on lessons learned from other data coordination efforts to improve data sharing for everyone",
+      },
+    ],
     slug: "us-data-federation",
     path: "/projects/test",
     intro:

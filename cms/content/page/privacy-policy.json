@@ -7,12 +7,10 @@
       "body": "# Privacy Policy\n\n## Information you send us as a pitch\n\nFederal employees can voluntarily send us information as part of an idea submission for 10x funding by submitting a project idea through our online form. Your idea will be shared with subject-matter experts and the 10x team in order to make funding decisions. We publish information about which ideas do and do not receive funding, along with the date of submission, your name, and the name of your agency or organization. If your idea is accepted for funding, your name and home agency will be listed on our website. In some cases, we might feature your actual idea on our website for teaching and promotion purposes.\n\nWe cannot accept ideas from the general public. If you are not a federal employee and you submit an idea for funding, we’ll only use your information to reply to your message. We will not keep the information you sent as part of your idea.\n\n## Everything else\n\nFor everything else, we follow the practices outlined in GSA’s [privacy and security notice](https://www.gsa.gov/website-information/privacy-and-security-notice)."
     }
   ],
-  "meta": {
-    "theme": "6",
-    "footer": "we-started-as-an-idea-too",
-    "seo": {
-      "title": "10x Privacy Policy | 10x.GSA.gov",
-      "description": "10x's privacy policy. What we can accept, what we can't, and what we'll do with it. Check it out."
-    }
+  "theme": "6",
+  "footer": "we-started-as-an-idea-too",
+  "seo": {
+    "title": "10x Privacy Policy | 10x.GSA.gov",
+    "description": "10x's privacy policy. What we can accept, what we can't, and what we'll do with it. Check it out."
   }
 }

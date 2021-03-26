@@ -10,12 +10,10 @@
       "type": "projects"
     }
   ],
-  "meta": {
-    "theme": "2",
-    "footer": "10x-in-the-wild",
-    "seo": {
-      "title": "10x's Projects - Good for Government Tech | 10x.GSA.gov",
-      "description": "10x's good-for-government, good-for-people projects make the world a little faster, smarter, better. Check out some of our projects."
-    }
+  "theme": "2",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "10x's Projects - Good for Government Tech | 10x.GSA.gov",
+    "description": "10x's good-for-government, good-for-people projects make the world a little faster, smarter, better. Check out some of our projects."
   }
 }

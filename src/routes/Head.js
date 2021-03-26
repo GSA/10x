@@ -9,7 +9,7 @@ const Head = (props) => {
   const { pathname } = useLocation();
 
   const title = page.title; // page or site title
-  const description = meta.description; // page or site description
+  const description = page.description; // page or site description
   const url = pathname; // page url/link
   const fbImg = meta.fbImg; // page image or site facebook image
   const twImg = meta.twImg; // page image or site twitter image

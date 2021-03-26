@@ -15,7 +15,7 @@ types:
   #########################
 
   body: &body
-    label: "Body"
+    label: "Text Content"
     name: "body"
     widget: "markdown"
 
@@ -35,7 +35,8 @@ types:
         required: false
 
   classname: &classname
-    label: Classname
+    label: "Class override"
+    hint: "Style your content with additional classes applied to the content container."
     name: className
     widget: string
     required: false
@@ -75,14 +76,14 @@ types:
   slug: &slug
     widget: string
     name: "slug"
-    label: "Slug"
+    label: "Page Slug"
     required: true
     pattern:
       [
         "^[a-z0-9]+(?:-[a-z0-9]+)*$",
         "A slug can have no spaces or special characters",
       ]
-    hint: "The project URL (do not include folder or file extension)"
+    hint: "The page URL (do not include folder or file extension)"
 
   text: &text
     label: "Text"
@@ -112,7 +113,7 @@ modules:
         required: false
 
   modMarkdown: &modMarkdown
-    label: "Markdown"
+    label: "Markdown content"
     name: "markdown"
     widget: "object"
     fields:
@@ -259,7 +260,7 @@ modules:
   modPhase: &modPhase
     label: Phase
     name: phase
-    widget: "object"
+    widget: "object" #might be a boolean
     fields:
       - <<: *classname
       - <<: *fullwidth
@@ -279,32 +280,34 @@ modules:
       - <<: *modTitle
 
   modSeo: &modSeo
-    label: SEO
+    label: SEO (Required)
     name: seo
     widget: object
     fields:
       - <<: *title
+        label: "Meta Title"
         required: true
-        hint: "Document title attribute"
+        hint: "Document title attribute - should include site title as well. e.g., 'Project Name Here - 10x Project | 10x.GSA.gov' "
       - <<: *text
-        label: Description
+        label: "Meta Description"
+        hint: "Provide a keyword-rich description between 50–160 characters, which will show up in search results pages."
         name: description
         required: true
-        hint: "Document description attribute"
-      - name: custom
-        label: Custom SEO fields
-        widget: list
-        hint: "Adds custom <meta> tag to the header"
-        required: false
-        fields:
-          - label: Name
-            name: name
-            widget: string
-            required: false
-          - label: Content
-            name: content
-            widget: string
-            required: false
+      # - name: custom
+      #   label: Custom SEO fields
+      #   widget: list
+      #   hint: "Adds custom <meta> tag to the header, such as Open Graph tags."
+      #   required: false
+      #   fields:
+      #     # come back to this -- some are property / content, some are name/value, etc
+      #     - label: "Attribute"
+      #       name: name
+      #       widget: string
+      #       required: false
+      #     - label: "Value"
+      #       name: content
+      #       widget: string
+      #       required: false
 
 #########################
 collections:
@@ -484,19 +487,32 @@ collections:
       preview: false
     fields:
       - <<: *title
+        label: "Page title"
       - <<: *slug
-      - label: Meta
-        name: meta
-        widget: "object"
-        fields:
-          - <<: *modSeo
-          - label: "Theme"
-            name: "theme"
-            required: false
-            widget: "select"
-            options: ["1", "2", "3", "4", "5", "6", "7", "8"]
-          - <<: *preFooter
-      - label: "Sections"
+      - <<: *modSeo
+      - label: "Page Theme"
+        name: "theme"
+        required: false
+        widget: "select"
+        options: 
+          - label: "1 - lilac-to-tiger wash"
+            value: "1"
+          - label: "2 - charcoal-to-lead with x's"
+            value: "2"
+          - label: "3 - smoke-to-ocean wash"
+            value: "3"
+          - label: "4 - smoke-to-tiger wash"
+            value: "4"
+          - label: "5 - charcoal-to-lead flat"
+            value: "5"
+          - label: "6 - smoke wash"
+            value: "6"
+          - label: "7 - ocean fade"
+            value: "7"
+          - label: "8 - lilac fade"
+            value: "8"
+      - label: "Page content sections"
+        label_singular: "content"
         name: "sections"
         widget: "list"
         types:
@@ -508,6 +524,7 @@ collections:
           - <<: *modMarkdown
           - <<: *modProjects
           - <<: *modTitle
+      - <<: *preFooter
 
   - name: projects
     extension: json
@@ -524,13 +541,87 @@ collections:
     fields:
       - <<: *slug
       - <<: *title
-        label: "Project title"
+        label: "Project Page title"
       - <<: *headline
+        label: "Project Page headline"
+        hint: "Question posed at the top of the project page. Can be longer than Project Card headline below."
         required: false
+      - <<: *modSeo
+      - label: "Project Phase & Status"
+        name: "phaseData"
+        widget: "object"
+        collapsed: true
+        required: false
+        hint: "Set the phase and status information here, to be used anywhere within the page content sections."
+        fields:
+          - label: "Phase"
+            name: "phase"
+            widget: "select"
+            options: ["1", "2", "3", "4"]
+            required: false
+          - label: "Status"
+            name: "status"
+            widget: "select"
+            required: false
+            options:
+              [
+                { label: "In Progress", value: "1" },
+                { label: "Done", value: "2" },
+                { label: "Graduated", value: "3" },
+              ]
+            default: "InProgress"
+          - label: "Message"
+            name: "message"
+            hint: "Override the default Phase status message."
+            widget: "string"
+            required: false
+      - label: "Project Topics"
+        name: "topics"
+        widget: "string"
+        hint: "Separate tag values by comma."
+        required: false
+      - label: "Project Type"
+        name: "projectType"
+        widget: "select"
+        required: false
+        options: ["Innovation", "Transformation", "Enhancement"]
+      - label: "In a nutshell sidebar"
+        name: "summary"
+        hint: "These items fill out the 'In a nutshell' sidebar"
+        widget: "list"
+        required: false
+        fields:
+          - *text
+      - label: "Team sidebar"
+        name: "team"
+        hint: "Provide the Idea Submitter and the rest of the project team in the sidebar."
+        widget: "object"
+        required: false
+        fields:
+          - label: "Idea Submitter"
+            name: "submitter"
+            widget: "string"
+            required: false
+            hint: "Name, Department or Agency"
+          - label: "Members"
+            name: "members"
+            widget: "text"
+            required: false
+            hint: "Curly, Moe, and Larry."
+      - label: "Links sidebar"
+        name: "links"
+        widget: "list"
+        required: false
+        fields:
+          - <<: *text
+            required: true
+          - <<: *link
+            required: true
       - <<: *body
-        label: "Introduction"
+        label: "Project Page Introduction"
         required: false
-      - label: "Sections"
+        hint: "Displays just below the Project Page Headline and Project Page Title."
+      - label: "Project Page Sections"
         name: "sections"
         widget: "list"
         required: false
@@ -551,117 +642,47 @@ collections:
               - <<: *modPhase
               - <<: *modProjects
               - <<: *modTitle
-      - label: "Portfolio Card"
+      - <<: *preFooter
+        required: false
+      - label: "Project Card (Required)"
         name: "card"
-        hint: "Customize the Card content that will display on the Portfolio page"
+        hint: "Customize the Card content that will display on the Projects page"
         widget: "object"
         fields:
           - <<: *title
+            label: "Project Card Title"
             required: false
-            hint: "Custom card Title (defaults to Project Title)"
+            hint: "Project name to be used as card title (If not provided, defaults to Project Page Title above.)"
           - <<: *headline
+            label: "Project Card Question"
             required: false
-            hint: "Custom card Headline (defaults to Project Headline)"
-          - label: "Project Url"
+            hint: "Question posed at the top of the card. Uses Project Page Headline if not provided."
+          - label: "Project Card External Url"
             name: "projectUrl"
             widget: "string"
             required: false
-            hint: "Valid full URL for the Portfilio card (defaults to Project Detail Page)"
-          - label: "Excerpt"
+            hint: "If provided, this overrides the default link to the Project's Detail Page. Provide a full link including https:// for project cards that should link externally instead of the Project Detail Page."
+          - label: "Project Card Excerpt"
             name: "excerpt"
             widget: "text"
-            required: false
-      - label: "Meta Data"
-        name: "meta"
-        widget: "object"
-        required: false
-        fields:
-          - <<: *modSeo
-          - label: "Type"
-            name: "projectType"
-            widget: "select"
-            required: false
-            options: ["Innovation", "Transformation", "Enhancement"]
-          - label: "Template"
+            required: true
+          - label: "Project Card Style"
             name: "template"
             widget: "select"
-            required: false
+            required: true
             options:
-              - label: "1"
+              - label: "1 - Ocean splatter"
                 value: "1"
-              - label: "2"
+              - label: "2 - Grimace wash"
                 value: "2"
-              - label: "3"
+              - label: "3 - Tiger swipe"
                 value: "3"
-              - label: "4"
+              - label: "4 - Ocean swirl"
                 value: "4"
-              - label: "5"
+              - label: "5 - Tiger scratch"
                 value: "5"
-              - label: "6"
+              - label: "6 - Grimace scribble"
                 value: "6"
-          - <<: *preFooter
-            required: false
-          - label: "Phase"
-            name: "phaseData"
-            widget: "object"
-            collapsed: true
-            required: false
-            fields:
-              - label: "Phase"
-                name: "phase"
-                widget: "select"
-                options: ["1", "2", "3", "4"]
-                required: false
-              - label: "Status"
-                name: "status"
-                widget: "select"
-                required: false
-                options:
-                  [
-                    { label: "In Progress", value: "1" },
-                    { label: "Done", value: "2" },
-                    { label: "Graduated", value: "3" },
-                  ]
-                default: "InProgress"
-              - label: "Message"
-                name: "message"
-                hint: "Override the default Phase status message."
-                widget: "string"
-                required: false
-          - label: "Topics"
-            name: "topics"
-            widget: "string"
-            hint: "Separate tag values by comma."
-            required: false
-          - label: "Summary"
-            name: "summary"
-            widget: "list"
-            required: false
-            fields:
-              - *text
-          - label: "Team"
-            name: "team"
-            widget: "object"
-            required: false
-            fields:
-              - label: "Idea Submitter"
-                name: "submitter"
-                widget: "string"
-                required: false
-              - label: "Members"
-                name: "members"
-                widget: "text"
-                required: false
-          - label: "Links"
-            name: "links"
-            widget: "list"
-            required: false
-            fields:
-              - <<: *text
-                required: false
-              - <<: *link
-                required: false
-
   - name: footers
     extension: json
     label: Footer

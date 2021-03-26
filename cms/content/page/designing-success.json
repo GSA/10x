@@ -79,12 +79,10 @@
       "className": "desktop:width-tablet-lg"
     }
   ],
-  "meta": {
-    "theme": "3",
-    "footer": "10x-in-the-wild",
-    "seo": {
-      "title": "Designing Success - 10x's Investment Themes | 10x.GSA.gov",
-      "description": "10x shares lessons learned and the key areas of focus for its fiscal year 21 tech investments. Find out what FY21 looks like for us."
-    }
+  "theme": "3",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "Designing Success - 10x's Investment Themes | 10x.GSA.gov",
+    "description": "10x shares lessons learned and the key areas of focus for its fiscal year 21 tech investments. Find out what FY21 looks like for us."
   }
 }

@@ -2,39 +2,31 @@
   "excerpt": "The intent of the Paperwork Reduction Act (PRA) of 1980 is to reduce the burden of paperwork placed on the public by government agencies who are seeking information. But over the last 40 years, the law has been a source of confusion for federal employees trying to gather data from the public, often in pursuit of user research to make the public’s experience with government better. The project team worked very closely with dozens of compliance attorneys to agree on precise language and common interpretations of the law so they could better explain its purpose, how it works, and how to stay on the right side of compliance—taking decades of legalese and translating it into plain-language web content, lowering the barrier for feds to collect key information from the public so they can continue to improve government services. ",
   "body": "In order for the government to deliver excellent public service, civil servants must be able to interact with the public to understand their needs. The Paperwork Reduction Act (PRA), passed in 1995,  governs how federal agencies collect information from the American public. But, PRA is often viewed as a blocker to meaningful interaction between the government and the public. The spirit of PRA is to reduce the burden on the public to respond to duplicative calls for information by the government, but there is much confusion around the law and how to navigate it. 10x spent three phases looking at PRA to see how we might help.",
   "topics": "Designers, Program administrators, Researchers",
-  "meta": {
-    "footer": "we-started-as-an-idea-too",
-    "phaseData": {
-      "phase": "3",
-      "status": "3"
-    },
-    "team": {
-      "submitter": "Sharon Mar, OMB with Andrew Maier, 18F alum",
-      "members": "Qituwra Anderson, Elizabeth Ayer, Christine Bath, Anna Heller-Sebok, Brian Hurst, and Cordelia Yu"
-    },
-    "projectType": "Innovation",
-    "template": "3",
-    "links": [
-      {
-        "text": "pra.digital.gov",
-        "link": "https://pra.digital.gov/"
-      }
-    ],
-    "summary": [
-      {
-        "text": "The PRA is a misunderstood law that scares government employees away from interacting with the public, which can hinder user research "
-      },
-      {
-        "text": "There has never been easy guidance that explains the purpose and processes behind PRA"
-      },
-      {
-        "text": "Helping federal employees navigate the PRA process can lead to improved interaction with the public and enable a more responsive government "
-      }
-    ],
-    "seo": {
-      "title": "A Guide to the PRA - 10x Project | 10x.GSA.gov",
-      "description": "What if we could make it easier for civil servants to interact with the public they serve? Find out how 10x created a guide to the Paperwork Reduction Act."
+  "footer": "we-started-as-an-idea-too",
+  "team": {
+    "submitter": "Sharon Mar, OMB with Andrew Maier, 18F alum",
+    "members": "Qituwra Anderson, Elizabeth Ayer, Christine Bath, Anna Heller-Sebok, Brian Hurst, and Cordelia Yu"
+  },
+  "links": [
+    {
+      "text": "pra.digital.gov",
+      "link": "https://pra.digital.gov/"
     }
+  ],
+  "summary": [
+    {
+      "text": "The PRA is a misunderstood law that scares government employees away from interacting with the public, which can hinder user research "
+    },
+    {
+      "text": "There has never been easy guidance that explains the purpose and processes behind PRA"
+    },
+    {
+      "text": "Helping federal employees navigate the PRA process can lead to improved interaction with the public and enable a more responsive government "
+    }
+  ],
+  "seo": {
+    "title": "A Guide to the PRA - 10x Project | 10x.GSA.gov",
+    "description": "What if we could make it easier for civil servants to interact with the public they serve? Find out how 10x created a guide to the Paperwork Reduction Act."
   },
   "phaseData": {
     "status": "3",
@@ -74,11 +66,11 @@
     "excerpt": "The intent of the Paperwork Reduction Act (PRA) of 1980 is to reduce the burden of paperwork placed on the public by government agencies who are seeking information. But over the last 40 years, the law has been a source of confusion for federal employees trying to gather data from the public, often in pursuit of user research to make the public’s experience with government better. The project team worked very closely with dozens of compliance attorneys to agree on precise language and common interpretations of the law so they could better explain its purpose, how it works, and how to stay on the right side of compliance — taking decades of legalese and translating it into plain-language web content, lowering the barrier for feds to collect key information from the public so they can continue to improve government services. ",
     "projectUrl": "",
     "subtitle": "What if we could make navigating the PRA process easier?",
-    "title": "A Guide to the Paperwork Reduction Act"
+    "title": "A Guide to the Paperwork Reduction Act",
+    "template": "1"
   },
   "projectType": "Innovation",
   "projectLink": "https://pra.digital.gov",
   "subtitle": "What if we could make it easier for civil servants to interact with the public they serve?",
-  "title": "A Guide to the Paperwork Reduction Act",
-  "template": "1"
+  "title": "A Guide to the Paperwork Reduction Act"
 }
