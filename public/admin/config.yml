@@ -41,6 +41,12 @@ types:
     widget: string
     required: false
 
+  ghostwriter: &ghostwriter
+    label: "Ghostwriter hero"
+    name: "ghostwriter"
+    widget: "markdown"
+    
+
   headline: &headline
     label: "Headline"
     name: "subtitle"
@@ -121,7 +127,9 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
+        default: "Home__hero"
       - <<: *body
+        default: "<Grid>\n<GhostWriter />\n</Grid>\n"
 
   modCallout: &modCallout
     label: Callout
