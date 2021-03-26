@@ -41,12 +41,6 @@ types:
     widget: string
     required: false
 
-  fullwidth: &fullwidth
-    label: Fullwidth
-    name: fullwidth
-    widget: boolean
-    required: false
-
   headline: &headline
     label: "Headline"
     name: "subtitle"
@@ -107,7 +101,6 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
-      - <<: *fullwidth
       - <<: *title
       - <<: *level
         required: false
@@ -120,7 +113,14 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
-      - <<: *fullwidth
+      - <<: *body
+  
+  modGhostwriter: &modGhostwriter
+    label: "Ghostwriter hero"
+    name: "ghostwriter"
+    widget: "object"
+    fields:
+      - <<: *classname
       - <<: *body
 
   modCallout: &modCallout
@@ -129,7 +129,6 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
-      - <<: *fullwidth
       - <<: *title
         required: false
       - <<: *headline
@@ -157,8 +156,6 @@ modules:
     name: break
     widget: "object"
     fields:
-      - <<: *classname
-      - <<: *fullwidth
       - label: Color
         name: color
         widget: select
@@ -183,7 +180,6 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
-      - <<: *fullwidth
       - <<: *title
         required: false
       - <<: *text
@@ -207,7 +203,6 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
-      - <<: *fullwidth
       - <<: *title
         required: false
       - <<: *headline
@@ -228,7 +223,6 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
-      - <<: *fullwidth
       - <<: *title
         required: false
       - <<: *headline
@@ -257,7 +251,6 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
-      - <<: *fullwidth
 
   modPhase: &modPhase
     label: "Phase timeline graphic"
@@ -278,6 +271,7 @@ modules:
       - <<: *modLinks
       - <<: *modList
       - <<: *modMarkdown
+      - <<: *modGhostwriter
       - <<: *modProjects
       - <<: *modTitle
 
@@ -485,7 +479,8 @@ collections:
     delete: true
     slug: "{{slug}}"
     preview_path: "{{slug}}"
-    identifier_field: title
+    identifier_field: slug
+    summary: "{{title}} ({{slug}})"
     editor:
       preview: false
     fields:
@@ -525,6 +520,7 @@ collections:
           - <<: *modLinks
           - <<: *modList
           - <<: *modMarkdown
+          - <<: *modGhostwriter
           - <<: *modProjects
           - <<: *modTitle
       - <<: *preFooter
@@ -538,7 +534,8 @@ collections:
     delete: true
     slug: "{{slug}}"
     preview_path: "{{slug}}"
-    identifier_field: title
+    identifier_field: slug
+    summary: "{{title}} ({{slug}})"
     editor:
       preview: false
     fields:

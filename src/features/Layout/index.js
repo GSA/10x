@@ -24,6 +24,11 @@ const components = {
       <Mdx className={className}>{body}</Mdx>
     </div>
   ),
+  ghostwriter: ({ body, className }) => (
+    <div className={className}>
+      <Mdx className={className}>{body}</Mdx>
+    </div>
+  ),
   phase: ({ data: { phaseData } = {} = {} }) => (
     <PhaseStatus data={phaseData} />
   ),
@@ -32,14 +37,14 @@ const components = {
 };
 
 const Layout = ({ items, data }) => {
-  return items.map(({ type, fullwidth, ...props }, i) => {
+  return items.map(({ type, ...props }, i) => {
     const Comp = components[type];
     if (!Comp) {
       console.warn(`Module type "${type}" not defined.`);
       return null;
     }
     return Comp ? (
-      fullwidth ? (
+      type === "ghostwriter" ? (
         <Comp key={`txLayout-${++i}`} {...props} data={data} />
       ) : (
         <Grid key={`layout-${++i}`}>

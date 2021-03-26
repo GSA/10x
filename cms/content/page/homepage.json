@@ -2,10 +2,9 @@
   "title": "10x",
   "sections": [
     {
-      "type": "markdown",
+      "type": "ghostwriter",
       "body": "<Grid>\n<GhostWriter />\n</Grid>\n",
-      "className": "Home__hero",
-      "fullwidth": true
+      "className": "Home__hero"
     },
     {
       "type": "markdown",
