@@ -150,29 +150,31 @@ modules:
         default: "<Grid>\n<GhostWriter />\n</Grid>\n"
 
   modCallout: &modCallout
-    label: Callout
+    label: "Fancy list"
     name: callout
     widget: "object"
     fields:
-      - <<: *classname
-        widget: select
-        options: 
-          - label: "Process phase graphic"
-            value: "TxBG--2"
-      - <<: *title
-        required: false
-      - <<: *headline
-        label: "Subtitle"
-        required: false
-      - <<: *text
-        required: false
-      - <<: *button
-      - label: variant
+      - label: "Fancy list variant"
         name: variant
         widget: select
-        options: ["none", "check", "number", "ringer"]
-        hint: Default displays check
-      - label: Items
+        options: 
+          - label: "default"
+            value: ""
+          - label: "Check"
+            value: "check"
+          - label: "Check with white background"
+            value: "check check-with-background"
+          - label: "Number in a circle"
+            value: "number"
+          - label: "Phase graphic with black background"
+            value: "ringer"
+      - <<: *title
+        label: "Styled list title"
+        required: false
+      - <<: *text
+        label: "Styled list paragraph"
+        required: false
+      - label: "Styled list items"
         name: items
         widget: list
         summary: "Item"
@@ -180,6 +182,7 @@ modules:
           - <<: *classname
           - <<: *body
             required: false
+      - <<: *button
 
   modBreak: &modBreak
     label: Break
@@ -200,9 +203,9 @@ modules:
           ]
       - label: variant
         name: variant
-        widget: select
+        widget: hidden
         required: false
-        options: [0, "wide"]
+        default: "wide"
 
   modCards: &modCards
     label: Cards
@@ -253,18 +256,14 @@ modules:
           - <<: *link
 
   modList: &modList
-    label: List
+    label: "Bulleted List"
     name: list
     widget: "object"
     fields:
-      - <<: *classname
       - <<: *title
-        required: false
-      - <<: *headline
         required: false
       - <<: *text
         required: false
-      - <<: *button
       - label: Columns
         name: columns
         widget: select
@@ -279,6 +278,7 @@ modules:
             required: false
           - <<: *text
             required: false
+      - <<: *classname
 
   modProjects: &modProjects
     label: Projects
