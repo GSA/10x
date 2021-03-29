@@ -5,8 +5,7 @@
     {
       "type": "title",
       "title": "Our challenge to you",
-      "subtitle": "You’re smack dab in the middle of it all — your vantage point from within public service makes you uniquely qualified to see what we can do to create new good-for-government technology that enables good-for-people services.",
-      "className": "desktop:width-tablet-lg"
+      "subtitle": "You’re smack dab in the middle of it all — your vantage point from within public service makes you uniquely qualified to see what we can do to create new good-for-government technology that enables good-for-people services."
     },
     {
       "type": "markdown",
@@ -23,9 +22,7 @@
         {
           "body": "<span className=\"us-text-h4\"> Will create a new product or service that’s good for government</span>"
         }
-      ],
-      "className": "margin-bottom-2",
-      "text": ""
+      ]
     },
     {
       "type": "markdown",
@@ -34,8 +31,6 @@
     },
     {
       "type": "callout",
-      "text": "",
-      "title": "",
       "variant": "number",
       "items": [
         {
@@ -47,19 +42,17 @@
         {
           "body": "<span className=\"us-text-h4\"> Outline the benefits. Does it make something faster, more accurate, clearer, easier? Tell us why it matters.</span>"
         }
-      ],
-      "className": "margin-bottom-3"
+      ]
     },
     {
-      "type": "markdown",
-      "body": "It helps to structure the pitch as if you’re filling in the blank spaces on a Mad Libs-like game.\n\n### I’ve observed [problem or opportunity] and believe that if we [do this] it’ll result in [this benefit] for [this group of people].",
+      "type": "markdownSpecial",
+      "body": "It helps to structure the pitch as if you’re filling in the blank spaces on a Mad Libs-like game.\n\n>I’ve observed [problem or opportunity] and believe that if we [do this] it’ll result in [this benefit] for [this group of people].",
       "className": "TxChallenge__pitch "
     },
     {
       "type": "break",
       "color": "accent-cool",
-      "variant": "wide",
-      "className": ""
+      "variant": "wide"
     },
     {
       "type": "markdown",

@@ -5,8 +5,7 @@
     {
       "type": "title",
       "title": "News and updates",
-      "subtitle": "Recent updates from the 10x team",
-      "className": "desktop:width-tablet-lg"
+      "subtitle": "Recent updates from the 10x team"
     },
     {
       "type": "markdown",

@@ -1,13 +1,11 @@
 {
   "title": "Fueling innovation",
-  "subtitle": "No other government program is powered 100% by ideas — our sole purpose is to fan the flames of tech innovation, one candle at a time.",
   "slug": "fueling-innovation",
   "sections": [
     {
       "type": "title",
       "title": "Fueling innovation",
-      "subtitle": "No other government program is powered 100% by ideas — our sole purpose is to fan the flames of tech innovation, one candle at a time. ",
-      "className": "desktop:width-tablet-lg"
+      "subtitle": "No other government program is powered 100% by ideas — our sole purpose is to fan the flames of tech innovation, one candle at a time. "
     },
     {
       "type": "markdown",
@@ -36,7 +34,6 @@
           "body": "<span className=\"us-text-h4\"> We support differently</span>\n\nWe complete rigorous analysis to assess ideas before moving them forward, looking at each idea as a learning opportunity —even if it doesn’t come to fruition."
         }
       ],
-      "className": "",
       "title": "We’re different, by design",
       "text": "10x isn’t your average government program — our venture capital model lets us operate a bit outside the box. ",
       "variant": "check"

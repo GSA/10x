@@ -6,8 +6,7 @@
       "type": "title",
       "title": "Making each dollar count",
       "subtitle": "We’re focused on getting the most bang for the buck at every stage of the process.",
-      "level": "1",
-      "className": "desktop:width-tablet-lg"
+      "level": "1"
     },
     {
       "type": "markdown",
@@ -49,7 +48,6 @@
           "className": "bg--4"
         }
       ],
-      "className": "",
       "variant": "ringer"
     },
     {

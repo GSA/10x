@@ -15,7 +15,7 @@ types:
   #########################
 
   body: &body
-    label: "Text Content"
+    label: "Markdown Content"
     name: "body"
     widget: "markdown"
 
@@ -47,13 +47,13 @@ types:
     widget: "markdown"
 
   headline: &headline
-    label: "Headline"
+    label: "Lede"
     name: "subtitle"
     widget: "string"
     required: false
 
   level: &level
-    label: Level
+    label: Heading Level
     name: level
     widget: select
     options: ["1", "2", "3", "4", "5"]
@@ -116,9 +116,29 @@ modules:
     name: "markdown"
     widget: "object"
     fields:
-      - <<: *classname
       - <<: *body
-  
+      - <<: *classname
+        widget: "hidden"
+        default: "desktop:width-tablet-lg"
+
+
+  modMarkdownSpecial: &modMarkdownSpecial
+    label: "Special content section"
+    name: "markdownSpecial"
+    widget: "object"
+    fields:
+      - <<: *body
+      - <<: *classname
+        label: "Special content section type"
+        widget: "select"
+        default: ""
+        options: 
+          - label: "Challenge blockquote with background"
+            value: "TxChallenge__pitch"
+          - label: "Process funnel graphic"
+            value: "TxFunnel"
+          
+
   modGhostwriter: &modGhostwriter
     label: "Ghostwriter hero"
     name: "ghostwriter"
@@ -135,6 +155,10 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
+        widget: select
+        options: 
+          - label: "Process phase graphic"
+            value: "TxBG--2"
       - <<: *title
         required: false
       - <<: *headline
@@ -266,9 +290,11 @@ modules:
   modPhase: &modPhase
     label: "Phase timeline graphic"
     name: phase
-    widget: "boolean" #might be a boolean
+    hint: "Shows phase timeline at this location in the page."
+    widget: "object" #might be a boolean
     fields:
       - <<: *classname
+        comment: "I'm a comment"
 
   modSections: &modSections
     label: "Sections"
@@ -282,6 +308,7 @@ modules:
       - <<: *modLinks
       - <<: *modList
       - <<: *modMarkdown
+      - <<: *modMarkdownSpecial
       - <<: *modGhostwriter
       - <<: *modProjects
       - <<: *modTitle
@@ -365,6 +392,19 @@ collections:
           - <<: *modSections
             label: "404 Content"
             name: "404"
+            types:
+              - <<: *modTitle
+              - <<: *modMarkdownSpecial
+                fields:
+                  - <<: *body
+                  - <<: *classname
+                    label: "404 Content Sections"
+                    widget: select
+                    options: 
+                      - label: "404 quote"
+                        value: "FourOhFour__quote"
+                      - label: "404 links"
+                        value: "FourOhFour__links"
       - label: Redirects
         name: "redirects"
         file: cms/redirects.json
@@ -531,6 +571,7 @@ collections:
           - <<: *modLinks
           - <<: *modList
           - <<: *modMarkdown
+          - <<: *modMarkdownSpecial
           - <<: *modGhostwriter
           - <<: *modProjects
           - <<: *modTitle
@@ -656,6 +697,11 @@ collections:
               - <<: *modLinks
               - <<: *modList
               - <<: *modMarkdown
+                fields:
+                - <<: *body
+                - <<: *classname
+                  widget: "hidden"
+                  default: ""
               - <<: *modPhase
               - <<: *modProjects
               - <<: *modTitle

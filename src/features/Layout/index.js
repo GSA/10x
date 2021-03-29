@@ -24,6 +24,11 @@ const components = {
       <Mdx className={className}>{body}</Mdx>
     </div>
   ),
+  markdownSpecial: ({ body, className }) => (
+    <div className={className}>
+      <Mdx className={className}>{body}</Mdx>
+    </div>
+  ),
   ghostwriter: ({ body }) => (
     <div className="Home__hero">
       <Mdx>{body}</Mdx>

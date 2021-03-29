@@ -5,8 +5,7 @@
     {
       "type": "title",
       "title": "Our process",
-      "subtitle": "It all starts with an idea  —  learn how we can transform a “what if…” question into a government-wide solution. ",
-      "className": "desktop:width-tablet-lg"
+      "subtitle": "It all starts with an idea  —  learn how we can transform a “what if…” question into a government-wide solution. "
     },
     {
       "type": "markdown",
@@ -14,7 +13,7 @@
       "className": "desktop:width-tablet-lg"
     },
     {
-      "type": "markdown",
+      "type": "markdownSpecial",
       "className": "TxFunnel",
       "body": "### In August 2020 we:\n\n* Evaluated  **343** ideas\n* *arrow*\n* Selected **21** ideas for Phase 1\n* *arrow*\n* Expect only **7-9** ideas to move to Phase 2"
     },
@@ -85,8 +84,7 @@
       ],
       "variant": "ringer",
       "text": "Projects move through four phases after submission, though not all make it past Phase 1.",
-      "title": "The method to the madness",
-      "className": "margin-bottom-8"
+      "title": "The method to the madness"
     },
     {
       "type": "cards",

@@ -8,10 +8,6 @@
       "subtitle": "We’ve evaluated hundreds of high-impact, “what-if” ideas from federal employees, each aiming to improve how folks interact with the government. Here are some of the innovative current and past projects we have under our belt."
     },
     {
-      "type": "markdown",
-      "body": "# Our Projects\n\n<p className=\"lede\">We’ve evaluated hundreds of high-impact, “what-if” ideas from federal employees, each aiming to improve how folks interact with the government. Here are some of the innovative current and past projects we have under our belt.</p>"
-    },
-    {
       "type": "projects"
     }
   ],
