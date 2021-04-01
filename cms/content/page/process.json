@@ -27,13 +27,16 @@
       "variant": "check check-with-background",
       "items": [
         {
-          "body": "<span className=\"us-text-h4\">Clarity</span>\n\nDoes it make the case that there’s a compelling problem?\n\n"
+          "title": "Clarity",
+          "text": "Does it make the case that there’s a compelling problem?"
         },
         {
-          "body": "<span className=\"us-text-h4\">Alignment</span>\n\nDoes it help develop innovative technology that aligns with government-wide priorities?"
+          "title": "Alignment",
+          "text": "Does it help develop innovative technology that aligns with government-wide priorities?"
         },
         {
-          "body": "<span className=\"us-text-h4\">Impact</span> \n\nWill solving the problem make a big difference in how the government serves the public?\n"
+          "title": "Impact",
+          "text": "Will solving the problem make a big difference in how the government serves the public?"
         }
       ]
     },

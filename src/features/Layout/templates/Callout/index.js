@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 import { Col, Row } from "components/Grid";
 import Button from "features/Button";
-import Mdx from "features/Mdx";
 
 const Callout = ({
   className,
@@ -42,7 +41,12 @@ const Callout = ({
                   })}
                 />
                 <div className="TxCallout__content">
-                  <Mdx>{item.body}</Mdx>
+                  <span className="us-text-h4">
+                    {item.title}
+                  </span>
+                  <p>
+                    {item.text}
+                  </p>
                 </div>
               </div>
             </Col>
@@ -73,7 +77,7 @@ Callout.propTypes = {
   text: PropTypes.node,
   button: PropTypes.object,
   items: PropTypes.array,
-  variant: PropTypes.oneOf(["check", "none", "number", "ringer"]),
+  variant: PropTypes.oneOf(["check", "none", "number"]),
 };
 
 export default Callout;

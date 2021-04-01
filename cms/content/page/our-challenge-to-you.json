@@ -17,10 +17,10 @@
       "variant": "check",
       "items": [
         {
-          "body": "<span className=\"us-text-h4\"> Will improve the public’s experience with government through technology</span>"
+          "title": "Will improve the public’s experience with government through technology"
         },
         {
-          "body": "<span className=\"us-text-h4\"> Will create a new product or service that’s good for government</span>"
+          "title": "Will create a new product or service that’s good for government"
         }
       ]
     },
@@ -34,13 +34,13 @@
       "variant": "number",
       "items": [
         {
-          "body": "<span className=\"us-text-h4\"> Clearly state the problem or opportunity, and keep it simple (under 1,000 characters!). Tech for tech’s sake isn’t what we’re about. Let’s solve a real problem!</span>"
+          "title": "Clearly state the problem or opportunity, and keep it simple (under 1,000 characters!). Tech for tech’s sake isn’t what we’re about. Let’s solve a real problem!"
         },
         {
-          "body": "<span className=\"us-text-h4\"> Explain who the solution benefits. Government employees? Medicare recipients? Wild bird enthusiasts? Be specific.</span>"
+          "title": "Explain who the solution benefits. Government employees? Medicare recipients? Wild bird enthusiasts? Be specific."
         },
         {
-          "body": "<span className=\"us-text-h4\"> Outline the benefits. Does it make something faster, more accurate, clearer, easier? Tell us why it matters.</span>"
+          "title": "Outline the benefits. Does it make something faster, more accurate, clearer, easier? Tell us why it matters."
         }
       ]
     },

@@ -176,12 +176,16 @@ modules:
       - label: "Horizontal styled list items"
         name: items
         widget: list
-        summary: "Item"
+        summary: "{{fields.title}}"
         hint: "2-4 items is appropriate."
         fields:
-          - <<: *classname
-          - <<: *body
+          - label: "Item title"
+            name: title
+            widget: "string"
+          - label: "Item text"
+            name: "text"
             required: false
+            widget: "text"
       - <<: *button
         label: "Horizontal styled list button"
         hint: "If provided, adds a button just after the list itself."

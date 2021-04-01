@@ -25,13 +25,16 @@
       },
       "items": [
         {
-          "body": "<span className=\"us-text-h4\"> We source differently</span>\n\nAll our projects come from public servants who submit ideas to see if they can move the needle forward to solve a real problem."
+          "title": "We source differently",
+          "text": "All our projects come from public servants who submit ideas to see if they can move the needle forward to solve a real problem."
         },
         {
-          "body": "<span className=\"us-text-h4\"> We fund differently</span>\n\nThe projects use a phased, incremental funding approach, so we can focus investments on the most promising, impactful ideas."
+          "title": "We fund differently",
+          "text": "The projects use a phased, incremental funding approach, so we can focus investments on the most promising, impactful ideas."
         },
         {
-          "body": "<span className=\"us-text-h4\"> We support differently</span>\n\nWe complete rigorous analysis to assess ideas before moving them forward, looking at each idea as a learning opportunity —even if it doesn’t come to fruition."
+          "title": "We support differently",
+          "text": "We complete rigorous analysis to assess ideas before moving them forward, looking at each idea as a learning opportunity —even if it doesn’t come to fruition."
         }
       ],
       "title": "We’re different, by design",
