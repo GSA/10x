@@ -188,13 +188,14 @@ modules:
 
   modPhases: &modPhases
     label: "10x Phases Graphic"
-    name: phases
+    name: "phases"
     widget: "object"
     fields:
       - label: "Phases"
+        label_singular: "Phase"
         name: items
         widget: list
-        summary: "Item"
+        summary: "{{fields.subtitle}} - {{fields.title}}"
         hint: "2-4 items is appropriate."
         fields:
           - label: "Circle color"
@@ -211,21 +212,21 @@ modules:
                 value: "bg--4"
               - label: "Smoke"
                 value: "bg--5"
-          - label: "Item subtitle / eyebrow"
+          - label: "Phase subtitle / eyebrow"
             name: subtitle
             required: false
             hint: "Smaller text displayed just above the item title, if provided."
-            widget: "text"
-          - label: "Item title"
+            widget: "string"
+          - label: "Phase title"
             name: title
             hint: "Larger text displayed in the center of the circle."
-            widget: "text"
-          - label: "Item suffix"
+            widget: "string"
+          - label: "Phase suffix"
             name: "suffix"
             required: false
-            hint: "Used to optionally display '$' for each phase, below the title."
-            widget: "text"
-          - label: "Item details"
+            hint: "Used to optionally display increasing '$' for each phase, below the title."
+            widget: "string"
+          - label: "Phase details"
             name: "body"
             required: false
             hint: "Provides more information on each item below each circle."
@@ -357,6 +358,7 @@ modules:
       - <<: *modMarkdownSpecial
       - <<: *modGhostwriter
       - <<: *modProjects
+      - <<: *modPhases
       - <<: *modTitle
 
   modSeo: &modSeo
@@ -620,6 +622,7 @@ collections:
           - <<: *modMarkdownSpecial
           - <<: *modGhostwriter
           - <<: *modProjects
+          - <<: *modPhases
           - <<: *modTitle
       - <<: *preFooter
 
