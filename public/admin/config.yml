@@ -339,12 +339,13 @@ modules:
       - <<: *classname
 
   modPhase: &modPhase
-    label: "Phase timeline graphic"
-    name: phase
-    hint: "Shows phase timeline at this location in the page."
+    label: "Phase status"
+    name: "phaseStatus"
+    hint: "Shows phase status at this location in the page."
     widget: "object" #might be a boolean
     fields:
       - <<: *classname
+        widget: "hidden"
         comment: "I'm a comment"
 
   modSections: &modSections
@@ -660,7 +661,7 @@ collections:
         hint: "Set the phase and status information here, to be used anywhere within the page content sections."
         fields:
           - label: "Phase"
-            name: "phase"
+            name: "phaseStatus"
             widget: "select"
             options: ["1", "2", "3", "4"]
             required: false
