@@ -77,7 +77,7 @@ Callout.propTypes = {
   text: PropTypes.node,
   button: PropTypes.object,
   items: PropTypes.array,
-  variant: PropTypes.oneOf(["check", "none", "number"]),
+  variant: PropTypes.oneOf(["check", "none", "number", "check check-with-background"]),
 };
 
 export default Callout;

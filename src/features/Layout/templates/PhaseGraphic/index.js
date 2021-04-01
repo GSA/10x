@@ -26,15 +26,21 @@ const Phases = ({
               <div className="display-flex margin-right-2">
                 <div className="TxCallout__content">
                   <div className="TxCallout__card-header">
-                    <span className="us-text-h5">
-                      {item.subtitle}
-                    </span>
-                    <span className="us-text-h3">
-                      {item.title}
-                    </span>
-                    <span className="us-text-h3 text-italic margin-bottom-0">
-                      {item.suffix}
-                    </span>
+                    {item.subtitle && 
+                      <span className="us-text-h5">
+                        {item.subtitle}
+                      </span>
+                    }
+                    {item.title && 
+                      <span className="us-text-h3">
+                        {item.title}
+                      </span>
+                    }
+                    {item.suffix && 
+                      <span className="us-text-h3 text-italic margin-bottom-0">
+                        {item.suffix}
+                      </span>
+                    }
                   </div>
                   <Mdx>{item.body}</Mdx>
                 </div>
