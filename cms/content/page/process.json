@@ -57,33 +57,44 @@
       "className": "desktop:width-tablet-lg",
       "columns": "1"
     },
+
     {
-      "type": "callout",
+      "type": "markdown",
+      "body": "## The method to the madness \n\nProjects move through four phases after submission, though not all make it past Phase 1. \n"
+    },
+    {
+      "type": "phases",
       "items": [
         {
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h3\">Evaluate Idea</span>\n</span>\n\n* Clarity\n* Alignment\n* Impact",
+          "title": "Evaluate idea",
+          "body": "* Clarity\n* Alignment\n* Impact",
           "className": "bg--5"
         },
         {
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">PHASE 1</span> \n<span className=\"us-text-h3\">Investigate</span>\n</span>\n\n* Major red flags\n* Demand\n",
+          "subtitle": "Phase 1",
+          "title": "Investigate",
+          "body": "* Major red flags\n* Demand\n",
           "className": "bg--1"
         },
         {
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">PHASE 2</span> \n<span className=\"us-text-h3\">Discover</span>\n</span>\n\n* Current state\n* Market fit\n* Regulatory requirements\n* Timeline\n* Funding model",
+          "subtitle": "Phase 2",
+          "title": "Discover",
+          "body": "* Current state\n* Market fit\n* Regulatory requirements\n* Timeline\n* Funding model",
           "className": "bg--2"
         },
         {
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">PHASE 3</span> \n<span className=\"us-text-h3\">Develop</span>\n</span>\n\n* MVP\n* Recruit agency customer\n* Product roadmap\n* Business plan\n",
+          "subtitle": "Phase 3",
+          "title": "Develop",
+          "body": "* MVP\n* Recruit agency customer\n* Product roadmap\n* Business plan",
           "className": "bg--3"
         },
         {
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5\">PHASE 4</span> \n<span className=\"us-text-h3\">Scale</span>\n</span>\n\n* Additional customers\n* Largest possible audience\n",
+          "subtitle": "Phase 4",
+          "title": "Scale",
+          "body": "* Additional customers\n* Largest possible audience",
           "className": "bg--4"
         }
-      ],
-      "variant": "ringer",
-      "text": "Projects move through four phases after submission, though not all make it past Phase 1.",
-      "title": "The method to the madness"
+      ]
     },
     {
       "type": "cards",

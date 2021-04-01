@@ -8,6 +8,7 @@ import GridModule from "./templates/Grid";
 import Links from "./templates/Links";
 import List from "./templates/List";
 import Mdx from "features/Mdx";
+import Phases from "./templates/PhaseGraphic";
 import PhaseStatus from "./templates/PhaseStatus";
 import ProjectList from "features/ProjectList";
 import Title from "./templates/Title";
@@ -37,6 +38,7 @@ const components = {
   phase: ({ data: { phaseData } = {} = {} }) => (
     <PhaseStatus data={phaseData} />
   ),
+  phases: Phases,
   projects: ProjectList,
   title: Title,
 };

@@ -150,40 +150,86 @@ modules:
         default: "<Grid>\n<GhostWriter />\n</Grid>\n"
 
   modCallout: &modCallout
-    label: "Fancy list"
+    label: "Horizontal styled list"
     name: callout
     widget: "object"
     fields:
-      - label: "Fancy list variant"
+      - label: "Horizontal styled list variant"
         name: variant
         widget: select
+        hint: "Styles the list items with icons (like checkmarks or numbers) or adds a background behind the list items."
         options: 
-          - label: "default"
-            value: ""
-          - label: "Check"
+          - label: "Checkmark"
             value: "check"
-          - label: "Check with white background"
+          - label: "Checkmark with white background"
             value: "check check-with-background"
-          - label: "Number in a circle"
+          - label: "Number"
             value: "number"
-          - label: "Phase graphic with black background"
-            value: "ringer"
       - <<: *title
-        label: "Styled list title"
+        label: "Horizontal styled list title"
         required: false
+        hint: "If provided, begins the Horizontal Styled List section with a title."
       - <<: *text
-        label: "Styled list paragraph"
+        label: "Horizontal styled list paragraph"
         required: false
-      - label: "Styled list items"
+        hint: "If provided, adds a paragraph of text (no markdown) just before the list itself."
+      - label: "Horizontal styled list items"
         name: items
         widget: list
         summary: "Item"
+        hint: "2-4 items is appropriate."
         fields:
           - <<: *classname
           - <<: *body
             required: false
       - <<: *button
+        label: "Horizontal styled list button"
+        hint: "If provided, adds a button just after the list itself."
 
+  modPhases: &modPhases
+    label: "10x Phases Graphic"
+    name: phases
+    widget: "object"
+    fields:
+      - label: "Phases"
+        name: items
+        widget: list
+        summary: "Item"
+        hint: "2-4 items is appropriate."
+        fields:
+          - label: "Circle color"
+            name: "className"
+            widget: "select"
+            options: 
+              - label: "Sky"
+                value: "bg--1"
+              - label: "Lilac"
+                value: "bg--2"
+              - label: "Ocean"
+                value: "bg--3"
+              - label: "Tiger"
+                value: "bg--4"
+              - label: "Smoke"
+                value: "bg--5"
+          - label: "Item subtitle / eyebrow"
+            name: subtitle
+            required: false
+            hint: "Smaller text displayed just above the item title, if provided."
+            widget: "text"
+          - label: "Item title"
+            name: title
+            hint: "Larger text displayed in the center of the circle."
+            widget: "text"
+          - label: "Item suffix"
+            name: "suffix"
+            required: false
+            hint: "Used to optionally display '$' for each phase, below the title."
+            widget: "text"
+          - label: "Item details"
+            name: "body"
+            required: false
+            hint: "Provides more information on each item below each circle."
+            widget: "markdown"
   modBreak: &modBreak
     label: Break
     name: break
