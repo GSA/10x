@@ -15,16 +15,24 @@
       "title": "What's new with us",
       "items": [
         {
-          "body": "<span className=\"us-text-h5\">featured project</span>\n\n[Rapid implementation of policy as code](https://18f.gsa.gov/2020/05/12/rapid-implementation-of-policy-as-code/)"
+          "subtitle": "featured project",
+          "title": "Rapid implementation of policy as code",
+          "link": "https://18f.gsa.gov/2020/05/12/rapid-implementation-of-policy-as-code/"
         },
         {
-          "body": "<span className=\"us-text-h5\">inside look</span>\n\n[View 10x Lightning Talks from successful idea submitters](https://digital.gov/event/2020/06/30/10x-project-lightning-talks-2020/)\n"
+          "subtitle": "inside look",
+          "title": "View 10x Lightning Talks from successful idea submitters",
+          "link": "https://digital.gov/event/2020/06/30/10x-project-lightning-talks-2020/"
         },
         {
-          "body": "<span className=\"us-text-h5\">Media</span>\n\n[Government reinvention with a venture capital mindset](https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx)"
+          "subtitle": "Media",
+          "title": "Government reinvention with a venture capital mindset",
+          "link": "https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx"
         },
         {
-          "body": "<span className=\"us-text-h5\">Awards</span>\n\n[10x is proud to receive a 2019 Public Sector Innovation award](https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx)"
+          "subtitle": "Awards",
+          "title": "10x is proud to receive a 2019 Public Sector Innovation award",
+          "link": "https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx"
         }
       ]
     }

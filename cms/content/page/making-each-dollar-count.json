@@ -23,7 +23,7 @@
       "body": "## Key questions for funding \n\nOur funding model can be broken down into four simple questions. \n"
     },
     {
-      "type": "phases",
+      "type": "phaseGraphic",
       "items": [
         {
           "subtitle": "Investigation",
@@ -61,22 +61,18 @@
       "variant": "wide"
     },
     {
-      "type": "cards",
-      "className": "TxBrushCard",
+      "type": "statsCards",
+      "className": "TxShadowedCard",
       "title": "A record-setting year for 10x",
-      "text": "In FY20, 10x accepted both new ideas and oversaw the continuation of projects that were still ongoing from past fiscal years. ",
+      "text": "In FY20, 10x accepted both new ideas and oversaw the continuation of projects that were still ongoing from past fiscal years.",
       "items": [
         {
-          "title": "XX",
-          "text": "projects kicked off Phase 1 in 2020, or started late in FY19",
-          "link": "/",
-          "body": "<span className=\"text-center\"><strong>45</strong></span>\n\n<span className=\"text-center\">projects kicked off Phase 1 in 2020, or started late in FY19</span>"
+          "number": "45",
+          "title": "projects kicked off Phase 1 in 2020, or started late in FY19"
         },
         {
-          "title": "XX",
-          "text": "projects continued into phases 2, 3, and 4",
-          "link": "/",
-          "body": "<span className=\"text-center\"><strong>19</strong></span>\n\n<span className=\"text-center\">projects continued into Phases 2, 3, and 4</span>"
+          "number": "19",
+          "title": "projects continued into phases 2, 3, and 4"
         }
       ]
     }

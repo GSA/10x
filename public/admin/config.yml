@@ -192,7 +192,7 @@ modules:
 
   modPhases: &modPhases
     label: "10x Phases Graphic"
-    name: "phases"
+    name: "phaseGraphic"
     widget: "object"
     fields:
       - label: "Phases"
@@ -235,6 +235,45 @@ modules:
             required: false
             hint: "Provides more information on each item below each circle."
             widget: "markdown"
+
+  modPhaseDescription: &modPhaseDescription
+    label: "10x Phase Description"
+    name: "phaseDescription"
+    widget: "object"
+    summary: "{{fields.title}}"
+    fields:
+      - label: "Circle color"
+        name: "className"
+        widget: "select"
+        options: 
+          - label: "Sky"
+            value: "bg--sky"
+          - label: "Lilac"
+            value: "bg--lilac"
+          - label: "Ocean"
+            value: "bg--ocean"
+          - label: "Tiger"
+            value: "bg--tiger"
+          - label: "Smoke"
+            value: "bg--smoke"
+      - label: "Phase subtitle / eyebrow"
+        name: subtitle
+        required: false
+        hint: "Smaller text displayed just above the phase title, if provided."
+        widget: "string"
+        default: "Phase 1"
+      - label: "Phase title"
+        name: title
+        hint: "Larger text displayed in the center of the circle."
+        widget: "string"
+        default: "Investigate"
+      - label: "Phase details"
+        name: "body"
+        required: false
+        hint: "Long-form content displayed to the right of the circle"
+        widget: "markdown"
+        default: "### Headline here \n\nBody copy here"
+
   modBreak: &modBreak
     label: Break
     name: break
@@ -263,28 +302,74 @@ modules:
     name: cards
     widget: "object"
     fields:
-      - <<: *classname
-        widget: "select"
-        options: 
-          - label: "Brush cards"
-            value: "TxBrushCard"
-          - label: "Process Ring cards"
-            value: "TxRingCards"
       - <<: *title
+        label: "Card section title"
         required: false
+        hint: "If provided, begins the section with a title."
       - <<: *text
+        label: "Card section paragraph"
         required: false
+        hint: "If provided, adds a paragraph of text (no markdown) just before the cards."
       - label: "Columns"
         name: columns
         widget: select
         options: ["1", "2", "3", "4"]
+        default: "2"
+        required: false
+      - label: Items
+        name: items
+        widget: list
+        summary: "{{fields.title}}"
+        fields:
+          - label: "Card subtitle / eyebrow"
+            name: subtitle
+            required: false
+            hint: "Smaller text displayed just above the item title, if provided."
+            widget: "string"
+          - label: "Card title"
+            name: title
+            hint: "Linked text within the card, usually the article title."
+            widget: "string"
+          - <<: *link
+            label: "Card link"
+
+  modStatsCards: &modStatsCards
+    label: "Statistics Cards"
+    name: "statsCards"
+    widget: "object"
+    fields:
+      - <<: *classname
+        widget: "hidden"
+        default: "TxShadowedCard"
+      - <<: *title
+        label: "Card section title"
+        required: false
+        hint: "If provided, begins the section with a title."
+      - <<: *text
+        label: "Card section paragraph"
+        required: false
+        hint: "If provided, adds a paragraph of text (no markdown) just before the cards."
+      - label: "Columns"
+        name: columns
+        widget: select
+        options: ["1", "2", "3", "4"]
+        default: "2"
         required: false
       - label: Items
         name: items
         widget: list
         summary: "Card"
         fields:
-          - <<: *body
+          - label: "Stat number"
+            name: number
+            hint: "Large text displayed just above the stat."
+            widget: "string"
+          - label: "Stat title"
+            name: title
+            hint: "Text displayed below the number."
+            widget: "string"
+
+
 
   modLinks: &modLinks
     label: Links
@@ -628,6 +713,8 @@ collections:
           - <<: *modGhostwriter
           - <<: *modProjects
           - <<: *modPhases
+          - <<: *modPhaseDescription
+          - <<: *modStatsCards
           - <<: *modTitle
       - <<: *preFooter
 

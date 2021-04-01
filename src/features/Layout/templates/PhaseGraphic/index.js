@@ -4,7 +4,7 @@ import classnames from "classnames";
 import { Col, Row } from "components/Grid";
 import Mdx from "features/Mdx";
 
-const Phases = ({
+const PhaseGraphic = ({
   items
 }) => {
   return (
@@ -53,12 +53,12 @@ const Phases = ({
   );
 };
 
-Phases.defaultProps = {
+PhaseGraphic.defaultProps = {
   items: [],
 };
 
-Phases.propTypes = {
+PhaseGraphic.propTypes = {
   items: PropTypes.array,
 };
 
-export default Phases;
+export default PhaseGraphic;

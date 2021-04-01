@@ -3,9 +3,8 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 import { Col, Row } from "components/Grid";
 import Card from "components/Card";
-import Link from "features/Link";
 
-const Cards = ({ title, text, items, className, columns }) => {
+const StatsCards = ({ title, text, items, className, columns }) => {
   const columnSize = {
     1: "12",
     2: "6",
@@ -16,6 +15,7 @@ const Cards = ({ title, text, items, className, columns }) => {
     <div
       className={classnames({
         TxCards: true,
+        TxShadowedCard: true,
         [className]: Boolean(className),
       })}
     >
@@ -32,10 +32,10 @@ const Cards = ({ title, text, items, className, columns }) => {
               desktop={columnSize[columns]}
             >
               <Card>
-                {item.subtitle && <span className="us-text-h5">{item.subtitle}</span>}
-                {item.title && item.link && 
-                  <Link url={item.link}>{item.title}</Link>
-                }
+                <div className="text-center">
+                  {item.number && <p><strong>{item.number}</strong></p>}
+                  {item.title && <p>{item.title}</p>}
+                </div>
               </Card>
             </Col>
           );
@@ -45,16 +45,16 @@ const Cards = ({ title, text, items, className, columns }) => {
   );
 };
 
-Cards.defaultProps = {
+StatsCards.defaultProps = {
   columns: "2",
   items: [],
 };
 
-Cards.propTypes = {
+StatsCards.propTypes = {
   title: PropTypes.node,
   text: PropTypes.node,
   className: PropTypes.node,
   items: PropTypes.array,
 };
 
-export default Cards;
+export default StatsCards;

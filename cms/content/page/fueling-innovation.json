@@ -127,27 +127,23 @@
       "items": [
         {
           "link": "https://www.oecd-opsi.org/innovations/10x-investments/",
-          "title": "MEDIA",
-          "text": "International recognition from the Organisation for Economic Cooperation and Development (OECD) Observatory for Public Sector Innovation (OPSI)",
-          "body": "<span className=\"us-text-h5\"> Media</span>\n\n[International recognition from the Organisation for Economic Cooperation and Development (OECD) Observatory for Public Sector Innovation (OPSI)](https://www.oecd-opsi.org/innovations/10x-investments/)"
+          "subtitle": "MEDIA",
+          "title": "International recognition from the Organisation for Economic Cooperation and Development (OECD) Observatory for Public Sector Innovation (OPSI)"
         },
         {
-          "title": "MEDIA",
-          "text": "Scaling GSA’s 10x program",
-          "link": "https://govmatters.tv/scaling-gsas-10x-program/",
-          "body": "<span className=\"us-text-h5\"> Awards</span>\n\n[10x wins the 2019 Government Innovation Award for public sector innovation](https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx)"
+          "subtitle": "MEDIA",
+          "title": "10x wins the 2019 Government Innovation Award for public sector innovation",
+          "link": "https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx"
         },
         {
-          "title": "AWARDS",
-          "text": "10x wins the 2019 Government Innovation Award for public sector innovation",
-          "link": "https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx",
-          "body": "<span className=\"us-text-h5\"> Media</span>\n\n[Scaling GSA’s 10x program](https://govmatters.tv/scaling-gsas-10x-program)"
+          "subtitle": "AWARDS",
+          "title": "Scaling GSA’s 10x program",
+          "link": "https://govmatters.tv/scaling-gsas-10x-program"
         },
         {
-          "title": "MEDIA",
-          "text": "Government reinvention with a venture capitalist mindset",
-          "link": "https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx",
-          "body": "<span className=\"us-text-h5\"> Media</span>\n\n[Government reinvention with a venture capitalist mindset](https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx)"
+          "subtitle": "MEDIA",
+          "title": "Government reinvention with a venture capitalist mindset",
+          "link": "https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx"
         }
       ]
     }
