@@ -71,19 +71,21 @@ const Project = ({ type }) => {
             </Col>
             {data.summary && (
               <Col size="12" desktop="4">
-                <Card className="TxProject__summary" title="In a nutshell">
-                  <ul>
-                    {data.summary.map((item, i) => (
-                      <li key={`summary-${i}`}>
-                        <Icon
-                          icon="check-circle"
-                          className="text-accent-cool margin-right-1"
-                        />
-                        <span>{item.text}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </Card>
+                <aside>
+                  <Card className="TxProject__summary" title="In a nutshell">
+                    <ul>
+                      {data.summary.map((item, i) => (
+                        <li key={`summary-${i}`}>
+                          <Icon
+                            icon="check-circle"
+                            className="text-accent-cool margin-right-1"
+                          />
+                          <span>{item.text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </Card>
+                </aside>
               </Col>
             )}
           </Row>
@@ -99,7 +101,7 @@ const Project = ({ type }) => {
             </Col>
 
             <Col size="12" desktop="4">
-              <div className="TxProject__details">
+              <aside className="TxProject__details">
                 <Card>
                   <Team data={data.team} />
                 </Card>
@@ -107,7 +109,7 @@ const Project = ({ type }) => {
                 <Card>
                   <Links data={data.links} />
                 </Card>
-              </div>
+              </aside>
             </Col>
           </Row>
         </Grid>
