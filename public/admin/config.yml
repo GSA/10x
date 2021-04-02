@@ -734,12 +734,12 @@ collections:
         hint: "Question posed at the top of the project page. Can be longer than Project Card headline below."
         required: false
       - <<: *modSeo
-      - label: "Project Phase & Status"
+      - label: "Project Page Phase & Status"
         name: "phaseData"
         widget: "object"
         collapsed: true
         required: false
-        hint: "Set the phase and status information here, to be used anywhere within the page content sections."
+        hint: "Set the phase and status information here, to be used anywhere within the page content sections. "
         fields:
           - label: "Phase"
             name: "phase"
@@ -760,25 +760,25 @@ collections:
             default: "1"
       - label: "Project Topics"
         name: "topics"
-        widget: "string"
+        widget: "hidden"
         hint: "Separate tag values by comma."
         required: false
       - label: "Project Type"
         name: "projectType"
-        widget: "select"
+        widget: "hidden"
         required: false
         options: ["Innovation", "Transformation", "Enhancement"]
-      - label: "In a nutshell sidebar list"
+      - label: "Project Page 'In a nutshell' sidebar"
         label_singular: "list item"
         name: "summary"
-        hint: "These items fill out the 'In a nutshell' sidebar"
+        hint: "These items fill out the 'In a nutshell' sidebar on the Project Page."
         widget: "list"
         required: false
         fields:
           - *text
-      - label: "Team sidebar"
+      - label: "Project Page Team sidebar"
         name: "team"
-        hint: "Provide the Idea Submitter and the rest of the project team in the sidebar."
+        hint: "Provide the Idea Submitter and the rest of the project team in the sidebar on the Project Page."
         widget: "object"
         required: false
         fields:
@@ -792,7 +792,7 @@ collections:
             widget: "text"
             required: false
             hint: "Curly, Moe, and Larry."
-      - label: "Links in sidebar list"
+      - label: "Project Page Links sidebar"
         label_singular: "link"
         name: "links"
         widget: "list"
