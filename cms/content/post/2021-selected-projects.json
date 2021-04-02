@@ -9,6 +9,11 @@
       "body": "10x is excited to reveal the latest cohort of projects that we have selected for Phase One funding. Over the past month, we evaluated 250 new submissions--a record-high for our program. Out of those, we have selected the 20 ideas we feel have the most potential to deliver impact for the American public.\n\nHere are the ideas, submitted by federal employees just like you, that 10x will fund as Phase One projects:\n\n* Will\n* gets\n* to\n* decide"
     },
     {
+      "type": "break",
+      "color": "accent-warm",
+      "variant": "wide"
+    },
+    {
       "type": "statsCards",
       "className": "TxShadowedCard",
       "columns": "3",

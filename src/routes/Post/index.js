@@ -47,7 +47,7 @@ const Post = ({ type }) => {
           <Col size="12" desktop="8">
             <Head title={data.title} />
             <Title title={data.title} />
-            <time className="margin-bottom-4 display-block" datetime={postDate}>
+            <time className="margin-bottom-4 display-block" dateTime={postDate}>
               Published {postDateFormatted}
             </time>
           </Col>
