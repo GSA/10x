@@ -10,7 +10,7 @@ const PostList = () => {
   const loading = useSelector((state) => state.content.list.pending);
   return (
     <Grid>
-      <Row gap="4" className={classnames({ isLoading: loading, ["PostList TxCards TxShadowedCard"]: true })}>
+      <Row gap="4" className={classnames({ isLoading: loading }), "PostList TxCards TxShadowedCard"}>
         <ContentList type="post" render={PostCard} />
       </Row>
     </Grid>
