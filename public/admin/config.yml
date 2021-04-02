@@ -96,7 +96,7 @@ modules:
   #########################
 
   modTitle: &modTitle
-    label: "Title (h1)""
+    label: "Title (h1)"
     name: title
     hint: "This creates a h1 / page title. Do not use more than one on a page, or use it on a page where there is already an h1, such as the Ghostwriter component."
     widget: "object"
