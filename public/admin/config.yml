@@ -29,8 +29,9 @@ types:
         name: "text"
         widget: string
         required: false
-      - label: "Link"
+      - label: "URL"
         name: "link"
+        hint: "URL for the button link. Can be relative (/process) or absolute (for external links)"
         widget: string
         required: false
 
@@ -51,12 +52,6 @@ types:
     name: "subtitle"
     widget: "string"
     required: false
-
-  level: &level
-    label: Heading Level
-    name: level
-    widget: select
-    options: ["1", "2", "3", "4", "5"]
 
   link: &link
     label: "Link"
@@ -101,13 +96,12 @@ modules:
   #########################
 
   modTitle: &modTitle
-    label: Title
+    label: "Title (h1)""
     name: title
+    hint: "This creates a h1 / page title. Do not use more than one on a page, or use it on a page where there is already an h1, such as the Ghostwriter component."
     widget: "object"
     fields:
       - <<: *title
-      - <<: *level
-        required: false
       - <<: *headline
         required: false
 
@@ -589,7 +583,7 @@ collections:
               - label: Text
                 name: text
                 widget: string
-              - label: Link
+              - label: "What page should this link to?"
                 name: link
                 widget: relation
                 collection: "pages"
@@ -637,7 +631,7 @@ collections:
                       - label: Text
                         name: text
                         widget: string
-                      - label: Link
+                      - label: "What page should this link to?"
                         name: link
                         widget: relation
                         collection: "pages"
@@ -953,7 +947,6 @@ collections:
           - <<: *modPhases
           - <<: *modPhaseDescription
           - <<: *modStatsCards
-          - <<: *modTitle
       - <<: *preFooter
 
   - name: footers
