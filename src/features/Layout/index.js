@@ -37,7 +37,7 @@ const components = {
       <Mdx>{body}</Mdx>
     </div>
   ),
-  phaseStatus: ({ data: { phaseData } = {} = {} }) => (
+  phaseStatus: ({ data: { phaseData } }) => (
     <PhaseStatus data={phaseData} />
   ),
   phaseDescription: PhaseDescription,
