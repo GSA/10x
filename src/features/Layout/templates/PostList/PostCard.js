@@ -15,9 +15,9 @@ const PostCard = ({ data }) => {
   return (
     <Col
       size="12"
-      desktop="6"
+      desktop="8"
     >
-      <Card className="PostCard">
+      <Card className="PostCard desktop:margin-x-neg-2">
 
         {postDateFormatted && 
           <time className="us-text-h5 display-block" dateTime={postDate}>

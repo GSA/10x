@@ -8,7 +8,7 @@ const PostList = () => {
   return (
     <Grid>
       <Row gap="4" className="PostList TxCards TxShadowedCard">
-        <ContentList type="post" render={PostCard} />
+        <ContentList type="post" sortKey="date" sortOrder="desc" render={PostCard} />
       </Row>
     </Grid>
 

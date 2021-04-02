@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getList } from "app/ContentModule";
 import Loading from "components/Loading";
 
-const ContentList = ({ type, render, error: errorRender }) => {
+const ContentList = ({ type, render, sortKey, sortOrder, error: errorRender }) => {
   const dispatch = useDispatch();
   const list = useSelector((state) => state.content.list);
   useEffect(() => {
@@ -29,7 +29,34 @@ const ContentList = ({ type, render, error: errorRender }) => {
   if (!data.length) {
     return <h1>No content found.</h1>;
   }
-  return data.map((item, i) =>
+
+  function compareValues(key = "title", order = "asc") {
+    return function innerSort(a, b) {
+      if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
+        // property doesn't exist on either object
+        return 0;
+      }
+  
+      const varA = (typeof a[key] === "string")
+        ? a[key].toLowerCase() : a[key];
+      const varB = (typeof b[key] === "string")
+        ? b[key].toLowerCase() : b[key];
+  
+      let comparison = 0;
+      if (varA > varB) {
+        comparison = 1;
+      } else if (varA < varB) {
+        comparison = -1;
+      }
+      return (
+        (order === "desc") ? (comparison * -1) : comparison
+      );
+    };
+  }
+
+  const sortedList = [...data].sort(compareValues(sortKey, sortOrder));
+
+  return sortedList.map((item, i) =>
     Comp ? (
       <Comp key={`ContentList__${type}-${i}`} data={item} />
     ) : (
@@ -42,10 +69,14 @@ const ContentList = ({ type, render, error: errorRender }) => {
 
 ContentList.defaultProps = {
   type: "page",
+  sortKey: "title",
+  sortOrder: "asc"
 };
 
 ContentList.propTypes = {
   type: PropTypes.string,
+  sortKey: PropTypes.string,
+  sortOrder: PropTypes.string,
 };
 
 export default ContentList;
