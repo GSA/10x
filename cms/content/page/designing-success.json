@@ -5,8 +5,7 @@
     {
       "type": "title",
       "title": "Designing success",
-      "subtitle": "We build success through careful experimentation.",
-      "className": "desktop:width-tablet-lg"
+      "subtitle": "We build success through careful experimentation."
     },
     {
       "type": "markdown",
@@ -18,19 +17,13 @@
       "text": "",
       "items": [
         {
-          "text": "",
-          "title": "Direct public services ",
-          "body": "<span className=\"us-text-h4\">Direct public services</span>\n"
+          "title": "Direct public services"
         },
         {
-          "title": "Disaster management and response ",
-          "text": "",
-          "body": "<span className=\"us-text-h4\">Disaster management and response</span>\n\n"
+          "title": "Disaster management and response"
         },
         {
-          "title": "Diversity, inclusion, and accessibility ",
-          "text": "",
-          "body": "<span className=\"us-text-h4\">Diversity, inclusion, and accessibility</span> \n"
+          "title": "Diversity, inclusion, and accessibility"
         }
       ],
       "variant": "number"
@@ -79,12 +72,10 @@
       "className": "desktop:width-tablet-lg"
     }
   ],
-  "meta": {
-    "theme": "3",
-    "footer": "10x-in-the-wild",
-    "seo": {
-      "title": "Designing Success - 10x's Investment Themes | 10x.GSA.gov",
-      "description": "10x shares lessons learned and the key areas of focus for its fiscal year 21 tech investments. Find out what FY21 looks like for us."
-    }
+  "theme": "3",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "Designing Success - 10x's Investment Themes | 10x.GSA.gov",
+    "description": "10x shares lessons learned and the key areas of focus for its fiscal year 21 tech investments. Find out what FY21 looks like for us."
   }
 }

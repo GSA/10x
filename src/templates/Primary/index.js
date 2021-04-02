@@ -24,15 +24,15 @@ const Primary = ({ children }) => {
 
   const page = useSelector((state) => state.content.page);
   /* istanbul ignore next */
-  const { meta = {}, type } = page.data;
-  const theme = type === "projects" ? "5" : !meta.theme ? "6" : meta.theme;
+  const { type, theme } = page.data;
+  const pageTheme = type === "projects" ? "5" : !theme ? "6" : theme;
   return (
     <>
       <Helmet></Helmet>
       <div
         className={classnames({
           "usa-app": true,
-          [`usa-app__theme-${theme}`]: Boolean(theme),
+          [`usa-app__theme-${pageTheme}`]: Boolean(pageTheme),
         })}
       >
         <div className="usa-app__bg">

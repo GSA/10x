@@ -1,0 +1,43 @@
+{
+  "title": "Announcing the 20 ideas chosen for 2021",
+  "slug": "2021-selected-projects",
+  "date": "2021-04-21T05:00:00.000Z",
+  "sections": [
+    {
+      "className": "desktop:width-tablet-lg",
+      "type": "markdown",
+      "body": "10x is excited to reveal the latest cohort of projects that we have selected for Phase One funding. Over the past month, we evaluated 250 new submissions--a record-high for our program. Out of those, we have selected the 20 ideas we feel have the most potential to deliver impact for the American public.\n\nHere are the ideas, submitted by federal employees just like you, that 10x will fund as Phase One projects:\n\n* Will\n* gets\n* to\n* decide"
+    },
+    {
+      "type": "break",
+      "color": "accent-warm",
+      "variant": "wide"
+    },
+    {
+      "type": "statsCards",
+      "className": "TxShadowedCard",
+      "columns": "3",
+      "items": [
+        {
+          "number": "250",
+          "title": "Project ideas submitted this FY"
+        },
+        {
+          "number": "20",
+          "title": "Selected for Phase 1 initial investment"
+        },
+        {
+          "number": "7-9",
+          "title": "Expected to continue to Phase 2 and beyond"
+        }
+      ],
+      "title": "By the numbers"
+    }
+  ],
+  "theme": "6",
+  "footer": "we-started-as-an-idea-too",
+  "seo": {
+    "title": "Announcing the 20 ideas chosen for 2021 | 10x.GSA.gov",
+    "description": "10x is excited to reveal the latest cohort of projects that we have selected for Phase One funding. "
+  }
+}

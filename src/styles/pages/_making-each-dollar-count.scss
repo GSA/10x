@@ -6,22 +6,20 @@ $theme-h4-font-size: "md";
 $theme-h5-font-size: "sm";
 $theme-h6-font-size: "xs";
 */
-.Tx__making-each-dollar-count {
-  .TxBrushCard {
-    .usa-card {
-      .usa-card__body {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        @include u-padding-x(4);
+.TxShadowedCard {
+  .usa-card {
+    .usa-card__body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      @include u-padding-x(4);
 
-        p {
-          margin-bottom: 0;
-        }
-        strong {
-          @include u-font("serif", $theme-h1-font-size);
-          @include u-color("base");
-        }
+      p {
+        margin-bottom: 0;
+      }
+      strong {
+        @include u-font("serif", $theme-h1-font-size);
+        @include u-color("base");
       }
     }
   }

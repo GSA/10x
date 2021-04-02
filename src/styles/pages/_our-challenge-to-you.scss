@@ -1,6 +1,6 @@
 .Tx__our-challenge-to-you {
   .TxChallenge__pitch {
-    h3 {
+    blockquote {
       margin-left: -4rem;
       padding-left: 4rem;
       @include u-padding-y(15);
@@ -26,5 +26,4 @@
       @include u-maxw("tablet-lg");
     }
   }
-  @include u-padding-bottom(10);
 }

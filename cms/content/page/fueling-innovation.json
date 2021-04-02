@@ -1,13 +1,11 @@
 {
   "title": "Fueling innovation",
-  "subtitle": "No other government program is powered 100% by ideas — our sole purpose is to fan the flames of tech innovation, one candle at a time.",
   "slug": "fueling-innovation",
   "sections": [
     {
       "type": "title",
       "title": "Fueling innovation",
-      "subtitle": "No other government program is powered 100% by ideas — our sole purpose is to fan the flames of tech innovation, one candle at a time. ",
-      "className": "desktop:width-tablet-lg"
+      "subtitle": "No other government program is powered 100% by ideas — our sole purpose is to fan the flames of tech innovation, one candle at a time. "
     },
     {
       "type": "markdown",
@@ -27,16 +25,18 @@
       },
       "items": [
         {
-          "body": "<span className=\"us-text-h4\"> We source differently</span>\n\nAll our projects come from public servants who submit ideas to see if they can move the needle forward to solve a real problem."
+          "title": "We source differently",
+          "text": "All our projects come from public servants who submit ideas to see if they can move the needle forward to solve a real problem."
         },
         {
-          "body": "<span className=\"us-text-h4\"> We fund differently</span>\n\nThe projects use a phased, incremental funding approach, so we can focus investments on the most promising, impactful ideas."
+          "title": "We fund differently",
+          "text": "The projects use a phased, incremental funding approach, so we can focus investments on the most promising, impactful ideas."
         },
         {
-          "body": "<span className=\"us-text-h4\"> We support differently</span>\n\nWe complete rigorous analysis to assess ideas before moving them forward, looking at each idea as a learning opportunity —even if it doesn’t come to fruition."
+          "title": "We support differently",
+          "text": "We complete rigorous analysis to assess ideas before moving them forward, looking at each idea as a learning opportunity —even if it doesn’t come to fruition."
         }
       ],
-      "className": "",
       "title": "We’re different, by design",
       "text": "10x isn’t your average government program — our venture capital model lets us operate a bit outside the box. ",
       "variant": "check"
@@ -123,45 +123,35 @@
     {
       "type": "cards",
       "title": "And now for some humble bragging",
-      "text": "10x has been recognized for its contribution to smart technology investment and good government. ",
+      "text": "10x has been recognized for its contribution to smart technology investment and good government.",
       "items": [
         {
           "link": "https://www.oecd-opsi.org/innovations/10x-investments/",
-          "title": "MEDIA",
-          "text": "International recognition from the Organisation for Economic Cooperation and Development (OECD) Observatory for Public Sector Innovation (OPSI)",
-          "body": "<span className=\"us-text-h5\"> Media</span>\n\n[International recognition from the Organisation for Economic Cooperation and Development (OECD) Observatory for Public Sector Innovation (OPSI)](https://www.oecd-opsi.org/innovations/10x-investments/)",
-          "className": "card-bg--1"
+          "subtitle": "MEDIA",
+          "title": "International recognition from the Organisation for Economic Cooperation and Development (OECD) Observatory for Public Sector Innovation (OPSI)"
         },
         {
-          "title": "MEDIA",
-          "text": "Scaling GSA’s 10x program",
-          "link": "https://govmatters.tv/scaling-gsas-10x-program/",
-          "body": "<span className=\"us-text-h5\"> Awards</span>\n\n[10x wins the 2019 Government Innovation Award for public sector innovation](https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx)",
-          "className": "card-bg--2"
+          "subtitle": "MEDIA",
+          "title": "10x wins the 2019 Government Innovation Award for public sector innovation",
+          "link": "https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx"
         },
         {
-          "title": "AWARDS",
-          "text": "10x wins the 2019 Government Innovation Award for public sector innovation",
-          "link": "https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx",
-          "body": "<span className=\"us-text-h5\"> Media</span>\n\n[Scaling GSA’s 10x program](https://govmatters.tv/scaling-gsas-10x-program)",
-          "className": "card-bg--3"
+          "subtitle": "AWARDS",
+          "title": "Scaling GSA’s 10x program",
+          "link": "https://govmatters.tv/scaling-gsas-10x-program"
         },
         {
-          "title": "MEDIA",
-          "text": "Government reinvention with a venture capitalist mindset",
-          "link": "https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx",
-          "body": "<span className=\"us-text-h5\"> Media</span>\n\n[Government reinvention with a venture capitalist mindset](https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx)",
-          "className": "card-bg--4"
+          "subtitle": "MEDIA",
+          "title": "Government reinvention with a venture capitalist mindset",
+          "link": "https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx"
         }
       ]
     }
   ],
-  "meta": {
-    "footer": "10x-in-the-wild",
-    "theme": "3",
-    "seo": {
-      "title": "Fueling Innovation -  10x's Investment Approach, Media,  Awards | 10x.GSA.gov",
-      "description": "10x is different. We source our ideas differently, we fund differently, we support differently. Find out how we're creating civic tech solutions that make a difference."
-    }
+  "footer": "10x-in-the-wild",
+  "theme": "3",
+  "seo": {
+    "title": "Fueling Innovation -  10x's Investment Approach, Media,  Awards | 10x.GSA.gov",
+    "description": "10x is different. We source our ideas differently, we fund differently, we support differently. Find out how we're creating civic tech solutions that make a difference."
   }
 }

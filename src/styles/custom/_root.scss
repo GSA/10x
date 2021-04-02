@@ -213,3 +213,11 @@ h5,
     @include u-padding-y(8);
   }
 }
+
+.TxLede {
+  @include u-font("serif", 10);
+  padding: 0;
+  margin: 0;
+  @include u-margin-bottom(5);
+  line-height: 150%;
+}

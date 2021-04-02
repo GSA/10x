@@ -8,8 +8,11 @@ import GridModule from "./templates/Grid";
 import Links from "./templates/Links";
 import List from "./templates/List";
 import Mdx from "features/Mdx";
+import PhaseDescription from "./templates/PhaseDescription";
+import PhaseGraphic from "./templates/PhaseGraphic";
 import PhaseStatus from "./templates/PhaseStatus";
 import ProjectList from "features/ProjectList";
+import StatsCards from "./templates/StatsCards";
 import Title from "./templates/Title";
 
 const components = {
@@ -24,22 +27,35 @@ const components = {
       <Mdx className={className}>{body}</Mdx>
     </div>
   ),
-  phase: ({ data: { meta: { phaseData } = {} } = {} }) => (
+  markdownSpecial: ({ body, className }) => (
+    <div className={className}>
+      <Mdx className={className}>{body}</Mdx>
+    </div>
+  ),
+  ghostwriter: ({ body }) => (
+    <div className="Home__hero">
+      <Mdx>{body}</Mdx>
+    </div>
+  ),
+  phaseStatus: ({ data: { phaseData } }) => (
     <PhaseStatus data={phaseData} />
   ),
+  phaseDescription: PhaseDescription,
+  phaseGraphic: PhaseGraphic,
   projects: ProjectList,
+  statsCards: StatsCards,
   title: Title,
 };
 
 const Layout = ({ items, data }) => {
-  return items.map(({ type, fullwidth, ...props }, i) => {
+  return items.map(({ type, ...props }, i) => {
     const Comp = components[type];
     if (!Comp) {
       console.warn(`Module type "${type}" not defined.`);
       return null;
     }
     return Comp ? (
-      fullwidth ? (
+      type === "ghostwriter" ? (
         <Comp key={`txLayout-${++i}`} {...props} data={data} />
       ) : (
         <Grid key={`layout-${++i}`}>

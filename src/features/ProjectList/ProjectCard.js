@@ -6,22 +6,23 @@ import Link from "features/Link";
 
 const ProjectCard = ({ data }) => {
   /* istanbul ignore next */
-  const { card = {}, meta = {} } = data;
+  const { card = {} } = data;
   const slug = card.projectUrl || data.path;
 
   /* istanbul ignore next */
   const excerpt = card.excerpt || data.intro;
 
   return (
+    
     <Link url={slug} className="ProjectCard__link">
       <Card
         className={classnames({
           ProjectCard: true,
-          [`template-${meta.template}`]: true,
+          [`template-${card.template}`]: true,
         })}
       >
-        <h3 className="usa-card__heading">{card.subtitle || data.subtitle}</h3>
-        <h4 className="usa-card__subhead">{card.title || data.title}</h4>
+        <h2 className="usa-card__heading">{card.subtitle || data.subtitle}</h2>
+        <h3 className="usa-card__subhead">{card.title || data.title}</h3>
         <div className="ProjectCard__excerpt">{excerpt}</div>
       </Card>
     </Link>

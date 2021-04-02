@@ -14,7 +14,7 @@ types:
   #########################
 
   body: &body
-    label: "Body"
+    label: "Markdown Content"
     name: "body"
     widget: "markdown"
 
@@ -26,36 +26,31 @@ types:
     fields:
       - label: "Text"
         name: "text"
-        widget: text
+        widget: string
         required: false
-      - label: "Link"
+      - label: "URL"
         name: "link"
+        hint: "URL for the button link. Can be relative (/process) or absolute (for external links)"
         widget: string
         required: false
 
   classname: &classname
-    label: Classname
+    label: "Class override"
+    hint: "Style your content with additional classes applied to the content container."
     name: className
     widget: string
     required: false
 
-  fullwidth: &fullwidth
-    label: Fullwidth
-    name: fullwidth
-    widget: boolean
-    required: false
+  ghostwriter: &ghostwriter
+    label: "Ghostwriter hero"
+    name: "ghostwriter"
+    widget: "markdown"
 
   headline: &headline
-    label: "Headline"
+    label: "Lede"
     name: "subtitle"
     widget: "string"
     required: false
-
-  level: &level
-    label: Level
-    name: level
-    widget: select
-    options: ["1", "2", "3", "4", "5"]
 
   link: &link
     label: "Link"
@@ -65,6 +60,8 @@ types:
   preFooter: &preFooter
     label: Pre-Footer
     name: footer
+    hint: "Most pages use the '10x-in-the-wild' prefooter."
+    default: "10x-in-the-wild"
     widget: relation
     collection: "footers"
     search_fields: ["slug"]
@@ -74,14 +71,14 @@ types:
   slug: &slug
     widget: string
     name: "slug"
-    label: "Slug"
+    label: "Page Slug"
     required: true
     pattern:
       [
         "^[a-z0-9]+(?:-[a-z0-9]+)*$",
         "A slug can have no spaces or special characters",
       ]
-    hint: "The project URL (do not include folder or file extension)"
+    hint: "The unique-and-very-last-segment of the page URL (do not include /folders/ or file extensions)"
 
   text: &text
     label: "Text"
@@ -98,63 +95,183 @@ modules:
   #########################
 
   modTitle: &modTitle
-    label: Title
+    label: "Title (h1)"
     name: title
+    hint: "This creates a h1 / page title. Do not use more than one on a page, or use it on a page where there is already an h1, such as the Ghostwriter component."
     widget: "object"
     fields:
-      - <<: *classname
-      - <<: *fullwidth
       - <<: *title
-      - <<: *level
-        required: false
       - <<: *headline
         required: false
 
   modMarkdown: &modMarkdown
-    label: "Markdown"
+    label: "Markdown content"
     name: "markdown"
     widget: "object"
     fields:
-      - <<: *classname
-      - <<: *fullwidth
       - <<: *body
+      - <<: *classname
+        widget: "hidden"
+        default: "desktop:width-tablet-lg"
 
-  modCallout: &modCallout
-    label: Callout
-    name: callout
+
+  modMarkdownSpecial: &modMarkdownSpecial
+    label: "Special content section"
+    name: "markdownSpecial"
+    widget: "object"
+    fields:
+      - <<: *body
+      - <<: *classname
+        label: "Special content section type"
+        widget: "select"
+        default: ""
+        options: 
+          - label: "Challenge blockquote with background"
+            value: "TxChallenge__pitch"
+          - label: "Process funnel graphic"
+            value: "TxFunnel"
+          
+
+  modGhostwriter: &modGhostwriter
+    label: "Ghostwriter hero"
+    name: "ghostwriter"
     widget: "object"
     fields:
       - <<: *classname
-      - <<: *fullwidth
-      - <<: *title
-        required: false
-      - <<: *headline
-        label: "Subtitle"
-        required: false
-      - <<: *text
-        required: false
-      - <<: *button
-      - label: variant
+        default: "Home__hero"
+      - <<: *body
+        default: "<Grid>\n<GhostWriter />\n</Grid>\n"
+
+  modCallout: &modCallout
+    label: "Horizontal styled list"
+    name: callout
+    widget: "object"
+    fields:
+      - label: "Horizontal styled list variant"
         name: variant
         widget: select
-        options: ["none", "check", "number", "ringer"]
-        hint: Default displays check
-      - label: Items
+        hint: "Styles the list items with icons (like checkmarks or numbers) or adds a background behind the list items."
+        options: 
+          - label: "Checkmark"
+            value: "check"
+          - label: "Checkmark with white background"
+            value: "check check-with-background"
+          - label: "Number"
+            value: "number"
+      - <<: *title
+        label: "Horizontal styled list title"
+        required: false
+        hint: "If provided, begins the Horizontal Styled List section with a title."
+      - <<: *text
+        label: "Horizontal styled list paragraph"
+        required: false
+        hint: "If provided, adds a paragraph of text (no markdown) just before the list itself."
+      - label: "Horizontal styled list items"
         name: items
         widget: list
-        summary: "Item"
+        summary: "{{fields.title}}"
+        hint: "2-4 items is appropriate."
         fields:
-          - <<: *classname
-          - <<: *body
+          - label: "Item title"
+            name: title
+            widget: "string"
+          - label: "Item text"
+            name: "text"
             required: false
+            widget: "text"
+      - <<: *button
+        label: "Horizontal styled list button"
+        hint: "If provided, adds a button just after the list itself."
+
+  modPhases: &modPhases
+    label: "10x Phases Graphic"
+    name: "phaseGraphic"
+    widget: "object"
+    fields:
+      - label: "Phases"
+        label_singular: "Phase"
+        name: items
+        widget: list
+        summary: "{{fields.subtitle}} - {{fields.title}}"
+        hint: "2-4 items is appropriate."
+        fields:
+          - label: "Circle color"
+            name: "className"
+            widget: "select"
+            options: 
+              - label: "Sky"
+                value: "bg--1"
+              - label: "Lilac"
+                value: "bg--2"
+              - label: "Ocean"
+                value: "bg--3"
+              - label: "Tiger"
+                value: "bg--4"
+              - label: "Smoke"
+                value: "bg--5"
+          - label: "Phase subtitle / eyebrow"
+            name: subtitle
+            required: false
+            hint: "Smaller text displayed just above the item title, if provided."
+            widget: "string"
+          - label: "Phase title"
+            name: title
+            hint: "Larger text displayed in the center of the circle."
+            widget: "string"
+          - label: "Phase suffix"
+            name: "suffix"
+            required: false
+            hint: "Used to optionally display increasing '$' for each phase, below the title."
+            widget: "string"
+          - label: "Phase details"
+            name: "body"
+            required: false
+            hint: "Provides more information on each item below each circle."
+            widget: "markdown"
+
+  modPhaseDescription: &modPhaseDescription
+    label: "10x Phase Description"
+    name: "phaseDescription"
+    widget: "object"
+    summary: "{{fields.title}}"
+    fields:
+      - label: "Circle color"
+        name: "className"
+        widget: "select"
+        options: 
+          - label: "Sky"
+            value: "bg--sky"
+          - label: "Lilac"
+            value: "bg--lilac"
+          - label: "Ocean"
+            value: "bg--ocean"
+          - label: "Tiger"
+            value: "bg--tiger"
+          - label: "Smoke"
+            value: "bg--smoke"
+      - label: "Phase subtitle / eyebrow"
+        name: subtitle
+        required: false
+        hint: "Smaller text displayed just above the phase title, if provided."
+        widget: "string"
+        default: "Phase 1"
+      - label: "Phase title"
+        name: title
+        hint: "Larger text displayed in the center of the circle."
+        widget: "string"
+        default: "Investigate"
+      - label: "Phase details"
+        name: "body"
+        required: false
+        hint: "Long-form content displayed to the right of the circle"
+        widget: "markdown"
+        default: "### Headline here \n\nBody copy here"
 
   modBreak: &modBreak
     label: Break
     name: break
     widget: "object"
     fields:
-      - <<: *classname
-      - <<: *fullwidth
       - label: Color
         name: color
         widget: select
@@ -169,33 +286,83 @@ modules:
           ]
       - label: variant
         name: variant
-        widget: select
+        widget: hidden
         required: false
-        options: [0, "wide"]
+        default: "wide"
 
   modCards: &modCards
     label: Cards
     name: cards
     widget: "object"
     fields:
-      - <<: *classname
-      - <<: *fullwidth
       - <<: *title
+        label: "Card section title"
         required: false
+        hint: "If provided, begins the section with a title."
       - <<: *text
+        label: "Card section paragraph"
         required: false
+        hint: "If provided, adds a paragraph of text (no markdown) just before the cards."
       - label: "Columns"
         name: columns
         widget: select
         options: ["1", "2", "3", "4"]
+        default: "2"
+        required: false
+      - label: Items
+        name: items
+        widget: list
+        summary: "{{fields.title}}"
+        fields:
+          - label: "Card subtitle / eyebrow"
+            name: subtitle
+            required: false
+            hint: "Smaller text displayed just above the item title, if provided."
+            widget: "string"
+          - label: "Card title"
+            name: title
+            hint: "Linked text within the card, usually the article title."
+            widget: "string"
+          - <<: *link
+            label: "Card link"
+
+  modStatsCards: &modStatsCards
+    label: "Statistics Cards"
+    name: "statsCards"
+    widget: "object"
+    fields:
+      - <<: *classname
+        widget: "hidden"
+        default: "TxShadowedCard"
+      - <<: *title
+        label: "Card section title"
+        required: false
+        hint: "If provided, begins the section with a title."
+      - <<: *text
+        label: "Card section paragraph"
+        required: false
+        hint: "If provided, adds a paragraph of text (no markdown) just before the cards."
+      - label: "Columns"
+        name: columns
+        widget: select
+        options: ["1", "2", "3", "4"]
+        default: "2"
         required: false
       - label: Items
         name: items
         widget: list
         summary: "Card"
         fields:
-          - <<: *classname
-          - <<: *body
+          - label: "Stat number"
+            name: number
+            hint: "Large text displayed just above the stat."
+            widget: "string"
+          - label: "Stat title"
+            name: title
+            hint: "Text displayed below the number."
+            widget: "string"
+
+
 
   modLinks: &modLinks
     label: Links
@@ -203,7 +370,6 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
-      - <<: *fullwidth
       - <<: *title
         required: false
       - <<: *headline
@@ -219,19 +385,14 @@ modules:
           - <<: *link
 
   modList: &modList
-    label: List
+    label: "Bulleted List"
     name: list
     widget: "object"
     fields:
-      - <<: *classname
-      - <<: *fullwidth
       - <<: *title
-        required: false
-      - <<: *headline
         required: false
       - <<: *text
         required: false
-      - <<: *button
       - label: Columns
         name: columns
         widget: select
@@ -246,6 +407,7 @@ modules:
             required: false
           - <<: *text
             required: false
+      - <<: *classname
 
   modProjects: &modProjects
     label: Projects
@@ -253,20 +415,22 @@ modules:
     widget: "object"
     fields:
       - <<: *classname
-      - <<: *fullwidth
 
   modPhase: &modPhase
-    label: Phase
-    name: phase
-    widget: "object"
+    label: "Phase status"
+    name: "phaseStatus"
+    hint: "Shows phase status at this location in the page."
+    widget: "object" #might be a boolean
     fields:
       - <<: *classname
-      - <<: *fullwidth
+        widget: "hidden"
+        comment: "I'm a comment"
 
   modSections: &modSections
     label: "Sections"
     name: "sections"
     widget: "list"
+    hint: "Choose sections from the dropdown to fill out the page."
     types:
       - <<: *modBreak
       - <<: *modCallout
@@ -274,7 +438,10 @@ modules:
       - <<: *modLinks
       - <<: *modList
       - <<: *modMarkdown
+      - <<: *modMarkdownSpecial
+      - <<: *modGhostwriter
       - <<: *modProjects
+      - <<: *modPhases
       - <<: *modTitle
 
   modSeo: &modSeo
@@ -283,27 +450,30 @@ modules:
     widget: object
     fields:
       - <<: *title
-        required: false
-        hint: "Document title attribute"
+        label: "Meta Title"
+        required: true
+        default: " | 10x.GSA.gov"
+        hint: "Document title attribute - should include site title as well. e.g., 'Project Name Here - 10x Project | 10x.GSA.gov' "
       - <<: *text
-        label: Description
+        label: "Meta Description"
+        hint: "Provide a keyword-rich description between 50–160 characters, which will show up in search results pages."
         name: description
-        required: false
-        hint: "Document description attribute"
-      - name: custom
-        label: Custom SEO fields
-        widget: list
-        hint: "Adds custom <meta> tag to the header"
-        required: false
-        fields:
-          - label: Name
-            name: name
-            widget: string
-            required: false
-          - label: Content
-            name: content
-            widget: string
-            required: false
+        required: true
+      # - name: custom
+      #   label: Custom SEO fields
+      #   widget: list
+      #   hint: "Adds custom <meta> tag to the header, such as Open Graph tags."
+      #   required: false
+      #   fields:
+      #     # come back to this -- some are property / content, some are name/value, etc
+      #     - label: "Attribute"
+      #       name: name
+      #       widget: string
+      #       required: false
+      #     - label: "Value"
+      #       name: content
+      #       widget: string
+      #       required: false
 
 #########################
 collections:
@@ -321,30 +491,31 @@ collections:
     editor:
       preview: false
     files:
-      - label: Settings
-        name: settings
-        file: cms/settings.json
-        fields:
-          - label: Settings
-            name: settings
-            widget: hidden
-            default: settings
-          - label: Site Title
-            name: title
-            widget: string
-          - label: Site Description
-            name: description
-            widget: string
-          - name: customFields
-            label: Custom Fields
-            widget: list
-            fields:
-              - name: key
-                label: Key
-                widget: string
-              - name: value
-                label: Value
-                widget: string
+      # see cms/__example-settings.json for example usage
+      # - label: Settings
+      #   name: settings
+      #   file: cms/settings.json
+      #   fields:
+      #     - label: Settings
+      #       name: settings
+      #       widget: hidden
+      #       default: settings
+      #     - label: Site Title
+      #       name: title
+      #       widget: string
+      #     - label: Site Description
+      #       name: description
+      #       widget: string
+      #     - name: customFields
+      #       label: Custom Fields
+      #       widget: list
+      #       fields:
+      #         - name: key
+      #           label: Key
+      #           widget: string
+      #         - name: value
+      #           label: Value
+      #           widget: string
       - label: 404 Content
         name: "404"
         file: cms/404.json
@@ -352,6 +523,19 @@ collections:
           - <<: *modSections
             label: "404 Content"
             name: "404"
+            types:
+              - <<: *modTitle
+              - <<: *modMarkdownSpecial
+                fields:
+                  - <<: *body
+                  - <<: *classname
+                    label: "404 Content Sections"
+                    widget: select
+                    options: 
+                      - label: "404 quote"
+                        value: "FourOhFour__quote"
+                      - label: "404 links"
+                        value: "FourOhFour__links"
       - label: Redirects
         name: "redirects"
         file: cms/redirects.json
@@ -370,8 +554,8 @@ collections:
 
   - name: menu
     extension: json
-    label: Menus
-    label_singular: Menu
+    label: Nav menus
+    label_singular: Nav menu
     folder: cms/menus
     create: true
     delete: true
@@ -398,7 +582,7 @@ collections:
               - label: Text
                 name: text
                 widget: string
-              - label: Link
+              - label: "What page should this link to?"
                 name: link
                 widget: relation
                 collection: "pages"
@@ -446,7 +630,7 @@ collections:
                       - label: Text
                         name: text
                         widget: string
-                      - label: Link
+                      - label: "What page should this link to?"
                         name: link
                         widget: relation
                         collection: "pages"
@@ -478,12 +662,37 @@ collections:
     slug: "{{slug}}"
     preview_path: "{{slug}}"
     identifier_field: slug
+    summary: "{{title}} ({{slug}})"
     editor:
       preview: false
     fields:
       - <<: *title
+        label: "Page title"
       - <<: *slug
-      - label: "Sections"
+      - <<: *modSeo
+      - label: "Page Theme"
+        name: "theme"
+        required: false
+        widget: "select"
+        options: 
+          - label: "1 - lilac-to-tiger wash"
+            value: "1"
+          - label: "2 - charcoal-to-lead with x's"
+            value: "2"
+          - label: "3 - smoke-to-ocean wash"
+            value: "3"
+          - label: "4 - smoke-to-tiger wash"
+            value: "4"
+          - label: "5 - charcoal-to-lead flat"
+            value: "5"
+          - label: "6 - smoke wash"
+            value: "6"
+          - label: "7 - ocean fade"
+            value: "7"
+          - label: "8 - lilac fade"
+            value: "8"
+      - label: "Page content sections"
+        label_singular: "content"
         name: "sections"
         widget: "list"
         types:
@@ -493,19 +702,14 @@ collections:
           - <<: *modLinks
           - <<: *modList
           - <<: *modMarkdown
+          - <<: *modMarkdownSpecial
+          - <<: *modGhostwriter
           - <<: *modProjects
+          - <<: *modPhases
+          - <<: *modPhaseDescription
+          - <<: *modStatsCards
           - <<: *modTitle
-      - label: Meta
-        name: meta
-        widget: "object"
-        fields:
-          - <<: *modSeo
-          - label: "Theme"
-            name: "theme"
-            required: false
-            widget: "select"
-            options: ["1", "2", "3", "4", "5", "6", "7", "8"]
-          - <<: *preFooter
+      - <<: *preFooter
 
   - name: projects
     extension: json
@@ -517,28 +721,105 @@ collections:
     slug: "{{slug}}"
     preview_path: "{{slug}}"
     identifier_field: slug
+    summary: "{{title}} ({{slug}})"
     editor:
       preview: false
     fields:
       - <<: *slug
       - <<: *title
-        label: "Project title"
+        label: "Project Page title"
       - <<: *headline
+        label: "Project Page headline"
+        hint: "Question posed at the top of the project page. Can be longer than Project Card headline below."
         required: false
+      - <<: *modSeo
+      - label: "Project Page Phase & Status"
+        name: "phaseData"
+        widget: "object"
+        collapsed: true
+        required: false
+        hint: "Set the phase and status information here, to be used anywhere within the page content sections. "
+        fields:
+          - label: "Phase"
+            name: "phase"
+            widget: "select"
+            options: ["1", "2", "3", "4"]
+            default: "1"
+            required: false
+          - label: "Status"
+            name: "status"
+            widget: "select"
+            required: false
+            options:
+              [
+                { label: "In Progress", value: "1" },
+                { label: "Done", value: "2" },
+                { label: "Graduated", value: "3" },
+              ]
+            default: "1"
+      - label: "Project Topics"
+        name: "topics"
+        widget: "hidden"
+        hint: "Separate tag values by comma."
+        required: false
+      - label: "Project Type"
+        name: "projectType"
+        widget: "hidden"
+        required: false
+        options: ["Innovation", "Transformation", "Enhancement"]
+      - label: "Project Page 'In a nutshell' sidebar"
+        label_singular: "list item"
+        name: "summary"
+        hint: "These items fill out the 'In a nutshell' sidebar on the Project Page."
+        widget: "list"
+        required: false
+        fields:
+          - *text
+      - label: "Project Page Team sidebar"
+        name: "team"
+        hint: "Provide the Idea Submitter and the rest of the project team in the sidebar on the Project Page."
+        widget: "object"
+        required: false
+        fields:
+          - label: "Idea Submitter"
+            name: "submitter"
+            widget: "string"
+            required: false
+            hint: "Name, Department or Agency"
+          - label: "Members"
+            name: "members"
+            widget: "text"
+            required: false
+            hint: "Curly, Moe, and Larry."
+      - label: "Project Page Links sidebar"
+        label_singular: "link"
+        name: "links"
+        widget: "list"
+        required: false
+        fields:
+          - <<: *text
+            required: true
+          - <<: *link
+            required: true
       - <<: *body
-        label: "Introduction"
+        name: "intro"
+        label: "Project Page Introduction"
         required: false
-      - label: "Sections"
+        hint: "Displays just below the Project Page Headline and Project Page Title."
+      - label: "Project Page Sections"
+        label_singular: "Project page section"
         name: "sections"
         widget: "list"
         required: false
-        summary: "Section Card"
-        hint: "Each section's content modules are displayed in a Card."
+        summary: "Project page section"
+        hint: "Each section displays content items in a Card on the project detail page. Most project pages have 3 cards: 'Why this matters', 'What we did' or 'Our goal', and 'Next steps'."
         fields:
-          - label: "Modules"
+          - label: "Content items in this project section"
+            label_singular: "Content item"
             name: "modules"
             widget: list
             required: false
+            hint: "Choose sections from the dropdown to fill out the card."
             types:
               - <<: *modBreak
               - <<: *modCallout
@@ -546,123 +827,131 @@ collections:
               - <<: *modLinks
               - <<: *modList
               - <<: *modMarkdown
+                fields:
+                - <<: *body
+                - <<: *classname
+                  widget: "hidden"
+                  default: ""
               - <<: *modPhase
               - <<: *modProjects
               - <<: *modTitle
-      - label: "Portfolio Card"
+      - <<: *preFooter
+        required: false
+      - label: "Project Card on /projects page"
         name: "card"
-        hint: "Customize the Card content that will display on the Portfolio page"
+        hint: "Customize the Card content that will display on the Projects page"
         widget: "object"
         fields:
           - <<: *title
+            label: "Project Card Title"
             required: false
-            hint: "Custom card Title (defaults to Project Title)"
+            hint: "Project name to be used as card title (If not provided, defaults to Project Page Title above.)"
           - <<: *headline
+            label: "Project Card Question"
             required: false
-            hint: "Custom card Headline (defaults to Project Headline)"
-          - label: "Project Url"
+            hint: "Question posed at the top of the card. Uses Project Page Headline if not provided."
+          - label: "Project Card External Url"
             name: "projectUrl"
             widget: "string"
             required: false
-            hint: "Valid full URL for the Portfilio card (defaults to Project Detail Page)"
-          - label: "Excerpt"
+            hint: "If provided, this overrides the default link to the Project's Detail Page. Provide a full link including https:// for project cards that should link externally instead of the Project Detail Page."
+          - label: "Project Card Excerpt"
             name: "excerpt"
+            hint: "A short paragraph describing the project. If not provided, uses the project introduction."
             widget: "text"
-            required: false
-      - label: "Meta Data"
-        name: "meta"
-        widget: "object"
-        required: false
-        fields:
-          - <<: *modSeo
-          - label: "Type"
-            name: "projectType"
-            widget: "select"
-            required: false
-            options: ["Innovation", "Transformation", "Enhancement"]
-          - label: "Template"
+            required: true
+          - label: "Project Card Style"
             name: "template"
+            hint: "Choose one of the card style templates for this project."
             widget: "select"
-            required: false
+            required: true
             options:
-              - label: "1"
+              - label: "1 - Ocean splatter"
                 value: "1"
-              - label: "2"
+              - label: "2 - Grimace wash"
                 value: "2"
-              - label: "3"
+              - label: "3 - Tiger swipe"
                 value: "3"
-              - label: "4"
+              - label: "4 - Ocean swirl"
                 value: "4"
-              - label: "5"
+              - label: "5 - Tiger scratch"
                 value: "5"
-              - label: "6"
+              - label: "6 - Grimace scribble"
                 value: "6"
-          - <<: *preFooter
-            required: false
-          - label: "Phase"
-            name: "phaseData"
-            widget: "object"
-            collapsed: true
-            required: false
+
+  - name: posts
+    label: Posts
+    extension: json
+    label_singular: Post
+    folder: cms/content/post
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    preview_path: "{{slug}}"
+    identifier_field: slug
+    summary: "{{title}} ({{slug}})"
+    editor:
+      preview: false
+    fields:
+      - <<: *title
+        label: "Post title"
+      - <<: *slug
+        label: "Post slug"
+      - <<: *modSeo
+      - label: "Post date"
+        name: "date"
+        widget: "datetime"
+        time_format: false
+      - label: "Post excerpt"
+        name: "excerpt"
+        widget: "text"
+        required: false
+        hint: "Supplies content to the posts list on the news & updates page. If not provided, uses meta description instead."
+      - label: "Page Theme"
+        name: "theme"
+        required: false
+        widget: "select"
+        options: 
+          - label: "1 - lilac-to-tiger wash"
+            value: "1"
+          - label: "2 - charcoal-to-lead with x's"
+            value: "2"
+          - label: "3 - smoke-to-ocean wash"
+            value: "3"
+          - label: "4 - smoke-to-tiger wash"
+            value: "4"
+          - label: "5 - charcoal-to-lead flat"
+            value: "5"
+          - label: "6 - smoke wash"
+            value: "6"
+          - label: "7 - ocean fade"
+            value: "7"
+          - label: "8 - lilac fade"
+            value: "8"
+      - label: "Page content sections"
+        label_singular: "content"
+        name: "sections"
+        widget: "list"
+        types:
+          - <<: *modBreak
+          - <<: *modCallout
+          - <<: *modCards
+          - <<: *modLinks
+          - <<: *modList
+          - <<: *modMarkdown
             fields:
-              - label: "Phase"
-                name: "phase"
-                widget: "select"
-                options: ["1", "2", "3", "4"]
-                required: false
-              - label: "Status"
-                name: "status"
-                widget: "select"
-                required: false
-                options:
-                  [
-                    { label: "In Progress", value: "1" },
-                    { label: "Done", value: "2" },
-                    { label: "Graduated", value: "3" },
-                  ]
-                default: "InProgress"
-              - label: "Message"
-                name: "message"
-                hint: "Override the default Phase status message."
-                widget: "string"
-                required: false
-          - label: "Topics"
-            name: "topics"
-            widget: "string"
-            hint: "Separate tag values by comma."
-            required: false
-          - label: "Summary"
-            name: "summary"
-            widget: "list"
-            required: false
-            fields:
-              - *text
-          - label: "Team"
-            name: "team"
-            widget: "object"
-            required: false
-            fields:
-              - label: "Idea Submitter"
-                name: "submitter"
-                widget: "string"
-                required: false
-              - label: "Members"
-                name: "members"
-                widget: "text"
-                required: false
-          - label: "Links"
-            name: "links"
-            widget: "list"
-            required: false
-            fields:
-              - <<: *text
-                required: false
-              - <<: *link
-                required: false
+              - <<: *body
+                default: "# Test Post\n\n## Information you send us as a pitch\n\nFederal employees can voluntarily send us information as part of an idea submission for 10x funding by submitting a project idea through our online form. Your idea will be shared with subject-matter experts and the 10x team in order to make funding decisions. We publish information about which ideas do and do not receive funding, along with the date of submission, your name, and the name of your agency or organization. If your idea is accepted for funding, your name and home agency will be listed on our website. In some cases, we might feature your actual idea on our website for teaching and promotion purposes.\n\nWe cannot accept ideas from the general public. If you are not a federal employee and you submit an idea for funding, we’ll only use your information to reply to your message. We will not keep the information you sent as part of your idea.\n\n## Everything else\n\nFor everything else, we follow the practices outlined in GSA’s [privacy and security notice](https://www.gsa.gov/website-information/privacy-and-security-notice)."
+          - <<: *modMarkdownSpecial
+          - <<: *modProjects
+          - <<: *modPhases
+          - <<: *modPhaseDescription
+          - <<: *modStatsCards
+      - <<: *preFooter
 
   - name: footers
     extension: json
-    label: Footer
+    label: Footers
     label_singular: Footer
     folder: cms/content/footer
     create: true

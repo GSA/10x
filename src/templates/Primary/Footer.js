@@ -13,7 +13,7 @@ const Footer = () => {
   useEffect(() => {
     dispatch(getMenuList({}));
   }, [dispatch]);
-  const { page: { meta = {} } = {}, footers } = useSelector(
+  const { page = {}, footers } = useSelector(
     ({ content, settings }) => ({
       page: content.page.data,
       footers: settings.footers,
@@ -21,7 +21,7 @@ const Footer = () => {
   );
   let data = {};
   const footer = footers.find(({ slug }) =>
-    meta.footer ? slug === meta.footer : slug === "default"
+    page.footer ? slug === page.footer : slug === "10x-in-the-wild"
   );
 
   if (footer) {

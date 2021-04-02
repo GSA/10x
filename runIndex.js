@@ -106,14 +106,17 @@ const indexMenus = () => {
   });
 };
 
-const generateSitemap = (collections = ["page", "project"]) => {
-  const sitePaths = { page: "", project: "/project" };
+const generateSitemap = (collections = ["page", "post", "project"]) => {
+  const sitePaths = { page: "", post: "/posts", project: "/projects" };
   const data = collections.reduce((acc, name) => {
     const file = path.join(DEST_PATH, "content", name, "index.json");
     fs.ensureFile(file);
     const contents = fs.readJsonSync(file);
-    const pages = contents.map(
-      (item) =>
+    const pages = contents.filter(
+      // only output items with content (real pages)
+      (item) => item.sections
+    ).map(
+      (item) => 
         `${PROD_URL}${sitePaths[name]}/${
           item.name === HOMEPAGE_KEY ? "" : item.name
         }`

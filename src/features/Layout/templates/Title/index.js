@@ -1,17 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Title = ({ className, title, subtitle }) => {
+const Title = ({ title, subtitle }) => {
   return (
-    <div className={className}>
+    <div className="desktop:width-tablet-lg">
       {title && <h1>{title}</h1>}
-      {subtitle && <blockquote>{subtitle}</blockquote>}
+      {subtitle && <p className="TxLede">{subtitle}</p>}
     </div>
   );
 };
 
 Title.propTypes = {
-  className: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
 };

@@ -1,24 +1,19 @@
 {
   "excerpt": "Many of the biases that are found in our society can be reflected in data—there have already been recorded instances of datasets that reflect racial and other forms of bias being used to power artificial intelligence (AI) logic, which means the output produced also contains unfair biases, leading to unfair determinations. The project team is working to develop user-friendly, online web applications that can detect bias in data before it’s put through AI pipelines, addressing the needs of technical and non-technical users alike. ",
   "topics": "Compliance officers, Data scientists, ML engineers, Project/product managers, Statisticians",
-  "meta": {
-    "template": "3"
-  },
   "phaseData": {
     "status": "1",
-    "phase": "3",
-    "message": "Phase 2 was completed; Phase 3 is waiting to begin"
+    "phase": "3"
   },
   "slug": "combating-bias-in-aiml-implementation",
   "card": {
     "title": "Combating Bias in AI/ML Implementation",
     "subtitle": "What if we could help remove bias from data sets for more equitable AI?",
     "excerpt": "Many of the biases that are found in our society can be reflected in data — there have already been recorded instances of datasets that reflect racial and other forms of bias being used to power artificial intelligence (AI) logic, which means the output produced also contains unfair biases, leading to unfair determinations. The project team is working to develop user-friendly, online web applications that can detect bias in data before it’s put through AI pipelines, addressing the needs of technical and non-technical users alike. ",
-    "projectUrl": "https://github.com/MLBiasgov/MLBias/blob/main/README.md"
+    "projectUrl": "https://github.com/MLBiasgov/MLBias/blob/main/README.md",
+    "template": "3"
   },
   "projectType": "Innovation",
-  "projectLink": "",
   "subtitle": "Removing bias in datasets for more equitable AI",
-  "title": "Combating Bias in AI/ML Implementation",
-  "template": "3"
+  "title": "Combating Bias in AI/ML Implementation"
 }

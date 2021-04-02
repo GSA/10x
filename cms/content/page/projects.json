@@ -3,19 +3,18 @@
   "slug": "projects",
   "sections": [
     {
-      "type": "markdown",
-      "body": "# Our Projects\n\n> We’ve evaluated hundreds of high-impact, “what-if” ideas from federal employees, each aiming to improve how folks interact with the government. Here are some of the innovative current and past projects we have under our belt."
+      "type": "title",
+      "title": "Our Projects",
+      "subtitle": "We’ve evaluated hundreds of high-impact, “what-if” ideas from federal employees, each aiming to improve how folks interact with the government. Here are some of the innovative current and past projects we have under our belt."
     },
     {
       "type": "projects"
     }
   ],
-  "meta": {
-    "theme": "2",
-    "footer": "10x-in-the-wild",
-    "seo": {
-      "title": "10x's Projects - Good for Government Tech | 10x.GSA.gov",
-      "description": "10x's good-for-government, good-for-people projects make the world a little faster, smarter, better. Check out some of our projects."
-    }
+  "theme": "2",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "10x's Projects - Good for Government Tech | 10x.GSA.gov",
+    "description": "10x's good-for-government, good-for-people projects make the world a little faster, smarter, better. Check out some of our projects."
   }
 }

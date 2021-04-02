@@ -5,8 +5,7 @@
     {
       "type": "title",
       "title": "Our challenge to you",
-      "subtitle": "You’re smack dab in the middle of it all — your vantage point from within public service makes you uniquely qualified to see what we can do to create new good-for-government technology that enables good-for-people services.",
-      "className": "desktop:width-tablet-lg"
+      "subtitle": "You’re smack dab in the middle of it all — your vantage point from within public service makes you uniquely qualified to see what we can do to create new good-for-government technology that enables good-for-people services."
     },
     {
       "type": "markdown",
@@ -18,14 +17,12 @@
       "variant": "check",
       "items": [
         {
-          "body": "<span className=\"us-text-h4\"> Will improve the public’s experience with government through technology</span>"
+          "title": "Will improve the public’s experience with government through technology"
         },
         {
-          "body": "<span className=\"us-text-h4\"> Will create a new product or service that’s good for government</span>"
+          "title": "Will create a new product or service that’s good for government"
         }
-      ],
-      "className": "margin-bottom-2",
-      "text": ""
+      ]
     },
     {
       "type": "markdown",
@@ -34,32 +31,28 @@
     },
     {
       "type": "callout",
-      "text": "",
-      "title": "",
       "variant": "number",
       "items": [
         {
-          "body": "<span className=\"us-text-h4\"> Clearly state the problem or opportunity, and keep it simple (under 1,000 characters!). Tech for tech’s sake isn’t what we’re about. Let’s solve a real problem!</span>"
+          "title": "Clearly state the problem or opportunity, and keep it simple (under 1,000 characters!). Tech for tech’s sake isn’t what we’re about. Let’s solve a real problem!"
         },
         {
-          "body": "<span className=\"us-text-h4\"> Explain who the solution benefits. Government employees? Medicare recipients? Wild bird enthusiasts? Be specific.</span>"
+          "title": "Explain who the solution benefits. Government employees? Medicare recipients? Wild bird enthusiasts? Be specific."
         },
         {
-          "body": "<span className=\"us-text-h4\"> Outline the benefits. Does it make something faster, more accurate, clearer, easier? Tell us why it matters.</span>"
+          "title": "Outline the benefits. Does it make something faster, more accurate, clearer, easier? Tell us why it matters."
         }
-      ],
-      "className": "margin-bottom-3"
+      ]
     },
     {
-      "type": "markdown",
-      "body": "It helps to structure the pitch as if you’re filling in the blank spaces on a Mad Libs-like game.\n\n### I’ve observed [problem or opportunity] and believe that if we [do this] it’ll result in [this benefit] for [this group of people].",
+      "type": "markdownSpecial",
+      "body": "It helps to structure the pitch as if you’re filling in the blank spaces on a Mad Libs-like game.\n\n>I’ve observed [problem or opportunity] and believe that if we [do this] it’ll result in [this benefit] for [this group of people].",
       "className": "TxChallenge__pitch "
     },
     {
       "type": "break",
       "color": "accent-cool",
-      "variant": "wide",
-      "className": ""
+      "variant": "wide"
     },
     {
       "type": "markdown",
@@ -77,12 +70,10 @@
       "className": "desktop:width-tablet-lg"
     }
   ],
-  "meta": {
-    "theme": "4",
-    "footer": "10x-in-the-wild",
-    "seo": {
-      "title": "How can you turn your great idea into a great 10x pitch? | 10x.GSA.gov",
-      "description": "How you pitch your great idea makes a big difference. Learn how to create a great pitch for 10x's good-for-government, good-for-people tech solutions."
-    }
+  "theme": "4",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "How can you turn your great idea into a great 10x pitch? | 10x.GSA.gov",
+    "description": "How you pitch your great idea makes a big difference. Learn how to create a great pitch for 10x's good-for-government, good-for-people tech solutions."
   }
 }

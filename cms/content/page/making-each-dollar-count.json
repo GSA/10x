@@ -5,9 +5,7 @@
     {
       "type": "title",
       "title": "Making each dollar count",
-      "subtitle": "We’re focused on getting the most bang for the buck at every stage of the process.",
-      "level": "1",
-      "className": "desktop:width-tablet-lg"
+      "subtitle": "We’re focused on getting the most bang for the buck at every stage of the process."
     },
     {
       "type": "markdown",
@@ -20,37 +18,41 @@
       "variant": "wide"
     },
     {
-      "type": "callout",
-      "title": "Key questions for funding",
-      "text": "Our funding model can be broken down into four simple questions. \n",
+      "type": "markdown",
+      "body": "## Key questions for funding \n\nOur funding model can be broken down into four simple questions. \n"
+    },
+    {
+      "type": "phaseGraphic",
       "items": [
         {
-          "title": "Scale",
-          "text": "Teams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5 text-white\">Investigation</span>\n<span className=\"us-text-h3\">Is this a bad idea?</span>\n<span className=\"us-text-h3 text-italic margin-bottom-0\">$</span>\n</span>\n\nTeams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities, and reach.",
+          "subtitle": "Investigation",
+          "title": "Is this a bad idea?",
+          "suffix": "$",
+          "body": "Teams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities, and reach.",
           "className": "bg--1"
         },
         {
-          "title": "Investigation",
-          "text": "Teams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities and reach. ",
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5 text-white\">Discovery</span>\n<span className=\"us-text-h3\">Is this a good idea?</span>\n<span className=\"us-text-h3 text-italic margin-bottom-0\">$$</span>\n</span>\n\nTeams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
+          "subtitle": "Discovery",
+          "title": "Is this a good idea?",
+          "suffix": "$$",
+          "body": "Teams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
           "className": "bg--2"
         },
         {
-          "title": "Discovery",
-          "text": "Teams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5 text-white\">Development</span>\n<span className=\"us-text-h3\">Will anyone use this?</span>\n<span className=\"us-text-h3 text-italic margin-bottom-0\">$$$</span>\n</span>\n\nTeams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
+          "subtitle": "Development",
+          "title": "Will anyone use this?",
+          "suffix": "$$$",
+          "body": "Teams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
           "className": "bg--3"
         },
         {
-          "title": "Development",
-          "text": "Teams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
-          "body": "<span className=\"TxCallout__card-header\">\n<span className=\"us-text-h5 text-white\">Scale</span> \n<span className=\"us-text-h3\"> Will everyone use this?</span> \n<span className=\"us-text-h3 text-italic margin-bottom-0\">$$$$</span>\n</span>\n\nTeams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
+          "subtitle": "Scale",
+          "title": "Will everyone use this?",
+          "suffix": "$$$$",
+          "body": "Teams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
           "className": "bg--4"
         }
-      ],
-      "className": "",
-      "variant": "ringer"
+      ]
     },
     {
       "type": "break",
@@ -58,34 +60,26 @@
       "variant": "wide"
     },
     {
-      "type": "cards",
-      "className": "TxBrushCard",
+      "type": "statsCards",
+      "className": "TxShadowedCard",
       "title": "A record-setting year for 10x",
-      "text": "In FY20, 10x accepted both new ideas and oversaw the continuation of projects that were still ongoing from past fiscal years. ",
+      "text": "In FY20, 10x accepted both new ideas and oversaw the continuation of projects that were still ongoing from past fiscal years.",
       "items": [
         {
-          "title": "XX",
-          "text": "projects kicked off Phase 1 in 2020, or started late in FY19",
-          "link": "/",
-          "body": "**45**\n\nprojects kicked off Phase 1 in 2020, or started late in FY19",
-          "className": "text-center"
+          "number": "45",
+          "title": "projects kicked off Phase 1 in 2020, or started late in FY19"
         },
         {
-          "title": "XX",
-          "text": "projects continued into phases 2, 3, and 4",
-          "link": "/",
-          "body": "**19**\n\nprojects continued into Phases 2, 3, and 4",
-          "className": "text-center"
+          "number": "19",
+          "title": "projects continued into phases 2, 3, and 4"
         }
       ]
     }
   ],
-  "meta": {
-    "theme": "3",
-    "footer": "10x-in-the-wild",
-    "seo": {
-      "title": "How does 10x make smart investment decisions? | 10x.GSA.gov",
-      "description": "Find out how 10x approaches making small-dollar investments pay off big for good-for-government tech. "
-    }
+  "theme": "3",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "How does 10x make smart investment decisions? | 10x.GSA.gov",
+    "description": "Find out how 10x approaches making small-dollar investments pay off big for good-for-government tech. "
   }
 }

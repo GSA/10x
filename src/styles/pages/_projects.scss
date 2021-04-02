@@ -144,12 +144,8 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
     }
   }
 
-  blockquote {
+  .TxLede {
     @include u-margin-bottom(8);
-
-    @include at-media("desktop") {
-      margin-right: 25%;
-    }
   }
   .usa-card {
     @include u-color("ink");

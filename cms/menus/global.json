@@ -19,6 +19,11 @@
           "type": "page",
           "link": "designing-success",
           "text": "Designing success"
+        },
+        {
+          "type": "page",
+          "link": "news-updates",
+          "text": "News and updates"
         }
       ]
     },
@@ -41,5 +46,5 @@
       "link": "our-challenge-to-you"
     }
   ],
-  "key": "primary"
+  "key": "global"
 }

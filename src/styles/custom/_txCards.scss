@@ -33,131 +33,35 @@
       }
     }
   }
-  [class*="card-bg"] {
+  [class*="grid-col"] {
     @include cardReset();
     .usa-card__container {
       @include u-padding-y(2);
     }
-  }
-  .card-bg {
-    &--1 {
+    &:nth-child(1) {
       .usa-card__container {
         @include fullWidthBg("featured-bg-1.png");
       }
     }
-    &--2 {
+    &:nth-child(2) {
       .usa-card__container {
         @include fullWidthBg("featured-bg-2.png");
       }
     }
-    &--3 {
+    &:nth-child(3) {
       .usa-card__container {
         @include fullWidthBg("featured-bg-3.png");
         @include u-padding-top(4);
       }
     }
-    &--4 {
+    &:nth-child(4) {
       .usa-card__container {
         @include fullWidthBg("featured-bg-4.png");
         @include u-padding-top(4);
       }
     }
   }
-
-  &.TxRingCards {
-    .usa-card {
-      padding-bottom: 0;
-      @include u-margin-bottom(6);
-    }
-    .usa-card__container {
-      background: transparent;
-      box-shadow: none;
-      margin: 0;
-
-      .usa-card__body {
-        @include u-padding-y(0);
-        @include at-media("desktop") {
-          padding: 0;
-        }
-
-        p {
-          @include u-font("sans", "sm");
-        }
-      }
-    }
-
-    h3 {
-      display: inline-block;
-    }
-
-    .TxRingCards__aside {
-      display: flex;
-      justify-content: left;
-      @include at-media("desktop") {
-        float: left;
-        height: 100%;
-        @include u-margin-right(8);
-      }
-    }
-    .TxRingCards__ring {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-      width: 14rem;
-      height: 14rem;
-      margin: 0;
-
-      @include u-padding-y(10);
-      @include u-padding-x(15);
-      text-align: center;
-      @include u-font("serif", "lg");
-      @include fullWidthBg("phase-circle-smoke.png");
-      background-size: contain;
-      @include u-color("white");
-
-      @include at-media("desktop") {
-        @include u-padding-y(6);
-        @include u-padding-x(4);
-      }
-    }
-    [class*="grid-col"] {
-      &.bg--1 {
-        .TxRingCards__ring {
-          background-image: url("~styles/images/phase-circle-sky.png");
-          @include u-color("accent-cool");
-        }
-      }
-      &.bg--2 {
-        .TxRingCards__ring {
-          background-image: url("~styles/images/phase-circle-lilac.png");
-          @include u-color("primary-light");
-        }
-      }
-      &.bg--3 {
-        .TxRingCards__ring {
-          background-image: url("~styles/images/phase-circle-ocean.png");
-          @include u-color("base-lighter");
-        }
-      }
-      &.bg--4 {
-        .TxRingCards__ring {
-          background-image: url("~styles/images/phase-circle-tiger.png");
-          @include u-color("accent-warm");
-        }
-      }
-      &.bg--5 {
-        .TxRingCards__ring {
-          background-image: url("~styles/images/phase-circle-smoke.png");
-          @include u-color("base-light");
-        }
-      }
-    }
-  }
-
-  &.TxBrushCard {
+  &.TxShadowedCard {
     .usa-card {
       .usa-card__container {
         margin: 0;
@@ -185,6 +89,102 @@
           width: 100%;
         }
       }
+    }
+  }
+}
+// these are used for the Phase Descriptions too
+.TxRingCards {
+  &.usa-card {
+    padding-bottom: 0;
+    @include u-margin-bottom(6);
+    height: 100%;
+
+  }
+  .usa-card__container {
+    background: transparent;
+    background-image: none !important;
+    box-shadow: none;
+    margin: 0;
+    height: 100%;
+
+    .usa-card__body {
+      @include u-padding-y(0);
+      @include at-media("desktop") {
+        padding: 0 !important;
+      }
+
+      p {
+        @include u-font("sans", "sm");
+      }
+    }
+  }
+
+  h3 {
+    display: inline-block;
+  }
+
+  .TxRingCards__aside {
+    display: flex;
+    justify-content: left;
+    @include at-media("desktop") {
+      float: left;
+      height: 100%;
+      @include u-margin-right(8);
+    }
+  }
+  .TxRingCards__ring {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 14rem;
+    height: 14rem;
+    margin: 0;
+
+    @include u-padding-y(10);
+    @include u-padding-x(15);
+    text-align: center;
+    @include u-font("serif", "lg");
+    @include fullWidthBg("phase-circle-smoke.png");
+    background-size: contain;
+    @include u-color("white");
+
+    @include at-media("desktop") {
+      @include u-padding-y(6);
+      @include u-padding-x(4);
+    }
+  }
+
+  &.bg--sky {
+    .TxRingCards__ring {
+      background-image: url("~styles/images/phase-circle-sky.png");
+      @include u-color("accent-cool");
+    }
+  }
+  &.bg--lilac {
+    .TxRingCards__ring {
+      background-image: url("~styles/images/phase-circle-lilac.png");
+      @include u-color("primary-light");
+    }
+  }
+  &.bg--ocean {
+    .TxRingCards__ring {
+      background-image: url("~styles/images/phase-circle-ocean.png");
+      @include u-color("base-lighter");
+    }
+  }
+  &.bg--tiger {
+    .TxRingCards__ring {
+      background-image: url("~styles/images/phase-circle-tiger.png");
+      @include u-color("accent-warm");
+    }
+  }
+  &.bg--smoke {
+    .TxRingCards__ring {
+      background-image: url("~styles/images/phase-circle-smoke.png");
+      @include u-color("base-light");
     }
   }
 }

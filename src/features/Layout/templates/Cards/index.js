@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 import { Col, Row } from "components/Grid";
 import Card from "components/Card";
-import Mdx from "features/Mdx";
+import Link from "features/Link";
 
 const Cards = ({ title, text, items, className, columns }) => {
   const columnSize = {
@@ -32,7 +32,10 @@ const Cards = ({ title, text, items, className, columns }) => {
               desktop={columnSize[columns]}
             >
               <Card>
-                <Mdx>{item.body}</Mdx>
+                {item.subtitle && <span className="us-text-h5">{item.subtitle}</span>}
+                {item.title && item.link && 
+                  <Link url={item.link}>{item.title}</Link>
+                }
               </Card>
             </Col>
           );

@@ -26,8 +26,7 @@ const Project = ({ type }) => {
   const page = useSelector((state) => state.content.page);
   const { pending, data, error } = page;
 
-  const { meta = {} } = data;
-
+  const { card = {} } = data;
   if (pending) {
     return (
       <Grid>
@@ -52,7 +51,7 @@ const Project = ({ type }) => {
           className={classnames({
             TxProject: true,
             [`TxProject--${name}`]: true,
-            [`TxProject--template-${meta.template}`]: Boolean(meta.template),
+            [`TxProject--template-${card.template}`]: Boolean(card.template),
           })}
         >
           <div className="TxProject__nav-link">
@@ -67,24 +66,26 @@ const Project = ({ type }) => {
           <Row gap="4">
             <Col size="12" desktop="8">
               <h2 className="TxProject__title">{data.title}</h2>
-              <p className="TxProject__intro">{data.body}</p>
+              <p className="TxProject__intro">{data.intro}</p>
               <Break color="accent-cool" variant="wide" />
             </Col>
-            {meta.summary && (
+            {data.summary && (
               <Col size="12" desktop="4">
-                <Card className="TxProject__summary" title="In a nutshell">
-                  <ul>
-                    {meta.summary.map((item, i) => (
-                      <li key={`summary-${i}`}>
-                        <Icon
-                          icon="check-circle"
-                          className="text-accent-cool margin-right-1"
-                        />
-                        <span>{item.text}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </Card>
+                <aside>
+                  <Card className="TxProject__summary" title="In a nutshell">
+                    <ul>
+                      {data.summary.map((item, i) => (
+                        <li key={`summary-${i}`}>
+                          <Icon
+                            icon="check-circle"
+                            className="text-accent-cool margin-right-1"
+                          />
+                          <span>{item.text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </Card>
+                </aside>
               </Col>
             )}
           </Row>
@@ -100,15 +101,15 @@ const Project = ({ type }) => {
             </Col>
 
             <Col size="12" desktop="4">
-              <div className="TxProject__details">
+              <aside className="TxProject__details">
                 <Card>
-                  <Team data={meta.team} />
+                  <Team data={data.team} />
                 </Card>
                 <Break color="base-lighter" variant="wide" />
                 <Card>
-                  <Links data={meta.links} />
+                  <Links data={data.links} />
                 </Card>
-              </div>
+              </aside>
             </Col>
           </Row>
         </Grid>
