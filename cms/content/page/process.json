@@ -60,7 +60,6 @@
       "className": "desktop:width-tablet-lg",
       "columns": "1"
     },
-
     {
       "type": "markdown",
       "body": "## The method to the madness \n\nProjects move through four phases after submission, though not all make it past Phase 1. \n"
@@ -146,7 +145,7 @@
         {
           "subtitle": "Fueling Innovation",
           "title": "Get schooled on how our unique investment strategy fuels our success",
-          "link": "https://10x.gsa.gov/fueling-innovation"
+          "link": "./fueling-innovation"
         }
       ],
       "className": "TxShadowedCard"
