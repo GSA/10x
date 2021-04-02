@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Default from "./Default";
 import Page from "./Page";
+import Post from "./Post";
 import Project from "./Project";
 
 export default ({ location }) => (
@@ -12,8 +13,12 @@ export default ({ location }) => (
     <Route key="project" path="/projects/:name">
       <Project />
     </Route>
+    <Route key="post" path="/posts/:name">
+      <Post />
+    </Route>
     <Route key="page" path="/:name">
       <Page />
     </Route>
+
   </Switch>
 );
