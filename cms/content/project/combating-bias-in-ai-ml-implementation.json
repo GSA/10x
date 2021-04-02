@@ -3,8 +3,7 @@
   "topics": "Compliance officers, Data scientists, ML engineers, Project/product managers, Statisticians",
   "phaseData": {
     "status": "1",
-    "phase": "3",
-    "message": "Phase 2 was completed; Phase 3 is waiting to begin"
+    "phase": "3"
   },
   "slug": "combating-bias-in-aiml-implementation",
   "card": {

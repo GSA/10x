@@ -742,9 +742,10 @@ collections:
         hint: "Set the phase and status information here, to be used anywhere within the page content sections."
         fields:
           - label: "Phase"
-            name: "phaseStatus"
+            name: "phase"
             widget: "select"
             options: ["1", "2", "3", "4"]
+            default: "1"
             required: false
           - label: "Status"
             name: "status"
@@ -756,12 +757,7 @@ collections:
                 { label: "Done", value: "2" },
                 { label: "Graduated", value: "3" },
               ]
-            default: "InProgress"
-          - label: "Message"
-            name: "message"
-            hint: "Override the default Phase status message."
-            widget: "string"
-            required: false
+            default: "1"
       - label: "Project Topics"
         name: "topics"
         widget: "string"
