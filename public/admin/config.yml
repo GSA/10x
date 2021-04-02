@@ -903,6 +903,11 @@ collections:
         name: "date"
         widget: "datetime"
         time_format: false
+      - label: "Post excerpt"
+        name: "excerpt"
+        widget: "text"
+        required: false
+        hint: "Supplies content to the posts list on the news & updates page. If not provided, uses meta description instead."
       - label: "Page Theme"
         name: "theme"
         required: false

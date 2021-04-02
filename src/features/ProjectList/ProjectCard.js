@@ -13,6 +13,7 @@ const ProjectCard = ({ data }) => {
   const excerpt = card.excerpt || data.intro;
 
   return (
+    
     <Link url={slug} className="ProjectCard__link">
       <Card
         className={classnames({

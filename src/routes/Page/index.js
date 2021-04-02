@@ -7,6 +7,7 @@ import Loading from "components/Loading";
 import FourOhFour from "routes/FourOhFour";
 import Head from "routes/Head";
 import Layout from "features/Layout";
+import PostList from "features/Layout/templates/PostList"
 import useScrollToTop from "utils/useScrollToTop";
 
 const Page = ({ name }) => {
@@ -40,6 +41,9 @@ const Page = ({ name }) => {
         <Head title={data.title} />
         <div className={`Tx__${data.name}-content`}>
           <Layout items={data.sections} />
+          {(pageName === "news-updates") &&
+            <PostList />
+          }
         </div>
       </div>
     </div>
