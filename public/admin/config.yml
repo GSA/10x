@@ -424,7 +424,6 @@ modules:
     fields:
       - <<: *classname
         widget: "hidden"
-        comment: "I'm a comment"
 
   modSections: &modSections
     label: "Sections"
@@ -757,6 +756,11 @@ collections:
                 { label: "Graduated", value: "3" },
               ]
             default: "1"
+          - <<: *text
+            name: summary
+            label: "Phase summary"
+            hint: "Short text (no punctuation at the end) that shows up below the phase timeline."
+            required: false
       - label: "Project Topics"
         name: "topics"
         widget: "hidden"

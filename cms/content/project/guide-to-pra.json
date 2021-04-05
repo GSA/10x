@@ -30,7 +30,8 @@
   },
   "phaseData": {
     "status": "3",
-    "phase": "3"
+    "phase": "3",
+    "summary": "Graduated after Phase 3"
   },
   "slug": "guide-to-pra",
   "sections": [

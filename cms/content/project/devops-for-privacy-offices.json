@@ -9,7 +9,8 @@
   ],
   "phaseData": {
     "status": "1",
-    "phase": "4"
+    "phase": "4",
+    "summary": "Phase 3 was completed and is being used by GSA; Phase 4 is still in progress"
   },
   "slug": "devops-for-privacy-offices",
   "card": {

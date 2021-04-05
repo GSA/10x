@@ -53,6 +53,7 @@ const PhaseStatus = ({ data, phases }) => {
           graduated: data.status === "3",
           complete: data.status === "2",
         })}
+        aria-hidden="true"
       >
         {Object.entries(phases).map(([key, value]) => {
           return (
@@ -67,12 +68,17 @@ const PhaseStatus = ({ data, phases }) => {
           );
         })}
       </div>
+      {data.summary && <p className="text-italic">{data.summary}</p>}
     </div>
   );
 };
 
 PhaseStatus.defaultProps = {
-  data: {},
+  data: {
+    phase: 1,
+    status: 1,
+    summary: ""
+  },
   phases: {
     1: {
       label: "Phase 1",
