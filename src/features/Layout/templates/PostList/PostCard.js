@@ -21,7 +21,7 @@ const PostCard = ({ data }) => {
 
         {postDateFormatted && 
           <time className="us-text-h5 display-block" dateTime={postDate}>
-            Published {postDateFormatted}
+            {postDateFormatted}
           </time>}
         
         <Link url={slug} className="margin-top-2 PostCard__link">

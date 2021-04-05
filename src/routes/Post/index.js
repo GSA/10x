@@ -49,7 +49,7 @@ const Post = ({ type }) => {
               <Head title={data.title} />
               <Title title={data.title} />
               <time className="margin-bottom-0 margin-top-4 display-block font-sans-md" dateTime={postDate}>
-                Published {postDateFormatted}
+                {postDateFormatted}
               </time>
             </Col>
           </Row>
