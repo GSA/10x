@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getPage } from "app/ContentModule";
 import { Col, Grid, Row } from "components/Grid";
+import Break from "components/Break";
 import Loading from "components/Loading";
 import FourOhFour from "routes/FourOhFour";
 import Head from "routes/Head";
@@ -42,17 +43,22 @@ const Post = ({ type }) => {
   return (
     <div className="TxContent Tx__Post">
       <div className="usa-app__bg">
-      <Grid>
-        <Row gap="4">
-          <Col size="12" desktop="8">
-            <Head title={data.title} />
-            <Title title={data.title} />
-            <time className="margin-bottom-4 display-block" dateTime={postDate}>
-              Published {postDateFormatted}
-            </time>
-          </Col>
-        </Row>
-      </Grid>
+        <Grid>
+          <Row gap="4">
+            <Col size="12">
+              <Head title={data.title} />
+              <Title title={data.title} />
+              <time className="margin-bottom-0 margin-top-4 display-block font-sans-md" dateTime={postDate}>
+                Published {postDateFormatted}
+              </time>
+            </Col>
+          </Row>
+          <Row>
+            <Col size="1" className="margin-bottom-3">
+              <Break color="base-lighter"/>
+            </Col>
+          </Row>
+        </Grid>
         <div className="Tx__Post-content">
           <Layout items={data.sections} />
         </div>
