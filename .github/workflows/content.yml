@@ -30,4 +30,6 @@ jobs:
         with:
           persist-credentials: false
       - name: SSR Build
-        run: npm run build
+        run: |
+          npm ci
+          npm run federalist:build
