@@ -120,6 +120,7 @@
       height: 2rem;
       @include u-padding-y(1);
       @include u-font("serif", 4);
+      line-height: 1.1;
       border-left: none;
       box-shadow: none;
     }
@@ -249,6 +250,7 @@
       .usa-button {
         width: auto;
         @include u-font("serif", 7);
+        line-height: .8;
       }
     }
     .usa-nav__primary {

@@ -1,5 +1,6 @@
 .usa-header {
   @include u-bg("base-darkest");
+  @include u-color("base-light");
   position: relative;
   z-index: 2000;
 

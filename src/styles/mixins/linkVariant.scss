@@ -13,15 +13,15 @@
 }
 
 @mixin linkVariant--dark {
-  @include u-color("primary-darker");
+  @include u-color("primary-darkest");
   &:active,
   &:focus {
-    @include u-color("primary-darker");
+    @include u-color("primary-darkest");
   }
   &:visited {
     @include u-color("base");
   }
   &:hover {
-    @include u-color("primary-dark");
+    @include u-color("primary-darker");
   }
 }

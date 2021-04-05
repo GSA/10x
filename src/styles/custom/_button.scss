@@ -6,8 +6,8 @@
   &--primary-lighter {
     @include buttonCustom(
       "primary-light",
-      "primary-lighter",
-      "primary-lighter"
+      "indigo-10",
+      "indigo-10"
     );
 
     font-weight: 500;
