@@ -27,6 +27,19 @@ const testTax = [
   { key: "testTax", title: "test tax", items: ["testtax1", "testtax2"] },
 ];
 
+const postData = [ 
+  {
+    slug: "test-post",
+    path: "/posts/test-post",
+    date: "2021-01-01T05:00:00.000Z",
+    title: "Test post",
+    excerpt: "Excerpt",
+    seo: {
+      description: "SEO description"
+    }
+  }
+]
+
 const projectData = [
   {
     card: {
@@ -113,6 +126,9 @@ export const getAllByContentType = async (props) => {
   if (props.type === "project") {
     return projectData;
   }
+  if (props.type === "post") {
+    return postData;
+  }
   return testData;
 };
 
@@ -133,6 +149,13 @@ export const getContentTypeByName = async (props) => {
       throw new Error("Invalid Name.");
     }
     return projectData[0];
+  }
+
+  if (props.type === "post") {
+    if (props.name === "error") {
+      throw new Error("Invalid Name.");
+    }
+    return postData[0];
   }
 
   return testData[0];

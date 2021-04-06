@@ -34,4 +34,4 @@ To build for production:
 
 ### Technical information
 
-This site is a small custom React app. Many of its [components](.src/components) are based on the [USWDS](https://designsystem.digital.gov/). The [data and contents](./cms) of the site are in JSON files, which is best authored and edited through the Netlify CMS admin; however, you can edit the JSON locally and re-start the `start` task to test changes to the data model or content.
+This site is a small custom React app. Many of its [components](./src/components) are based on the [USWDS](https://designsystem.digital.gov/). The [data and contents](./cms) of the site are in JSON files, which is best authored and edited through the Netlify CMS admin; however, you can edit the JSON locally and re-start the `start` task to test changes to the data model or content.
