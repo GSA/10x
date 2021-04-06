@@ -11,26 +11,8 @@ describe("<Link />", () => {
           <Link url="http://google.com">Test</Link>
         </Provider>
       );
-      expect(wrapper.find(".usa-Link").length).toBeTruthy();
+      expect(wrapper.find("a")).toBeTruthy();
     });
-  });
-
-  it("should render <a>", async () => {
-    const wrapper = render(
-      <Provider>
-        <Link url="http://google.com">Test</Link>
-      </Provider>
-    );
-    expect(wrapper.find("a")).toBeTruthy();
-  });
-
-  it("should render <Link>", async () => {
-    const wrapper = render(
-      <Provider>
-        <Link onClick={() => null}>Test</Link>
-      </Provider>
-    );
-    expect(wrapper.find("Link")).toBeTruthy();
   });
 
   it("should render <Link>", async () => {

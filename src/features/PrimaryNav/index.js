@@ -19,6 +19,7 @@ const Nav = ({
   open,
   close,
 }) => {
+  
   return (
     <>
       <button
@@ -81,6 +82,7 @@ Nav.defaultProps = {
   isMobileMenuOpen: false,
   onMobileMenuClick: () => console.log("onMobileMenuClick clicked!"),
   activeMenuItem: null,
+  currentMenuItem: '/',
   onMenuItemClick: () => console.log("onMenuItemClick clicked!"),
   onClick: () => console.log("onClick clicked!"),
   open: "Menu",

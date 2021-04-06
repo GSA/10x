@@ -2,16 +2,24 @@
 
 const testData = [
   {
-    slug: "test-1",
+    slug: "test",
     title: "test 1",
-    body: "# test one",
-    hero: "## Test Hero",
+    sections: [
+      {
+        type: "title",
+        title: "Test title",
+      }
+    ]
   },
   {
     slug: "test-2",
     title: "test 2",
-    body: "# test two",
-    hero: "## Test Hero",
+    sections: [
+      {
+        type: "title",
+        title: "Test title",
+      }
+    ]
   },
 ];
 

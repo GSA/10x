@@ -12,7 +12,6 @@ import List from "components/List";
 import Select from "components/Select";
 import ContentList from "features/ContentList";
 import GhostWriter from "features/GhostWriter";
-import LocationMenu from "features/LocationMenu";
 import ProjectList from "features/ProjectList";
 
 export const shortcodes = {
@@ -30,7 +29,6 @@ export const shortcodes = {
   Col,
   Select,
   ContentList,
-  LocationMenu,
   ProjectList,
 };
 

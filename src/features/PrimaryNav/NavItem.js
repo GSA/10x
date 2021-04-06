@@ -43,7 +43,7 @@ const NavItem = ({
           >
             {items.map((item, idx) => (
               <li key={idx} className="usa-nav__submenu-item">
-                <Sub {...item} isCurrent={currentMenuItem} onClick={onClick} />
+                <Sub {...item} iscurrent={currentMenuItem} onClick={onClick} />
               </li>
             ))}
           </ul>

@@ -48,7 +48,7 @@ describe("<PrimaryNav />", () => {
           />
         </TestProvider>
       );
-      const button = wrapper.find("#usa-nav-item-1").hostNodes();
+      const button = wrapper.find("#usa-nav-open").hostNodes();
       button.simulate("click");
       wrapper.update();
       expect(wrapper.find(".usa-nav__primary-item").length).toBe(3);
