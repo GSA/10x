@@ -27,5 +27,14 @@ describe("Page", () => {
       await runAsyncRender(wrapper);
       expect(wrapper.find(".Tx__FourOhFour").length).toBe(1);
     });
+    it("should redirect on a known path", async () => {
+      const wrapper = mount(
+        <TestProvider store={store} route={["/test-redirect"]}>
+          <Route path="/:name" component={Page} />
+        </TestProvider>
+      );
+      await runAsyncRender(wrapper);
+      expect(wrapper.find("h1").text()).toBe("Test title");
+    });
   });
 });

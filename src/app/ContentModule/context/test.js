@@ -39,6 +39,20 @@ const postData = [
     }
   }
 ]
+const numericSortData = [ 
+  {
+    order: 1,
+    title: "One"
+  },
+  {
+    order: 0,
+    title: "Zero"
+  },
+  {
+    order: 2,
+    title: "Two"
+  }
+]
 
 const projectData = [
   {
@@ -128,6 +142,12 @@ export const getAllByContentType = async (props) => {
   }
   if (props.type === "post") {
     return postData;
+  }
+  if (props.type === "empty") {
+    return [];
+  }
+  if (props.type === "numeric") {
+    return numericSortData;
   }
   return testData;
 };

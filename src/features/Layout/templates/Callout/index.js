@@ -7,7 +7,6 @@ import Button from "features/Button";
 const Callout = ({
   className,
   title,
-  subtitle,
   text,
   items,
   button,
@@ -23,7 +22,6 @@ const Callout = ({
     >
       {title && <h2>{title}</h2>}
       {text && <div className="margin-bottom-4">{text}</div>}
-      {subtitle && <h3>{subtitle}</h3>}
       {items && (
         <Row className="TxCallout__items">
           {items.map((item, i) => (
@@ -73,7 +71,6 @@ Callout.defaultProps = {
 Callout.propTypes = {
   className: PropTypes.string,
   title: PropTypes.node,
-  subtitle: PropTypes.node,
   text: PropTypes.node,
   button: PropTypes.object,
   items: PropTypes.array,

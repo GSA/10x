@@ -4,7 +4,6 @@ import { Grid } from "components/Grid";
 import Break from "components/Break";
 import Callout from "./templates/Callout";
 import Cards from "./templates/Cards";
-import GridModule from "./templates/Grid";
 import Links from "./templates/Links";
 import List from "./templates/List";
 import Mdx from "features/Mdx";
@@ -19,7 +18,6 @@ const components = {
   break: Break,
   callout: Callout,
   cards: Cards,
-  grid: GridModule,
   links: Links,
   list: List,
   markdown: ({ body, className }) => (

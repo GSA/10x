@@ -2,13 +2,19 @@
 
 const testData = {
   title: "10x.gsa.gov",
-  description: "Test site description",
+  description: "Test site full description",
   customFields: [
     {
       key: "test1",
       value: "test test",
     },
   ],
+  redirects: [
+    {
+      origin: "/test-redirect",
+      forward: "/test"
+    }
+  ]
 };
 
 const testFooter = [{}, {}];

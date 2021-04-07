@@ -7,7 +7,6 @@ import Card from "components/Card";
 import Date from "components/Date";
 import { Grid, Row, Col } from "components/Grid";
 import Icon from "components/Icon";
-import Image from "components/Image";
 import List from "components/List";
 import Select from "components/Select";
 import ContentList from "features/ContentList";
@@ -22,7 +21,6 @@ export const shortcodes = {
   GhostWriter,
   Grid,
   Icon,
-  Image,
   Link,
   List,
   Row,

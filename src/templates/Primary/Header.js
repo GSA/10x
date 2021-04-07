@@ -178,8 +178,6 @@ const Header = ({ logo, className, variant }) => {
 
 Header.propTypes = {
   logo: PropTypes.node,
-  nav: PropTypes.node,
-  hero: PropTypes.node,
 };
 
 export default Header;

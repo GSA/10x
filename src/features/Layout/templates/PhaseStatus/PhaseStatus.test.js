@@ -8,6 +8,7 @@ import runAsyncRender from "test/utils/runAsyncRender";
 const data = {
   status: "1",
   phase: "4",
+  summary: "Phase summary"
 };
 
 describe("PhaseStatus", () => {

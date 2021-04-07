@@ -30,7 +30,7 @@ const ContentList = ({ type, render, sortKey, sortOrder, error: errorRender }) =
     return <h1>No content found.</h1>;
   }
 
-  function compareValues(key = "title", order = "asc") {
+  function compareValues(key, order) {
     return function innerSort(a, b) {
       if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
         // property doesn't exist on either object
