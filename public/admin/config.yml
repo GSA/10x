@@ -730,6 +730,7 @@ collections:
       - <<: *headline
         label: "Project Page and card question"
         hint: "Question posed at the top of the project page and project card"
+        required: true
       - <<: *modSeo
       - label: "Project Card External Url"
         name: "projectUrl"
