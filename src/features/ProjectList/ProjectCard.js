@@ -6,11 +6,7 @@ import Link from "features/Link";
 
 const ProjectCard = ({ data }) => {
   /* istanbul ignore next */
-  const { card = {} } = data;
-  const slug = card.projectUrl || data.path;
-
-  /* istanbul ignore next */
-  const excerpt = card.excerpt || data.intro;
+  const slug = data.projectUrl || data.path;
 
   return (
     
@@ -18,12 +14,12 @@ const ProjectCard = ({ data }) => {
       <Card
         className={classnames({
           ProjectCard: true,
-          [`template-${card.template}`]: true,
+          [`template-${data.template}`]: true,
         })}
       >
-        <h2 className="usa-card__heading">{card.subtitle || data.subtitle}</h2>
-        <h3 className="usa-card__subhead">{card.title || data.title}</h3>
-        <div className="ProjectCard__excerpt">{excerpt}</div>
+        <h2 className="usa-card__heading">{data.subtitle || data.subtitle}</h2>
+        <h3 className="usa-card__subhead">{data.title || data.title}</h3>
+        <div className="ProjectCard__excerpt">{data.excerpt || data.intro}</div>
       </Card>
     </Link>
   );

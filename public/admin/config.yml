@@ -726,18 +726,45 @@ collections:
     fields:
       - <<: *slug
       - <<: *title
-        label: "Project Page title"
+        label: "Project Page and card title"
       - <<: *headline
-        label: "Project Page headline"
-        hint: "Question posed at the top of the project page. Can be longer than Project Card headline below."
+        label: "Project Page and card question"
+        hint: "Question posed at the top of the project page and project card"
         required: false
       - <<: *modSeo
+      - label: "Project Card External Url"
+        name: "projectUrl"
+        widget: "string"
+        required: false
+        hint: "If provided, this overrides the default link to the Project's Detail Page. Provide a full link including https:// for project cards that should link externally instead of the Project Detail Page."
+      - label: "Project Card Excerpt"
+        name: "excerpt"
+        hint: "A short paragraph describing the project."
+        widget: "text"
+      - label: "Project Card Style"
+        name: "template"
+        hint: "Choose one of the card style templates for this project."
+        widget: "select"
+        required: true
+        options:
+          - label: "1 - Ocean splatter"
+            value: "1"
+          - label: "2 - Grimace wash"
+            value: "2"
+          - label: "3 - Tiger swipe"
+            value: "3"
+          - label: "4 - Ocean swirl"
+            value: "4"
+          - label: "5 - Tiger scratch"
+            value: "5"
+          - label: "6 - Grimace scribble"
+            value: "6"
       - label: "Project Page Phase & Status"
         name: "phaseData"
         widget: "object"
         collapsed: true
         required: false
-        hint: "Set the phase and status information here, to be used anywhere within the page content sections. "
+        hint: "Set the phase and status information here. It will show up at the end of the 'What we did' section"
         fields:
           - label: "Phase"
             name: "phase"
@@ -778,7 +805,8 @@ collections:
         widget: "list"
         required: false
         fields:
-          - *text
+          - <<: *text
+            hint: "No period following bullets"
       - label: "Project Page Team sidebar"
         name: "team"
         hint: "Provide the Idea Submitter and the rest of the project team in the sidebar on the Project Page."
@@ -789,99 +817,48 @@ collections:
             name: "submitter"
             widget: "string"
             required: false
-            hint: "Name, Department or Agency"
+            hint: "Name, Title, Department or Agency"
           - label: "Members"
             name: "members"
             widget: "text"
             required: false
-            hint: "Curly, Moe, and Larry."
+            hint: "Names only, separated by commas"
       - label: "Project Page Links sidebar"
         label_singular: "link"
         name: "links"
         widget: "list"
         required: false
+        hint: "Text and URLs for links for further research"
         fields:
           - <<: *text
             required: true
           - <<: *link
             required: true
-      - <<: *body
+      - widget: "markdown"
         name: "intro"
         label: "Project Page Introduction"
         required: false
         hint: "Displays just below the Project Page Headline and Project Page Title."
-      - label: "Project Page Sections"
-        label_singular: "Project page section"
-        name: "sections"
-        widget: "list"
+      - widget: "markdown"
+        name: "impact"
+        label: "Why this matters"
         required: false
-        summary: "Project page section"
-        hint: "Each section displays content items in a Card on the project detail page. Most project pages have 3 cards: 'Why this matters', 'What we did' or 'Our goal', and 'Next steps'."
-        fields:
-          - label: "Content items in this project section"
-            label_singular: "Content item"
-            name: "modules"
-            widget: list
-            required: false
-            hint: "Choose sections from the dropdown to fill out the card."
-            types:
-              - <<: *modBreak
-              - <<: *modCallout
-              - <<: *modCards
-              - <<: *modLinks
-              - <<: *modList
-              - <<: *modMarkdown
-                fields:
-                - <<: *body
-                - <<: *classname
-                  widget: "hidden"
-                  default: ""
-              - <<: *modPhase
-              - <<: *modProjects
-              - <<: *modTitle
+        hint: "First content section on the project page. Explain the project's impact and importance."
+        default: "## Why this matters\n\n This project will deliver impact...."
+      - widget: "markdown"
+        name: "approach"
+        label: "What we did"
+        required: false
+        hint: "Second content section on the project page. Explain the project's approach. Ends with phase timeline graphic."
+        default: "## What we did\n\n The team delivered...\n\n### How we did it \n\n...\n\n### Where we are today\n\n ..."
+      - widget: "markdown"
+        name: "future"
+        label: "Next steps"
+        required: false
+        hint: "Third content section on the project page. Explain the project's future."
+        default: "## Why this matters\n\n This project will deliver impact...."
       - <<: *preFooter
         required: false
-      - label: "Project Card on /projects page"
-        name: "card"
-        hint: "Customize the Card content that will display on the Projects page"
-        widget: "object"
-        fields:
-          - <<: *title
-            label: "Project Card Title"
-            required: false
-            hint: "Project name to be used as card title (If not provided, defaults to Project Page Title above.)"
-          - <<: *headline
-            label: "Project Card Question"
-            required: false
-            hint: "Question posed at the top of the card. Uses Project Page Headline if not provided."
-          - label: "Project Card External Url"
-            name: "projectUrl"
-            widget: "string"
-            required: false
-            hint: "If provided, this overrides the default link to the Project's Detail Page. Provide a full link including https:// for project cards that should link externally instead of the Project Detail Page."
-          - label: "Project Card Excerpt"
-            name: "excerpt"
-            hint: "A short paragraph describing the project. If not provided, uses the project introduction."
-            widget: "text"
-            required: true
-          - label: "Project Card Style"
-            name: "template"
-            hint: "Choose one of the card style templates for this project."
-            widget: "select"
-            required: true
-            options:
-              - label: "1 - Ocean splatter"
-                value: "1"
-              - label: "2 - Grimace wash"
-                value: "2"
-              - label: "3 - Tiger swipe"
-                value: "3"
-              - label: "4 - Ocean swirl"
-                value: "4"
-              - label: "5 - Tiger scratch"
-                value: "5"
-              - label: "6 - Grimace scribble"
-                value: "6"
 
   - name: posts
     label: Posts
@@ -958,7 +935,7 @@ collections:
 
   - name: footers
     extension: json
-    label: Footers
+    label: Pre-footers
     label_singular: Footer
     folder: cms/content/footer
     create: true

@@ -13,8 +13,9 @@ import Team from "./Team";
 import Icon from "components/Icon";
 import Break from "components/Break";
 import Card from "components/Card";
-import Layout from "features/Layout";
+import Mdx from "features/Mdx";
 import useScrollToTop from "utils/useScrollToTop";
+import PhaseStatus from "features/Layout/templates/PhaseStatus";
 
 const Project = ({ type }) => {
   const dispatch = useDispatch();
@@ -25,8 +26,7 @@ const Project = ({ type }) => {
   useScrollToTop();
   const page = useSelector((state) => state.content.page);
   const { pending, data, error } = page;
-
-  const { card = {} } = data;
+  
   if (pending) {
     return (
       <Grid>
@@ -51,7 +51,7 @@ const Project = ({ type }) => {
           className={classnames({
             TxProject: true,
             [`TxProject--${name}`]: true,
-            [`TxProject--template-${card.template}`]: Boolean(card.template),
+            [`TxProject--template-${data.template}`]: Boolean(data.template),
           })}
         >
           <div className="TxProject__nav-link">
@@ -92,12 +92,24 @@ const Project = ({ type }) => {
 
           <Row gap="4">
             <Col size="12" desktop="8" className="TxProject__content">
-              {data.sections &&
-                data.sections.map(({ modules: items }, i) => (
-                  <Card key={`ProjectSection--${i}`}>
-                    {items && <Layout items={items} data={data} />}
-                  </Card>
-                ))}
+              {data.impact &&
+                <Card>
+                   <Mdx>{data.impact}</Mdx>
+                </Card>
+              }
+
+              {data.approach &&
+                <Card>
+                   <Mdx>{data.approach}</Mdx>
+                   <PhaseStatus data={data.phaseData} />
+                </Card>
+              }
+
+              {data.future &&
+                <Card>
+                   <Mdx>{data.future}</Mdx>
+                </Card>
+              }
             </Col>
 
             <Col size="12" desktop="4">

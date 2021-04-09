@@ -9,7 +9,6 @@ import List from "./templates/List";
 import Mdx from "features/Mdx";
 import PhaseDescription from "./templates/PhaseDescription";
 import PhaseGraphic from "./templates/PhaseGraphic";
-import PhaseStatus from "./templates/PhaseStatus";
 import ProjectList from "features/ProjectList";
 import StatsCards from "./templates/StatsCards";
 import Title from "./templates/Title";
@@ -34,9 +33,6 @@ const components = {
     <div className="Home__hero">
       <Mdx>{body}</Mdx>
     </div>
-  ),
-  phaseStatus: ({ data: { phaseData } }) => (
-    <PhaseStatus data={phaseData} />
   ),
   phaseDescription: PhaseDescription,
   phaseGraphic: PhaseGraphic,
