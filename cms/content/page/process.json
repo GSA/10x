@@ -119,7 +119,7 @@
       "type": "phaseDescription",
       "subtitle": "Phase 3",
       "title": "Develop",
-      "body": "### Build an MVP\n\nIn Phase 3, the team dedicates even more resources to the project. They may build an MVP (minimum viable product) or a prototype to test how the solution could play out. They outline the roadmap for development, estimate the cost and effort required to sustain the project, and determine which agency or organization will be the steward of the product in the long term.  \n\n**10x projects are not owned by 10x or TTS.** As part of the process we look for a “home” for each effort  —  somewhere the project will be nurtured and have the best chance of continued success.",
+      "body": "### Build an MVP\n\nIn Phase 3, the team dedicates even more resources to the project. They may build an MVP (minimum viable product) or a prototype to test how the solution could play out. They outline the roadmap for development, estimate the cost and effort required to sustain the project, and determine which agency or organization will be the steward of the product in the long term.  \n\n**10x projects are not owned by 10x or TTS.** 10x is not in the business of long-term software maintenance; we provide seed funding. As part of the process we look for a “home” for each effort  —  somewhere the project will be nurtured and have the best chance of continued success. ",
       "className": "bg--ocean"
     },
     {
