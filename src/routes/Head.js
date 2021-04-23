@@ -3,6 +3,8 @@ import Helmet from "react-helmet";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 
+const noFollow = ( process.env.NODE_ENV !== "production");
+
 const Head = (props) => {
   const page = useSelector((state) => state.content.page.data);
   const { meta = {} } = page;
@@ -26,6 +28,7 @@ const Head = (props) => {
       <meta content={description} name="twitter:card" />
       <meta content={fbImg} property="og:image" />
       <meta content={twImg} name="twitter:image" />
+      {noFollow && <meta name="robots" content="noindex, nofollow" />}
     </Helmet>
   );
 };
