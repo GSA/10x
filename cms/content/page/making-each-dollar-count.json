@@ -9,7 +9,7 @@
     },
     {
       "type": "markdown",
-      "body": "Our model of small-dollar investments enables us to be good stewards of taxpayer dollars. We spend the smallest possible amount of funding necessary at every stage of a project to determine whether or not it’s an idea worth pursuing. About one third of projects selected for initial funding will actually make their way into design and development, and even those projects must be able to prove they’re delivering clear value in order to continue to receive funding. This iterative approach to investing allows us to innovate without overspending, ensuring the products and services produced meet a real, verifiable need in the federal space.\n\nAnd we’re not giving money to agencies directly — our funding isn’t a grant, but an investment into a potential solution. We use the budget for each project to hire and staff the teams that explore and evaluate ideas at each phase.",
+      "body": "Our model of small-dollar investments enables us to be good stewards of taxpayer dollars. We spend the smallest possible amount of funding necessary at every phase of a project to determine whether or not it’s an idea worth pursuing. Only about one third of projects we fund will move beyond Phase One. This iterative approach to investing allows us to innovate without overspending, ensuring the products and services produced meet a real, verifiable need in the federal space.\n\nAnd we’re not giving money to agencies directly — our funding isn’t a grant, but an investment into a potential solution. We use the budget for each project to hire and staff the teams that explore and evaluate ideas at each phase.",
       "className": "desktop:width-tablet-lg"
     },
     {
@@ -28,7 +28,7 @@
           "subtitle": "Investigation",
           "title": "Is this a bad idea?",
           "suffix": "$",
-          "body": "Teams research if the idea is trying to solve an actual problem in the federal space and identify potential roadblocks, opportunities, and reach.",
+          "body": "Teams research if the idea is trying to solve a real problem in the federal space worth solving and identify potential roadblocks, opportunities, and reach.",
           "className": "bg--1"
         },
         {
@@ -49,7 +49,7 @@
           "subtitle": "Scale",
           "title": "Will everyone use this?",
           "suffix": "$$$$",
-          "body": "Teams receive a final round of funding to expand the customer base and implement an independent business model to make this thing a reality. ",
+          "body": "Teams receive a final round of funding to scale the solution to as many users as possible and implement an independent business model to make this thing a reality.",
           "className": "bg--4"
         }
       ]
@@ -63,17 +63,8 @@
       "type": "statsCards",
       "className": "TxShadowedCard",
       "title": "A record-setting year for 10x",
-      "text": "In FY20, 10x accepted both new ideas and oversaw the continuation of projects that were still ongoing from past fiscal years.",
-      "items": [
-        {
-          "number": "45",
-          "title": "projects kicked off Phase 1 in 2020, or started late in FY19"
-        },
-        {
-          "number": "19",
-          "title": "projects continued into phases 2, 3, and 4"
-        }
-      ]
+      "text": "During our most recent round of evaluations, 10x received a record 250 ideas from federal employees across the government. We only accepted 22 to fund.",
+      "items": []
     }
   ],
   "theme": "3",
