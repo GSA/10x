@@ -3,11 +3,9 @@ import Helmet from "react-helmet";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 
-const publicURL = process.env.PUBLIC_URL  || process.env.BASEURL;
+const publicURL = process.env.PUBLIC_URL  || process.env.BASEURL || "https://10x.gsa.gov";
 const branch = process.env.REACT_APP_BRANCH || process.env.BRANCH;
 const noFollow = branch !== "main";
-
-console.log("branch name is ", branch);
 
 const Head = (props) => {
   const page = useSelector((state) => state.content.page.data);
