@@ -4,8 +4,9 @@ import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 
 const publicURL = process.env.REACT_APP_PUBLIC_URL || process.env.PUBLIC_URL  || process.env.BASEURL;
-const noFollow = publicURL !== "https://10x.gsa.gov";
-
+const branch = process.env.REACT_APP_BRANCH || process.env.BRANCH;
+const noFollow = branch !== "main";
+// REACT_APP_BRANCH=`git branch --show-current`
 const Head = (props) => {
   const page = useSelector((state) => state.content.page.data);
   const { meta = {} } = page;

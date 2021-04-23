@@ -43,7 +43,7 @@
   "scripts": {
     "index-content": "node runIndex.js",
     "start": "REACT_APP_PUBLIC_URL=$BASEURL npm run index-content && react-scripts start",
-    "build": "REACT_APP_PUBLIC_URL=$BASEURL react-scripts build && REACT_APP_PUBLIC_URL=$BASEURL react-snap",
+    "build": "REACT_APP_PUBLIC_URL=TEST$BASEURL PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-scripts build && REACT_APP_PUBLIC_URL=TEST$BASEURL PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH  react-snap",
     "test": "react-scripts test",
     "test:coverage": "npm test -- --coverage --watchAll=false",
     "federalist": "npm run federalist:build && npm run federalist:copy",
