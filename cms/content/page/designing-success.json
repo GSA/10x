@@ -9,7 +9,7 @@
     },
     {
       "type": "markdown",
-      "body": "As we evaluated ideas for FY21, we experimented with distinct investment themes—targeted areas of the government tech ecosystem that we wanted to invest in and explore. While all ideas are still up for consideration, we wanted to try something different by tailoring our pipeline into specific areas. The three themes we settled on were:\n",
+      "body": "We are always evaluating our own approach to investing to ensure we use best practices from the private investment sector.  For example, we’ve recently been experimenting with distinct investment themes — targeted areas of the government tech ecosystem that we wanted to explore and invest in. We got this idea from talking with and learning from venture capital investors in the private sector. While all ideas are still up for consideration, we wanted to try something different by tailoring our pipeline into specific areas. The three themes we settled on were:",
       "className": "desktop:width-tablet-lg"
     },
     {
@@ -45,31 +45,21 @@
       "items": [
         {
           "text": "Prior to 2019, 10x had no defined thesis or investment areas. Ideas were scattered, and it was difficult to find common threads of work. Developing an investment thesis has made it easier for both 10x and for individuals applying for 10x funding to understand what is required by the program.",
-          "title": "Develop an investment thesis. "
+          "title": "Be intentional in your investment focus."
         },
         {
-          "text": "In the beginning, 10x did not define milestones that could be standardized across projects. We now have metrics — specific meta questions that must be answered-by each project at every phase, which allows us to make consistent, fair judgements about moving projects forward.",
-          "title": "Successful projects have defined outcome metrics. "
+          "text": "In the beginning, 10x did not define milestones that could be standardized across projects. We now have specific meta questions that must be answered by each project at every phase, which allows us to make consistent, fair judgements about moving projects forward.\n",
+          "title": "Successful projects have clear objectives."
         },
         {
           "text": "This helps people understand why their idea was or wasn’t selected and ensures a consistent approach between different evaluators.",
           "title": "Clearly communicate the criteria used to evaluate ideas. "
         },
         {
-          "text": "Subject matter experts are useful influencers, but ultimately funding decisions should be made by those individuals charged with governing the fund.",
-          "title": "Have a consistent team make funding decisions. "
+          "text": " It's important to acknowledge that some projects will deliver unexpected impact and others   —   even the most compelling   —   may turn out to be duds. In the world of investments, you only need a few home runs to make all the other projects that didn't pan out worth it.",
+          "title": "Keep an open mind and embrace unknown outcomes."
         }
       ]
-    },
-    {
-      "type": "break",
-      "color": "accent-warm",
-      "variant": "wide"
-    },
-    {
-      "type": "markdown",
-      "body": "## A community of innovation\n\n10x continues to move forward with extending our innovative approach throughout the federal government. We’re pleased to see the GSA’s FAS Systems Governance Committee (FSGC) piloting a model that’s similar to 10x in FY21. We’re also rolling out The Halo Network — a group of 10x project alums who can advise and coach on the 10x process, good ideas, and innovation. \n\n\n\n\n\n\n",
-      "className": "desktop:width-tablet-lg"
     }
   ],
   "theme": "3",
