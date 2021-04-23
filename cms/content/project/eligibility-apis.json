@@ -34,6 +34,10 @@
     {
       "text": "Github repository",
       "link": "https://github.com/18F/eligibility-rules-service "
+    },
+    {
+      "text": "Human services software that's faster, cheaper, and more secure to update",
+      "link": "https://portfolios.18f.gov/projects/eligibility-apis/"
     }
   ],
   "template": "6",
