@@ -9,17 +9,17 @@
     },
     {
       "type": "markdown",
-      "body": "We believe that federal civil servants — with their front row view to the inner workings of our government — are uniquely positioned to identify the key problems that hold our government back. Federal employees submit their ideas through a simple form, and we evaluate them using a formal process twice a year (generally in February and August). But only a handful of the most promising ideas submitted are selected for Phase 1 funding. \n\nAs we explore ideas, we whittle down projects to move on to the next phase, where we continue to research and iterate on the idea. Rinse and repeat, until an idea fails to move on to the next phase or graduates from the process, which can happen anywhere along the journey when we feel the solution is ready for go-time. \n\n## It’s a funnel, not a tunnel\n\nWe purposefully decide to continue funding and developing an idea at each stage in the process, which means that deciding what not to advance to the next phase is as important as choosing what will. By applying lean development principles and targeting the most impactful ideas, we can focus time and resources on the things that have the best chance of success. ",
+      "body": "We believe that federal civil servants — with their front row view to the inner workings of how our government serves the public — are uniquely positioned to identify the key problems that hold our government back. Federal employees submit their ideas through a simple form, and we evaluate them using a formal process at least once a year. But only a handful of the most promising ideas submitted are selected for Phase 1 funding.\n\nAs we explore ideas, we whittle down projects to move on to the next phase, where we continue to research and iterate on the idea. Rinse and repeat, until an idea fails to move on to the next phase or graduates from the process, which can happen anywhere along the journey when we feel the solution is ready for go-time.\n\n## It’s a funnel, not a tunnel\n\nWe decide to continue funding and developing an idea at each phase in the process.  This means that deciding what not to advance to the next phase is as important as choosing what will. By applying lean development principles and targeting the most impactful ideas, we can focus time and resources on the things that have the best chance of success",
       "className": "desktop:width-tablet-lg"
     },
     {
       "type": "markdownSpecial",
       "className": "TxFunnel",
-      "body": "### In August 2020 we:\n\n* Evaluated  **343** ideas\n* *arrow*\n* Selected **21** ideas for Phase 1\n* *arrow*\n* Expect only **7-9** ideas to move to Phase 2"
+      "body": "### In March 2021 we:\n\n* Received and evaluated 250 ideas\n* *arrow*\n* Selected **22** ideas for Phase 1\n* *arrow*\n* Expect only 8 ideas to move to Phase 2"
     },
     {
       "type": "markdown",
-      "body": "If an idea doesn’t make the cut to Phase 1, it doesn’t mean it’s a bad or unworkable idea — it just may not fit the criteria for 10x. Each idea is evaluated on three things:",
+      "body": "If an idea doesn’t make the cut to Phase 1, it doesn’t mean it’s a bad or unworkable idea — the 10x model may not be the best vehicle for moving it forward. Or maybe we just had to make a tough call and chose a different project that felt more promising and urgent. Each idea is evaluated on three things:",
       "className": "desktop:width-tablet-lg"
     },
     {
@@ -32,7 +32,7 @@
         },
         {
           "title": "Alignment",
-          "text": "Does it help develop innovative technology that aligns with government-wide priorities?"
+          "text": "Does solving this problem align with the 10x investment themes or other government-wide priorities?"
         },
         {
           "title": "Impact",
@@ -42,19 +42,16 @@
     },
     {
       "type": "list",
-      "text": "And the ideas that make it to Phase 1 won’t all continue to Phase 2 or beyond — ideas can leave the 10x process “funnel” at any time. Some of the most common reasons a project doesn’t move to Phase 2 include:",
+      "text": "Not all of the ideas that make it to Phase 1 continue into Phase 2 or beyond. Ideas can leave the 10x “funnel” at any time. Some of the most common reasons a project doesn’t move to Phase 2 include:",
       "items": [
         {
-          "text": "Low, no, or unclear demand for the service"
+          "text": "The scope of the problem we're exploring doesn't feel significant enough to warrant 10x involvement"
         },
         {
-          "text": "Potential customers don’t see the problem as urgent or disagree that the problem exists"
+          "text": "There is low or no demand for a solution by its potential users"
         },
         {
-          "text": "Regulatory or legal hurdles that present a significant barrier to project success"
-        },
-        {
-          "text": "A similar solution is already in development"
+          "text": "A similar solution is already in development elsewhere and 10x doesn't need to stick around"
         }
       ],
       "className": "desktop:width-tablet-lg",
@@ -62,7 +59,7 @@
     },
     {
       "type": "markdown",
-      "body": "## The method to the madness \n\nProjects move through four phases after submission, though not all make it past Phase 1. \n"
+      "body": "## The method to the madness\n\nProjects move through four phases."
     },
     {
       "type": "phaseGraphic",
