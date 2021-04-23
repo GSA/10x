@@ -24,6 +24,14 @@ This site can be run locally using NodeJS. Using the command line, install the s
 
 ``` npm i```
 
+Then add a .env file with the BASEURL variable equal to your localhost or the production domain (feel free to use .env.local and .env.production if you like):
+
+```
+BASEURL=https://10x.gsa.gov
+REACT_APP_PUBLIC_URL=$BASEURL
+```
+
+
 To serve the site locally:
 
 ```npm run start```

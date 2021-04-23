@@ -3,14 +3,17 @@ import Helmet from "react-helmet";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 
+const publicURL = process.env.REACT_APP_PUBLIC_URL || process.env.PUBLIC_URL  || process.env.BASEURL;
+const noFollow = publicURL !== "https://10x.gsa.gov";
+
 const Head = (props) => {
   const page = useSelector((state) => state.content.page.data);
   const { meta = {} } = page;
   const { pathname } = useLocation();
 
   const title = page.title; // page or site title
-  const description = page.description; // page or site description
-  const url = pathname; // page url/link
+  const description = meta.description; // page or site description
+  const url = `${publicURL}${pathname}`; // page url/link
   const fbImg = meta.fbImg; // page image or site facebook image
   const twImg = meta.twImg; // page image or site twitter image
 
@@ -26,6 +29,7 @@ const Head = (props) => {
       <meta content={description} name="twitter:card" />
       <meta content={fbImg} property="og:image" />
       <meta content={twImg} name="twitter:image" />
+      {noFollow && <meta name="robots" content="noindex, nofollow" />}
     </Helmet>
   );
 };
