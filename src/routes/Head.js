@@ -2,8 +2,8 @@ import React from "react";
 import Helmet from "react-helmet";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
-import FacebookShareImage from "./fb-share-img.png";
-import TwitterShareImage from "./twitter-share-img.png";
+import FacebookShareImage from "../styles/images/fb-share-img.png";
+import TwitterShareImage from "../styles/images/twitter-share-img.png";
 
 const publicURL = process.env.REACT_APP_PUBLIC_URL || "https://10x.gsa.gov";
 const branch = process.env.REACT_APP_BRANCH || process.env.BRANCH;
