@@ -30,7 +30,7 @@ const Head = (props) => {
       <meta content={title} property="og:title" />
       <meta content="article" property="og:type" />
       <meta content={description} property="og:description" />
-      <meta content={description} name="twitter:card" />
+      <meta content="summary_large_image" name="twitter:card" />
       <meta content={fbImg} property="og:image" />
       <meta content={twImg} name="twitter:image" />
       {noFollow && <meta name="robots" content="noindex, nofollow" />}
