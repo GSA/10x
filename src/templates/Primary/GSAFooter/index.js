@@ -20,7 +20,6 @@ const GSAFooter = () => {
         <Link
           url="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services"
           className="margin-left-05"
-          title="Technology Transformation Services"
         >
           Technology Transformation Services
         </Link>
