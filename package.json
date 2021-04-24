@@ -20,6 +20,7 @@
     "netlify-cms-app": "^2.12.18",
     "node-env-run": "^3.0.2",
     "node-sass": "^4.14.1",
+    "puppeteer": "^9.0.0",
     "react": "^16.13.1",
     "react-axe": "^3.5.3",
     "react-dom": "^16.13.1",
@@ -42,8 +43,8 @@
   },
   "scripts": {
     "index-content": "node runIndex.js",
-    "start": "PUBLIC_URL=$BASEURL npm run index-content && react-scripts start",
-    "build": "PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-scripts build && PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-snap",
+    "start": "REACT_APP_PUBLIC_URL=$BASEURL npm run index-content && react-scripts start",
+    "build": "REACT_APP_PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-scripts build && REACT_APP_PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-snap",
     "test": "react-scripts test",
     "test:coverage": "npm test -- --coverage --watchAll=false",
     "federalist": "npm run federalist:build && npm run federalist:copy",
