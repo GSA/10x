@@ -46,7 +46,7 @@ const Header = ({ logo, className, variant }) => {
   // For menu items
   const handleClick = (link) => {
     setActiveMenuItem(null);
-    history.push(`/${link}`);
+    history.push(`${link}`);
   };
 
   useOnPathChange(() => {

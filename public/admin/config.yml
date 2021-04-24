@@ -581,13 +581,10 @@ collections:
               - label: Text
                 name: text
                 widget: string
-              - label: "What page should this link to?"
+              - label: "What site URL should this link to?"
                 name: link
-                widget: relation
-                collection: "pages"
-                search_fields: ["slug"]
-                value_field: "slug"
-                display_fields: ["title"]
+                widget: string
+                hint: "Begin with a slash, e.g. /process"
           - label: Custom Link
             name: custom
             widget: object
