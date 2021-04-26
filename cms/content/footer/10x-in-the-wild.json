@@ -3,7 +3,7 @@
   "text": "\n",
   "button": {
     "text": "VIEW PROJECTS",
-    "link": "/projects"
+    "link": "/projects/"
   },
   "body": "### 10x projects in the wild\n\n[Code.gov](https://code.gov), [Login.gov](https://login.gov/), [Pra.digital.gov](https://pra.digital.gov), [Federalist](https://federalist.18f.gov), and the [U.S. Web Design System](https://designsystem.digital.gov) all started as ideas submitted to and funded by 10x!"
 }
