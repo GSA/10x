@@ -7,7 +7,7 @@ import TwitterShareImage from "../styles/images/twitter-share-img.png";
 
 const publicURL = process.env.REACT_APP_PUBLIC_URL || "https://10x.gsa.gov";
 const branch = process.env.REACT_APP_BRANCH || process.env.BRANCH;
-const noFollow = branch !== "demo"; // change back to main before launch
+const noFollow = branch !== "main";
 
 const Head = (props) => {
   const page = useSelector((state) => state.content.page.data);
