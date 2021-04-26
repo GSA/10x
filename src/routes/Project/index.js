@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import Head from "routes/Head";
 import classnames from "classnames";
 import { getPage } from "app/ContentModule";
 import FourOhFour from "routes/FourOhFour";
@@ -30,7 +30,7 @@ const Project = ({ type }) => {
   if (pending) {
     return (
       <Grid>
-        <Helmet title="Loading..." />
+        <Head title="Loading..." />
         <div style={{ paddingTop: "15vh", paddingBottom: "15vh" }}>
           <Loading isLoading={true}>
             <span />
@@ -46,7 +46,7 @@ const Project = ({ type }) => {
   return (
     <div className={`TxContent`}>
       <div className="usa-app__bg">
-        <Helmet title={data.title} />
+        <Head title={data.title} />
         <Grid
           className={classnames({
             TxProject: true,
