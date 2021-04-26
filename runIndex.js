@@ -116,15 +116,26 @@ const generateSitemap = (collections = ["page", "post", "project"]) => {
       // don't output stub pages. Real posts and pages have a sections attribute. real projects have an impact attribute
       (item) => item.sections || item.impact
     ).map(
-      (item) => 
-        `${PROD_URL}${sitePaths[name]}/${
-          item.name && item.name === HOMEPAGE_KEY ? "" : item.name + "/"
-        }`
+      (item) => {
+        const modDate = new Date(fs.statSync(path.join(CMS_PATH, 'content', name, item.name + `.json`)).mtime || Date.now());
+        const URL = `${PROD_URL}${sitePaths[name]}/${item.name && item.name === HOMEPAGE_KEY ? "" : item.name + "/" }`;
+        return { 
+          url: URL,
+          date: modDate.toISOString()
+        }
+      }
     );
     return [...acc, ...pages];
   }, []);
 
-  const xmlJson = { url: data.map((item) => ({ loc: item })) };
+  const xmlJson = { 
+    "@": {
+      xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9",
+      "xmlns:image": "http://www.google.com/schemas/sitemap-image/1.1",
+      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+    },
+    url: data.map((item) => ({ loc: item.url, lastmod: item.date })) 
+  };
 
   const xmlData = xml.parse("urlset", xmlJson);
   fs.outputFileSync(path.join(CONFIG_PATH, "sitemap.xml"), xmlData);
