@@ -113,8 +113,8 @@ const generateSitemap = (collections = ["page", "post", "project"]) => {
     fs.ensureFile(file);
     const contents = fs.readJsonSync(file);
     const pages = contents.filter(
-      // only output items with content (real pages)
-      (item) => item.sections
+      // don't output stub pages. Real posts and pages have a sections attribute. real projects have an impact attribute
+      (item) => item.sections || item.impact
     ).map(
       (item) => 
         `${PROD_URL}${sitePaths[name]}/${
