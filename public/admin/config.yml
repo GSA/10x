@@ -30,7 +30,7 @@ types:
         required: false
       - label: "URL"
         name: "link"
-        hint: "URL for the button link. Can be relative (/process) or absolute (for external links)"
+        hint: "URL for the button link. Can be root-relative, beginning and ending with slashes (/process/) or absolute (for external links)"
         widget: string
         required: false
 
@@ -584,7 +584,7 @@ collections:
               - label: "What site URL should this link to?"
                 name: link
                 widget: string
-                hint: "Begin with a slash, e.g. /process."
+                hint: "If local, begin and end with a slash, e.g. /process/."
           - label: Custom Link
             name: custom
             widget: object
@@ -629,7 +629,7 @@ collections:
                       - label: "What site URL should this link to?"
                         name: link
                         widget: string
-                        hint: "Begin with a slash, e.g. /process."
+                        hint: "If local, begin and end with a slash, e.g. /process/."
                   - label: Custom Link
                     name: custom
                     widget: object

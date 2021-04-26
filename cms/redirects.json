@@ -2,15 +2,15 @@
   "redirects": [
     {
       "origin": "/about-10x",
-      "forward": "/fueling-innovation"
+      "forward": "/fueling-innovation/"
     },
     {
       "origin": "/send-us-an-idea",
-      "forward": "/our-challenge-to-you"
+      "forward": "/our-challenge-to-you/"
     },
     {
       "origin": "/the-10x-process",
-      "forward": "/process"
+      "forward": "/process/"
     }
   ]
 }

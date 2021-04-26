@@ -21,7 +21,7 @@
       "type": "callout",
       "button": {
         "text": "DIVE INTO OUR PROCESS",
-        "link": "/process"
+        "link": "/process/"
       },
       "items": [
         {
@@ -58,7 +58,7 @@
       "subtitle": "",
       "button": {
         "text": "EXPLORE OTHER PROJECTS",
-        "link": "/projects"
+        "link": "/projects/"
       },
       "items": [
         {
@@ -71,7 +71,7 @@
         },
         {
           "text": "The government has the clearest-ever picture of the federal web experience",
-          "link": "/projects/spotlight"
+          "link": "/projects/spotlight/"
         },
         {
           "text": "Privacy offices can focus more effort on protecting the public’s information",
