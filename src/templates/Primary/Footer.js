@@ -92,7 +92,7 @@ const Footer = () => {
               >
                 {"View No FEAR Act"}
               </Link>
-              <Link className="display-block" url="/privacy-policy">
+              <Link className="display-block" url="/privacy-policy/">
                 {"Privacy Policy"}
               </Link>
               <Link className="display-block" external url="mailto:10x@gsa.gov">
