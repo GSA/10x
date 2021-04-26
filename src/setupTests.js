@@ -8,6 +8,9 @@ import Adapter from "enzyme-adapter-react-16";
 
 configure({ adapter: new Adapter() });
 
+const noop = () => {};
+Object.defineProperty(window, 'scrollTo', { value: noop, writable: true });
+
 const storageMock = {
   getItem: jest.fn(),
   setItem: jest.fn(),

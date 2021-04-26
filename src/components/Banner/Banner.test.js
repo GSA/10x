@@ -21,10 +21,10 @@ describe("<Banner />", () => {
           <Banner />
         </TestProvider>
       );
-      const button = wrapper.find("button");
+      const button = wrapper.find(".usa-banner__button");
       button.simulate("click");
       wrapper.update();
-      expect(wrapper.find("#gov-banner").hasClass("is-visible")).toBeTruthy();
+      expect(wrapper.find(".usa-banner__content").hostNodes().length).toBe(1);
     });
   });
 });

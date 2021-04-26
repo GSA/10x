@@ -1,7 +1,7 @@
 import app from "./index.js";
 import { initialState as content } from "app/ContentModule";
 import { initialState as menu } from "app/MenuModule";
-import { initialState as settings } from "app/MenuModule";
+import { initialState as settings } from "app/SettingsModule";
 
 const combinedState = {
   content,

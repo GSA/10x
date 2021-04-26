@@ -1,0 +1,48 @@
+{
+  "title": "10x - Funding Ideas for Better Public Service",
+  "sections": [
+    {
+      "type": "ghostwriter",
+      "body": "<Grid>\n<GhostWriter />\n</Grid>\n"
+    },
+    {
+      "type": "markdownSpecial",
+      "body": "<Row>\n\n<Col size=\"12\" desktop=\"8\">\n\n## Turning good-for-government ideas into good-for-people solutions\n\nAt 10x, we crowdsource ideas from federal employees and turn them into real products that improve the public’s experience with the federal government.\n\n\r\n\r\nWe believe that the most creative, game-changing ideas come from those who work most closely to the problem — civil servants like you. We invite any federal employee to submit an idea for how to use technology to improve public service. \n\n\r\n\r\nWe start small, validating the idea and increasing the investment as we go, to ensure we’re funding the ideas that deliver the most impact. At least once a year, we evaluate submissions and choose the most promising ones for a deeper dive into their potential impact, feasibility, and scope. We’re talking things like eliminating bias in artificial intelligence, helping people to more quickly identify which benefits they are eligible for, and making it easier to share data across agencies. \n\n\r\n\r\nSo, how do you want to improve public service?\r\n\n\n<Break color=\"accent-warm\" variant=\"wide\" />\n\n</Col>\n\n<Col size=\"12\" desktop=\"4\">\n\n<Card className=\"Home__callout\">\n\n**10x has funded 268 projects. Will yours be next?**\n\n<Button color=\"primary\" url=\"https://feedback.gsa.gov/jfe/form/SV_1Im8dTPnjnV3HpP\">SUBMIT AN IDEA</Button>\n\n<span />\n\n</Card>\n\n</Col>\n\n</Row>",
+      "className": ""
+    },
+    {
+      "type": "cards",
+      "title": "What's new with us",
+      "items": [
+        {
+          "subtitle": "featured project",
+          "title": "Rapid implementation of policy as code",
+          "link": "https://18f.gsa.gov/2020/05/12/rapid-implementation-of-policy-as-code/"
+        },
+        {
+          "subtitle": "inside look",
+          "title": "View 10x Lightning Talks from successful idea submitters",
+          "link": "https://digital.gov/event/2020/06/30/10x-project-lightning-talks-2020/"
+        },
+        {
+          "subtitle": "Media",
+          "title": "Government reinvention with a venture capital mindset",
+          "link": "https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx"
+        },
+        {
+          "subtitle": "Awards",
+          "title": "10x is proud to receive a 2019 Public Sector Innovation award",
+          "link": "https://gcn.com/articles/2019/08/26/government-innovation-awards-2019.aspx"
+        }
+      ]
+    }
+  ],
+  "subtitle": "What if your idea could change how the government communicates with the public?",
+  "slug": "homepage",
+  "theme": "1",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "10x - Funding Ideas for Better Public Service | 10x.GSA.gov",
+    "description": "10x crowdsources ideas from federal employees and turns them into good-for-people tech solutions. Find out how we approach funding and development."
+  }
+}

@@ -2,12 +2,53 @@
 
 const testData = [
   {
-    key: "primary",
+    key: "global",
     items: [
-      { link: "/about", text: "About 10x" },
-      { link: "/ideas", text: "Send us an idea" },
-      { link: "/process", text: "The 10x process" },
-      { link: "/projects", text: "The projects" },
+      {
+        type: "nested",
+        prefix: "Our",
+        text: "STORY",
+        items: [
+          {
+            type: "page",
+            link: "fueling-innovation",
+            text: "Fueling innovation"
+          },
+          {
+            type: "page",
+            link: "making-each-dollar-count",
+            text: "Making each dollar count"
+          },
+          {
+            type: "page",
+            link: "designing-success",
+            text: "Designing success"
+          },
+          {
+            type: "page",
+            link: "news-updates",
+            text: "News and updates"
+          }
+        ]
+      },
+      {
+        type: "page",
+        text: "PROCESS",
+        link: "process",
+        prefix: "Our"
+      },
+      {
+        type: "page",
+        link: "projects",
+        prefix: "Our",
+        text: "PROJECTS"
+      },
+      {
+        type: "page",
+        prefix: "Our",
+        text: "CHALLENGE TO YOU",
+        link: "our-challenge-to-you"
+      }
     ],
   },
 ];

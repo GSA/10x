@@ -2,29 +2,35 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import Head from "routes/Head";
+import classnames from "classnames";
 import { getPage } from "app/ContentModule";
 import FourOhFour from "routes/FourOhFour";
-import Mdx from "features/Mdx";
-import { Grid } from "components/Grid";
+import { Col, Grid, Row } from "components/Grid";
 import Loading from "components/Loading";
+import Links from "./Links";
+import Team from "./Team";
 import Icon from "components/Icon";
-import Button from "components/Button";
+import Break from "components/Break";
+import Card from "components/Card";
+import Mdx from "features/Mdx";
+import useScrollToTop from "utils/useScrollToTop";
+import PhaseStatus from "features/Layout/templates/PhaseStatus";
 
 const Project = ({ type }) => {
   const dispatch = useDispatch();
   const { name } = useParams();
-  const page = useSelector((state) => state.content.page);
   useEffect(() => {
     dispatch(getPage({ type, name }));
   }, [dispatch, name, type]);
+  useScrollToTop();
+  const page = useSelector((state) => state.content.page);
   const { pending, data, error } = page;
-
-  const team = data.team || {};
+  
   if (pending) {
     return (
       <Grid>
-        <Helmet title="Loading..." />
+        <Head title="Loading..." />
         <div style={{ paddingTop: "15vh", paddingBottom: "15vh" }}>
           <Loading isLoading={true}>
             <span />
@@ -38,64 +44,88 @@ const Project = ({ type }) => {
   }
 
   return (
-    <div className={`TxContent `}>
-      <Helmet title={data.title} />
-      <Grid className={`TxProject TxProject--${name}`}>
-        <div className="TxProject__link">
-          <Link to="/projects">
-            <Icon icon="arrow-left" />
-            Return to our projects
-          </Link>
-        </div>
-        <h1 className="TxProject__title">{data.title}</h1>
-        <div className="TxProject__subtitle">{data.subtitle}</div>
-        <div className="TxProject__meta">Type: {data.projectType}</div>
-        <Mdx>{data.body}</Mdx>
-        {(team.submitter || team.members) && (
-          <div className="TxProject__team">
-            <h3>Team</h3>
-            <ul>
-              <li>
-                <div className="TxProject__team-icon">
-                  <Icon icon="user" className="margin-right-1" />
-                </div>
-                <span>
-                  <strong>Idea Submitter: </strong> {team.submitter}
-                </span>
-              </li>
-              <li>
-                <div className="TxProject__team-icon">
-                  <Icon icon="users" className="margin-right-1" />
-                </div>
-                <span>
-                  <strong>Team: </strong> {team.members}
-                </span>
-              </li>
-            </ul>
+    <div className={`TxContent`}>
+      <div className="usa-app__bg">
+        <Head title={data.title} />
+        <Grid
+          className={classnames({
+            TxProject: true,
+            [`TxProject--${name}`]: true,
+            [`TxProject--template-${data.template}`]: Boolean(data.template),
+          })}
+        >
+          <div className="TxProject__nav-link">
+            <Link to="/projects">
+              <Icon icon="arrow-left" />
+              Return to our projects
+            </Link>
           </div>
-        )}
 
-        {Array.isArray(data.links) && data.links.length && (
-          <div className="TxProject__links">
-            <h3>Learn More</h3>
-            <ol>
-              {data.links.map((item) => {
-                return (
-                  <li className="TxProject__link">
-                    <Button variant="link" url={item.link}>
-                      {item.text}{" "}
-                      <Icon
-                        className="margin-left-1"
-                        icon="external-link-alt"
-                      />
-                    </Button>
-                  </li>
-                );
-              })}
-            </ol>
-          </div>
-        )}
-      </Grid>
+          <h1 className="TxProject__subtitle">{data.subtitle}</h1>
+
+          <Row gap="4">
+            <Col size="12" desktop="8">
+              <h2 className="TxProject__title">{data.title}</h2>
+              <p className="TxProject__intro">{data.intro}</p>
+              <Break color="accent-cool" variant="wide" />
+            </Col>
+            {data.summary && (
+              <Col size="12" desktop="4">
+                <aside>
+                  <Card className="TxProject__summary" title="In a nutshell">
+                    <ul>
+                      {data.summary.map((item, i) => (
+                        <li key={`summary-${i}`}>
+                          <Icon
+                            icon="check-circle"
+                            className="text-accent-cool margin-right-1"
+                          />
+                          <span>{item.text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </Card>
+                </aside>
+              </Col>
+            )}
+          </Row>
+
+          <Row gap="4">
+            <Col size="12" desktop="8" className="TxProject__content">
+              {data.impact &&
+                <Card>
+                   <Mdx>{data.impact}</Mdx>
+                </Card>
+              }
+
+              {data.approach &&
+                <Card>
+                   <Mdx>{data.approach}</Mdx>
+                   <PhaseStatus data={data.phaseData} />
+                </Card>
+              }
+
+              {data.future &&
+                <Card>
+                   <Mdx>{data.future}</Mdx>
+                </Card>
+              }
+            </Col>
+
+            <Col size="12" desktop="4">
+              <aside className="TxProject__details">
+                <Card>
+                  <Team data={data.team} />
+                </Card>
+                <Break color="base-lighter" variant="wide" />
+                <Card>
+                  <Links data={data.links} />
+                </Card>
+              </aside>
+            </Col>
+          </Row>
+        </Grid>
+      </div>
     </div>
   );
 };

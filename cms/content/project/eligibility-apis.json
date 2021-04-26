@@ -1,0 +1,53 @@
+{
+  "excerpt": "Determining who is eligible for what government services isn’t easy with today’s technology. Eligibility policies change frequently, and the IT systems that power these safety net programs (think Medicaid and SNAP) are not great at keeping up with changing eligibility criteria—which can mean a delay for people who should receive benefits. This project explored what *tomorrow’s* technology for determining eligibility might look like to make it faster and more accurate when policies change, namely writing policies in a programming language so state IT systems can connect to the information automatically.",
+  "future": "## Next Steps\n\nFrom here, we are continuing to socialize our approach with interested partners and fielding incoming inquiries into our work. Our next step is to document the affect that this project will have long-term by tracking where our products and methodologies are reproduced.",
+  "topics": "Policy administrators, Program administrators, Social safety program administrators",
+  "phaseData": {
+    "phase": "4",
+    "status": "3",
+    "summary": "Graduated after Phase 4"
+  },
+  "impact": "## Why this matters\n\nSocial safety net programs provide critical benefits to millions of Americans and improving the way these programs work could have a real impact on people’s lives. In addition to real outcomes, IT modernization efforts for these programs fail at an alarming rate at great cost to the federal budget. Based on potential impact, we believe that seeing how modern technology might improve the functioning of these programs is worth exploring through the 10x process.",
+  "summary": [
+    {
+      "text": "It’s not as easy for government IT systems to adapt to new eligibility criteria as you might think"
+    },
+    {
+      "text": "Projects designed to solve this problem are expensive and failure-prone"
+    },
+    {
+      "text": "There may be an opportunity to use modern software techniques that could save the federal budget millions and improve service for the public all at once"
+    }
+  ],
+  "approach": "## What we did\n\nWe spent the better part of two years researching these benefits programs to understand their technical challenges. Part of understanding this landscape involved building prototypes and rigorously testing them with users and then presenting them to program staffers. The primary product the team shipped at the end of the engagement was the first open API for SNAP eligibility criteria that we know of, which powered a benefits calculator that members of the public can use to estimate their potential benefits.\n\n### How we did it\n\nWe began by speaking with both program and technical staffers at many different benefits programs at several different agencies to understand the landscape. We validated the potential for an agency-hosted centralized eligibility API could provide massive impact. Our engineers worked with program staffers to understand the eligibility criteria and translate it into computer code. We then explored what kinds of downstream apps could be built based off of the central API. \n\n### Where we are today\n\nThe open-source benefits calculator we shipped was originally used by a non-profit group in Virginia. Since the end of the engagement, Code for America volunteers have taken over where we left off and forked the code for the benefits calculator, modifying it to include eligibility criteria for all 50 states. This is a great example of the scale that 10x aims to produce in Phase 4 and a good example of what sharable software components can do for the government’s benefits programs.",
+  "slug": "eligibility-apis",
+  "intro": "America’s social safety net programs, like Headstart and the Supplemental Nutrition Assistance Program (SNAP), are mostly funded by the federal government. The federal level is also where baseline criteria for who is and isn’t eligible for these benefits is determined. But the onus of implementing these programs falls to the state, local, and tribal governments. One issue affecting the efficiency of these programs is that these state agencies do not have a simple way of incorporating new eligibility requirements into the IT systems that power the programs. Many state and local governments face similar challenges in updating their eligibility rules, but cannot collaborate or benefit from each others’ work because of siloed, outdated systems. The result is that each government agency tries to solve the same problem over and over again, which comes at a great cost to the federal budget. These costly modernization efforts undertaken by the states are also risky and failure-prone. What if a federal agency coded the program's eligibility criteria into a single, central webservice that states could use to help determine eligibility?",
+  "projectType": "Transformation",
+  "projectUrl": "",
+  "subtitle": "What if modern technology holds the key to unlocking how the government changes and communicates eligibility criteria for benefits programs?",
+  "title": "The Eligibility APIs Initiative",
+  "links": [
+    {
+      "text": "Rapid implementation of policy as code",
+      "link": "https://18f.gsa.gov/2020/05/12/rapid-implementation-of-policy-as-code/"
+    },
+    {
+      "text": "Github repository",
+      "link": "https://github.com/18F/eligibility-rules-service "
+    },
+    {
+      "text": "Human services software that's faster, cheaper, and more secure to update",
+      "link": "https://portfolios.18f.gov/projects/eligibility-apis/"
+    }
+  ],
+  "template": "6",
+  "footer": "we-started-as-an-idea-too",
+  "seo": {
+    "title": "Eligibility APIs - 10x Project | 10x.GSA.gov",
+    "description": "What if you could help make government program eligibility requirements easier for state, local, and tribal governments to implement? See what 10x did."
+  },
+  "team": {
+    "submitter": "Ed Mullen, TTS",
+    "members": "Ed Mullen, Mike Gintz, Alex Sobel, Vraj Mohan, Catherine Devlin, Shawnique Muller, Jacklynn Pham"
+  }
+}

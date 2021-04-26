@@ -1,0 +1,22 @@
+.usa-button {
+  border-radius: 100px;
+  @include u-font-family("serif");
+  line-height: 0.9;
+
+  &--primary-lighter {
+    @include buttonCustom(
+      "primary-light",
+      "indigo-10",
+      "indigo-10"
+    );
+
+    font-weight: 500;
+    @include linkVariant--dark;
+  }
+
+  &--unstyled {
+    line-height: inherit;
+    @include u-font-family("sans");
+    @include linkVariant--dark;
+  }
+}

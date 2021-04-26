@@ -1,0 +1,22 @@
+{
+  "title": "News and Updates",
+  "slug": "news-updates",
+  "sections": [
+    {
+      "type": "title",
+      "title": "News and updates",
+      "subtitle": "Recent updates from the 10x team"
+    },
+    {
+      "type": "markdown",
+      "body": "",
+      "className": "desktop:width-tablet-lg"
+    }
+  ],
+  "theme": "3",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "News and Updates | 10x.GSA.gov",
+    "description": "Stay up to date with 10x announcements."
+  }
+}

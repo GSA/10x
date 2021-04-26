@@ -1,0 +1,45 @@
+{
+  "slug": "guide-to-pra",
+  "title": "A Guide to the Paperwork Reduction Act",
+  "subtitle": "What if we could make navigating the PRA process easier?",
+  "excerpt": "The intent of the Paperwork Reduction Act (PRA) of 1980 is to reduce the burden of paperwork placed on the public by government agencies who are seeking information. But over the last 40 years, the law has been a source of confusion for federal employees trying to gather data from the public, often in pursuit of user research to make the public’s experience with government better. The project team worked very closely with dozens of compliance attorneys to agree on precise language and common interpretations of the law so they could better explain its purpose, how it works, and how to stay on the right side of compliance — taking decades of legalese and translating it into plain-language web content, lowering the barrier for feds to collect key information from the public so they can continue to improve government services. ",
+  "intro": "In order for the government to deliver excellent public service, civil servants must be able to interact with the public to understand their needs. The Paperwork Reduction Act (PRA), passed in 1995,  governs how federal agencies collect information from the American public. But, PRA is often viewed as a blocker to meaningful interaction between the government and the public. The spirit of PRA is to reduce the burden on the public to respond to duplicative calls for information by the government, but there is much confusion around the law and how to navigate it. 10x spent three phases looking at PRA to see how we might help.",
+  "impact": "## Why this matters\n\nThe PRA has been a source of frustration for many government employees for years. It was passed during a time before the internet existed and was not designed to govern interactions between the government and the public during the digital age. Because the law restricts the amount and types of information that the government is allowed to request from the public, some federal employees shy away from conducting user research with the public at all because they are afraid of running afoul of the law or are intimidated by the process it takes to receive PRA clearance. Because of this project, government researchers can more confidently navigate the PRA process and are more empowered to interact with the public in critical ways — like for user research for improved web content — and the initial intent of the law is clear and easy to understand.",
+  "approach": "## What we did\n\nWe built a website that serves as the go-to place for the thousands of federal employees seeking PRA clearance to learn about the PRA, how it may or may not affect their work, and how to successfully navigate the process of getting clearance to interact with the public.\n\n### How we did it\n\nWe interviewed dozens of PRA officers and staffers from OMB who interpret the PRA to learn about common misperceptions of the law and we spoke with federal employees who have navigated the compliance process. We focused on a key audience with specific needs  —  smaller agencies without dedicated internal PRA support—and conducted research with them to understand their needs. Then, we partnered with legal experts who have deep knowledge of the law to interpret the necessary components and guidance into user-friendly digital content. Finally,  we built a website to host this guidance.\n\n### Where we are today\n\n[PRA.digital.gov](https://pra.digital.gov/) lives as a partnership between GSA and OMB. GSA maintains the digital infrastructure; OMB maintains and updates the content.",
+  "future": "## Next steps\n\nThe website we built is designed to be continually updated as the needs arise, reflecting  modifications to the law or extensions for the law to serve new audiences. The site as it exists today is the perfect foundation for expansion.  With further enhancements, the government can demystify the PRA process for many thousands more government employees who want to both serve the public and stay in compliance with the law.",
+  "projectUrl": "",
+  "template": "1",
+  "projectType": "Innovation",
+  "topics": "Designers, Program administrators, Researchers",
+  "footer": "we-started-as-an-idea-too",
+  "team": {
+    "submitter": "Sharon Mar, OMB with Andrew Maier, 18F alum",
+    "members": "Qituwra Anderson, Elizabeth Ayer, Christine Bath, Anna Heller-Sebok, Brian Hurst, and Cordelia Yu"
+  },
+  "links": [
+    {
+      "text": "pra.digital.gov",
+      "link": "https://pra.digital.gov/"
+    }
+  ],
+  "summary": [
+    {
+      "text": "The PRA is a misunderstood law that scares government employees away from interacting with the public, which can hinder user research "
+    },
+    {
+      "text": "There has never been easy guidance that explains the purpose and processes behind PRA"
+    },
+    {
+      "text": "Helping federal employees navigate the PRA process can lead to improved interaction with the public and enable a more responsive government "
+    }
+  ],
+  "seo": {
+    "title": "A Guide to the PRA - 10x Project | 10x.GSA.gov",
+    "description": "What if we could make it easier for civil servants to interact with the public they serve? Find out how 10x created a guide to the Paperwork Reduction Act."
+  },
+  "phaseData": {
+    "status": "3",
+    "phase": "3",
+    "summary": "Graduated after Phase 3"
+  }
+}

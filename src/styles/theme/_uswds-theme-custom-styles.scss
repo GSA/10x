@@ -20,26 +20,12 @@ i.e.
 ----------------------------------------
 */
 
-@import "~styles/font-awesome/fontAwesome";
-
-@import "~styles/components/banner";
-@import "~styles/components/button";
-@import "~styles/components/card";
-@import "~styles/components/colorBox";
-@import "~styles/components/footer";
-@import "~styles/components/gsaFooter";
-@import "~styles/components/header";
-@import "~styles/components/list";
-@import "~styles/components/loading";
-@import "~styles/components/locationMenu";
-@import "~styles/components/logo";
-@import "~styles/components/primaryNav";
-@import "~styles/components/projectCard";
-@import "~styles/components/projectStatus";
-
-@import "~styles/pages/content";
-@import "~styles/pages/homepage";
-@import "~styles/pages/project";
+@import "~styles/fonts";
+@import "~styles/font-awesome/fontAwesome.scss";
+@import "~styles/mixins/index.scss";
+@import "~styles/core";
+@import "~styles/custom";
+@import "~styles/pages";
 
 main#main-content {
   border: none;

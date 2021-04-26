@@ -1,12 +1,20 @@
 {
+  "excerpt": "Most agencies that are experimenting with artificial intelligence (AI) are improvising and building the plane as they fly, simply because this field is still quite new. We want to provide a platform for agencies to learn from one another about how to best tackle this new frontier of technology-driven public service and implement responsible AI practices. We've invested in an AI experience sharing platform that allows government agencies to share tools, lessons, and experiments with one another. The platform will also serve as the infrastructure for the emerging artificial intelligence community of practice that represents dozens of agencies across the government. ",
+  "topics": "Compliance officers, Data scientists, ML engineers, Statisticians",
   "phaseData": {
     "status": "1",
-    "phase": "3"
+    "phase": "3",
+    "summary": "Phase 3 is still in progress"
   },
-  "title": "AI Experience Sharing Platform",
-  "subtitle": "Enabling AI success ",
+  "slug": "ai-experience-sharing-platform",
+  "intro": "Most agencies that are experimenting with artificial intelligence are improvising and building the plane as they fly, simply because this field is still quite new. We want to provide a platform for agencies to learn from one another about how to best tackle this new frontier of technology-driven public service and implement responsible AI practices. We've invested in an AI experience sharing platform that allows government agencies to share tools, lessons, and experiments with one another. The platform will also serve as the infrastructure for the emerging artificial intelligence community of practice that represents dozens of agencies across the government. \n",
   "projectType": "Innovation",
-  "projectLink": "",
-  "excerpt": "Most agencies that are experimenting with artificial intelligence are improvising and building the plane as they fly, simply because this field is still quite new. We want to provide a platform for agencies to learn from one another about how to best tackle this new frontier of technology-driven public service and implement responsible AI practices. We've invested in an AI experience sharing platform that allows government agencies to share tools, lessons, and experiments with one another. The platform will also serve as the infrastructure for the emerging artificial intelligence community of practice that represents dozens of agencies across the government. \n",
-  "topics": "Compliance officers, Data scientists, ML engineers, Statisticians"
+  "projectUrl": "https://github.com/GSA/ai-experience-sharing-platform/projects/1",
+  "subtitle": "What if we could enable AI in government?",
+  "title": "AI Experience Sharing Platform",
+  "template": "2",
+  "seo": {
+    "title": "AI Experience Sharing Platform - Project Overview | 10x.GSA.gov",
+    "description": "The AI Experience Sharing Platform developed by 10x will help agencies learn from one another about how to best tackle this new frontier for public service."
+  }
 }

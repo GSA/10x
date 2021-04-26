@@ -1,0 +1,18 @@
+{
+  "seo": {
+    "title": "10x Explores Writing Policy as Code | 10x.GSA.gov",
+    "description": "18F has been researching a prototyping technique for writing and publishing policy rules as computer code to improve speed and accuracy. Find out how."
+  },
+  "footer": "10x-in-the-wild",
+  "date": "2020-05-12T04:00:00.000Z",
+  "title": "Rapid implementation of policy as code",
+  "slug": "policy-as-code",
+  "excerpt": "Learn about 18F's approach to writing policy as code for faster implementation of changes.\n",
+  "sections": [
+    {
+      "className": "desktop:width-tablet-lg",
+      "type": "markdown",
+      "body": "18F has been researching a prototyping technique for writing and publishing policy rules as computer code to improve speed and accuracy.\n\n“No policy or rule stays the same forever. In response to a crisis, policy changes often come much faster, and stakes can be higher. A new rule might change the amount of benefit someone receives as part of a safety net program, or make someone eligible who was previously ineligible.”\n\nRead [Rapid implementation of policy as code on 18F’s website.](https://18f.gsa.gov/2020/05/12/rapid-implementation-of-policy-as-code/)"
+    }
+  ]
+}

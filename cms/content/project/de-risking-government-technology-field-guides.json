@@ -1,12 +1,16 @@
 {
+  "intro": "State and federal IT projects are often costly, risky, and prone to failure. For this effort, the team compiled best practices for common issues like budgeting for agile projects, limiting contract size, and measuring success. These were then published into a “how to” field guide that agencies can use to point their projects in the right direction. ",
+  "topics": "Legislators, Product owners, Government IT executives",
   "phaseData": {
     "status": "3",
-    "phase": "3"
+    "phase": "3",
+    "summary": "Graduated after Phase 3"
   },
+  "slug": "de-risking-government-technology-field-guides",
   "title": "De-risking Government Technology Field Guides",
-  "subtitle": "Setting your gov tech projects up for success",
-  "projectType": "Innovation",
-  "projectLink": "https://derisking-guide.18f.gov/",
+  "subtitle": "What if you could set up government tech projects for success?",
   "excerpt": "State and federal IT projects are often costly, risky, and prone to failure. For this effort, the team compiled best practices for common issues like budgeting for agile projects, limiting contract size, and measuring success. These were then published into a “how to” field guide that agencies can use to point their projects in the right direction. ",
-  "topics": "Legislators, Product owners, Government IT executives"
+  "projectUrl": "https://derisking-guide.18f.gov/",
+  "template": "4",
+  "projectType": "Innovation"
 }

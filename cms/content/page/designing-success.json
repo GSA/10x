@@ -1,0 +1,71 @@
+{
+  "title": "Designing success",
+  "slug": "designing-success",
+  "sections": [
+    {
+      "type": "title",
+      "title": "Designing success",
+      "subtitle": "We build success through careful experimentation."
+    },
+    {
+      "type": "markdown",
+      "body": "We are always evaluating our own approach to investing to ensure we use best practices from the private-sector investors.  For example, we’ve recently been experimenting with distinct investment themes — targeted areas of the government tech ecosystem that we wanted to explore and invest in. We got this idea from talking with and learning from venture capital investors in the private sector. While all ideas are still up for consideration, we wanted to try something different by tailoring our pipeline into specific areas. The three themes we settled on were:",
+      "className": "desktop:width-tablet-lg"
+    },
+    {
+      "type": "callout",
+      "text": "",
+      "items": [
+        {
+          "title": "Equity in delivery"
+        },
+        {
+          "title": "Public lands & environment"
+        },
+        {
+          "title": "Public trust & civic life"
+        }
+      ],
+      "variant": "number"
+    },
+    {
+      "type": "markdown",
+      "body": "We felt that these areas were unique, apt, and ripe for investigation. While we accept ideas on all topics, we are pleased that most of the ideas selected for Phase 1 aligned with these themes.",
+      "className": "desktop:width-tablet-lg"
+    },
+    {
+      "type": "break",
+      "color": "accent-warm",
+      "variant": "wide"
+    },
+    {
+      "type": "list",
+      "title": "Lessons learned for smart tech investment",
+      "text": " After five years of navigating the world of government technology, we’ve learned several lessons to help us optimize project success.",
+      "items": [
+        {
+          "text": "Prior to 2019, 10x had no defined investment strategy or areas of focus. Ideas were scattered, and it was difficult to find common threads of work. Developing an investment approach has made it easier for both 10x and for individuals applying for 10x funding to understand what is required by the program.",
+          "title": "Be intentional in your investment focus."
+        },
+        {
+          "text": "In the beginning, 10x did not define milestones that could be standardized across projects. We now have specific meta questions that must be answered by each project at every phase, which allows us to make consistent, fair judgements about moving projects forward.\n",
+          "title": "Successful projects have clear objectives."
+        },
+        {
+          "text": "This helps people understand why their idea was or wasn’t selected and ensures a consistent approach between different evaluators.",
+          "title": "Clearly communicate the criteria used to evaluate ideas. "
+        },
+        {
+          "text": " It's important to acknowledge that some projects will deliver unexpected impact and others   —   even the most compelling   —   may turn out to be duds. In the world of investments, you only need a few home runs to make all the other projects that didn't pan out worth it.",
+          "title": "Keep an open mind and embrace unknown outcomes."
+        }
+      ]
+    }
+  ],
+  "theme": "3",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "Designing Success - 10x's Investment Themes | 10x.GSA.gov",
+    "description": "10x shares lessons learned and the key areas of focus for its fiscal year 21 tech investments. Find out what FY21 looks like for us."
+  }
+}

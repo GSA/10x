@@ -1,0 +1,18 @@
+{
+  "seo": {
+    "title": "10x Project Lightning Talks | 10x.GSA.gov",
+    "description": "View a video of a live showcase of some of 10x's most innovative projects."
+  },
+  "footer": "10x-in-the-wild",
+  "date": "2020-06-30T04:00:00.000Z",
+  "title": "10x Project Lightning Talks: 2020",
+  "slug": "2020-lightning-talks",
+  "excerpt": "Check out this video of a live showcase of some of 10x’s most innovative projects. ",
+  "sections": [
+    {
+      "className": "desktop:width-tablet-lg",
+      "type": "markdown",
+      "body": "Check out this video of a live showcase of some of 10x’s most innovative projects. View a series of quick presentations on Eligibility APIs, Agile Budgeting and Oversight Handbook, and U.S. Web Design System’s Advanced Form Controls. \n\nView the video of [10x Project Lightning Talks on Digital.gov](https://digital.gov/event/2020/06/30/10x-project-lightning-talks-2020/)."
+    }
+  ]
+}

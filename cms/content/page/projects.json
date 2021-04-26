@@ -1,19 +1,20 @@
 {
   "title": "Our projects",
-  "body": "<Grid className=\"padding-bottom-6 tablet:padding-bottom-10\">\n\n## Background\n\n10x projects start as high-impact, “what-if” ideas from federal employees. We evaluate each idea, selecting the most promising ones — considering factors like clarity, feasibility, existing efforts, and impact — to promote to the next phase. Ideas gain both additional funding and increased scrutiny at each phase, as the project team continues to research and prototype solutions. If a project graduates, it means it’s ready for prime time and can start gaining traction within government agencies. \n\n## Projects\n\nWe’ve evaluated hundreds of project ideas — here are some of the innovative current and past projects we have under our belt.  \n\n<ProjectList />\n\n</Grid>\n\n<LocationMenu />",
-  "hero": "<Grid>\n\n# Our projects\n\n> 10x projects range from complex, inter-agency initiatives to more targeted, specialty solutions — but each are innovative, aiming to improve how folks interact with the government. \n\n<ColorBox outer=\"accent-cool\" middle=\"accent-cool-dark\" inner=\"accent-warm-light\" />\n\n</Grid>",
-  "type": "page",
-  "name": "projects",
-  "path": "/projects",
-  "excerpt": "10x projects start as high-impact, “what-if” ideas from federal employees. Our project teams evaluate each idea as it moves through different phases, selecting only a few to promote to the next phase where it gets closer to a launchable product. If a project graduates, it means it’s ready for prime time and can start gaining traction within government agencies. ",
-  "toc": [
+  "slug": "projects",
+  "sections": [
     {
-      "text": "About our projects",
-      "url": "#about-our-projects"
+      "type": "title",
+      "title": "Our Projects",
+      "subtitle": "We’ve evaluated hundreds of high-impact, “what-if” ideas from federal employees, each aiming to improve how folks interact with the government. Here are some of the current and past projects we have under our belt."
     },
     {
-      "text": "Projects",
-      "url": "#projects"
+      "type": "projects"
     }
-  ]
+  ],
+  "theme": "2",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "10x's Projects - Good for Government Tech | 10x.GSA.gov",
+    "description": "10x's good-for-government, good-for-people projects make the world a little faster, smarter, better. Check out some of our projects."
+  }
 }

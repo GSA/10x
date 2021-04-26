@@ -4,7 +4,6 @@ import context from "./context";
 export const initialState = {
   list: { pending: false, data: [], error: null },
   page: { pending: false, data: {}, error: null },
-  taxonomy: { pending: false, data: [], error: null },
 };
 
 export const getPage = createAsyncThunk(
@@ -12,14 +11,19 @@ export const getPage = createAsyncThunk(
   async ({ type = "page", name = "" }) =>
     await context.getContentTypeByName({ type, name })
 );
-export const getTaxonomy = createAsyncThunk(
-  "content/getTaxonomy",
-  async ({ type }) => await context.getTaxonomyByContentType({ type })
-);
 
 export const getList = createAsyncThunk(
   "content/getList",
   async ({ type }) => await context.getAllByContentType({ type })
+);
+
+export const getAllContent = createAsyncThunk(
+  "content/getList",
+  async ({ types }) =>
+    types.reduce(async (acc, type) => {
+      const typeData = await context.getAllByContentType({ type });
+      return { ...acc, [type]: typeData };
+    }, {})
 );
 
 const pending = (key, state) => {
@@ -54,11 +58,6 @@ export const contentSlice = createSlice({
     [getList.pending]: (state) => pending("list", state),
     [getList.fulfilled]: (state, action) => fulfilled("list", state, action),
     [getList.rejected]: (state, action) => rejected("list", state, action),
-    [getTaxonomy.pending]: (state) => pending("taxonomy", state),
-    [getTaxonomy.fulfilled]: (state, action) =>
-      fulfilled("taxonomy", state, action),
-    [getTaxonomy.rejected]: (state, action) =>
-      rejected("taxonomy", state, action),
   },
 });
 

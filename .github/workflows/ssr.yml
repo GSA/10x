@@ -1,0 +1,17 @@
+name: SSR Build
+on: "push"
+jobs:
+  ssr-build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+      - name: SSR Build
+        run: |
+          npm ci
+          npm run federalist:build

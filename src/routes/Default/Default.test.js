@@ -6,6 +6,7 @@ import TestProvider from "test/TestProvider";
 describe("<Default />", () => {
   describe("default render", () => {
     it("should render", () => {
+      window.scrollTo = jest.fn();
       const wrapper = mount(
         <TestProvider>
           <Default />

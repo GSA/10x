@@ -1,13 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
+import One from "./logo1.svg";
+import Two from "./logo2.svg";
+import Three from "./logo3.svg";
 
-const Logo = ({ title }) => {
+const logos = [One, Two, Three];
+
+const Logo = ({ title, variant }) => {
   return (
     <div className="usa-logo" id="basic-logo">
-      <em className="usa-logo__text">10x</em>
+      <img src={logos[variant - 1]} alt="10x Logo" />
     </div>
   );
 };
+
+Logo.defaultProps = {
+  variant: 1,
+};
+
 Logo.propTypes = {
   title: PropTypes.node,
 };
