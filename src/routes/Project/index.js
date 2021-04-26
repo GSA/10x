@@ -55,7 +55,7 @@ const Project = ({ type }) => {
           })}
         >
           <div className="TxProject__nav-link">
-            <Link to="/projects">
+            <Link to="/projects/">
               <Icon icon="arrow-left" />
               Return to our projects
             </Link>

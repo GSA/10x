@@ -118,7 +118,7 @@ const generateSitemap = (collections = ["page", "post", "project"]) => {
     ).map(
       (item) => 
         `${PROD_URL}${sitePaths[name]}/${
-          item.name === HOMEPAGE_KEY ? "" : item.name
+          item.name && item.name === HOMEPAGE_KEY ? "" : item.name + "/"
         }`
     );
     return [...acc, ...pages];

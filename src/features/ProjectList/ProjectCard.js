@@ -6,7 +6,7 @@ import Link from "features/Link";
 
 const ProjectCard = ({ data }) => {
   /* istanbul ignore next */
-  const slug = data.projectUrl || data.path;
+  const slug =  data.projectUrl || ( data.path ) + "/";
 
   return (
     

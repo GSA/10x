@@ -7,7 +7,7 @@ import { Col } from "components/Grid";
 
 const PostCard = ({ data }) => {
   /* istanbul ignore next */
-  const slug = data.path;
+  const slug = data.path + "/";
   const postDate = data.date || Date.now();
   const postDateFormatted = (new Date(postDate)).toLocaleDateString(undefined, {year: 'numeric', month: 'long', day: 'numeric'});
   const excerpt = data.excerpt || data.seo.description;
