@@ -15,7 +15,8 @@ jobs:
         uses: repo-sync/pull-request@v2
         with:
           destination_branch: "main"
-          pr_title: "Deploy Content ${{ github.ref }}"
+          pr_title: "Merge content from demo"
+          pr_body: "${{ github.event.commits[0].message }}"
           pr_label: "content-deploy"
           pr_allow_empty: false
           github_token: ${{ github.token }}
