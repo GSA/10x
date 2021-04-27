@@ -5,7 +5,7 @@ const xml = require("js2xmlparser");
 
 const excludedPathTypes = ["page"];
 
-const PROD_URL = "http://10x.gsa.gov";
+const PROD_URL = "https://10x.gsa.gov";
 
 const CMS_KEY = "cms";
 const DEST_KEY = "src/app/json";
