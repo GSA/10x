@@ -17,7 +17,7 @@ jobs:
           destination_branch: "main"
           pr_title: "Merge content from demo"
           pr_body: "${{ github.event.commits[0].message }}"
-          pr_assignee: "${{ github.event.pusher }}"
+          pr_assignee: "${{ github.event.commits[0].author }}"
           pr_label: "content-deploy"
           pr_allow_empty: false
           github_token: ${{ github.token }}
