@@ -11,6 +11,10 @@
     {
       "origin": "/the-10x-process",
       "forward": "/process/"
+    },
+    {
+      "origin": "/posts/",
+      "forward": "/news-updates/"
     }
   ]
 }
