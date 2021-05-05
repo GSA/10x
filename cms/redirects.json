@@ -17,8 +17,8 @@
       "forward": "/news-updates/"
     },
     {
-      "origin": "/site-scanner/",
-      "forward": "/spotlight/"
+      "origin": "/spotlight/",
+      "forward": "/site-scanner/"
     }
   ]
 }
