@@ -1,6 +1,6 @@
 {
   "excerpt": "A lot of government websites fall short when compared to the private sector — they can be less secure, less accessible, and less monitored. The project team worked to improve this by creating Site Scanner, a website scanner that allows government web managers to gather real-time intel on the performance of the websites they oversee. The tool runs customizable scans and provides data about everything from the use of the U.S. Web Design System to the presence of secure web components, with more functionality coming each sprint. ",
-  "future": "## Next steps\n\nIn early 2021s, Site Scanner will continue to develop new functionalities to solve problems for more people. It looks like the long-term home and support for Spotlight will come from within 10x’s own organization — TTS, where it can thrive alongside other offerings, including the USWDS and the Digital Analytics Program.",
+  "future": "## Next steps\n\nIn early 2021s, Site Scanner will continue to develop new functionalities to solve problems for more people. It looks like the long-term home and support for Site Scanner will come from within 10x’s own organization — TTS, where it can thrive alongside other offerings, including the USWDS and the Digital Analytics Program.",
   "topics": "Compliance officers, Designers, Engineers, Government web managers",
   "phaseData": {
     "phase": "4",
