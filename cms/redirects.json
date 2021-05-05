@@ -15,6 +15,10 @@
     {
       "origin": "/posts/",
       "forward": "/news-updates/"
+    },
+    {
+      "origin": "/projects/spotlight/",
+      "forward": "/projects/site-scanner/"
     }
   ]
 }
