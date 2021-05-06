@@ -42,7 +42,7 @@
     "yaml": "^2.0.0-1"
   },
   "scripts": {
-    "index-content": "node runIndex.js",
+    "index-content": "rm -rf src/app/json/* && node runIndex.js",
     "start": "npm run index-content && react-scripts start",
     "build": "REACT_APP_BRANCH=$BRANCH react-scripts build && REACT_APP_BRANCH=$BRANCH react-snap",
     "test": "react-scripts test",
