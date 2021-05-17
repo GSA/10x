@@ -1,16 +1,30 @@
 {
   "excerpt": "Government agencies manage a vast number of systems that contain personally identifiable information (PII) for both their own employees and in some cases, the public. Every agency has an office dedicated to protecting this data, but not all of them are equipped with the modern technology needed to protect it. The project team looked at the  end-to-end processes used by government privacy offices and developed an innovative enhancement to their workflows — SORNDASH — a customizable, interactive dashboard that allows privacy offices easy access to the PII living within the systems they oversee, making it easier to manage and protect.  ",
+  "future": "We believe SORN DASH has a bright future, with more potential than we could unlock with our limited 10x funding. The technology behind SORN DASH could be extended to cover other privacy documents, such as privacy impact statements (PIAs). SORN DASH could be scaled even further to a point where it serves as a primary resource for the public to turn to when inquiring about the information the government may have about them. It could eventually contribute to implementation of the CASES Act of 2019. Mostly, we hope SORN DASH will continue to deliver value enough that it could influence upstream elements of PII management. For example, the structured data offered by SORN DASH could become the standard for future privacy documentation.",
   "topics": "Privacy managers",
   "phaseData": {
-    "status": "1",
+    "status": "3",
     "phase": "4",
-    "summary": "Phase 3 was completed and is being used by GSA; Phase 4 is still in progress"
+    "summary": "Graduated after Phase 4"
   },
+  "impact": "First, there are a host of reasons why an agency IT system would store PII. For example, an agency may hold the social security numbers or credit information of members of the public who have applied for housing assistance, or entrepreneurs who have secured government loans. All of this information could be valuable to hackers who could target government systems with malware. And on top of that, the government’s collection and management of private information is a key factor in shaping the public’s level of trust and confidence in government. We felt these reasons were compelling enough to dedicate at least a Phase 1 investigation to see if we could make a difference for privacy officers.",
+  "summary": [
+    {
+      "text": "Privacy Offices play a critical role in protecting the privacy of Americans\n"
+    },
+    {
+      "text": "Privacy Offices are not always equipped with modern technology\n"
+    },
+    {
+      "text": "Small, targeted technical interventions can help privacy experts do their jobs more efficiently \n"
+    }
+  ],
+  "approach": "### What we did\n\nWe built a custom dashboard that allows privacy offices--and everyone else--to perform targeted searches across thousands of System of Records Notices (SORN), which are the documents that inform the public about the existence and current state of government IT systems that collect and store PII.\n\n### How we did it\n\nFirst, we validated the problem and opportunity posed by the idea author. We started close to home by engaging with our own agency’s privacy office to learn about their work. This research uncovered the opportunity to help the officers work more efficiently by making it easier to locate privacy documents and specific information within them. Based on the research findings, we quickly prototyped a simple tool that hook connected\n\n### Where we are today\n\nSORN DASH lives on cloud.gov and is in use by privacy officers in many agencies. We found a sustainable path forward for the product by transferring ownership to an identity management focused-group within GSA. SORN DASH has a dedicated product owner and appropriated funding that will help it deliver impact going forward.",
   "slug": "devops-for-privacy-offices",
-  "intro": "Government agencies manage a vast number of systems that contain personally identifiable information (PII) for both their own employees and in some cases, the public. Every agency has an office dedicated to protecting this data, but not all of them are equipped with the modern technology needed to protect it. The project team looked at the  end-to-end processes used by government privacy offices and developed an innovative enhancement to their workflows—a customizable, interactive dashboard that allows privacy offices easy access to the PII living within the systems they oversee, making it easier to manage and protect.  \n",
+  "intro": "Protecting the privacy of Americans is a critically important obligation the government must meet while delivering public services. The civil servants at the center of this mandate work in agency privacy offices, which are tasked with ensuring their agencies are managing the personally identifiable information (PII) held within their IT systems responsibly. For example, privacy officers ensure that elements of PII are deleted when there is no longer a reason for the government to store it. And if an agency system is targeted by malware, it’s up to the privacy officers to find out what PII may be at risk. The problem is that privacy offices don’t always have access to modern technology, and that means a lot of time spent on manual, repetitive tasks. Our bet was simple: better equipped privacy officers equals better protected PII. To get there, we spent over a year learning about the people, policies, and possibilities of the nuanced world of government privacy management. We learned that the people are dedicated, the policies are navigable, and the possibilities are plentiful. Oh, and we shipped a product along the way.",
   "projectType": "Innovation",
-  "projectUrl": "https://all-sorns.app.cloud.gov/",
-  "subtitle": "What if we could help the folks who keep private information private?",
+  "projectUrl": "",
+  "subtitle": "What if an elegant product could change the way the government handles private information?",
   "title": "DevOps for Privacy Offices",
   "links": [
     {
@@ -22,5 +36,9 @@
   "seo": {
     "title": "DevOps for Privacy Offices - Project Overview | 10x.GSA.gov",
     "description": "10x developed an innovative enhancement to their workflows — SORNDASH — a customizable, interactive dashboard that allows privacy offices easy access to the PII living within the systems they oversee, making it easier to manage and protect.  "
+  },
+  "team": {
+    "submitter": "Andrew Maier, TTS Alum",
+    "members": "Andrew Hyder, Peter Rowland, Igor Korenfeld, Laura Gerhardt, Eric Richards, Qituwra Anderson,  Nikki Zeichner, Justin Koufopoulos, and Brian Fox"
   }
 }
