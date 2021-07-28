@@ -19,7 +19,7 @@
     "js2xmlparser": "^4.0.1",
     "netlify-cms-app": "^2.15.20",
     "node-env-run": "^4.0.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^6.0.1",
     "puppeteer": "^9.0.0",
     "react": "^16.13.1",
     "react-axe": "^3.5.3",
