@@ -1,5 +1,5 @@
 {
-  "excerpt": "Determining who is eligible for what government services isn’t easy with today’s technology. Eligibility policies change frequently, and the IT systems that power these safety net programs (think Medicaid and SNAP) are not great at keeping up with changing eligibility criteria—which can mean a delay for people who should receive benefits. This project explored what *tomorrow’s* technology for determining eligibility might look like to make it faster and more accurate when policies change, namely writing policies in a programming language so state IT systems can connect to the information automatically.",
+  "excerpt": "Determining who is eligible for what government services isn’t easy with today’s technology. Eligibility policies change frequently, and the IT systems that power these safety net programs (think Medicaid and SNAP) are not great at keeping up with changing eligibility criteria—which can mean a delay for people who should receive benefits. This project explored what tomorrow’s technology for determining eligibility might look like to make it faster and more accurate when policies change, namely writing policies in a programming language so state IT systems can connect to the information automatically.",
   "future": "## Next Steps\n\nFrom here, we are continuing to socialize our approach with interested partners and fielding incoming inquiries into our work. Our next step is to document the effect that this project will have long-term by tracking where our products and methodologies are reproduced.",
   "topics": "Policy administrators, Program administrators, Social safety program administrators",
   "phaseData": {
@@ -48,6 +48,6 @@
   },
   "team": {
     "submitter": "Ed Mullen, TTS",
-    "members": "Ed Mullen, Mike Gintz, Alex Soble, Vraj Mohan, Catherine Devlin, Shawnique Muller, Jacklynn Pham"
+    "members": "Ed Mullen, Mike Gintz, Alex Soble, Vraj Mohan, Catherine Devlin, Shawnique Muller, Jacklynn Pham, and Carrie Feher"
   }
 }
