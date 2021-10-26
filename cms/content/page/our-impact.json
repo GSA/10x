@@ -1,0 +1,55 @@
+{
+  "title": "Our Impact",
+  "slug": "our-impact",
+  "sections": [
+    {
+      "type": "title",
+      "title": "Our impact",
+      "subtitle": "FY2021 Impact Report"
+    },
+    {
+      "type": "markdown",
+      "body": "",
+      "className": "desktop:width-tablet-lg"
+    },
+    {
+      "type": "report",
+      "items": [
+        {
+          "subtitle": "Investigation",
+          "title": "Is this a bad idea?",
+          "suffix": "$",
+          "body": "Teams research if the idea is trying to solve a real problem in the federal space worth solving and identify potential roadblocks, opportunities, and reach.",
+          "className": "bg--1"
+        },
+        {
+          "subtitle": "Discovery",
+          "title": "Is this a good idea?",
+          "suffix": "$$",
+          "body": "Teams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
+          "className": "bg--2"
+        },
+        {
+          "subtitle": "Development",
+          "title": "Will anyone use this?",
+          "suffix": "$$$",
+          "body": "Teams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
+          "className": "bg--3"
+        },
+        {
+          "subtitle": "Scale",
+          "title": "Will everyone use this?",
+          "suffix": "$$$$",
+          "body": "Teams receive a final round of funding to scale the solution to as many users as possible and implement an independent business model to make this thing a reality.",
+          "className": "bg--4"
+        }
+      ]
+    }
+  ],
+  "theme": "3",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "Our Impact | 10x.GSA.gov",
+    "description": "View the FY21 Impact Report."
+  }
+}

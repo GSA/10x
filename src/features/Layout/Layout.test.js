@@ -16,6 +16,7 @@ const itemsWithGrid = [
   { type: "markdownSpecial" },
   { type: "phaseDescription" },
   { type: "phaseGraphic" },
+  { type: "report" },
   { type: "statsCards" }
 ];
 
