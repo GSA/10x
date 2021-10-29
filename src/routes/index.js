@@ -4,6 +4,7 @@ import Default from "./Default";
 import Page from "./Page";
 import Post from "./Post";
 import Project from "./Project";
+import Report from "./Report";
 
 export default ({ location }) => (
   <Switch>
@@ -18,6 +19,9 @@ export default ({ location }) => (
     </Route>
     <Route key="page" path="/:name">
       <Page />
+    </Route>
+    <Route key="report" path="/:name">
+      <Report />
     </Route>
 
   </Switch>

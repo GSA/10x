@@ -10,7 +10,7 @@ import Mdx from "features/Mdx";
 import PhaseDescription from "./templates/PhaseDescription";
 import PhaseGraphic from "./templates/PhaseGraphic";
 import ProjectList from "features/ProjectList";
-import Report from "./templates/Report";
+import ReportList from "features/ReportList";
 import StatsCards from "./templates/StatsCards";
 import Title from "./templates/Title";
 
@@ -38,7 +38,7 @@ const components = {
   phaseDescription: PhaseDescription,
   phaseGraphic: PhaseGraphic,
   projects: ProjectList,
-  report: Report,
+  reports: ReportList,
   statsCards: StatsCards,
   title: Title,
 };

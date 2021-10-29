@@ -2,11 +2,13 @@
 import PageData from "app/json/content/page/index.json";
 import PostData from "app/json/content/post/index.json";
 import ProjectData from "app/json/content/project/index.json";
+import ReportData from "app/json/content/report/index.json";
 
 const types = {
   page: PageData,
   post: PostData,
   project: ProjectData,
+  report: ReportData,
 };
 
 export const getAllByContentType = async (props) => {

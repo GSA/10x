@@ -425,6 +425,13 @@ modules:
       - <<: *classname
         widget: "hidden"
 
+  modReports: &modReports
+    label: Reports
+    name: reports
+    widget: "object"
+    fields:
+      - <<: *classname
+
   modSections: &modSections
     label: "Sections"
     name: "sections"
@@ -926,6 +933,156 @@ collections:
           - <<: *modPhaseDescription
           - <<: *modStatsCards
       - <<: *preFooter
+
+  - name: reports
+    extension: json
+    label: Reports
+    label_singular: Report
+    folder: cms/content/report
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    preview_path: "{{slug}}"
+    identifier_field: slug
+    summary: "{{title}} ({{slug}})"
+    editor:
+      preview: false
+    fields:
+      - <<: *slug
+      - <<: *title
+        label: "Report Page and card title"
+      - <<: *headline
+        label: "Report Page and card question"
+        hint: "Question posed at the top of the report page and report card"
+        required: true
+      - <<: *modSeo
+      - label: "Report Card External Url"
+        name: "reportUrl"
+        widget: "string"
+        required: false
+        hint: "If provided, this overrides the default link to the Report's Detail Page. Provide a full link including https:// for report cards that should link externally instead of the Report Detail Page."
+      - label: "Report Card Excerpt"
+        name: "excerpt"
+        hint: "A short paragraph describing the report."
+        widget: "text"
+      - label: "Report Card Style"
+        name: "template"
+        hint: "Choose one of the card style templates for this report."
+        widget: "select"
+        required: true
+        options:
+          - label: "1 - Ocean splatter"
+            value: "1"
+          - label: "2 - Grimace wash"
+            value: "2"
+          - label: "3 - Tiger swipe"
+            value: "3"
+          - label: "4 - Ocean swirl"
+            value: "4"
+          - label: "5 - Tiger scratch"
+            value: "5"
+          - label: "6 - Grimace scribble"
+            value: "6"
+      - label: "Report Page Phase & Status"
+        name: "phaseData"
+        widget: "object"
+        collapsed: true
+        required: false
+        hint: "Set the phase and status information here. It will show up at the end of the 'What we did' section"
+        fields:
+          - label: "Phase"
+            name: "phase"
+            widget: "select"
+            options: ["1", "2", "3", "4"]
+            default: "1"
+            required: false
+          - label: "Status"
+            name: "status"
+            widget: "select"
+            required: false
+            options:
+              [
+                { label: "In Progress", value: "1" },
+                { label: "Done", value: "2" },
+                { label: "Graduated", value: "3" },
+              ]
+            default: "1"
+          - <<: *text
+            name: summary
+            label: "Phase summary"
+            hint: "Short text (no punctuation at the end) that shows up below the phase timeline."
+            required: false
+      - label: "Report Topics"
+        name: "topics"
+        widget: "hidden"
+        hint: "Separate tag values by comma."
+        required: false
+      - label: "Report Type"
+        name: "reportType"
+        widget: "hidden"
+        required: false
+        options: ["Innovation", "Transformation", "Enhancement"]
+      - label: "Report Page 'In a nutshell' sidebar"
+        label_singular: "list item"
+        name: "summary"
+        hint: "These items fill out the 'In a nutshell' sidebar on the Report Page."
+        widget: "list"
+        required: false
+        fields:
+          - <<: *text
+            hint: "No period following bullets"
+      - label: "Report Page Team sidebar"
+        name: "team"
+        hint: "Provide the Idea Submitter and the rest of the report team in the sidebar on the Report Page."
+        widget: "object"
+        required: false
+        fields:
+          - label: "Idea Submitter"
+            name: "submitter"
+            widget: "string"
+            required: false
+            hint: "Name, Title, Department or Agency"
+          - label: "Members"
+            name: "members"
+            widget: "text"
+            required: false
+            hint: "Names only, separated by commas"
+      - label: "Report Page Links sidebar"
+        label_singular: "link"
+        name: "links"
+        widget: "list"
+        required: false
+        hint: "Text and URLs for links for further research"
+        fields:
+          - <<: *text
+            required: true
+          - <<: *link
+            required: true
+      - widget: "markdown"
+        name: "intro"
+        label: "Report Page Introduction"
+        required: false
+        hint: "Displays just below the Report Page Headline and Report Page Title."
+      - widget: "markdown"
+        name: "impact"
+        label: "Why this matters"
+        required: false
+        hint: "First content section on the report page. Explain the report's impact and importance."
+        default: "## Why this matters\n\n This report will deliver impact...."
+      - widget: "markdown"
+        name: "approach"
+        label: "What we did"
+        required: false
+        hint: "Second content section on the report page. Explain the report's approach. Ends with phase timeline graphic."
+        default: "## What we did\n\n The team delivered...\n\n### How we did it \n\n...\n\n### Where we are today\n\n ..."
+      - widget: "markdown"
+        name: "future"
+        label: "Next steps"
+        required: false
+        hint: "Third content section on the report page. Explain the report's future."
+        default: "## Why this matters\n\n This report will deliver impact...."
+      - <<: *preFooter
+        required: false
 
   - name: footers
     extension: json
