@@ -448,6 +448,7 @@ modules:
       - <<: *modGhostwriter
       - <<: *modProjects
       - <<: *modPhases
+      - <<: *modReports
       - <<: *modTitle
 
   modSeo: &modSeo
@@ -707,6 +708,7 @@ collections:
           - <<: *modProjects
           - <<: *modPhases
           - <<: *modPhaseDescription
+          - <<: *modReports
           - <<: *modStatsCards
           - <<: *modTitle
       - <<: *preFooter
@@ -931,6 +933,7 @@ collections:
           - <<: *modProjects
           - <<: *modPhases
           - <<: *modPhaseDescription
+          - <<: *modReports
           - <<: *modStatsCards
       - <<: *preFooter
 
@@ -1031,9 +1034,9 @@ collections:
         fields:
           - <<: *text
             hint: "No period following bullets"
-      - label: "Report Page Team sidebar"
-        name: "team"
-        hint: "Provide the Idea Submitter and the rest of the report team in the sidebar on the Report Page."
+      - label: "Report Page Nav sidebar"
+        name: "nav"
+        hint: "Provide the Idea Submitter and the rest of the report mnan nav in the sidebar on the Report Page."
         widget: "object"
         required: false
         fields:

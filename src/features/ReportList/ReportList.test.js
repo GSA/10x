@@ -25,7 +25,7 @@ describe("ReportList", () => {
       );
       await runAsyncRender(wrapper);
 
-      const card = wrapper.find(".ProjectCard").first();
+      const card = wrapper.find(".ReportCard").first();
       card.simulate("click");
       await runAsyncRender(wrapper);
       expect(wrapper.find(".ReportList").hostNodes().length).toBe(1);

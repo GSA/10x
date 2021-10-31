@@ -106,8 +106,8 @@ const indexMenus = () => {
   });
 };
 
-const generateSitemap = (collections = ["page", "post", "project"]) => {
-  const sitePaths = { page: "", post: "/posts", project: "/projects" };
+const generateSitemap = (collections = ["page", "post", "project", "report"]) => {
+  const sitePaths = { page: "", post: "/posts", project: "/projects", report: "/reports" };
   const data = collections.reduce((acc, name) => {
     const file = path.join(DEST_PATH, "content", name, "index.json");
     fs.ensureFile(file);

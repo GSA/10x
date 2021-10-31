@@ -17,12 +17,11 @@ export default ({ location }) => (
     <Route key="post" path="/posts/:name">
       <Post />
     </Route>
+    <Route key="report" path="/reports/:name">
+      <Report />
+    </Route>
     <Route key="page" path="/:name">
       <Page />
     </Route>
-    <Route key="report" path="/:name">
-      <Report />
-    </Route>
-
   </Switch>
 );
