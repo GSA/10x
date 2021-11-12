@@ -130,7 +130,6 @@ modules:
             value: "TxChallenge__pitch"
           - label: "Process funnel graphic"
             value: "TxFunnel"
-          
 
   modGhostwriter: &modGhostwriter
     label: "Ghostwriter hero"
@@ -183,6 +182,15 @@ modules:
         label: "Horizontal styled list button"
         hint: "If provided, adds a button just after the list itself."
 
+  modByTheNumbers: &modByTheNumbers
+    label: "By the numbers"
+    name: "byTheNumbers"
+    hint: "Shows by the numbers at this location in the page."
+    widget: "object" #might be a boolean
+    fields:
+      - <<: *classname
+        widget: "hidden"
+  
   modPhases: &modPhases
     label: "10x Phases Graphic"
     name: "phaseGraphic"
@@ -362,8 +370,6 @@ modules:
             hint: "Text displayed below the number."
             widget: "string"
 
-
-
   modLinks: &modLinks
     label: Links
     name: links
@@ -432,6 +438,15 @@ modules:
     fields:
       - <<: *classname
 
+  modReportTables: &modReportTables
+    label: "Report table"
+    name: "reportTables"
+    hint: "Shows a stylized report table at this location in the page."
+    widget: "object" #might be a boolean
+    fields:
+      - <<: *classname
+        widget: "hidden"
+
   modSections: &modSections
     label: "Sections"
     name: "sections"
@@ -439,6 +454,7 @@ modules:
     hint: "Choose sections from the dropdown to fill out the page."
     types:
       - <<: *modBreak
+      - <<: *modByTheNumbers
       - <<: *modCallout
       - <<: *modCards
       - <<: *modLinks
@@ -698,6 +714,7 @@ collections:
         widget: "list"
         types:
           - <<: *modBreak
+          - <<: *modByTheNumbers
           - <<: *modCallout
           - <<: *modCards
           - <<: *modLinks
@@ -918,6 +935,7 @@ collections:
         widget: "list"
         types:
           - <<: *modBreak
+          - <<: *modByTheNumbers
           - <<: *modCallout
           - <<: *modCards
           - <<: *modLinks
@@ -986,35 +1004,6 @@ collections:
             value: "5"
           - label: "6 - Grimace scribble"
             value: "6"
-      - label: "Report Page Phase & Status"
-        name: "phaseData"
-        widget: "object"
-        collapsed: true
-        required: false
-        hint: "Set the phase and status information here. It will show up at the end of the 'What we did' section"
-        fields:
-          - label: "Phase"
-            name: "phase"
-            widget: "select"
-            options: ["1", "2", "3", "4"]
-            default: "1"
-            required: false
-          - label: "Status"
-            name: "status"
-            widget: "select"
-            required: false
-            options:
-              [
-                { label: "In Progress", value: "1" },
-                { label: "Done", value: "2" },
-                { label: "Graduated", value: "3" },
-              ]
-            default: "1"
-          - <<: *text
-            name: summary
-            label: "Phase summary"
-            hint: "Short text (no punctuation at the end) that shows up below the phase timeline."
-            required: false
       - label: "Report Topics"
         name: "topics"
         widget: "hidden"
@@ -1050,17 +1039,6 @@ collections:
             widget: "text"
             required: false
             hint: "Names only, separated by commas"
-      - label: "Report Page Links sidebar"
-        label_singular: "link"
-        name: "links"
-        widget: "list"
-        required: false
-        hint: "Text and URLs for links for further research"
-        fields:
-          - <<: *text
-            required: true
-          - <<: *link
-            required: true
       - widget: "markdown"
         name: "intro"
         label: "Report Page Introduction"

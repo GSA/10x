@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Grid } from "components/Grid";
 import Break from "components/Break";
+import ByTheNumbersGraphic from "./templates/ByTheNumbersGraphic";
 import Callout from "./templates/Callout";
 import Cards from "./templates/Cards";
 import Links from "./templates/Links";
@@ -16,6 +17,7 @@ import Title from "./templates/Title";
 
 const components = {
   break: Break,
+  byTheNumbersGraphic: ByTheNumbersGraphic,
   callout: Callout,
   cards: Cards,
   links: Links,

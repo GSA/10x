@@ -15,7 +15,8 @@ import Break from "components/Break";
 import Card from "components/Card";
 import Mdx from "features/Mdx";
 import useScrollToTop from "utils/useScrollToTop";
-import PhaseStatus from "features/Layout/templates/PhaseStatus";
+import ByTheNumbersGraphic from "features/Layout/templates/ByTheNumbersGraphic";
+import ReportTable from "features/Layout/templates/ReportTable";
 
 const Report = ({ type }) => {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const Report = ({ type }) => {
   useScrollToTop();
   const page = useSelector((state) => state.content.page);
   const { pending, data, error } = page;
-  
+
   if (pending) {
     return (
       <Grid>
@@ -54,74 +55,65 @@ const Report = ({ type }) => {
             [`TxReport--template-${data.template}`]: Boolean(data.template),
           })}
         >
-          <div className="TxReport__nav-link">
-            <Link to="/reports/">
-              <Icon icon="arrow-left" />
-              Return to reports
-            </Link>
-          </div>
-
-          <h1 className="TxReport__subtitle">{data.subtitle}</h1>
-
-          <Row gap="4">
+          <Row gap="1" className="report-content">
             <Col size="12" desktop="8">
-              <h2 className="TxReport__title">{data.title}</h2>
+              <h1 className="TxReport__title">{data.title}</h1>
               <p className="TxReport__intro">{data.intro}</p>
-              <Break color="accent-cool" variant="wide" />
             </Col>
-            {data.summary && (
-              <Col size="12" desktop="4">
-                <aside>
-                  <Card className="TxReport__summary" title="In a nutshell">
+          </Row>
+          <Row gap="4">
+            <Col size="12" desktop="3">
+
+              <div id="nav-sticky" className="nav-sticky">
+                <h4 className="TxReport__nav-header">{data.navHeader}</h4>
+                <div className="TxLinks">
+                  {data.nav && (
                     <ul>
-                      {data.summary.map((item, i) => (
-                        <li key={`summary-${i}`}>
-                          <Icon
-                            icon="check-circle"
-                            className="text-accent-cool margin-right-1"
-                          />
-                          <span>{item.text}</span>
+                      {data.nav.map((item, i) => (
+                        <li className="TxLinks__item">
+                          <a href={item.link}>{item.text}</a>
                         </li>
                       ))}
                     </ul>
-                  </Card>
-                </aside>
-              </Col>
-            )}
-          </Row>
+                  )}
+                </div>
+              </div>
 
-          <Row gap="4">
-            <Col size="12" desktop="8" className="TxReport__content">
-              {data.impact &&
-                <Card>
-                   <Mdx>{data.impact}</Mdx>
-                </Card>
-              }
-
-              {data.approach &&
-                <Card>
-                   <Mdx>{data.approach}</Mdx>
-                   <PhaseStatus data={data.phaseData} />
-                </Card>
-              }
-
-              {data.future &&
-                <Card>
-                   <Mdx>{data.future}</Mdx>
-                </Card>
-              }
             </Col>
+            <Col size="12" desktop="9" className="TxReport__content">
+              {data.sections && (
+                <div>
+                  {data.sections.map((item, i) => (
+                    <section>
+                      <Break color="accent-green" variant="extra-wide" />
+                      <h2 id={item.target}>{item.title}</h2>
+                      
+                      {item.impact &&
+                        <Mdx>{item.impact}</Mdx>
+                      }
 
-            <Col size="12" desktop="4">
-              <aside className="TxReport__details">
-                <Card>
-                  <Nav data={data.Nav} />
-                </Card>
-                <Break color="base-lighter" variant="wide" />
-                <Card>
-                  <Links data={data.links} />
-                </Card>
-              </aside>
+                      {item.byTheNumbersStats &&
+                        <div>
+                          <ByTheNumbersGraphic heading={item.byTheNumbersHeading} stats={item.byTheNumbersStats} />
+                        </div>
+                      }
+
+                      <Mdx>{item.content}</Mdx>
+
+                      {item.the10xTeam &&
+                        <div className={item.the10xTeam}></div>
+                      }
+
+                      {item.reportTableData &&
+                        <div>
+                          <ReportTable heading={item.reportTableHeading} headers={item.reportTableHeaders} data={item.reportTableData} />
+                        </div>
+                      }
+
+                    </section>
+                  ))}
+                </div>
+              )}
             </Col>
           </Row>
         </Grid>
@@ -129,6 +121,60 @@ const Report = ({ type }) => {
     </div>
   );
 };
+
+window.addEventListener('DOMContentLoaded', () => {
+
+  (function () {
+
+    function init() {
+      doSmoothScrolling();
+      doActiveNav();
+    }
+
+    function doSmoothScrolling() {
+      document.querySelectorAll("#nav-sticky ul li a").forEach(link => {
+
+        link.addEventListener("click", event => {
+          event.preventDefault();
+          let target = document.querySelector(event.target.hash);
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        });
+      });
+    }
+
+    function doActiveNav() {
+      let fromTopVar = 400; // On scroll, adjust the nav active state / section vertical position
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+        document.querySelectorAll("#nav-sticky ul li a").forEach(link => {
+          let header = document.querySelector(link.hash);
+          let section = header.parentElement;
+          if (
+            section.offsetTop <= (fromTop - fromTopVar) &&
+            section.offsetTop + section.offsetHeight > (fromTop - fromTopVar)
+          ) {
+            link.parentElement.classList.add("active");
+          } else {
+            link.parentElement.classList.remove("active");
+          }
+        });
+      });
+    }
+
+    init();
+  })();
+});
+
+
+
+
+
+
+
 
 Report.defaultProps = { type: "report", name: "" };
 

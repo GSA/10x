@@ -1,0 +1,60 @@
+.ReportTable {
+  background-color: rgba(217, 217, 240, .24);
+  padding: 40px;
+  padding-top: 30px;
+  position: relative;
+  width: 100%;
+  table {
+    margin: 0;
+    width: 100%;
+    th {
+      border-bottom: 2px solid #FF6839;
+      color:#3A337B;
+      font-size: 1.2rem;
+    }
+  }
+  &__heading {
+    color: #FF6839;
+    font-size: 1.2rem;
+  }
+  &__item {
+    position: absolute;
+    overflow: visible;
+    width: 125px;
+    z-index: 1;
+    &-1 {
+      left: 50px;
+      top: 100px;
+    }
+    &-2 {
+      left: 214px;
+      top: 100px;
+    }
+    &-3 {
+      left: 380px;
+      top: 86px;
+    }
+    &-4 {
+      left: 50px;
+      top: 270px;
+    }
+    &-5 {
+      left: 214px;
+      top: 270px;
+    }
+    &-6 {
+      left: 380px;
+      top: 270px;
+    }
+    &-7 {
+      left: 50px;
+      top: 412px;
+    }
+  }
+  &__label {
+    display: block;
+    @include u-font("sans", "2xs");
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+}

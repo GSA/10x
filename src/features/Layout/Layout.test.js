@@ -6,6 +6,7 @@ import Provider from "test/TestProvider";
 
 const itemsWithGrid = [
   { type: "break" },
+  { type: "byTheNumbersGraphic" },
   { type: "markdown" },
   { type: "projects" },
   { type: "callout" },

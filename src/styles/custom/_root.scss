@@ -92,7 +92,7 @@ h5,
 .usa-app {
   min-height: 100vh;
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background: rgb(69, 217, 217);
 
   &__theme-1 {
@@ -195,6 +195,19 @@ h5,
         #d9d9f7 50%,
         #f6f6fe 100%
       );
+    }
+  }
+
+  &__theme-9 {
+    .TxContent {
+      background: #ffffff;
+      .usa-app__bg {
+        background-image: url("~styles/images/report-1-bg.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: -120px;
+        background-size: 1400px;
+      }
     }
   }
 }

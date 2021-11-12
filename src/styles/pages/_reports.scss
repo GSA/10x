@@ -1,9 +1,23 @@
 $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
+$c-report-header: #006680;
 
 .TxReport,
 .Tx__reports {
-  @include u-color("white");
-
+  section {
+    padding-bottom: 6rem;
+  }
+  &__nav-header {
+    @include u-color("white");
+    background-image: url("~styles/images/report-lilac-brush-stroke.png");
+    background-position-x: left;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    left: -50px;
+    padding-top: 0.2rem;
+    position: relative;
+  }
   &__nav-link {
     a {
       @include linkVariant--light;
@@ -13,12 +27,14 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
     }
   }
   &__title {
+    @include u-color("white");
     @include u-margin-top(2);
   }
   &__subtitle {
     @include u-margin-top(2);
   }
   &__intro {
+    @include u-color("white");
     @include u-font("serif", 10);
   }
   &__summary {
@@ -79,6 +95,9 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
     }
   }
   &__content {
+    h2 {
+      color: $c-report-header;
+    }
     .usa-card__container {
       box-shadow: $card-shadow;
       .usa-card__body {
@@ -129,7 +148,7 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
         background: transparent;
         box-shadow: none;
 
-        @include u-color("white");
+        @include u-color("base-dark");
       }
 
       .usa-card__body {
@@ -151,8 +170,8 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
     @include u-color("ink");
   }
 
-  @mixin ProjectContentBg($t: 1) {
-    .TxProject__content {
+  @mixin ReportContentBg($t: 1) {
+    .TxReport__content {
       .usa-card__container {
         background-size: 50%;
         background-position-x: right;
@@ -199,27 +218,30 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
 
   &--template {
     &-1 {
-      @include ProjectContentBg(1);
+      @include ReportContentBg(1);
     }
     &-2 {
-      @include ProjectContentBg(2);
+      @include ReportContentBg(2);
     }
     &-3 {
-      @include ProjectContentBg(3);
+      @include ReportContentBg(3);
     }
     &-4 {
-      @include ProjectContentBg(4);
+      @include ReportContentBg(4);
     }
     &-5 {
-      @include ProjectContentBg(5);
+      @include ReportContentBg(5);
     }
     &-6 {
-      @include ProjectContentBg(6);
+      @include ReportContentBg(6);
+    }
+    &-9 {
+      @include ReportContentBg(1);
     }
   }
 }
 
-.usa-app__theme-projects {
+.usa-app__theme-reports {
   background: linear-gradient(
     180deg,
     #{$x-charcoal} 2px,
@@ -258,15 +280,52 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
 }
 
 .TxLinks {
+  @include u-font-family("serif");
+  a {
+    text-decoration: none;
+  }
   ul {
     padding: 0;
     margin: 0;
     list-style: none;
     li {
-      @include u-margin-bottom(2);
+      border-top: 1px solid #{color("base-light")};
+      @include u-margin-right(2);
+      @include u-padding-left(3);
+      padding-top: 6px;
+      margin-bottom: 2px;
+      height: 41px;
+      &.active {
+        background-position-y: 0.3rem;
+        background-image: url("~styles/images/report-nav-active-bar.png");
+        background-repeat: no-repeat;
+        font-weight: bold;
+      }
       a {
-        line-height: 150%;
+        line-height: normal;
       }
     }
   }
+}
+
+.nav-sticky {
+  height: auto;
+  margin-bottom: 8px;
+  max-height: calc(100vh - 16px);
+  position: sticky;
+  top: 0;
+  top: 10px;
+  width: auto;
+}
+
+.report-content {
+  margin-bottom: 10rem;
+}
+
+.the10xTeam {
+  background-image: url("~styles/images/the-10x-team.png");
+  background-position-y: top;
+  height: 96px;
+  width: 398px;
+
 }

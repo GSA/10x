@@ -8,14 +8,12 @@ const Links = ({ data }) => {
     Array.isArray(data) &&
     data.length && (
       <div className="TxLinks">
-        <h3>Learn more</h3>
         <ul>
           {data.map((item, i) => {
             return (
               <li key={`TxLinks__item-${i}`} className="TxLinks__item">
                 <Link url={item.link}>
                   {item.text}
-                  <Icon className="margin-left-1" icon="external-link-alt" />
                 </Link>
               </li>
             );
