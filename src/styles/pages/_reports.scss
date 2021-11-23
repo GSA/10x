@@ -4,19 +4,36 @@ $c-report-header: #006680;
 .TxReport,
 .Tx__reports {
   section {
-    padding-bottom: 6rem;
+    margin-left: -70%;
+    padding: 4rem 390% 4rem 70%;
+    width: 560%;
+    &.light-gray {
+      background-color: rgba(216, 216, 216, 0.25);
+    }
+    &.dark-gray {
+      background-color: $x-charcoal;
+      @include u-color("white");
+    }
   }
   &__nav-header {
-    @include u-color("white");
     background-image: url("~styles/images/report-lilac-brush-stroke.png");
-    background-position-x: left;
+    background-position-x: -4px;
     background-repeat: no-repeat;
+    @include u-color("white");
     display: flex;
     height: 44px;
-    justify-content: center;
-    left: -50px;
-    padding-top: 0.2rem;
+    justify-content: left;
+    left: 0;
+    padding-left: 5rem;
+    padding-top: 0.4rem;
     position: relative;
+    @include at-media("desktop") {
+      background-position-x: left;
+      justify-content: center;
+      left: -50px;
+      padding-left: 1rem;
+      padding-top: 0.2rem;
+    }
   }
   &__nav-link {
     a {
@@ -37,66 +54,59 @@ $c-report-header: #006680;
     @include u-color("white");
     @include u-font("serif", 10);
   }
-  &__summary {
-    @include u-color("white");
-    .usa-card {
-      &__container {
-        margin: 0;
-        padding-top: 0;
-        @include u-padding-bottom(2);
-        background-color: transparent;
-        @include at-media("desktop") {
-          @include u-padding-top(4);
-        }
-      }
-      &__header,
-      &__body {
-        border: none;
-        background-size: 100% 100%;
-        background-position-x: center;
-        background-repeat: no-repeat;
-      }
-      &__header {
-        @include u-padding-left(6);
-        @include u-padding-top(10);
-        @include u-padding-bottom(2);
-        background-image: url("~styles/images/in-nutshell-header.png");
-        background-position-y: bottom;
-        h2 {
-          padding: 0;
-          margin: 0;
-          @include u-color("white");
-        }
-      }
-      &__body {
-        @include u-padding-left(6);
-        @include u-padding-right(10);
-        @include u-padding-bottom(6);
-        @include u-color("white");
-        background-image: url("~styles/images/in-nutshell-body.png");
-        background-position-y: top;
-        ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          @include u-font("sans", "xs");
-
-          li {
-            display: flex;
-            align-items: baseline;
-            @include u-margin-bottom(2);
-
-            svg {
-              transform: translateY(2px);
-            }
-          }
-        }
-      }
-    }
-  }
   &__content {
     h2 {
       color: $c-report-header;
+    }
+    .calloutHalf {
+      @include u-font("serif", 6);
+      align-items: start;
+      background-image: url("~styles/images/callout-lilac-half-lg.png");
+      background-position-x: center;
+      background-repeat: no-repeat;
+      color: $x-grimace;
+      display: flex;
+      height: 200px;
+      justify-content: center;
+      left: 0;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      position: relative;
+      background-size: contain;
+      @include at-media("desktop") {
+        align-items: center;
+        padding-top: 1rem;
+      }
+      p {
+        font-size: 1rem;
+        width: 60%;
+        @include at-media("desktop") {
+          width: 200px;
+        }
+      }
+    }
+    .calloutFull {
+      @include u-color("white");
+      @include u-font("serif", 7);
+      align-items: center;
+      background-image: url("~styles/images/callout-green-full-lg.png");
+      background-position-x: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      height: 137px;
+      justify-content: center;
+      left: 0;
+      margin-bottom: 2rem;
+      padding-top: 2rem;
+      position: relative;
+      p {
+        font-size: 1.2rem;
+        max-width: 535px;
+        @include at-media("desktop") {
+          max-width: 615px;
+        }
+      }
     }
     .usa-card__container {
       box-shadow: $card-shadow;
@@ -279,6 +289,30 @@ $c-report-header: #006680;
   }
 }
 
+.TxProjects {
+  a {
+    color: $x-grimace;
+    text-decoration: none;
+    svg {
+      transform: rotateZ(-45deg);
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      @include u-margin-right(2);
+      padding-top: 6px;
+      margin-bottom: 2px;
+      height: 41px;
+      a {
+        line-height: normal;
+      }
+    }
+  }
+}
+
 .TxLinks {
   @include u-font-family("serif");
   a {
@@ -295,6 +329,9 @@ $c-report-header: #006680;
       padding-top: 6px;
       margin-bottom: 2px;
       height: 41px;
+      @include at-media('tablet') {
+        font-size: 1.2rem;
+      }
       &.active {
         background-position-y: 0.3rem;
         background-image: url("~styles/images/report-nav-active-bar.png");
@@ -309,13 +346,17 @@ $c-report-header: #006680;
 }
 
 .nav-sticky {
+  background: white;
+  border-radius: 0.5rem;
   height: auto;
   margin-bottom: 8px;
   max-height: calc(100vh - 16px);
+  padding: 2rem 0;
   position: sticky;
   top: 0;
   top: 10px;
   width: auto;
+  z-index: 2;
 }
 
 .report-content {

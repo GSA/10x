@@ -84,7 +84,9 @@ const Report = ({ type }) => {
               {data.sections && (
                 <div>
                   {data.sections.map((item, i) => (
-                    <section>
+                    <section className={classnames({
+                      [`${item.class}`]: item.class,
+                    })}>
                       <Break color="accent-green" variant="extra-wide" />
                       <h2 id={item.target}>{item.title}</h2>
                       
@@ -95,6 +97,17 @@ const Report = ({ type }) => {
                       {item.byTheNumbersStats &&
                         <div>
                           <ByTheNumbersGraphic heading={item.byTheNumbersHeading} stats={item.byTheNumbersStats} />
+                        </div>
+                      }
+
+                      {item.contentHalf &&
+                        <div className="grid-row">
+                          <div className="grid-col-6">
+                            <Mdx>{item.contentHalf}</Mdx>
+                          </div>
+                          <div className="grid-col-6 calloutHalf">
+                            <Mdx>{item.calloutHalf}</Mdx>
+                          </div>  
                         </div>
                       }
 
@@ -109,6 +122,32 @@ const Report = ({ type }) => {
                           <ReportTable heading={item.reportTableHeading} headers={item.reportTableHeaders} data={item.reportTableData} />
                         </div>
                       }
+
+                      <Mdx>{item.content2}</Mdx>
+
+                      {item.calloutFull &&
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutFull">
+                            <Mdx>{item.calloutFull}</Mdx>
+                          </div>  
+                        </div>
+                      }
+
+                      <Mdx>{item.content2}</Mdx>
+
+                      {item.otherProjects && (
+                        <div className="TxProjects">
+                          <h2 id={item.target}>{item.title}</h2>
+                          <ul>
+                            {item.otherProjects.map((project, i) => (
+                              <li className="TxLinks__item">
+                                <a href={project.projectURL}>{project.projectName} <Icon icon="arrow-circle-right" className="margin-left-05" /></a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      
 
                     </section>
                   ))}
@@ -150,7 +189,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
       window.addEventListener("scroll", event => {
         let fromTop = window.scrollY;
-        document.querySelectorAll("#nav-sticky ul li a").forEach(link => {
+        document.querySelectorAll("#nav-sticky ul li a").forEach((link, i) => {
           let header = document.querySelector(link.hash);
           let section = header.parentElement;
           if (
@@ -161,6 +200,11 @@ window.addEventListener('DOMContentLoaded', () => {
           } else {
             link.parentElement.classList.remove("active");
           }
+
+          
+          /* if (i == 0) {
+            link.parentElement.classList.add("active");
+          } */
         });
       });
     }

@@ -8,48 +8,15 @@
     margin: 0;
     width: 100%;
     th {
+      @include u-font("serif", 1);
       border-bottom: 2px solid #FF6839;
-      color:#3A337B;
-      font-size: 1.2rem;
+      color: $x-grimace;
+      font-size: 1.3rem;
     }
   }
   &__heading {
     color: #FF6839;
     font-size: 1.2rem;
-  }
-  &__item {
-    position: absolute;
-    overflow: visible;
-    width: 125px;
-    z-index: 1;
-    &-1 {
-      left: 50px;
-      top: 100px;
-    }
-    &-2 {
-      left: 214px;
-      top: 100px;
-    }
-    &-3 {
-      left: 380px;
-      top: 86px;
-    }
-    &-4 {
-      left: 50px;
-      top: 270px;
-    }
-    &-5 {
-      left: 214px;
-      top: 270px;
-    }
-    &-6 {
-      left: 380px;
-      top: 270px;
-    }
-    &-7 {
-      left: 50px;
-      top: 412px;
-    }
   }
   &__label {
     display: block;
