@@ -3,7 +3,7 @@ backend:
   repo: GSA/10x
   base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
-  branch: demo
+  branch: 10x-fy21-impact-report
   preview_context: federalist/build
 
 media_folder: public/images
@@ -970,11 +970,9 @@ collections:
       preview: false
     fields:
       - <<: *slug
-      - <<: *title
-        label: "Report Page and card title"
       - <<: *headline
-        label: "Report Page and card question"
-        hint: "Question posed at the top of the report page and report card"
+        label: "Report Page and card headline"
+        hint: "Headline at the top of the report page and report card"
         required: true
       - <<: *modSeo
       - label: "Report Card External Url"
@@ -1009,20 +1007,6 @@ collections:
         widget: "hidden"
         hint: "Separate tag values by comma."
         required: false
-      - label: "Report Type"
-        name: "reportType"
-        widget: "hidden"
-        required: false
-        options: ["Innovation", "Transformation", "Enhancement"]
-      - label: "Report Page 'In a nutshell' sidebar"
-        label_singular: "list item"
-        name: "summary"
-        hint: "These items fill out the 'In a nutshell' sidebar on the Report Page."
-        widget: "list"
-        required: false
-        fields:
-          - <<: *text
-            hint: "No period following bullets"
       - label: "Report Page Nav sidebar"
         name: "nav"
         hint: "Provide the Idea Submitter and the rest of the report mnan nav in the sidebar on the Report Page."

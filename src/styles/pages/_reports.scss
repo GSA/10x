@@ -4,15 +4,32 @@ $c-report-header: #006680;
 .TxReport,
 .Tx__reports {
   section {
-    margin-left: -70%;
-    padding: 4rem 390% 4rem 70%;
-    width: 560%;
+    margin-left: -2%;
+    padding: 1rem;
+    width: 104%;
     &.light-gray {
       background-color: rgba(216, 216, 216, 0.25);
     }
     &.dark-gray {
       background-color: $x-charcoal;
       @include u-color("white");
+      h2 {
+        color: $x-lilac;
+      }
+      strong {
+        color: $x-sky;
+      }
+    }
+    &:first-child {
+      padding-top: 0;
+    }
+    strong {
+      color: $c-report-header;
+    }
+    @include at-media("desktop") {
+      margin-left: -70%;
+      padding: 4rem 390% 4rem 70%;
+      width: 560%;
     }
   }
   &__nav-header {
@@ -108,6 +125,31 @@ $c-report-header: #006680;
         }
       }
     }
+
+    .calloutProject {
+      @include u-font("serif", 7);
+      align-items: flex-start;
+      background-image: url("~styles/images/report-green-brush-stroke.png");
+      background-position-x: -0.8rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      height: 43px;
+      justify-content: flex-start;
+      left: 0;
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+      position: relative;
+      padding-top: 0.2rem;
+      p {
+        font-size: 1.2rem;
+        max-width: 535px;
+        @include at-media("desktop") {
+          max-width: 615px;
+        }
+      }
+    }
+
     .usa-card__container {
       box-shadow: $card-shadow;
       .usa-card__body {
@@ -252,19 +294,9 @@ $c-report-header: #006680;
 }
 
 .usa-app__theme-reports {
-  background: linear-gradient(
-    180deg,
-    #{$x-charcoal} 2px,
-    #{$x-lead} 75%,
-    #{$x-smoke} 100%
-  );
+  background: linear-gradient(180deg, #{$x-charcoal} 2px, #{$x-lead} 75%, #{$x-smoke} 100%);
   @include at-media("desktop") {
-    background: linear-gradient(
-      180deg,
-      #{$x-charcoal} 2px,
-      #{$x-lead} 2000px,
-      #{$x-smoke} 2600px
-    );
+    background: linear-gradient(180deg, #{$x-charcoal} 2px, #{$x-lead} 2000px, #{$x-smoke} 2600px);
   }
 }
 
@@ -290,6 +322,7 @@ $c-report-header: #006680;
 }
 
 .TxProjects {
+  @include u-margin-top(2);
   a {
     color: $x-grimace;
     text-decoration: none;
@@ -303,7 +336,7 @@ $c-report-header: #006680;
     list-style: none;
     li {
       @include u-margin-right(2);
-      padding-top: 6px;
+      padding-top: 0.3rem;
       margin-bottom: 2px;
       height: 41px;
       a {
@@ -329,7 +362,7 @@ $c-report-header: #006680;
       padding-top: 6px;
       margin-bottom: 2px;
       height: 41px;
-      @include at-media('tablet') {
+      @include at-media("tablet") {
         font-size: 1.2rem;
       }
       &.active {
@@ -351,9 +384,8 @@ $c-report-header: #006680;
   height: auto;
   margin-bottom: 8px;
   max-height: calc(100vh - 16px);
-  padding: 2rem 0;
+  padding: 1rem 0;
   position: sticky;
-  top: 0;
   top: 10px;
   width: auto;
   z-index: 2;
@@ -366,7 +398,35 @@ $c-report-header: #006680;
 .the10xTeam {
   background-image: url("~styles/images/the-10x-team.png");
   background-position-y: top;
-  height: 96px;
-  width: 398px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 85px;
+  width: 100%;
+  @include at-media("tablet") {
+    width: 398px;
+  }
+}
 
+.to-top {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  width: 20%;
+  &:after {
+    @include u-margin-left(1);
+    content: "\f062";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free Solid";
+    font-size: 0.8rem;
+  }
+  @include at-media("tablet") {
+    width: initial;
+  }
+}
+
+.projectDemo {
+  background-image: url("~styles/images/ableist-ui-demo-800px-opt.gif");
+  background-position-y: top;
+  background-repeat: no-repeat;
+  height: 442px;
+  width: 800px;
 }

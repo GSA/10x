@@ -202,11 +202,21 @@ h5,
     .TxContent {
       background: #ffffff;
       .usa-app__bg {
-        background-image: url("~styles/images/report-1-bg.png");
+        background-image: url("~styles/images/report-1-bg-mobile.png");
         background-repeat: no-repeat;
         background-position-x: center;
-        background-position-y: -120px;
-        background-size: 1400px;
+        background-position-y: 0;
+        background-size: contain;
+        @include at-media('tablet') {
+          background-image: url("~styles/images/report-1-bg-tablet.png");
+          background-position-y: 0;
+          background-size: contain;
+        }
+        @include at-media('desktop') {
+          background-image: url("~styles/images/report-1-bg.png");
+          background-position-y: -120px;
+          background-size: 1400px;
+        }
       }
     }
   }
