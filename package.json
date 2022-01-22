@@ -34,7 +34,7 @@
     "remark": "^13.0.0",
     "trim-newlines": ">=3.0.1",
     "trim": ">=0.0.3",
-    "node-fetch": ">=2.6.1",
+    "node-fetch": ">=3.1.1",
     "remark-autolink-headings": "^6.0.1",
     "remark-extract-toc": "^0.1.1",
     "remark-parse": "^9.0.0",
