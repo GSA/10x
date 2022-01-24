@@ -22,8 +22,17 @@
   "intro": "Local libraries across America do not always have an easy time gathering data on the services they offer to patrons. Problems with these types of data make it difficult for libraries to understand the demand for their services, measure how those services are being utilized, and report that information to other government bodies that help support libraries, like State Librarians and the Institute for Museums and Library Services (IMLS). \n\nAfter researching this space over a few phases, 10x placed this bet: new, innovative technology can help libraries fundamentally change how they gather, report, and interpret data. Better yet, we got to explore new challenges for 10x, like building real hardware. What if libraries could harness the Internet of Things (IoT) to better serve their communities?",
   "subtitle": "What if libraries could harness the Internet of Things (IoT) to better serve their communities?",
   "title": "Shared Components for Museums and Libraries",
-  "links": [],
-  "template": "2",
+  "links": [
+    {
+      "text": "Wifi Session Tracking for Libraries Wiki",
+      "link": "https://github.com/18F/imls-pi-stack/wiki"
+    },
+    {
+      "text": "GitHub Repo",
+      "link": "https://github.com/18F/imls-pi-stack/"
+    }
+  ],
+  "template": "3",
   "footer": "10x-in-the-wild",
   "seo": {
     "title": "Shared Components for Museums and Libraries - Project Overview | 10x.GSA.gov",
