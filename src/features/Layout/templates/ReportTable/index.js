@@ -1,22 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
-import classnames from "classnames";
 
 const ReportTable = ({ heading, headers, data }) => {
   return (
     <div className="ReportTable">
       <h3 className="ReportTable__heading">{heading}</h3>
       <table className="usa-table usa-table--borderless">
+        <thead>
           {headers.map((item, i) => (
-            <thead>
+            <tr key={i}>
               <th scope="col">{item.header1}</th>
               <th scope="col">{item.header2}</th>
               <th scope="col">{item.header3}</th>
-            </thead>
+            </tr>
           ))}
+        </thead>
         <tbody>
           {data.map((item, i) => (
-            <tr>
+            <tr key={i}>
               <td>{item.data1}</td>
               <td>{item.data2}</td>
               <td>{item.data3}</td>
@@ -44,8 +45,8 @@ ReportTable.defaultProps = {
 
 ReportTable.propTypes = {
   heading: PropTypes.string,
-  headers: PropTypes.object,
-  data: PropTypes.object
+  headers: PropTypes.array,
+  data: PropTypes.array
 };
 
 export default ReportTable;

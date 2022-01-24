@@ -8,15 +8,13 @@ import { getPage } from 'app/ContentModule';
 import FourOhFour from 'routes/FourOhFour';
 import { Col, Grid, Row } from 'components/Grid';
 import Loading from 'components/Loading';
-import Links from './Links';
-import Nav from './Nav';
 import Icon from 'components/Icon';
 import Break from 'components/Break';
-import Card from 'components/Card';
+import Chart from 'components/Chart';
 import Mdx from 'features/Mdx';
 import useScrollToTop from 'utils/useScrollToTop';
-import ByTheNumbersGraphic from 'features/Layout/templates/ByTheNumbersGraphic';
-import ReportTable from 'features/Layout/templates/ReportTable';
+import ReasonForRejection from 'features/Layout/templates/ReasonForRejection';
+import ReportBudgetTable from 'features/Layout/templates/ReportBudgetTable';
 
 const Report = ({ type }) => {
   const dispatch = useDispatch();
@@ -69,7 +67,7 @@ const Report = ({ type }) => {
                   {data.nav && (
                     <ul>
                       {data.nav.map((item, i) => (
-                        <li className="TxLinks__item">
+                        <li className="TxLinks__item" key={i}>
                           <a href={item.link}>{item.text}</a>
                         </li>
                       ))}
@@ -83,23 +81,25 @@ const Report = ({ type }) => {
                 <div>
                   {data.sections.map((item, i) => (
                     <section
+                      key={i}
                       className={classnames({
                         [`${item.class}`]: item.class,
                       })}
                     >
                       <Break color="accent-green" variant="extra-wide" />
+
                       <h2 id={item.target}>{item.title}</h2>
 
                       {item.impact && <Mdx>{item.impact}</Mdx>}
 
-                      {item.byTheNumbersStats && (
+                      {/* {item.byTheNumbersStats && (
                         <div>
                           <ByTheNumbersGraphic
                             heading={item.byTheNumbersHeading}
                             stats={item.byTheNumbersStats}
                           />
                         </div>
-                      )}
+                      )} */}
 
                       {item.contentHalf && (
                         <div className="grid-row">
@@ -120,11 +120,33 @@ const Report = ({ type }) => {
                         </div>
                       )}
 
+                      {item.chart && (
+                        <Chart></Chart>
+                      )}
+
                       <Mdx>{item.content}</Mdx>
 
                       {item.the10xTeam && <div className={item.the10xTeam}></div>}
 
-                      {item.reportTableData && (
+                      {item.reasonForRejection && (
+                        <div>
+                          <ReasonForRejection
+                            data={item.reasonForRejection}
+                          />
+                        </div>
+                      )}
+
+                      {item.calloutFullDark && (
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutFullDark">
+                            <Mdx>{item.calloutFullDark}</Mdx>
+                          </div>
+                        </div>
+                      )}
+
+                      <Mdx>{item.content2}</Mdx>
+
+                      {/* {item.reportTableData && (
                         <div>
                           <ReportTable
                             heading={item.reportTableHeading}
@@ -132,9 +154,7 @@ const Report = ({ type }) => {
                             data={item.reportTableData}
                           />
                         </div>
-                      )}
-
-                      <Mdx>{item.content2}</Mdx>
+                      )} */}
 
                       {item.calloutFull && (
                         <div className="grid-row">
@@ -146,6 +166,16 @@ const Report = ({ type }) => {
 
                       {item.image && <div className={item.image}></div>}
 
+                      {item.reportBudgetTableData && (
+                        <div>
+                          <ReportBudgetTable
+                            heading={item.reportBudgetTableHeading}
+                            headers={item.reportBudgetTableHeaders}
+                            data={item.reportBudgetTableData}
+                          />
+                        </div>
+                      )}
+
                       <Mdx>{item.content3}</Mdx>
 
                       {item.otherProjects && (
@@ -153,7 +183,7 @@ const Report = ({ type }) => {
                           <h3>Other Projects</h3>
                           <ul>
                             {item.otherProjects.map((project, i) => (
-                              <li className="TxLinks__item">
+                              <li className="TxLinks__item" key={i}>
                                 <a href={project.projectURL}>
                                   {project.projectName}{' '}
                                   <Icon icon="arrow-circle-right" className="margin-left-05" />
@@ -166,7 +196,7 @@ const Report = ({ type }) => {
 
                       <div className="display-flex flex-justify-end margin-top-2">
                         <a
-                          class="usa-button usa-button--primary-lighter to-top"
+                          className="usa-button to-top"
                           href="#welcome"
                         >
                           TOP

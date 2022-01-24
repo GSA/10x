@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "features/Link";
-import Icon from "components/Icon";
 import PropTypes from "prop-types";
 
 const Links = ({ data }) => {

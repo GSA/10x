@@ -431,6 +431,15 @@ modules:
       - <<: *classname
         widget: "hidden"
 
+  modReasonForRejection: &modReasonForRejection
+    label: "Reason for rejection cards"
+    name: "reasonForRejection"
+    hint: "Shows a stylized reason for rejection set of cards at this location in the page."
+    widget: "object" #might be a boolean
+    fields:
+      - <<: *classname
+        widget: "hidden"
+
   modReports: &modReports
     label: Reports
     name: reports
@@ -464,6 +473,7 @@ modules:
       - <<: *modGhostwriter
       - <<: *modProjects
       - <<: *modPhases
+      - <<: *modReasonForRejection
       - <<: *modReports
       - <<: *modTitle
 
@@ -725,6 +735,7 @@ collections:
           - <<: *modProjects
           - <<: *modPhases
           - <<: *modPhaseDescription
+          - <<: *modReasonForRejection
           - <<: *modReports
           - <<: *modStatsCards
           - <<: *modTitle
@@ -951,6 +962,7 @@ collections:
           - <<: *modProjects
           - <<: *modPhases
           - <<: *modPhaseDescription
+          - <<: *modReasonForRejection
           - <<: *modReports
           - <<: *modStatsCards
       - <<: *preFooter

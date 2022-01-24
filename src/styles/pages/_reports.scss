@@ -4,27 +4,65 @@ $c-report-header: #006680;
 .TxReport,
 .Tx__reports {
   section {
-    margin-left: -2%;
+    margin-left: -4%;
     padding: 1rem;
-    width: 104%;
+    width: 108%;
+    &.white {
+      background-color: color("white");
+      .to-top {
+        @include u-color("white");
+        background-color: $x-grimace-light;
+        &:hover {
+          background-color: $x-grimace;
+        }
+      }
+    }
     &.light-gray {
       background-color: rgba(216, 216, 216, 0.25);
+      .to-top {
+        @include u-color("white");
+        background-color: $x-grimace-light;
+        &:hover {
+          background-color: $x-grimace;
+        }
+      }
     }
     &.dark-gray {
       background-color: $x-charcoal;
       @include u-color("white");
+      .to-top {
+        background-color: $x-lilac;
+        color: #162e51;
+        &:hover {
+          background-color: $x-lilac-light;
+        }
+      }
       h2 {
         color: $x-lilac;
       }
       strong {
         color: $x-sky;
       }
+      .TxBreak__accent-green {
+        &:before {
+          background-image: url("~styles/images/report-gradient-separator.png");
+          height: 74px;
+        }
+      }
     }
     &:first-child {
       padding-top: 0;
+      .TxBreak__accent-green {
+        padding-top: 2rem;
+      }
     }
     strong {
       color: $c-report-header;
+    }
+    @include at-media("tablet") {
+      margin-left: -2%;
+      padding: 1rem;
+      width: 104%;
     }
     @include at-media("desktop") {
       margin-left: -70%;
@@ -75,77 +113,117 @@ $c-report-header: #006680;
     h2 {
       color: $c-report-header;
     }
-    .calloutHalf {
-      @include u-font("serif", 6);
-      align-items: start;
-      background-image: url("~styles/images/callout-lilac-half-lg.png");
-      background-position-x: center;
-      background-repeat: no-repeat;
-      color: $x-grimace;
-      display: flex;
-      height: 200px;
-      justify-content: center;
-      left: 0;
-      margin-top: 4rem;
-      padding-top: 2rem;
-      position: relative;
-      background-size: contain;
-      @include at-media("desktop") {
-        align-items: center;
-        padding-top: 1rem;
-      }
-      p {
-        font-size: 1rem;
-        width: 60%;
-        @include at-media("desktop") {
-          width: 200px;
-        }
-      }
-    }
-    .calloutFull {
-      @include u-color("white");
-      @include u-font("serif", 7);
-      align-items: center;
-      background-image: url("~styles/images/callout-green-full-lg.png");
-      background-position-x: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      display: flex;
-      height: 137px;
-      justify-content: center;
-      left: 0;
-      margin-bottom: 2rem;
-      padding-top: 2rem;
-      position: relative;
-      p {
-        font-size: 1.2rem;
-        max-width: 535px;
-        @include at-media("desktop") {
-          max-width: 615px;
-        }
-      }
-    }
 
-    .calloutProject {
-      @include u-font("serif", 7);
-      align-items: flex-start;
-      background-image: url("~styles/images/report-green-brush-stroke.png");
-      background-position-x: -0.8rem;
-      background-repeat: no-repeat;
-      background-size: contain;
-      display: flex;
-      height: 43px;
-      justify-content: flex-start;
-      left: 0;
-      margin-bottom: 2rem;
-      padding-left: 1rem;
-      position: relative;
-      padding-top: 0.2rem;
-      p {
-        font-size: 1.2rem;
-        max-width: 535px;
+    .callout {
+      &Half {
+        @include u-font("serif", 6);
+        align-items: flex-start;
+        background-image: url("~styles/images/callout-lilac-half-lg.png");
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: $x-grimace;
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        left: 0;
+        margin-top: 4rem;
+        padding-top: 3rem;
+        position: relative;
         @include at-media("desktop") {
-          max-width: 615px;
+          align-items: center;
+          padding-top: 2rem;
+        }
+        p {
+          font-size: 1rem;
+          width: 58%;
+          line-height: 1.3rem;
+          @include at-media("tablet") {
+            width: 45%;
+          }
+          @include at-media("desktop") {
+            line-height: 1.5rem;
+            width: 200px;
+          }
+        }
+      }
+      &Full {
+        @include u-color("white");
+        @include u-font("serif", 7);
+        align-items: center;
+        background-image: url("~styles/images/callout-green-full-lg.png");
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        height: 137px;
+        justify-content: center;
+        left: 0;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+        position: relative;
+        @include at-media("tablet") {
+          background-size: contain;
+        }
+        p {
+          font-size: 1.1rem;
+          max-width: 68%;
+          line-height: 1.3rem;
+          @include at-media("desktop") {
+            font-size: 1.2rem;
+            max-width: 535px;
+          }
+        }
+      }
+      &FullDark {
+        @include u-font("serif", 7);
+        align-items: center;
+        background-image: url("~styles/images/callout-lilac-full-lg.png");
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: $x-charcoal;
+        display: flex;
+        height: 137px;
+        justify-content: center;
+        left: 0;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+        position: relative;
+        @include at-media("tablet") {
+          /* background-size: contain; */
+        }
+        p {
+          font-size: 1.1rem;
+          max-width: 68%;
+          line-height: 1.3rem;
+          @include at-media("desktop") {
+            font-size: 1.2rem;
+            max-width: 535px;
+          }
+        }
+      }
+      &Project {
+        @include u-font("serif", 7);
+        align-items: flex-start;
+        background-image: url("~styles/images/report-green-brush-stroke.png");
+        background-position-x: -1.4rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: $x-charcoal;
+        height: 43px;
+        justify-content: flex-start;
+        left: 0;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+        padding-top: 0.2rem;
+        position: relative;
+        p {
+          font-size: 1.4rem;
+          max-width: 535px;
+          @include at-media("desktop") {
+            max-width: 615px;
+          }
         }
       }
     }
@@ -384,7 +462,7 @@ $c-report-header: #006680;
   height: auto;
   margin-bottom: 8px;
   max-height: calc(100vh - 16px);
-  padding: 1rem 0;
+  padding: 2rem 0;
   position: sticky;
   top: 10px;
   width: auto;
@@ -392,7 +470,10 @@ $c-report-header: #006680;
 }
 
 .report-content {
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
+  @include at-media("desktop") {
+    margin-bottom: 7rem;
+  }
 }
 
 .the10xTeam {
@@ -400,10 +481,10 @@ $c-report-header: #006680;
   background-position-y: top;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 85px;
+  height: 213px;
   width: 100%;
   @include at-media("tablet") {
-    width: 398px;
+    width: 60%;
   }
 }
 
@@ -427,6 +508,16 @@ $c-report-header: #006680;
   background-image: url("~styles/images/ableist-ui-demo-800px-opt.gif");
   background-position-y: top;
   background-repeat: no-repeat;
+  display: none;
   height: 442px;
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
+  @include at-media("tablet") {
+    display: block;
+  }
 }
+
+.recharts-legend-item-text {
+  color: $x-charcoal !important;
+}
+

@@ -2,6 +2,7 @@
   background-image: url("~styles/images/by-the-numbers-bg.png");
   background-position-x: left;
   background-repeat: no-repeat;
+  display: none;
   height: 576px;
   margin-bottom: 2rem;
   padding-top: 0.2rem;
@@ -52,5 +53,8 @@
     @include u-font("sans", "2xs");
     line-height: 16px;
     margin-bottom: 6px;
+  }
+  @include at-media("tablet") {
+    display: block;
   }
 }

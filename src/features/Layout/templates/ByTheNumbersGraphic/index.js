@@ -8,6 +8,7 @@ const ByTheNumbersGraphic = ({ heading, stats }) => {
       <h3 className="ByTheNumbersGraphic__heading">{heading}</h3>
       {stats.map((item, i) => (
         <div
+          key={i}
           className={classnames({
             ByTheNumbersGraphic__item: true,
             [`ByTheNumbersGraphic__item-${i + 1}`]: true,
@@ -33,7 +34,7 @@ ByTheNumbersGraphic.defaultProps = {
 
 ByTheNumbersGraphic.propTypes = {
   heading: PropTypes.string,
-  stats: PropTypes.object
+  stats: PropTypes.array
 };
 
 export default ByTheNumbersGraphic;
