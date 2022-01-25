@@ -72,7 +72,7 @@
     ]
   },
   "reactSnap": {
-    "puppeteerExecutablePath": "/usr/bin/google-chrome",
+    "puppeteerExecutablePath": "/usr/local/bin/chromium",
     "puppeteerArgs": [
       "--no-sandbox",
       "--disable-setuid-sandbox",
