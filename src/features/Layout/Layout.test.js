@@ -6,6 +6,7 @@ import Provider from "test/TestProvider";
 
 const itemsWithGrid = [
   { type: "break" },
+  { type: "byTheNumbersGraphic" },
   { type: "markdown" },
   { type: "projects" },
   { type: "callout" },
@@ -16,6 +17,7 @@ const itemsWithGrid = [
   { type: "markdownSpecial" },
   { type: "phaseDescription" },
   { type: "phaseGraphic" },
+  { type: "report" },
   { type: "statsCards" }
 ];
 

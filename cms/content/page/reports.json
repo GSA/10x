@@ -1,0 +1,20 @@
+{
+  "title": "Our Impact Reports",
+  "slug": "reports",
+  "sections": [
+    {
+      "type": "title",
+      "title": "Our Impact Reports",
+      "subtitle": "10x has funded hundreds of projects over the years and we always encourage our teams to practice good agile hygiene, of which the retrospective, or ‘retro’ is a critical part."
+    },
+    {
+      "type": "reports"
+    }
+  ],
+  "theme": "1",
+  "footer": "we-started-as-an-idea-too",
+  "seo": {
+    "title": "10x's Projects - Good for Government Tech | 10x.GSA.gov",
+    "description": "10x's good-for-government, good-for-people projects make the world a little faster, smarter, better. Check out some of our projects."
+  }
+}

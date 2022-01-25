@@ -9,6 +9,7 @@ const Break = ({ color, variant }) => {
         TxBreak: true,
         [`TxBreak__${color}`]: color,
         TxBreak__wide: variant === "wide",
+        TxBreak__extraWide: variant === "extra-wide",
       })}
     />
   );
@@ -25,6 +26,7 @@ Break.propTypes = {
     "accent-warm",
     "accent-cool",
     "base-lighter",
+    "accent-green",
   ]),
 };
 
