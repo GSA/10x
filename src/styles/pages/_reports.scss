@@ -517,6 +517,13 @@ $c-report-header: #006680;
   }
 }
 
+.recharts-wrapper {
+  display: none;
+  @include at-media("tablet") {
+    display: block;
+  }
+}
+
 .recharts-legend-item-text {
   color: $x-charcoal !important;
 }
