@@ -62,7 +62,7 @@ const Report = ({ type }) => {
           <Row gap="4">
             <Col size="12" desktop="3">
               <div id="nav-sticky" className="nav-sticky">
-                <h4 className="TxReport__nav-header">{data.navHeader}</h4>
+                <h2 className="TxReport__nav-header">{data.navHeader}</h2>
                 <div className="TxLinks">
                   {data.nav && (
                     <ul>

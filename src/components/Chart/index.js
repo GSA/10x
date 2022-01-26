@@ -60,9 +60,9 @@ export default function Chart() {
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="projects_kicked_off" fill="#C2C2F5" name="Projects Kicked Off" />
-      <Bar dataKey="projects_closed_out" fill="#45D9D9" name="Projects Closed Out" />
-      <Bar dataKey="ideas_received" fill="#383577" name="Ideas Received" />
+      <Bar dataKey="projects_kicked_off" fill="#C2C2F5" name="Projects Kicked Off" isAnimationActive={false} />
+      <Bar dataKey="projects_closed_out" fill="#45D9D9" name="Projects Closed Out" isAnimationActive={false} />
+      <Bar dataKey="ideas_received" fill="#383577" name="Ideas Received" isAnimationActive={false} />
     </BarChart>
   );
 }
