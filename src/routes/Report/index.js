@@ -167,7 +167,7 @@ const Report = ({ type }) => {
                       {item.image && <div className={item.image}></div>}
 
                       {item.reportBudgetTableData && (
-                        <div>
+                        <div className="scroll-table">
                           <ReportBudgetTable
                             heading={item.reportBudgetTableHeading}
                             headers={item.reportBudgetTableHeaders}

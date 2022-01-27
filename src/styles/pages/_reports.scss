@@ -5,7 +5,7 @@ $c-report-header: #006680;
 .Tx__reports {
   section {
     margin-left: -4%;
-    padding: 1rem;
+    padding: 1.5rem;
     width: 108%;
     &.white {
       background-color: color("white");
@@ -61,8 +61,8 @@ $c-report-header: #006680;
     }
     @include at-media("tablet") {
       margin-left: -2%;
-      padding: 1rem;
-      width: 104%;
+      padding: 1.5rem;
+      width: 103.8%;
     }
     @include at-media("desktop") {
       margin-left: -70%;
@@ -108,7 +108,10 @@ $c-report-header: #006680;
   }
   &__intro {
     @include u-color("white");
-    @include u-font("serif", 10);
+    @include u-font("serif", 8);
+    @include at-media("tablet") {
+      @include u-font("serif", 10);
+    }
   }
   &__content {
     h2 {
@@ -420,6 +423,7 @@ $c-report-header: #006680;
       height: 41px;
       a {
         line-height: normal;
+        white-space: nowrap;
       }
     }
   }
@@ -435,14 +439,16 @@ $c-report-header: #006680;
     margin: 0;
     list-style: none;
     li {
-      border-top: 1px solid #{color("base-light")};
       @include u-margin-right(2);
       @include u-padding-left(3);
-      padding-top: 6px;
-      margin-bottom: 2px;
+      border-top: 1px solid #{color("base-light")};
+      font-size: initial;
       height: 41px;
+      margin-bottom: 2px;
+      padding-top: 6px;
       @include at-media("tablet") {
         font-size: 1.2rem;
+        padding-top: 8px;
       }
       &.active {
         background-position-y: 0.3rem;
@@ -464,6 +470,7 @@ $c-report-header: #006680;
   margin-bottom: 8px;
   max-height: calc(100vh - 16px);
   padding: 2rem 0;
+  position: -webkit-sticky;
   position: sticky;
   top: 10px;
   width: auto;
@@ -471,8 +478,13 @@ $c-report-header: #006680;
 }
 
 .report-content {
-  margin-bottom: 8rem;
   @include at-media("desktop") {
+    margin-bottom: 7rem;
+  }
+  @include at-media("tablet") {
+    margin-bottom: 11rem;
+  }
+  @include at-media("mobile") {
     margin-bottom: 7rem;
   }
 }
@@ -482,9 +494,10 @@ $c-report-header: #006680;
   background-position-y: top;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 213px;
+  height: 93px;
   width: 100%;
   @include at-media("tablet") {
+    height: 213px;
     width: 60%;
   }
 }
@@ -525,7 +538,10 @@ $c-report-header: #006680;
   }
 }
 
-.recharts-legend-item-text {
+.recharts-legend-item-text, .recharts-default-tooltip, .recharts-tooltip-item-value, .recharts-tooltip-item-name {
   color: $x-charcoal !important;
 }
 
+.scroll-table {
+  overflow-x: scroll;
+}

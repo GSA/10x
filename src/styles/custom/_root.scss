@@ -1,5 +1,5 @@
 html {
-  font-size: 12px;
+  font-size: 14px;
 
   @include at-media("tablet") {
     font-size: 14px;
@@ -94,6 +94,9 @@ h5,
   position: relative;
   overflow-x: hidden;
   background: rgb(69, 217, 217);
+  @include at-media("tablet") {
+    overflow-x: initial;
+  }
 
   &__theme-1 {
     .TxContent {

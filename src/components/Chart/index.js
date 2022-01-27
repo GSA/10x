@@ -6,7 +6,8 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend
+  Legend,
+  ResponsiveContainer
 } from "recharts";
 
 const data = [
@@ -44,25 +45,27 @@ const data = [
 
 export default function Chart() {
   return (
-    <BarChart
-      width={800}
-      height={500}
-      data={data}
-      margin={{
-        top: 5,
-        right: 30,
-        left: 20,
-        bottom: 5
-      }}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="projects_kicked_off" fill="#C2C2F5" name="Projects Kicked Off" isAnimationActive={false} />
-      <Bar dataKey="projects_closed_out" fill="#45D9D9" name="Projects Closed Out" isAnimationActive={false} />
-      <Bar dataKey="ideas_received" fill="#383577" name="Ideas Received" isAnimationActive={false} />
-    </BarChart>
+    <ResponsiveContainer width="99%" aspect={2}>
+      <BarChart
+        width={800}
+        height={500}
+        data={data}
+        margin={{
+          top: 5,
+          right: 30,
+          left: 20,
+          bottom: 5
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="projects_kicked_off" fill="#C2C2F5" name="Projects Kicked Off" />
+        <Bar dataKey="projects_closed_out" fill="#45D9D9" name="Projects Closed Out" />
+        <Bar dataKey="ideas_received" fill="#383577" name="Ideas Received" />
+      </BarChart>
+    </ResponsiveContainer>
   );
 }

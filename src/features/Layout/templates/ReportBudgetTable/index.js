@@ -10,8 +10,8 @@ const ReportBudgetTable = ({ heading, headers, data }) => {
           {headers.map((item, i) => (
             <tr key={i}>
               <th scope="col">{item.header1}</th>
-              <th scope="col"><span class="icon">{item.header2}</span></th>
-              <th scope="col"><span class="icon">{item.header3}</span></th>
+              <th scope="col">{item.header2}</th>
+              <th scope="col">{item.header3}</th>
               <th scope="col">{item.header4}</th>
             </tr>
           ))}

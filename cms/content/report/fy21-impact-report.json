@@ -188,9 +188,9 @@
       "reportBudgetTableHeading": "10x Budget",
       "reportBudgetTableHeaders": [
         {
-          "header1": "",
-          "header2": "+",
-          "header3": "-",
+          "header1": "Item",
+          "header2": "Appropriated",
+          "header3": "Obligated",
           "header4": "Total"
         }
       ],
@@ -283,7 +283,7 @@
           "projectURL": "#"
         },
         {
-          "projectName": "Benefits Eligibility Awareness Recognition Service (BEARS)",
+          "projectName": "Benefits Eligibility Awareness Recognition Service",
           "projectURL": "#"
         },
         {
