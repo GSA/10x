@@ -538,10 +538,25 @@ $c-report-header: #006680;
   }
 }
 
-.recharts-legend-item-text, .recharts-default-tooltip, .recharts-tooltip-item-value, .recharts-tooltip-item-name {
+.recharts-legend-item-text,
+.recharts-default-tooltip,
+.recharts-tooltip-item-value,
+.recharts-tooltip-item-name {
   color: $x-charcoal !important;
 }
 
 .scroll-table {
   overflow-x: scroll;
+}
+
+.pdf-icon:before {
+  @include u-margin-right(2);
+  background-image: url("~styles/images/impact-report_pdf-icon.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 35px;
 }

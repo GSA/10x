@@ -227,8 +227,13 @@ window.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (event) => {
           event.preventDefault();
           let target = document.querySelector(event.target.hash);
+
+          let section = target.parentElement;
+          
+          section.setAttribute("tabindex", 0);
+          section.focus();
           target.scrollIntoView({
-            behavior: 'smooth',
+            //behavior: 'smooth',
             block: 'start',
           });
         });
@@ -238,7 +243,7 @@ window.addEventListener('DOMContentLoaded', () => {
           event.preventDefault();
           let target = document.querySelector(event.target.hash);
           target.scrollIntoView({
-            behavior: 'smooth',
+            //behavior: 'smooth',
             block: 'start',
           });
         });
@@ -261,10 +266,6 @@ window.addEventListener('DOMContentLoaded', () => {
           } else {
             link.parentElement.classList.remove('active');
           }
-
-          /* if (i == 0) {
-            link.parentElement.classList.add("active");
-          } */
         });
       });
     }

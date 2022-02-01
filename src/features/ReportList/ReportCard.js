@@ -10,14 +10,19 @@ const ReportCard = ({ data }) => {
 
   return (
     
-    <Link url={slug} className="ReportCard__link">
+    <Link url={slug} className="ReportCard__link" target={data.reportUrl ? '_blank' : '_top'}>
       <Card
         className={classnames({
           ReportCard: true,
           [`template-${data.template}`]: true,
         })}
       >
-        <h2 className="usa-card__heading">{data.subtitle || data.subtitle}</h2>
+        <h2 
+        className={classnames({
+          "usa-card__heading": true,
+          "pdf-icon": data.pdf,
+        })}
+        >{data.subtitle || data.subtitle}</h2>
         <h3 className="usa-card__subhead">{data.title || data.title}</h3>
         <div className="ReportCard__excerpt">{data.excerpt || data.intro}</div>
       </Card>
