@@ -1,7 +1,7 @@
 .ReportList {
   @include at-media("desktop") {
-    column-count: 2;
-    column-gap: 2rem;
+    /* column-count: 2;
+    column-gap: 2rem; */
   }
   .usa-card {
     &:hover {

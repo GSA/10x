@@ -8,8 +8,8 @@ import ReportCard from "./ReportCard";
 const ReportList = () => {
   const loading = useSelector((state) => state.content.list.pending);
   return (
-    <div className={classnames({ ReportList: true, isLoading: loading })}>
-      <ContentList type="report" sortKey="slug" render={ReportCard} />
+    <div className={classnames({ ReportList: true, "grid-row": true, " grid-gap": true, isLoading: loading })}>
+      <ContentList type="report" sortKey="sortOrder" render={ReportCard} />
     </div>
   );
 };
