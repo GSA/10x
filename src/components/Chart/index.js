@@ -13,32 +13,32 @@ import {
 const data = [
   {
     name: "FY17",
-    projects_kicked_off: 17,
-    projects_closed_out: 16,
+    projects_kicked_off: 20,
+    projects_closed_out: 17,
     ideas_received: 36
   },
   {
     name: "FY18",
-    projects_kicked_off: 20,
-    projects_closed_out: 19,
+    projects_kicked_off: 28,
+    projects_closed_out: 23,
     ideas_received: 146
   },
   {
     name: "FY19",
-    projects_kicked_off: 48,
-    projects_closed_out: 49,
+    projects_kicked_off: 53,
+    projects_closed_out: 51,
     ideas_received: 220
   },
   {
     name: "FY20",
-    projects_kicked_off: 72,
-    projects_closed_out: 76,
+    projects_kicked_off: 91,
+    projects_closed_out: 88,
     ideas_received: 365
   },
   {
     name: "FY21",
-    projects_kicked_off: 41,
-    projects_closed_out: 41,
+    projects_kicked_off: 47,
+    projects_closed_out: 46,
     ideas_received: 250
   }
 ];

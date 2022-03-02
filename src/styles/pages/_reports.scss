@@ -37,6 +37,12 @@ $c-report-header: #006680;
           background-color: $x-lilac-light;
         }
       }
+      a {
+        color: $x-lilac;
+        &:hover {
+          color: $x-lilac-light;
+        }
+      }
       h2 {
         color: $x-lilac;
       }
@@ -448,7 +454,7 @@ $c-report-header: #006680;
       padding-top: 6px;
       @include at-media("tablet") {
         font-size: 1.2rem;
-        padding-top: 8px;
+        padding-top: 4px;
       }
       &.active {
         background-position-y: 0.3rem;

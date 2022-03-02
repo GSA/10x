@@ -112,6 +112,26 @@ const Report = ({ type }) => {
                         </div>
                       )}
 
+                      {item.chart && (
+                        <>
+                          {item.byTheNumbersList && (
+                            <ul>
+                              {item.byTheNumbersList.map((li, index) => (
+                                <li key={index}><Mdx>{li.listItem}</Mdx></li>
+                              ))}
+                            </ul>
+                          )}
+
+                          <h3>{item.chartHeading}</h3>
+
+                          <Chart></Chart>
+                        </>
+                      )}
+
+                      <Mdx>{item.content}</Mdx>
+
+                      {item.the10xTeam && <div className={item.the10xTeam}></div>}
+
                       {item.calloutProject && (
                         <div className="grid-row">
                           <div className="grid-col-12 calloutProject">
@@ -120,19 +140,9 @@ const Report = ({ type }) => {
                         </div>
                       )}
 
-                      {item.chart && (
-                        <Chart></Chart>
-                      )}
-
-                      <Mdx>{item.content}</Mdx>
-
-                      {item.the10xTeam && <div className={item.the10xTeam}></div>}
-
                       {item.reasonForRejection && (
                         <div>
-                          <ReasonForRejection
-                            data={item.reasonForRejection}
-                          />
+                          <ReasonForRejection data={item.reasonForRejection} />
                         </div>
                       )}
 
@@ -166,7 +176,7 @@ const Report = ({ type }) => {
 
                       {item.image && <div className={item.image}></div>}
 
-                      {item.reportBudgetTableData && (
+                      {/* {item.reportBudgetTableData && (
                         <div className="scroll-table">
                           <ReportBudgetTable
                             heading={item.reportBudgetTableHeading}
@@ -174,7 +184,7 @@ const Report = ({ type }) => {
                             data={item.reportBudgetTableData}
                           />
                         </div>
-                      )}
+                      )} */}
 
                       <Mdx>{item.content3}</Mdx>
 
@@ -195,14 +205,10 @@ const Report = ({ type }) => {
                       )}
 
                       <div className="display-flex flex-justify-end margin-top-2">
-                        <a
-                          className="usa-button to-top"
-                          href="#welcome"
-                        >
+                        <a className="usa-button to-top" href="#welcome">
                           TOP
                         </a>
                       </div>
-
                     </section>
                   ))}
                 </div>
@@ -229,8 +235,8 @@ window.addEventListener('DOMContentLoaded', () => {
           let target = document.querySelector(event.target.hash);
 
           let section = target.parentElement;
-          
-          section.setAttribute("tabindex", 0);
+
+          section.setAttribute('tabindex', 0);
           section.focus();
           target.scrollIntoView({
             //behavior: 'smooth',
