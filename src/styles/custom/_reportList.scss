@@ -34,7 +34,7 @@
     }
     &__heading {
       @include u-padding-top(2);
-      @include u-font("serif", "lg");
+      @include u-font("serif", "xl");
       line-height: 130%;
       font-weight: 500;
       @include u-color("primary-darker");
@@ -46,7 +46,7 @@
         display: block;
         content: "";
         @include u-margin-top(2);
-        @include u-margin-bottom(4);
+        @include u-margin-bottom(2);
         height: 12px;
         background-repeat: no-repeat;
         background-position-x: left;
