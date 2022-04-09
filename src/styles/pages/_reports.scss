@@ -555,8 +555,8 @@ $c-report-header: #006680;
   overflow-x: scroll;
 }
 
-.pdf-icon:before {
-  @include u-margin-right(2);
+.pdf-icon:after {
+  @include u-margin-left(1);
   background-image: url("~styles/images/impact-report_pdf-icon.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -564,5 +564,7 @@ $c-report-header: #006680;
   content: "";
   display: inline-block;
   height: 30px;
+  position: relative;
+  top: 0.1rem;
   width: 35px;
 }
