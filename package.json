@@ -76,7 +76,8 @@
     "puppeteerArgs": [
       "--no-sandbox",
       "--disable-setuid-sandbox",
-      "--disable-gpu"
+      "--disable-gpu",
+      "--unsafe-perm=true"
     ]
   },
   "jest": {
