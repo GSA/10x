@@ -49,7 +49,7 @@
   "scripts": {
     "index-content": "rm -rf src/app/json/* && node runIndex.js",
     "start": "npm run index-content && react-scripts start",
-    "build": "REACT_APP_BRANCH=$BRANCH react-scripts build && REACT_APP_BRANCH=$BRANCH react-snap",
+    "build": "REACT_APP_BRANCH=$BRANCH react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "npm test -- --coverage --watchAll=false",
     "federalist": "npm run federalist:build && npm run federalist:copy",
