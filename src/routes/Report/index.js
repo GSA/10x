@@ -14,7 +14,6 @@ import Chart from 'components/Chart';
 import Mdx from 'features/Mdx';
 import useScrollToTop from 'utils/useScrollToTop';
 import ReasonForRejection from 'features/Layout/templates/ReasonForRejection';
-import ReportBudgetTable from 'features/Layout/templates/ReportBudgetTable';
 
 const Report = ({ type }) => {
   const dispatch = useDispatch();
@@ -156,16 +155,6 @@ const Report = ({ type }) => {
 
                       <Mdx>{item.content2}</Mdx>
 
-                      {/* {item.reportTableData && (
-                        <div>
-                          <ReportTable
-                            heading={item.reportTableHeading}
-                            headers={item.reportTableHeaders}
-                            data={item.reportTableData}
-                          />
-                        </div>
-                      )} */}
-
                       {item.calloutFull && (
                         <div className="grid-row">
                           <div className="grid-col-12 calloutFull">
@@ -175,16 +164,6 @@ const Report = ({ type }) => {
                       )}
 
                       {item.image && <div className={item.image}></div>}
-
-                      {/* {item.reportBudgetTableData && (
-                        <div className="scroll-table">
-                          <ReportBudgetTable
-                            heading={item.reportBudgetTableHeading}
-                            headers={item.reportBudgetTableHeaders}
-                            data={item.reportBudgetTableData}
-                          />
-                        </div>
-                      )} */}
 
                       <Mdx>{item.content3}</Mdx>
 
