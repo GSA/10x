@@ -91,15 +91,6 @@ const Report = ({ type }) => {
 
                       {item.impact && <Mdx>{item.impact}</Mdx>}
 
-                      {/* {item.byTheNumbersStats && (
-                        <div>
-                          <ByTheNumbersGraphic
-                            heading={item.byTheNumbersHeading}
-                            stats={item.byTheNumbersStats}
-                          />
-                        </div>
-                      )} */}
-
                       {item.contentHalf && (
                         <div className="grid-row">
                           <div className="grid-col-6">
