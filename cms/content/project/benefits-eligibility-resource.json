@@ -1,0 +1,41 @@
+{
+  "excerpt": "Millions of Americans access public benefits each year, often triggered by something that happens in their lives, from a joyous occasion like becoming a parent to tragic events like losing a loved one. But our government has no Department of Parenthood. No Ministry for Bereavement. This means that when someone experiences a life event that triggers eligibility for benefits, they are forced to navigate the complexities of multiple agencies (at the federal, state, and/or local levels) to learn about possible benefits, which is often unintuitive and confusing. And it’s up to each person to figure out where to start. The 10x BEARS project is a vision for an empathetic, human-centered world where the public can learn about benefits in a way that reflects their lived experiences, rather than the complexities of bureaucracy.",
+  "future": "## Next steps\n\nCurrent priorities for the BEARS team includes improving functionality and testing features and language with users. Our team is working closely with USA.gov to plan for the eventual integration into their platform for ongoing ownership and development. On the technical side, we received an ATO to launch the application, although without the dashboard or notifications. \n\nWhile not in the scope of immediate next steps, our vision is clear that once the prototype is more refined and we get more committed partnerships from agencies, we want to eventually bring in fast-changing eligibility criteria automatically into the BEARS app (Eligibility API’s Initiative, anyone?) and eventually bring in the application processes into the app as well. Imagine!",
+  "phaseData": {
+    "phase": "4",
+    "status": "1"
+  },
+  "impact": "## Why this matters\n\nCurrently, finding and learning about benefits information is neither empathetic nor intuitive, and the government can do better. People should not have to navigate a complex matrix of siloed government websites when events in their lives call instead for grief or celebration. We have the opportunity to build trust with the public and prove that civil servants understand the needs of the people we serve. \n\nThe 10x BEARS project is laying a foundation for a human-centered approach for the public to learn about benefits, which is a [top priority for the government](https://www.performance.gov/cx/projects/). We are helping the government imagine and build an empathetic future of public service.",
+  "summary": [
+    {
+      "text": "Information on government benefits and services is typically agency-centered, rather than human-centered. "
+    },
+    {
+      "text": "Seeking information about benefits programs from multiple government sources is confusing and distressing. These effects are compounded when someone is forced to navigate this information during times of grief and need. "
+    },
+    {
+      "text": "10x is improving benefits awareness by creating a centralized, interactive resource for federal benefits eligibility information organized around key life events."
+    }
+  ],
+  "approach": "## What we're doing\n\nWe’re building out an app preliminarily called the Benefits Eligibility Awareness Resource Service, or BEARS for short. It’s an online resource that streamlines information for multiple benefits–from many different agencies–into one experience that allows users to check their eligibility with just a few simple steps that make sense, all by starting with the question, “What have you experienced in your life?”\n\n### How we're doing it\n\nWe’re collaborating with federal agencies to learn about the eligibility criteria for the benefits programs they oversee and mapping them to specific events that many people will face at some point in their lives, such as a death in the family, reaching retirement age, or becoming a parent for the first time. We’re also looking to standardize the eligibility criteria for all federal benefits. So when an applicant goes to look for benefits related to a disability, for example,  the application will only ask a disability question once, and that answer will apply to all benefits from different agencies with different definitions for disability.\n\nThe public can get a custom list of benefits they are most likely eligible for by answering a few, short questions. To help them understand benefits programs, we’re creating standardized benefits “cards”, which contain simple explanations of what the benefit program does, who is eligible for it, and information on how to apply. And they can save results without sharing personal information or create an account for personalized notifications.\n\nAnd the cherry on top? The BEARS app is powered by two other products that 10x helped stand-up: The US Web Design System for the look and feel of the app, as well as Federalist–which is the static site platform that controls the back-end.\n\n### Where we are today\n\nWe’ve completed Phase 3, and Phase 4 is well underway. To scale the product in Phase 4, we’re adding additional federal benefits programs and new functionality.\n\nWe’re actively seeking additional partner agencies to work with us to ensure all the eligibility criteria are accurate and up to date.",
+  "slug": "benefits-eligibility-resource",
+  "intro": "Imagine for a moment that you have experienced a tragedy in your life. Imagine your home was destroyed in a natural disaster. This is a painful and pivotal moment. You are grieving and hopeless, and you need to rebuild your life. You also know that the government may be able to help. Government agencies may offer several benefits that are designed to help people in your situation: inexpensive loans for home rebuilding, emergency food assistance, and changes to your tax obligations reflecting the economic impact of your situation. \n\nWith so many options, where do you start with navigating these potential benefits to see which ones you may be eligible for? \n\nThat’s the problem. People often don’t know where to start, and when they do, it’s likely going to have you landing on the website for an agency that administers only one of the benefits that you may qualify for. For the other benefits, you’ll have to figure out what agencies administer those programs by starting the process of searching online.\n\nThis isn’t a good experience and this is exactly the time when the government should lessen the burden for you to navigate the siloed bureaucracies. \n\n10x believes in trying a new approach to understanding benefits eligibility. What if information on benefits were centered around life events, rather than the various agencies that administer benefits? The 10x BEARS project is taking the lead to imagine what that can look like.",
+  "subtitle": "What if information on the help available from the government aligned with real life experiences and emphasized empathy over bureaucracy?",
+  "title": "Benefits Eligibility Awareness Resource Service (BEARS)",
+  "links": [
+    {
+      "text": "Demo",
+      "link": "https://federalist-edd11e6f-8be2-4dc2-a85e-1782e0bcb08e.app.cloud.gov/site/gsa/usagov-benefits-eligibility/death-of-a-loved-one/?"
+    }
+  ],
+  "template": "5",
+  "footer": "we-started-as-an-idea-too",
+  "seo": {
+    "title": "Benefits Eligibility Awareness Resource Service | 10x.GSA.gov",
+    "description": "The 10x BEARS project is a vision for an empathetic, human-centered world where the public can learn about benefits in a way that reflects their lived experiences, rather than the complexities of bureaucracy."
+  },
+  "team": {
+    "submitter": "Monica Fitzgerald (GSA) and Elana Safran (OES, GSA)  ",
+    "members": "Renata Bartlett, Meghan O'Meara, Frank Pigeon, Jenna Hansen, Sarah M. Statz, Wesley Dean, Jesse Schoenemann, and Luke Garceau"
+  }
+}
