@@ -29,7 +29,7 @@ const ReportCard = ({ data }) => {
               'pdf-icon': data.pdf,
             })}
           >
-            {data.year || data.year}
+            FY{data.year || data.year}
           </h1>
           <h2
             className={classnames({
