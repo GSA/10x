@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Card from 'components/Card';
 import Link from 'features/Link';
+import Mdx from 'features/Mdx';
 
 const ReportCard = ({ data }) => {
   /* istanbul ignore next */
@@ -37,7 +38,7 @@ const ReportCard = ({ data }) => {
           >
             {data.title || data.title}
           </h2>
-          <div className="ReportCard__excerpt">{data.excerpt || data.intro}</div>
+          <Mdx className="ReportCard__excerpt">{data.excerpt || data.intro}</Mdx>
         </Card>
       </Link>
     </div>

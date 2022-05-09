@@ -71,8 +71,10 @@ $c-report-header: #006680;
       width: 103.8%;
     }
     @include at-media("desktop") {
-      margin-left: -70%;
-      padding: 4rem 390% 4rem 70%;
+      margin-left: -200%;
+      padding: 4rem 260% 4rem 200%;
+      /* margin-left: -70%;
+      padding: 4rem 390% 4rem 70%; */
       width: 560%;
     }
   }
