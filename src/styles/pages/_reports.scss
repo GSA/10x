@@ -154,6 +154,7 @@ $c-report-header: #006680;
             width: 45%;
           }
           @include at-media("desktop") {
+            font-size: 1.2rem;
             line-height: 1.5rem;
             width: 200px;
           }
