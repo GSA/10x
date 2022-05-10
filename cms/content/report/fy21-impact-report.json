@@ -1,0 +1,304 @@
+{
+  "sortOrder": "1",
+  "slug": "fy21-impact-report",
+  "title": "10x FY21 Impact Report",
+  "subtitle": "Welcome to the 10x FY21 Impact Report",
+  "year": "2021",
+  "excerpt": "In FY21, we’re covering how 10x projects compliment high-level administration priorities, the roundup on our experiment with establishing investment themes, and of course more dark matter–what 10x can teach the government about using emerging technologies to enhance public service in new ways. We showcase our premier artificial intelligence project, _Combating Bias in Artificial Intelligence and Machine Learning (AI/ML)_.",
+  "intro": "In FY21, we’re covering how 10x projects compliment high-level administration priorities, the roundup on our experiment with establishing investment themes, and of course more dark matter–what 10x can teach the government about using emerging technologies to enhance public service in new ways.",
+  "impact": "## Why this matters\n\nThe PRA has been a source of frustration for many government employees for years. It was passed during a time before the internet existed and was not designed to govern interactions between the government and the public during the digital age. Because the law restricts the amount and types of information that the government is allowed to request from the public, some federal employees shy away from conducting user research with the public at all because they are afraid of running afoul of the law or are intimidated by the process it takes to receive PRA clearance. Because of this report, government researchers can more confidently navigate the PRA process and are more empowered to interact with the public in critical ways — like for user research for improved web content — and the initial intent of the law is clear and easy to understand.",
+  "approach": "## What we did\n\nWe built a website that serves as the go-to place for the thousands of federal employees seeking PRA clearance to learn about the PRA, how it may or may not affect their work, and how to successfully navigate the process of getting clearance to interact with the public.\n\n### How we did it\n\nWe interviewed dozens of PRA officers and staffers from OMB who interpret the PRA to learn about common misperceptions of the law and we spoke with federal employees who have navigated the compliance process. We focused on a key audience with specific needs  —  smaller agencies without dedicated internal PRA support—and conducted research with them to understand their needs. Then, we partnered with legal experts who have deep knowledge of the law to interpret the necessary components and guidance into user-friendly digital content. Finally,  we built a website to host this guidance.\n\n### Where we are today\n\n[PRA.digital.gov](https://pra.digital.gov/) lives as a partnership between GSA and OMB. GSA maintains the digital infrastructure; OMB maintains and updates the content.",
+  "welcome": "## Welcome to the 10x Fiscal Year 2021 (FY21) Impact Report!\n\n2021 has been an eventful year for the world, the country, and our small but mighty 10x team. Although faced with uncertainty around the pandemic, transitioning to a new administration, and shifting budget priorities, we never lost our focus: invest in and experiment on federal employees’ technology ideas and see if they work.  As always, we want to radically improve how the government uses technology innovation to serve the public.\n\nEach fiscal year, we try to identify new trends across our projects that can help us understand our own growth and maturity as a program.\n\nLast year, we saw an exciting trend: across our portfolio, our projects were moving from delivering prototypes to shipping live, active products. These products were dashboards, new forms components, benefits screeners, and APIs. They solved real problems. The impact was recognized by our peers and the market.\n\nThis year, we identified a new pattern:  we’ve become fully immersed in new frontiers of technology exploration. We’re not just experimenting with technologies that are relatively unknown to the government, but we’re actively developing these dynamic new technologies. We’re preparing the government to approach, adopt, and use these technologies for public good.\n\nWe’ve met inspiring people fighting the good innovation fight and making things happen in— and for—government more than ever before. Thank you to our supporters and fellow innovators who create space for programs like 10x to exist. And, special thank you to the record number of federal employees who submitted ideas to 10x over the last year. We can’t make an impact without you.\n\nSincerely,",
+  "future": "## Next steps\n\nThe website we built is designed to be continually updated as the needs arise, reflecting  modifications to the law or extensions for the law to serve new audiences. The site as it exists today is the perfect foundation for expansion.  With further enhancements, the government can demystify the PRA process for many thousands more government employees who want to both serve the public and stay in compliance with the law.",
+  "reportUrl": "",
+  "template": "1",
+  "topics": "Designers, Program administrators, Researchers",
+  "footer": "we-started-as-an-idea-too",
+  "team": {
+    "submitter": "Sharon Mar, OMB with Andrew Maier, 18F alum",
+    "members": "Qituwra Anderson, Elizabeth Ayer, Christine Bath, Anna Heller-Sebok, Brian Hurst, and Cordelia Yu"
+  },
+  "links": [
+    {
+      "text": "pra.digital.gov",
+      "link": "https://pra.digital.gov/"
+    }
+  ],
+  "navHeader": "Happy reading.",
+  "nav": [
+    {
+      "text": "Letter from the Team",
+      "link": "#welcome"
+    },
+    {
+      "text": "FY21 in Review",
+      "link": "#fy21-in-review"
+    },
+    {
+      "text": "FY21 by the Numbers",
+      "link": "#fy21-by-the-numbers"
+    },
+    {
+      "text": "FY21 Project Showcase",
+      "link": "#fy21-project-showcase"
+    },
+    {
+      "text": "The Dark Matter",
+      "link": "#the-dark-matter"
+    },
+    {
+      "text": "Look Ahead to FY22",
+      "link": "#look-ahead-to-fy22"
+    },
+    {
+      "text": "Want more from 10x?",
+      "link": "#want-more-from-10x"
+    }
+  ],
+  "sections": [
+    {
+      "section": "1",
+      "class": "white",
+      "target": "welcome",
+      "theme": "1",
+      "title": "Letter from the Team",
+      "content": "**Welcome to the 10x Fiscal Year 2021 (FY21) Impact Report!**\n\n2021 has been an eventful year for the world, the country, and our small but mighty 10x team. The uncertainty around the pandemic, transitioning to a new administration, and shifting budget priorities affected our bottom line. Despite all this, we never lost our focus and we continued to do our job: invest in and experiment on federal employees’ technology ideas and see if they work.  As always, we want to radically improve how the government uses technology innovation to serve the public.\n\nEach fiscal year, we try to identify new trends across our projects that can help us understand our own growth and maturity as a program. Last year, we saw an exciting trend: across our portfolio, our projects were moving from delivering prototypes to shipping live, active products. These products were dashboards, new forms components, benefits screeners, and APIs. They solved real problems. The impact was recognized by our peers and the market.\n\nThis year, we identified a new pattern:  we’ve become fully immersed in new frontiers of technology exploration. We’re not just experimenting with technologies that are relatively unknown to the government, but we’re actively developing these dynamic new technologies. We’re preparing the government to approach, adopt, and use these technologies for public good.\n\nWe’ve met inspiring people fighting the good innovation fight and making things happen in— and for—government more than ever before. Thank you to our supporters and fellow innovators who create space for programs like 10x to exist. And, special thank you to the record number of federal employees who submitted ideas to 10x over the last year. We can’t make an impact without you.\n\nSincerely,",
+      "the10xTeam": "the10xTeam"
+    },
+    {
+      "section": "2",
+      "class": "light-gray",
+      "target": "fy21-in-review",
+      "theme": "1",
+      "title": "FY21 in Review",
+      "content": "",
+      "contentHalf": "We’ve funded hundreds of projects over the years and we always encourage our teams to practice good agile hygiene. The retrospective (or ‘retro’ as it’s commonly called)  is a critical part of the agile development process. That’s when a team pauses after a development sprint (usually every two weeks) to look back and examine what went well, what didn’t go well. We explore how to improve things moving forward. Practicing what we preach, we've conducted a mega-retro to examine what went well and didn’t go well over the last year. Here are our main takeaways:\n\n",
+      "calloutHalf": "At 10x, we’re lucky to have flexibility in deciding what projects we take on.",
+      "content2": "### Where we succeeded\n\nFor most of our history, we’ve used what we call the “everything bagel approach” to source the types of ideas we want to invest in. This approach meant we left the market wide open and accepted ideas across every topic in government technology you can think of, including contracting, cybersecurity, robotic process automation (RPA), etc.\n\nIn FY21, we did something different. We moved away from the “everything bagel approach” and  defined a few specific areas of the government technology ecosystem where we were particularly interested in exploring. We called these areas investment themes. Defining the types of projects where we wanted to invest allowed us to set up parameters for the ideas we wanted to target and center our outreach accordingly. The first themes we chose were _Public Trust and Civic Life, Equity in Delivery_, and _Public Lands and the Environment_.\n\nWhy these themes? In order to serve the public, we need to understand what matters to the public. And one of the great privileges of being in the civil service is that we are able to bring our whole selves to our work: both as civil servants and as members of the public. After all, we live in communities, we talk with friends and neighbors, and we read the news just like everyone else. In other words, we get to wear two hats at once. We hear what people discuss and what matters to them, and we feel that our themes address topics (like low trust in government and concerns about our changing natural environment) that the public will recognize as timely and directly relevant to their lives.\n\nThat change succeeded and worked in our favor for a few reasons:\n\nFirst, defining themes made outreach easier. For example, when we made _Public Lands and the Environment_ a theme, we immediately knew where to look for great ideas: federal agencies that work to protect and study the environment.\n\nSecond, defining themes allowed us to develop important contacts and map the who’s who of certain problem spaces in government technology. One of our challenges on new 10x projects is figuring out where to start and who to talk with first. By moving towards this structure, we’ve built strong contacts with subject-matter experts who we can easily consult on projects relevant to their expertise.\n\nThird, having themes made it easier to compare different ideas during our evaluation periods. For example, it’s easier to debate the merits and opportunities of two ideas that take different angles on climate challenges than it is to compare the merits of a cybersecurity idea to an acquisitions idea.\n\nLastly, and most importantly, having defined themes allowed us to align our program’s investment portfolio with topics that matter to the public.\n\n### Where we shined\n\nFor government program managers, one of the best confidence boosters is when our work happens to align well with administration-level priorities.\n\nOne area where we really excelled last year was finding areas of significant overlap between what our projects are doing and what the new Administration wants to do. Many of our FY21 projects directly supported legislation and/or government-wide priorities, such as\n\n- [CASES Act](https://www.congress.gov/bill/116th-congress/house-bill/1079),\n- [21st Century IDEA](https://www.congress.gov/bill/115th-congress/house-bill/5759/text), and \n- the [Executive Order on racial justice](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/01/20/executive-order-advancing-racial-equity-and-support-for-underserved-communities-through-the-federal-government/).\n\nAnother success was advancing projects that build products that the public can use. In the past, many projects delivered back-end software for agencies or guidance for federal employees.\n\nBut this past year, as a program within GSA’s Technology Transformation Services (TTS), we’ve been focusing more on public-facing work that helps drive TTS’ vision to create trusted modern government experiences for all. If we’re delivering products that support legislation and other priorities—while building things that the public will use directly—we know we’re on the right track.\n\nOne example of this work is our [Benefits Eligibility Awareness Recognition Service (BEARS) project](https://demo.10x.gsa.gov/projects/benefits-eligibility-resource/). The BEARS app we’re building will not only help people find and apply for benefits more easily, but it will also add compassion and empathy to public service by centering benefits information around the life events that trigger people to search for benefits, such as a death in the family or losing a home in a natural disaster. Centering benefits around life events rather than agency silos demonstrates that the government understands the needs of the public, which is critical to building trust between public and government. We believe the best time for compassionate and empathetic public service is when people are grieving, or trying to rebuild their lives after a tragedy.\n\nWe’ve been working with new technologies in ways we haven’t before. For years, APIs, data products, playbooks, and websites were our bread and butter.\n\nNo longer. Keep reading to see how we’re engaging with emerging technologies, like privacy engineering and the Internet of Things (IoT).\n\n",
+      "calloutFull": "If we’re delivering products that support legislation and other priorities—while building things that the public will use directly—we know we’re on the right track.",
+      "content3": "### Challenges we faced\n\nAt 10x, we’re lucky to have flexibility in deciding what projects we take on. Our uniquely iterative investment approach identifies risks and allows us to end projects when it’s clear they won’t deliver impact. The challenge this model presents to us is that sometimes we need to close down projects we love. Certain projects pull at our heartstrings, but if the evidence does not point to their successful exit, then the responsible decision is to end the project.\n\nOther times, projects do have a viable path towards success, but because we don’t have unlimited funding, we are forced to make hard decisions about which projects should move forward from one phase to another. We’re trained to make the most of what we have and to work within these constraints. Having a limited number of projects we can invest in forces us to think more critically about funding decisions. We always have to ask ourselves: will this project deliver value? \n\nBringing passion into our projects is key to their successful outcomes. But when it comes to making objective funding decisions, we have to be, well, objective. And that requires asking tough questions and making hard choices. Some of the most common reasons we end projects we love is because our partner agencies may not be equipped–or ready–to take them on and maintain them sustainably.\n\nIn government, budgets are often planned out two years in advance. But 10x develops products more quickly than that. The problem this presents is that when we are working with an agency that wants to own one of our solutions, they may not have access to the financial liquidity that it will take to own the product long-term. Another challenge we face is that hiring in government often takes time, and many agencies have not yet built a large pool of engineers, product managers, and other technical talent to leverage on new initiatives. These resource constraints make it difficult to transition our projects to partner agencies. While we do face these staffing challenges regularly, there is increased momentum in government to prioritize bringing on top notch technical talent into the civil workforce. A good example is the US Digital Corps program– hosted by GSA–that matches early career technologists with government agencies. We believe this and other initiatives focusing on developing  a digital civil service will help a great deal with these types of challenges.\n\nTo mitigate these risks, we try to be as up front and transparent with our partners as possible when it comes to the resources that will be required to own a solution. Recognizing the critical importance of meeting people where they are and working with (not for) our partners means we can channel a project into a direction that fully aligns with our agency partners’ capabilities. This is a challenge, but it’s one that 10x is mindful of and committed to solving  for, as soon as we see it on the horizon.\n\nBut occasionally, even when our teams and our partner agencies are excited about a project and see how much impact it could deliver, we need to end the project early when the hand-off feels too risky. And when we do that, it is always with a heavy heart.\n\n"
+    },
+    {
+      "section": "3",
+      "class": "white",
+      "target": "fy21-by-the-numbers",
+      "theme": "2",
+      "title": "FY21 by the Numbers",
+      "byTheNumbersHeading": "Project Journey",
+      "byTheNumbersStats": [
+        {
+          "data": "47",
+          "label": "projects kicked off"
+        },
+        {
+          "data": "46",
+          "label": "project endings / closeouts"
+        },
+        {
+          "data": "100%",
+          "label": "of ideas that successfully exited in after Phase Three/Four"
+        },
+        {
+          "data": "44",
+          "label": "reports written"
+        },
+        {
+          "data": "X",
+          "label": "agencies / organizations collaborated with"
+        },
+        {
+          "data": "X",
+          "label": "people interviewed"
+        },
+        {
+          "data": "XX",
+          "label": "of projects align to administrative priorities"
+        }
+      ],
+      "byTheNumbersList": [
+        {
+          "listItem": "**250** ideas received - average between FY17 - FY20 = 192"
+        },
+        {
+          "listItem": "**47** projects kicked off - average between FY17 - FY20 = 48"
+        },
+        {
+          "listItem": "**46** project endings/closeouts - average between FY17 - FY20 = 45"
+        }
+      ],
+      "chartHeading": "10x Investment Snapshot",
+      "chart": true,
+      "content": "This chart shows the number of ideas that we received, the number of projects kicked off in our various phases, and how many closed out over the years. In FY21, we held only one round of idea solicitation and evaluation, rather than the two rounds we’ve conducted before.\n\n**Fun facts: Across all the collective projects we kicked off in FY21, our 10x project teams have conducted more than:**\n\n- **115+** unique organization collaborations\n- **400+** user and subject-matter expert interviews\n\n### Project Endings\n\nOnly one third of 10x projects advance past any particular phase. Some projects end after Phase 1, some after Phase 2, and so on. We do this as part of our due diligence in making sure that we are only investing in the most promising, impactful projects.\n\nIn FY21, we began tracking and analyzing data on why 10x projects end at particular phases, so we could identify trends and solutions for future teams. This analysis confirmed the most common reasons are lack of demand and lack of a dedicated product owner. The breakdown of why 10x decides not to fund work for additional phases is below.\n\n",
+      "reasonForRejection": [
+        {
+          "color": "1",
+          "percent": "48",
+          "heading": "Demand & Adoption",
+          "data": "- Low, no, or unclear demand for service\n- There is not a clear problem or practical solution\n- Potential customers aren’t yet able/willing to adopt solution\n- Potential customers don’t see the problem as urgent or disagree that the problem exists"
+        },
+        {
+          "color": "2",
+          "percent": "26",
+          "heading": "Feasibility",
+          "data": "- Business model is unclear or untenable\n - Potential benefits are not sufficient enough to justify further investment"
+        },
+        {
+          "color": "3",
+          "percent": "11",
+          "heading": "No Further Funding Necessary",
+          "data": "- The project has achieved its goals and delivered value; no further investment from 10x necessary"
+        },
+        {
+          "color": "4",
+          "percent": "7",
+          "heading": "Redundancy",
+          "data": "- Someone else is doing this (or should already be doing it) and 10x doesn’t need to"
+        },
+        {
+          "color": "5",
+          "percent": "4",
+          "heading": "Merged",
+          "data": "- This project was merged into another 10x project"
+        },
+        {
+          "color": "6",
+          "percent": "4",
+          "heading": "Other Funds",
+          "data": "- This project will receive other funding from elsewhere"
+        }
+      ],
+      "reportTableHeading": "10x Projects",
+      "reportTableHeaders": [
+        {
+          "header1": "Phase",
+          "header2": "# of Projects",
+          "header3": "Total $"
+        }
+      ],
+      "reportTableData": [
+        {
+          "data1": "Phase One",
+          "data2": "22",
+          "data3": "$420,000"
+        },
+        {
+          "data1": "Phase Two",
+          "data2": "13",
+          "data3": "$1,672,400"
+        },
+        {
+          "data1": "Phase Three",
+          "data2": "6",
+          "data3": "$2,507,954"
+        },
+        {
+          "data1": "Phase Four",
+          "data2": "0",
+          "data3": "$0"
+        },
+        {
+          "data1": "Total",
+          "data2": "",
+          "data3": "$4,600,354"
+        }
+      ],
+      "content2": "### Project Funding\n\nThe 10x budget is funded through the Federal Citizen Service Fund (FCSF), a fund appropriated by Congress that supports public-facing services and agency-facing programs that drive Government-wide transformation. Here’s a look at how we invested in FY21\n\nIn FY21, we:\n\n- funded 22 Phase One projects.\n- held one round of idea evaluation.\n- eliminated funding for Phase Four projects. Instead, we committed to exploring other funding avenues to help our projects scale beyond Phase Three.\n\n",
+      "reportBudgetTableHeading": "Other DSF Commitments",
+      "reportBudgetTableHeaders": [
+        {
+          "header1": "Item",
+          "header2": "Total $"
+        }
+      ],
+      "reportBudgetTableData": [
+        {
+          "data1": "Total",
+          "data2": "$808,889",
+          "highlight": true
+        }
+      ],
+      "content3": "The chart above illustrates the 41 projects that received obligated funding in FY21. This number is different from the total number of projects kicked off in FY21 (which was 47) because we started 6 projects in FY21 that received obligated funding from FY20.",
+      "content4": "In addition to our usual appropriations, we were entrusted with $5m in funding via the [TTS American Rescue Plan (TTS ARP)](https://www.gsa.gov/technology/government-it-initiatives/tts-american-rescue-plan) at the end of FY21. The funding will be used in FY22 to help accelerate TTS’ efforts to reimagine digital services delivery.  This includes supporting TTS’ process and execution on their ARP-aligned projects.\n\nAlso, at the end of FY21, we used some of this ARP funding to advance a few existing projects that are already well-aligned to the ARP goals, including _Government Notification Services_."
+    },
+    {
+      "section": "4",
+      "class": "light-gray",
+      "target": "fy21-project-showcase",
+      "theme": "2",
+      "title": "FY21 Project Showcase",
+      "calloutProject": "Combating Bias in AI/ML",
+      "content": "_We had a lot of projects that really inspired us in FY21–projects we feel can–and do–deliver true impact for the public. For this year’s Impact Report, we’re focusing on one of the most exciting projects that blossomed during FY21: **Combating Bias in Artificial Intelligence and Machine Learning Implementations (AI/ML)**. To check out some of our other work, please head over to the [projects section of our site](https://10x.gsa.gov/projects/). It’s got the scoop on what we learned and the impact we’ve created through our individual projects._\n\n",
+      "content2": "**How a 10x investment enshrines democratic principles in a changing govtech landscape**\n\nArtificial Intelligence and Machine Learning (AI/ML) technologies will affect how the government serves the public. Public sector spending on AI is projected to reach well into the billions before long.[^1] Federal CIOs have encouraged agencies to start experimenting with AI and two previous presidential administrations have all issued guidance, memoranda, or executive orders specific to AI adoption in government.\n\nDespite all of this momentum, AI/ML technologies are fairly new to many government agencies. Many are still figuring out how these exciting new capabilities can support their business needs and how they can start adopting them.\n\nWe’ve funded several AI-related projects over the years and made some observations. We believe that AI/ML use in government is going to accelerate and it’s going to come with challenges. The stakes are high and the government needs to get it right the first time.\n\nStakes are high because AI/ML implementations risk harm if not done thoughtfully and ethically. These technologies help make real decisions that affect people’s lives, so fairness is a paramount concern. Enshrining democratic values like fairness, equity, and equality in AI/ML is a tall order. So where do we begin? How can we deliver impact here?\n\n### Bias Toolkit\n\nTo meet this challenge, we placed a bet on the table: combating bias in upstream datasets—before they go through an AI pipeline that can make important decisions—is a good place to start.\n\nThroughout FY21, the 10x team worked with the U.S. Census Bureau (Census) to develop the bias toolkit. This project along with our other AI-related projects, is how we’re helping the government get AI/ML right during these early days.\n\n**What we delivered**\n\nThe toolkit includes three functioning de-biasing tools that federal employees can use to lay a more equitable foundation for their AI-enhanced workflows. Together, these three tools provide a great foundation for future de-biasing initiatives.\n\n- The first tool creates carbon copies of datasets with placeholder (or ‘dummy’ data) that allows a federal employee to generate and test multiple, similar datasets through the AI model algorithm. Testing AI models with both real and placeholder data helps reveal sources of bias that might remain hidden if the model were trained only on the target dataset.\n\n- The second tool uses AI to detect ableist language in federal job postings, which is language that may be offensive to people with disabilities. The tool automatically suggests more appropriate, inclusive alternatives that hiring managers can use to create better, more equitable job descriptions.\n\n",
+      "image": "projectDemo",
+      "content3": "- The third tool offers a standard language format, or model card, that describes the AI/ML model’s characteristics. Similar to a nutrition label on a can of soup that tells you the ingredients, nutritional profile, and allergen warnings, the model card shows the characteristics—including errors that could lead to biased outputs if left unaddressed–within that AI model. Model cards provide transparency about the AI model’s limitations and can help people re-use these models equitably and transparently.\n\nThe toolkit is currently in beta and awaiting a full launch in FY22. Census will own, maintain, and expand the toolkit. As the U.S. government’s premier statistical agency, Census works with the types of eye-poppingly large, complex datasets that power advanced AI, making them a great fit for championing this work into the future.\n\n**Why we’re proud of this**\n\nEveryone wins when a project is moved to where it can continue to thrive after exiting the 10x funding pipeline. An example of  how two agencies should work together, it’s a great project transition that will have a huge impact.\n\nWe showcase this de-biasing project because we believe it resonates with communities outside of our core user base of federal employees. This project lives at the intersection of two of the most important conversations that we, as a country, are having and highlights how the government is responding. The first conversation focuses on reckoning with injustice in our society as experienced by minority and vulnerable populations. The second is the rapidly evolving field of artificial intelligence and the cultural angst around how AI and other emerging technologies will affect society (for better or worse) in the years to come.\n\nWe’re proud of this project and we’re proud that we helped ensure that the government adopts rapidly advancing, powerful technologies in a way that shows a serious effort to protect democratic values and delivers positive, meaningful impact for the public. We are excited to see it grow and mature under the stewardship of our U.S. Census Bureau partners. Be on the lookout for the full roll-out in 2022, we’ll keep our site updated. In the meantime, the initial toolkit is open-source and available freely on the web. Anyone in the world can find, use, and contribute to our tools.\n\n**Summary**\n\n10x is a small program within our own agency and we are only one of many initiatives across the government that are also thinking about the future of AI/ML in public service delivery. Naturally, the private sector and other groups will play a central role in the future of public sector AI/ML adoption. But we believe the government has a special role to play.\n\nOur ambition for this project was to make small, positive interventions that reinforced democratic values of justice and equity as the government adopts AI/ML. We aim to create positive ripple effects that will carry into the future and influence how the government uses AI to serve the public.\n\n",
+      "otherProjectsREMOVED": [
+        {
+          "projectName": "DevOps for Privacy Offices",
+          "projectURL": "#"
+        },
+        {
+          "projectName": "Benefits Eligibility Awareness Recognition Service",
+          "projectURL": "#"
+        },
+        {
+          "projectName": "Institute of Museum and Library Services (IMLS)",
+          "projectURL": "#"
+        },
+        {
+          "projectName": "Future of Government Data",
+          "projectURL": "#"
+        },
+        {
+          "projectName": "Navigating Public Records",
+          "projectURL": "#"
+        },
+        {
+          "projectName": "Contact Tracing in Federal Buildings",
+          "projectURL": "#"
+        },
+        {
+          "projectName": "Equity Centered Design with AIAN",
+          "projectURL": "#"
+        },
+        {
+          "projectName": "GNS",
+          "projectURL": "#"
+        },
+        {
+          "projectName": "Public Service Catalog",
+          "projectURL": "#"
+        }
+      ]
+    },
+    {
+      "section": "5",
+      "class": "dark-gray",
+      "target": "the-dark-matter",
+      "theme": "3",
+      "title": "10x Dark Matter",
+      "calloutFullDark": "In order for the government to truly modernize and deliver excellent public service in the digital age, agencies don’t just need better software, they need new ideas for how to tackle long-standing problems.",
+      "content": "### The challenge\n\n10x inherits GSA’s vision of an effective and efficient government. To play our part in helping make that a reality, we need to keep our finger on the pulse of developments, challenges, and opportunities in the govtech space. With that in mind, about a year ago, the 10x team met with top federal IT executives and colleagues to discuss projects we were hoping to evangelize and make connections for, while also learning about the technology challenges and opportunities they see for their agencies. We gain invaluable intelligence and inspiration from these colleagues that helps guide our investment strategy.\n\n_“The value of 10x isn’t in the achievements or adoption of any individual product. Rather, the value of 10x is in the ideas we surface. **In order for the government to truly modernize and deliver excellent public service in the digital age, agencies don’t just need better software, they need new ideas for how to tackle long-standing problems.”**_\n~ Shared by Federal IT Executive\n\nWhat they’re suggesting is that we need to produce value not just in the form of _technology_, but also in _innovation_—new ideas about how the federal government can do tech differently. This is the challenge that 10x chose to take on, and this is where the concept 10x dark matter comes in. Dark Matter represents the innovations that 10x discovers that aren’t product-shaped. For this year’s Dark Matter, we’re going to explore ideas that are largely drawn on our [Shared Components for Museums and Libraries project](https://10x.gsa.gov/projects/shared-components-for-museums-and-libraries/).\n\n### The Innovation\n\n**This year, one of the most exciting innovations we found is the possibility of applying Internet of Things capabilities to public service in creative new ways.**\n\nWe found these opportunities quite unexpectedly, and we assume there are more.\n\nTwo concepts are key to understanding this year’s dark matter content.\n\nFirst is the _digital divide_, which refers to how different populations face gaps in access to technology. Factors like income, age, and geographical location can determine where a person falls on the digital divide.\n\nPeople who are less-connected face a number of disadvantages, including difficulty participating in the digital economy. A practical and timely example are the challenges people without reliable internet access faced in adapting to life during COVID-19, like shifting to remote work and remote schooling.\n\nMany levels of government have tried to solve, **or bridge, the digital divide for years. 10x believes this area has great potential for innovation.**\n\nThe second concept is the _Internet of Things_, or IoT. IoT is a rapidly-expanding field of technology based on networks of physical devices that can receive and send information over the internet, often with embedded software or sensors. Good examples of IoT technology include smart home devices, like WiFi-enabled thermostats\n\n",
+      "content2": "In the public sector, existing IoT uses include sensor-driven traffic control and waste management systems in city and municipal governments. But in general, current applications of IoT within the _federal_ government cluster around internal agency operations, such as:\n\n- supply chain management,\n- inventory tracking,\n- facilities access, and\n- various security and surveillance uses.\n\nSome agencies use IoT to monitor climate and ecosystems environmental sensors. But mostly, IoT capabilities across the federal government focus on improving agencies’ internal operations. We don’t have many recorded instances of federal agencies using IoT to directly meet their mission in a way that is public-facing.\n\nIn addition, most of these technologies were acquired by procuring commercial off-the-shelf (COTS) products from software vendors. The few agencies that have built IoT capabilities in-house did so because the commercial solutions were not available for their specific business needs.\n\nOur work last year stands out among federal government use cases of IoT, because we use it in a direct, mission-delivery way. Our innovations can help bridge the digital divide.\n\n**As far as we know, our work is the first technology project in the federal government that**\n\n- **developed in-house IoT capabilities,**\n- **used open-source software that is compatible with inexpensive and readily available open-source hardware,**\n- **neither collects nor stores sensitive information, and**\n- **is freely available and documented on the web for anyone to use.**\n\nThe best part is that our user base is librarians embedded in communities across the country who can use our IoT technology to make data-informed decisions that benefit their patrons.\n\nAnd if that _isn’t_ the best part, then the best part is that we discovered a new way of getting disconnected folks online along the way. We helped the government reimagine ways to bridge the digital divide.\n\n### The Project\n\nThe project started as an exploration into the possibility of developing reusable, open-source digital components for Social Safety Net benefits programs.\n\nIt changed into a project looking at shared components for museums and libraries.\n\nWe shifted our focus when our research clearly showed the critical role that libraries have played helping people access technology during the COVID-19 pandemic. It also helped that a strong federal agency with relevant subject-matter expertise agreed to work with us.\n\nWe soon discovered that a key problem that libraries face is understanding the details of their patrons’ WiFi usage.\n\nMany libraries provide WiFi access, a key resource that allows people to apply for jobs or unemployment benefits when they lack access at home. Having data on WiFi usage helps libraries make budget decisions and influences when they offer WiFi services.\n\nFirst, we produced a new way for libraries to collect data on WiFi usage. The IoT technology we developed includes open-source code that runs on open-source hardware, acting as a sensor that collects and transmits data on WiFi usage within libraries. It includes details on peak times of usage, the number of connected devices, and duration of visits.\n\nAlso, it provides baseline, structured data that will allow libraries to track changes in Wifi usage year-after-year, or even day-by-day. The data can also be exchanged with other granting and policy agencies at the state or federal levels.\n\nMore than 20 local libraries across the country use the prototype devices we developed. Our technology\n\n- saves libraries time and money,\n- replaces paper-based processes,\n- is decentralized (libraries can use the tools completely independently of 10x or federal involvement), and\n- mitigates agency concerns about privacy by not collecting any sensitive information.\n\nSecond, we developed a novel hotspot capability completely by accident. Our engineers found that the open-source software stack we built serves as a WiFi hotspot when connected to a USB cellular modem, with minor modifications to the source code. We believe this technology could scale for use in schools, community centers, and other places where the digital divide is widest. Stumbling upon innovations by accident speaks to the magic of the 10x process: embrace unknown outcomes, be open to pivoting, unleash smart people on thorny problems. Magic.\n\nThe last—and perhaps most important—demonstrated value from our work is that it’s worth the government’s while to look for new, better ways to ensure that people on both sides of the divide can benefit from emerging trends in technology.\n\nTo many people, WiFi-controlled robotic vacuum cleaners and smart refrigerators are out of reach. Internal federal agency operation-focused implementations of IoT feel a bit removed from direct public service and are unlikely to deliver tangible benefits to individual members of the public.\n\nOur project hasn't solved the digital divide, but it shows how our program is addressing a complex problem in society through innovation. We’ve proven that the federal government can play a constructive role to ensure that the public is able to benefit from the latest technologies that are transforming everyday life. We can find innovative ways to harness them ethically, securely, in the open, and always in the pursuit of excellent public service.\n\nFrom our perspective, the solutions we offer prove there are viable, innovative IoT applications in the federal government that have not been explored before. After all, we never set out to “do an IoT project”. We landed on this approach by chance, and only through thorough research and prototyping. With further investment and experimentation, we believe federal agencies can uncover many more IoT applications.\n\n"
+    },
+    {
+      "section": "6",
+      "class": "light-gray",
+      "target": "look-ahead-to-fy22",
+      "theme": "2",
+      "title": "Look Ahead to FY22",
+      "content": "We’re 100% convinced that FY22 is going to be busy, exciting, and challenging. We have projects advancing into technology we’ve never worked with before. We have a once-in-a-generation opportunity to multiply our impact by funding more work than ever. And new doors have opened that can help scale and support our projects post-10x when the projects complete Phase Four. Here are a few things we’re expecting to come across over the next 365 days and how we’re thinking about them:\n\n**Scaling and Multiplying**\n\nTwo things will be important for us in FY22:\n\n- First, the [American Rescue Plan (ARP)](https://www.whitehouse.gov/american-rescue-plan/) will be significant for 10x in FY22.\n- Second, we’re expecting to clone our own model and help other agencies replicate something similar to 10x within their organizations.\n\nOur organization—the Technology Transformation Services—received [ARP funding](https://www.gsa.gov/technology/government-it-initiatives/tts-american-rescue-plan/tts-american-rescue-plan-projects-and-impact) specifically to recover, rebuild, and reimagine digital public service delivery in the face of the COVID-19 pandemic. 10x will use some of these funds to reimagine digital public service delivery, which happens to be something we’re particularly good at.\n\nWith this TTS ARP support, we’ll fund more work across phases to experiment with and uncover new opportunities for how small improvements can provide a huge impact for the government’s response to COVID-19.\n\n- our projects align specifically to the spirit of the TTS ARP, and/or\n- require significant financial advancement to deliver impact beyond what 10x can provide in Phase Four.\n\nJoining forces with the TTS ARP PMO will make our work even more impactful. If they are considering work that may have potential, but is unproven, we will take the lead,  putting it through our investment phases. We can identify this work’s potential and viability, before our parent organization considers this work for more substantial support.\n\nWe want to formally pursue a goal we’ve had for years: helping other organizations in government spin-up initiatives that harness what we’ve learned and use some of our methods. To do that, we’re actively talking to multiple federal agencies who want to work with us to recreate our model in their organization. We will help these other agencies, but also recognize that the agency partners will have to do the real work:\n\n- Finding funding,\n- Finding a safe space to operate within their agency’s bureaucracy, and\n- Getting buy-in from leadership for standing up a 10x-like process.\n\nThese steps won’t be easy, but we'll help all we can. We also recognize that there is always room for improvement. We know there are opportunities to do things differently while keeping our basic risk-mitigation, iterative model intact.\n\nWe fully expect these initiatives in other agencies will differ from our program, since they will need to be tailored to fit the funding, culture, and IT environments in other agencies.\n\n"
+    },
+    {
+      "section": "7",
+      "class": "white",
+      "target": "want-more-from-10x",
+      "theme": "2",
+      "title": "Want more from 10x? Let’s Talk",
+      "content": "If you’ve made it this far, we hope we have your attention, and your imagination. Here are a few opportunities for collaboration that we’d love to explore with you and your organization:\n\nAre you interested in exploring dark matter with us? If you or your agency has found a novel application of IoT that is directly tied to mission-delivery in a public-facing way, we’d love to hear about it.\n\nLast year’s dark matter focused on the opportunities for government and third sector organizations (like non-profits and academia) to co-design, build, and manage software together to deliver impact for the public in a way that leverages the relative strengths and capabilities of government and non-government. If you have come across an arrangement like this—or are interested in exploring one—reach out!\n\nHave any of the projects we’ve covered in this report resonated with you? If you’re interested in learning more about any of our products, or believe you can contribute to them, then don’t be shy.\n\nShoot us an email at <10x@gsa.gov>. And check our site regularly for more updates on upcoming and current projects.\n\nHappy Innovating,<br />The 10x Team\n\n<hr /><br /><h3>Citations</h3>\n\n<a name=\"fn-1\"></a>1. AI Weekly: U.S. agencies are increasing their AI investments. (2021, September 11). Retrieved April 26, 2022, from <a href=\"https://venturebeat.com/2021/09/11/ai-weekly-u-s-agencies-are-increasing-their-investments-in-ai/\">https://venturebeat.com/2021/09/11/ai-weekly-u-s-agencies-are-increasing-their-investments-in-ai/</a>"
+    }
+  ],
+  "seo": {
+    "title": "10x Impact Report | 10x.GSA.gov",
+    "description": "What if we could make it easier for civil servants to interact with the public they serve? Find out how 10x created a guide to the Paperwork Reduction Act."
+  }
+}

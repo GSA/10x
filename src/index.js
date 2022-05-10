@@ -17,15 +17,13 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 const App = () => (
-  <React.StrictMode>
-    <Router>
-      <Provider store={store}>
-        <Primary>
-          <Routes />
-        </Primary>
-      </Provider>
-    </Router>
-  </React.StrictMode>
+  <Router>
+    <Provider store={store}>
+      <Primary>
+        <Routes />
+      </Primary>
+    </Provider>
+  </Router>
 );
 
 const rootElement = document.getElementById("root");

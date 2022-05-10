@@ -12,6 +12,7 @@ import Select from "components/Select";
 import ContentList from "features/ContentList";
 import GhostWriter from "features/GhostWriter";
 import ProjectList from "features/ProjectList";
+import ReportList from "features/ReportList";
 
 export const shortcodes = {
   Break,
@@ -28,6 +29,7 @@ export const shortcodes = {
   Select,
   ContentList,
   ProjectList,
+  ReportList,
 };
 
 const Mdx = ({ children, className, components, scope }) => {

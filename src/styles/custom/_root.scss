@@ -1,5 +1,5 @@
 html {
-  font-size: 12px;
+  font-size: 14px;
 
   @include at-media("tablet") {
     font-size: 14px;
@@ -94,6 +94,9 @@ h5,
   position: relative;
   overflow-x: hidden;
   background: rgb(69, 217, 217);
+  @include at-media("tablet") {
+    overflow-x: initial;
+  }
 
   &__theme-1 {
     .TxContent {
@@ -195,6 +198,29 @@ h5,
         #d9d9f7 50%,
         #f6f6fe 100%
       );
+    }
+  }
+
+  &__theme-9 {
+    .TxContent {
+      background: #ffffff;
+      .usa-app__bg {
+        background-image: url("~styles/images/report-1-bg-mobile.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 0;
+        background-size: contain;
+        @include at-media('tablet') {
+          background-image: url("~styles/images/report-1-bg-tablet.png");
+          background-position-y: 0;
+          background-size: contain;
+        }
+        @include at-media('desktop') {
+          background-image: url("~styles/images/report-1-bg.png");
+          background-position-y: -120px;
+          background-size: 100% 6%;
+        }
+      }
     }
   }
 }

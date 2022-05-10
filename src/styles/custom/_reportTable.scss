@@ -1,0 +1,34 @@
+.ReportTable, .ReportBudgetTable {
+  //background-color: rgba(217, 217, 240, .24);
+  padding: 40px 0;
+  padding-top: 30px;
+  position: relative;
+  width: 100%;
+  table {
+    margin: 0;
+    width: 100%;
+    th {
+      @include u-font("serif", 1);
+      border-bottom: 2px solid $x-tiger;
+      color: $x-grimace;
+      font-size: 1.1rem;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    .highlight {
+      background-color: #F6F6FC;
+    }
+  }
+  &__heading {
+    color: $x-tiger-dark;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  &__label {
+    display: block;
+    @include u-font("sans", "2xs");
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+}

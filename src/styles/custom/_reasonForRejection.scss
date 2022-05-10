@@ -1,0 +1,91 @@
+%color-scheme-dark-bg-1 { background-color: #4e5163; }
+%color-scheme-dark-color-1 { color: #4e5163 !important; }
+%color-scheme-light-bg-1 { background-color: #c7c8ce; }
+
+%color-scheme-dark-bg-2 { background-color: $x-tiger-dark; }
+%color-scheme-dark-color-2 { color: $x-tiger-dark !important; }
+%color-scheme-light-bg-2 { background-color: #fecfc1; }
+
+%color-scheme-dark-bg-3 { background-color: #292a2b; }
+%color-scheme-dark-color-3 { color: #292a2b !important; }
+%color-scheme-light-bg-3 { background-color: #bcbcbc; }
+
+%color-scheme-dark-bg-4 { background-color: #0a6680; }
+%color-scheme-dark-color-4 { color: #0a6680 !important; }
+%color-scheme-light-bg-4 { background-color: #afcfd7; }
+
+%color-scheme-dark-bg-5 { background-color: #39337b; }
+%color-scheme-dark-color-5 { color: #39337b !important; }
+%color-scheme-light-bg-5 { background-color: #c1bfd5; }
+
+%color-scheme-dark-bg-6 { background-color: #4e5164; }
+%color-scheme-dark-color-6 { color: #4e5164 !important; }
+%color-scheme-light-bg-6 { background-color: #c7c8ce; }
+
+.ReasonForRejection {
+  .usa-card__container {
+    background-image: none !important;
+    &::before {
+      background-image: none !important;
+    }
+  }
+  .card_color {
+    @mixin CardColorScheme($arg: 1) {
+      .borderPercent {
+        border-radius: 0 5px 5px 0;
+        height: 10px;
+        left: 0;
+        position: absolute;
+        top: -5px;
+        z-index: 2;
+        @extend %color-scheme-dark-bg-#{$arg};
+      }
+      .border {
+        border: 0;
+        height: 7px;
+        left: 0;
+        position: absolute;
+        top: -5px;
+        width: 100%;
+        @extend %color-scheme-light-bg-#{$arg};
+      }
+      ul li:before {
+        content: "\f111" !important;
+        font-size: 0.4rem !important;
+        transform: none !important;
+        @extend %color-scheme-dark-color-#{$arg};
+      }
+      .percent {
+        @extend %color-scheme-dark-color-#{$arg};
+        @include u-font("serif", "xl");
+        font-weight: bold;
+      }
+      .heading {
+        @extend %color-scheme-dark-color-#{$arg};
+        @include u-font("sans", "lg");
+        font-size: 1.45rem;
+        margin-bottom: 6px;
+      }
+    }
+    &--scheme {
+      &-1 {
+        @include CardColorScheme(1);
+      }
+      &-2 {
+        @include CardColorScheme(2);
+      }
+      &-3 {
+        @include CardColorScheme(3);
+      }
+      &-4 {
+        @include CardColorScheme(4);
+      }
+      &-5 {
+        @include CardColorScheme(5);
+      }
+      &-6 {
+        @include CardColorScheme(6);
+      }
+    }
+  }
+}

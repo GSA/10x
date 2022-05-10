@@ -26,6 +26,18 @@
     }
   }
 
+  &__extraWide {
+    @include u-margin-top(0);
+    @include u-margin-bottom(8);
+    &:before {
+      //@include u-padding-y(3);
+      background-position-x: left;
+      background-size: auto;
+      background-size: contain;
+      height: 54px;
+    }
+  }
+
   &__primary-lighter {
     &:before {
       background-image: url("~styles/images/short-lilac-brush-stroke.png");
@@ -54,6 +66,11 @@
   &__base-lighter {
     &:before {
       background-image: url("~styles/images/short-ocean-brush-stroke.png");
+    }
+  }
+  &__accent-green {
+    &:before {
+      background-image: url("~styles/images/report-green-separator.png");
     }
   }
 }

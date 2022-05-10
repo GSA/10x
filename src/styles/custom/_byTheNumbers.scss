@@ -1,0 +1,60 @@
+.ByTheNumbersGraphic {
+  background-image: url("~styles/images/by-the-numbers-bg.png");
+  background-position-x: left;
+  background-repeat: no-repeat;
+  display: none;
+  height: 576px;
+  margin-bottom: 2rem;
+  padding-top: 0.2rem;
+  position: relative;
+  width: 565px;
+  &__heading {
+    left: 40px;
+    position: relative;
+    top: 12px;
+  }
+  &__item {
+    position: absolute;
+    overflow: visible;
+    width: 125px;
+    z-index: 1;
+    &-1 {
+      left: 50px;
+      margin-top: 0;
+      top: 100px;
+    }
+    &-2 {
+      left: 214px;
+      top: 100px;
+    }
+    &-3 {
+      left: 380px;
+      top: 86px;
+    }
+    &-4 {
+      left: 50px;
+      top: 270px;
+    }
+    &-5 {
+      left: 214px;
+      top: 270px;
+    }
+    &-6 {
+      left: 380px;
+      top: 270px;
+    }
+    &-7 {
+      left: 50px;
+      top: 412px;
+    }
+  }
+  &__label {
+    display: block;
+    @include u-font("sans", "2xs");
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+  @include at-media("tablet") {
+    display: block;
+  }
+}

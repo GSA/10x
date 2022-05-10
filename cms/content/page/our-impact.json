@@ -1,0 +1,55 @@
+{
+  "title": "Our Impact",
+  "slug": "our-impact",
+  "sections": [
+    {
+      "type": "title",
+      "title": "Our impact",
+      "subtitle": "FY2021 Impact Report"
+    },
+    {
+      "type": "markdown",
+      "body": "Welcome to 10x Impact! This is the place to learn about how 10x is using our investment dollars to deliver impact for the American public. Here you’ll find the annual impact reports we’ve released since FY2017. You’ll notice that the first web-friendly impact report is for FY22. We see this change from PDFs to an HTML format as a great metaphor for how we’ve grown as a program. \n\nWhether you’re a policymaker, a member of the press, or even a curious member of the public–we want to demonstrate how our investments do right by you. This is our shot at proving the value of our program and the incredible impact that government innovation can deliver to improve lives. Enjoy!",
+      "className": "desktop:width-tablet-lg"
+    },
+    {
+      "type": "report",
+      "items": [
+        {
+          "subtitle": "Investigation",
+          "title": "Is this a bad idea?",
+          "suffix": "$",
+          "body": "Teams research if the idea is trying to solve a real problem in the federal space worth solving and identify potential roadblocks, opportunities, and reach.",
+          "className": "bg--1"
+        },
+        {
+          "subtitle": "Discovery",
+          "title": "Is this a good idea?",
+          "suffix": "$$",
+          "body": "Teams dive deep to uncover the market fit, financial implication, timeline, regulatory factors, and scalability issues that would make it successful, while analyzing what could go right or wrong.",
+          "className": "bg--2"
+        },
+        {
+          "subtitle": "Development",
+          "title": "Will anyone use this?",
+          "suffix": "$$$",
+          "body": "Teams design and develop a functional MVP with at least one agency customer, then determine the estimated cost to build and maintain it, create a roadmap, and establish a spend plan.",
+          "className": "bg--3"
+        },
+        {
+          "subtitle": "Scale",
+          "title": "Will everyone use this?",
+          "suffix": "$$$$",
+          "body": "Teams receive a final round of funding to scale the solution to as many users as possible and implement an independent business model to make this thing a reality.",
+          "className": "bg--4"
+        }
+      ]
+    }
+  ],
+  "theme": "3",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "Our Impact | 10x.GSA.gov",
+    "description": "View the FY21 Impact Report."
+  }
+}

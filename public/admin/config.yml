@@ -130,7 +130,6 @@ modules:
             value: "TxChallenge__pitch"
           - label: "Process funnel graphic"
             value: "TxFunnel"
-          
 
   modGhostwriter: &modGhostwriter
     label: "Ghostwriter hero"
@@ -183,6 +182,15 @@ modules:
         label: "Horizontal styled list button"
         hint: "If provided, adds a button just after the list itself."
 
+  modByTheNumbers: &modByTheNumbers
+    label: "By the numbers"
+    name: "byTheNumbers"
+    hint: "Shows by the numbers at this location in the page."
+    widget: "object" #might be a boolean
+    fields:
+      - <<: *classname
+        widget: "hidden"
+  
   modPhases: &modPhases
     label: "10x Phases Graphic"
     name: "phaseGraphic"
@@ -362,8 +370,6 @@ modules:
             hint: "Text displayed below the number."
             widget: "string"
 
-
-
   modLinks: &modLinks
     label: Links
     name: links
@@ -425,6 +431,31 @@ modules:
       - <<: *classname
         widget: "hidden"
 
+  modReasonForRejection: &modReasonForRejection
+    label: "Reason for rejection cards"
+    name: "reasonForRejection"
+    hint: "Shows a stylized reason for rejection set of cards at this location in the page."
+    widget: "object" #might be a boolean
+    fields:
+      - <<: *classname
+        widget: "hidden"
+
+  modReports: &modReports
+    label: Reports
+    name: reports
+    widget: "object"
+    fields:
+      - <<: *classname
+
+  modReportTables: &modReportTables
+    label: "Report table"
+    name: "reportTables"
+    hint: "Shows a stylized report table at this location in the page."
+    widget: "object" #might be a boolean
+    fields:
+      - <<: *classname
+        widget: "hidden"
+
   modSections: &modSections
     label: "Sections"
     name: "sections"
@@ -432,6 +463,7 @@ modules:
     hint: "Choose sections from the dropdown to fill out the page."
     types:
       - <<: *modBreak
+      - <<: *modByTheNumbers
       - <<: *modCallout
       - <<: *modCards
       - <<: *modLinks
@@ -441,6 +473,8 @@ modules:
       - <<: *modGhostwriter
       - <<: *modProjects
       - <<: *modPhases
+      - <<: *modReasonForRejection
+      - <<: *modReports
       - <<: *modTitle
 
   modSeo: &modSeo
@@ -690,6 +724,7 @@ collections:
         widget: "list"
         types:
           - <<: *modBreak
+          - <<: *modByTheNumbers
           - <<: *modCallout
           - <<: *modCards
           - <<: *modLinks
@@ -700,6 +735,8 @@ collections:
           - <<: *modProjects
           - <<: *modPhases
           - <<: *modPhaseDescription
+          - <<: *modReasonForRejection
+          - <<: *modReports
           - <<: *modStatsCards
           - <<: *modTitle
       - <<: *preFooter
@@ -909,6 +946,7 @@ collections:
         widget: "list"
         types:
           - <<: *modBreak
+          - <<: *modByTheNumbers
           - <<: *modCallout
           - <<: *modCards
           - <<: *modLinks
@@ -924,8 +962,104 @@ collections:
           - <<: *modProjects
           - <<: *modPhases
           - <<: *modPhaseDescription
+          - <<: *modReasonForRejection
+          - <<: *modReports
           - <<: *modStatsCards
       - <<: *preFooter
+
+  - name: reports
+    extension: json
+    label: Reports
+    label_singular: Report
+    folder: cms/content/report
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    preview_path: "{{slug}}"
+    identifier_field: slug
+    summary: "{{title}} ({{slug}})"
+    editor:
+      preview: false
+    fields:
+      - <<: *slug
+      - <<: *headline
+        label: "Report Page and card headline"
+        hint: "Headline at the top of the report page and report card"
+        required: true
+      - <<: *modSeo
+      - label: "Report Card External Url"
+        name: "reportUrl"
+        widget: "string"
+        required: false
+        hint: "If provided, this overrides the default link to the Report's Detail Page. Provide a full link including https:// for report cards that should link externally instead of the Report Detail Page."
+      - label: "Report Card Excerpt"
+        name: "excerpt"
+        hint: "A short paragraph describing the report."
+        widget: "text"
+      - label: "Report Card Style"
+        name: "template"
+        hint: "Choose one of the card style templates for this report."
+        widget: "select"
+        required: true
+        options:
+          - label: "1 - Ocean splatter"
+            value: "1"
+          - label: "2 - Grimace wash"
+            value: "2"
+          - label: "3 - Tiger swipe"
+            value: "3"
+          - label: "4 - Ocean swirl"
+            value: "4"
+          - label: "5 - Tiger scratch"
+            value: "5"
+          - label: "6 - Grimace scribble"
+            value: "6"
+      - label: "Report Topics"
+        name: "topics"
+        widget: "hidden"
+        hint: "Separate tag values by comma."
+        required: false
+      - label: "Report Page Nav sidebar"
+        name: "nav"
+        hint: "Provide the Idea Submitter and the rest of the report mnan nav in the sidebar on the Report Page."
+        widget: "object"
+        required: false
+        fields:
+          - label: "Idea Submitter"
+            name: "submitter"
+            widget: "string"
+            required: false
+            hint: "Name, Title, Department or Agency"
+          - label: "Members"
+            name: "members"
+            widget: "text"
+            required: false
+            hint: "Names only, separated by commas"
+      - widget: "markdown"
+        name: "intro"
+        label: "Report Page Introduction"
+        required: false
+        hint: "Displays just below the Report Page Headline and Report Page Title."
+      - widget: "markdown"
+        name: "impact"
+        label: "Why this matters"
+        required: false
+        hint: "First content section on the report page. Explain the report's impact and importance."
+        default: "## Why this matters\n\n This report will deliver impact...."
+      - widget: "markdown"
+        name: "approach"
+        label: "What we did"
+        required: false
+        hint: "Second content section on the report page. Explain the report's approach. Ends with phase timeline graphic."
+        default: "## What we did\n\n The team delivered...\n\n### How we did it \n\n...\n\n### Where we are today\n\n ..."
+      - widget: "markdown"
+        name: "future"
+        label: "Next steps"
+        required: false
+        hint: "Third content section on the report page. Explain the report's future."
+        default: "## Why this matters\n\n This report will deliver impact...."
+      - <<: *preFooter
+        required: false
 
   - name: footers
     extension: json
