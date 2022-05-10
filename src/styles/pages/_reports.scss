@@ -178,12 +178,13 @@ $c-report-header: #006680;
           background-size: contain;
         }
         p {
-          font-size: 1.1rem;
+          font-size: 0.8rem;
           max-width: 68%;
-          line-height: 1.3rem;
+          line-height: 1rem;
           @include at-media("desktop") {
             font-size: 1.2rem;
             max-width: 535px;
+            line-height: 1.3rem;
           }
         }
       }
@@ -206,12 +207,13 @@ $c-report-header: #006680;
           /* background-size: contain; */
         }
         p {
-          font-size: 1.1rem;
+          font-size: 0.8rem;
           max-width: 68%;
-          line-height: 1.3rem;
+          line-height: 1rem;
           @include at-media("desktop") {
             font-size: 1.2rem;
             max-width: 577px;
+            line-height: 1.3rem;
           }
         }
       }
