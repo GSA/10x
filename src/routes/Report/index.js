@@ -14,6 +14,8 @@ import Chart from 'components/Chart';
 import Mdx from 'features/Mdx';
 import useScrollToTop from 'utils/useScrollToTop';
 import ReasonForRejection from 'features/Layout/templates/ReasonForRejection';
+import ReportTable from 'features/Layout/templates/ReportTable';
+import ReportBudgetTable from 'features/Layout/templates/ReportBudgetTable';
 
 const Report = ({ type }) => {
   const dispatch = useDispatch();
@@ -55,7 +57,9 @@ const Report = ({ type }) => {
           <Row gap="1" className="report-content">
             <Col size="12" desktop="8">
               <h1 className="TxReport__title">{data.title}</h1>
-              <p className="TxReport__intro">{data.intro}</p>
+              <p className="TxReport__intro">
+                <Mdx>{data.intro}</Mdx>
+              </p>
             </Col>
           </Row>
           <Row gap="4">
@@ -107,7 +111,9 @@ const Report = ({ type }) => {
                           {item.byTheNumbersList && (
                             <ul>
                               {item.byTheNumbersList.map((li, index) => (
-                                <li key={index}><Mdx>{li.listItem}</Mdx></li>
+                                <li key={index}>
+                                  <Mdx>{li.listItem}</Mdx>
+                                </li>
                               ))}
                             </ul>
                           )}
@@ -145,6 +151,16 @@ const Report = ({ type }) => {
                       )}
 
                       <Mdx>{item.content2}</Mdx>
+                      
+                      {item.reportTableData && (
+                        <div>
+                          <ReportTable
+                            heading={item.reportTableHeading}
+                            headers={item.reportTableHeaders}
+                            data={item.reportTableData}
+                          />
+                        </div>
+                      )}
 
                       {item.calloutFull && (
                         <div className="grid-row">
@@ -157,6 +173,14 @@ const Report = ({ type }) => {
                       {item.image && <div className={item.image}></div>}
 
                       <Mdx>{item.content3}</Mdx>
+
+                      {item.reportBudgetTableData && (
+                        <ReportBudgetTable
+                          heading={item.reportBudgetTableHeading}
+                          headers={item.reportBudgetTableHeaders}
+                          data={item.reportBudgetTableData}
+                        />
+                      )}
 
                       {item.otherProjects && (
                         <div className="TxProjects">
@@ -173,6 +197,8 @@ const Report = ({ type }) => {
                           </ul>
                         </div>
                       )}
+
+                      <Mdx>{item.content4}</Mdx>
 
                       <div className="display-flex flex-justify-end margin-top-2">
                         <a className="usa-button to-top" href="#welcome">

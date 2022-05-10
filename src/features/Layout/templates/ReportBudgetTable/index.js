@@ -11,8 +11,6 @@ const ReportBudgetTable = ({ heading, headers, data }) => {
             <tr key={i}>
               <th scope="col">{item.header1}</th>
               <th scope="col">{item.header2}</th>
-              <th scope="col">{item.header3}</th>
-              <th scope="col">{item.header4}</th>
             </tr>
           ))}
         </thead>
@@ -21,8 +19,6 @@ const ReportBudgetTable = ({ heading, headers, data }) => {
             <tr key={i}>
               <td className={item.highlight ? 'highlight' : null}><span className={item.highlight ? 'text-bold' : null}>{item.data1}</span></td>
               <td className={item.highlight ? 'highlight' : null}><span className={item.highlight ? 'text-bold' : null}>{item.data2}</span></td>
-              <td className={item.highlight ? 'highlight' : null}><span className={item.highlight ? 'text-bold' : null}>{item.data3}</span></td>
-              <td className={item.highlight ? 'highlight' : null}><span className={item.highlight ? 'text-bold' : null}>{item.data4}</span></td>
             </tr>
           ))}
         </tbody>
@@ -32,18 +28,14 @@ const ReportBudgetTable = ({ heading, headers, data }) => {
 };
 
 ReportBudgetTable.defaultProps = {
-  heading: "10x Projects",
+  heading: "Other DSF Commitments",
   headers: {
-    header1: "Phase",
-    header2: "# of Projects",
-    header3: "Total $",
-    header4: "Total $"
+    header1: "Item",
+    header2: "Total $",
   },
   data: {
-    data1: "Phase One",
-    data2: "20",
-    data3: "$400,000",
-    data4: "$400,000"
+    data1: "Total",
+    data2: "$808,889",
   }
 };
 
