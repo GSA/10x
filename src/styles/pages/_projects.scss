@@ -264,6 +264,7 @@ $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
     list-style: none;
     li {
       @include u-margin-bottom(2);
+      height: auto !important;
       a {
         line-height: 150%;
       }

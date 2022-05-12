@@ -6,7 +6,7 @@ const Title = ({ title, subtitle }) => {
   return (
     <div className="desktop:width-tablet-lg">
       {title && <h1>{title}</h1>}
-      {subtitle && <p className="TxLede"><Mdx>{subtitle}</Mdx></p>}
+      {subtitle && <div className="TxLede"><Mdx>{subtitle}</Mdx></div>}
     </div>
   );
 };

@@ -57,9 +57,9 @@ const Report = ({ type }) => {
           <Row gap="1" className="report-content">
             <Col size="12" desktop="8">
               <h1 className="TxReport__title">{data.title}</h1>
-              <p className="TxReport__intro">
+              <div className="TxReport__intro">
                 <Mdx>{data.intro}</Mdx>
-              </p>
+              </div>
             </Col>
           </Row>
           <Row gap="4">

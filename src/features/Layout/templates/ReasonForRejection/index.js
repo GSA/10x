@@ -5,7 +5,6 @@ import Card from 'components/Card';
 import Mdx from 'features/Mdx';
 
 const ReasonForRejection = ({ data }) => {
-  console.log('data', data);
   return (
     <div className="grid-row">
       {data.map((item, i) => (

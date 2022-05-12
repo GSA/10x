@@ -140,7 +140,7 @@ $c-report-header: #006680;
         justify-content: center;
         left: 0;
         margin-top: 4rem;
-        padding-top: 3rem;
+        padding-top: 4rem;
         position: relative;
         @include at-media("desktop") {
           align-items: center;
@@ -153,7 +153,8 @@ $c-report-header: #006680;
           @include at-media("tablet") {
             width: 45%;
           }
-          @include at-media("desktop") {
+          @include at-media("tablet") {
+            font-size: 1.2rem;
             line-height: 1.5rem;
             width: 200px;
           }
@@ -174,16 +175,17 @@ $c-report-header: #006680;
         margin-bottom: 2rem;
         padding-top: 2rem;
         position: relative;
-        @include at-media("tablet") {
+        @include at-media("desktop") {
           background-size: contain;
         }
         p {
-          font-size: 1.1rem;
+          font-size: 0.8rem;
           max-width: 68%;
-          line-height: 1.3rem;
-          @include at-media("desktop") {
+          line-height: 1rem;
+          @include at-media("tablet") {
             font-size: 1.2rem;
-            max-width: 535px;
+            max-width: 70%;
+            line-height: 1.3rem;
           }
         }
       }
@@ -206,12 +208,17 @@ $c-report-header: #006680;
           /* background-size: contain; */
         }
         p {
-          font-size: 1.1rem;
+          font-size: 0.8rem;
           max-width: 68%;
-          line-height: 1.3rem;
+          line-height: 1rem;
+          @include at-media("tablet") {
+            font-size: 1rem;
+            max-width: 70%;
+          }
           @include at-media("desktop") {
             font-size: 1.2rem;
             max-width: 577px;
+            line-height: 1.3rem;
           }
         }
       }
