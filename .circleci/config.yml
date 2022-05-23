@@ -19,6 +19,6 @@ jobs:
           name: "return true"
           command: "true"
 workflows:
-  say-hello-workflow:
+  return-true-workflow:
     jobs:
       - return-true
