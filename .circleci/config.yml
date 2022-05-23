@@ -1,0 +1,24 @@
+---
+
+###
+### This CircleCI configuration simply returns true.  It
+### checks nothing, builds nothing, displays nothing.
+### It simply returns true.  In all cases.  This is to
+### prevent erroneous failing checks from being passed
+### back to GitHub's Status Checks API due to a missing
+### CircleCI configuration.
+###
+
+version: 2.1
+jobs:
+  return-true:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - run:
+          name: "return true"
+          command: "true"
+workflows:
+  say-hello-workflow:
+    jobs:
+      - return-true
