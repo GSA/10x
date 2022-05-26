@@ -29,87 +29,87 @@ const Footer = () => {
   }
 
   return (
-    <footer className="usa-footer">
-      <div>
-        <Grid className="u-margin-x-2">
-          {data && (
-            <Row className="flex-align-center">
-              <Col size="12" tablet="9" className="usa-footer__preFooter">
-                <Mdx>{data.body}</Mdx>
-              </Col>
-              <Col
-                size="12"
-                tablet="3"
-                className="text-right padding-top-4 desktop:padding-top-0"
+    <div class="usa-identifier">
+      <section
+        class="usa-identifier__section usa-identifier__section--masthead"
+        aria-label="Agency identifier,"
+      >
+        <div class="usa-identifier__container">
+          <div class="usa-identifier__logos">
+            <a href="" class="usa-identifier__logo"
+              ><img
+                class="usa-identifier__logo-img"
+                src="/assets/img/circle-gray-20.svg"
+                alt="&lt;Parent agency&gt; logo"
+                role="img"
+            /></a>
+          </div>
+          <div class="usa-identifier__identity" aria-label="Agency description">
+            <p class="usa-identifier__identity-domain">domain.gov</p>
+            <p class="usa-identifier__identity-disclaimer">
+              An official website of the <a href="">&lt;Parent agency&gt;</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <nav
+        class="usa-identifier__section usa-identifier__section--required-links"
+        aria-label="Important links,"
+      >
+        <div class="usa-identifier__container">
+          <ul class="usa-identifier__required-links-list">
+            <li class="usa-identifier__required-links-item">
+              <a
+                href="javascript:void(0)"
+                class="usa-identifier__required-link usa-link"
+                >About &lt;Parent shortname&gt;</a
               >
-                {data.button && (
-                  <Button url={data.button.link} color="primary-lighter">
-                    {data.button.text}
-                  </Button>
-                )}
-              </Col>
-            </Row>
-          )}
-        </Grid>
-      </div>
-      <div className="usa-footer__primary">
-        <Grid className="usa-footer__primary-content">
-          <Row className="padding-top-8 padding-bottom-3 tablet:padding-y-8">
-            <Col>
-              <GSAFooter />
-            </Col>
-          </Row>
-          <Row className="usa-footer__links" gap="4">
-            <Col size="12" tablet="3">
-              <Link url="https://www.gsaig.gov/">
-                {
-                  "Report fraud, waste, or abuse to the Office of the Inspector General"
-                }
-              </Link>
-            </Col>
-            <Col size="12" tablet="3">
-              <Link url="https://www.gsa.gov/reference/freedom-of-information-act-foia">
-                {"Submit a Freedom of Information Act (FOIA) request"}
-              </Link>
-            </Col>
-            <Col size="12" tablet="3">
-              <Link url="https://www.gsa.gov/reference/reports/budget-performance">
-                {"View budget and performance reports"}
-              </Link>
-            </Col>
-            <Col size="12" tablet="3">
-              <Link
-                className="display-block"
-                external
-                url="https://www.gsa.gov/website-information/accessibility-aids"
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="" class="usa-identifier__required-link usa-link"
+                >Accessibility support</a
               >
-                {"View accessibility statement"}
-              </Link>
-              <Link
-                className="display-block "
-                external
-                url="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002"
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="" class="usa-identifier__required-link usa-link"
+                >FOIA requests</a
               >
-                {"View No FEAR Act"}
-              </Link>
-              <Link className="display-block" url="/privacy-policy/">
-                {"Privacy Policy"}
-              </Link>
-              <Link className="display-block" external url="mailto:10x@gsa.gov">
-                <Icon icon="envelope" className="margin-right-1" />
-                {"Email Us"}
-              </Link>
-            </Col>
-            <div className="usa-footer__bottom-link">
-              <div className="display-inline-block margin-right-1">
-                {"Looking for U.S. government information and services?  "}
-              </div>
-              <Link url="https://usa.gov">Visit USA.gov</Link>
-            </div>
-          </Row>
-        </Grid>
-      </div>
-    </footer>
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="" class="usa-identifier__required-link usa-link"
+                >No FEAR Act data</a
+              >
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="" class="usa-identifier__required-link usa-link"
+                >Office of the Inspector General</a
+              >
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="" class="usa-identifier__required-link usa-link"
+                >Performance reports</a
+              >
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="" class="usa-identifier__required-link usa-link"
+                >Privacy policy</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section
+        class="usa-identifier__section usa-identifier__section--usagov"
+        aria-label="U.S. government information and services,"
+      >
+        <div class="usa-identifier__container">
+          <div class="usa-identifier__usagov-description">
+            Looking for U.S. government information and services?
+          </div>
+          <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+        </div>
+      </section>
+    </div>
   );
 };
 

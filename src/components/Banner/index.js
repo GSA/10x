@@ -7,16 +7,15 @@ const Banner = () => {
   const [isOpen, setOpen] = useState(false);
 
   const handleClick = (e) => {
-    if (e.preventDefault) {
+    /* if (e.preventDefault) {
       e.preventDefault();
-    }
+    } */
     setOpen((state) => !state);
   };
 
   return (
     <section
       className="usa-banner"
-      aria-expanded={isOpen}
       aria-label="Official government website"
     >
       <header className="usa-banner__header">
@@ -33,15 +32,14 @@ const Banner = () => {
               An official website of the United States government
             </p>
           </div>
-          <a
-            href="/#"
+          <button
             className="usa-accordion__button usa-banner__button"
-            aria-expanded="false"
+            aria-expanded={isOpen}
             aria-controls="gov-banner"
             onClick={handleClick}
           >
             <span className="usa-banner__button-text">Here’s how you know</span>
-          </a>
+          </button>
         </div>
       </header>
       {isOpen && (
