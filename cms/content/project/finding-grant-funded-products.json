@@ -22,6 +22,12 @@
   "intro": "Each year, the US government issues billions of dollars in grants to individuals, universities, research bodies, and more to perform everything from cutting edge scientific  research to actual performances–in the form of artwork and museum exhibitions. Grants that support both scientific and non-scientific endeavors result in a wealth of valuable outputs and products, from research papers to masterful artwork. But finding, enjoying, and using these outputs and products isn’t easy, which makes them less valuable than they otherwise might be. When these products and outputs are undiscovered, it not only denies the public access to this wealth of value, but can also result in  unnecessary duplication in new grants requests because applicants and even other agencies are unaware this work has already been done. Within the government grant space, 10x is seeing a growing appetite for a holistic review of the entire grants lifecycle. But the grants landscape is incredibly complex, diverse, and agency-dependent, so 10x is taking on one slice of this problem with this project: by investigating ways to make grant products and results more discoverable.",
   "subtitle": "What if the public could easily find the results and products produced from government-funded grants?",
   "title": "Finding Grant-Funded Results and Products",
+  "links": [
+    {
+      "link": "https://docs.google.com/document/d/1cMcG1ac_o015EcdkZfZOyjmxC71-k-0AR-Nf7pJKxW4/edit?usp=sharing",
+      "text": "Project Card"
+    }
+  ],
   "template": "2",
   "footer": "10x-in-the-wild",
   "seo": {
