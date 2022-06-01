@@ -1,6 +1,6 @@
 {
   "excerpt": "The exciting marketplace for quick-to-deploy, low cost, low maintenance website development products is gaining traction in government. But there may be pitfalls of adopting these tools that government agencies should know about. 10x is investigating the marketplace for low code/no code products in government, and asking the question of whether or not guidance specifically tailored to agencies dabbling in this market could be extremely beneficial across government. ",
-  "future": "No further phases planned at this time.",
+  "future": "## Next steps\n\nNo further phases planned at this time.",
   "phaseData": {
     "phase": "2",
     "status": "2"
@@ -35,7 +35,7 @@
     "description": "The 10x Low Code/No Code Service Delivery project is investigating the adoption of low-code and no-code products in government and the impact we could have through helping agencies navigate this growing market."
   },
   "team": {
-    "submitter": "Mike Gintz, Alex Soble, & Amy Ashida, GSA",
+    "submitter": "Mike Gintz, Alex Soble, and Amy Ashida, GSA",
     "members": "Robin Kane and Andy Goldstein"
   }
 }
