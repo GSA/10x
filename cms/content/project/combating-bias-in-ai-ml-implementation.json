@@ -1,17 +1,45 @@
 {
-  "intro": "Many of the biases that are found in our society can be reflected in data—there have already been recorded instances of datasets that reflect racial and other forms of bias being used to power artificial intelligence (AI) logic, which means the output produced also contains unfair biases, leading to unfair determinations. The project team is working to develop user-friendly, online web applications that can detect bias in data before it’s put through AI pipelines, addressing the needs of technical and non-technical users alike. ",
+  "excerpt": "Artificial intelligence (AI) and machine learning (ML) present exciting opportunities for the government to serve the public in new ways. But without care and scrutiny they can also amplify inequity and cause harm. The project team behind Combating Bias in AI/ML Implementations has worked with experts within government and academia to create “de-biasing” tools to allow practitioners to locate and remove biases in potential AI solutions, and move forward with awareness and confidence.",
+  "future": "## Next Steps\n\nWe’ve wrapped up Phase 3 and have delivered three functional de-biasing tools that will make up the first iteration of the bias toolkit. To ensure that this offering is sustainable in the long-term, we’re working with folks from the U.S. Census Bureau, who have expressed excitement and willingness to continue championing this work into the future.\n\nPhase: Completed Phase 3, 10x and our partners are considering a pitch for further funding in Phase 4 to continue scaling the toolkit with additional capabilities.",
   "topics": "Compliance officers, Data scientists, ML engineers, Project/product managers, Statisticians",
   "phaseData": {
-    "status": "1",
+    "status": "2",
     "phase": "3",
-    "summary": "Phase 2 was completed; Phase 3 is waiting to begin"
+    "summary": "Completed Phase 3. We are working with our partner agency to see if Phase 4 funding is the best way forward."
   },
+  "impact": "## Why it matters\n\nThis project matters because it lives at the intersection of two of the most important conversations that we as a country are having and highlights how the government is responding to them. The first conversation focuses on reckoning with injustice in our society as experienced by minority and vulnerable populations. The second conversation is around the rapidly evolving field of artificial intelligence and the cultural angst about how this technology will affect society (for better or worse) in the years to come. \n\nTo make it easy for outside folks to get involved and learn about this work, we’re building everything in the open. Our tools are accessible and open-source and anyone in the world  —  from passionate individuals, to university students, to federal employees  —  can find, use, and contribute to our toolkit. \n\nUltimately, our ambition for this project is limited to making small, positive interventions that reinforce democratic values of justice and equity as the government adopts AI/ML.  We are aiming to create positive  —  if limited  —  ripple effects that will carry into the future and inform how the government uses AI to serve the public.",
+  "summary": [
+    {
+      "text": "The government is rapidly adopting artificial intelligence and machine learning (AI/ML) capabilities"
+    },
+    {
+      "text": "These technologies need to consider equity as a top priority, or risk causing harm"
+    },
+    {
+      "text": "10x is giving civil servants tools they need to take an equity-forward approach when they use AI/ML "
+    }
+  ],
+  "approach": "## What we're doing\n\nWe’re launching a toolkit that will help civil servants take an equity-forward approach to incorporating AI/ML into their day-to-day jobs. To focus our efforts, we have chosen to concentrate primarily on the upstream components of AI/ML implementations by experimenting with the datasets that inform these algorithms. We’ve reasoned that combating bias in datasets before they get pushed through an AI pipeline is a good place to start. \n\n### How we're doing it\n\nWe’re working with some of the most knowledgeable and talented folks in the field of AI/ML to deliver powerful de-biasing capabilities. Over the course of Phases 1 and 2, our project team partnered with experts from universities that are doing cutting-edge research and development in the AI/ML space. Our team hosted seven workshops to identify user needs in the equitable AI space and solicited feedback from folks around the government. By the end of Phase 2, we had developed five prototype applications built with Jupyter Notebooks to solve common issues of bias in government data, and along the way we gathered more than 30 annotated resources for de-biasing data that will be included in the beta version of the toolkit.\n\n### Where we are today\n\nWe’ve just completed Phase 3, which has delivered 3 functional de-biasing tools: The first tool we’re building essentially creates carbon copies of datasets with dummy data. So, if a civil servant has a dataset they want to run through a model, they can run multiple, similar datasets through the algorithm and that will help reveal sources of bias that might remain hidden if the model were powered only on the target dataset. \n\nThe second tool uses AI to detect ableist language in federal job postings and automatically suggests more appropriate, inclusive alternatives to the hiring managers. Our team worked with the staff from the Department of Labor to inform our approach to building this tool.\n\nAnd the third tool offers a standard language format or \"model cards\" that are used to describe the characteristics of an AI/ML model. Think of a nutrition label on food: it tells you the ingredients, the levels of nutrients, and any warnings about safety. A model card is similar, it shows the characteristics  —  including deficiencies that could lead to bias  —  in a particular AI model. This provides transparency about the limitations of AI models and can help folks re-use these models equitably. Together these three tools provide a good foundation for future de-biasing initiatives.",
   "slug": "combating-bias-in-aiml-implementation",
+  "intro": "Artificial intelligence (AI) and machine learning (ML) capabilities are fairly new to many government agencies. Many are just figuring out how AI/ML can support key business needs and what they need to do to get started. Ensuring that AI/ML is practiced ethically is critically important to the U.S. Government. In the spirit of just and equitable technology, 10x is developing open-source tools that will allow public servants to “de-bias” datasets that power AI capabilities. This initial toolkit, developed in partnership with experts at leading universities and the Census Bureau, can help public servants integrate AI into their work without fear of doing harm.",
+  "projectType": "Innovation",
+  "projectUrl": "",
+  "subtitle": "What if the government could reinforce principles of justice and equity when implementing AI/ML?",
   "title": "Combating Bias in AI/ML Implementation",
-  "subtitle": "What if we could help remove bias from data sets for more equitable AI?",
-  "excerpt": "Many of the biases that are found in our society can be reflected in data — there have already been recorded instances of datasets that reflect racial and other forms of bias being used to power artificial intelligence (AI) logic, which means the output produced also contains unfair biases, leading to unfair determinations. The project team is working to develop user-friendly, online web applications that can detect bias in data before it’s put through AI pipelines, addressing the needs of technical and non-technical users alike. ",
-  "projectUrl": "https://github.com/MLBiasgov/MLBias/blob/main/README.md",
+  "links": [
+    {
+      "text": "Bias Toolkit (Please note this website is in beta. The US Census Bureau is preparing a full launch in 2022.)",
+      "link": "https://bias.xd.gov/"
+    }
+  ],
   "template": "3",
-  "projectType": "Innovation"
-
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "Combating Bias in AI/ML Implementation - 10x Project | 10x.GSA.gov",
+    "description": "See how the government is ensuring AI and ML practitioners in the government can remove biases in potential AI solutions, and move forward with awareness and confidence. 10x's project identifies potential biases and prompts practitioners to ensure fair uses of AI in public service."
+  },
+  "team": {
+    "submitter": "Elizabeth Goodman, TTS",
+    "members": "Kate McCall-Kiley, Shaudi Hosseini, Luke Keller, Diana Lam, and Willow Hagen"
+  }
 }

@@ -1,0 +1,41 @@
+{
+  "excerpt": "Even though government agencies are required to consider feedback from the public when making new rules and regulations, we believe there is an opportunity to incorporate the public’s voice more meaningfully into the rulemaking process by exploring new technologies. 10x is investigating whether it’s possible to innovate our way towards a more inclusive, modern, and democratic rulemaking system by including the public early in the rulemaking process.",
+  "future": "## Next steps\n\nHere are a few of the priority research questions we’ll be tackling as soon as we kick off Phase Two of this project:\n\n* What does the rulemaking journey look like for different agencies, particularly in relation to soliciting feedback before drafting a policy?\n* How do agencies make use of or take into account feedback from underrepresented groups of people (example: Tribal Consultations)?\n* Are there successful examples of participatory methods on a state, local, or international level? If so, what do they look like? What are methods they used for coalition-building?\n* What tools exist that could help aid in outreach and coalition-building?\n* What does the general public know about the rulemaking process?\n* What is needed for better engagement in early rulemaking?\n* How would more engagement early in the rulemaking process fit in with current structures for rulemaking?",
+  "phaseData": {
+    "phase": "2",
+    "status": "1"
+  },
+  "impact": "## Why this matters\n\nBy law, agencies must “give interested persons an opportunity to participate in the rule making through submission of written data, views, or arguments with or without opportunity for oral presentation” when they decide to implement a new rule or regulation. These “interested persons” include the general public, community groups, business, and others. The traditional path of collecting that input leaves rules without public attention until they have already been drafted by agencies. If a rule is drafted without sufficient outside input, the proposed rule is subject to criticism and even legal challenges, which draws out the rulemaking process and requires more time and effort by both regulators and the public stakeholders. \n\nThis work matters because engaging the public more effectively in the rulemaking process means a decreased risk of legal action and changes, and a greater opportunity for the public to make a meaningful impact on regulations, and more fair and democratic rules for society and the economy.",
+  "summary": [
+    {
+      "text": "Public commenting is a part of the federal rulemaking process but it often happens after the rule has been drafted, which can be too late for the public to have a meaningful impact on the final rules\n"
+    },
+    {
+      "text": "This places a large burden on the public and ultimately can exclude their voices in how the government writes rules and regulations that affect their lives\n"
+    },
+    {
+      "text": "We believe 10x can make it easier for the public to get involved in rulemaking at earlier stages by continuing to explore novel methods for participatory public engagement used by federal, state, local, and even international governments\n"
+    }
+  ],
+  "approach": "## What we did\n\nOver the course of Phase One, our project team conducted extensive desk research and multiple interviews to understand and validate that the problem statement submitted to 10x is timely, worth solving, and ripe for innovation. At the end of Phase One, our team outlined what the next phase of work will need to look like to reach success, including questions that need answering and current limitations that must be overcome.\n\n### How we did it\n\nOur team interviewed multiple experts who currently or previously worked in the rulemaking space. They also spoke with individuals with experience in commenting on the rulemaking process, and people familiar with novel, participatory methods who gave additional context and were able to shed light on how the public could be more effectively engaged throughout the rulemaking process. By the end, our team cited over 30 different sources of research that shed light on this problem space.\n\n### Where we are today\n\nThis project has completed Phase One and has been approved for Phase Two. In Phase Two, the project team will continue to complete research to better understand the problem space and the two distinct phases in the rulemaking process: pre-drafting and post-drafting. More intimately understanding different agencies’ journeys with the rulemaking process–particularly in the pre-drafting phase–is critical to determining feasibility of this project. Phase Two will look at the user needs, blockers, and pain points on both sides of the coin: from the agencies and in the general public. The team will also continue to explore successful participatory methods that local and international governments have leveraged to improve public engagement to see how they may be adopted into a federal government context.",
+  "slug": "inclusion-for-rulemaking",
+  "intro": "10x sees an opportunity to increase public participation in the early parts of the rulemaking process. Public commenting is a part of the federal rulemaking process under Section 553 of the Administrative Procedure Act, but it often only happens after the rule has been drafted. This puts the burden on the public to figure out what rules are being written and when, and forces them to navigate a process that can be confusing, limited, and superficial.\n\n10x is investigating ways to easily and inclusively involve the public in earlier stages of rulemaking, such as during the drafting and ideation of such rules, as well as identify tools, resources, or processes that can increase public engagement in ways that are substantive and generative. The earlier that the public’s input is incorporated in this process, the greater the opportunity for the public to impact regulations and have a voice in the rulemaking.",
+  "subtitle": "What if the government had more innovative ways to involve the public in the earliest stages of rulemaking?",
+  "title": "Inclusion for Rulemaking in Early Stages",
+  "links": [
+    {
+      "text": "How Members of the Public Can Contribute to the Regulatory Process",
+      "link": "https://www.gsa.gov/policy-regulations/regulations/managing-the-federal-rulemaking-process/how-members-of-the-public-can-contribute-to-the-regulatory-process"
+    }
+  ],
+  "template": "3",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "Inclusion for Rulemaking in Early Stages | 10x.GSA.gov",
+    "description": "The 10x Inclusion for Rulemaking in Early Stages project is seeking ways to include the public's voice more meaningfully into the federal rulemaking process using technology."
+  },
+  "team": {
+    "members": "Jia Gu, Dave Luetger",
+    "submitter": "Christine Bath, GSA"
+  }
+}

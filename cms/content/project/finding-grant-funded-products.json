@@ -1,0 +1,41 @@
+{
+  "excerpt": "Government grants empower individuals, non-profit organizations, universities, and more with funding to undertake cutting edge research, serve their communities, and promote the economy. But measuring the value of a grant by what it produced is difficult. 10x believes the first step towards gaining a more nuanced understanding of the value of federal grants is to help the public find and use tools, research, and other valuable outputs that were made possible by the billions of dollars issued by the federal grants community each year.",
+  "future": "## Next Steps\n\nAwaiting Phase Two kickoff. Given the huge variety in agencies that issue grants, coupled with the diversity of what a “grants product” really looks like, scoping this project will be a big challenge. As a result, our project team recommended that we narrow the scope of this work to arts and humanities agencies. We already have some interest from a few arts agencies, and we’re optimistic we can make a large impact in this smaller federal community.",
+  "phaseData": {
+    "phase": "2",
+    "status": "1"
+  },
+  "impact": "## Why this matters\n\nThis project matters because everyone in the country should be able to benefit and enjoy the valuable, tangible products that are produced by grants funded and supported by taxpayers. And this project doubly matters because such a system for enabling this discovery does not exist. We believe the right time for 10x to help reimagine ways for uncovering the wealth of value produced by grants is now.\n\nAnd as an added benefit for grants management and oversight bodies, we believe that creating a central capability for locating grants products could lead to a more complete picture of a grant’s life cycle by linking existing data on where funds were spent with what ultimately was produced from them.",
+  "summary": [
+    {
+      "text": "US government-funded grants produce incredible products and outputs, but finding and benefiting from these outputs isn’t easy"
+    },
+    {
+      "text": "There is currently no comprehensive system or method that can help researchers, civil servants, and members of the public identify the valuable products produced by grantees"
+    },
+    {
+      "text": "10x is investigating ways to both broaden the user base and enjoyment-base for grants-funded products and to decrease the likelihood that grants for similar work will be duplicated"
+    }
+  ],
+  "approach": "## What we did\n\nOver the course of Phase One, our project team conducted desk research and interviews to better understand and validate that the problem statement submitted to 10x is timely, worth solving, and ripe for innovation. At the end of Phase One, our team outlined what the next phase of work will need to look like to reach success, including questions that need answering and current considerations and limitations that will be overcome\n\n### How we did it\n\nOur team interviewed 14  experts across five agencies to learn about the scope of the problem and the demand for a solution. In addition to interviews, our team researched a number of existing projects and related organizations doing similar work to understand the impact that creating a centralized database could have on making grants products discoverable, as well as to understand the potential limitations and barriers to success for future efforts. \n\n### Where we are today\n\nThis project has completed Phase One with a “Yes” recommendation for Phase Two and the 10x leadership team agreed. This project will contribute to work that 10x has already funded in the grants space, and builds on the current momentum for more GSA involvement in the federal grants lifecycle.",
+  "slug": "finding-grant-funded-products",
+  "intro": "Each year, the US government issues billions of dollars in grants to individuals, universities, research bodies, and more to perform everything from cutting edge scientific  research to actual performances–in the form of artwork and museum exhibitions. Grants that support both scientific and non-scientific endeavors result in a wealth of valuable outputs and products, from research papers to masterful artwork. But finding, enjoying, and using these outputs and products isn’t easy, which makes them less valuable than they otherwise might be. When these products and outputs are undiscovered, it not only denies the public access to this wealth of value, but can also result in  unnecessary duplication in new grants requests because applicants and even other agencies are unaware this work has already been done. Within the government grant space, 10x is seeing a growing appetite for a holistic review of the entire grants lifecycle. But the grants landscape is incredibly complex, diverse, and agency-dependent, so 10x is taking on one slice of this problem with this project: by investigating ways to make grant products and results more discoverable.",
+  "subtitle": "What if the public could easily find the results and products produced from government-funded grants?",
+  "title": "Finding Grant-Funded Results and Products",
+  "links": [
+    {
+      "link": "https://docs.google.com/document/d/1cMcG1ac_o015EcdkZfZOyjmxC71-k-0AR-Nf7pJKxW4/edit?usp=sharing",
+      "text": "Project Card"
+    }
+  ],
+  "template": "2",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "Finding Grant Funded Products | 10x.GSA.gov",
+    "description": "The 10x Finding Grant-Funded Results and Products project seeks to help the public learn about what is produced by the billions of dollars issued by the federal government each year."
+  },
+  "team": {
+    "submitter": "Connie Cox Bodner, IMLS",
+    "members": "Christine Bath, Mel Choyce"
+  }
+}

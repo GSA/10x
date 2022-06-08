@@ -43,7 +43,7 @@
     "trim": ">=0.0.3",
     "trim-newlines": ">=3.0.1",
     "typewriter-effect": "^2.17.0",
-    "uswds": "2.8.1",
+    "uswds": "2.10.1",
     "yaml": "^2.0.0-1"
   },
   "scripts": {

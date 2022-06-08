@@ -1,0 +1,41 @@
+{
+  "excerpt": "The exciting marketplace for quick-to-deploy, low cost, low maintenance website development products is gaining traction in government. But there may be pitfalls of adopting these tools that government agencies should know about. 10x is investigating the marketplace for low code/no code products in government, and asking the question of whether or not guidance specifically tailored to agencies dabbling in this market could be extremely beneficial across government. ",
+  "future": "## Next steps\n\nNo further phases planned at this time.",
+  "phaseData": {
+    "phase": "2",
+    "status": "2"
+  },
+  "impact": "## Why this matters\n\nLC/NC solutions provide opportunities for civil servants to build tools and applications that speed up service delivery, improve efficiency between departments, and innovate in a variety of environments across the federal government. In 2021 especially, the need for rapid deployment of technology to the government’s continued response to the COVID-19 pandemic boosted low-code adoption. \n\nHowever, there are substantial risks to ignoring the expanding number and complexity of LC/NC solutions establishing themselves across federal agencies. As agencies come to rely on these workflows and processes to deliver mission-critical services, risks increase around usability, maintenance, security, obsolescence, governance, and efficiency.\n\nThere is a need to raise awareness of the advantages and risks of using LC/NC tools and for guidance around these tools to minimize problems with usability, maintenance, security, obsolescence, governance, and efficiency. Agencies are sold LC/NC tools based on the promise of the significant time and budget savings they can provide and on the ability to empower civil servants to solve their own business needs. Without LC/NC guidance and training, agencies may face compromised information security and struggle with application maintainability due to the endless use of customizations and configurations.",
+  "summary": [
+    {
+      "text": "Low code/no code web development tools can be useful for spinning up websites quickly and purport to help users avoid a dependency on developer teams, while reducing security risks \n"
+    },
+    {
+      "text": "In some cases, these can be an excellent solution that can allow agencies to react quickly, but simplifying design code hides unavoidable back-end complexity, which could also lead to vendor lock-in and high costs over the long run"
+    },
+    {
+      "text": "There isn’t actually an agreed-upon definition of what solutions count as low code/no code, and that makes offering broad guidance difficult for 10x"
+    }
+  ],
+  "approach": "## What we did\n\n Over the course of Phase Two, our project team conducted desk research and interviews to better understand the LC/NC marketplace to see if offering guidance to agencies would be helpful. At the end of Phase Two, our team made the decision to recommend not moving this project for additional funding at this time. \n\n### How we did it\n\nOur team interviewed more than 20 individuals during their Phase Two research, including civil servants at the federal and city levels, as well as employees from LC/NC platform vendors. In addition to interviews, our team explored the phenomenon of ‘citizen developers’ in the federal workforce who are individuals who take digital development for public service into their own hands. \n\n### Where we are today\n\nThis project has completed Phase Two with a “No” recommendation for further funding and the 10x leadership team agreed. For this project, timing is everything, and the project team recommended that 10x revisit this space in a few years when there may be more of an appetite for this type of guidance. For now, focusing on the cadre of “citizen developers” within the federal government–regardless of whether or not they use LC/NC software–is more likely to gain community-building and support than a designated LC/NC community of practice. We believe that the potentially limited value of creating LC/NC guidance does not justify further 10x investment at this time. Instead, 10x will wait until there is more awareness of and appetite for LC/NC software before revisiting this project.",
+  "slug": "low-code-no-code-service-delivery",
+  "intro": "One of the trends in the web development marketplace that has emerged in recent years is for services called low-code/no-code (LC/NC) tools. Generally inexpensive and marketed as easy to use, LC/NC solutions are useful for spinning up lightweight websites quickly for individuals, businesses, and, increasingly, government agencies that may face budgetary constraints and lack the ability to quickly deploy complex, server-side websites. But these promising applications have drawbacks and potential pitfalls that agencies should take into consideration when deciding whether to go the LC/NC route. 10x investigated the LC/NC marketplace to help agencies decide for themselves whether these lightweight solutions are right for the needs of the public they serve, and whether or not there’s an appetite for further guidance from 10x on adopting LC/NC solutions.",
+  "subtitle": "What if agencies could navigate the growing marketplace for simple, low-cost developer tools with confidence?",
+  "title": "Low Code/No Code Delivery Improvement",
+  "links": [
+    {
+      "text": "Read more about a use case of citizen development in emerging tech, with resources for self-starters in government digital innovation",
+      "link": "https://digital.gov/2021/08/16/5-tips-for-implementing-citizen-development-in-your-rpa-program/"
+    }
+  ],
+  "template": "6",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "Low Code/No Code Service Delivery | 10x.GSA.gov",
+    "description": "The 10x Low Code/No Code Service Delivery project is investigating the adoption of low-code and no-code products in government and the impact we could have through helping agencies navigate this growing market."
+  },
+  "team": {
+    "submitter": "Mike Gintz, Alex Soble, and Amy Ashida, GSA",
+    "members": "Robin Kane and Andy Goldstein"
+  }
+}
