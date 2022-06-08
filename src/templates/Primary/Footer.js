@@ -47,72 +47,72 @@ const Footer = () => {
         </Grid>
       </div>
 
-      <div class="usa-identifier usa-footer__primary">
+      <div className="usa-identifier usa-footer__primary">
         <Grid className="usa-footer__primary-content">
-          <div class="grid-row padding-top-4 padding-bottom-3 tablet:padding-y-4">
+          <div className="grid-row padding-top-4 padding-bottom-3 tablet:padding-y-4">
             <GSAFooter />
           </div>
 
           <nav
-            class="usa-identifier__section usa-identifier__section--required-links"
+            className="usa-identifier__section usa-identifier__section--required-links"
             aria-label="Important links,"
           >
-            <div class="usa-identifier__container">
-              <ul class="usa-identifier__required-links-list">
-                <li class="usa-identifier__required-links-item">
+            <div className="usa-identifier__container">
+              <ul className="usa-identifier__required-links-list">
+                <li className="usa-identifier__required-links-item">
                   <a
                     href="https://www.gsa.gov/about-us"
-                    class="usa-identifier__required-link usa-link"
+                    className="usa-identifier__required-link usa-link"
                   >
                     About GSA
                   </a>
                 </li>
-                <li class="usa-identifier__required-links-item">
+                <li className="usa-identifier__required-links-item">
                   <a
                     href="https://www.gsa.gov/website-information/accessibility-aids"
-                    class="usa-identifier__required-link usa-link"
+                    className="usa-identifier__required-link usa-link"
                   >
                     Accessibility support
                   </a>
                 </li>
-                <li class="usa-identifier__required-links-item">
+                <li className="usa-identifier__required-links-item">
                   <a
                     href="https://www.gsa.gov/reference/freedom-of-information-act-foia"
-                    class="usa-identifier__required-link usa-link"
+                    className="usa-identifier__required-link usa-link"
                   >
                     FOIA requests
                   </a>
                 </li>
-                <li class="usa-identifier__required-links-item">
+                <li className="usa-identifier__required-links-item">
                   <a
                     href="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002"
-                    class="usa-identifier__required-link usa-link"
+                    className="usa-identifier__required-link usa-link"
                   >
                     No FEAR Act data
                   </a>
                 </li>
-                <li class="usa-identifier__required-links-item">
-                  <a href="https://www.gsaig.gov/" class="usa-identifier__required-link usa-link">
+                <li className="usa-identifier__required-links-item">
+                  <a href="https://www.gsaig.gov/" className="usa-identifier__required-link usa-link">
                     Office of the Inspector General
                   </a>
                 </li>
-                <li class="usa-identifier__required-links-item">
+                <li className="usa-identifier__required-links-item">
                   <a
                     href="https://www.gsa.gov/reference/reports/budget-performance"
-                    class="usa-identifier__required-link usa-link"
+                    className="usa-identifier__required-link usa-link"
                   >
                     Performance reports
                   </a>
                 </li>
-                <li class="usa-identifier__required-links-item">
+                <li className="usa-identifier__required-links-item">
                   <a
                     href="https://10x.gsa.gov/privacy-policy/"
-                    class="usa-identifier__required-link usa-link"
+                    className="usa-identifier__required-link usa-link"
                   >
                     Privacy policy
                   </a>
                 </li>
-                <li class="usa-identifier__required-links-item">
+                <li className="usa-identifier__required-links-item">
                   <Link className="display-block" external url="mailto:10x@gsa.gov">
                     <Icon icon="envelope" className="margin-right-1" />
                     {'Email Us'}
@@ -122,14 +122,14 @@ const Footer = () => {
             </div>
           </nav>
           <section
-            class="usa-identifier__section usa-identifier__section--usagov"
+            className="usa-identifier__section usa-identifier__section--usagov"
             aria-label="U.S. government information and services,"
           >
-            <div class="usa-identifier__container">
-              <div class="usa-identifier__usagov-description">
+            <div className="usa-identifier__container">
+              <div className="usa-identifier__usagov-description">
                 Looking for U.S. government information and services?
               </div>{' '}
-              <a href="https://www.usa.gov/" class="usa-link">
+              <a href="https://www.usa.gov/" className="usa-link">
                 Visit USA.gov
               </a>
             </div>
