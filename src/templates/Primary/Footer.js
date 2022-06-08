@@ -106,7 +106,7 @@ const Footer = () => {
                 </li>
                 <li className="usa-identifier__required-links-item">
                   <a
-                    href="https://10x.gsa.gov/privacy-policy/"
+                    href="/privacy-policy/"
                     className="usa-identifier__required-link usa-link"
                   >
                     Privacy policy

@@ -11,7 +11,7 @@ const GSAFooter = () => {
       >
         <div className="usa-identifier__container">
           <div className="usa-identifier__logos">
-            <a href="https://10x.gsa.gov" className="usa-identifier__logo GSAFooter__logo">
+            <a href="/" className="usa-identifier__logo GSAFooter__logo">
               <img src={GSALogo} alt="GSA logo" />
             </a>
           </div>
