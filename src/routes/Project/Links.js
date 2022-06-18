@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const Links = ({ data }) => {
   return (
     Array.isArray(data) &&
-    data.length && (
+    data.length > 0 && (
       <div className="TxLinks">
         <h3>Learn more</h3>
         <ul>

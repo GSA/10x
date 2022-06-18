@@ -114,13 +114,17 @@ const Project = ({ type }) => {
 
             <Col size="12" desktop="4">
               <aside className="TxProject__details">
-                <Card>
-                  <Team data={data.team} />
-                </Card>
+                {data.team &&
+                  <Card>
+                    <Team data={data.team} />
+                  </Card>
+                }
                 <Break color="base-lighter" variant="wide" />
-                <Card>
-                  <Links data={data.links} />
-                </Card>
+                {data.links &&
+                  <Card>
+                    <Links data={data.links} />
+                  </Card>
+                }
               </aside>
             </Col>
           </Row>
