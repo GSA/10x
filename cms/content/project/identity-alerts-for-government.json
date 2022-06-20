@@ -23,7 +23,12 @@
   "intro": "Our government responded to the COVID-19 pandemic by expanding the eligibility criteria for many existing social safety net programs and created new ways for struggling Americans to get help when they needed it most. Unfortunately, swindlers, grifters, fraudsters, criminals, trouble-makers, and scammers saw opportunities to benefit from the expanded government assistance as well. Fraud and identity theft increased exponentially. The recent surge in pandemic-related benefits processing has highlighted the significance, scope, and complexity of this problem. Identity theft and benefit claims fraud have resulted in millions of people suffering financial hardship and the stress of cleaning up their stolen identities—all during a global pandemic.\n\n10x is investigating the development of an Identity Alert Service that will allow members of the public to voluntarily sign up to receive notifications when their personal information is used to apply for government services and benefits. This service will build trust and strengthen social safety net programs across the government.",
   "subtitle": "What if the government could combat fraud by alerting individuals when their data is used to apply for public benefits?",
   "title": "Identity Alerts for Government",
-  "links": [],
+  "links": [
+    {
+      "text": "Project status card",
+      "link": "https://trello.com/c/e98wpIab/182-identity-alerts-for-government"
+    }
+  ],
   "template": "1",
   "footer": "every-solution-starts-as-an-idea",
   "seo": {
