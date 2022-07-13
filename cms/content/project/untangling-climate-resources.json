@@ -1,0 +1,42 @@
+{
+  "excerpt": "Climate data can help decision-makers understand the future implications that climate change will bring to their communities. But turning complex data into action isn't easy, especially when many potential users for this data aren’t experts in climate science and data analysis. 10x is investigating ways that technology could aid communities, urban planners, and other front-line workers in the drive towards climate resilience by empowering them to access and leverage federal climate datasets.",
+  "future": "10x is not planning any further funding for this work at this time.",
+  "phaseData": {
+    "phase": "2",
+    "status": "2",
+    "summary": "Completed Phase 2, no further phases planned at this time."
+  },
+  "impact": "## Why this matters\n\nThis project sits at a cross-section of immense challenges and opportunities for our country. Climate resilience and mitigation planning are immensely difficult, and the complex nature of climate data–with its multitude of different data schema and terminology to navigate–adds an additional layer of difficulty.  This work is also significant because we have the opportunity to promote the use of open government data to address real needs for communities across the country, and to serve users from scientists to city council members using modern, human-centered technology.",
+  "summary": [
+    {
+      "text": "Government data that reveals how our climate is changing could be of incredible value to planners and policy-makers at the local level"
+    },
+    {
+      "text": "The needs and challenges of the various user groups that would benefit from more accessible data are varied"
+    },
+    {
+      "text": "We can build and expand upon the existing climate data user community networks, with the climate science translator as a center focus"
+    }
+  ],
+  "approach": "## What we did\n\nWe investigated market opportunities for new technology that could help a range of climate and environmental professionals make well-informed decisions when preparing local communities and ecosystems for the impact of climate change.\n\n### How we did it\n\nOver the course of two phases, we conducted dozens of interviews with government, academia, and non-profit subject matter experts (SMEs), as well as with users of existing climate data tools. We grouped the SMEs into three categories. First are the climate scientists and researchers. Second are the climate science translators. Their role is to take complex climate models, projections and data, and interpret it for downstream users (planners) so that it is contextually relevant and actionable for them. The final group are the planners themselves, or end users. They’re the people like urban planners and elected officials who work at the local level to prepare their communities for the challenges of climate change.\n\nThe interviews allowed us to gain an understanding of the climate data user journey and a deeper knowledge of the target audience’s perspectives on a need and appetite for new climate data-integration capabilities. To synthesize our learnings from the interviews we drafted persona mindsets to highlight the behaviors and pain points of each user segment. We mapped the climate data movement along the decision making continuum, from data production to consumption.\n\n### Where we are today\n\nAfter completing Phase 1 and Phase 2 of the Untangling Climate Resources project, the team recommends not to advance this project to Phase 3. The reason for the recommendation is that the most viable path forward here is not a great fit for the 10x program. Our research suggests that more data tools and new technology wouldn’t deliver impact for users. Instead, our team envisioned a hypothetical phase 3 that brings all three climate data user groups together for more effective collaboration, which would ultimately benefit the target group of end-users: local policy-makers. But community building isn’t a technology problem, and even though it sounds promising, some ideas are best explored through avenues other than 10x.",
+  "slug": "untangling-climate-resources",
+  "intro": "Gloomy projections for the future impact of climate change on society are often presented globally in scale–sea level rise, declining air quality, species loss, etc.--but the real impacts of climate change are often felt at the hyper-local level. The result is that local planners are on the front lines of combating the negative impacts from climate change on society. The hypothesis for this project is that these planners could put the federal government’s immense wealth of climate data to use, if they had the resources to turn data into action.",
+  "subtitle": "What if the government provided a modern, human-centered way for local planners to harness federal climate data?",
+  "title": "Untangling Climate Resources ",
+  "links": [
+    {
+      "text": "Learn more about the USGCRP",
+      "link": "https://www.globalchange.gov/"
+    }
+  ],
+  "template": "1",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "Untangling Climate Resources - 10x Project | 10x.GSA.gov",
+    "description": "The 10x program investigates the opportunity to equip local policy-makers and planners with tools to effectively harness federal climate data."
+  },
+  "team": {
+    "submitter": "Civil servants from the EPA and the US Global Climate Change Research Program (USGCRP)",
+    "members": "Renata Bartlett, Julia Cards"
+  }
+}
