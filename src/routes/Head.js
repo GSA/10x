@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import FacebookShareImage from "../styles/images/fb-share-img.png";
 import TwitterShareImage from "../styles/images/twitter-share-img.png";
 
-const publicURL = process.env.REACT_APP_PUBLIC_URL || "https://10x.gsa.gov";
+const publicURL = process.env.PUBLIC_URL || "https://10x.gsa.gov";
 const branch = process.env.REACT_APP_BRANCH || process.env.BRANCH;
 const noFollow = branch !== "main";
 
@@ -14,12 +14,12 @@ const Head = (props) => {
   const { seo = {} } = page;
   const { pathname } = useLocation();
 
-  const siteTitle = '10x - Funding Ideas for Better Public Service';
+  const siteTitle = "10x - Funding Ideas for Better Public Service";
   const title = seo.title || page.title; // page or site title
   const description = seo.description; // page or site description
   const url = `${publicURL}${pathname}`; // page url/link
   const fbImg = `${publicURL}${FacebookShareImage}`; // page image or site facebook image
-  const twImg = `${publicURL}${TwitterShareImage}`;// page image or site twitter image
+  const twImg = `${publicURL}${TwitterShareImage}`; // page image or site twitter image
 
   return (
     <Helmet {...props}>
