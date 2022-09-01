@@ -17,13 +17,12 @@
       "text": "",
       "items": [
         {
-          "title": "Reimagining public engagement"
+          "title": "Digital foundations",
+          "text": "From bridges to broadband, we believe 10x has an opportunity to explore the digital landscape that will accompany new infrastructure investments and to do what 10x does best: solve problems and uncover transformative opportunities."
         },
         {
-          "title": "Digital responses to climate challenges"
-        },
-        {
-          "title": "Equity in delivery"
+          "title": "Equity in delivery",
+          "text": "This has been a focus of 10x for years and we’re carrying it into FY23. From our work with bias in AI to reimagining ways to bridge the digital divide, we believe our projects have demonstrated the value of the 10x model, and highlight how ripe the equitable tech space is for new innovation. "
         }
       ],
       "variant": "number"
@@ -66,6 +65,6 @@
   "footer": "10x-in-the-wild",
   "seo": {
     "title": "Designing Success - 10x's Investment Themes | 10x.GSA.gov",
-    "description": "10x shares lessons learned and the key areas of focus for its fiscal year 21 tech investments. Find out what FY21 looks like for us."
+    "description": "10x shares lessons learned and the key areas of focus for its fiscal year 22 tech investments. Find out what FY23 looks like for us."
   }
 }

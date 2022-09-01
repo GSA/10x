@@ -28,7 +28,7 @@ Then add a .env file with the BASEURL variable equal to your localhost or the pr
 
 ```
 BASEURL=https://10x.gsa.gov
-REACT_APP_PUBLIC_URL=$BASEURL
+PUBLIC_URL=$BASEURL
 ```
 
 
