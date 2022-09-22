@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   BarChart,
   Bar,
@@ -7,40 +7,40 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  ResponsiveContainer
-} from "recharts";
+  ResponsiveContainer,
+} from 'recharts';
 
 const data = [
   {
-    name: "FY17",
+    name: 'FY17',
     projects_kicked_off: 20,
     projects_closed_out: 17,
-    ideas_received: 36
+    ideas_received: 36,
   },
   {
-    name: "FY18",
+    name: 'FY18',
     projects_kicked_off: 28,
     projects_closed_out: 23,
-    ideas_received: 146
+    ideas_received: 146,
   },
   {
-    name: "FY19",
+    name: 'FY19',
     projects_kicked_off: 53,
     projects_closed_out: 51,
-    ideas_received: 220
+    ideas_received: 220,
   },
   {
-    name: "FY20",
+    name: 'FY20',
     projects_kicked_off: 91,
     projects_closed_out: 88,
-    ideas_received: 365
+    ideas_received: 365,
   },
   {
-    name: "FY21",
+    name: 'FY21',
     projects_kicked_off: 47,
     projects_closed_out: 46,
-    ideas_received: 250
-  }
+    ideas_received: 250,
+  },
 ];
 
 export default function Chart() {
@@ -54,9 +54,10 @@ export default function Chart() {
           top: 5,
           right: 30,
           left: 20,
-          bottom: 5
+          bottom: 5,
         }}
       >
+        <desc>10x Project Graph</desc>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />

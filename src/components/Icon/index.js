@@ -12,6 +12,7 @@ const Icon = ({ icon, size, variant, className }) => {
       icon={[varMap[variant], icon]}
       size={size}
       className={className}
+      title={icon}
     />
   );
 };
