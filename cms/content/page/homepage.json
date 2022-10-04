@@ -15,6 +15,11 @@
       "title": "What's new with us",
       "items": [
         {
+          "subtitle": "NEWS",
+          "title": "10x wants your ideas! Submit now through November 30, 2022",
+          "link": "/posts/2023-idea-submissions"
+        },
+        {
           "subtitle": "News",
           "title": "Learn about our impact in FY2021",
           "link": "/reports/fy21-impact-report/"
@@ -28,11 +33,6 @@
           "subtitle": "inside look",
           "title": "View 10x Lightning Talks from successful idea submitters",
           "link": "https://digital.gov/event/2020/06/30/10x-project-lightning-talks-2020/"
-        },
-        {
-          "subtitle": "Media",
-          "title": "Government reinvention with a venture capital mindset",
-          "link": "https://gcn.com/articles/2019/10/31/psi_gsa-10x.aspx"
         }
       ]
     }
