@@ -20,7 +20,7 @@
     "netlify-cms-app": "^2.15.20",
     "node-env-run": "^4.0.2",
     "node-fetch": ">=2.6.1",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.0",
     "puppeteer": "^9.0.0",
     "react": "^16.14.0",
     "react-axe": "^3.5.3",
