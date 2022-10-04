@@ -71,7 +71,7 @@ const Project = ({ type }) => {
             </Col>
             {data.summary && (
               <Col size="12" desktop="4">
-                <aside>
+                <aside aria-label="Project summary">
                   <Card className="TxProject__summary" title="In a nutshell">
                     <ul>
                       {data.summary.map((item, i) => (
@@ -113,7 +113,7 @@ const Project = ({ type }) => {
             </Col>
 
             <Col size="12" desktop="4">
-              <aside className="TxProject__details">
+              <aside aria-label="Project details" className="TxProject__details">
                 {data.team &&
                   <Card>
                     <Team data={data.team} />
