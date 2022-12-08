@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: GSA/10x
-  base_url: https://federalistapp.18f.gov
+  base_url: https://federalist-7579e49a-6ba5-474f-abb7-f04465f0665c.sites.pages.cloud.gov/
   auth_endpoint: external/auth/github
   branch: demo
   preview_context: federalist/build
@@ -73,11 +73,7 @@ types:
     name: "slug"
     label: "Page Slug"
     required: true
-    pattern:
-      [
-        "^[a-z0-9]+(?:-[a-z0-9]+)*$",
-        "A slug can have no spaces or special characters",
-      ]
+    pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "A slug can have no spaces or special characters"]
     hint: "The unique-and-very-last-segment of the page URL (do not include /folders/ or file extensions)"
 
   text: &text
@@ -114,7 +110,6 @@ modules:
         widget: "hidden"
         default: "desktop:width-tablet-lg"
 
-
   modMarkdownSpecial: &modMarkdownSpecial
     label: "Special content section"
     name: "markdownSpecial"
@@ -125,7 +120,7 @@ modules:
         label: "Special content section type"
         widget: "select"
         default: ""
-        options: 
+        options:
           - label: "Challenge blockquote with background"
             value: "TxChallenge__pitch"
           - label: "Process funnel graphic"
@@ -150,7 +145,7 @@ modules:
         name: variant
         widget: select
         hint: "Styles the list items with icons (like checkmarks or numbers) or adds a background behind the list items."
-        options: 
+        options:
           - label: "Checkmark"
             value: "check"
           - label: "Checkmark with white background"
@@ -190,7 +185,7 @@ modules:
     fields:
       - <<: *classname
         widget: "hidden"
-  
+
   modPhases: &modPhases
     label: "10x Phases Graphic"
     name: "phaseGraphic"
@@ -206,7 +201,7 @@ modules:
           - label: "Circle color"
             name: "className"
             widget: "select"
-            options: 
+            options:
               - label: "Sky"
                 value: "bg--1"
               - label: "Lilac"
@@ -246,7 +241,7 @@ modules:
       - label: "Circle color"
         name: "className"
         widget: "select"
-        options: 
+        options:
           - label: "Sky"
             value: "bg--sky"
           - label: "Lilac"
@@ -284,14 +279,7 @@ modules:
         name: color
         widget: select
         required: false
-        options:
-          [
-            "primary-lighter",
-            "secondary",
-            "accent-warm",
-            "accent-cool",
-            "base-lighter",
-          ]
+        options: ["primary-lighter", "secondary", "accent-warm", "accent-cool", "base-lighter"]
       - label: variant
         name: variant
         widget: hidden
@@ -564,7 +552,7 @@ collections:
                   - <<: *classname
                     label: "404 Content Sections"
                     widget: select
-                    options: 
+                    options:
                       - label: "404 quote"
                         value: "FourOhFour__quote"
                       - label: "404 links"
@@ -701,7 +689,7 @@ collections:
         name: "theme"
         required: false
         widget: "select"
-        options: 
+        options:
           - label: "1 - lilac-to-tiger wash"
             value: "1"
           - label: "2 - charcoal-to-lead with x's"
@@ -811,7 +799,7 @@ collections:
               [
                 { label: "In Progress", value: "1" },
                 { label: "Done", value: "2" },
-                { label: "Graduated", value: "3" },
+                { label: "Graduated", value: "3" }
               ]
             default: "1"
           - <<: *text
@@ -923,7 +911,7 @@ collections:
         name: "theme"
         required: false
         widget: "select"
-        options: 
+        options:
           - label: "1 - lilac-to-tiger wash"
             value: "1"
           - label: "2 - charcoal-to-lead with x's"
