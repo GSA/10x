@@ -1,9 +1,9 @@
 backend:
   name: github
   repo: GSA/10x
-  base_url: https://federalist-7579e49a-6ba5-474f-abb7-f04465f0665c.sites.pages.cloud.gov/
+  base_url: https://federalist-proxy.app.cloud.gov
   auth_endpoint: external/auth/github
-  branch: demo
+  branch: fy22-impact-report
   preview_context: federalist/build
 
 media_folder: public/images
