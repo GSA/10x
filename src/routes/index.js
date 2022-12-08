@@ -1,4 +1,3 @@
-import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Default from "./Default";
 import Page from "./Page";
@@ -6,7 +5,8 @@ import Post from "./Post";
 import Project from "./Project";
 import Report from "./Report";
 
-export default ({ location }) => (
+const Routes = ({location}) => (
+
   <Switch>
     <Route key="default" path="/" exact>
       <Default />
@@ -24,4 +24,8 @@ export default ({ location }) => (
       <Page />
     </Route>
   </Switch>
-);
+)
+
+
+
+export default Routes

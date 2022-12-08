@@ -1,4 +1,3 @@
-import Link from 'features/Link';
 import React from 'react';
 import GSALogo from './gsa-logo.svg';
 
