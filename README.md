@@ -11,13 +11,13 @@ To save your changes and see them on the demo site, click the "Publish" button a
 
 ### When you're satisfied with how the demo site looks and want to push your changes live, you should open a [Pull Request from the demo branch to Main](https://github.com/GSA/10x/compare/main...demo).
 
-If possible, invite someone to review your changes. 
+If possible, invite someone to review your changes.
 
-### When you're ready, approve and merge the request, but do not delete the "demo" branch. 
+### When you're ready, approve and merge the request, but do not delete the "demo" branch.
 
 ---
 
-## Development 
+## Development
 
 ### Installation & getting started
 This site can be run locally using NodeJS. Using the command line, install the site and dependencies:
