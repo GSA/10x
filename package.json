@@ -74,7 +74,7 @@
     ]
   },
   "reactSnap": {
-    "publicPath": "/",
+    "publicPath": "/preview/gsa/10x/fy22-impact-report-demo/",
     "puppeteerExecutablePath": "/usr/bin/google-chrome",
     "puppeteerArgs": [
       "--no-sandbox",
