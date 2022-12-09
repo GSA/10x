@@ -17,7 +17,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 const App = () => (
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router>
     <Provider store={store}>
       <Primary>
         <Routes />
