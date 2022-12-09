@@ -2,7 +2,7 @@
   "name": "10x-website",
   "version": "0.1.1",
   "private": true,
-  "__homepage": "interesting option to look into",
+  "__homepage__": "interesting option to look into from cra-docs",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/free-regular-svg-icons": "^5.13.1",
@@ -74,7 +74,7 @@
     ]
   },
   "reactSnap": {
-    "publicPath": "/preview/gsa/10x/fy22-impact-report-demo/",
+    "__publicPath__": "this did not work /preview/gsa/10x/fy22-impact-report-demo/",
     "puppeteerExecutablePath": "/usr/bin/google-chrome",
     "puppeteerArgs": [
       "--no-sandbox",
