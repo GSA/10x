@@ -6,15 +6,17 @@ import Link from "features/Link";
 
 const ProjectCard = ({ data }) => {
   /* istanbul ignore next */
-  const slug =  data.projectUrl || ( data.path ) + "/";
+  const slug = data.projectUrl || data.path + "/";
 
   return (
-    
-    <Link url={slug} className="ProjectCard__link">
+    <Link
+      url={slug}
+      className="ProjectCard__link"
+    >
       <Card
         className={classnames({
           ProjectCard: true,
-          [`template-${data.template}`]: true,
+          [`template-${data.template}`]: true
         })}
       >
         <h2 className="usa-card__heading">{data.subtitle || data.subtitle}</h2>
@@ -26,7 +28,7 @@ const ProjectCard = ({ data }) => {
 };
 
 ProjectCard.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.object
 };
 
 export default ProjectCard;
