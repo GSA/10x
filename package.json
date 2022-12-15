@@ -50,7 +50,7 @@
   "scripts": {
     "index-content": "rm -rf src/app/json/* && node runIndex.js",
     "start": "npm run index-content && react-scripts start",
-    "build": "REACT_APP_BRANCH=$BRANCH react-scripts build",
+    "build": "PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-scripts build",
     "build2": "PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-scripts build && PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-snap",
     "test": "react-scripts test",
     "test:coverage": "npm test -- --coverage --watchAll=false",
