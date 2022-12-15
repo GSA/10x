@@ -1,31 +1,31 @@
-import { useEffect } from "react"
-import PropTypes from "prop-types"
-import { useDispatch, useSelector } from "react-redux"
-import { useParams } from "react-router-dom"
-import Head from "routes/Head"
-import classnames from "classnames"
-import { getPage } from "app/ContentModule"
-import FourOhFour from "routes/FourOhFour"
-import { Col, Grid, Row } from "components/Grid"
-import Loading from "components/Loading"
-import Icon from "components/Icon"
-import Break from "components/Break"
-import Chart from "components/Chart"
-import Mdx from "features/Mdx"
-import useScrollToTop from "utils/useScrollToTop"
-import ReasonForRejection from "features/Layout/templates/ReasonForRejection"
-import ReportTable from "features/Layout/templates/ReportTable"
-import ReportBudgetTable from "features/Layout/templates/ReportBudgetTable"
+import { useEffect } from "react";
+import PropTypes from "prop-types";
+import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import Head from "routes/Head";
+import classnames from "classnames";
+import { getPage } from "app/ContentModule";
+import FourOhFour from "routes/FourOhFour";
+import { Col, Grid, Row } from "components/Grid";
+import Loading from "components/Loading";
+import Icon from "components/Icon";
+import Break from "components/Break";
+import Chart from "components/Chart";
+import Mdx from "features/Mdx";
+import useScrollToTop from "utils/useScrollToTop";
+import ReasonForRejection from "features/Layout/templates/ReasonForRejection";
+import ReportTable from "features/Layout/templates/ReportTable";
+import ReportBudgetTable from "features/Layout/templates/ReportBudgetTable";
 
 const Report = ({ type }) => {
-  const dispatch = useDispatch()
-  const { name } = useParams()
+  const dispatch = useDispatch();
+  const { name } = useParams();
   useEffect(() => {
-    dispatch(getPage({ type, name }))
-  }, [dispatch, name, type])
-  useScrollToTop()
-  const page = useSelector((state) => state.content.page)
-  const { pending, data, error } = page
+    dispatch(getPage({ type, name }));
+  }, [dispatch, name, type]);
+  useScrollToTop();
+  const page = useSelector((state) => state.content.page);
+  const { pending, data, error } = page;
 
   if (pending) {
     return (
@@ -37,16 +37,17 @@ const Report = ({ type }) => {
           </Loading>
         </div>
       </Grid>
-    )
+    );
   }
   if (error) {
-    return <FourOhFour pathname={name} />
+    return <FourOhFour pathname={name} />;
   }
 
   return (
     <div className={`TxContent`}>
       <div className="usa-app__bg">
         <Head title={data.title} />
+        {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
         <Grid
           className={classnames({
             TxReport: true,
@@ -62,6 +63,7 @@ const Report = ({ type }) => {
               size="12"
               desktop="8"
             >
+              {/* NOTE: HEADER with background */}
               <h1 className="TxReport__title">{data.title}</h1>
               <div className="TxReport__intro">
                 <Mdx>{data.intro}</Mdx>
@@ -99,6 +101,7 @@ const Report = ({ type }) => {
               desktop="9"
               className="TxReport__content"
             >
+              {/* NOTE: content start here */}
               {data.sections && (
                 <div>
                   {data.sections.map((item, i) => (
@@ -108,10 +111,10 @@ const Report = ({ type }) => {
                         [`${item.class}`]: item.class
                       })}
                     >
-                      <Break
+                      {/* <Break
                         color="accent-green"
                         variant="extra-wide"
-                      />
+                      /> */}
 
                       <h2 id={item.target}>{item.title}</h2>
 
@@ -245,72 +248,72 @@ const Report = ({ type }) => {
         </Grid>
       </div>
     </div>
-  )
-}
+  );
+};
 
 window.addEventListener("DOMContentLoaded", () => {
-  ;(function () {
+  (function () {
     function init() {
-      doSmoothScrolling()
-      doActiveNav()
+      doSmoothScrolling();
+      doActiveNav();
     }
 
     function doSmoothScrolling() {
       document.querySelectorAll("#nav-sticky ul li a").forEach((link) => {
         link.addEventListener("click", (event) => {
-          event.preventDefault()
-          let target = document.querySelector(event.target.hash)
+          event.preventDefault();
+          let target = document.querySelector(event.target.hash);
 
-          let section = target.parentElement
+          let section = target.parentElement;
 
-          section.setAttribute("tabindex", 0)
-          section.focus()
+          section.setAttribute("tabindex", 0);
+          section.focus();
           target.scrollIntoView({
             //behavior: 'smooth',
             block: "start"
-          })
-        })
-      })
+          });
+        });
+      });
       document.querySelectorAll(".to-top").forEach((link) => {
         link.addEventListener("click", (event) => {
-          event.preventDefault()
-          let target = document.querySelector(event.target.hash)
+          event.preventDefault();
+          let target = document.querySelector(event.target.hash);
           target.scrollIntoView({
             //behavior: 'smooth',
             block: "start"
-          })
-        })
-      })
+          });
+        });
+      });
     }
 
     function doActiveNav() {
-      let fromTopVar = 400 // On scroll, adjust the nav active state / section vertical position
+      let fromTopVar = 400; // On scroll, adjust the nav active state / section vertical position
 
       window.addEventListener("scroll", (event) => {
-        let fromTop = window.scrollY
+        let fromTop = window.scrollY;
         document.querySelectorAll("#nav-sticky ul li a").forEach((link, i) => {
-          let header = document.querySelector(link.hash)
-          let section = header.parentElement
+          let header = document.querySelector(link.hash);
+          let section = header.parentElement;
           if (
             section.offsetTop <= fromTop - fromTopVar &&
             section.offsetTop + section.offsetHeight > fromTop - fromTopVar
           ) {
-            link.parentElement.classList.add("active")
+            link.parentElement.classList.add("active");
           } else {
-            link.parentElement.classList.remove("active")
+            link.parentElement.classList.remove("active");
           }
-        })
-      })
+        });
+      });
     }
 
-    init()
-  })()
-})
+    init();
+  })();
+});
 
-Report.defaultProps = { type: "report", name: "" }
+Report.defaultProps = { type: "report", name: "" };
 
 Report.propTypes = {
   type: PropTypes.string
-}
+};
 
-export default Report
+export default Report;
