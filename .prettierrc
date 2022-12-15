@@ -3,5 +3,5 @@ endOfLine: lf
 tabWidth: 2
 printWidth: 100
 trailingComma: none
-semi: false
+semi: true
 singleAttributePerLine: true
