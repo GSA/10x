@@ -111,15 +111,14 @@ const Report = ({ type }) => {
                         [`${item.class}`]: item.class
                       })}
                     >
-                      {/* <Break
+                      <Break
                         color="accent-green"
                         variant="extra-wide"
-                      /> */}
+                      />
 
                       <h2 id={item.target}>{item.title}</h2>
-
-                      {item.impact && <Mdx>{item.impact}</Mdx>}
-
+                      {item.lede && <Mdx>{item.lede}</Mdx>}
+                      <Mdx>{item.content}</Mdx>
                       {item.contentHalf && (
                         <div className="grid-row">
                           <div className="grid-col-6">
@@ -148,8 +147,6 @@ const Report = ({ type }) => {
                           <Chart></Chart>
                         </>
                       )}
-
-                      <Mdx>{item.content}</Mdx>
 
                       {item.the10xTeam && <div className={item.the10xTeam}></div>}
 
