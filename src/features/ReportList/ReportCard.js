@@ -17,7 +17,7 @@ const ReportCard = ({ data }) => {
       })}
     >
       {data.reportUrl ? (
-        <a href={data.reportUrl}>
+        <a href={`${process.env.PUBLIC_URL}${data.reportUrl}`}>
           <Card
             className={classnames({
               ReportCard: true,
