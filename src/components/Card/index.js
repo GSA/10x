@@ -24,16 +24,15 @@ const Card = ({
         "usa-card--no-media": !image,
         "usa-card--no-content": !title && !meta && !children,
         "usa-card--flat": flat,
-        [className]: Boolean(className),
+        [className]: Boolean(className)
       })}
       {...props}
     >
       <div
         className={classnames({
           "usa-card__container": true,
-          [`border-left-1 border-top-0 border-right-0 border-bottom-0 border-solid border-${color}`]: Boolean(
-            color
-          ),
+          [`border-left-1 border-top-0 border-right-0 border-bottom-0 border-solid border-${color}`]:
+            Boolean(color)
         })}
       >
         {(title || meta || subtitle) && (
@@ -47,12 +46,15 @@ const Card = ({
           <div className="usa-card__media">
             <div className="usa-card__img">
               <div className="usa-card__img-container">
-                <img src={image} alt={imageAlt} />
+                <img
+                  src={image}
+                  alt={imageAlt}
+                />
               </div>
             </div>
           </div>
         )}
-        {children && <div className="usa-card__body">{children}</div>}
+        {children && <div className="usa-card__body ">{children}</div>}
         {footer && <div className="usa-card__footer">{footer}</div>}
       </div>
     </div>
@@ -61,7 +63,7 @@ const Card = ({
 
 Card.defaultProps = {
   variant: "vertical",
-  imageAlt: "",
+  imageAlt: ""
 };
 
 Card.propTypes = {
@@ -86,7 +88,7 @@ Card.propTypes = {
   /** child node */
   children: PropTypes.node,
   /** border color variant */
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 
 export default Card;

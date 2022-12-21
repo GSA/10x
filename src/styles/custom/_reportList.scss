@@ -128,9 +128,11 @@
   display: inline-block;
   width: 100%;
   break-inside: avoid;
+
   &.usa-card:not(.usa-card--flag) .usa-card__container > :only-child {
     @include u-padding-x(4);
     @include u-padding-bottom(6);
+    min-height: 29rem;
   }
   &:hover {
     cursor: pointer;
