@@ -115,7 +115,6 @@ const Report = ({ type }) => {
                         color="accent-green"
                         variant="extra-wide"
                       />
-
                       <h2 id={item.target}>{item.title}</h2>
                       {item.lede && <Mdx>{item.lede}</Mdx>}
                       <Mdx>{item.content}</Mdx>
@@ -129,7 +128,6 @@ const Report = ({ type }) => {
                           </div>
                         </div>
                       )}
-
                       {item.chart && (
                         <>
                           {item.byTheNumbersList && (
@@ -147,9 +145,7 @@ const Report = ({ type }) => {
                           <Chart></Chart>
                         </>
                       )}
-
                       {item.the10xTeam && <div className={item.the10xTeam}></div>}
-
                       {item.calloutProject && (
                         <div className="grid-row">
                           <div className="grid-col-12 calloutProject">
@@ -157,13 +153,11 @@ const Report = ({ type }) => {
                           </div>
                         </div>
                       )}
-
                       {item.reasonForRejection && (
                         <div>
                           <ReasonForRejection data={item.reasonForRejection} />
                         </div>
                       )}
-
                       {item.calloutFullDark && (
                         <div className="grid-row">
                           <div className="grid-col-12 calloutFullDark">
@@ -171,9 +165,14 @@ const Report = ({ type }) => {
                           </div>
                         </div>
                       )}
-
-                      <Mdx>{item.content2}</Mdx>
-
+                      {item.content2 && <Mdx>{item.content2}</Mdx>}
+                      {item.content2_calloutProject && (
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutProject">
+                            <h3>{item.content2_calloutProject}</h3>
+                          </div>
+                        </div>
+                      )}
                       {item.reportTableData && (
                         <div>
                           <ReportTable
@@ -183,7 +182,6 @@ const Report = ({ type }) => {
                           />
                         </div>
                       )}
-
                       {item.calloutFull && (
                         <div className="grid-row">
                           <div className="grid-col-12 calloutFull">
@@ -191,11 +189,8 @@ const Report = ({ type }) => {
                           </div>
                         </div>
                       )}
-
                       {item.image && <div className={item.image}></div>}
-
                       <Mdx>{item.content3}</Mdx>
-
                       {item.reportBudgetTableData && (
                         <ReportBudgetTable
                           heading={item.reportBudgetTableHeading}
@@ -203,7 +198,6 @@ const Report = ({ type }) => {
                           data={item.reportBudgetTableData}
                         />
                       )}
-
                       {item.otherProjects && (
                         <div className="TxProjects">
                           <h3>Other Projects</h3>
@@ -225,9 +219,32 @@ const Report = ({ type }) => {
                           </ul>
                         </div>
                       )}
-
-                      <Mdx>{item.content4}</Mdx>
-
+                      {item.content4_calloutProject && (
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutProject">
+                            <h3>{item.content4_calloutProject}</h3>
+                          </div>
+                        </div>
+                      )}
+                      {item.content4 && <Mdx>{item.content4}</Mdx>}
+                      {item.content5 && <Mdx>{item.content5}</Mdx>}
+                      {item.content6_calloutProject && (
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutProject">
+                            <h3>{item.content6_calloutProject}</h3>
+                          </div>
+                        </div>
+                      )}
+                      {item.content6 && <Mdx>{item.content6}</Mdx>}
+                      {item.content7__calloutProject && (
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutProject">
+                            <h3>{item.content7__calloutProject}</h3>
+                          </div>
+                        </div>
+                      )}
+                      {item.content7 && <Mdx>{item.content7}</Mdx>}
+                      {/* NOTE: Back to top */}
                       <div className="display-flex flex-justify-end margin-top-2">
                         <a
                           className="usa-button to-top"
