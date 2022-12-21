@@ -7,7 +7,7 @@ import Mdx from "features/Mdx";
 
 const ReportCard = ({ data }) => {
   /* istanbul ignore next */
-  const slug = data.projectUrl || data.path + "/";
+  const slug = data.reportUrl || data.path + "/";
 
   return (
     <div
@@ -16,35 +16,62 @@ const ReportCard = ({ data }) => {
         "desktop:grid-col-6": true
       })}
     >
-      <Link
-        url={slug}
-        className="ReportCard__link"
-        target={data.reportUrl ? "_blank" : "_top"}
-      >
-        <Card
-          className={classnames({
-            ReportCard: true,
-            [`template-${data.template}`]: true
-          })}
+      {data.reportUrl ? (
+        <a href={data.reportUrl}>
+          <Card
+            className={classnames({
+              ReportCard: true,
+              [`template-${data.template}`]: true
+            })}
+          >
+            <h1
+              className={classnames({
+                "usa-card__heading": true,
+                "pdf-icon": data.pdf
+              })}
+            >
+              FY{data.year || data.year}
+            </h1>
+            <h2
+              className={classnames({
+                "usa-card__subhead": true
+              })}
+            >
+              {data.title || data.title}
+            </h2>
+            <Mdx className="ReportCard__excerpt">{data.excerpt || data.intro}</Mdx>
+          </Card>
+        </a>
+      ) : (
+        <Link
+          url={slug}
+          className="ReportCard__link"
         >
-          <h1
+          <Card
             className={classnames({
-              "usa-card__heading": true,
-              "pdf-icon": data.pdf
+              ReportCard: true,
+              [`template-${data.template}`]: true
             })}
           >
-            FY{data.year || data.year}
-          </h1>
-          <h2
-            className={classnames({
-              "usa-card__subhead": true
-            })}
-          >
-            {data.title || data.title}
-          </h2>
-          <Mdx className="ReportCard__excerpt">{data.excerpt || data.intro}</Mdx>
-        </Card>
-      </Link>
+            <h1
+              className={classnames({
+                "usa-card__heading": true,
+                "pdf-icon": data.pdf
+              })}
+            >
+              FY{data.year || data.year}
+            </h1>
+            <h2
+              className={classnames({
+                "usa-card__subhead": true
+              })}
+            >
+              {data.title || data.title}
+            </h2>
+            <Mdx className="ReportCard__excerpt">{data.excerpt || data.intro}</Mdx>
+          </Card>
+        </Link>
+      )}
     </div>
   );
 };
