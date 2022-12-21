@@ -74,7 +74,7 @@
     ]
   },
   "reactSnap": {
-    "//": "publicPath: this did not work /preview/gsa/10x/fy22-impact-report-demo/",
+    "//": "did not work but worth a shot, publicPath: /preview/gsa/10x/fy22-impact-report-demo/",
     "puppeteerExecutablePath": "/usr/bin/google-chrome",
     "puppeteerArgs": [
       "--no-sandbox",
