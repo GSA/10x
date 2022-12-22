@@ -117,6 +117,13 @@ const Report = ({ type }) => {
                       />
                       <h2 id={item.target}>{item.title}</h2>
                       {item.lede && <Mdx>{item.lede}</Mdx>}
+                      {item.content_calloutProject && (
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutProject">
+                            <h3>{item.content_calloutProject}</h3>
+                          </div>
+                        </div>
+                      )}
                       <Mdx>{item.content}</Mdx>
                       {item.contentHalf && (
                         <div className="grid-row">
@@ -165,7 +172,6 @@ const Report = ({ type }) => {
                           </div>
                         </div>
                       )}
-                      {item.content2 && <Mdx>{item.content2}</Mdx>}
                       {item.content2_calloutProject && (
                         <div className="grid-row">
                           <div className="grid-col-12 calloutProject">
@@ -173,6 +179,7 @@ const Report = ({ type }) => {
                           </div>
                         </div>
                       )}
+                      {item.content2 && <Mdx>{item.content2}</Mdx>}
                       {item.reportTableData && (
                         <div>
                           <ReportTable
@@ -190,6 +197,13 @@ const Report = ({ type }) => {
                         </div>
                       )}
                       {item.image && <div className={item.image}></div>}
+                      {item.content3_calloutProject && (
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutProject">
+                            <h3>{item.content3_calloutProject}</h3>
+                          </div>
+                        </div>
+                      )}
                       <Mdx>{item.content3}</Mdx>
                       {item.reportBudgetTableData && (
                         <ReportBudgetTable
@@ -227,6 +241,13 @@ const Report = ({ type }) => {
                         </div>
                       )}
                       {item.content4 && <Mdx>{item.content4}</Mdx>}
+                      {item.content5_calloutProject && (
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutProject">
+                            <h3>{item.content5_calloutProject}</h3>
+                          </div>
+                        </div>
+                      )}
                       {item.content5 && <Mdx>{item.content5}</Mdx>}
                       {item.content6_calloutProject && (
                         <div className="grid-row">
