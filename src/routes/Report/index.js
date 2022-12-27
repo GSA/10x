@@ -43,11 +43,10 @@ const Report = ({ type }) => {
     return <FourOhFour pathname={name} />;
   }
 
-  return (
+  return data.year === "2022" ? (
     <div className={`TxContent`}>
       <div className="usa-app__bg">
         <Head title={data.title} />
-        {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
         <Grid
           className={classnames({
             TxReport: true,
@@ -55,6 +54,7 @@ const Report = ({ type }) => {
             [`TxReport--template-${data.template}`]: Boolean(data.template)
           })}
         >
+          {/* NOTE: HEADER with background */}
           <Row
             gap="1"
             className="report-content"
@@ -63,13 +63,13 @@ const Report = ({ type }) => {
               size="12"
               desktop="8"
             >
-              {/* NOTE: HEADER with background */}
               <h1 className="TxReport__title">{data.title}</h1>
               <div className="TxReport__intro">
                 <Mdx>{data.intro}</Mdx>
               </div>
             </Col>
           </Row>
+          {/* NOTE: SideNav */}
           <Row gap="4">
             <Col
               size="12"
@@ -111,10 +111,12 @@ const Report = ({ type }) => {
                         [`${item.class}`]: item.class
                       })}
                     >
-                      <Break
-                        color="accent-green"
-                        variant="extra-wide"
-                      />
+                      {data.year === "2021" && (
+                        <Break
+                          color="accent-green"
+                          variant="extra-wide"
+                        />
+                      )}
                       <h2 id={item.target}>{item.title}</h2>
                       {item.lede && <Mdx>{item.lede}</Mdx>}
                       {item.content_calloutProject && (
@@ -266,6 +268,208 @@ const Report = ({ type }) => {
                       )}
                       {item.content7 && <Mdx>{item.content7}</Mdx>}
                       {/* NOTE: Back to top */}
+                      <div className="display-flex flex-justify-end margin-top-2">
+                        <a
+                          className="usa-button to-top"
+                          href="#welcome"
+                        >
+                          TOP
+                        </a>
+                      </div>
+                    </section>
+                  ))}
+                </div>
+              )}
+            </Col>
+          </Row>
+        </Grid>
+      </div>
+    </div>
+  ) : (
+    <div className={`TxContent`}>
+      <div className="usa-app__bg">
+        <Head title={data.title} />
+        <Grid
+          className={classnames({
+            TxReport: true,
+            [`TxReport--${name}`]: true,
+            [`TxReport--template-${data.template}`]: Boolean(data.template)
+          })}
+        >
+          <Row
+            gap="1"
+            className="report-content"
+          >
+            <Col
+              size="12"
+              desktop="8"
+            >
+              <h1 className="TxReport__title">{data.title}</h1>
+              <div className="TxReport__intro">
+                <Mdx>{data.intro}</Mdx>
+              </div>
+            </Col>
+          </Row>
+          <Row gap="4">
+            <Col
+              size="12"
+              desktop="3"
+            >
+              <div
+                id="nav-sticky"
+                className="nav-sticky"
+              >
+                <h2 className="TxReport__nav-header">{data.navHeader}</h2>
+                <div className="TxLinks">
+                  {data.nav && (
+                    <ul>
+                      {data.nav.map((item, i) => (
+                        <li
+                          className="TxLinks__item"
+                          key={i}
+                        >
+                          <a href={item.link}>{item.text}</a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
+            </Col>
+            <Col
+              size="12"
+              desktop="9"
+              className="TxReport__content"
+            >
+              {data.sections && (
+                <div>
+                  {data.sections.map((item, i) => (
+                    <section
+                      key={i}
+                      className={classnames({
+                        [`${item.class}`]: item.class
+                      })}
+                    >
+                      <Break
+                        color="accent-green"
+                        variant="extra-wide"
+                      />
+
+                      <h2 id={item.target}>{item.title}</h2>
+
+                      {item.impact && <Mdx>{item.impact}</Mdx>}
+
+                      {item.contentHalf && (
+                        <div className="grid-row">
+                          <div className="grid-col-6">
+                            <Mdx>{item.contentHalf}</Mdx>
+                          </div>
+                          <div className="grid-col-6 calloutHalf">
+                            <Mdx>{item.calloutHalf}</Mdx>
+                          </div>
+                        </div>
+                      )}
+
+                      {item.chart && (
+                        <>
+                          {item.byTheNumbersList && (
+                            <ul>
+                              {item.byTheNumbersList.map((li, index) => (
+                                <li key={index}>
+                                  <Mdx>{li.listItem}</Mdx>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+
+                          <h3>{item.chartHeading}</h3>
+
+                          <Chart></Chart>
+                        </>
+                      )}
+
+                      <Mdx>{item.content}</Mdx>
+
+                      {item.the10xTeam && <div className={item.the10xTeam}></div>}
+
+                      {item.calloutProject && (
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutProject">
+                            <h3>{item.calloutProject}</h3>
+                          </div>
+                        </div>
+                      )}
+
+                      {item.reasonForRejection && (
+                        <div>
+                          <ReasonForRejection data={item.reasonForRejection} />
+                        </div>
+                      )}
+
+                      {item.calloutFullDark && (
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutFullDark">
+                            <Mdx>{item.calloutFullDark}</Mdx>
+                          </div>
+                        </div>
+                      )}
+
+                      <Mdx>{item.content2}</Mdx>
+
+                      {item.reportTableData && (
+                        <div>
+                          <ReportTable
+                            heading={item.reportTableHeading}
+                            headers={item.reportTableHeaders}
+                            data={item.reportTableData}
+                          />
+                        </div>
+                      )}
+
+                      {item.calloutFull && (
+                        <div className="grid-row">
+                          <div className="grid-col-12 calloutFull">
+                            <Mdx>{item.calloutFull}</Mdx>
+                          </div>
+                        </div>
+                      )}
+
+                      {item.image && <div className={item.image}></div>}
+
+                      <Mdx>{item.content3}</Mdx>
+
+                      {item.reportBudgetTableData && (
+                        <ReportBudgetTable
+                          heading={item.reportBudgetTableHeading}
+                          headers={item.reportBudgetTableHeaders}
+                          data={item.reportBudgetTableData}
+                        />
+                      )}
+
+                      {item.otherProjects && (
+                        <div className="TxProjects">
+                          <h3>Other Projects</h3>
+                          <ul>
+                            {item.otherProjects.map((project, i) => (
+                              <li
+                                className="TxLinks__item"
+                                key={i}
+                              >
+                                <a href={project.projectURL}>
+                                  {project.projectName}{" "}
+                                  <Icon
+                                    icon="arrow-circle-right"
+                                    className="margin-left-05"
+                                  />
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      <Mdx>{item.content4}</Mdx>
+
                       <div className="display-flex flex-justify-end margin-top-2">
                         <a
                           className="usa-button to-top"
