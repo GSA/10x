@@ -1,6 +1,27 @@
 $card-shadow: 0px 16px 24px rgba(0, 0, 0, 0.15);
 $c-report-header: #006680;
 
+.TxContent {
+  background: #ffffff;
+  .usa-app-2022__bg {
+    background-image: url("~styles/images/report-2022-bg.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0;
+    background-size: contain;
+    @include at-media("tablet") {
+      background-image: url("~styles/images/report-2022-bg.png");
+      background-position-y: 0;
+      background-size: contain;
+    }
+    @include at-media("desktop") {
+      background-image: url("~styles/images/report-2022-bg.png");
+      background-position-y: -120px;
+      background-size: 100% 555px;
+    }
+  }
+}
+
 .TxReport,
 .Tx__reports {
   section {

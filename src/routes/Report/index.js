@@ -45,7 +45,7 @@ const Report = ({ type }) => {
 
   return data.year === "2022" ? (
     <div className={`TxContent`}>
-      <div className="usa-app__bg">
+      <div className="usa-app-2022__bg">
         <Head title={data.title} />
         <Grid
           className={classnames({
@@ -286,6 +286,7 @@ const Report = ({ type }) => {
       </div>
     </div>
   ) : (
+    // NOTE: Year 2021
     <div className={`TxContent`}>
       <div className="usa-app__bg">
         <Head title={data.title} />
