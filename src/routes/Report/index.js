@@ -111,13 +111,12 @@ const Report = ({ type }) => {
                         [`${item.class}`]: item.class
                       })}
                     >
-                      {data.year === "2021" && (
-                        <Break
-                          color="accent-green"
-                          variant="extra-wide"
-                        />
-                      )}
-                      <h2 id={item.target}>{item.title}</h2>
+                      <h2
+                        id={item.target}
+                        class="margin-top-2"
+                      >
+                        {item.title}
+                      </h2>
                       {item.lede && <Mdx>{item.lede}</Mdx>}
                       {item.content_calloutProject && (
                         <div className="grid-row">
