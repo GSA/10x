@@ -279,6 +279,23 @@ $c-report-header: #006680;
           }
         }
       }
+      &Project22 {
+        @include u-font("serif", 7);
+        background-image: url("~styles/images/report-lilac-brushstroke.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+        padding-left: 10px;
+        color: $x-charcoal;
+
+        p {
+          font-size: 1.4rem;
+          max-width: 535px;
+          @include at-media("desktop") {
+            max-width: 615px;
+          }
+        }
+      }
     }
 
     .usa-card__container {
