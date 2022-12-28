@@ -12,7 +12,6 @@ $c-report-header: #006680;
     @include at-media("tablet") {
       background-image: url("~styles/images/report-2022-bg.png");
       background-position-y: 0;
-      background-size: contain;
     }
     @include at-media("desktop") {
       background-image: url("~styles/images/report-2022-bg.png");
@@ -148,7 +147,7 @@ $c-report-header: #006680;
     }
     .lede {
       color: $x-lead;
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       line-height: 1.5;
     }
 
