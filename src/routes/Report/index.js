@@ -63,7 +63,7 @@ const Report = ({ type }) => {
               size="12"
               desktop="8"
             >
-              <h1 className="TxReport__title">{data.title}</h1>
+              <Mdx>{data.pageTitle}</Mdx>
               <div className="TxReport__intro">
                 <Mdx>{data.intro}</Mdx>
               </div>
@@ -113,7 +113,7 @@ const Report = ({ type }) => {
                     >
                       <h2
                         id={item.target}
-                        class="margin-top-2"
+                        class="margin-top-2 calloutHeading"
                       >
                         {item.title}
                       </h2>
