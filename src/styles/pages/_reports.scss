@@ -146,18 +146,21 @@ $c-report-header: #006680;
     h2 {
       color: $c-report-header;
     }
+    .lede {
+      color: $x-lead;
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
 
     .callout {
       &Heading {
         background-image: url("~styles/images/report-ocean-stroke.png");
         background-size: contain;
         background-repeat: no-repeat;
-        height: 118px;
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 100px;
         color: $x-charcoal;
-        margin-bottom: 0;
       }
       &Half {
         @include u-font("serif", 6);
