@@ -117,7 +117,11 @@ const Report = ({ type }) => {
                       >
                         {item.title}
                       </h2>
-                      {item.lede && <Mdx>{item.lede}</Mdx>}
+                      {item.lede && (
+                        <div className="lede">
+                          <Mdx className="lede">{item.lede}</Mdx>
+                        </div>
+                      )}
                       {item.content_calloutProject && (
                         <div className="grid-row">
                           <div className="grid-col-12 calloutProject">
