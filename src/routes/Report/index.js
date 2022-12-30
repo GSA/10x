@@ -16,6 +16,9 @@ import useScrollToTop from "utils/useScrollToTop";
 import ReasonForRejection from "features/Layout/templates/ReasonForRejection";
 import ReportTable from "features/Layout/templates/ReportTable";
 import ReportBudgetTable from "features/Layout/templates/ReportBudgetTable";
+import Avatar_1 from "../../styles/images/avatars-1.png";
+import Avatar_2 from "../../styles/images/avatars-2.png";
+import Avatar_3 from "../../styles/images/avatars-3.png";
 
 const Report = ({ type }) => {
   const dispatch = useDispatch();
@@ -131,12 +134,18 @@ const Report = ({ type }) => {
                       )}
                       <Mdx>{item.content}</Mdx>
                       {item.team &&
-                        item.team.map((team) => (
+                        item.team.map((team, index) => (
                           <figure>
                             <blockquote>
                               <Mdx>{team.quote}</Mdx>
                             </blockquote>
-                            <figcaption>{team.name}</figcaption>
+                            <div className="flex">
+                              <img
+                                src={Avatar_1}
+                                alt=""
+                              />
+                              <figcaption>{team.name}</figcaption>
+                            </div>
                           </figure>
                         ))}
                       {item.contentHalf && (
