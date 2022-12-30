@@ -113,7 +113,7 @@ const Report = ({ type }) => {
                     >
                       <h2
                         id={item.target}
-                        class="margin-top-2 calloutHeading"
+                        className="margin-top-2 calloutHeading"
                       >
                         {item.title}
                       </h2>
@@ -130,6 +130,13 @@ const Report = ({ type }) => {
                         </div>
                       )}
                       <Mdx>{item.content}</Mdx>
+                      {item.team &&
+                        item.team.map((team) => (
+                          <>
+                            <Mdx>{team.quote}</Mdx>
+                            <p>{team.name}</p>
+                          </>
+                        ))}
                       {item.contentHalf && (
                         <div className="grid-row">
                           <div className="grid-col-6">
