@@ -132,10 +132,12 @@ const Report = ({ type }) => {
                       <Mdx>{item.content}</Mdx>
                       {item.team &&
                         item.team.map((team) => (
-                          <>
-                            <Mdx>{team.quote}</Mdx>
-                            <p>{team.name}</p>
-                          </>
+                          <figure>
+                            <blockquote>
+                              <Mdx>{team.quote}</Mdx>
+                            </blockquote>
+                            <figcaption>{team.name}</figcaption>
+                          </figure>
                         ))}
                       {item.contentHalf && (
                         <div className="grid-row">
