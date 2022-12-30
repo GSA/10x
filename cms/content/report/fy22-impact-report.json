@@ -2,7 +2,7 @@
   "sortOrder": "1",
   "slug": "fy22-impact-report",
   "title": "10x FY22 Impact Report",
-  "pageTitle": "<h1 class=\"TxReport__title\">10x <span class=\"text-orange\">FY22</span> Impact Report</h1>",
+  "pageTitle": "<h1 className=\"TxReport__title\">10x <span className=\"text-orange\">FY22</span> Impact Report</h1>",
   "subtitle": "Welcome to the 10x FY22 Impact Report",
   "year": "2022",
   "excerpt": "In FY22, we’re covering how 10x projects compliment high-level administration priorities, the roundup on our experiment with establishing investment themes, and of course more dark matter – what 10x can teach the government about using emerging technologies to enhance public service in new ways. We showcase our premier artificial intelligence project, _Combating Bias in Artificial Intelligence and Machine Learning (AI/ML)_.",

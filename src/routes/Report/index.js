@@ -132,14 +132,14 @@ const Report = ({ type }) => {
                       <Mdx>{item.content}</Mdx>
                       {item.team &&
                         item.team.map((team, index) => (
-                          <figure>
+                          <figure key={team.name}>
                             <blockquote className="border-primary border-left-1 padding-left-2">
                               <Mdx>{team.quote}</Mdx>
                             </blockquote>
-                            <div className="display-flex flex-align-center">
+                            <div className="display-flex flex-align-center margin-bottom-6">
                               <img
-                                src={`/images/avatars-${index + 1}.png`}
-                                alt=""
+                                src={`${process.env.PUBLIC_URL}/images/avatars-${index + 1}.png`}
+                                alt={`Avatar of ${team.name}`}
                               />
                               <figcaption className="margin-left-2 font-body-lg">
                                 {team.name}
