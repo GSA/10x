@@ -49,6 +49,9 @@ $c-report-header: #006680;
     }
     &.dark-gray {
       background-color: $x-charcoal;
+      .lede {
+        color: $x-lilac-light;
+      }
       @include u-color("white");
       .to-top {
         background-color: $x-lilac;
@@ -65,6 +68,9 @@ $c-report-header: #006680;
       }
       h2 {
         color: $x-lilac;
+      }
+      h2__dark {
+        color: $x-charcoal;
       }
       strong {
         color: $x-sky;
@@ -232,7 +238,7 @@ $c-report-header: #006680;
         background-size: 100% 100%;
         color: $x-charcoal;
         display: flex;
-        height: 137px;
+        height: 16rem;
         justify-content: center;
         left: 0;
         margin-bottom: 2rem;
@@ -287,7 +293,7 @@ $c-report-header: #006680;
         padding-top: 10px;
         padding-left: 10px;
         color: $x-charcoal;
-
+        margin-bottom: 1.5rem;
         p {
           font-size: 1.4rem;
           max-width: 535px;

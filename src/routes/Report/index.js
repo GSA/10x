@@ -111,12 +111,22 @@ const Report = ({ type }) => {
                         [`${item.class}`]: item.class
                       })}
                     >
-                      <h2
-                        id={item.target}
-                        className="margin-top-2 calloutHeading"
-                      >
-                        {item.title}
-                      </h2>
+                      {item.title === "10x Dark Matter" ? (
+                        <h2
+                          id={item.target}
+                          className="margin-top-2"
+                        >
+                          {item.title}
+                        </h2>
+                      ) : (
+                        <h2
+                          id={item.target}
+                          className="margin-top-2 calloutHeading"
+                        >
+                          {item.title}
+                        </h2>
+                      )}
+
                       {item.lede && (
                         <div className="lede">
                           <Mdx className="lede">{item.lede}</Mdx>
@@ -130,23 +140,23 @@ const Report = ({ type }) => {
                         </div>
                       )}
                       <Mdx>{item.content}</Mdx>
-                      {item.team &&
-                        item.team.map((team, index) => (
-                          <figure key={team.name}>
-                            <blockquote className="border-primary border-left-1 padding-left-2">
-                              <Mdx>{team.quote}</Mdx>
-                            </blockquote>
-                            <div className="display-flex flex-align-center margin-bottom-6">
-                              <img
-                                src={`${process.env.PUBLIC_URL}/images/avatars-${index + 1}.png`}
-                                alt={`Avatar of ${team.name}`}
-                              />
-                              <figcaption className="margin-left-2 font-body-lg">
-                                {team.name}
-                              </figcaption>
-                            </div>
-                          </figure>
-                        ))}
+                      {item.team?.map((team, index) => (
+                        <figure key={team.name}>
+                          <blockquote className="border-secondary border-left-1 padding-left-2">
+                            <Mdx>{team.quote}</Mdx>
+                          </blockquote>
+                          <div className="display-flex flex-align-center margin-bottom-6">
+                            <img
+                              className="height-9"
+                              src={`${process.env.PUBLIC_URL}/images/avatars-${index + 1}.png`}
+                              alt={`Avatar of ${team.name}`}
+                            />
+                            <figcaption className="margin-left-2 font-body-lg">
+                              {team.name}
+                            </figcaption>
+                          </div>
+                        </figure>
+                      ))}
                       {item.contentHalf && (
                         <div className="grid-row">
                           <div className="grid-col-6">
