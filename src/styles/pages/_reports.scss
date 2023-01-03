@@ -154,12 +154,22 @@ $c-report-header: #006680;
     .callout {
       &Heading {
         background-image: url("~styles/images/report-ocean-stroke.png");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 100px;
+        background-position-x: -56px;
         color: $x-charcoal;
+        text-align: center;
+        line-height: 72px;
+        @include at-media("tablet") {
+          background-size: contain;
+          background-position-x: initial;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 100px;
+          line-height: initial;
+          text-align: initial;
+          height: initial;
+        }
       }
       &Half {
         @include u-font("serif", 6);
