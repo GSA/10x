@@ -3,20 +3,14 @@ $c-report-header: #006680;
 
 .TxContent {
   background: #ffffff;
+
   .usa-app-2022__bg {
-    background-image: url("~styles/images/report-2022-bg.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 0;
-    background-size: contain;
+    background-image: url("~styles/images/report-2-bg-mobile.png") !important;
     @include at-media("tablet") {
-      background-image: url("~styles/images/report-2022-bg.png");
-      background-position-y: 0;
+      background-image: url("~styles/images/report-2-bg-tablet.png") !important;
     }
     @include at-media("desktop") {
-      background-image: url("~styles/images/report-2022-bg.png");
-      background-position-y: -120px;
-      background-size: 100% 555px;
+      background-image: url("~styles/images/report-2-bg.png") !important;
     }
   }
 }
