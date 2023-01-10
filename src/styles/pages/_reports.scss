@@ -382,6 +382,7 @@ $c-report-header: #006680;
 
   @mixin ReportContentBg($t: 1) {
     .TxReport__content {
+      margin-top: -16px;
       .usa-card__container {
         background-size: 50%;
         background-position-x: right;
