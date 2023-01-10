@@ -147,7 +147,7 @@ const Report = ({ type }) => {
                           </blockquote>
                           <div className="display-flex flex-align-center margin-bottom-6">
                             <img
-                              className="height-9"
+                              className="width-15"
                               src={`${process.env.PUBLIC_URL}/images/avatars-${index + 1}.png`}
                               alt={`Avatar of ${team.name}`}
                             />
