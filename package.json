@@ -44,7 +44,7 @@
     "trim-newlines": ">=3.0.1",
     "typewriter-effect": "^2.17.0",
     "uswds": "2.10.1",
-    "yaml": "^2.0.0-1"
+    "yaml": "^2.2.2"
   },
   "scripts": {
     "index-content": "rm -rf src/app/json/* && node runIndex.js",
