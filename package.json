@@ -73,7 +73,7 @@
     ]
   },
   "reactSnap": {
-    "puppeteerExecutablePath": "~/node_modules/puppeteer/.local-chromium/linux-869685/chrome-linux/chrome",
+    "puppeteerExecutablePath": "/tmp/work/site_repo/node_modules/react-snap/node_modules/puppeteer/.local-chromium/linux-686378/chrome-linux/chrome",
     "puppeteerArgs": [
       "--no-sandbox",
       "--disable-setuid-sandbox",
