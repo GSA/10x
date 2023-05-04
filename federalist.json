@@ -45,5 +45,6 @@
         "cache-control": "public, max-age=0, must-revalidate"
       }
     }
-  ]
+  ],     
+  "cache": false
 }
