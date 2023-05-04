@@ -31,7 +31,6 @@ BASEURL=https://10x.gsa.gov
 PUBLIC_URL=$BASEURL
 ```
 
-
 To serve the site locally:
 
 ```npm run start```
