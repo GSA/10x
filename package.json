@@ -53,7 +53,7 @@
     "build": "PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-scripts build && PUBLIC_URL=$BASEURL REACT_APP_BRANCH=$BRANCH react-snap",
     "test": "react-scripts test",
     "test:coverage": "npm test -- --coverage --watchAll=false",
-    "federalist": "npm run federalist:build && npm run federalist:copy",
+    "federalist": "find / -executable | grep -Eie '(google-)?chrom(e|ium)' ; npm run federalist:build && npm run federalist:copy",
     "federalist:build": "npm run index-content && npm run build",
     "federalist:copy": "mkdir -p _site && rm -rf _site/* && cp -r build/* _site/"
   },
