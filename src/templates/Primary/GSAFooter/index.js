@@ -12,7 +12,7 @@ const GSAFooter = () => {
         <div className="usa-identifier__container">
           <div className="usa-identifier__logos">
             <a href="/" className="usa-identifier__logo GSAFooter__logo">
-              <img src={GSALogo} alt="GSA logo" />
+              <img src={GSALogo} alt="GSA.gov home." />
             </a>
           </div>
           <div className="usa-identifier__identity" aria-label="Agency description">
