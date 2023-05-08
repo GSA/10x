@@ -53,18 +53,6 @@
           "className": "bg--4"
         }
       ]
-    },
-    {
-      "type": "break",
-      "color": "accent-warm",
-      "variant": "wide"
-    },
-    {
-      "type": "statsCards",
-      "className": "TxShadowedCard",
-      "title": "A record-setting start to fiscal year 2022",
-      "text": "So far this year, 10x received 181 ideas from federal employees across the government. We only accepted 25 to fund.",
-      "items": []
     }
   ],
   "theme": "3",
