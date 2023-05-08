@@ -24,8 +24,16 @@
   "title": "Benefits Eligibility Awareness Resource Service (BEARS)",
   "links": [
     {
-      "text": "Beta version",
-      "link": "https://benefits-tool-beta.usa.gov/"
+      "text": "Retirement",
+      "link": "https://benefits-tool.usa.gov/retirement/"
+    },
+    {
+      "link": "https://benefits-tool.usa.gov/disability/",
+      "text": "Disability"
+    },
+    {
+      "link": "https://benefits-tool.usa.gov/death-of-a-loved-one/",
+      "text": "Death of a loved one"
     }
   ],
   "template": "4",
