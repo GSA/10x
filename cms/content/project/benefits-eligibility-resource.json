@@ -3,7 +3,7 @@
   "future": "## Next steps\n\nCurrent priorities for the BEARS team includes improving functionality and testing features and language with users. Our team is working closely with USA.gov to plan for the eventual integration into their platform for ongoing ownership and development. On the technical side, we received an ATO to launch the application, although without the dashboard or notifications. \n\nWhile not in the scope of immediate next steps, our vision is clear that once the prototype is more refined and we get more committed partnerships from agencies, we want to eventually bring in fast-changing eligibility criteria automatically into the BEARS app (Eligibility API’s Initiative, anyone?) and eventually bring in the application processes into the app as well. Imagine!",
   "phaseData": {
     "phase": "4",
-    "status": "1"
+    "status": "3"
   },
   "impact": "## Why this matters\n\nCurrently, finding and learning about benefits information is neither empathetic nor intuitive, and the government can do better. People should not have to navigate a complex matrix of siloed government websites when events in their lives call instead for grief or celebration. We have the opportunity to build trust with the public and prove that civil servants understand the needs of the people we serve. \n\nThe 10x BEARS project is laying a foundation for a human-centered approach for the public to learn about benefits, which is a [top priority for the government](https://www.performance.gov/cx/projects/). We are helping the government imagine and build an empathetic future of public service.",
   "summary": [
@@ -24,8 +24,16 @@
   "title": "Benefits Eligibility Awareness Resource Service (BEARS)",
   "links": [
     {
-      "text": "Beta version",
-      "link": "https://benefits-tool-beta.usa.gov/"
+      "text": "Retirement",
+      "link": "https://benefits-tool.usa.gov/retirement/"
+    },
+    {
+      "link": "https://benefits-tool.usa.gov/disability/",
+      "text": "Disability"
+    },
+    {
+      "link": "https://benefits-tool.usa.gov/death-of-a-loved-one/",
+      "text": "Death of a loved one"
     }
   ],
   "template": "4",

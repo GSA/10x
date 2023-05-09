@@ -100,7 +100,7 @@ $bgImgDir: "~styles/images";
         }
       }
       .usa-card__container {
-        @include u-padding-top(6);
+        @include u-padding-top(2);
         @include u-padding-bottom(2);
         border: none;
         background-size: 100% 100%;
@@ -112,15 +112,21 @@ $bgImgDir: "~styles/images";
           margin-bottom: -1rem;
         }
         .usa-card__body {
-          @include u-padding-top(10);
+          @include u-padding-top(7);
           @include u-padding-right(10);
           @include u-margin-right(10);
 
           @include at-media("desktop") {
             margin-right: 0;
           }
-          strong {
-            @include u-font("heading", "md");
+          p { 
+            @include u-font-family("serif");
+            line-height: 1.4em;
+            margin-bottom:.25em;
+            margin-top: 1.2em;
+            i, em {
+              font-size: 90%;
+            }
           }
           .usa-button {
             width: auto;

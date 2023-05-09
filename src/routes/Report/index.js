@@ -118,7 +118,7 @@ const Report = ({ type }) => {
                             </ul>
                           )}
 
-                          <h3>{item.chartHeading}</h3>
+                          <h3 id="chartTitle">{item.chartHeading}</h3>
 
                           <Chart></Chart>
                         </>
@@ -151,7 +151,7 @@ const Report = ({ type }) => {
                       )}
 
                       <Mdx>{item.content2}</Mdx>
-                      
+
                       {item.reportTableData && (
                         <div>
                           <ReportTable
