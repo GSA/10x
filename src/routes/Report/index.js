@@ -93,6 +93,11 @@ const Report = ({ type }) => {
 
                       <h2 id={item.target}>{item.title}</h2>
 
+                      {item.lede && (<div className="TxLede">
+                        <Mdx>{item.lede}</Mdx>
+                      </div>
+                      )}
+
                       {item.impact && <Mdx>{item.impact}</Mdx>}
 
                       {item.contentHalf && (
