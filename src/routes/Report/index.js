@@ -111,7 +111,7 @@ const Report = ({ type }) => {
                         </div>
                       )}
 
-                      {item.chart && (
+                      {item.byTheNumbersList && (
                         <>
                           {item.byTheNumbersList && (
                             <ul>
@@ -122,10 +122,14 @@ const Report = ({ type }) => {
                               ))}
                             </ul>
                           )}
+                        </>
+                      )}
 
+                      {item.chart && (
+                        <>
                           <h3 id="chartTitle">{item.chartHeading}</h3>
 
-                          <Chart></Chart>
+                          <Chart year={item.chartYear}></Chart>
                         </>
                       )}
 

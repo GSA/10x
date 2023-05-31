@@ -78,6 +78,9 @@ $c-report-header: #006680;
       margin-left: 2rem;
       font-size: 1.25em;
     }
+    table td.text-right, table th.text-right {
+      text-align: right;
+    }
     @include at-media("tablet") {
       margin-left: -2%;
       padding: 1.5rem;

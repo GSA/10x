@@ -10,7 +10,7 @@ const ReportBudgetTable = ({ heading, headers, data }) => {
           {headers.map((item, i) => (
             <tr key={i}>
               <th scope="col">{item.header1}</th>
-              <th scope="col">{item.header2}</th>
+              <th className='text-right' scope="col">{item.header2}</th>
             </tr>
           ))}
         </thead>
@@ -18,7 +18,7 @@ const ReportBudgetTable = ({ heading, headers, data }) => {
           {data.map((item, i) => (
             <tr key={i}>
               <td className={item.highlight ? 'highlight' : null}><span className={item.highlight ? 'text-bold' : null}>{item.data1}</span></td>
-              <td className={item.highlight ? 'highlight' : null}><span className={item.highlight ? 'text-bold' : null}>{item.data2}</span></td>
+              <td className={(item.highlight ? 'highlight' : null) + ' text-right'}><span className={item.highlight ? 'text-bold' : null}>{item.data2}</span></td>
             </tr>
           ))}
         </tbody>

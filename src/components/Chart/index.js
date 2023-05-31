@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
-export default function Chart() {
+const Chart = ({ year }) => {
   return (
     <figure className="bar-chart-from-list" role="figure" aria-labelledby="chartTitle">
       <figcaption className="usa-sr-only">
-        Chart of projects kicked off, closed out, and ideas received, by fiscal year from 2017 to 2021
+        Chart of projects kicked off, closed out, and ideas received, by fiscal year from 2017 to ${year}
       </figcaption>
       <ul className="bar-chart--vertical">
         <li className="y-axis" aria-hidden="true">
@@ -99,6 +100,25 @@ export default function Chart() {
             </li>
           </ul>
         </li>
+        {year >= 2022 && (
+          <li className="fy" aria-describedby="FY22_label">
+            <h4 className="fy__wrapper-label font-sans-sm" id="FY22_label">FY22</h4>
+            <ul className="fy__wrapper">
+              <li className="bar-container">
+                <span className="bar bg--projects_kicked_off" data-value="47" aria-hidden="true" style={{ height: 11.75 + '%' }}></span>
+                <span className="usa-sr-only">47 Projects Kicked Off</span>
+              </li>
+              <li className="bar-container">
+                <span className="bar bg--projects_closed_out" data-value="38" aria-hidden="true" style={{ height: 9.5 + '%' }}></span>
+                <span className="usa-sr-only">38 Projects Closed Out</span>
+              </li>
+              <li className="bar-container">
+                <span className="bar bg--ideas_received" data-value="181" aria-hidden="true" style={{ height: 45.25 + '%' }}></span>
+                <span className="usa-sr-only">1881 Ideas Received</span>
+              </li>
+            </ul>
+          </li>
+        )}
       </ul>
       <ul className="bar-chart__legend">
         <li className="font-sans-xs">
@@ -116,3 +136,15 @@ export default function Chart() {
     </figure>
   );
 }
+
+Chart.defaultProps = {
+  year: 2021,
+};
+
+Chart.propTypes = {
+  year: PropTypes.oneOf([
+    2021,
+    2022
+  ]),
+};
+export default Chart;

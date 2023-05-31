@@ -93,6 +93,51 @@
       "title": "Final Thoughts",
       "lede": "Thank you for reading our FY22 Impact Report. If you've made it this far, we hope you're wanting more from 10x. Here are a few ways we can make that happen:",
       "content": "**Workshops.** If you want to submit an idea but don't know where to start, 10x can help. We offer virtual workshops that explain exactly what 10x is looking for in a great idea, and they'll help you construct a great idea of your own. These workshops are great for you and 10-15 of your colleagues. As a bonus, those who attend a workshop are eligible to receive individualized feedback on your idea from a member of the 10x team before you submit the final proposal.\n\n**10x-in-a-box.** It's always a pleasure meeting passionate civil servants who are determined to make innovation work for their agencies. Civil servants often reach out to ask 10x for lightweight consulting on how to set up something like 10x within their own agencies.\n\nThe 10x model is designed to function within our agency context. The 10x program reflects GSA's mission, TTS' technology talent, and the funding authorities we adhere to. The 10x model works for us. It might not work for you. We expect any initiative inspired by 10x at other agencies to look different. We are happy to talk with you about our experience and share some advice on how you might set up your own innovation program in a way that works for your agency, your team, your funding, your mission, etc.\n\n**Project Collaboration.** Have any of the projects we've covered in this report resonated with you? If you're interested in learning more about any of our projects, believe you can contribute to them, or want to use them, then don't be shy! Reach out using the email below, or ask questions in any of our public GitHib repositories, which are linked to on their [project cards](https://10x.gsa.gov/projects/) on our website.\n\n**Send your project ideas to 10x!** All feds can submit ideas to 10x anytime, day or night through our website. We'll keep your idea and evaluate during our next round of Phase One funding. We aren't sure when our next round of project selection will happen, but we encourage you to submit your ideas as they develop.\n\nSend us an email at <10x@gsa.gov> for any of the above. For everything else, check 10x.gsa.gov for more updates on upcoming and current projects.\n\nLastly, we're sending some heartfelt gratitude to the civil servants everywhere who make transformation happen every day. Thank you for your public service.\n\n_–10x_"
+    },{
+      "section": "7",
+      "class": "white",
+      "target": "appendix",
+      "theme": "2",
+      "title": "Appendix",
+      "lede": "##Project Funding\n\nThe 10x budget is funded through the Federal Citizen Service Fund (FCSF), a fund appropriated by Congress that supports public-facing services and agency-facing programs that drive government-wide transformation. Here’s how we invested in FY22:",
+      "chartHeading": "10x Investment Snapshot",
+      "chart": true,
+      "chartYear": 2022,
+      "reportTableHeaders": [
+        {
+          "header1": "Phase",
+          "header2": "Projects Kicked Off",
+          "header3": "Project Hours Worked"
+        }
+      ],
+      "reportTableData": [
+        {
+          "data1": "Phase One",
+          "data2": "31",
+          "data3": "3,073"
+        },
+        {
+          "data1": "Phase Two",
+          "data2": "7",
+          "data3": "7,018"
+        },
+        {
+          "data1": "Phase Three",
+          "data2": "6",
+          "data3": "4,068"
+        },
+        {
+          "data1": "Phase Four",
+          "data2": "3",
+          "data3": "7,709"
+        },
+        {
+          "data1": "Total",
+          "data2": "47",
+          "data3": "21,868"
+        }
+      ],
+      "content2": "This chart shows the number of ideas that we received, the number of projects kicked off in our various phases, and how many closed out over the years. In FY22, we held only one round of idea solicitation and evaluation, rather than the two rounds we’ve conducted in prior years."
     }
   ],
   "seo": {

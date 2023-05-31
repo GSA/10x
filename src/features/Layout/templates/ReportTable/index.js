@@ -10,8 +10,8 @@ const ReportTable = ({ heading, headers, data }) => {
           {headers.map((item, i) => (
             <tr key={i}>
               <th scope="col">{item.header1}</th>
-              <th scope="col">{item.header2}</th>
-              <th scope="col">{item.header3}</th>
+              <th className='text-right' scope="col">{item.header2}</th>
+              <th className='text-right' scope="col">{item.header3}</th>
             </tr>
           ))}
         </thead>
@@ -19,8 +19,8 @@ const ReportTable = ({ heading, headers, data }) => {
           {data.map((item, i) => (
             <tr key={i}>
               <td>{item.data1}</td>
-              <td>{item.data2}</td>
-              <td>{item.data3}</td>
+              <td className='text-right'>{item.data2}</td>
+              <td className='text-right'>{item.data3}</td>
             </tr>
           ))}
         </tbody>
