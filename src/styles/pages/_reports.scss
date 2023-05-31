@@ -533,6 +533,31 @@ $c-report-header: #006680;
   }
 }
 
+.avatar {
+  background-image: url("~styles/images/delna.png");
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  height: 8rem;
+  line-height: 8rem;
+  width: 13rem;
+  display: inline-block;
+  margin: 1rem;
+  @include at-media("tablet") {
+
+  }
+}
+.avatar--delna {
+  background-image: url("~styles/images/delna.png");
+}
+.avatar--frank {
+  background-image: url("~styles/images/frank.png");
+}
+.avatar--jim {
+  background-image: url("~styles/images/jim.png");
+}
+
 .to-top {
   font-size: 0.8rem;
   padding: 0.5rem 1rem;
