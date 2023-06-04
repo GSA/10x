@@ -123,7 +123,7 @@ const Chart = ({ year }) => {
       <ul className="bar-chart__legend">
         <li className="font-sans-xs">
           <span className="bar-chart__legend__swatch bg--projects_kicked_off"></span>
-          Projects Kicked Off
+          Projects Kicked Off *in various phases
         </li>
         <li className="font-sans-xs">
           <span className="bar-chart__legend__swatch bg--projects_closed_out"></span>

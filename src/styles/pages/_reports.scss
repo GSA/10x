@@ -645,7 +645,8 @@ $c-report-header: #006680;
     flex: auto;
     display: block;
     margin: 0;
-    max-width: 9rem;
+    padding: 0 0.5%;
+    max-width: 8rem;
 
   }
   .y-axis {
@@ -692,7 +693,7 @@ $c-report-header: #006680;
           right:0;
           top:-1.8em;
           width: 100%;
-          padding:3px .25em 0;
+          padding:3px 0 0;
           display:block;
           text-align:center;
           content:attr(data-value);
