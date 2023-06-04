@@ -520,7 +520,7 @@ $c-report-header: #006680;
   }
 }
 
-.the10xTeam {
+.the10xTeam21 {
   background-image: url("~styles/images/the-10x-team.png");
   background-position-y: top;
   background-repeat: no-repeat;
@@ -530,6 +530,18 @@ $c-report-header: #006680;
   @include at-media("tablet") {
     height: 213px;
     width: 60%;
+  }
+}
+
+.the10xTeam22 {
+  background-image: url("~styles/images/the-10x-team-22.png");
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15rem;
+  width: 100%;
+  @include at-media("tablet") {
+    height: 25rem;
   }
 }
 
