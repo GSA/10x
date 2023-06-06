@@ -15,14 +15,14 @@
       "title": "What's new with us",
       "items": [
         {
+          "subtitle": "News",
+          "title": "Learn about our impact in FY2022",
+          "link": "/reports/fy22-impact-report/"
+        },
+        {
           "subtitle": "NEWS",
           "title": "10x announces new projects chosen for FY23 Phase 1 funding",
           "link": "/posts/2023-selected-projects/"
-        },
-        {
-          "subtitle": "News",
-          "title": "Learn about our impact in FY2021",
-          "link": "/reports/fy21-impact-report/"
         },
         {
           "subtitle": "news",

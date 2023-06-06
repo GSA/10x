@@ -31,6 +31,14 @@ BASEURL=https://10x.gsa.gov
 PUBLIC_URL=$BASEURL
 ```
 
+Also, the current build is very tempermental and will only work on specific versions of node and npm. Make sure you're using **node v16.15.0** and **npm v8.5.5** in the project directory.
+
+```
+nvm install 16.15.0
+npm install -g npm@8.5.5
+```
+
+
 
 To serve the site locally:
 
