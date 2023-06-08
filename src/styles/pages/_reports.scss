@@ -602,6 +602,7 @@ $c-report-header: #006680;
 .bar-chart-from-list {
   padding: 2rem 0 0;
   margin: 0;
+  overflow-x: auto;
   ul {
     text-indent: 0;
     padding-left: 0;
@@ -612,15 +613,15 @@ $c-report-header: #006680;
   }
 }
 .bar-chart--vertical {
-  width: 100%;
   margin: auto;
   text-align: center;
-
-  display: flex;
+  min-width: 100%;
+  
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding-right: 1rem;
+  padding: 0 2rem;
 
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 1%, rgba(0, 0, 0, 0) 1%);
   background-size: 100% 100px;
@@ -628,6 +629,10 @@ $c-report-header: #006680;
   border: 1px solid #888;
   border-left-width: 2px;
   border-left-color: #444;
+  @include at-media("mobile-lg") {
+    width: 100%;
+    padding: 0 1rem;
+  }
 
   h4 {
     margin-top: .5rem;
@@ -652,6 +657,7 @@ $c-report-header: #006680;
   .y-axis {
     height: 428px;
     margin-top:-28px;
+    margin-right: 1rem;
     max-width: 1rem;
     display: flex;
     flex-direction: column-reverse;
@@ -712,6 +718,7 @@ $c-report-header: #006680;
 .bar-chart-from-list .bar-chart__legend {
   margin: 2rem 0 2rem;
   display: flex;
+  flex-flow: wrap;
   flex-direction: row;
   justify-content: center;
 }
@@ -719,6 +726,10 @@ $c-report-header: #006680;
   padding: 1rem;
   display: flex;
   align-items: center;
+  width: 100%;
+  @include at-media("mobile-lg") {
+    width: auto;
+  }
 }
 .bar-chart__legend__swatch{
   display: inline-block;
