@@ -209,7 +209,9 @@ h5,
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: 0;
-        background-size: contain;
+        @include at-media('mobile-lg') {
+          background-size: contain;
+        }
         @include at-media('tablet') {
           background-image: url("~styles/images/report-1-bg-tablet.png");
           background-position-y: 0;
