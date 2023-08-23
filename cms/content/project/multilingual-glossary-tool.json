@@ -1,0 +1,40 @@
+{
+  "excerpt": "10x Multilingual Glossary Tool (MGT) is a project in collaboration with the Multilingual Community of Practice (CoP) to promote consistent translation of government content and improve the quality of communication with the Limited English Proficiency (LEP) population. The MGT will pilot a shared multilingual term glossary tool and a new program governance framework by establishing clear term management workflows, roles and responsibilities, and by facilitating collaboration between government translators.\n",
+  "future": "## Next steps\n\nAs we are nearing the end of Phase 3, we will procure a multilingual term management system and pilot a _Spanish language healthcare term glossary_ along with a proposal for Phase 4 to expand into other subject domain(s) and/or language(s). ",
+  "topics": "",
+  "phaseData": {
+    "status": "1",
+    "phase": "3",
+    "summary": ""
+  },
+  "impact": "## Why this matters\n\nDuring Phases 1 and 2 of this project, the team learned that there is inconsistency in the usage of English terms and their translations. It is directly impacting the language access for the 26 million people in the U.S. who are Limited English Proficient (LEP). Through the effective management of shared multilingual glossaries and termbases, we can improve the consistency of translated vital government information across the agencies and raise the quality of communication with the LEP population. Consistency is key; use of the same terms in the same manner across multiple government agencies decreases confusion and increases trust in government information and services.\n\n[Executive Order 13166](https://www.justice.gov/crt/executive-order-13166) requires federal agencies to provide information in languages other than English to their constituents. Federal agencies have expressed a desire to also agree upon and authoritatively promote translated terms by subject area, such as health, benefits, or immigration.\n\nThe MGT program will help increase each agency’s alignment with the goals of Executive Order 13166 and 21st Century IDEA, positioning MGT as a key component to language access standards. This program also has the potential to reduce translation costs, improve translation efficiency, and provide visibility into term usage and decision-making.\n\n",
+  "summary": [
+    {
+      "text": "Establishing practices for maintenance of glossary terms via an agreed-upon terminology management system"
+    },
+    {
+      "text": "Facilitating and driving collaboration between multi-agency translation teams  \n"
+    },
+    {
+      "text": "Building a foundation for a governance framework that will provide the consistency and authority on use of the multilingual terms and glossaries"
+    }
+  ],
+  "approach": "## What we’re doing and how we’re doing it\n\nWe are conducting market analysis and testing available term management tools so we can develop a better understanding of multilingual terminology standards and draft comprehensive requirements for MGT features. The team will be making a well-informed decision to select a tool that would be best suited for government translators and aligned with established term management workflows.\n\n\n\n## Where we are today\n\nMGT success relies heavily on cross-agency collaboration and relationship building is a big part of it. The team has been facilitating ongoing communications with translation teams from agencies within the public health domain with the goal to establish long-lasting partnerships that will sustain the MGT community into the future.",
+  "slug": "multilingual-glossary-tool",
+  "intro": "This is a 10x Phase 3 project in collaboration with the Multilingual Community of Practice (CoP). The project is intended to promote consistent translation of government content and improve the quality of communication with the LEP population. 10x will pilot a shared multilingual term glossary tool and a new program governance framework by establishing clear term management workflows, roles and responsibilities, and by facilitating collaboration between government translators.\n\nA robust shared multilingual glossary tool will create a consistent translation resource for individual agencies across the federal government. It will reduce the burden on each agency to translate multilingual terms in various topic domains and make them easily accessible to their translation teams. \n",
+  "projectType": "Innovation",
+  "projectUrl": "",
+  "subtitle": " What if vital government information and terms were consistently translated and used across agencies to improve the quality and effectiveness of communication with the Limited English Proficiency (LEP) population?",
+  "title": "Multilingual Glossary Tool",
+  "links": [],
+  "template": "6",
+  "footer": "10x-in-the-wild",
+  "seo": {
+    "title": "Multilingual Glossary Tool - 10x Project | 10x.GSA.gov",
+    "description": " What if vital government information and terms were consistently translated and used across agencies to improve the quality and effectiveness of communication with the Limited English Proficiency (LEP) population? 10x will pilot a shared multilingual term glossary tool and a new program governance framework by establishing clear term management workflows, roles and responsibilities, and by facilitating collaboration between government translators."
+  },
+  "team": {
+    "submitter": "Laura Godfrey, GSA and Fedora Braverman, NIH (Multilingual CoP Co-leads)",
+    "members": "Robert Jolly, Mark Shellenberger, Renata Bartlett"
+  }
+}
