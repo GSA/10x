@@ -15,6 +15,11 @@
       "title": "What's new with us",
       "items": [
         {
+          "subtitle": "news",
+          "title": "10x invites idea submissions for FY24 funding",
+          "link": "/posts/2023-submission-period/"
+        },
+        {
           "subtitle": "News",
           "title": "Learn about our impact in FY2022",
           "link": "/reports/fy22-impact-report/"
@@ -23,11 +28,6 @@
           "subtitle": "NEWS",
           "title": "10x announces new projects chosen for FY23 Phase 1 funding",
           "link": "/posts/2023-selected-projects/"
-        },
-        {
-          "subtitle": "news",
-          "title": "10x invites idea submissions for FY24 funding",
-          "link": "/posts/2023-submission-period/"
         },
         {
           "subtitle": "inside look",
